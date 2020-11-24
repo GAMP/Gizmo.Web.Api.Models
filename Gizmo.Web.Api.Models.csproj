@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Enumerations\" />
     <Folder Include="Models\" />
   </ItemGroup>
 
