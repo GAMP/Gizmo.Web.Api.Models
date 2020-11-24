@@ -4,19 +4,16 @@ using System.Runtime.Serialization;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Bundle.
+    /// Create result.
     /// </summary>
     [Serializable]
     [DataContract]
-    public class Bundle
+    public class CreateResult
     {
         /// <summary>
-        /// The stock options of the bundle.
+        /// The Id of the newly created object.
         /// </summary>
         [DataMember]
-        public BundleStockOptionType BundleStockOptions
-        {
-            get; set;
-        }
+        public int Id { get; set; }
     }
 }
