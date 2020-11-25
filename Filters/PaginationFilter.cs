@@ -8,7 +8,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
-    public class PaginationFilter
+    public class PaginationFilter : GetOptions
     {
         private const int DEFAULT_LIMIT = 10;
         private const int MAX_LIMIT = 100;

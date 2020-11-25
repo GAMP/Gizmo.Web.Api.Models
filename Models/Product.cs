@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
@@ -135,5 +136,8 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         public Bundle Bundle { get; set; }
+
+        [DataMember]
+        public IEnumerable<ProductImage> ProductImages { get; set; }
     }
 }

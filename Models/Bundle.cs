@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
@@ -14,9 +15,9 @@ namespace Gizmo.Web.Api.Models
         /// The stock options of the bundle.
         /// </summary>
         [DataMember]
-        public BundleStockOptionType BundleStockOptions
-        {
-            get; set;
-        }
+        public BundleStockOptionType BundleStockOptions { get; set; }
+
+        [DataMember]
+        public IEnumerable<Product> BundledProducts { get; set; }
     }
 }
