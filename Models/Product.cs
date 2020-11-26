@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.WebUtilities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
@@ -10,8 +11,10 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
-    public class Product : EntityBase
+    public class Product : EntityBase , IUrlQueryParameters
     {
+        #region PROPERTIES
+
         /// <summary>
         /// The Id of the product group this product belongs to.
         /// </summary>
@@ -139,5 +142,13 @@ namespace Gizmo.Web.Api.Models
 
         [DataMember]
         public IEnumerable<ProductImage> ProductImages { get; set; }
+
+        #endregion
+
+
+        public string ToQueryParameters()
+        {
+            return ParameterGenerator.Generate(this);
+        }
     }
 }

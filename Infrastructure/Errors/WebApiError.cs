@@ -9,6 +9,13 @@ namespace Gizmo.Web.Api.Models
     public class WebApiError
     {
         #region CONSTRUCTOR
+
+        /// <summary>
+        /// Serialization constructor.
+        /// </summary>
+        public WebApiError()
+        { }
+
         /// <summary>
         /// Creates new instance.
         /// </summary>
@@ -27,7 +34,7 @@ namespace Gizmo.Web.Api.Models
         [DataMember(EmitDefaultValue = false)]
         public string Message
         {
-            get; protected set;
+            get; set;
         } 
 
         #endregion

@@ -14,6 +14,13 @@ namespace Gizmo.Web.Api.Models
         #region CONSTRUCTOR
 
         /// <summary>
+        /// Serialization constructor.
+        /// </summary>
+        public WebApiErrorResponse()
+        {
+        }
+
+        /// <summary>
         /// Creates new instance.
         /// </summary>
         /// <param name="statusCode">Http status code.</param>
@@ -38,10 +45,10 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Extended error information.
         /// </summary>
-        [DataMember()]
+        [DataMember(EmitDefaultValue =false)]
         public IEnumerable<WebApiError> Errors
         {
-            get; protected set;
+            get; set;
         }
 
         /// <summary>
