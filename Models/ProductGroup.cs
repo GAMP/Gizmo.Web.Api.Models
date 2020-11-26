@@ -19,9 +19,6 @@ namespace Gizmo.Web.Api.Models
         [StringLength(45)]
         public string Name { get; set; }
 
-        [DataMember]
-        public int? ParentId { get; set; }
-
         /// <summary>
         /// The display order of the product group.
         /// </summary>

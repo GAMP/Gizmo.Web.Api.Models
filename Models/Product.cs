@@ -47,10 +47,21 @@ namespace Gizmo.Web.Api.Models
         public decimal? Cost { get; set; }
 
         /// <summary>
-        /// The order options of the product.
+        /// Client order disallowed.
         /// </summary>
         [DataMember]
-        public OrderOptionType OrderOptions { get; set; }
+        public bool DisallowAllowOrder { get; set; }
+
+        /// <summary>
+        /// Disallow ability of order for non users.
+        /// </summary>
+        [DataMember]
+        public bool RestrictNonCustomers { get; set; }
+        /// <summary>
+        /// Restricts product sale.
+        /// </summary>
+        [DataMember]
+        public bool RestrictSale { get; set; }
 
         /// <summary>
         /// The purchase options of the product.
@@ -78,22 +89,40 @@ namespace Gizmo.Web.Api.Models
         public string Barcode { get; set; }
 
         /// <summary>
-        /// The stock options of the product.
+        /// Enable stock.
         /// </summary>
         [DataMember]
-        public StockOptionType StockOptions { get; set; }
+        public bool EnableStock { get; set; }
+
+        /// <summary>
+        /// Disallow out of stock sale.
+        /// </summary>
+        [DataMember]
+        public bool DisallowSaleIfOutOfStock { get; set; }
+
+        /// <summary>
+        /// Alert out of stock.
+        /// </summary>
+        [DataMember]
+        public bool StockAlert { get; set; }
+
+        /// <summary>
+        /// Target different product.
+        /// </summary>
+        [DataMember]
+        public bool TargetDifferentProduct { get; set; }
 
         /// <summary>
         /// The stock quantity threshold to alert, if the stock alert is enabled.
         /// </summary>
         [DataMember]
-        public decimal StockAlert { get; set; }
+        public decimal StockAlertThreshold { get; set; }
 
         /// <summary>
         /// The Id of the target product, if the product stock targets a different product.
         /// </summary>
         [DataMember]
-        public int? StockProductId { get; set; }
+        public int? StockTargetProduct { get; set; }
 
         /// <summary>
         /// The ratio of the stock in relation to the stock of the target product, if the product stock targets a different product.
@@ -139,5 +168,8 @@ namespace Gizmo.Web.Api.Models
 
         [DataMember]
         public IEnumerable<ProductImage> ProductImages { get; set; }
+
+        [DataMember]
+        public ProductPurchaseAvailability ProductPurchaseAvailability { get; set; }
     }
 }

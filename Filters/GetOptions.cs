@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
@@ -14,6 +15,6 @@ namespace Gizmo.Web.Api.Models
         /// Return records before the specified Id.
         /// </summary>
         [DataMember]
-        public string[] Expand { get; set; }
+        public List<string> Expand { get; set; }
     }
 }

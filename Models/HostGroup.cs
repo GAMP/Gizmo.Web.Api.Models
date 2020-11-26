@@ -33,18 +33,18 @@ namespace Gizmo.Web.Api.Models
         /// The Id of the application profile this host group is associated with.
         /// </summary>
         [DataMember]
-        public int? AppGroupId { get; set; }
+        public int? ApplicationGroup { get; set; }
 
         /// <summary>
         /// The Id of the security profile this host group is associated with.
         /// </summary>
         [DataMember]
-        public int? SecurityProfileId { get; set; }
+        public int? SecurityProfile { get; set; }
 
         /// <summary>
         /// The Id of the guest group this host group uses by default.
         /// </summary>
         [DataMember]
-        public int? DefaultGuestGroupId { get; set; }
+        public int? DefaultGuestGroup { get; set; }
     }
 }
