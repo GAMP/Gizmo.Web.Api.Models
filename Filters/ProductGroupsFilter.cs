@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.WebUtilities;
+using System;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
@@ -8,7 +10,11 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
-    public class ProductGroupsFilter : PaginationFilter
+    public class ProductGroupsFilter : PaginationFilter, IUrlQueryParameters
     {
+        public string ToQueryParameters()
+        {
+            return ParameterGenerator.Generate(this);
+        }
     }
 }

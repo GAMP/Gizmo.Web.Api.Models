@@ -10,10 +10,14 @@ namespace Gizmo.Web.Api.Models
     [DataContract]
     public class CreateResult
     {
+        #region PROPERTIES
+        
         /// <summary>
         /// The Id of the newly created object.
         /// </summary>
         [DataMember]
-        public int Id { get; set; }
+        public int Id { get; set; } 
+
+        #endregion
     }
 }
