@@ -36,6 +36,6 @@ namespace Gizmo.Web.Api.Models
         public bool TimeRange { get; set; }
 
         [DataMember]
-        public IEnumerable<ProductAvailabilityDay> Days { get; set; }
+        public IEnumerable<ProductAvailabilityDay> DaysAvailable { get; set; }
     }
 }

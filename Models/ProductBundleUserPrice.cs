@@ -13,6 +13,9 @@ namespace Gizmo.Web.Api.Models
     {
         #region PROPERTIES
 
+        /// <summary>
+        /// The Id of the bundle product this user price is associated with.
+        /// </summary>
         [DataMember]
         [Required]
         public int BundleProduct { get; set; }
