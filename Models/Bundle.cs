@@ -18,6 +18,6 @@ namespace Gizmo.Web.Api.Models
         public BundleStockOptionType BundleStockOptions { get; set; }
 
         [DataMember]
-        public IEnumerable<Product> BundledProducts { get; set; }
+        public IEnumerable<BundleProduct> BundledProducts { get; set; }
     }
 }

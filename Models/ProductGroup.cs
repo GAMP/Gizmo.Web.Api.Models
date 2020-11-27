@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     public class ProductGroup : EntityBase
     {
         #region PROPERTIES
-        
+
         /// <summary>
         /// The name of the product group.
         /// </summary>
@@ -22,30 +22,26 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(1)]
         public string Name { get; set; }
 
-        [DataMember]
-        [MessagePack.Key(2)]
-        public int? ParentId { get; set; }
-
         /// <summary>
         /// The display order of the product group.
         /// </summary>
         [DataMember]
-        [MessagePack.Key(3)]
+        [MessagePack.Key(2)]
         public int DisplayOrder { get; set; }
 
         /// <summary>
         /// The sort option of the product group.
         /// </summary>
         [DataMember]
-        [MessagePack.Key(4)]
+        [MessagePack.Key(3)]
         public ProductSortOptionType SortOption { get; set; }
 
         /// <summary>
         /// The GUID of the product group.
         /// </summary>
         [DataMember]
-        [MessagePack.Key(5)]
-        public Guid Guid { get; set; } 
+        [MessagePack.Key(4)]
+        public Guid Guid { get; set; }
 
         #endregion
     }

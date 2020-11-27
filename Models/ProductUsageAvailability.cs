@@ -4,11 +4,11 @@ using System.Runtime.Serialization;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Filters that can be applied when searching for attributes.
+    /// Product usage availability.
     /// </summary>
     [Serializable]
     [DataContract]
-    public class AttributesFilter : PaginationFilter, IUrlQueryParameters
+    public class ProductUsageAvailability : ProductAvailability
     {
     }
 }

@@ -8,6 +8,10 @@
     <PackageProjectUrl>https://github.com/GAMP</PackageProjectUrl>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>obj\Debug\Gizmo.Web.Api.Models.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="MessagePack" Version="2.2.60" />
     <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />

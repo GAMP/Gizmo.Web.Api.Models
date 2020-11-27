@@ -28,7 +28,7 @@ namespace Gizmo.Web.Api.Models
         public int? EndingBefore { get; set; }
 
         /// <summary>
-        /// Limit the number of records to return. Limit can range between 1 and 100. The default values is 10.
+        /// Limit the number of records to return. Limit can range between 1 and 100. The default value is 10.
         /// </summary>
         [DataMember]
         public int Limit

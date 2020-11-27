@@ -44,16 +44,6 @@ namespace Gizmo.Web.Api.Models
         }
 
         /// <summary>
-        /// Gets or sets app profile id.
-        /// </summary>
-        [DataMember]
-        public int? AppGroupId
-        {
-            get;
-            set;
-        }
-
-        /// <summary>
         /// Gets or sets expire after days.
         /// </summary>
         [DataMember]
@@ -63,7 +53,7 @@ namespace Gizmo.Web.Api.Models
         }
 
         /// <summary>
-        /// Gets or sets expiration options.
+        /// The expiration options of the time product.
         /// </summary>
         [DataMember]
         public ProductTimeExpirationOptionType ExpirationOptions
@@ -117,5 +107,12 @@ namespace Gizmo.Web.Api.Models
         {
             get; set;
         }
+
+
+        /// <summary>
+        /// The usage availability of the product.
+        /// </summary>
+        [DataMember]
+        public ProductUsageAvailability ProductUsageAvailability { get; set; }
     }
 }
