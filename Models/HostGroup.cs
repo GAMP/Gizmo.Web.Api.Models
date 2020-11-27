@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
-    public class HostGroup : EntityBase
+    public class HostGroup : EntityBase, IUrlQueryParameters
     {
         /// <summary>
         /// The name of the host group.

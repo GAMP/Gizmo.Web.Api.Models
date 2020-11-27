@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [DataContract]
     [Serializable]
-    public class Attribute : EntityBase
+    public class Attribute : EntityBase, IUrlQueryParameters
     {
         /// <summary>
         /// The name of the attribute.

@@ -3,7 +3,7 @@
     /// <summary>
     /// Filters that can be applied when searching for host groups.
     /// </summary>
-    public class HostGroupsFilter : PaginationFilter
+    public class HostGroupsFilter : PaginationFilter , IUrlQueryParameters
     {
     }
 }
