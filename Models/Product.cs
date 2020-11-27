@@ -172,6 +172,9 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         public IEnumerable<ProductImage> ProductImages { get; set; }
 
+        /// <summary>
+        /// The purchase availability of the product.
+        /// </summary>
         [DataMember]
         public ProductPurchaseAvailability ProductPurchaseAvailability { get; set; }
 

@@ -1,0 +1,39 @@
+﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.Runtime.Serialization;
+
+namespace Gizmo.Web.Api.Models
+{
+    /// <summary>
+    /// Product user price base.
+    /// </summary>
+    [Serializable]
+    [DataContract]
+    public class ProductUserPriceBase : EntityBase
+    {
+        #region PROPERTIES
+
+        /// <summary>
+        /// The Id of the user group this user price is associated with.
+        /// </summary>
+        [DataMember]
+        [Required]
+        public int UserGroup { get; set; }
+
+        /// <summary>
+        /// The Id of the product this user price is associated with.
+        /// </summary>
+        [DataMember]
+        [Required]
+        public int Product { get; set; }
+
+        /// <summary>
+        /// The price for this user price.
+        /// </summary>
+        [DataMember]
+        [Required]
+        public decimal Price { get; set; }
+
+        #endregion
+    }
+}

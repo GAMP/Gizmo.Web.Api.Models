@@ -4,11 +4,10 @@ using System.Runtime.Serialization;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Product use availability.
+    /// Update result.
     /// </summary>
     [Serializable]
     [DataContract]
-    public class ProductUseAvailability : ProductAvailability
-    {
-    }
+    public class UpdateResult
+    { }
 }

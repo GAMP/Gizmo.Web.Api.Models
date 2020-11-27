@@ -108,7 +108,11 @@ namespace Gizmo.Web.Api.Models
             get; set;
         }
 
+
+        /// <summary>
+        /// The usage availability of the product.
+        /// </summary>
         [DataMember]
-        public ProductUseAvailability ProductUseAvailability { get; set; }
+        public ProductUsageAvailability ProductUsageAvailability { get; set; }
     }
 }
