@@ -24,6 +24,9 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         public PurchaseOptionType PurchaseOptions { get; set; }
 
+        [DataMember]
+        public bool IsEnabled { get; set; }
+
         #endregion
     }
 }
