@@ -1,23 +1,22 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// User group.
+    /// Product image.
     /// </summary>
     [Serializable]
     [DataContract]
-    public class UserGroup : UserGroupModelBase, IEntityBase
+    public class ProductImageModelBase
     {
         #region PROPERTIES
 
         /// <summary>
-        /// The Id of the object.
+        /// The image data of the product image.
         /// </summary>
         [DataMember]
-        public int Id { get; set; }
+        public byte[] Image { get; set; }
 
         #endregion
     }

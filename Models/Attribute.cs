@@ -9,21 +9,16 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [DataContract]
     [Serializable]
-    public class Attribute : EntityBase, IUrlQueryParameters
+    public class Attribute : AttributeModelBase, IEntityBase, IUrlQueryParameters
     {
-        /// <summary>
-        /// The name of the attribute.
-        /// </summary>
-        [DataMember]
-        [Required]
-        [StringLength(45)]
-        public string Name { get; set; }
+        #region PROPERTIES
 
         /// <summary>
-        /// The friendly name of the product.
+        /// The Id of the object.
         /// </summary>
         [DataMember]
-        [StringLength(45)]
-        public string FriendlyName { get; set; }
+        public int Id { get; set; }
+
+        #endregion
     }
 }

@@ -8,21 +8,15 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
-    public class ProductUserPrice : ProductUserPriceBase
+    public class ProductUserPrice : ProductUserPriceModelBase, IEntityBase
     {
         #region PROPERTIES
 
         /// <summary>
-        /// The price in points for this user price.
+        /// The Id of the object.
         /// </summary>
         [DataMember]
-        public int PointsPrice { get; set; }
-
-        /// <summary>
-        /// The purchase options for this user price.
-        /// </summary>
-        [DataMember]
-        public PurchaseOptionType PurchaseOptions { get; set; }
+        public int Id { get; set; }
 
         #endregion
     }

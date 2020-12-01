@@ -7,6 +7,8 @@ namespace Gizmo.Web.Api.Models
     [DataContract]
     public class RequiredUserInfo
     {
+        #region PROPERTIES
+
         [DataMember]
         public bool FirstName { get; set; }
 
@@ -51,5 +53,7 @@ namespace Gizmo.Web.Api.Models
 
         [DataMember]
         public bool UserGroup { get; set; }
+
+        #endregion
     }
 }

@@ -11,6 +11,8 @@ namespace Gizmo.Web.Api.Models
     [DataContract]
     public class ProductAvailabilityDay
     {
+        #region PROPERTIES
+
         /// <summary>
         /// The day of the week.
         /// </summary>
@@ -22,5 +24,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         public IEnumerable<ProductAvailabilityDayTime> DayTimesAvailable { get; set; }
+
+        #endregion
     }
 }

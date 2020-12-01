@@ -8,12 +8,16 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
-    public class ProductImage : EntityBase
+    public class ProductImage : ProductImageModelBase, IEntityBase
     {
+        #region PROPERTIES
+
         /// <summary>
-        /// The image data of the product image.
+        /// The Id of the object.
         /// </summary>
         [DataMember]
-        public byte[] Image { get; set; }
+        public int Id { get; set; }
+
+        #endregion
     }
 }

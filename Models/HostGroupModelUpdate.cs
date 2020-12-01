@@ -5,11 +5,11 @@ using System.Runtime.Serialization;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// User group.
+    /// Host group.
     /// </summary>
     [Serializable]
     [DataContract]
-    public class UserGroup : UserGroupModelBase, IEntityBase
+    public class HostGroupModelUpdate : HostGroupModelBase, IEntityBase, IUrlQueryParameters
     {
         #region PROPERTIES
 

@@ -11,6 +11,8 @@ namespace Gizmo.Web.Api.Models
     [DataContract]
     public class TimeProduct
     {
+        #region PROPERTIES
+
         /// <summary>
         /// Gets or sets minutes.
         /// </summary>
@@ -113,6 +115,8 @@ namespace Gizmo.Web.Api.Models
         /// The usage availability of the product.
         /// </summary>
         [DataMember]
-        public ProductUsageAvailability ProductUsageAvailability { get; set; }
+        public TimeProductUsageAvailability ProductUsageAvailability { get; set; }
+
+        #endregion
     }
 }

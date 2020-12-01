@@ -4,25 +4,25 @@ using System.Runtime.Serialization;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Product availability day time.
+    /// Product user price.
     /// </summary>
     [Serializable]
     [DataContract]
-    public class ProductAvailabilityDayTime
+    public class ProductUserPriceModelBase : ProductUserPriceBase
     {
         #region PROPERTIES
 
         /// <summary>
-        /// The start second of this time span.
+        /// The price in points for this user price.
         /// </summary>
         [DataMember]
-        public int StartSecond { get; set; }
+        public int PointsPrice { get; set; }
 
         /// <summary>
-        /// The end second of this time span.
+        /// The purchase options for this user price.
         /// </summary>
         [DataMember]
-        public int EndSecond { get; set; }
+        public PurchaseOptionType PurchaseOptions { get; set; }
 
         #endregion
     }

@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
-    public class ProductUserPriceBase : EntityBase
+    public class ProductUserPriceBase
     {
         #region PROPERTIES
 
