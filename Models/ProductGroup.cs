@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
-    public class ProductGroup : ProductGroupModelBase, IEntityBase
+    public class ProductGroup : ProductGroupModelBase, IEntityBase , IUrlQueryParameters
     {
         #region PROPERTIES
 
