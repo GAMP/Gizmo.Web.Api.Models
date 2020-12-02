@@ -12,6 +12,9 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         public int UserGroup { get; set; }
 
+        [DataMember]
+        public bool IsDisallowed { get; set; }
+
         #endregion
     }
 }

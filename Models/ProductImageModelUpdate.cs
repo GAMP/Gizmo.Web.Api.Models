@@ -1,15 +1,14 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Product bundle user price.
+    /// Product image.
     /// </summary>
     [Serializable]
     [DataContract]
-    public class ProductBundleUserPrice : ProductBundleUserPriceModelBase, IEntityBase
+    public class ProductImageModelUpdate : ProductImageModelBase, IEntityBase
     {
         #region PROPERTIES
 
@@ -19,12 +18,8 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         public int Id { get; set; }
 
-        /// <summary>
-        /// The Id of the bundled product this user price is associated with.
-        /// </summary>
         [DataMember]
-        [Required]
-        public int BundledProduct { get; set; }
+        public int Product { get; set; }
 
         #endregion
     }

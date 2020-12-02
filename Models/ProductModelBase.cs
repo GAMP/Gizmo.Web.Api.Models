@@ -114,16 +114,16 @@ namespace Gizmo.Web.Api.Models
         public bool StockAlert { get; set; }
 
         /// <summary>
-        /// Target different product.
-        /// </summary>
-        [DataMember]
-        public bool TargetDifferentProduct { get; set; }
-
-        /// <summary>
         /// The stock quantity threshold to alert, if the stock alert is enabled.
         /// </summary>
         [DataMember]
         public decimal StockAlertThreshold { get; set; }
+
+        /// <summary>
+        /// Target different product.
+        /// </summary>
+        [DataMember]
+        public bool StockTargetDifferentProduct { get; set; }
 
         /// <summary>
         /// The Id of the target product, if the product stock targets a different product.

@@ -5,16 +5,7 @@ namespace Gizmo.Web.Api.Models
 {
     [Serializable]
     [DataContract]
-    public class ProductDisallowedUserGroupModelCreate : ProductDisallowedUserGroupModelBase, IEntityBase
+    public class ProductDisallowedUserGroupModelCreate : ProductDisallowedUserGroupModelBase
     {
-        #region PROPERTIES
-
-        /// <summary>
-        /// The Id of the object.
-        /// </summary>
-        [DataMember]
-        public int Id { get; set; }
-
-        #endregion
     }
 }

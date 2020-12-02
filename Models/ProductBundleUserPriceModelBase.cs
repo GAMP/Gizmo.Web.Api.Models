@@ -11,15 +11,5 @@ namespace Gizmo.Web.Api.Models
     [DataContract]
     public class ProductBundleUserPriceModelBase : ProductUserPriceBase
     {
-        #region PROPERTIES
-
-        /// <summary>
-        /// The Id of the bundled product this user price is associated with.
-        /// </summary>
-        [DataMember]
-        [Required]
-        public int BundledProduct { get; set; }
-
-        #endregion
     }
 }

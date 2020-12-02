@@ -1,26 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
-    /// <summary>
-    /// Bundle.
-    /// </summary>
     [Serializable]
     [DataContract]
-    public class Bundle
+    public class ProductDisallowedUserGroupModelUpdate : ProductDisallowedUserGroupModelBase, IEntityBase
     {
         #region PROPERTIES
 
         /// <summary>
-        /// The stock options of the bundle.
+        /// The Id of the object.
         /// </summary>
         [DataMember]
-        public bool SelfStock { get; set; }
+        public int Id { get; set; }
 
         [DataMember]
-        public IEnumerable<BundledProduct> BundledProducts { get; set; }
+        public int Product { get; set; }
 
         #endregion
     }
