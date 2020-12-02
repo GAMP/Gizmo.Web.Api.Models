@@ -9,16 +9,15 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
-    public class ProductBundleUserPrice : ProductUserPriceBase
+    public class ProductBundleUserPrice : ProductBundleUserPriceModelBase, IEntityBase
     {
         #region PROPERTIES
 
         /// <summary>
-        /// The Id of the bundle product this user price is associated with.
+        /// The Id of the object.
         /// </summary>
         [DataMember]
-        [Required]
-        public int BundleProduct { get; set; }
+        public int Id { get; set; }
 
         #endregion
     }

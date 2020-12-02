@@ -1,15 +1,14 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// User group.
+    /// Product user price.
     /// </summary>
     [Serializable]
     [DataContract]
-    public class UserGroup : UserGroupModelBase, IEntityBase
+    public class ProductUserPriceModelUpdate : ProductUserPriceModelBase, IEntityBase
     {
         #region PROPERTIES
 

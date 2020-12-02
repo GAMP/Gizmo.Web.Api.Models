@@ -11,6 +11,8 @@ namespace Gizmo.Web.Api.Models
     [DataContract]
     public class Bundle
     {
+        #region PROPERTIES
+
         /// <summary>
         /// The stock options of the bundle.
         /// </summary>
@@ -18,6 +20,8 @@ namespace Gizmo.Web.Api.Models
         public BundleStockOptionType BundleStockOptions { get; set; }
 
         [DataMember]
-        public IEnumerable<BundleProduct> BundledProducts { get; set; }
+        public IEnumerable<BundledProduct> BundledProducts { get; set; }
+
+        #endregion
     }
 }

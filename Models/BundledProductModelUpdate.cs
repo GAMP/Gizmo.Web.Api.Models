@@ -1,15 +1,14 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// User group.
+    /// Bundled product.
     /// </summary>
     [Serializable]
     [DataContract]
-    public class UserGroup : UserGroupModelBase, IEntityBase
+    public class BundledProductModelUpdate : BundledProductModelBase, IEntityBase, IUrlQueryParameters
     {
         #region PROPERTIES
 
@@ -20,5 +19,10 @@ namespace Gizmo.Web.Api.Models
         public int Id { get; set; }
 
         #endregion
+
+        public string ToQueryParameters()
+        {
+            return ParameterGenerator.Generate(this);
+        }
     }
 }

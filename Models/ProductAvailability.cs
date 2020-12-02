@@ -11,6 +11,8 @@ namespace Gizmo.Web.Api.Models
     [DataContract]
     public class ProductAvailability
     {
+        #region PROPERTIES
+
         /// <summary>
         /// Whether the product is available only for a specific date range.
         /// </summary>
@@ -37,5 +39,7 @@ namespace Gizmo.Web.Api.Models
 
         [DataMember]
         public IEnumerable<ProductAvailabilityDay> DaysAvailable { get; set; }
+
+        #endregion
     }
 }

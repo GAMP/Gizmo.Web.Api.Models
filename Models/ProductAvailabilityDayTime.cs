@@ -10,6 +10,8 @@ namespace Gizmo.Web.Api.Models
     [DataContract]
     public class ProductAvailabilityDayTime
     {
+        #region PROPERTIES
+
         /// <summary>
         /// The start second of this time span.
         /// </summary>
@@ -21,5 +23,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         public int EndSecond { get; set; }
+
+        #endregion
     }
 }
