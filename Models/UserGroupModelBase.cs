@@ -81,7 +81,7 @@ namespace Gizmo.Web.Api.Models
         /// Disallow manual login.
         /// </summary>
         [DataMember]
-        public bool DisallowManualLogin { get; set; }
+        public bool DisallowLoginFromClient { get; set; }
 
         /// <summary>
         /// Allow guest use.
@@ -95,11 +95,11 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         public bool GuestUseOnly { get; set; }
 
-        /// <summary>
-        /// Enables or disables personal files.
-        /// </summary>
-        [DataMember]
-        public bool EnablePersonalFiles { get; set; }
+        ///// <summary>
+        ///// Enables or disables personal files.
+        ///// </summary>
+        //[DataMember]
+        //public bool EnablePersonalFiles { get; set; }
 
         /// <summary>
         /// Disallow login from manager.
@@ -107,11 +107,11 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         public bool DisallowLoginFromManager { get; set; }
 
-        /// <summary>
-        /// Enable per user credit limit.
-        /// </summary>
-        [DataMember]
-        public bool EnablePerUserCreditLimit { get; set; }
+        ///// <summary>
+        ///// Enable per user credit limit.
+        ///// </summary>
+        //[DataMember]
+        //public bool EnablePerUserCreditLimit { get; set; }
 
         /// <summary>
         /// Gets or sets if user group allows negative balance.
@@ -155,12 +155,21 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         public bool IsDefault { get; set; }
 
+        /// <summary>
+        /// Disable use of time offers.
+        /// </summary>
         [DataMember]
         public bool DisableTimeOffer { get; set; }
 
+        /// <summary>
+        /// Disable use of fixed time purchase.
+        /// </summary>
         [DataMember]
         public bool DisableFixedTime { get; set; }
 
+        /// <summary>
+        /// Disable use of deposits for time.
+        /// </summary>
         [DataMember]
         public bool DisableDeposit { get; set; }
 

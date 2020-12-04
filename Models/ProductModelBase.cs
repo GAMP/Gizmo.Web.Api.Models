@@ -57,13 +57,13 @@ namespace Gizmo.Web.Api.Models
         /// Client order disallowed.
         /// </summary>
         [DataMember]
-        public bool DisallowAllowOrder { get; set; }
+        public bool DisallowClientOrder { get; set; }
 
         /// <summary>
         /// Disallow ability of order for non users.
         /// </summary>
         [DataMember]
-        public bool RestrictNonCustomers { get; set; }
+        public bool RestrictGuestSale { get; set; }
         /// <summary>
         /// Restricts product sale.
         /// </summary>
@@ -120,7 +120,7 @@ namespace Gizmo.Web.Api.Models
         public decimal StockAlertThreshold { get; set; }
 
         /// <summary>
-        /// Target different product.
+        /// Enable stock keeping based on different product's stock.
         /// </summary>
         [DataMember]
         public bool StockTargetDifferentProduct { get; set; }
