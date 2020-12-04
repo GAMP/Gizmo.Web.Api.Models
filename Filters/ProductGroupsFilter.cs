@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.WebUtilities;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models

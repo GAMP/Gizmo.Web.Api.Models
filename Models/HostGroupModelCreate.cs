@@ -11,5 +11,9 @@ namespace Gizmo.Web.Api.Models
     [DataContract]
     public class HostGroupModelCreate : HostGroupModelBase, IUrlQueryParameters
     {
+        public string ToQueryParameters()
+        {
+            return ParameterGenerator.Generate(this);
+        }
     }
 }

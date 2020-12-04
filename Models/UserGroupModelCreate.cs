@@ -8,7 +8,11 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
-    public class UserGroupModelCreate : UserGroupModelBase
+    public class UserGroupModelCreate : UserGroupModelBase, IUrlQueryParameters
     {
+        public string ToQueryParameters()
+        {
+            return ParameterGenerator.Generate(this);
+        }
     }
 }

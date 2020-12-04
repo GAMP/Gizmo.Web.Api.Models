@@ -9,8 +9,10 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
-    public class ProductsFilter : PaginationFilter
+    public class ProductsFilter : PaginationFilter, IUrlQueryParameters
     {
+        #region PROPERTIES
+
         /// <summary>
         /// Return products of the specified product type.
         /// </summary>
@@ -34,5 +36,13 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         public bool IsDeleted { get; set; }
+
+        #endregion
+
+        public string ToQueryParameters()
+        {
+            return ParameterGenerator.Generate(this);
+        }
+
     }
 }

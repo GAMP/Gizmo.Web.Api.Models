@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
-    public class HostGroupModelBase : IUrlQueryParameters
+    public class HostGroupModelBase
     {
         #region PROPERTIES
 

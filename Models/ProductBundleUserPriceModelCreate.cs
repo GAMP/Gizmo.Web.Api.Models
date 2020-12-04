@@ -8,7 +8,11 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
-    public class ProductBundleUserPriceModelCreate : ProductBundleUserPriceModelBase
+    public class ProductBundleUserPriceModelCreate : ProductBundleUserPriceModelBase, IUrlQueryParameters
     {
+        public string ToQueryParameters()
+        {
+            return ParameterGenerator.Generate(this);
+        }
     }
 }

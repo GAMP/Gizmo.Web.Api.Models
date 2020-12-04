@@ -46,7 +46,7 @@ namespace Gizmo.Web.Api.Models
                 }                   
             }
 
-             return QueryHelpers.AddQueryString(string.Empty, queryCollection); ;
+             return QueryHelpers.AddQueryString(string.Empty, queryCollection);
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]

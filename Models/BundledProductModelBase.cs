@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
-    public class BundledProductModelBase : IUrlQueryParameters
+    public class BundledProductModelBase
     {
         #region PROPERTIES
 
@@ -35,10 +35,5 @@ namespace Gizmo.Web.Api.Models
         public decimal UnitPrice { get; set; }
 
         #endregion
-
-        public string ToQueryParameters()
-        {
-            return ParameterGenerator.Generate(this);
-        }
     }
 }

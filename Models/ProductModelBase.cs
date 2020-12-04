@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
-    public class ProductModelBase : IUrlQueryParameters
+    public class ProductModelBase
     {
         #region PROPERTIES
 
@@ -156,10 +156,5 @@ namespace Gizmo.Web.Api.Models
         public Guid Guid { get; set; }
 
         #endregion
-
-        public string ToQueryParameters()
-        {
-            return ParameterGenerator.Generate(this);
-        }
     }
 }

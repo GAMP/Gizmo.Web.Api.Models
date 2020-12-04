@@ -8,7 +8,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
-    public class UserGroupModelUpdate : UserGroupModelBase, IEntityBase
+    public class UserGroupModelUpdate : UserGroupModelBase, IEntityBase, IUrlQueryParameters
     {
         #region PROPERTIES
 
@@ -19,5 +19,10 @@ namespace Gizmo.Web.Api.Models
         public int Id { get; set; }
 
         #endregion
+
+        public string ToQueryParameters()
+        {
+            return ParameterGenerator.Generate(this);
+        }
     }
 }

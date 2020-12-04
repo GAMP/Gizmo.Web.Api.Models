@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
@@ -10,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
-    public class Product : ProductModelBase, IEntityBase, IUrlQueryParameters
+    public class Product : ProductModelBase, IEntityBase
     {
         #region PROPERTIES
 
@@ -42,10 +41,5 @@ namespace Gizmo.Web.Api.Models
         public ProductPurchaseAvailability ProductPurchaseAvailability { get; set; }
 
         #endregion
-
-        public string ToQueryParameters()
-        {
-            return ParameterGenerator.Generate(this);
-        }
     }
 }

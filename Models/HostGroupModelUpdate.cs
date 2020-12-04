@@ -20,5 +20,10 @@ namespace Gizmo.Web.Api.Models
         public int Id { get; set; }
 
         #endregion
+
+        public string ToQueryParameters()
+        {
+            return ParameterGenerator.Generate(this);
+        }
     }
 }

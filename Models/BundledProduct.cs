@@ -10,7 +10,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
-    public class BundledProduct : BundledProductModelBase, IEntityBase, IUrlQueryParameters
+    public class BundledProduct : BundledProductModelBase, IEntityBase
     {
         #region PROPERTIES
 
@@ -21,10 +21,5 @@ namespace Gizmo.Web.Api.Models
         public int Id { get; set; }
 
         #endregion
-
-        public string ToQueryParameters()
-        {
-            return ParameterGenerator.Generate(this);
-        }
     }
 }

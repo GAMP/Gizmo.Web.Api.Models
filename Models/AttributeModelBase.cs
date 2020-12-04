@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [DataContract]
     [Serializable]
-    public class AttributeModelBase : IUrlQueryParameters
+    public class AttributeModelBase
     {
         #region PROPERTIES
 
