@@ -5,7 +5,11 @@ namespace Gizmo.Web.Api.Models
 {
     [Serializable]
     [DataContract]
-    public class TimeProductDisallowedHostGroupModelCreate : TimeProductDisallowedHostGroupModelBase
+    public class TimeProductDisallowedHostGroupModelCreate : TimeProductDisallowedHostGroupModelBase, IUrlQueryParameters
     {
+        public string ToQueryParameters()
+        {
+            return ParameterGenerator.Generate(this);
+        }
     }
 }
