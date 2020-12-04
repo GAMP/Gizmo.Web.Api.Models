@@ -10,9 +10,5 @@ namespace Gizmo.Web.Api.Models
     [DataContract]
     public class ProductGroupsFilter : PaginationFilter, IUrlQueryParameters
     {
-        public string ToQueryParameters()
-        {
-            return ParameterGenerator.Generate(this);
-        }
     }
 }
