@@ -38,6 +38,9 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         public RequiredUserInfo RequiredUserInfo { get; set; }
 
+        /// <summary>
+        /// Whether to override the default application group.
+        /// </summary>
         [DataMember]
         public bool OverrideApplicationGroup { get; set; }
 
@@ -47,6 +50,9 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         public int? ApplicationGroup { get; set; }
 
+        /// <summary>
+        /// Whether to override the default security profile.
+        /// </summary>
         [DataMember]
         public bool OverrideSecurityProfile { get; set; }
 
@@ -56,6 +62,9 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         public int? SecurityProfile { get; set; }
 
+        /// <summary>
+        /// Whether to override the default age rating.
+        /// </summary>
         [DataMember]
         public bool OverrideAgeRating { get; set; }
 

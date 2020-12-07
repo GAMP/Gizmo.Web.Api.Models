@@ -33,6 +33,7 @@ namespace Gizmo.Web.Api.Models
         /// The sort option of the product group.
         /// </summary>
         [DataMember]
+        [Required]
         [MessagePack.Key(3)]
         public ProductSortOptionType SortOption { get; set; }
 

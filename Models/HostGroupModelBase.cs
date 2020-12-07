@@ -28,9 +28,6 @@ namespace Gizmo.Web.Api.Models
         [StringLength(255)]
         public string SkinName { get; set; }
 
-        [DataMember]
-        public HostGroupOptionType Options { get; set; }
-
         /// <summary>
         /// The Id of the application profile this host group is associated with.
         /// </summary>
