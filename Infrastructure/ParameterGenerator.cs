@@ -32,7 +32,14 @@ namespace Gizmo.Web.Api.Models
                 //check if null values should be added
                 if(propertyValue!=null)
                 {
-                    if(propertyValue is System.Collections.ICollection enumerable)
+                    //excludes byte of the ICollection if below
+                    if(propertyValue is Byte[] array)
+                    {
+                        //specific use of byte array(image case)
+                        if(property.Name == "Image")
+                            queryCollection.Add(property.Name, Convert.ToBase64String(array, 0, array.Length));
+                    }
+                    else if(propertyValue is System.Collections.ICollection enumerable)
                     {
                         foreach(var s in enumerable)
                         {
