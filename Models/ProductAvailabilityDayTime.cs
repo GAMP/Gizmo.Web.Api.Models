@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
@@ -16,12 +17,14 @@ namespace Gizmo.Web.Api.Models
         /// The start second of this time span.
         /// </summary>
         [DataMember]
+        [Required]
         public int StartSecond { get; set; }
 
         /// <summary>
         /// The end second of this time span.
         /// </summary>
         [DataMember]
+        [Required]
         public int EndSecond { get; set; }
 
         #endregion

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
@@ -16,6 +17,7 @@ namespace Gizmo.Web.Api.Models
         /// The image data of the product image.
         /// </summary>
         [DataMember]
+        [Required]
         public byte[] Image { get; set; }
 
         #endregion

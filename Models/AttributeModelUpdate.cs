@@ -17,6 +17,7 @@ namespace Gizmo.Web.Api.Models
         /// The Id of the object.
         /// </summary>
         [DataMember]
+        [Required]
         public int Id { get; set; }
 
         #endregion
