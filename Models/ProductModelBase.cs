@@ -17,6 +17,7 @@ namespace Gizmo.Web.Api.Models
         /// The type of the product.
         /// </summary>
         [DataMember]
+        [Required]
         public ProductType ProductType { get; set; }
 
         /// <summary>
@@ -54,7 +55,7 @@ namespace Gizmo.Web.Api.Models
         public decimal? Cost { get; set; }
 
         /// <summary>
-        /// Client order disallowed.
+        /// Disallow order from client.
         /// </summary>
         [DataMember]
         public bool DisallowClientOrder { get; set; }
@@ -74,6 +75,7 @@ namespace Gizmo.Web.Api.Models
         /// The purchase options of the product.
         /// </summary>
         [DataMember]
+        [Required]
         public PurchaseOptionType PurchaseOptions { get; set; }
 
         /// <summary>
@@ -154,6 +156,18 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         public Guid Guid { get; set; }
+
+        /// <summary>
+        /// The time product object attached to this product if the product is a time product, otherwise it will be null.
+        /// </summary>
+        [DataMember]
+        public TimeProduct TimeProduct { get; set; }
+
+        /// <summary>
+        /// The bundle object attached to this product if the product is a bundle, otherwise it will be null.
+        /// </summary>
+        [DataMember]
+        public Bundle Bundle { get; set; }
 
         #endregion
     }

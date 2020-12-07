@@ -3,6 +3,9 @@ using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
+    /// <summary>
+    /// Product disallowed user group.
+    /// </summary>
     [Serializable]
     [DataContract]
     public class ProductDisallowedUserGroupModelUpdate : ProductDisallowedUserGroupModelBase, IEntityBase, IUrlQueryParameters
@@ -15,14 +18,12 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         public int Id { get; set; }
 
+        /// <summary>
+        /// The Id of the product.
+        /// </summary>
         [DataMember]
         public int Product { get; set; }
 
         #endregion
-
-        public string ToQueryParameters()
-        {
-            return ParameterGenerator.Generate(this);
-        }
     }
 }

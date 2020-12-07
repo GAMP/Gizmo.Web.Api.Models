@@ -27,10 +27,5 @@ namespace Gizmo.Web.Api.Models
         public int BundledProduct { get; set; }
 
         #endregion
-
-        public string ToQueryParameters()
-        {
-            return ParameterGenerator.Generate(this);
-        }
     }
 }

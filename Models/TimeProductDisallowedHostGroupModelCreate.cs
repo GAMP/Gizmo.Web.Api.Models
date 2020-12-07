@@ -3,13 +3,12 @@ using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
+    /// <summary>
+    /// Time product disallowed host group.
+    /// </summary>
     [Serializable]
     [DataContract]
     public class TimeProductDisallowedHostGroupModelCreate : TimeProductDisallowedHostGroupModelBase, IUrlQueryParameters
     {
-        public string ToQueryParameters()
-        {
-            return ParameterGenerator.Generate(this);
-        }
     }
 }

@@ -22,7 +22,7 @@ namespace Gizmo.Web.Api.Models
         public string Name { get; set; }
 
         /// <summary>
-        /// The friendly name of the product.
+        /// The friendly name of the attribute.
         /// </summary>
         [DataMember]
         [StringLength(45)]

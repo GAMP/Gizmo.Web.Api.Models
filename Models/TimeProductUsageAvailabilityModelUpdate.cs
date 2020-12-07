@@ -10,9 +10,5 @@ namespace Gizmo.Web.Api.Models
     [DataContract]
     public class TimeProductUsageAvailabilityModelUpdate : TimeProductUsageAvailability, IUrlQueryParameters
     {
-        public string ToQueryParameters()
-        {
-            return ParameterGenerator.Generate(this);
-        }
     }
 }

@@ -11,9 +11,5 @@ namespace Gizmo.Web.Api.Models
     [Serializable]
     public class AttributeModelCreate : AttributeModelBase, IUrlQueryParameters
     {
-        public string ToQueryParameters()
-        {
-            return ParameterGenerator.Generate(this);
-        }
     }
 }

@@ -18,6 +18,9 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         public int Id { get; set; }
 
+        /// <summary>
+        /// The Id of the product this image belongs to.
+        /// </summary>
         [DataMember]
         public int Product { get; set; }
 

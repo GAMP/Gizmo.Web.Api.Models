@@ -38,11 +38,5 @@ namespace Gizmo.Web.Api.Models
         public bool IsDeleted { get; set; }
 
         #endregion
-
-        public string ToQueryParameters()
-        {
-            return ParameterGenerator.Generate(this);
-        }
-
     }
 }

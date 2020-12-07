@@ -10,9 +10,5 @@ namespace Gizmo.Web.Api.Models
     [DataContract]
     public class ProductPurchaseAvailabilityModelUpdate : ProductPurchaseAvailability, IUrlQueryParameters
     {
-        public string ToQueryParameters()
-        {
-            return ParameterGenerator.Generate(this);
-        }
     }
 }

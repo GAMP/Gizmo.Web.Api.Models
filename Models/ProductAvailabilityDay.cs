@@ -20,7 +20,7 @@ namespace Gizmo.Web.Api.Models
         public DayOfWeek Day { get; set; }
 
         /// <summary>
-        /// The timespans within the day which the product is available.
+        /// The timespans during which the product is available for this day.
         /// </summary>
         [DataMember]
         public IEnumerable<ProductAvailabilityDayTime> DayTimesAvailable { get; set; }

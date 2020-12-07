@@ -10,13 +10,23 @@ namespace Gizmo.Web.Api.Models
     [DataContract]
     public class UsersFilter : PaginationFilter
     {
+        /// <summary>
+        /// Return users of the specified user group.
+        /// </summary>
         [DataMember(EmitDefaultValue = false)]
-        public int? UserGroupId { get; set; }
+        public int? UserGroup { get; set; }
 
+        /// <summary>
+        /// Return disabled users.
+        /// </summary>
+        [DataMember(EmitDefaultValue = false)]
+        public bool? IsDisabled { get; set; }
+
+        /// <summary>
+        /// Return deleted users.
+        /// </summary>
         [DataMember(EmitDefaultValue = false)]
         public bool? IsDeleted { get; set; }
 
-        [DataMember(EmitDefaultValue = false)]
-        public bool? IsDisabled { get; set; }
     }
 }

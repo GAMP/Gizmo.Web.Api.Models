@@ -19,6 +19,9 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         public bool SelfStock { get; set; }
 
+        /// <summary>
+        /// The products within the bundle.
+        /// </summary>
         [DataMember]
         public IEnumerable<BundledProduct> BundledProducts { get; set; }
 

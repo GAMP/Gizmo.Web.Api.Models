@@ -3,6 +3,9 @@ using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
+    /// <summary>
+    /// Required user info.
+    /// </summary>
     [Serializable]
     [DataContract]
     public class RequiredUserInfo

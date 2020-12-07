@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     public class GetOptions
     {
         /// <summary>
-        /// Return records before the specified Id.
+        /// Include specified objects in the result.
         /// </summary>
         [DataMember]
         public List<string> Expand { get; set; }

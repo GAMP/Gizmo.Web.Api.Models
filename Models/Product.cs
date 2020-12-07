@@ -20,17 +20,8 @@ namespace Gizmo.Web.Api.Models
         public int Id { get; set; }
 
         /// <summary>
-        /// The time product object attached to this product if the product is a time product, otherwise it will be null.
+        /// The images of the product.
         /// </summary>
-        [DataMember]
-        public TimeProduct TimeProduct { get; set; }
-
-        /// <summary>
-        /// The bundle object attached to this product if the product is a bundle, otherwise it will be null.
-        /// </summary>
-        [DataMember]
-        public Bundle Bundle { get; set; }
-
         [DataMember]
         public IEnumerable<ProductImage> ProductImages { get; set; }
 

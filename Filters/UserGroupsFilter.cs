@@ -5,9 +5,5 @@
     /// </summary>
     public class UserGroupsFilter : PaginationFilter, IUrlQueryParameters
     {
-        public string ToQueryParameters()
-        {
-            return ParameterGenerator.Generate(this);
-        }
     }
 }
