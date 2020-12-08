@@ -20,6 +20,12 @@ namespace Gizmo.Web.Api.Models
         public int Id { get; set; }
 
         /// <summary>
+        /// The GUID of the product.
+        /// </summary>
+        [DataMember]
+        public Guid Guid { get; set; }
+
+        /// <summary>
         /// The images of the product.
         /// </summary>
         [DataMember]

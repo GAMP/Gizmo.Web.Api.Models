@@ -153,12 +153,6 @@ namespace Gizmo.Web.Api.Models
         public int DisplayOrder { get; set; }
 
         /// <summary>
-        /// The GUID of the product.
-        /// </summary>
-        [DataMember]
-        public Guid Guid { get; set; }
-
-        /// <summary>
         /// The time product object attached to this product if the product is a time product, otherwise it will be null.
         /// </summary>
         [DataMember]

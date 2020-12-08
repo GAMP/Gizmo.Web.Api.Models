@@ -37,13 +37,6 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(3)]
         public ProductSortOptionType SortOption { get; set; }
 
-        /// <summary>
-        /// The GUID of the product group.
-        /// </summary>
-        [DataMember]
-        [MessagePack.Key(4)]
-        public Guid Guid { get; set; }
-
         #endregion
     }
 }

@@ -14,14 +14,14 @@ namespace Gizmo.Web.Api.Models
         #region PROPERTIES
 
         /// <summary>
-        /// The start second of this time span.
+        /// The start second of this timespan.
         /// </summary>
         [DataMember]
         [Required]
         public int StartSecond { get; set; }
 
         /// <summary>
-        /// The end second of this time span.
+        /// The end second of this timespan.
         /// </summary>
         [DataMember]
         [Required]

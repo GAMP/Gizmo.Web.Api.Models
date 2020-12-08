@@ -24,76 +24,43 @@ namespace Gizmo.Web.Api.Models
         }
 
         /// <summary>
-        /// Gets or sets weekday maximum minutes.
+        /// Whether the time product expires at logout.
         /// </summary>
         [DataMember]
-        [Range(1, 7200)]
-        public int? WeekDayMaxMinutes
-        {
-            get;
-            set;
-        }
-
-        /// <summary>
-        /// Gets or sets weekend maximum minutes.
-        /// </summary>
-        [DataMember]
-        [Range(1, 2880)]
-        public int? WeekEndMaxMinutes
-        {
-            get;
-            set;
-        }
-
-        /// <summary>
-        /// Gets or sets expire after days.
-        /// </summary>
-        [DataMember]
-        public int ExpiresAfter
+        public bool ExpiresAtLogout
         {
             get; set;
         }
 
         /// <summary>
-        /// The expiration options of the time product.
+        /// Whether the time product expires at a specific time in the day.
         /// </summary>
         [DataMember]
-        public ProductTimeExpirationOptionType ExpirationOptions
-        {
-            get;
-            set;
-        }
-
-        /// <summary>
-        /// Gets or sets expire from options.
-        /// </summary>
-        [DataMember]
-        public ExpireFromOptionType ExpireFromOptions
+        public bool ExpireAtDayTime
         {
             get; set;
         }
 
         /// <summary>
-        /// Gets or sets usage options.
+        /// The minute in the day at which the time product expires.
         /// </summary>
         [DataMember]
-        public ProductTimeUsageOptionType UsageOptions
-        {
-            get;
-            set;
-        }
-
-        /// <summary>
-        /// Gets or sets use order.
-        /// </summary>
-        [DataMember]
-        public int UseOrder
+        public int ExpireAtDayTimeMinute
         {
             get; set;
         }
 
         /// <summary>
-        /// Gets or sets expire after type.
+        /// Whether the time product expires after a specific timespan.
+        /// </summary>
+        [DataMember]
+        public bool ExpireAfterTime
+        {
+            get; set;
+        }
+
+        /// <summary>
+        /// The type of timespan after which the time product expires.
         /// </summary>
         [DataMember]
         public ExpireAfterType ExpireAfterType
@@ -102,10 +69,28 @@ namespace Gizmo.Web.Api.Models
         }
 
         /// <summary>
-        /// Gets or sets expire at day time minute.
+        /// The size of the timespan after which the time product expires.
         /// </summary>
         [DataMember]
-        public int ExpireAtDayTimeMinute
+        public int ExpiresAfter
+        {
+            get; set;
+        }
+
+        /// <summary>
+        /// Gets or sets expire from options.
+        /// </summary>
+        [DataMember]
+        public ExpireFromOptionType ExpiresFrom
+        {
+            get; set;
+        }
+
+        /// <summary>
+        /// Gets or sets use order.
+        /// </summary>
+        [DataMember]
+        public int UseOrder
         {
             get; set;
         }

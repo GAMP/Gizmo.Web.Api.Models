@@ -19,6 +19,12 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         public int Id { get; set; }
 
+        /// <summary>
+        /// The GUID of the product group.
+        /// </summary>
+        [DataMember]
+        public Guid Guid { get; set; }
+
         #endregion
     }
 }
