@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
@@ -18,6 +19,13 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         public int Id { get; set; }
+
+        /// <summary>
+        /// The type of the product.
+        /// </summary>
+        [DataMember]
+        [Required]
+        public ProductType ProductType { get; set; }
 
         /// <summary>
         /// The GUID of the product.

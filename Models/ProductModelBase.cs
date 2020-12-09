@@ -15,13 +15,6 @@ namespace Gizmo.Web.Api.Models
         #region PROPERTIES
 
         /// <summary>
-        /// The type of the product.
-        /// </summary>
-        [DataMember]
-        [Required]
-        public ProductType ProductType { get; set; }
-
-        /// <summary>
         /// The Id of the product group this product belongs to.
         /// </summary>
         [DataMember]
