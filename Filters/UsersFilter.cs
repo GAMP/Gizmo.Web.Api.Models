@@ -14,7 +14,7 @@ namespace Gizmo.Web.Api.Models
         /// Return users of the specified user group.
         /// </summary>
         [DataMember(EmitDefaultValue = false)]
-        public int? UserGroup { get; set; }
+        public int? UserGroupId { get; set; }
 
         /// <summary>
         /// Return disabled users.

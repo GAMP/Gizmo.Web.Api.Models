@@ -23,7 +23,7 @@ namespace Gizmo.Web.Api.Models
         /// Return products that belongs to the specified product group.
         /// </summary>
         [DataMember]
-        public int? ProductGroup { get; set; }
+        public int? ProductGroupId { get; set; }
 
         /// <summary>
         /// Return products with names that contain the specified string.
