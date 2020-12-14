@@ -19,7 +19,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [Required]
-        public int ProductGroup { get; set; }
+        public int ProductGroupId { get; set; }
 
         /// <summary>
         /// The name of the product.
@@ -125,7 +125,7 @@ namespace Gizmo.Web.Api.Models
         /// The Id of the target product, if the product stock targets a different product.
         /// </summary>
         [DataMember]
-        public int? StockTargetProduct { get; set; }
+        public int? StockTargetProductId { get; set; }
 
         /// <summary>
         /// The ratio of the stock in relation to the stock of the target product, if the product stock targets a different product.

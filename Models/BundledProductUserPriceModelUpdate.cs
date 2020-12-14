@@ -25,7 +25,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [Required]
-        public int BundledProduct { get; set; }
+        public int BundledProductId { get; set; }
 
         #endregion
     }

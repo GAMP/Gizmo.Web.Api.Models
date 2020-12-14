@@ -18,7 +18,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [Required]
-        public int HostGroup { get; set; }
+        public int HostGroupId { get; set; }
 
         /// <summary>
         /// Whether this host group is disallowed for this time product.

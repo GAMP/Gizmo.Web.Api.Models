@@ -5,11 +5,11 @@ using System.Runtime.Serialization;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Bundled product user price.
+    /// Asset type.
     /// </summary>
-    [Serializable]
     [DataContract]
-    public class BundledProductUserPrice : BundledProductUserPriceModelBase, IEntityBase
+    [Serializable]
+    public class AssetType : AssetTypeModelBase, IEntityBase
     {
         #region PROPERTIES
 
@@ -18,13 +18,6 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         public int Id { get; set; }
-
-        /// <summary>
-        /// The Id of the bundled product this user price is associated with.
-        /// </summary>
-        [DataMember]
-        [Required]
-        public int BundledProductId { get; set; }
 
         #endregion
     }

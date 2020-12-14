@@ -1,14 +1,15 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Time product disallowed host group.
+    /// Payment method.
     /// </summary>
-    [Serializable]
     [DataContract]
-    public class TimeProductDisallowedHostGroup : TimeProductDisallowedHostGroupModelBase, IEntityBase
+    [Serializable]
+    public class PaymentMethodModelUpdate : PaymentMethodModelBase, IEntityBase, IUrlQueryParameters
     {
         #region PROPERTIES
 
@@ -16,13 +17,8 @@ namespace Gizmo.Web.Api.Models
         /// The Id of the object.
         /// </summary>
         [DataMember]
+        [Required]
         public int Id { get; set; }
-
-        /// <summary>
-        /// The Id of the time product.
-        /// </summary>
-        [DataMember]
-        public int TimeProductId { get; set; }
 
         #endregion
     }

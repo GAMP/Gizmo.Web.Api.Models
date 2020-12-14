@@ -18,7 +18,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [Required]
-        public int UserGroup { get; set; }
+        public int UserGroupId { get; set; }
 
         /// <summary>
         /// The price for this user price.

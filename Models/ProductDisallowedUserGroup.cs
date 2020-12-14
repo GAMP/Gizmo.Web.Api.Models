@@ -22,7 +22,7 @@ namespace Gizmo.Web.Api.Models
         /// The Id of the product.
         /// </summary>
         [DataMember]
-        public int Product { get; set; }
+        public int ProductId { get; set; }
 
         #endregion
     }

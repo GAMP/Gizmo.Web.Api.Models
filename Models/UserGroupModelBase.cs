@@ -48,7 +48,7 @@ namespace Gizmo.Web.Api.Models
         /// The Id of the application profile this user group is associated with.
         /// </summary>
         [DataMember]
-        public int? ApplicationGroup { get; set; }
+        public int? ApplicationGroupId { get; set; }
 
         /// <summary>
         /// Whether to override the default security profile.
@@ -60,7 +60,7 @@ namespace Gizmo.Web.Api.Models
         /// The Id of the security profile this user group is associated with.
         /// </summary>
         [DataMember]
-        public int? SecurityProfile { get; set; }
+        public int? SecurityProfileId { get; set; }
 
         /// <summary>
         /// Whether to override the default age rating.

@@ -18,7 +18,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [Required]
-        public int Product { get; set; }
+        public int ProductId { get; set; }
 
         /// <summary>
         /// The quantity of the product within the bundle.
