@@ -35,7 +35,7 @@ namespace Gizmo.Web.Api.Models
         /// Return deleted products.
         /// </summary>
         [DataMember]
-        public bool IsDeleted { get; set; }
+        public bool? IsDeleted { get; set; }
 
         #endregion
     }

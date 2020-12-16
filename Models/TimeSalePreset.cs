@@ -1,22 +1,24 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Filters that can be applied when searching for payment methods.
+    /// Time sale preset.
     /// </summary>
-    [Serializable]
     [DataContract]
-    public class PaymentMethodsFilter : PaginationFilter, IUrlQueryParameters
+    [Serializable]
+    public class TimeSalePreset
     {
         #region PROPERTIES
 
         /// <summary>
-        /// Return deleted payment methods.
+        /// The display order of the time sale preset.
         /// </summary>
         [DataMember]
-        public bool? IsDeleted { get; set; }
+        [Required]
+        public int DisplayOrder { get; set; }
 
         #endregion
     }

@@ -137,6 +137,7 @@ namespace Gizmo.Web.Api.Models
         /// Whether the product is deleted.
         /// </summary>
         [DataMember]
+        [Required]
         public bool IsDeleted { get; set; }
 
         /// <summary>

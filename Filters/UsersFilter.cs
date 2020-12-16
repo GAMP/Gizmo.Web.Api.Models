@@ -13,19 +13,19 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Return users of the specified user group.
         /// </summary>
-        [DataMember(EmitDefaultValue = false)]
+        [DataMember]
         public int? UserGroupId { get; set; }
 
         /// <summary>
         /// Return disabled users.
         /// </summary>
-        [DataMember(EmitDefaultValue = false)]
+        [DataMember]
         public bool? IsDisabled { get; set; }
 
         /// <summary>
         /// Return deleted users.
         /// </summary>
-        [DataMember(EmitDefaultValue = false)]
+        [DataMember]
         public bool? IsDeleted { get; set; }
 
     }

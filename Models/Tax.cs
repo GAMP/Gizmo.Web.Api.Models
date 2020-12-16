@@ -1,22 +1,23 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Filters that can be applied when searching for payment methods.
+    /// Tax.
     /// </summary>
-    [Serializable]
     [DataContract]
-    public class PaymentMethodsFilter : PaginationFilter, IUrlQueryParameters
+    [Serializable]
+    public class Tax : TaxModelBase, IEntityBase
     {
         #region PROPERTIES
 
         /// <summary>
-        /// Return deleted payment methods.
+        /// The Id of the object.
         /// </summary>
         [DataMember]
-        public bool? IsDeleted { get; set; }
+        public int Id { get; set; }
 
         #endregion
     }
