@@ -33,7 +33,7 @@ namespace Gizmo.Web.Api.Models
         public int? BillProfileId { get; set; }
 
         /// <summary>
-        /// Gets or sets required user info.
+        /// The required user info object attached to this user group.
         /// </summary>
         [DataMember]
         public RequiredUserInfo RequiredUserInfo { get; set; }
@@ -69,7 +69,7 @@ namespace Gizmo.Web.Api.Models
         public bool OverrideAgeRating { get; set; }
 
         /// <summary>
-        /// Gets or sets if age rating is enabled for the group.
+        /// Whether the age rating is enabled for the user group.
         /// </summary>
         [DataMember]
         public bool IsAgeRatingEnabled { get; set; }
@@ -123,7 +123,7 @@ namespace Gizmo.Web.Api.Models
         //public bool EnablePerUserCreditLimit { get; set; }
 
         /// <summary>
-        /// Gets or sets if user group allows negative balance.
+        /// Whether the users of this user group are allowed to have negative balance.
         /// </summary>
         [DataMember]
         public bool IsNegativeBalanceAllowed { get; set; }

@@ -17,7 +17,7 @@ namespace Gizmo.Web.Api.Models
         /// The price in points for this user price.
         /// </summary>
         [DataMember]
-        public int PointsPrice { get; set; }
+        public int? PointsPrice { get; set; }
 
         /// <summary>
         /// The purchase options for this user price.

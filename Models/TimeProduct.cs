@@ -14,7 +14,7 @@ namespace Gizmo.Web.Api.Models
         #region PROPERTIES
 
         /// <summary>
-        /// Gets or sets minutes.
+        /// The number of minutes of the time product.
         /// </summary>
         [DataMember]
         public int Minutes

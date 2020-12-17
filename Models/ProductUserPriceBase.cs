@@ -24,8 +24,7 @@ namespace Gizmo.Web.Api.Models
         /// The price for this user price.
         /// </summary>
         [DataMember]
-        [Required]
-        public decimal Price { get; set; }
+        public decimal? Price { get; set; }
 
         #endregion
     }
