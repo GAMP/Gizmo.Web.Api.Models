@@ -5,25 +5,28 @@ using System.Runtime.Serialization;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// User.
+    /// User attribute.
     /// </summary>
-    [DataContract]
     [Serializable]
-    public class User : UserModelBase, IEntityBase
+    [DataContract]
+    public class UserAttributeModelBase
     {
         #region PROPERTIES
 
         /// <summary>
-        /// The Id of the object.
+        /// The Id of the attribute this user attribute is associated with.
         /// </summary>
         [DataMember]
-        public int Id { get; set; }
+        [Required]
+        public int AttributeId { get; set; }
 
         /// <summary>
-        /// The GUID of the user.
+        /// The value of the user attribute.
         /// </summary>
         [DataMember]
-        public Guid Guid { get; set; }
+        [Required]
+        [StringLength(255)]
+        public string Value { get; set; }
 
         #endregion
     }

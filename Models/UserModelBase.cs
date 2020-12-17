@@ -16,28 +16,28 @@ namespace Gizmo.Web.Api.Models
         #region UserMember
 
         /// <summary>
-        /// Gets or sets username.
+        /// The username of the user.
         /// </summary>
         [DataMember]
-        [Required()]
+        [Required]
         [StringLength(30)]
         public string Username { get; set; }
 
         /// <summary>
-        /// Gets or sets email.
+        /// The email of the user.
         /// </summary>
         [DataMember]
         [StringLength(254)]
         public string Email { get; set; }
 
         /// <summary>
-        /// Gets or sets users group id.
+        /// The Id of the users group id this user belongs to.
         /// </summary>
         [DataMember]
         public int UserGroupId { get; set; }
 
         /// <summary>
-        /// Gets or sets if user allowed to have negative balance.
+        /// Whether the user is allowed to have negative balance.
         /// </summary>
         [DataMember]
         public bool? IsNegativeBalanceAllowed { get; set; }
@@ -46,6 +46,7 @@ namespace Gizmo.Web.Api.Models
         /// Gets or sets if personal info is requested.
         /// </summary>
         [DataMember]
+        [Required]
         public bool IsPersonalInfoRequested { get; set; }
 
         ///// <summary>
@@ -71,101 +72,96 @@ namespace Gizmo.Web.Api.Models
         #region User
 
         /// <summary>
-        /// Gets or sets first name.
+        /// The first name of the user.
         /// </summary>
         [DataMember]
         [StringLength(45)]
         public string FirstName { get; set; }
 
         /// <summary>
-        /// Gets or sets last name.
+        /// The last name of the user.
         /// </summary>
         [DataMember]
         [StringLength(45)]
         public string LastName { get; set; }
 
         /// <summary>
-        /// Gets or sets birth date.
+        /// The birth date of the user.
         /// </summary>
         [DataMember]
         public DateTime? BirthDate { get; set; }
 
         /// <summary>
-        /// Gets or sets address.
+        /// The address of the user.
         /// </summary>
         [DataMember]
         [StringLength(255)]
         public string Address { get; set; }
 
         /// <summary>
-        /// Gets or sets city.
+        /// The city of the user.
         /// </summary>
         [DataMember]
         [StringLength(45)]
         public string City { get; set; }
 
         /// <summary>
-        /// Gets or sets country.
+        /// The country of the user.
         /// </summary>
         [DataMember]
         [StringLength(45)]
         public string Country { get; set; }
 
         /// <summary>
-        /// Gets or sets post code.
+        /// The post code of the user.
         /// </summary>
         [DataMember]
         [StringLength(20)]
         public string PostCode { get; set; }
 
         /// <summary>
-        /// Gets or sets phone number.
+        /// The phone number of the user.
         /// </summary>
         [DataMember]
         [StringLength(20)]
         public string Phone { get; set; }
 
         /// <summary>
-        /// Gets or sets mobile phone number.
+        /// The mobile phone number of the user.
         /// </summary>
         [DataMember]
         [StringLength(20)]
         public string MobilePhone { get; set; }
 
-        ///// <summary>
-        ///// Gets or sets sex.
-        ///// </summary>
-        //[DataMember]
-        //public Sex Sex { get; set; }
-
         /// <summary>
-        /// Gets or sets if user is deleted.
+        /// The sex of the user.
         /// </summary>
         [DataMember]
+        public Sex Sex { get; set; }
+
+        /// <summary>
+        /// Whether the user is deleted.
+        /// </summary>
+        [DataMember]
+        [Required]
         public bool IsDeleted { get; set; }
 
         /// <summary>
-        /// Gets or sets if user is enabled.
+        /// Whether the user is disabled.
         /// </summary>
         [DataMember]
+        [Required]
         public bool IsDisabled { get; set; }
 
         /// <summary>
-        /// Gets or sets item guid.
-        /// </summary>
-        [Required()]
-        [DataMember]
-        public Guid Guid { get; set; }
-
-        /// <summary>
-        /// Gets or sets SmartCard UID.
+        /// The SmartCard UID of the user.
         /// </summary>
         [DataMember]
         [StringLength(255)]
         public string SmartCardUID { get; set; }
 
         /// <summary>
-        /// Gets or sets identification number.
+        /// The identification number of the user.
         /// </summary>
         [DataMember]
         [StringLength(255)]

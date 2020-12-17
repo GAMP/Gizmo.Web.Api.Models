@@ -5,45 +5,47 @@ using System.Runtime.Serialization;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Variable.
+    /// Register.
     /// </summary>
     [DataContract]
     [Serializable]
-    public class VariableModelBase
+    public class RegisterModelBase
     {
         #region PROPERTIES
 
         /// <summary>
-        /// The name of the variable.
+        /// The number of the register.
         /// </summary>
         [DataMember]
         [Required]
-        [StringLength(255)]
+        public int Number { get; set; }
+
+        /// <summary>
+        /// The name of the register.
+        /// </summary>
+        [DataMember]
+        [Required]
+        [StringLength(45)]
         public string Name { get; set; }
 
         /// <summary>
-        /// The value of the variable.
+        /// The MAC address of the register.
         /// </summary>
         [DataMember]
-        public string Value { get; set; }
+        [StringLength(255)]
+        public string MacAddress { get; set; }
 
         /// <summary>
-        /// Whether the variable is available in server.
+        /// The start cash of the register.
         /// </summary>
         [DataMember]
-        public bool AvailableInServer { get; set; }
+        public decimal StartCash { get; set; }
 
         /// <summary>
-        /// Whether the variable is available in client.
+        /// The idle timeout of the register.
         /// </summary>
         [DataMember]
-        public bool AvailableInClient { get; set; }
-
-        /// <summary>
-        /// Whether the variable is available in manager.
-        /// </summary>
-        [DataMember]
-        public bool AvailableInManager { get; set; }
+        public int? IdleTimeout { get; set; }
 
         #endregion
     }

@@ -50,7 +50,7 @@ namespace Gizmo.Web.Api.Models
         public bool IsLocked { get; set; }
 
         /// <summary>
-        /// Gets or sets icon id.
+        /// The Id of the host icon this host is associated with.
         /// </summary>
         [DataMember]
         public int? IconId { get; set; }

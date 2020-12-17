@@ -5,25 +5,20 @@ using System.Runtime.Serialization;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// User.
+    /// Host icon.
     /// </summary>
     [DataContract]
     [Serializable]
-    public class User : UserModelBase, IEntityBase
+    public class HostIconModelBase
     {
         #region PROPERTIES
 
         /// <summary>
-        /// The Id of the object.
+        /// The image data of the host icon.
         /// </summary>
         [DataMember]
-        public int Id { get; set; }
-
-        /// <summary>
-        /// The GUID of the user.
-        /// </summary>
-        [DataMember]
-        public Guid Guid { get; set; }
+        [Required]
+        public byte[] Image { get; set; }
 
         #endregion
     }

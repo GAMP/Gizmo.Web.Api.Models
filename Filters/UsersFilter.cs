@@ -17,6 +17,12 @@ namespace Gizmo.Web.Api.Models
         public int? UserGroupId { get; set; }
 
         /// <summary>
+        /// Return users with usernames that contain the specified string.
+        /// </summary>
+        [DataMember]
+        public string Username { get; set; }
+
+        /// <summary>
         /// Return disabled users.
         /// </summary>
         [DataMember]

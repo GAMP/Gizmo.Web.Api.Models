@@ -27,7 +27,7 @@ namespace Gizmo.Web.Api.Models
         public PurchaseOptionType PurchaseOptions { get; set; }
 
         /// <summary>
-        /// Whether this user prices is enabled.
+        /// Whether the user prices is enabled.
         /// </summary>
         [DataMember]
         public bool IsEnabled { get; set; }

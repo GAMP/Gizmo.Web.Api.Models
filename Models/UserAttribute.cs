@@ -1,28 +1,30 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Filters that can be applied when searching for hosts.
+    /// User attribute.
     /// </summary>
     [Serializable]
     [DataContract]
-    public class HostsFilter : PaginationFilter, IUrlQueryParameters
+    public class UserAttribute : UserAttributeModelBase, IEntityBase
     {
         #region PROPERTIES
 
         /// <summary>
-        /// Return hosts with names that contain the specified string.
+        /// The Id of the object.
         /// </summary>
         [DataMember]
-        public string HostName { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
-        /// Return deleted hosts.
+        /// The Id of the user this attribute belongs to.
         /// </summary>
         [DataMember]
-        public bool? IsDeleted { get; set; }
+        [Required]
+        public int UserId { get; set; }
 
         #endregion
     }

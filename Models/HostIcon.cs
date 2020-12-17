@@ -5,11 +5,11 @@ using System.Runtime.Serialization;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// User.
+    /// Host icon.
     /// </summary>
     [DataContract]
     [Serializable]
-    public class User : UserModelBase, IEntityBase
+    public class HostIcon : HostIconModelBase, IEntityBase
     {
         #region PROPERTIES
 
@@ -18,12 +18,6 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         public int Id { get; set; }
-
-        /// <summary>
-        /// The GUID of the user.
-        /// </summary>
-        [DataMember]
-        public Guid Guid { get; set; }
 
         #endregion
     }

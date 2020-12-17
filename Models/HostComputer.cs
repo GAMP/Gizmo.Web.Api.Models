@@ -19,7 +19,7 @@ namespace Gizmo.Web.Api.Models
 
         [DataMember]
         [Required]
-        public string MACAddress { get; set; }
+        public string MacAddress { get; set; }
 
         #endregion
     }
