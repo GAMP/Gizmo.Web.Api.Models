@@ -5,11 +5,11 @@ using System.Runtime.Serialization;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// User.
+    /// Operator.
     /// </summary>
     [DataContract]
     [Serializable]
-    public class User : UserModelBase, IEntityBase
+    public class Operator : OperatorModelBase, IEntityBase
     {
         #region PROPERTIES
 
@@ -20,13 +20,13 @@ namespace Gizmo.Web.Api.Models
         public int Id { get; set; }
 
         /// <summary>
-        /// The GUID of the user.
+        /// The GUID of the operator.
         /// </summary>
         [DataMember]
         public Guid Guid { get; set; }
 
         /// <summary>
-        /// The username of the user.
+        /// The username of the operator.
         /// </summary>
         [DataMember]
         [Required]
