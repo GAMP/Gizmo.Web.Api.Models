@@ -5,8 +5,16 @@
 		<LangVersion>latest</LangVersion>
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
 		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-		<Description>Contains all the web related models required for interacting with our web apis.</Description>
-		<PackageProjectUrl>https://github.com/GAMP</PackageProjectUrl>
+		<Description>Gizmo web api models. This library contains all the web related models required for interacting with our web apis and real time messaging endpoints.</Description>
+		<PackageProjectUrl>https://www.gizmopowered.net/</PackageProjectUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryUrl>https://github.com/GAMP/Gizmo.Web.Api.Models</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<Copyright>NETProjects</Copyright>
+		<Product>Gizmo</Product>
+		<Authors>NETProjects</Authors>
+		<Company>NETProjects</Company>
+		<PackageIcon>package_icon.png</PackageIcon>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -22,6 +30,13 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\Gizmo.Shared\Gizmo.Shared.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="Resources\package_icon.png">
+	    <Pack>True</Pack>
+	    <PackagePath></PackagePath>
+	  </None>
 	</ItemGroup>
 
 </Project>
