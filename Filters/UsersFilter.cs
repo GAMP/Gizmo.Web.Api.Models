@@ -8,7 +8,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
-    public class UsersFilter : PaginationFilter
+    public class UsersFilter : PaginationFilter , IUrlQueryParameters
     {
         /// <summary>
         /// Return users of the specified user group.
