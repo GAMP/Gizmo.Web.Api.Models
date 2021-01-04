@@ -18,7 +18,6 @@ namespace Gizmo.Web.Api.Models
         /// Whether the product is available only for a specific date range.
         /// </summary>
         [DataMember]
-        [Required]
         public bool DateRange { get; set; }
 
         /// <summary>
@@ -37,7 +36,6 @@ namespace Gizmo.Web.Api.Models
         /// Whether the product is available only for a specific time range within a day.
         /// </summary>
         [DataMember]
-        [Required]
         public bool TimeRange { get; set; }
 
         /// <summary>

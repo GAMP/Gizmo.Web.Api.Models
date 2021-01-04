@@ -25,6 +25,7 @@ namespace Gizmo.Web.Api.Models
         /// The value of the variable.
         /// </summary>
         [DataMember]
+        [Required]
         public string Value { get; set; }
 
         /// <summary>

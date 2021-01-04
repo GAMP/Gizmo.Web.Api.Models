@@ -25,6 +25,7 @@ namespace Gizmo.Web.Api.Models
         /// The value of the tax.
         /// </summary>
         [DataMember]
+        [Required]
         public decimal Value { get; set; }
 
         #endregion

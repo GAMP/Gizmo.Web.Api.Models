@@ -59,6 +59,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         public bool RestrictGuestSale { get; set; }
+
         /// <summary>
         /// Restricts product sale.
         /// </summary>
@@ -137,7 +138,6 @@ namespace Gizmo.Web.Api.Models
         /// Whether the product is deleted.
         /// </summary>
         [DataMember]
-        [Required]
         public bool IsDeleted { get; set; }
 
         /// <summary>

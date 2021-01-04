@@ -98,14 +98,12 @@ namespace Gizmo.Web.Api.Models
         /// Whether the operator is deleted.
         /// </summary>
         [DataMember]
-        [Required]
         public bool IsDeleted { get; set; }
 
         /// <summary>
         /// Whether the operator is disabled.
         /// </summary>
         [DataMember]
-        [Required]
         public bool IsDisabled { get; set; }
 
         /// <summary>

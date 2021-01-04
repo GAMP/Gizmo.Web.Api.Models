@@ -78,7 +78,7 @@ namespace Gizmo.Web.Api.Models
         }
 
         /// <summary>
-        /// Gets or sets expire from options.
+        /// The expire from options of the product.
         /// </summary>
         [DataMember]
         public ExpireFromOptionType ExpiresFrom
@@ -87,7 +87,7 @@ namespace Gizmo.Web.Api.Models
         }
 
         /// <summary>
-        /// Gets or sets use order.
+        /// The order in which the product is used.
         /// </summary>
         [DataMember]
         public int UseOrder

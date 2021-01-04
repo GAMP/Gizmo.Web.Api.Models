@@ -59,7 +59,6 @@ namespace Gizmo.Web.Api.Models
         /// Whether the host is deleted.
         /// </summary>
         [DataMember]
-        [Required]
         public bool IsDeleted { get; set; }
 
         /// <summary>

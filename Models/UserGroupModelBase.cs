@@ -27,10 +27,10 @@ namespace Gizmo.Web.Api.Models
         public string Description { get; set; }
 
         /// <summary>
-        /// Gets or sets bill profile id.
+        /// The Id of the billing profile this user group is associated with.
         /// </summary>
         [DataMember]
-        public int? BillProfileId { get; set; }
+        public int? BillingProfileId { get; set; }
 
         /// <summary>
         /// The required user info object attached to this user group.
@@ -87,7 +87,7 @@ namespace Gizmo.Web.Api.Models
         public bool HideLogoutButton { get; set; }
 
         /// <summary>
-        /// Disallow manual login.
+        /// Disallow login from client.
         /// </summary>
         [DataMember]
         public bool DisallowLoginFromClient { get; set; }
@@ -129,37 +129,37 @@ namespace Gizmo.Web.Api.Models
         public bool IsNegativeBalanceAllowed { get; set; }
 
         /// <summary>
-        /// Gets or sets credit limit.
+        /// The credit limit of the user group.
         /// </summary>
         [DataMember]
         public decimal CreditLimit { get; set; }
 
         /// <summary>
-        /// Gets or sets time point award options.
+        /// The points award options of the user group.
         /// </summary>
         [DataMember]
         public TimePointAwardOptionType PointsAwardOptions { get; set; }
 
         /// <summary>
-        /// Gets or sets points money ratio. 
+        /// The points money ratio.
         /// </summary>
         [DataMember]
         public decimal PointsMoneyRatio { get; set; }
 
         /// <summary>
-        /// Gets or sets points time multiplier.
+        /// The points time ratio.
         /// </summary>
         [DataMember]
         public int PointsTimeRatio { get; set; }
 
         /// <summary>
-        /// Gets or sets amount of points to award.
+        /// The amount of points to award.
         /// </summary>
         [DataMember]
-        public int? Points { get; set; }
+        public int? PointsAward { get; set; }
 
         /// <summary>
-        /// Gets or sets if user group is default for new users.
+        /// Whether the user group is default for new users.
         /// </summary>
         [DataMember]
         public bool IsDefault { get; set; }
@@ -183,15 +183,15 @@ namespace Gizmo.Web.Api.Models
         public bool DisableDeposit { get; set; }
 
         /// <summary>
-        /// Gets or sets user group priority.
-        /// </summary>
-        [DataMember]
-        public int WaitingLinePriority { get; set; }
-
-        /// <summary>
-        /// Gets or sets if waiting line priority enabled.
+        /// Whether the waiting line priority is enabled for the user group.
         /// </summary>
         [DataMember]
         public bool IsWaitingLinePriorityEnabled { get; set; }
+
+        /// <summary>
+        /// The waiting line priority of the user group.
+        /// </summary>
+        [DataMember]
+        public int WaitingLinePriority { get; set; }
     }
 }

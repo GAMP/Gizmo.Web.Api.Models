@@ -24,7 +24,6 @@ namespace Gizmo.Web.Api.Models
         /// Whether this user group is disallowed for this product.
         /// </summary>
         [DataMember]
-        [Required]
         public bool IsDisallowed { get; set; }
 
         #endregion

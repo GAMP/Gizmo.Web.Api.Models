@@ -39,7 +39,6 @@ namespace Gizmo.Web.Api.Models
         /// Whether the monetary unit is deleted.
         /// </summary>
         [DataMember]
-        [Required]
         public bool IsDeleted { get; set; }
 
         #endregion

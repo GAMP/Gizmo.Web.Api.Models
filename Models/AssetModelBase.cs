@@ -31,7 +31,6 @@ namespace Gizmo.Web.Api.Models
         /// The tag of the asset.
         /// </summary>
         [DataMember]
-        [Required]
         [StringLength(255)]
         public string Tag { get; set; }
 
@@ -39,7 +38,6 @@ namespace Gizmo.Web.Api.Models
         /// The smart card unique id of the asset.
         /// </summary>
         [DataMember]
-        [Required]
         [StringLength(255)]
         public string SmartCardUID { get; set; }
 
@@ -47,7 +45,6 @@ namespace Gizmo.Web.Api.Models
         /// The barcode of the asset.
         /// </summary>
         [DataMember]
-        [Required]
         [StringLength(255)]
         public string Barcode { get; set; }
 
@@ -55,7 +52,6 @@ namespace Gizmo.Web.Api.Models
         /// The serial number of the asset.
         /// </summary>
         [DataMember]
-        [Required]
         [StringLength(255)]
         public string SerialNumber { get; set; }
 
@@ -63,7 +59,6 @@ namespace Gizmo.Web.Api.Models
         /// Whether the asset is enabled.
         /// </summary>
         [DataMember]
-        [Required]
         public bool IsEnabled { get; set; }
 
         #endregion

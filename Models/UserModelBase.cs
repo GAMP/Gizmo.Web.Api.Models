@@ -38,7 +38,6 @@ namespace Gizmo.Web.Api.Models
         /// Gets or sets if personal info is requested.
         /// </summary>
         [DataMember]
-        [Required]
         public bool IsPersonalInfoRequested { get; set; }
 
         ///// <summary>
@@ -135,14 +134,12 @@ namespace Gizmo.Web.Api.Models
         /// Whether the user is deleted.
         /// </summary>
         [DataMember]
-        [Required]
         public bool IsDeleted { get; set; }
 
         /// <summary>
         /// Whether the user is disabled.
         /// </summary>
         [DataMember]
-        [Required]
         public bool IsDisabled { get; set; }
 
         /// <summary>

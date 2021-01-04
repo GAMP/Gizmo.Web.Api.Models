@@ -24,7 +24,6 @@ namespace Gizmo.Web.Api.Models
         /// Whether this host group is disallowed for this time product.
         /// </summary>
         [DataMember]
-        [Required]
         public bool IsDisallowed { get; set; }
 
         #endregion
