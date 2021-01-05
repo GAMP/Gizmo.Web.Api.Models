@@ -25,7 +25,6 @@ namespace Gizmo.Web.Api.Models
         /// The display order of the payment method.
         /// </summary>
         [DataMember]
-        [Required]
         public int DisplayOrder { get; set; }
 
         /// <summary>

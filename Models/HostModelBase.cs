@@ -35,18 +35,15 @@ namespace Gizmo.Web.Api.Models
         public string Name { get; set; }
 
         /// <summary>
-        /// Default state.
-        /// </summary>
-        public bool IsInOrder { get; set; }
-
-        /// <summary>
         /// Host is out of order.
         /// </summary>
+        [DataMember]
         public bool IsOutOfOrder { get; set; }
 
         /// <summary>
         /// Host is locked.
         /// </summary>
+        [DataMember]
         public bool IsLocked { get; set; }
 
         /// <summary>

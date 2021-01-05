@@ -17,7 +17,6 @@ namespace Gizmo.Web.Api.Models
         /// The display order of the time sale preset.
         /// </summary>
         [DataMember]
-        [Required]
         public int DisplayOrder { get; set; }
 
         #endregion
