@@ -13,10 +13,16 @@ namespace Gizmo.Web.Api.Models
     {
         #region PROPERTIES
 
+        /// <summary>
+        /// The windows name of the computer.
+        /// </summary>
         [DataMember]
         [Required]
         public string WindowsName { get; set; }
 
+        /// <summary>
+        /// The MAC Address of the computer.
+        /// </summary>
         [DataMember]
         [Required]
         public string MacAddress { get; set; }

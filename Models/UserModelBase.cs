@@ -16,6 +16,14 @@ namespace Gizmo.Web.Api.Models
         #region UserMember
 
         /// <summary>
+        /// The username of the user.
+        /// </summary>
+        [DataMember]
+        [Required]
+        [StringLength(30)]
+        public string Username { get; set; }
+
+        /// <summary>
         /// The email of the user.
         /// </summary>
         [DataMember]
@@ -26,6 +34,7 @@ namespace Gizmo.Web.Api.Models
         /// The Id of the users group id this user belongs to.
         /// </summary>
         [DataMember]
+        [Required]
         public int UserGroupId { get; set; }
 
         /// <summary>
@@ -35,7 +44,7 @@ namespace Gizmo.Web.Api.Models
         public bool? IsNegativeBalanceAllowed { get; set; }
 
         /// <summary>
-        /// Gets or sets if personal info is requested.
+        /// Whether the personal info has been requested from the user.
         /// </summary>
         [DataMember]
         public bool IsPersonalInfoRequested { get; set; }
@@ -47,13 +56,13 @@ namespace Gizmo.Web.Api.Models
         //public BillingOption? BillingOptions { get; set; }
 
         /// <summary>
-        /// Gets or sets user re-enable date-time.
+        /// The date the user will be enabled again.
         /// </summary>
         [DataMember]
         public DateTime? EnableDate { get; set; }
 
         /// <summary>
-        /// Gets or sets disabled date-time.
+        /// The date the user has been disabled.
         /// </summary>
         [DataMember]
         public DateTime? DisabledDate { get; set; }
@@ -147,7 +156,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [StringLength(255)]
-        public string SmartCardUID { get; set; }
+        public string SmartCardUid { get; set; }
 
         /// <summary>
         /// The identification number of the user.

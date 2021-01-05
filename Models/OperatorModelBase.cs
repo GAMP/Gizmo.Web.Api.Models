@@ -16,6 +16,14 @@ namespace Gizmo.Web.Api.Models
         #region UsersOperator
 
         /// <summary>
+        /// The username of the operator.
+        /// </summary>
+        [DataMember]
+        [Required]
+        [StringLength(30)]
+        public string Username { get; set; }
+
+        /// <summary>
         /// The email of the operator.
         /// </summary>
         [DataMember]
@@ -111,7 +119,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [StringLength(255)]
-        public string SmartCardUID { get; set; }
+        public string SmartCardUid { get; set; }
 
         /// <summary>
         /// The identification number of the operator.

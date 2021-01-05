@@ -39,7 +39,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [StringLength(255)]
-        public string SmartCardUID { get; set; }
+        public string SmartCardUid { get; set; }
 
         /// <summary>
         /// The barcode of the asset.

@@ -25,14 +25,6 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         public Guid Guid { get; set; }
 
-        /// <summary>
-        /// The username of the operator.
-        /// </summary>
-        [DataMember]
-        [Required]
-        [StringLength(30)]
-        public string Username { get; set; }
-
         #endregion
     }
 }

@@ -13,6 +13,9 @@ namespace Gizmo.Web.Api.Models
     {
         #region PROPERTIES
 
+        /// <summary>
+        /// The maximum number of users the endpoint can host.
+        /// </summary>
         [DataMember]
         [Required]
         public int MaximumUsers { get; set; }
