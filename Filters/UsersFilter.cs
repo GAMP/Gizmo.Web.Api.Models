@@ -23,6 +23,12 @@ namespace Gizmo.Web.Api.Models
         public string Username { get; set; }
 
         /// <summary>
+        /// Return guest users.
+        /// </summary>
+        [DataMember]
+        public bool? IsGuest { get; set; }
+
+        /// <summary>
         /// Return disabled users.
         /// </summary>
         [DataMember]

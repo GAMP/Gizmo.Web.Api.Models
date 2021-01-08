@@ -25,6 +25,12 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         public Guid Guid { get; set; }
 
+        /// <summary>
+        /// Whether the user is guest.
+        /// </summary>
+        [DataMember]
+        public bool IsGuest { get; set; }
+
         #endregion
     }
 }
