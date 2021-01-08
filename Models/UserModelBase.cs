@@ -49,12 +49,6 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         public bool IsPersonalInfoRequested { get; set; }
 
-        ///// <summary>
-        ///// Gets or sets billing options.
-        ///// </summary>
-        //[DataMember]
-        //public BillingOption? BillingOptions { get; set; }
-
         /// <summary>
         /// The date the user will be enabled again.
         /// </summary>

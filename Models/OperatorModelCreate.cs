@@ -11,5 +11,11 @@ namespace Gizmo.Web.Api.Models
     [Serializable]
     public class OperatorModelCreate : OperatorModelBase, IUrlQueryParameters
     {
+        /// <summary>
+        /// The initial password for the operator, if left empty no password will be set.
+        /// </summary>
+        [DataMember]
+        [StringLength(24)]
+        public string Password { get; set; }
     }
 }

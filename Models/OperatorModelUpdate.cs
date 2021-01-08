@@ -20,6 +20,13 @@ namespace Gizmo.Web.Api.Models
         [Required]
         public int Id { get; set; }
 
+        /// <summary>
+        /// The new password for the operator, if left empty the password will remain the same.
+        /// </summary>
+        [DataMember]
+        [StringLength(24)]
+        public string Password { get; set; }
+
         #endregion
     }
 }

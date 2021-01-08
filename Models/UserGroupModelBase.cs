@@ -104,23 +104,11 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         public bool GuestUseOnly { get; set; }
 
-        ///// <summary>
-        ///// Enables or disables personal files.
-        ///// </summary>
-        //[DataMember]
-        //public bool EnablePersonalFiles { get; set; }
-
         /// <summary>
         /// Disallow login from manager.
         /// </summary>
         [DataMember]
         public bool DisallowLoginFromManager { get; set; }
-
-        ///// <summary>
-        ///// Enable per user credit limit.
-        ///// </summary>
-        //[DataMember]
-        //public bool EnablePerUserCreditLimit { get; set; }
 
         /// <summary>
         /// Whether the users of this user group are allowed to have negative balance.
