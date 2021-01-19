@@ -3,7 +3,11 @@
     ///<inheritdoc/>
     public enum MessageTypeDiscriminator 
     {
+        /// <summary>
+        /// Generic message.
+        /// </summary>
         Message = 0,
+
         /// <summary>
         /// Detailed message.
         /// </summary>

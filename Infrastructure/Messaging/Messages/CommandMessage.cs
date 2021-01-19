@@ -8,10 +8,13 @@ namespace Gizmo.Web.Api.Messaging
     /// </summary>
     [DataContract()]
     [JsonConverter(typeof(MessageJsonConverter))]
-    public class CommandMessage : MessageBase
+    public class CommandMessage : DetailedMessage
     {
         #region CONSTRUCTOR
         
+        /// <summary>
+        /// Creates new instance.
+        /// </summary>
         public CommandMessage() : base()
         { } 
 
@@ -22,7 +25,7 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets command correlation id.
         /// </summary>
-        [DataMember(Order = 1)]
+        [DataMember(Order = 2,IsRequired =false)]
         public string CorellationId
         {
             get; set;
@@ -31,7 +34,7 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets server timeout.
         /// </summary>
-        [DataMember(Order = 2)]
+        [DataMember(Order = 3,IsRequired =false)]
         public int? ServerTimeout
         {
             get;set;
