@@ -4,11 +4,11 @@ using System.Runtime.Serialization;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Filters that can be applied when searching for billing profiles.
+    /// User note.
     /// </summary>
     [Serializable]
     [DataContract]
-    public class BillingProfilesFilter : PaginationFilter, IUrlQueryParameters
+    public class UserNoteModelCreate : UserNoteModelBase, IUrlQueryParameters
     {
     }
 }

@@ -62,10 +62,22 @@ namespace Gizmo.Web.Api.Models
         [StringLength(6)]
         public string Pin { get; set; }
 
+        /// <summary>
+        /// The status of the reservation.
+        /// </summary>
+        [DataMember]
+        public ReservationStatus Status { get; set; }
+
+        /// <summary>
+        /// The reserved hosts by this reservation.
+        /// </summary>
         [DataMember]
         [Required]
         public IEnumerable<ReservationHost> Hosts { get; set; }
 
+        /// <summary>
+        /// The users of this reservation.
+        /// </summary>
         [DataMember]
         public IEnumerable<ReservationUser> Users { get; set; }
 

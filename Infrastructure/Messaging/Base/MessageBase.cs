@@ -14,7 +14,7 @@ namespace Gizmo.Web.Api.Messaging
         #region PROPERTIES
 
         /// <summary>
-        /// Gets message versiion.
+        /// Gets message version.
         /// </summary>
         [DataMember(EmitDefaultValue = true, IsRequired = false, Order = 0)]
         public int Version
