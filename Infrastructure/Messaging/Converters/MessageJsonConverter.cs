@@ -24,11 +24,11 @@ namespace Gizmo.Web.Api.Messaging
             { MessageTypeDiscriminator.CommandMessage, typeof(CommandMessage) },
             { MessageTypeDiscriminator.DetailMessage, typeof(DetailedMessage) },
         };
-        const string DESCRIMINATOR_NAME = "TypeDiscriminator";
+        private const string DESCRIMINATOR_NAME = "TypeDiscriminator";
 
         #endregion
 
-        /// <inheritdoc/>
+        /// <inheritdoc/>                    
         public override bool CanConvert(Type typeToConvert)
         {
             return TypeMap.ContainsValue(typeToConvert);
@@ -69,6 +69,9 @@ namespace Gizmo.Web.Api.Messaging
                     break;
             }
 
+            reader.Read();
+            reader.Read();
+
             return message;
         }
 
@@ -78,13 +81,11 @@ namespace Gizmo.Web.Api.Messaging
             if (reader.TokenType != JsonTokenType.PropertyName)
                 return;
 
-            detailedMessage.Detail = ReadDetail(ref reader);          
-
+            detailedMessage.Detail = ReadDetail(ref reader);
         }
 
         private void ReadMessage(ref Utf8JsonReader reader, CommandMessage commandMessage)
         {
-
         }
 
         private IMessageDetail ReadDetail(ref Utf8JsonReader reader)
@@ -106,7 +107,7 @@ namespace Gizmo.Web.Api.Messaging
 
                     //we should had messages property name here
                     if (reader.TokenType != JsonTokenType.PropertyName)
-                        break;                 
+                        break;
 
                     while (reader.Read())
                     {
@@ -137,9 +138,6 @@ namespace Gizmo.Web.Api.Messaging
 
             return detail;
         }
-
-   
-
 
         /// <inheritdoc/>
         public override void Write(Utf8JsonWriter writer, MessageBase value, JsonSerializerOptions options)
@@ -209,7 +207,7 @@ namespace Gizmo.Web.Api.Messaging
 
             switch (messageDetail)
             {
-                case EntityMessageDetail entity:
+                    case EntityMessageDetail entity:
                     WriteDescriminator(writer, MessageDetailTypeDiscriminator.EntityEventDetail);
                     writer.WriteNumber(nameof(entity.EntityId), entity.EntityId);
                     writer.WriteString(nameof(entity.EntityType), entity.EntityType);
