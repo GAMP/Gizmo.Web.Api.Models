@@ -20,9 +20,9 @@ namespace Gizmo.Web.Api.Messaging
 
         private static readonly Dictionary<MessageTypeDiscriminator, Type> TypeMap = new Dictionary<MessageTypeDiscriminator, Type>()
         {
-            { MessageTypeDiscriminator.Message, typeof(MessageBase) },
-            { MessageTypeDiscriminator.CommandMessage, typeof(CommandMessage) },
-            { MessageTypeDiscriminator.DetailMessage, typeof(DetailedMessage) },
+            { MessageTypeDiscriminator.Command, typeof(MessageBase) },
+            { MessageTypeDiscriminator.Control, typeof(CommandMessage) },
+            { MessageTypeDiscriminator.Data, typeof(DataMessage) },
         };
         private const string DESCRIMINATOR_NAME = "TypeDiscriminator";
 
@@ -44,9 +44,9 @@ namespace Gizmo.Web.Api.Messaging
 
             MessageBase message = messageType switch
             {
-                MessageTypeDiscriminator.DetailMessage => new DetailedMessage(),
-                MessageTypeDiscriminator.CommandMessage => new CommandMessage(),
-                MessageTypeDiscriminator.Message => throw new NotImplementedException(),
+                MessageTypeDiscriminator.Data => new DataMessage(),
+                MessageTypeDiscriminator.Control => new CommandMessage(),
+                MessageTypeDiscriminator.Command => throw new NotImplementedException(),
                 _ => throw new JsonException()
             };
 
@@ -59,13 +59,13 @@ namespace Gizmo.Web.Api.Messaging
 
             switch (messageType)
             {
-                case MessageTypeDiscriminator.CommandMessage:
+                case MessageTypeDiscriminator.Control:
                     ReadMessage(ref reader, message as CommandMessage);
                     break;
-                case MessageTypeDiscriminator.DetailMessage:
-                    ReadMessage(ref reader, message as DetailedMessage);
+                case MessageTypeDiscriminator.Data:
+                    ReadMessage(ref reader, message as DataMessage);
                     break;
-                case MessageTypeDiscriminator.Message:
+                case MessageTypeDiscriminator.Command:
                     break;
             }
 
@@ -75,7 +75,7 @@ namespace Gizmo.Web.Api.Messaging
             return message;
         }
 
-        private void ReadMessage(ref Utf8JsonReader reader, DetailedMessage detailedMessage)
+        private void ReadMessage(ref Utf8JsonReader reader, DataMessage detailedMessage)
         {
             reader.Read();
             if (reader.TokenType != JsonTokenType.PropertyName)
@@ -146,12 +146,14 @@ namespace Gizmo.Web.Api.Messaging
             writer.WriteStartObject();
 
             //get desciminator type
-            MessageTypeDiscriminator messageTypeDiscriminator = MessageTypeDiscriminator.Message;
+            MessageTypeDiscriminator messageTypeDiscriminator = MessageTypeDiscriminator.Command;
 
-            if (value is DetailedMessage)
-                messageTypeDiscriminator = MessageTypeDiscriminator.DetailMessage;
+            if (value is DataMessage)
+                messageTypeDiscriminator = MessageTypeDiscriminator.Data;
             else if (value is CommandMessage)
-                messageTypeDiscriminator = MessageTypeDiscriminator.CommandMessage;
+                messageTypeDiscriminator = MessageTypeDiscriminator.Control;
+            else if (value is ControlMessage)
+                messageTypeDiscriminator = MessageTypeDiscriminator.Control;
 
             //write descriminator type
             WriteDescriminator(writer, messageTypeDiscriminator);
@@ -162,10 +164,10 @@ namespace Gizmo.Web.Api.Messaging
             //write based on message type
             switch (messageTypeDiscriminator)
             {
-                case MessageTypeDiscriminator.DetailMessage:
-                    WriteMessage(writer, value as DetailedMessage);
+                case MessageTypeDiscriminator.Data:
+                    WriteMessage(writer, value as DataMessage);
                     break;
-                case MessageTypeDiscriminator.CommandMessage:
+                case MessageTypeDiscriminator.Control:
                     WriteMessage(writer, value as CommandMessage);
                     break;
             }
@@ -174,7 +176,7 @@ namespace Gizmo.Web.Api.Messaging
             writer.WriteEndObject();
         }
 
-        private void WriteMessage(Utf8JsonWriter writer, DetailedMessage detailedMessage)
+        private void WriteMessage(Utf8JsonWriter writer, DataMessage detailedMessage)
         {
             if (detailedMessage == null)
                 throw new JsonException();
@@ -186,7 +188,7 @@ namespace Gizmo.Web.Api.Messaging
             //write message detail if its present
             if (detail != null)
             {
-                writer.WriteStartObject(nameof(DetailedMessage.Detail));
+                writer.WriteStartObject(nameof(DataMessage.Detail));
                 WriteMessageDetail(writer, detail);
                 writer.WriteEndObject();
             }

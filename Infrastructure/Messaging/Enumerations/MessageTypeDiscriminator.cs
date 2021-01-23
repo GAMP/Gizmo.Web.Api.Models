@@ -1,21 +1,21 @@
 ﻿namespace Gizmo.Web.Api.Messaging
 {
     ///<inheritdoc/>
-    public enum MessageTypeDiscriminator 
+    public enum MessageTypeDiscriminator
     {
         /// <summary>
-        /// Generic message.
+        /// Command message.
         /// </summary>
-        Message = 0,
+        Command = 0,
 
         /// <summary>
         /// Detailed message.
         /// </summary>
-        DetailMessage = 1,
+        Data = 1,
 
         /// <summary>
-        /// Command message.
+        /// Control message.
         /// </summary>
-        CommandMessage=2,
+        Control = 2,
     }
 }

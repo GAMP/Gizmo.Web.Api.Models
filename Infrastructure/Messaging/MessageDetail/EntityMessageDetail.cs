@@ -6,9 +6,9 @@ namespace Gizmo.Web.Api.Messaging
     /// Entity message detail.
     /// </summary>
     [DataContract()]
-    public class EntityMessageDetail : IMessageDetail
+    public class EntityMessageDetail : MessageDetailBase
     {
-        #region PROPERTIES
+         #region PROPERTIES
 
         /// <summary>
         /// Gets entity id.

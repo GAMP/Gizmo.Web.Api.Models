@@ -7,8 +7,7 @@ namespace Gizmo.Web.Api.Messaging
     /// Detailed message.
     /// </summary>
     [DataContract()]
-    [JsonConverter(typeof(MessageJsonConverter))]
-    public class DetailedMessage : MessageBase, IDetailedMessage
+    public class DataMessage : MessageBase, IDataMessage
     {
         #region CONSTRUCTOR
 
@@ -16,15 +15,15 @@ namespace Gizmo.Web.Api.Messaging
         /// Creates new instance.
         /// </summary>
         /// <param name="detail">Message detail</param>
-        public DetailedMessage(IMessageDetail detail)
+        public DataMessage(IMessageDetail detail) : this()
         {
             Detail = detail;
         }
 
         /// <summary>
-        /// <inheritdoc cref="DetailedMessage(IMessageDetail)"/>
+        /// <inheritdoc cref="DataMessage(IMessageDetail)"/>
         /// </summary>
-        public DetailedMessage() : base()
+        public DataMessage() : base()
         {
         }
 

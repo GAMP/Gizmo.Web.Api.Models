@@ -7,8 +7,7 @@ namespace Gizmo.Web.Api.Messaging
     /// Command message.
     /// </summary>
     [DataContract()]
-    [JsonConverter(typeof(MessageJsonConverter))]
-    public class CommandMessage : DetailedMessage
+    public class CommandMessage : MessageBase
     {
         #region CONSTRUCTOR
         
