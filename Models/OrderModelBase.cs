@@ -59,11 +59,5 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         public int? RegisterId { get; set; }
 
-        /// <summary>
-        /// The lines of the order.
-        /// </summary>
-        [DataMember]
-        public new IEnumerable<OrderLine> OrderLines { get; set; }
-
     }
 }

@@ -29,5 +29,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         public decimal Amount { get; set; }
+
+        /// <summary>
+        /// Gets
+        /// </summary>
+        [DataMember]
+        public int? PaymentMethodId { get; set; }
     }
 }

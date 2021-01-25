@@ -8,7 +8,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [DataContract]
     [Serializable]
-    public class ProductStock
+    public class ProductStock : IEntityBase
     {
         #region PROPERTIES
 

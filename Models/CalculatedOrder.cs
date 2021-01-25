@@ -39,7 +39,7 @@ namespace Gizmo.Web.Api.Models
         /// The lines of the order.
         /// </summary>
         [DataMember]
-        public virtual IEnumerable<OrderLine> OrderLines { get; set; }
+        public IEnumerable<OrderLine> OrderLines { get; set; }
 
     }
 }
