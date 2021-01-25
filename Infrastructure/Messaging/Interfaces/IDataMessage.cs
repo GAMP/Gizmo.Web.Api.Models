@@ -1,11 +1,9 @@
-﻿using MessagePack;
-
-namespace Gizmo.Web.Api.Messaging
+﻿namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
-    /// Generic detailed message interface.
+    /// Data message interface.
     /// </summary>
-    public interface IDetailedMessage : IMessage
+    public interface IDataMessage : IMessage
     {
         #region PROPERTIES
 

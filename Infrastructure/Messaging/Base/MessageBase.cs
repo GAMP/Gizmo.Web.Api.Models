@@ -1,5 +1,4 @@
-﻿using MessagePack;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Messaging
@@ -8,8 +7,6 @@ namespace Gizmo.Web.Api.Messaging
     /// Base communication message class.
     /// </summary>
     [DataContract()]
-    [Union(0, typeof(DetailedMessage))]
-    [Union(1, typeof(CommandMessage))]
     public abstract class MessageBase : IMessage
     {
         #region CONSTRUCTOR
@@ -26,8 +23,7 @@ namespace Gizmo.Web.Api.Messaging
         /// Gets message version.
         /// </summary>
         [DefaultValue(1)]
-        [DataMember(EmitDefaultValue = true, IsRequired = false, Order = 0)]
-        [IgnoreDataMember()]
+        [DataMember(EmitDefaultValue = false, IsRequired = false, Order = 0)]
         public int Version
         {
             get; set;
