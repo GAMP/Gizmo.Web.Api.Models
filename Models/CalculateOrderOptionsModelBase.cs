@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
-    public class CalculateOrderOptionsModelBase
+    public class CalculateOrderOptionsModelBase : IUrlQueryParameters
     {
         /// <summary>
         /// The lines of the order.

@@ -4,11 +4,11 @@ using System.Runtime.Serialization;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Deposit transaction.
+    /// Application.
     /// </summary>
-    [DataContract]
     [Serializable]
-    public class DepositTransactionModelCreate : DepositTransactionModelBase
+    [DataContract]
+    public class ApplicationModelCreate : ApplicationModelBase
     {
     }
 }
