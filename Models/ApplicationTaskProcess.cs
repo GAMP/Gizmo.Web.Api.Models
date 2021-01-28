@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Gets
+    /// Application task process.
     /// </summary>
     [DataContract]
     [Serializable]
@@ -49,11 +49,17 @@ namespace Gizmo.Web.Api.Models
         [StringLength(45)]
         public string Password { get; set; }
 
-        ///// <summary>
-        ///// Gets or sets options.
-        ///// </summary>
-        //[DataMember]
-        //TODO: A public TaskProcessOptionType ProcessOptions { get; set; }
+        /// <summary>
+        /// Wait.
+        /// </summary>
+        [DataMember]
+        public bool Wait { get; set; }
+
+        /// <summary>
+        /// No window.
+        /// </summary>
+        [DataMember]
+        public bool NoWindow { get; set; }
 
         #endregion
     }

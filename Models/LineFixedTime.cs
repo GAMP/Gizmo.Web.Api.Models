@@ -8,7 +8,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
-    public class LineFixedTime
+    public class LineFixedTime : IUrlQueryParameters
     {
         /// <summary>
         /// Gets

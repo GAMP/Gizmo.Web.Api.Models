@@ -8,7 +8,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
-    public class ApplicationTaskModelUpdate : ApplicationTaskModelBase
+    public class ApplicationTaskModelUpdate : ApplicationTaskModelBase, IEntityBase
     {
         #region PROPERTIES
 

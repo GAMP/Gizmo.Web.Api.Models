@@ -8,7 +8,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
-    public class CalculateOrderLineOptions
+    public class CalculateOrderLineOptions : IUrlQueryParameters
     {
         /// <summary>
         /// The type of the order line.

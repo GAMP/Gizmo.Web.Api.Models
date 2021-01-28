@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Gets
+    /// Application task notification.
     /// </summary>
     [DataContract]
     [Serializable]
@@ -29,11 +29,8 @@ namespace Gizmo.Web.Api.Models
         [StringLength(65536)]
         public string Message { get; set; }
 
-        ///// <summary>
-        ///// Gets or sets notification options.
-        ///// </summary>
-        //[DataMember]
-        //TODO: A public TaskNotificationOptionType NotificationOptions { get; set; }
+        [DataMember]
+        public bool Wait { get; set; }
 
         #endregion
     }

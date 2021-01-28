@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Gets
+    /// Application task junction.
     /// </summary>
     [DataContract]
     [Serializable]
@@ -29,11 +29,8 @@ namespace Gizmo.Web.Api.Models
         [StringLength(255)]
         public string DestinationDirectory { get; set; }
 
-        ///// <summary>
-        ///// Gets or sets options.
-        ///// </summary>
-        //[DataMember]
-        //TODO: A public TaskJunctionOptionType Options { get; set; }
+        [DataMember]
+        public bool DeleteDestination { get; set; }
 
         #endregion
     }

@@ -20,11 +20,29 @@ namespace Gizmo.Web.Api.Models
         [Required]
         public int TaskId { get; set; }
 
-        ///// <summary>
-        ///// Gets
-        ///// </summary>
-        //[DataMember]
-        //TODO: A public ExecutableTaskActivationType Activation { get; set; }
+        /// <summary>
+        /// Pre launch/
+        /// </summary>
+        [DataMember]
+        public bool PreLaunch { get; set; }
+
+        /// <summary>
+        /// Post deploy.
+        /// </summary>
+        [DataMember]
+        public bool PreDeploy { get; set; }
+
+        /// <summary>
+        /// Post termination.
+        /// </summary>
+        [DataMember]
+        public bool PostTermination { get; set; }
+
+        /// <summary>
+        /// Pre licenses management.
+        /// </summary>
+        [DataMember]
+        public bool PreLicenseManagement { get; set; }
 
         /// <summary>
         /// Gets

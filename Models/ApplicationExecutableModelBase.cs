@@ -33,11 +33,11 @@ namespace Gizmo.Web.Api.Models
         [StringLength(255)]
         public string Description { get; set; }
 
-        ///// <summary>
-        ///// Gets or sets applications modes.
-        ///// </summary>
-        //[DataMember]
-        //TODO: A public ApplicationModes Modes { get; set; }
+        /// <summary>
+        /// Gets
+        /// </summary>
+        [DataMember]
+        public ApplicationModes ApplicationModes { get; set; }
 
         /// <summary>
         /// Gets or Sets path to the executable file.
@@ -61,23 +61,23 @@ namespace Gizmo.Web.Api.Models
         [StringLength(255)]
         public string Arguments { get; set; }
 
-        ///// <summary>
-        ///// Gets or Sets the runmode of the executable.
-        ///// </summary>
-        //[DataMember]
-        //TODO: A public RunMode RunMode { get; set; }
+        /// <summary>
+        /// Gets or Sets the runmode of the executable.
+        /// </summary>
+        [DataMember]
+        public RunMode RunMode { get; set; }
 
-        ///// <summary>
-        ///// Gets or sets license reservation type.
-        ///// </summary>
-        //[DataMember]
-        //TODO: A public LicenseReservationType ReservationType { get; set; }
+        /// <summary>
+        /// Gets or sets license reservation type.
+        /// </summary>
+        [DataMember]
+        public LicenseReservationType ReservationType { get; set; }
 
-        ///// <summary>
-        ///// Gets or sets executable options.
-        ///// </summary>
-        //[DataMember]
-        //TODO: A public ExecutableOptionType Options { get; set; }
+        /// <summary>
+        /// Gets
+        /// </summary>
+        [DataMember]
+        public ExecutableOptions ExecutableOptions { get; set; }
 
         /// <summary>
         /// The display order of the executable.
