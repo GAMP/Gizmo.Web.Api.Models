@@ -8,7 +8,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
-    public class LineProduct
+    public class LineProduct : IUrlQueryParameters
     {
         /// <summary>
         /// The Id of the product.
