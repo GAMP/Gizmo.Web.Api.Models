@@ -12,19 +12,19 @@ namespace Gizmo.Web.Api.Models
     public class BillingProfileRateModelBase
     {
         /// <summary>
-        /// Gets
+        /// The start fee of the rate.
         /// </summary>
         [DataMember]
         public decimal StartFee { get; set; }
 
         /// <summary>
-        /// Gets
+        /// The minimum fee of the rate.
         /// </summary>
         [DataMember]
         public decimal MinimumFee { get; set; }
 
         /// <summary>
-        /// Gets
+        /// The rate value of the rate.
         /// </summary>
         [DataMember]
         public decimal Rate { get; set; }
@@ -42,25 +42,25 @@ namespace Gizmo.Web.Api.Models
         public int ChargeAfter { get; set; }
 
         /// <summary>
-        /// Gets
+        /// Whether the rate is the default rate of the billing profile.
         /// </summary>
         [DataMember]
         public bool IsDefault { get; set; }
 
         /// <summary>
-        /// Gets
+        /// Whether the rate is step based.
         /// </summary>
         [DataMember]
-        public BillingRateOptionType RateOptions { get; set; }
+        public bool IsStepBased { get; set; }
 
         /// <summary>
-        /// Gets
+        /// The steps of the rate.
         /// </summary>
         [DataMember]
         public IEnumerable<BillingProfileRateStep> RateSteps { get; set; }
 
         /// <summary>
-        /// Gets
+        /// The days on which the rate is applicable.
         /// </summary>
         [DataMember]
         public IEnumerable<BillingProfileRateDay> Days { get; set; }

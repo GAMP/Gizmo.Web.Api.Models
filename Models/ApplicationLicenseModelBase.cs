@@ -14,7 +14,7 @@ namespace Gizmo.Web.Api.Models
         #region PROPERTIES
 
         /// <summary>
-        /// The name of the application license.
+        /// The name of the license.
         /// </summary>
         [DataMember]
         [Required]
@@ -22,7 +22,7 @@ namespace Gizmo.Web.Api.Models
         public string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets plugin type name.
+        /// The plugin type name of the license.
         /// </summary>
         [DataMember]
         [Required]
@@ -30,7 +30,7 @@ namespace Gizmo.Web.Api.Models
         public string Plugin { get; set; }
 
         /// <summary>
-        /// Gets or sets plugin assembly.
+        /// The plugin assembly of the license.
         /// </summary>        
         [DataMember]
         [Required]
@@ -38,7 +38,7 @@ namespace Gizmo.Web.Api.Models
         public string Assembly { get; set; }
 
         /// <summary>
-        /// Gets or sets settings.
+        /// The settings of the license.
         /// </summary>
         [DataMember]
         public byte[] Settings { get; set; }

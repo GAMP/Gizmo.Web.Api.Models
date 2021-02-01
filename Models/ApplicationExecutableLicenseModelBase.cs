@@ -14,14 +14,14 @@ namespace Gizmo.Web.Api.Models
         #region PROPERTIES
 
         /// <summary>
-        /// Gets
+        /// The Id of the license associated with this application executable.
         /// </summary>
         [DataMember]
         [Required]
         public int LicenseId { get; set; }
 
         /// <summary>
-        /// Gets
+        /// The order in which the license is used.
         /// </summary>
         [DataMember]
         public int UseOrder { get; set; }

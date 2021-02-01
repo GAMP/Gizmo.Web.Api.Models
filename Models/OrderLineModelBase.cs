@@ -17,7 +17,7 @@ namespace Gizmo.Web.Api.Models
         public LineType LineType { get; set; }
 
         /// <summary>
-        /// Gets
+        /// The pay type of the order line.
         /// </summary>
         [DataMember]
         public OrderLinePayType PayType { get; set; }

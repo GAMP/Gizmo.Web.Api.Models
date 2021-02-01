@@ -14,7 +14,7 @@ namespace Gizmo.Web.Api.Models
         #region PROPERTIES
 
         /// <summary>
-        /// Gets
+        /// The Id of the application group.
         /// </summary>
         [DataMember]
         public int ApplicationGroupId { get; set; }

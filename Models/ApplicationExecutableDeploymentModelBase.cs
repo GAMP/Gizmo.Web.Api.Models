@@ -14,14 +14,14 @@ namespace Gizmo.Web.Api.Models
         #region PROPERTIES
 
         /// <summary>
-        /// Gets
+        /// The Id of the deployment associated with this application executable.
         /// </summary>
         [DataMember]
         [Required]
         public int DeploymentId { get; set; }
 
         /// <summary>
-        /// Gets or sets order.
+        /// The order in which the deployment is used.
         /// </summary>
         [DataMember]
         public int UseOrder { get; set; }

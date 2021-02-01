@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Gets
+    /// Billing profile rate day time.
     /// </summary>
     [Serializable]
     [DataContract]

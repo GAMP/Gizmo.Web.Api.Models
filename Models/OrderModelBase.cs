@@ -30,13 +30,13 @@ namespace Gizmo.Web.Api.Models
         public OrderStatus Status { get; set; }
 
         /// <summary>
-        /// Gets
+        /// The user note of the order.
         /// </summary>
         [DataMember]
         public string UserNote { get; set; }
 
         /// <summary>
-        /// Gets
+        /// Whether the order is delivered.
         /// </summary>
         [DataMember]
         public bool IsDelivered { get; set; }

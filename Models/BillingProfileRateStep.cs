@@ -14,31 +14,31 @@ namespace Gizmo.Web.Api.Models
         #region PROPERTIES
 
         /// <summary>
-        /// Gets or sets step minute.
+        /// The minute of the rate step.
         /// </summary>
         [DataMember]
         public int Minute { get; set; }
 
         /// <summary>
-        /// Gets or sets action.
+        /// The action of the rate step.
         /// </summary>
         [DataMember]
         public BillingRateStepAction Action { get; set; }
 
         /// <summary>
-        /// Gets or sets charge value.
+        /// The charge value of the rate step.
         /// </summary>
         [DataMember]
         public decimal Charge { get; set; }
 
         /// <summary>
-        /// Gets or sets rate value.
+        /// The rate value of the rate step.
         /// </summary>
         [DataMember]
         public decimal Rate { get; set; }
 
         /// <summary>
-        /// Get or sets target minute.
+        /// The target minute of the rate step.
         /// </summary>
         [DataMember]
         public int TargetMinute { get; set; }

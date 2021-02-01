@@ -14,7 +14,7 @@ namespace Gizmo.Web.Api.Models
         #region PROPERTIES
 
         /// <summary>
-        /// Gets or sets accessible.
+        /// Whether the executable is accessible.
         /// </summary>
         [DataMember]
         public bool Accessible { get; set; }
@@ -34,13 +34,13 @@ namespace Gizmo.Web.Api.Models
         public string Description { get; set; }
 
         /// <summary>
-        /// Gets
+        /// The application modes object attached to this executable.
         /// </summary>
         [DataMember]
         public ApplicationModes ApplicationModes { get; set; }
 
         /// <summary>
-        /// Gets or Sets path to the executable file.
+        /// The path of the executable.
         /// </summary>
         [DataMember]
         [Required]
@@ -62,22 +62,22 @@ namespace Gizmo.Web.Api.Models
         public string Arguments { get; set; }
 
         /// <summary>
-        /// Gets or Sets the runmode of the executable.
+        /// The run mode of the executable.
         /// </summary>
         [DataMember]
         public RunMode RunMode { get; set; }
 
         /// <summary>
-        /// Gets or sets license reservation type.
+        /// The license reservation type of the executable.
         /// </summary>
         [DataMember]
         public LicenseReservationType ReservationType { get; set; }
 
         /// <summary>
-        /// Gets
+        /// The executable options object attached to this executable.
         /// </summary>
         [DataMember]
-        public ExecutableOptions ExecutableOptions { get; set; }
+        public ApplicationExecutableOptions ExecutableOptions { get; set; }
 
         /// <summary>
         /// The display order of the executable.
@@ -93,7 +93,7 @@ namespace Gizmo.Web.Api.Models
         public int ApplicationId { get; set; }
 
         /// <summary>
-        /// Gets or sets default deployment profile.
+        /// The Id of the deployment profile this executable uses by default.
         /// </summary>
         [DataMember]
         public int? DefaultDeploymentId { get; set; }

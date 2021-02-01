@@ -4,11 +4,11 @@ using System.Runtime.Serialization;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Executable options.
+    /// Application executable options.
     /// </summary>
     [Serializable]
     [DataContract]
-    public class ExecutableOptions
+    public class ApplicationExecutableOptions
     {
         /// <summary>
         /// Auto launch.

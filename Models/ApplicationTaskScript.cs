@@ -14,13 +14,13 @@ namespace Gizmo.Web.Api.Models
         #region PROPERTIES
 
         /// <summary>
-        /// Gets or sets script type.
+        /// The type of the script.
         /// </summary>
         [DataMember]
         public ScriptTypes ScriptType { get; set; }
 
         /// <summary>
-        /// Gets or sets data.
+        /// The data of the script.
         /// </summary>
         [DataMember]
         [Required]
@@ -28,13 +28,13 @@ namespace Gizmo.Web.Api.Models
         public string Data { get; set; }
 
         /// <summary>
-        /// Wait.
+        /// Whether the script is awaited until exit.
         /// </summary>
         [DataMember]
         public bool Wait { get; set; }
 
         /// <summary>
-        /// No window.
+        /// Whether the script is invisible.
         /// </summary>
         [DataMember]
         public bool NoWindow { get; set; }

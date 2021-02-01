@@ -28,17 +28,14 @@ namespace Gizmo.Web.Api.Models
         public string MountOptions { get; set; }
 
         /// <summary>
-        /// Gets or sets device id.
+        /// The device id of the cd image.
         /// </summary>
         [DataMember]
         [StringLength(3)]
         public string DeviceId { get; set; }
 
         /// <summary>
-        /// Gets or Sets the cehck exit code value.
-        /// <remarks >
-        /// When this set Mount() call will check the mounter process exit code when it exits.
-        /// </remarks>
+        /// Whether the cd image will check the mounter process exit code value while mounting.
         /// </summary>
         [DataMember]
         public bool CheckExitCode { get; set; }

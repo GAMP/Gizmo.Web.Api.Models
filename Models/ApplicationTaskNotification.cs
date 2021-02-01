@@ -14,7 +14,7 @@ namespace Gizmo.Web.Api.Models
         #region PROPERTIES
 
         /// <summary>
-        /// Gets or sets notification title.
+        /// The title of the notification.
         /// </summary>
         [DataMember]
         [Required]
@@ -22,13 +22,16 @@ namespace Gizmo.Web.Api.Models
         public string Title { get; set; }
 
         /// <summary>
-        /// Gets or sets notification message.
+        /// The message of the notification.
         /// </summary>
         [DataMember]
         [Required]
         [StringLength(65536)]
         public string Message { get; set; }
 
+        /// <summary>
+        /// Gets
+        /// </summary>
         [DataMember]
         public bool Wait { get; set; }
 

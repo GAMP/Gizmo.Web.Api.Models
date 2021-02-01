@@ -11,15 +11,5 @@ namespace Gizmo.Web.Api.Models
     [DataContract]
     public class ApplicationExecutableDeploymentModelCreate : ApplicationExecutableDeploymentModelBase
     {
-        #region PROPERTIES
-
-        /// <summary>
-        /// Gets
-        /// </summary>
-        [DataMember]
-        [Required]
-        public int DeploymentId { get; set; }
-
-        #endregion
     }
 }

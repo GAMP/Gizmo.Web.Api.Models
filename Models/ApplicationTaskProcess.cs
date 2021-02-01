@@ -14,7 +14,7 @@ namespace Gizmo.Web.Api.Models
         #region PROPERTIES
 
         /// <summary>
-        /// Gets or sets process file name.
+        /// The file name of the process.
         /// </summary>
         [DataMember]
         [Required]
@@ -22,41 +22,41 @@ namespace Gizmo.Web.Api.Models
         public string FileName { get; set; }
 
         /// <summary>
-        /// Gets or sets arguments.
+        /// The arguments of the process.
         /// </summary>
         [DataMember]
         [StringLength(255)]
         public string Arguments { get; set; }
 
         /// <summary>
-        /// Gets or sets working directory.
+        /// The working directory of the process.
         /// </summary>
         [DataMember]
         [StringLength(255)]
         public string WorkingDirectory { get; set; }
 
         /// <summary>
-        /// Gets or sets user name.
+        /// The username of the process.
         /// </summary>
         [DataMember]
         [StringLength(45)]
         public string Username { get; set; }
 
         /// <summary>
-        /// Gets or sets password.
+        /// The password of the process.
         /// </summary>
         [DataMember]
         [StringLength(45)]
         public string Password { get; set; }
 
         /// <summary>
-        /// Wait.
+        /// Whether the process is awaited until exit.
         /// </summary>
         [DataMember]
         public bool Wait { get; set; }
 
         /// <summary>
-        /// No window.
+        /// Whether the process is invisible.
         /// </summary>
         [DataMember]
         public bool NoWindow { get; set; }

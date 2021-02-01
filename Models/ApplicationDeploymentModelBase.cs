@@ -14,7 +14,7 @@ namespace Gizmo.Web.Api.Models
         #region PROPERTIES
 
         /// <summary>
-        /// Gets or sets name.
+        /// The name of the deployment.
         /// </summary>
         [DataMember]
         [Required]
@@ -22,14 +22,14 @@ namespace Gizmo.Web.Api.Models
         public string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets registry string.
+        /// The registry string of the deployment.
         /// </summary>
         [DataMember]
         [StringLength(16777215)]
         public string RegistryString { get; set; }
 
         /// <summary>
-        /// Gets or sets source.
+        /// The source of the deployment.
         /// </summary>
         [DataMember]
         [Required]
@@ -37,7 +37,7 @@ namespace Gizmo.Web.Api.Models
         public string Source { get; set; }
 
         /// <summary>
-        /// Gets or sets destination.
+        /// The destination of the deployment.
         /// </summary>
         [DataMember]
         [Required]
@@ -45,17 +45,18 @@ namespace Gizmo.Web.Api.Models
         public string Destination { get; set; }
 
         ///// <summary>
-        ///// Gets or sets comparison level.
+        /// The deployment options of the deployment.
         ///// </summary>
         //[DataMember]
         //public FileInfoLevel ComparisonLevel { get; set; }
+        [DataMember]
+        public ApplicationDeploymentComparisonMode ComparisonMode { get; set; }
 
-        ///// <summary>
-        ///// Gets or sets options.
-        ///// </summary>
-        //[DataMember]
-        //[Required]
-        //public DeployOptionType Options { get; set; }
+        /// <summary>
+        /// The deployment options of the deployment.
+        /// </summary>
+        [DataMember]
+        public ApplicationDeploymentOptions DeploymentOptions { get; set; }
 
         #endregion
     }

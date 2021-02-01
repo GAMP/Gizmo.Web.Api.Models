@@ -41,19 +41,19 @@ namespace Gizmo.Web.Api.Models
         public int ApplicationCategoryId { get; set; }
 
         /// <summary>
-        /// Gets or Sets applications developer.
+        /// The Id of the application enterprise that is the developer of the application.
         /// </summary>
         [DataMember]
         public int? DeveloperId { get; set; }
 
         /// <summary>
-        /// Gets or Sets applications publisher.
+        /// The Id of the application enterprise that is the publisher of the application.
         /// </summary>
         [DataMember]
         public int? PublisherId { get; set; }
 
         /// <summary>
-        /// Gets or sets applications age rating.
+        /// The age rating of the application.
         /// </summary>
         [DataMember]
         public int AgeRating { get; set; }
@@ -64,14 +64,8 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         public DateTime? ReleaseDate { get; set; }
 
-        ///// <summary>
-        ///// Gets or Sets application halt on error value.
-        ///// </summary>
-        //[DataMember]
-        //TODO: A public AppOptionType Options { get; set; }
-
         /// <summary>
-        /// Gets or sets default executable id.
+        /// The Id of the executable this application uses by default.
         /// </summary>
         [DataMember]
         public int? DefaultExecutableId { get; set; }

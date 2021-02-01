@@ -17,8 +17,12 @@ namespace Gizmo.Web.Api.Models
         public string CategoryName { get; set; }
 
         /// <summary>
-        /// Gets
+        /// Return subcategories that belongs to the specified parent category.
         /// </summary>
+        /// <remarks>
+        /// To return all categories leave this field empty.
+        /// To return all parent categories fill this field with 0.
+        /// </remarks>
         [DataMember]
         public int? ParentId { get; set; }
     }

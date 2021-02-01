@@ -14,7 +14,7 @@ namespace Gizmo.Web.Api.Models
         #region PROPERTIES
 
         /// <summary>
-        /// Gets or sets junction source directory.
+        /// The source directory of the junction.
         /// </summary>
         [DataMember]
         [Required]
@@ -22,13 +22,16 @@ namespace Gizmo.Web.Api.Models
         public string SourceDirectory { get; set; }
 
         /// <summary>
-        /// Gets or sets junction destination directory.
+        /// The destination directory of the junction.
         /// </summary>
         [DataMember]
         [Required]
         [StringLength(255)]
         public string DestinationDirectory { get; set; }
 
+        /// <summary>
+        /// Whether the junction deletes the destination.
+        /// </summary>
         [DataMember]
         public bool DeleteDestination { get; set; }
 

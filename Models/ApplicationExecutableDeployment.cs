@@ -14,7 +14,7 @@ namespace Gizmo.Web.Api.Models
         #region PROPERTIES
 
         /// <summary>
-        /// The Id of the executable this deployment is associated with.
+        /// The Id of the application executable.
         /// </summary>
         [DataMember]
         public int ApplicationExecutableId { get; set; }

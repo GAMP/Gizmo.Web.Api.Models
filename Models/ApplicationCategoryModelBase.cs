@@ -22,7 +22,7 @@ namespace Gizmo.Web.Api.Models
         public string Name { get; set; }
 
         /// <summary>
-        /// Gets
+        /// The Id of the parent category if the category is a subcategory, otherwise it will be null.
         /// </summary>
         [DataMember]
         public int? ParentId { get; set; }

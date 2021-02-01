@@ -14,7 +14,7 @@ namespace Gizmo.Web.Api.Models
         #region PROPERTIES
 
         /// <summary>
-        /// Gets or sets enterprise name.
+        /// The name of the enterprise.
         /// </summary>
         [DataMember]
         [Required]

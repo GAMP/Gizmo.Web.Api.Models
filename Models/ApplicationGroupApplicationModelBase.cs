@@ -14,7 +14,7 @@ namespace Gizmo.Web.Api.Models
         #region PROPERTIES
 
         /// <summary>
-        /// Gets
+        /// The Id of the application associated with this application group.
         /// </summary>
         [DataMember]
         [Required]

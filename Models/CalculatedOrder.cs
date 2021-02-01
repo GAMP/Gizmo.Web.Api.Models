@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     public class CalculatedOrder
     {
         /// <summary>
-        /// Gets
+        /// The subtotal of the order line.
         /// </summary>
         [DataMember]
         public decimal SubTotal { get; set; }

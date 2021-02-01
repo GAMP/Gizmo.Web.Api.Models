@@ -17,7 +17,7 @@ namespace Gizmo.Web.Api.Models
         public string ApplicationTitle { get; set; }
 
         /// <summary>
-        /// Gets
+        /// Return applications that belongs to the specified category.
         /// </summary>
         [DataMember]
         public int? CategoryId { get; set; }

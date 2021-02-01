@@ -11,7 +11,7 @@ namespace Gizmo.Web.Api.Models
     public class LineFixedTime : IUrlQueryParameters
     {
         /// <summary>
-        /// Gets
+        /// The quantity type of the fixed time line.
         /// </summary>
         [DataMember]
         public FixedTimeQuantityType QuantityType { get; set; }

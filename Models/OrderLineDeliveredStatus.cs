@@ -31,7 +31,7 @@ namespace Gizmo.Web.Api.Models
         public bool IsDelivered { get; set; }
 
         /// <summary>
-        /// Gets
+        /// The date that all items were delivered.
         /// </summary>
         [DataMember]
         public DateTime? DeliveredTime { get; set; }

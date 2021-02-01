@@ -31,7 +31,7 @@ namespace Gizmo.Web.Api.Models
         public decimal Amount { get; set; }
 
         /// <summary>
-        /// Gets
+        /// The Id of the payment method of this deposit transaction.
         /// </summary>
         [DataMember]
         public int? PaymentMethodId { get; set; }

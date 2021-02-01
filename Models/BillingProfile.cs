@@ -21,7 +21,7 @@ namespace Gizmo.Web.Api.Models
         public int Id { get; set; }
 
         /// <summary>
-        /// Gets
+        /// The rates of the billing profile.
         /// </summary>
         [DataMember]
         public IEnumerable<BillingProfileRate> Rates { get; set; }

@@ -11,7 +11,7 @@ namespace Gizmo.Web.Api.Models
     public class CalculateInvoiceOrderOptions : InvoiceOrderOptions
     {
         /// <summary>
-        /// Gets
+        /// The order object to invoice.
         /// </summary>
         [DataMember]
         public CalculateOrderOptionsModelBase Order { get; set; }

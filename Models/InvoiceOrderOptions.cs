@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     public class InvoiceOrderOptions
     {
         /// <summary>
-        /// Gets
+        /// The list of payments for the invoice.
         /// </summary>
         [DataMember]
         public IEnumerable<InvoicePaymentModelBase> Payments { get; set; }

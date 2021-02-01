@@ -14,14 +14,14 @@ namespace Gizmo.Web.Api.Models
         #region PROPERTIES
 
         /// <summary>
-        /// Gets or sets personal user file id.
+        /// The Id of the personal file associated with this application executable.
         /// </summary>
         [DataMember]
         [Required]
         public int PersonalFileId { get; set; }
 
         /// <summary>
-        /// Gets or sets order.
+        /// The order in which the personal file is used.
         /// </summary>
         [DataMember]
         public int UseOrder { get; set; }
