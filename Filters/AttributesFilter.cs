@@ -10,5 +10,10 @@ namespace Gizmo.Web.Api.Models
     [DataContract]
     public class AttributesFilter : PaginationFilter, IUrlQueryParameters
     {
+        /// <summary>
+        /// Return attributes with names that contain the specified string.
+        /// </summary>
+        [DataMember]
+        public string AttributeName { get; set; }
     }
 }
