@@ -5,11 +5,11 @@ using System.Runtime.Serialization;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Time sale preset.
+    /// Asset transaction.
     /// </summary>
     [DataContract]
     [Serializable]
-    public class TimeSalePreset : TimeSalePresetModelBase, IEntityBase
+    public class AssetTransaction : AssetTransactionModelBase, IEntityBase
     {
         #region PROPERTIES
 

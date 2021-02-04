@@ -10,5 +10,9 @@ namespace Gizmo.Web.Api.Models
     [DataContract]
     public class ApplicationDeploymentsFilter : PaginationFilter, IUrlQueryParameters
     {
+        /// <summary>
+        /// Return deployments with names that contain the specified string.
+        /// </summary>
+        public string DeploymentName { get; set; }
     }
 }

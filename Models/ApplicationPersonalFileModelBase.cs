@@ -14,7 +14,13 @@ namespace Gizmo.Web.Api.Models
         #region PROPERTIES
 
         /// <summary>
-        /// Gets or sets name.
+        /// The type of the personal file.
+        /// </summary>
+        [DataMember]
+        public PersonalUserFileType Type { get; set; }
+
+        /// <summary>
+        /// The name of the personal file.
         /// </summary>
         [DataMember]
         [Required]
@@ -22,27 +28,27 @@ namespace Gizmo.Web.Api.Models
         public string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets caption.
+        /// The caption of the personal file.
         /// </summary>
         [DataMember]
         [StringLength(255)]
         public string Caption { get; set; }
 
         /// <summary>
-        /// Gets or sets description.
+        /// The description of the personal file.
         /// </summary>
         [DataMember]
         [StringLength(255)]
         public string Description { get; set; }
 
         /// <summary>
-        /// Gets or sets accessible.
+        /// Whether the personal file is accessible.
         /// </summary>
         [DataMember]
         public bool Accessible { get; set; }
 
         /// <summary>
-        /// Gets or sets the source path.
+        /// The source path of the personal file.
         /// </summary>
         [DataMember]
         [Required]
@@ -50,65 +56,40 @@ namespace Gizmo.Web.Api.Models
         public string Source { get; set; }
 
         /// <summary>
-        /// Gets or sets activation type.
+        /// The activation type of the personal file.
         /// </summary>
         [DataMember]
         public PersonalFileActivationType Activation { get; set; }
 
         /// <summary>
-        /// Gets or sets quota.
+        /// The quota of the personal file.
         /// </summary>
         [DataMember]
         public int MaxQuota { get; set; }
 
         /// <summary>
-        /// Gets or sets compression level.
+        /// The compression level of the personal file.
         /// </summary>
         [DataMember]
         public int CompressionLevel { get; set; }
 
         /// <summary>
-        /// Gets or sets type.
+        /// Whether to clean up before restore.
         /// </summary>
-        [DataMember]
-        public PersonalUserFileType Type { get; set; }
-
         [DataMember]
         public bool CleanUp { get; set; }
 
+        /// <summary>
+        /// Whether to store the personal file.
+        /// </summary>
         [DataMember]
         public bool Store { get; set; }
 
-        [DataMember]
-        public bool IncludeSubDirectories { get; set; }
-
         /// <summary>
-        /// The list of files that should be excluded.
-        /// <remarks>Each entry should be seperated by ; character.</remarks>
+        /// The directory options object attached to this personal file if the personal file type is file, otherwise it will be null.
         /// </summary>
         [DataMember]
-        public string ExcludeFiles { get; set; }
-
-        /// <summary>
-        /// The list of directories that should be excluded.
-        /// <remarks>Each entry should be seperated by ; character.</remarks>
-        /// </summary>
-        [DataMember]
-        public string ExcludeDirectories { get; set; }
-
-        /// <summary>
-        /// The list of files that should be included.
-        /// <remarks>Each entry should be seperated by ; character.</remarks>
-        /// </summary>
-        [DataMember]
-        public string IncludeFiles { get; set; }
-
-        /// <summary>
-        /// The list of directories that should be included.
-        /// <remarks>Each entry should be seperated by ; character.</remarks>
-        /// </summary>
-        [DataMember]
-        public string IncludeDirectories { get; set; }
+        public ApplicationPersonalFileDirectoryOptions DirectoryOptions { get; set; }
 
         #endregion
     }

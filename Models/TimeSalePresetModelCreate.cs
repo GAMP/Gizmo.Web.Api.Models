@@ -5,11 +5,11 @@ using System.Runtime.Serialization;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Time sale preset with time.
+    /// Time sale preset.
     /// </summary>
     [DataContract]
     [Serializable]
-    public class TimeSalePresetWithTimeModelCreate : TimeSalePresetWithTimeModelBase, IUrlQueryParameters
+    public class TimeSalePresetModelCreate : TimeSalePresetModelBase, IUrlQueryParameters
     {
     }
 }

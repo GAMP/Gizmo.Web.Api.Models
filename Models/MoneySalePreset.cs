@@ -5,18 +5,20 @@ using System.Runtime.Serialization;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Time sale preset with money.
+    /// Money sale preset.
     /// </summary>
     [DataContract]
     [Serializable]
-    public class TimeSalePresetWithMoneyModelBase : TimeSalePreset
+    public class MoneySalePreset : MoneySalePresetModelBase, IEntityBase
     {
+        #region PROPERTIES
+
         /// <summary>
-        /// The value of the time sale preset with money.
+        /// The Id of the object.
         /// </summary>
         [DataMember]
-        [Required]
-        public decimal Value { get; set; }
+        public int Id { get; set; }
 
+        #endregion
     }
 }
