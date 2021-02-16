@@ -1,36 +1,34 @@
 ﻿using MessagePack;
+using System;
 using System.Runtime.Serialization;
 using System.Text.Json.Serialization;
 
 namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
-    /// Base communication message class.
+    /// Serialization type message.
     /// </summary>
-    [DataContract()]
-    [MessagePackObject()]
-    public abstract class MessageBase : IMessage
+    public abstract class SerializationTypeMessage : MessageBase, ISerializationType
     {
         #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
-        protected MessageBase()
-        { }
+        public SerializationTypeMessage(Type serializationType) : base()
+        {
+            SerializationType = serializationType;
+        } 
         #endregion
 
         #region PROPERTIES
 
         /// <summary>
-        /// Gets message version.
+        /// Gets serialization type.
         /// </summary>
-        [JsonIgnore]
+        [JsonIgnore()]
         [IgnoreDataMember()]
-        [Key(0)]
-        public int Version
-        {
-            get; set;
-        }
+        [IgnoreMember()]
+        public Type SerializationType { get; protected set; } 
 
         #endregion
     }

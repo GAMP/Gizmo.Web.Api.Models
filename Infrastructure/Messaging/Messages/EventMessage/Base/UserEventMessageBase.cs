@@ -1,36 +1,33 @@
 ﻿using MessagePack;
 using System.Runtime.Serialization;
-using System.Text.Json.Serialization;
 
 namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
-    /// Base communication message class.
+    /// User event message base.
     /// </summary>
     [DataContract()]
-    [MessagePackObject()]
-    public abstract class MessageBase : IMessage
+    public abstract class UserEventMessageBase : EventMessage, IUserEventMessage
     {
         #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
-        protected MessageBase()
-        { }
+        public UserEventMessageBase() : base(EventMessageTypeCache.IUserEventMessage)
+        { } 
         #endregion
 
         #region PROPERTIES
 
         /// <summary>
-        /// Gets message version.
+        /// Gets user id.
         /// </summary>
-        [JsonIgnore]
-        [IgnoreDataMember()]
-        [Key(0)]
-        public int Version
+        [DataMember()]
+        [Key(1)]
+        public int UserId
         {
             get; set;
-        }
+        } 
 
         #endregion
     }

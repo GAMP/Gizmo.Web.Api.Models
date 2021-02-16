@@ -9,9 +9,9 @@
         Command = 0,
 
         /// <summary>
-        /// Detailed message.
+        /// Event message.
         /// </summary>
-        Data = 1,
+        Event = 1,
 
         /// <summary>
         /// Control message.

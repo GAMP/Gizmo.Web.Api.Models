@@ -1,5 +1,5 @@
-﻿using System.Runtime.Serialization;
-using System.Text.Json.Serialization;
+﻿using MessagePack;
+using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Messaging
 {
@@ -7,6 +7,7 @@ namespace Gizmo.Web.Api.Messaging
     /// Command message.
     /// </summary>
     [DataContract()]
+    [MessagePackObject()]
     public class CommandMessage : MessageBase
     {
         #region CONSTRUCTOR

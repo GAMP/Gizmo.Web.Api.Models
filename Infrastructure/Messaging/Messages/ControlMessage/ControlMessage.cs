@@ -1,4 +1,5 @@
-﻿using System.Runtime.Serialization;
+﻿using MessagePack;
+using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Messaging
 {
@@ -6,6 +7,7 @@ namespace Gizmo.Web.Api.Messaging
     /// Control message.
     /// </summary>
     [DataContract()]
+    [MessagePackObject()]
     public class ControlMessage : MessageBase , IControlMessage
     {
         #region CONSTRUCTOR
