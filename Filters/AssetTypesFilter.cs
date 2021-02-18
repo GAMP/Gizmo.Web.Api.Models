@@ -10,5 +10,9 @@ namespace Gizmo.Web.Api.Models
     [DataContract]
     public class AssetTypesFilter : PaginationFilter, IUrlQueryParameters
     {
+        /// <summary>
+        /// Return asset types with names that contain the specified string.
+        /// </summary>
+        public string AssetTypeName { get; set; }
     }
 }

@@ -4,11 +4,11 @@ using System.Runtime.Serialization;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Filters that can be applied when searching for time sale presets with time.
+    /// Filters that can be applied when searching for time sale presets.
     /// </summary>
     [Serializable]
     [DataContract]
-    public class TimeSalePresetsWithTimeFilter : PaginationFilter, IUrlQueryParameters
+    public class TimeSalePresetsFilter : PaginationFilter, IUrlQueryParameters
     {
     }
 }

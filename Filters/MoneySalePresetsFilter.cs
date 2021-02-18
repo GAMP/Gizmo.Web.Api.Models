@@ -4,11 +4,11 @@ using System.Runtime.Serialization;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Filters that can be applied when searching for time sale presets with money.
+    /// Filters that can be applied when searching for money sale presets.
     /// </summary>
     [Serializable]
     [DataContract]
-    public class TimeSalePresetsWithMoneyFilter : PaginationFilter, IUrlQueryParameters
+    public class MoneySalePresetsFilter : PaginationFilter, IUrlQueryParameters
     {
     }
 }

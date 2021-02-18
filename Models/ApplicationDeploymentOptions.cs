@@ -1,5 +1,8 @@
 ﻿namespace Gizmo.Web.Api.Models
 {
+    /// <summary>
+    /// Application deployment options.
+    /// </summary>
     public class ApplicationDeploymentOptions
     {
         /// <summary>

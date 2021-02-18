@@ -10,5 +10,9 @@ namespace Gizmo.Web.Api.Models
     [DataContract]
     public class BillingProfilesFilter : PaginationFilter, IUrlQueryParameters
     {
+        /// <summary>
+        /// Return billing profiles with names that contain the specified string.
+        /// </summary>
+        public string BillingProfileName { get; set; }
     }
 }

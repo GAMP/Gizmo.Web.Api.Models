@@ -24,19 +24,19 @@ namespace Gizmo.Web.Api.Models
         public decimal MinimumFee { get; set; }
 
         /// <summary>
-        /// The rate value of the rate.
+        /// The hourly rate of the rate.
         /// </summary>
         [DataMember]
         public decimal Rate { get; set; }
 
         /// <summary>
-        /// Gets
+        /// The interval in minutes between the charges.
         /// </summary>
         [DataMember]
         public int ChargeEvery { get; set; }
 
         /// <summary>
-        /// Gets
+        /// The number of minutes before the first charge.
         /// </summary>
         [DataMember]
         public int ChargeAfter { get; set; }

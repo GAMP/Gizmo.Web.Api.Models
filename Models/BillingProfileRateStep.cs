@@ -43,13 +43,6 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         public int TargetMinute { get; set; }
 
-        /// <summary>
-        /// Gets or sets billing rate id.
-        /// </summary>
-        [DataMember]
-        [Required()]
-        public int BillRateId { get; set; }
-
         #endregion
     }
 }

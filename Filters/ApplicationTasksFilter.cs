@@ -10,5 +10,9 @@ namespace Gizmo.Web.Api.Models
     [DataContract]
     public class ApplicationTasksFilter : PaginationFilter, IUrlQueryParameters
     {
+        /// <summary>
+        /// Return tasks with names that contain the specified string.
+        /// </summary>
+        public string TaskName { get; set; }
     }
 }

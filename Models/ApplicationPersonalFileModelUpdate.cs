@@ -8,7 +8,16 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
-    public class ApplicationPersonalFileModelUpdate : ApplicationPersonalFileModelBase
+    public class ApplicationPersonalFileModelUpdate : ApplicationPersonalFileModelBase, IEntityBase
     {
+        #region PROPERTIES
+
+        /// <summary>
+        /// The Id of the object.
+        /// </summary>
+        [DataMember]
+        public int Id { get; set; }
+
+        #endregion
     }
 }

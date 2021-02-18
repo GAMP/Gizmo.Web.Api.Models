@@ -37,12 +37,6 @@ namespace Gizmo.Web.Api.Models
         [StringLength(255)]
         public string Assembly { get; set; }
 
-        /// <summary>
-        /// The settings of the license.
-        /// </summary>
-        [DataMember]
-        public byte[] Settings { get; set; }
-
         #endregion
     }
 }

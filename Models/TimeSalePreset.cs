@@ -9,15 +9,15 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [DataContract]
     [Serializable]
-    public class TimeSalePreset
+    public class TimeSalePreset : TimeSalePresetModelBase, IEntityBase
     {
         #region PROPERTIES
 
         /// <summary>
-        /// The display order of the time sale preset.
+        /// The Id of the object.
         /// </summary>
         [DataMember]
-        public int DisplayOrder { get; set; }
+        public int Id { get; set; }
 
         #endregion
     }

@@ -30,7 +30,7 @@ namespace Gizmo.Web.Api.Models
         public string Message { get; set; }
 
         /// <summary>
-        /// Gets
+        /// Whether to wait until the user responds to the notification.
         /// </summary>
         [DataMember]
         public bool Wait { get; set; }

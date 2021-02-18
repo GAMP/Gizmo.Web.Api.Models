@@ -8,7 +8,16 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
-    public class ApplicationLicenseModelUpdate : ApplicationLicenseModelBase
+    public class ApplicationLicenseModelUpdate : ApplicationLicenseModelBase, IEntityBase
     {
+        #region PROPERTIES
+
+        /// <summary>
+        /// The Id of the object.
+        /// </summary>
+        [DataMember]
+        public int Id { get; set; }
+
+        #endregion
     }
 }

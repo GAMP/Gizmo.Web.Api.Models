@@ -22,21 +22,25 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The junction object attached to this task if the task is a junction task, otherwise it will be null.
         /// </summary>
+        [DataMember]
         public ApplicationTaskJunction TaskJunction { get; set; }
 
         /// <summary>
         /// The notification object attached to this task if the task is a notification task, otherwise it will be null.
         /// </summary>
+        [DataMember]
         public ApplicationTaskNotification TaskNotification { get; set; }
 
         /// <summary>
         /// The process object attached to this task if the task is a process task, otherwise it will be null.
         /// </summary>
+        [DataMember]
         public ApplicationTaskProcess TaskProcess { get; set; }
 
         /// <summary>
         /// The script object attached to this task if the task is a script task, otherwise it will be null.
         /// </summary>
+        [DataMember]
         public ApplicationTaskScript TaskScript { get; set; }
     }
 }

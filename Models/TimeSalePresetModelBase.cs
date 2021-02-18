@@ -5,18 +5,24 @@ using System.Runtime.Serialization;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Time sale preset with time.
+    /// Time sale preset.
     /// </summary>
     [DataContract]
     [Serializable]
-    public class TimeSalePresetWithTimeModelBase : TimeSalePreset
+    public class TimeSalePresetModelBase
     {
         /// <summary>
-        /// The value of the time sale preset with time.
+        /// The value of the time sale preset.
         /// </summary>
         [DataMember]
         [Required]
         public int Value { get; set; }
+
+        /// <summary>
+        /// The display order of the time sale preset.
+        /// </summary>
+        [DataMember]
+        public int DisplayOrder { get; set; }
 
     }
 }
