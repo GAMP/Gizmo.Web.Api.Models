@@ -38,6 +38,7 @@ namespace Gizmo.Web.Api.Models
         /// The Id of the application category this application belongs to.
         /// </summary>
         [DataMember]
+        [Required]
         public int ApplicationCategoryId { get; set; }
 
         /// <summary>
