@@ -108,6 +108,35 @@ namespace Gizmo.Web.Api.Models
             return response;
         }
 
+        /// <summary>
+        /// Creates bad request response for non generic errors.
+        /// </summary>
+        /// <param name="errorMessage">Error message.</param>
+        /// <param name="errorCodeType">Error code type.</param>
+        /// <param name="errorCode">Error code.</param>
+        /// <returns>Web api error response.</returns>
+        public static WebApiErrorResponse CreateBadRequestResponse(string errorMessage, string errorCodeType, Enum errorCode)
+        {
+            var response = Create((int)System.Net.HttpStatusCode.BadRequest, errorMessage);
+            response.ErrorCodeType = errorCodeType;
+            response.ErrorCode = Convert.ToInt32(errorCode);
+            response.ErrorCodeReadable = errorCode.ToString();
+            return response;
+        }
+
+        /// <summary>
+        /// Creates bad request response for generic errors.
+        /// </summary>
+        /// <param name="errorMessage">Error message.</param>
+        /// <param name="errorCodeType">Error code type.</param>
+        /// <returns>Web api error response.</returns>
+        public static WebApiErrorResponse CreateBadRequestResponse(string errorMessage, string errorCodeType)
+        {
+            var response = Create((int)System.Net.HttpStatusCode.BadRequest, errorMessage);
+            response.ErrorCodeType = errorCodeType;
+            return response;
+        }
+
         #endregion
     }
 }
