@@ -39,6 +39,7 @@ namespace Gizmo.Web.Api.Models
         /// The start cash of the register.
         /// </summary>
         [DataMember]
+        [Range(0, double.MaxValue)]
         public decimal StartCash { get; set; }
 
         /// <summary>

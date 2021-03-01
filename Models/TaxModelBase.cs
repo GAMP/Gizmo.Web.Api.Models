@@ -26,6 +26,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [Required]
+        [Range(0, 100)]
         public decimal Value { get; set; }
 
         #endregion

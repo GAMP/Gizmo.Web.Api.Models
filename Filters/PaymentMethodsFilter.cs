@@ -13,6 +13,11 @@ namespace Gizmo.Web.Api.Models
         #region PROPERTIES
 
         /// <summary>
+        /// Return payment methods with names that contain the specified string.
+        /// </summary>
+        public string Name { get; set; }
+
+        /// <summary>
         /// Return deleted payment methods.
         /// </summary>
         [DataMember]
