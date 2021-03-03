@@ -32,6 +32,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [Required]
+        [Range(1, int.MaxValue)]
         public int Duration { get; set; }
 
         /// <summary>
@@ -46,6 +47,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [StringLength(254)]
+        [EmailNullEmpty]
         public string ContactEmail { get; set; }
 
         /// <summary>

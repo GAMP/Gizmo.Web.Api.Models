@@ -28,6 +28,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [StringLength(254)]
+        [EmailNullEmpty]
         public string Email { get; set; }
 
         #endregion

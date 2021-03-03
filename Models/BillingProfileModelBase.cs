@@ -21,6 +21,13 @@ namespace Gizmo.Web.Api.Models
         [StringLength(255)]
         public string Name { get; set; }
 
+        /// <summary>
+        /// The default rate of the billing profile.
+        /// </summary>
+        [DataMember]
+        [Required]
+        public BillingProfileRateModelBase DefaultRate { get; set; }
+
         #endregion
     }
 }

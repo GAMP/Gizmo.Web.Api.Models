@@ -10,5 +10,9 @@ namespace Gizmo.Web.Api.Models
     [DataContract]
     public class AssetsFilter : PaginationFilter, IUrlQueryParameters
     {
+        /// <summary>
+        /// Return assets with tags that contain the specified string.
+        /// </summary>
+        public string Tag { get; set; }
     }
 }

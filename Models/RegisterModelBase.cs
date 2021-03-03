@@ -33,12 +33,14 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [StringLength(255)]
+        [MacAddress]
         public string MacAddress { get; set; }
 
         /// <summary>
         /// The start cash of the register.
         /// </summary>
         [DataMember]
+        [Range(0, double.MaxValue)]
         public decimal StartCash { get; set; }
 
         /// <summary>

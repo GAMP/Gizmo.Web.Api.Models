@@ -16,6 +16,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [Required]
+        [Range(0, double.MaxValue)]
         public decimal Value { get; set; }
 
         /// <summary>

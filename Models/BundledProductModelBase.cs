@@ -25,6 +25,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [Required]
+        [Range(1, int.MaxValue)]
         public decimal Quantity { get; set; }
 
         /// <summary>
