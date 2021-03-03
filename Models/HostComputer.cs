@@ -25,6 +25,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [Required]
+        [MacAddress]
         public string MacAddress { get; set; }
 
         #endregion

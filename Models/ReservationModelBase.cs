@@ -47,6 +47,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [StringLength(254)]
+        [EmailNullEmpty]
         public string ContactEmail { get; set; }
 
         /// <summary>

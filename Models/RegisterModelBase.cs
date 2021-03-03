@@ -33,6 +33,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [StringLength(255)]
+        [MacAddress]
         public string MacAddress { get; set; }
 
         /// <summary>

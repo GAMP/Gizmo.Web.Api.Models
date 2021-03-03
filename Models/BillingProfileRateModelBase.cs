@@ -42,12 +42,6 @@ namespace Gizmo.Web.Api.Models
         public int ChargeAfter { get; set; }
 
         /// <summary>
-        /// Whether the rate is the default rate of the billing profile.
-        /// </summary>
-        [DataMember]
-        public bool IsDefault { get; set; }
-
-        /// <summary>
         /// Whether the rate is step based.
         /// </summary>
         [DataMember]
