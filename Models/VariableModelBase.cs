@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MessagePack;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
@@ -8,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Variable.
     /// </summary>
     [DataContract]
-    [Serializable]
+    [MessagePackObject]
     public class VariableModelBase
     {
         #region PROPERTIES
@@ -19,6 +20,7 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         [Required]
         [StringLength(255)]
+        [MessagePack.Key(0)]
         public string Name { get; set; }
 
         /// <summary>
@@ -26,24 +28,28 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [Required]
+        [MessagePack.Key(1)]
         public string Value { get; set; }
 
         /// <summary>
         /// Whether the variable is available in server.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(2)]
         public bool AvailableInServer { get; set; }
 
         /// <summary>
         /// Whether the variable is available in client.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(3)]
         public bool AvailableInClient { get; set; }
 
         /// <summary>
         /// Whether the variable is available in manager.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(4)]
         public bool AvailableInManager { get; set; }
 
         #endregion
