@@ -42,7 +42,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Writes descriminator.
         /// </summary>
-        /// <typeparam name="T">Descriminator type.</typeparam>
         /// <param name="writer">Json writer.</param>
         /// <param name="descriminator">Desciminator.</param>
         protected virtual void WriteDescriminator(Utf8JsonWriter writer, int descriminator)

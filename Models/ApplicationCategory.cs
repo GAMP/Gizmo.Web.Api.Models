@@ -8,6 +8,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
+    [MessagePack.MessagePackObject()]
     public class ApplicationCategory : ApplicationCategoryModelBase, IEntityBase
     {
         #region PROPERTIES
