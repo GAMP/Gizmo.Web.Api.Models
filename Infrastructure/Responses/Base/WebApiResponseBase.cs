@@ -41,6 +41,16 @@ namespace Gizmo.Web.Api.Models
         }
 
         /// <summary>
+        /// Gets response message.
+        /// </summary>
+        [DefaultValue(null)]
+        [DataMember(EmitDefaultValue = false, IsRequired = false)]
+        public string Message
+        {
+            get; set;
+        }
+
+        /// <summary>
         /// Indicates if object represents an error response.
         /// </summary>
         [DefaultValue(false)]
