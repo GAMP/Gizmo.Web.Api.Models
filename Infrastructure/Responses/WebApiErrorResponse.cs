@@ -1,4 +1,5 @@
-﻿using System;
+﻿#nullable enable
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -23,30 +24,53 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Creates new instance.
         /// </summary>
-        /// <param name="statusCode">Http status code.</param>
-        public WebApiErrorResponse(int statusCode) : base(statusCode,true)
+        /// <param name="httpStatusCode">Http status code.</param>
+        public WebApiErrorResponse(int httpStatusCode) : base(httpStatusCode, true)
         {
         }
 
         /// <summary>
         /// Creates new instance.
         /// </summary>
-        /// <param name="statusCode">Http status code.</param>
+        /// <param name="httpStatusCode">Http status code.</param>
+        /// <param name="errorMessage">Error message.</param>
+        public WebApiErrorResponse(int httpStatusCode, string errorMessage) : base(httpStatusCode, true)
+        {
+            Message = errorMessage;
+        }
+
+        /// <summary>
+        /// Creates new instance.
+        /// </summary>
+        /// <param name="httpStatusCode">Http status code.</param>
         /// <param name="errors">Extended errors.</param>
-        public WebApiErrorResponse(int statusCode,IEnumerable<WebApiError> errors) : base(statusCode,true)
+        public WebApiErrorResponse(int httpStatusCode, IEnumerable<WebApiError> errors) : base(httpStatusCode, true)
         {
             Errors = errors ?? Enumerable.Empty<WebApiError>();
         }
 
         #endregion
 
+        #region CONSTANTS
+        private const int HTTP_BAD_REQUEST_ERROR_CODE = 400;
+        #endregion
+
         #region PROPERTIES
 
         /// <summary>
-        /// Extended error information.
+        /// Optional error code type.
         /// </summary>
-        [DataMember(EmitDefaultValue =false)]
-        public IEnumerable<WebApiError> Errors
+        [DataMember(EmitDefaultValue = false, Order = 0)]
+        public int? ErrorCodeType
+        {
+            get; set;
+        }
+
+        /// <summary>
+        /// Optional error code type in human readable form.
+        /// </summary>
+        [DataMember(EmitDefaultValue = false, Order = 1)]
+        public string? ErrorCodeTypeReadable
         {
             get; set;
         }
@@ -54,29 +78,29 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Optional error code.
         /// </summary>
-        [DataMember(EmitDefaultValue =false)]
+        [DataMember(EmitDefaultValue = false, Order = 2)]
         public int? ErrorCode
         {
-            get;set;
+            get; set;
         }
 
         /// <summary>
         /// Optional error code in human readable form.
         /// </summary>
-        [DataMember(EmitDefaultValue = false)]
-        public string ErrorCodeReadable
+        [DataMember(EmitDefaultValue = false, Order = 3)]
+        public string? ErrorCodeReadable
         {
-            get;set;
-        }
+            get; set;
+        }       
 
         /// <summary>
-        /// Optional error code object type.
+        /// Extended error collection.
         /// </summary>
-        [DataMember(EmitDefaultValue = false)]
-        public string ErrorCodeType
+        [DataMember(EmitDefaultValue = false,Order =4)]
+        public IEnumerable<WebApiError>? Errors
         {
-            get;set;
-        }
+            get; set;
+        }     
 
         #endregion
 
@@ -85,27 +109,24 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Creates response.
         /// </summary>
-        /// <param name="statusCode">Status code.</param>
+        /// <param name="httpStatusCode">Status code.</param>
         /// <param name="errorMessage">Error message.</param>
         /// <returns>Web api error response.</returns>
-        public static WebApiErrorResponse Create(int statusCode, string errorMessage)
+        public static WebApiErrorResponse Create(int httpStatusCode,
+            string errorMessage)
         {
-            return new WebApiErrorResponse(statusCode, new List<WebApiError>() { new WebApiError(errorMessage) });
+            return new WebApiErrorResponse(httpStatusCode, errorMessage);
         }
 
         /// <summary>
-        /// Creates bad request response.
+        /// Creates bad request response for a specific error code type.
         /// </summary>
         /// <param name="errorMessage">Error message.</param>
-        /// <param name="errorCode">Error code.</param>
+        /// <param name="errorCodeType">Error code type.</param>
         /// <returns>Web api error response.</returns>
-        public static WebApiErrorResponse CreateBadRequestResponse(string errorMessage, Enum errorCode)
+        public static WebApiErrorResponse CreateBadRequestResponse(string errorMessage, Enum errorCodeType)
         {
-            var response = Create((int)System.Net.HttpStatusCode.BadRequest, errorMessage);
-            response.ErrorCode = Convert.ToInt32(errorCode);
-            response.ErrorCodeReadable = errorCode.ToString();
-            response.ErrorCodeType = errorCode.GetType().FullName;
-            return response;
+            return CreateBadRequestResponse(errorMessage,errorCodeType,null,null);
         }
 
         /// <summary>
@@ -115,28 +136,80 @@ namespace Gizmo.Web.Api.Models
         /// <param name="errorCodeType">Error code type.</param>
         /// <param name="errorCode">Error code.</param>
         /// <returns>Web api error response.</returns>
-        public static WebApiErrorResponse CreateBadRequestResponse(string errorMessage, string errorCodeType, Enum errorCode)
+        public static WebApiErrorResponse CreateBadRequestResponse(string errorMessage, Enum errorCodeType , Enum errorCode)
         {
-            var response = Create((int)System.Net.HttpStatusCode.BadRequest, errorMessage);
-            response.ErrorCodeType = errorCodeType;
-            response.ErrorCode = Convert.ToInt32(errorCode);
-            response.ErrorCodeReadable = errorCode.ToString();
-            return response;
+            return CreateBadRequestResponse(errorMessage, errorCodeType, errorCode,null);
         }
 
         /// <summary>
-        /// Creates bad request response for validation errors.
+        /// Creates bad request response for a specific error code type.
+        /// </summary>
+        /// <param name="errorCodeType">Error code type.</param>
+        /// <returns>Web api error response.</returns>
+        public static WebApiErrorResponse CreateBadRequestResponse(Enum errorCodeType)
+        {
+            return CreateBadRequestResponse(null,errorCodeType, null,null);
+        }
+
+        /// <summary>
+        /// Creates bad request response for a specific error code type.
+        /// </summary>
+        /// <param name="errorCodeType">Error code type.</param>
+        /// <param name="errors">Extended error collection.</param>
+        /// <returns>Web api error response.</returns>
+        public static WebApiErrorResponse CreateBadRequestResponse(Enum errorCodeType, IEnumerable<WebApiError> errors)
+        {
+            return CreateBadRequestResponse(null,errorCodeType,null,errors);
+        }
+
+        /// <summary>
+        /// Creates bad request response for a specific error code type.
         /// </summary>
         /// <param name="errorCodeType">Error code type.</param>
         /// <param name="errorCode">Error code.</param>
-        /// <param name="errors">Errors.</param>
-        /// <returns></returns>
-        public static WebApiErrorResponse CreateBadRequestResponse(string errorCodeType, Enum errorCode, IEnumerable<WebApiError> errors)
+        /// <returns>Web api error response.</returns>
+        public static WebApiErrorResponse CreateBadRequestResponse(Enum errorCodeType,
+            Enum? errorCode)
         {
-            var response = new WebApiErrorResponse((int)System.Net.HttpStatusCode.BadRequest, errors);
-            response.ErrorCodeType = errorCodeType;
-            response.ErrorCode = Convert.ToInt32(errorCode);
-            response.ErrorCodeReadable = errorCode.ToString();
+            return CreateBadRequestResponse(null, errorCodeType, errorCode, default);
+        }     
+
+        /// <summary>
+        /// Creates bad request response for a specific error code type.
+        /// </summary>
+        /// <param name="errorMessage">Error message.</param>
+        /// <param name="errorCodeType">Error code type.</param>
+        /// <param name="errorCode">Error code.</param>
+        /// <param name="errors">Extended error collection.</param>
+        /// <returns>Web api error response.</returns>
+        private static WebApiErrorResponse CreateBadRequestResponse(string? errorMessage,
+            Enum? errorCodeType,
+            Enum? errorCode,
+            IEnumerable<WebApiError>? errors)
+        {
+            //create and initialize new error response
+            var response = new WebApiErrorResponse
+            {
+                //bad request is default status code
+                HttpStatusCode = HTTP_BAD_REQUEST_ERROR_CODE,
+                
+                //this is an error, set is error to true
+                IsError = true,
+
+                //set our error message
+                Message = errorMessage,
+
+                //set error code information
+                ErrorCodeType = errorCodeType != null ? Convert.ToInt32(errorCodeType) :null,
+                ErrorCodeTypeReadable = errorCodeType?.ToString(),
+                ErrorCode = errorCode != null ? Convert.ToInt32(errorCode) : null,
+                ErrorCodeReadable = errorCode?.ToString(),
+                
+                //add any optional extended errors
+                Errors = errors!
+            };
+
+            //return response
             return response;
         }
 
