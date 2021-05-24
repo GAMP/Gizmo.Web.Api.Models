@@ -101,6 +101,7 @@ namespace Gizmo.Web.Api.Models
         /// The sex of the operator.
         /// </summary>
         [DataMember]
+        [EnumValue]
         public Sex Sex { get; set; }
 
         /// <summary>

@@ -14,6 +14,7 @@ namespace Gizmo.Web.Api.Models
         /// The type of the register transaction.
         /// </summary>
         [DataMember]
+        [EnumValue]
         public RegisterTransactionType Type { get; set; }
 
         /// <summary>

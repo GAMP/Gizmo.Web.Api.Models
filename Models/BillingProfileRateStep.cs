@@ -23,6 +23,7 @@ namespace Gizmo.Web.Api.Models
         /// The action of the rate step.
         /// </summary>
         [DataMember]
+        [EnumValue]
         public BillingRateStepAction Action { get; set; }
 
         /// <summary>

@@ -27,6 +27,7 @@ namespace Gizmo.Web.Api.Models
         /// The status of the order.
         /// </summary>
         [DataMember]
+        [EnumValue]
         public OrderStatus Status { get; set; }
 
         /// <summary>

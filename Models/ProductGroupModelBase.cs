@@ -34,6 +34,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [Required]
+        [EnumValue]
         [MessagePack.Key(3)]
         public ProductSortOptionType SortOption { get; set; }
 

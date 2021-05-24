@@ -17,6 +17,7 @@ namespace Gizmo.Web.Api.Models
         /// Return products of the specified product type.
         /// </summary>
         [DataMember]
+        [EnumValue]
         public ProductType? ProductType { get; set; }
 
         /// <summary>

@@ -14,6 +14,7 @@ namespace Gizmo.Web.Api.Models
         /// The quantity type of the fixed time line.
         /// </summary>
         [DataMember]
+        [EnumValue]
         public FixedTimeQuantityType QuantityType { get; set; }
     }
 }

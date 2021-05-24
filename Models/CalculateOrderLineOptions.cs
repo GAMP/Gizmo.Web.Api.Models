@@ -14,6 +14,7 @@ namespace Gizmo.Web.Api.Models
         /// The type of the order line.
         /// </summary>
         [DataMember]
+        [EnumValue]
         public LineType LineType { get; set; }
 
         /// <summary>

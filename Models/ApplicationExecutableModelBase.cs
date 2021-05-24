@@ -65,12 +65,14 @@ namespace Gizmo.Web.Api.Models
         /// The run mode of the executable.
         /// </summary>
         [DataMember]
+        [EnumValue]
         public RunMode RunMode { get; set; }
 
         /// <summary>
         /// The license reservation type of the executable.
         /// </summary>
         [DataMember]
+        [EnumValue]
         public LicenseReservationType ReservationType { get; set; }
 
         /// <summary>

@@ -16,6 +16,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [Required]
+        [EnumValue]
         public ProductType ProductType { get; set; }
     }
 }

@@ -71,6 +71,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [Required]
+        [EnumValue]
         public PurchaseOptionType PurchaseOptions { get; set; }
 
         /// <summary>

@@ -50,6 +50,7 @@ namespace Gizmo.Web.Api.Models
         //[DataMember]
         //public FileInfoLevel ComparisonLevel { get; set; }
         [DataMember]
+        [EnumValue]
         public ApplicationDeploymentComparisonMode ComparisonMode { get; set; }
 
         /// <summary>

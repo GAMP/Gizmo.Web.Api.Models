@@ -17,6 +17,7 @@ namespace Gizmo.Web.Api.Models
         /// The type of the script.
         /// </summary>
         [DataMember]
+        [EnumValue]
         public ScriptTypes ScriptType { get; set; }
 
         /// <summary>

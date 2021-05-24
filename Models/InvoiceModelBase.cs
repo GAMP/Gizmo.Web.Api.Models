@@ -35,6 +35,7 @@ namespace Gizmo.Web.Api.Models
         /// The status of the invoice.
         /// </summary>
         [DataMember]
+        [EnumValue]
         public InvoiceStatus Status { get; set; }
 
         /// <summary>

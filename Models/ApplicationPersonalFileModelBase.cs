@@ -17,6 +17,7 @@ namespace Gizmo.Web.Api.Models
         /// The type of the personal file.
         /// </summary>
         [DataMember]
+        [EnumValue]
         public PersonalUserFileType Type { get; set; }
 
         /// <summary>
@@ -59,6 +60,7 @@ namespace Gizmo.Web.Api.Models
         /// The activation type of the personal file.
         /// </summary>
         [DataMember]
+        [EnumValue]
         public PersonalFileActivationType Activation { get; set; }
 
         /// <summary>

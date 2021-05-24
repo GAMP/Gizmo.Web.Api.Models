@@ -25,6 +25,7 @@ namespace Gizmo.Web.Api.Models
         /// The severity of the note.
         /// </summary>
         [DataMember]
+        [EnumValue]
         public NoteSeverity Severity { get; set; }
 
         #endregion
