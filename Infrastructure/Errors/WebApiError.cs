@@ -1,4 +1,5 @@
-﻿using System.Runtime.Serialization;
+﻿using MessagePack;
+using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -6,6 +7,7 @@ namespace Gizmo.Web.Api.Models
     /// Represents web api error.
     /// </summary>
     [DataContract()]
+    [MessagePackObject()]
     public class WebApiError
     {
         #region CONSTRUCTOR
@@ -32,6 +34,7 @@ namespace Gizmo.Web.Api.Models
         /// Error message.
         /// </summary>
         [DataMember(EmitDefaultValue = false)]
+        [Key(0)]
         public string Message
         {
             get; set;

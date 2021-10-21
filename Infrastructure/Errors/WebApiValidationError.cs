@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using MessagePack;
+using System.ComponentModel;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
@@ -7,6 +8,7 @@ namespace Gizmo.Web.Api.Models
     /// Represents web api validation error.
     /// </summary>
     [DataContract()]
+    [MessagePackObject()]
     public class WebApiValidationError : WebApiError
     {
         #region CONSTRUCTOR
@@ -27,6 +29,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DefaultValue(null)]
         [DataMember(EmitDefaultValue = false)]
+        [Key(0)]
         public string PropertyName
         {
             get; protected set;
