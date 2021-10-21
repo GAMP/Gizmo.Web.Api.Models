@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using MessagePack;
+using System.ComponentModel;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
@@ -6,7 +7,10 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Base class for web api responses.
     /// </summary>
-    [DataContract()]    
+    [DataContract()]   
+    [MessagePackObject()]
+    [Union(0,typeof(WebApiResponse<>))]
+    [Union(1, typeof(WebApiErrorResponse))]
     public class WebApiResponseBase
     {
         #region CONSTRUCTOR
@@ -35,6 +39,7 @@ namespace Gizmo.Web.Api.Models
         /// HTTP status code.
         /// </summary>
         [DataMember()]
+        [Key(0)]
         public int HttpStatusCode
         {
             get; set;
@@ -45,6 +50,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DefaultValue(null)]
         [DataMember(EmitDefaultValue = false, IsRequired = false)]
+        [Key(1)]
         public string Message
         {
             get; set;
@@ -55,6 +61,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DefaultValue(false)]
         [DataMember(EmitDefaultValue =false)]
+        [Key(2)]
         public bool IsError
         {
             get;set;

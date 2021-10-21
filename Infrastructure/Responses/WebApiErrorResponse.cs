@@ -1,4 +1,5 @@
 ﻿#nullable enable
+using MessagePack;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,7 @@ namespace Gizmo.Web.Api.Models
     /// Web api error response model.
     /// </summary>
     [DataContract()]
+    [MessagePackObject()]
     public class WebApiErrorResponse : WebApiResponseBase
     {
         #region CONSTRUCTOR
@@ -61,6 +63,7 @@ namespace Gizmo.Web.Api.Models
         /// Optional error code type.
         /// </summary>
         [DataMember(EmitDefaultValue = false, Order = 0)]
+        [Key(3)]
         public int? ErrorCodeType
         {
             get; set;
@@ -70,6 +73,7 @@ namespace Gizmo.Web.Api.Models
         /// Optional error code type in human readable form.
         /// </summary>
         [DataMember(EmitDefaultValue = false, Order = 1)]
+        [Key(4)]
         public string? ErrorCodeTypeReadable
         {
             get; set;
@@ -79,6 +83,7 @@ namespace Gizmo.Web.Api.Models
         /// Optional error code.
         /// </summary>
         [DataMember(EmitDefaultValue = false, Order = 2)]
+        [Key(5)]
         public int? ErrorCode
         {
             get; set;
@@ -88,19 +93,21 @@ namespace Gizmo.Web.Api.Models
         /// Optional error code in human readable form.
         /// </summary>
         [DataMember(EmitDefaultValue = false, Order = 3)]
+        [Key(6)]
         public string? ErrorCodeReadable
         {
             get; set;
-        }       
+        }
 
         /// <summary>
         /// Extended error collection.
         /// </summary>
-        [DataMember(EmitDefaultValue = false,Order =4)]
+        [DataMember(EmitDefaultValue = false, Order = 4)]
+        [Key(7)]
         public IEnumerable<WebApiError>? Errors
         {
             get; set;
-        }     
+        }
 
         #endregion
 
@@ -126,7 +133,7 @@ namespace Gizmo.Web.Api.Models
         /// <returns>Web api error response.</returns>
         public static WebApiErrorResponse CreateBadRequestResponse(string errorMessage, Enum errorCodeType)
         {
-            return CreateBadRequestResponse(errorMessage,errorCodeType,null,null);
+            return CreateBadRequestResponse(errorMessage, errorCodeType, null, null);
         }
 
         /// <summary>
@@ -136,9 +143,9 @@ namespace Gizmo.Web.Api.Models
         /// <param name="errorCodeType">Error code type.</param>
         /// <param name="errorCode">Error code.</param>
         /// <returns>Web api error response.</returns>
-        public static WebApiErrorResponse CreateBadRequestResponse(string errorMessage, Enum errorCodeType , Enum errorCode)
+        public static WebApiErrorResponse CreateBadRequestResponse(string errorMessage, Enum errorCodeType, Enum errorCode)
         {
-            return CreateBadRequestResponse(errorMessage, errorCodeType, errorCode,null);
+            return CreateBadRequestResponse(errorMessage, errorCodeType, errorCode, null);
         }
 
         /// <summary>
@@ -148,7 +155,7 @@ namespace Gizmo.Web.Api.Models
         /// <returns>Web api error response.</returns>
         public static WebApiErrorResponse CreateBadRequestResponse(Enum errorCodeType)
         {
-            return CreateBadRequestResponse(null,errorCodeType, null,null);
+            return CreateBadRequestResponse(null, errorCodeType, null, null);
         }
 
         /// <summary>
@@ -159,7 +166,7 @@ namespace Gizmo.Web.Api.Models
         /// <returns>Web api error response.</returns>
         public static WebApiErrorResponse CreateBadRequestResponse(Enum errorCodeType, IEnumerable<WebApiError> errors)
         {
-            return CreateBadRequestResponse(null,errorCodeType,null,errors);
+            return CreateBadRequestResponse(null, errorCodeType, null, errors);
         }
 
         /// <summary>
@@ -172,7 +179,7 @@ namespace Gizmo.Web.Api.Models
             Enum? errorCode)
         {
             return CreateBadRequestResponse(null, errorCodeType, errorCode, default);
-        }     
+        }
 
         /// <summary>
         /// Creates bad request response for a specific error code type.
@@ -192,7 +199,7 @@ namespace Gizmo.Web.Api.Models
             {
                 //bad request is default status code
                 HttpStatusCode = HTTP_BAD_REQUEST_ERROR_CODE,
-                
+
                 //this is an error, set is error to true
                 IsError = true,
 
@@ -200,11 +207,11 @@ namespace Gizmo.Web.Api.Models
                 Message = errorMessage,
 
                 //set error code information
-                ErrorCodeType = errorCodeType != null ? Convert.ToInt32(errorCodeType) :null,
+                ErrorCodeType = errorCodeType != null ? Convert.ToInt32(errorCodeType) : null,
                 ErrorCodeTypeReadable = errorCodeType?.ToString(),
                 ErrorCode = errorCode != null ? Convert.ToInt32(errorCode) : null,
                 ErrorCodeReadable = errorCode?.ToString(),
-                
+
                 //add any optional extended errors
                 Errors = errors!
             };

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using MessagePack;
+using System.ComponentModel;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
@@ -8,6 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     /// <typeparam name="T">Result type.</typeparam>
     [DataContract()]
+    [MessagePackObject()]
     public class WebApiResponse<T> : WebApiResponseBase
     {
         #region CONSTRUCTOR
@@ -36,6 +38,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DefaultValue(null)]
         [DataMember(EmitDefaultValue = false, IsRequired = false)]
+        [Key(3)]
         public string Version
         {
             get;set;
@@ -46,6 +49,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DefaultValue(null)]
         [DataMember(EmitDefaultValue = false, IsRequired = false)]
+        [Key(4)]
         public T Result
         {
             get; set;
