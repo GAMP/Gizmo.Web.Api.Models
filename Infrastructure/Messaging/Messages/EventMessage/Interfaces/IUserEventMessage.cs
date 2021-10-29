@@ -12,6 +12,8 @@ namespace Gizmo.Web.Api.Messaging
     [Union(4, typeof(UserEmailChangedEventMessage))]
     [Union(5, typeof(UserEnableNegativeBalanceEventMessage))]
     [Union(6, typeof(UserUsageSessionChangedEventArgs))]
+    [Union(7, typeof(UserGroupChangedEventMessage))]
+    [Union(7, typeof(UserPictureChangedEventMessage))]
     public interface IUserEventMessage : IEventMessage
     {
     }

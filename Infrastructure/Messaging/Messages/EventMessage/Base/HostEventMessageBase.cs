@@ -4,27 +4,32 @@ using System.Runtime.Serialization;
 namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
-    /// Order event message base.
+    /// Host event message base.
     /// </summary>
     [DataContract()]
     [MessagePackObject()]
-    public abstract class OrderEventMessageBase : EventMessage , IOrderEventMessage
+    public abstract class HostEventMessageBase : EventMessage , IHostEventMessage
     {
         #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
-        public OrderEventMessageBase() : base(EventMessageTypeCache.IOrderEventMessage)
+        public HostEventMessageBase() : base(EventMessageTypeCache.IHostEventMessage)
         { } 
         #endregion
 
         #region PROPERTIES
+
         /// <summary>
-        /// Gets order id.
+        /// Gets host id.
         /// </summary>
-        [DataMember()]
         [Key(1)]
-        public int OrderId { get; set; } 
+        [DataMember()]
+        public int HostId
+        {
+            get; init;
+        } 
+
         #endregion
     }
 }

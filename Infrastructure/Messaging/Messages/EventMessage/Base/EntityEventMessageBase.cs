@@ -7,16 +7,16 @@ namespace Gizmo.Web.Api.Messaging
     /// Entity event message base.
     /// </summary>
     [DataContract()]
-    [MessagePackObject()] 
+    [MessagePackObject()]
     public abstract class EntityEventMessageBase : EventMessage, IEntityEventMessage
     {
         #region CONSTRUCTOR
-        
+
         /// <summary>
         /// Creates new instance.
         /// </summary>
-         public EntityEventMessageBase() : base(EventMessageTypeCache.IEntityEventMessage)
-        { } 
+        public EntityEventMessageBase() : base(EventMessageTypeCache.IEntityEventMessage)
+        { }
 
         #endregion
     }

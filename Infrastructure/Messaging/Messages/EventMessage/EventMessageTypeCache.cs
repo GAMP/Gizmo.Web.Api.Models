@@ -39,6 +39,11 @@ namespace Gizmo.Web.Api.Messaging
         /// </summary>
         public static readonly Type IReservationEventMessage = typeof(IReservationEventMessage);
 
+        /// <summary>
+        /// License reservation message.
+        /// </summary>
+        public static readonly Type ILicenseReservationMessage = typeof(ILicenseReservationMessage);
+
         #endregion
     }
 }

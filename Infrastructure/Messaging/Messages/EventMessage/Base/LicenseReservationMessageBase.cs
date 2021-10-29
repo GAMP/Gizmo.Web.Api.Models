@@ -4,19 +4,19 @@ using System.Runtime.Serialization;
 namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
-    /// Waiting line event message base.
+    /// License reservation message base.
     /// </summary>
     [DataContract()]
     [MessagePackObject()]
-    public abstract class WaitingLineEventMessageBase : EventMessage , IWaitingLineEventMessage
+    public abstract class LicenseReservationMessageBase : EventMessage , ILicenseReservationMessage
     {
         #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
-        public WaitingLineEventMessageBase() : base(EventMessageTypeCache.IHostEventMessage)
+        public LicenseReservationMessageBase() : base(EventMessageTypeCache.ILicenseReservationMessage)
         {
-        }
+        } 
         #endregion
     }
 }

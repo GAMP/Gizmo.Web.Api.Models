@@ -46,8 +46,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Infrastructure\Messaging\Messages\EventMessage\App\" />
-	  <Folder Include="Infrastructure\Messaging\Messages\EventMessage\UserSession\" />
+	  <Folder Include="Infrastructure\Messaging\Messages\EventMessage\Host\" />
 	</ItemGroup>
 
 </Project>
