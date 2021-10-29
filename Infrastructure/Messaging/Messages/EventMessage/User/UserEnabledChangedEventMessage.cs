@@ -29,7 +29,7 @@ namespace Gizmo.Web.Api.Messaging
         public bool Disabled
         {
             get;
-            protected set;
+            init;
         }
 
         /// <summary>
@@ -40,7 +40,7 @@ namespace Gizmo.Web.Api.Messaging
         public DateTime? EnableDate
         {
             get;
-            protected set;
+            init;
         }
 
         /// <summary>
@@ -51,7 +51,7 @@ namespace Gizmo.Web.Api.Messaging
         public DateTime? DisabledDate
         {
             get;
-            protected set;
+            init;
         }
 
         #endregion

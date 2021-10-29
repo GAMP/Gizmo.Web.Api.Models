@@ -4,42 +4,40 @@ using System.Runtime.Serialization;
 namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
-    /// User email changed event message.
+    /// User usage session event message.
     /// </summary>
     [DataContract()]
     [MessagePackObject()]
-    public class UserEmailChangedEventMessage : UserEventMessageBase
+    public class UserUsageSessionChangedEventArgs : UserEventMessageBase
     {
         #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
-        public UserEmailChangedEventMessage() : base()
+        public UserUsageSessionChangedEventArgs() : base()
         { }
         #endregion
 
         #region PROPERTIES
 
         /// <summary>
-        /// Gets new email value.
+        /// Gets current time poroduct name.
         /// </summary>
         [DataMember()]
         [Key(2)]
-        public string NewEmail
+        public string CurrentTimeProduct
         {
-            get;
-            init;
+            get; init;
         }
 
         /// <summary>
-        /// Gets old email value.
+        /// Gets current usage type.
         /// </summary>
         [DataMember()]
         [Key(3)]
-        public string OldEmail
+        public UsageType CurrentUsageType
         {
-            get;
-            init;
+            get; init;
         }
 
         #endregion

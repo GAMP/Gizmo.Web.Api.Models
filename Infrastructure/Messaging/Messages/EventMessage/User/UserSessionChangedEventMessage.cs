@@ -15,7 +15,7 @@ namespace Gizmo.Web.Api.Messaging
         /// Creates new instance.
         /// </summary>
         public UserSessionChangedEventMessage() : base()
-        { } 
+        { }
         #endregion
 
         #region PROPERTIES
@@ -27,7 +27,7 @@ namespace Gizmo.Web.Api.Messaging
         [Key(2)]
         public UserSessionState State
         {
-            get; set;
+            get; init;
         }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Gizmo.Web.Api.Messaging
         [Key(3)]
         public UserSessionState OldState
         {
-            get; set;
+            get; init;
         }
 
         /// <summary>
@@ -46,7 +46,7 @@ namespace Gizmo.Web.Api.Messaging
         [Key(4)]
         public double Span
         {
-            get; set;
+            get; init;
         }
 
         /// <summary>
@@ -56,7 +56,7 @@ namespace Gizmo.Web.Api.Messaging
         [Key(5)]
         public int Slot
         {
-            get; set;
+            get; init;
         }
 
         /// <summary>
@@ -66,7 +66,7 @@ namespace Gizmo.Web.Api.Messaging
         [Key(6)]
         public int HostId
         {
-            get; set;
+            get; init;
         }
 
         #endregion

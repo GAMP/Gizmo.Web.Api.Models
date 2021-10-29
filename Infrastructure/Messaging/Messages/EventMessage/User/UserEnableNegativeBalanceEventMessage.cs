@@ -26,7 +26,7 @@ namespace Gizmo.Web.Api.Messaging
         [Key(2)]
         public bool? Enabled
         {
-            get; protected set;
+            get; init;
         }
         #endregion
     }

@@ -14,7 +14,7 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Creates new instance.
         /// </summary>
-        public UserBalanceCloseEventMessage():base()
+        public UserBalanceCloseEventMessage() : base()
         { }
         #endregion
     }
