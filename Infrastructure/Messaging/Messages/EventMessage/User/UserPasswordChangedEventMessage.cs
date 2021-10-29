@@ -4,17 +4,17 @@ using System.Runtime.Serialization;
 namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
-    /// User picture changed event message.
+    /// User password changed event message.
     /// </summary>
     [DataContract()]
     [MessagePackObject()]
-    public class UserPictureChangedEventMessage : UserEventMessageBase
+    public class UserPasswordChangedEventMessage : UserEventMessageBase
     {
         #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
-        public UserPictureChangedEventMessage() : base()
+        public UserPasswordChangedEventMessage() : base()
         { } 
         #endregion
     }
