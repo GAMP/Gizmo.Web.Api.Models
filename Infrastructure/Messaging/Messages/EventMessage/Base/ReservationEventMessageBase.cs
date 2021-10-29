@@ -4,30 +4,31 @@ using System.Runtime.Serialization;
 namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
-    /// User event message base.
+    /// Reservation event message base.
     /// </summary>
     [DataContract()]
-    public abstract class UserEventMessageBase : EventMessage, IUserEventMessage
+    [MessagePackObject()]
+    public abstract class ReservationEventMessageBase : EventMessage
     {
         #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
-        public UserEventMessageBase() : base(EventMessageTypeCache.IUserEventMessage)
-        { } 
+        public ReservationEventMessageBase() : base(EventMessageTypeCache.IReservationEventMessage)
+        { }
         #endregion
 
         #region PROPERTIES
 
         /// <summary>
-        /// Gets user id.
+        /// Gets reservation id.
         /// </summary>
         [DataMember()]
         [Key(1)]
-        public int UserId
+        public int ReservationId
         {
-            get; set;
-        } 
+            get; protected set;
+        }
 
         #endregion
     }
