@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Messaging
     /// Waiting line event message interface.
     /// </summary>
     [Union(0,typeof(WaitingLineEventMessage))]
-    public interface IWaitingLineEventMessage
+    public interface IWaitingLineEventMessage : IEventMessage
     {
     }
 }

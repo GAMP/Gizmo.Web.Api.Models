@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Messaging
     /// License reservation message interface.
     /// </summary>
     [Union(0, typeof(LicenseReservationMessage))]
-    public interface ILicenseReservationMessage
+    public interface ILicenseReservationMessage : IEventMessage
     {
     }
 }

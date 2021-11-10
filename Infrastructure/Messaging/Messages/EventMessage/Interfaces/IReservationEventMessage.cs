@@ -3,7 +3,7 @@
     /// <summary>
     /// Reservation event message interface.
     /// </summary>
-    public interface IReservationEventMessage
+    public interface IReservationEventMessage : IEventMessage
     {
     }
 }

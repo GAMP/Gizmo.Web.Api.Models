@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Messaging
     [Union(1, typeof(OrderInvoicedEventMessage))]
     [Union(2, typeof(OrderInvoicePaymentEventMessage))]
     [Union(3, typeof(OrderStatusChangeEventMessage))]
-    public interface IOrderEventMessage
+    public interface IOrderEventMessage : IEventMessage
     {
     }
 }
