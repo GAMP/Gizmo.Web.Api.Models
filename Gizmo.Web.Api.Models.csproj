@@ -24,14 +24,11 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <None Remove="Infrastructure\Messaging\Messages\EventMessage\Interfaces\IUserEventMessage.cs~RFf78664.TMP" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<PackageReference Include="MessagePack" Version="2.2.113" />
+		<PackageReference Include="MessagePack" Version="2.3.85" />
+		<PackageReference Include="Microsoft.AspNetCore.SignalR.Protocols.Json" Version="6.0.0" />
 		<PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
 		<PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
-		<PackageReference Include="System.Net.Http.Json" Version="5.0.0" />
+		<PackageReference Include="System.Net.Http.Json" Version="6.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -39,14 +36,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Include="Resources\package_icon.png">
-	    <Pack>True</Pack>
-	    <PackagePath></PackagePath>
-	  </None>
+		<None Include="Resources\package_icon.png">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Infrastructure\Messaging\Messages\EventMessage\Host\" />
+		<Folder Include="Infrastructure\Messaging\Messages\EventMessage\Host\" />
 	</ItemGroup>
 
 </Project>
