@@ -8,8 +8,19 @@ using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
+    /// <summary>
+    /// Web api client parameters generator.
+    /// </summary>
     public static class ParameterGenerator
     {
+        #region PUBLIC STATIC 
+        
+        /// <summary>
+        /// Generates url query parameters.
+        /// </summary>
+        /// <param name="queryParameters">Query parameters.</param>
+        /// <param name="prefix">Prefix.</param>
+        /// <returns>Generated query parameters.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static string Generate(IUrlQueryParameters queryParameters, string prefix = null)
         {
@@ -105,6 +116,11 @@ namespace Gizmo.Web.Api.Models
             return result;
         }
 
+        /// <summary>
+        /// Generates route parameters.
+        /// </summary>
+        /// <param name="routeParameters">Route parameters.</param>
+        /// <returns>Generated route parameters.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static string Generate(IUrlRouteParameters routeParameters)
         {
@@ -114,6 +130,10 @@ namespace Gizmo.Web.Api.Models
             return null;
         }
 
+        #endregion
+
+        #region PRIVATE STATIC
+        
         private static IEnumerable<PropertyInfo> GetProperties(object target)
         {
             if (target == null)
@@ -124,6 +144,8 @@ namespace Gizmo.Web.Api.Models
                 .Where(prop => prop.GetCustomAttribute<DataMemberAttribute>() != null)
                 .Select(prop => prop)
                 .ToList();
-        }
+        } 
+
+        #endregion
     }
 }

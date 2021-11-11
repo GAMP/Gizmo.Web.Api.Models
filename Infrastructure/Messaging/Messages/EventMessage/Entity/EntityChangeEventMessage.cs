@@ -30,7 +30,7 @@ namespace Gizmo.Web.Api.Messaging
         /// </remarks>
         [DataMember(Order = 2)]
         [Key(2)]
-        public int EventType
+        public EntityEventType EventType
         {
             get; set;
         }
