@@ -10,7 +10,7 @@ namespace Gizmo.Web.Api.Models
     [Serializable]
     [DataContract]
     [MessagePackObject()]
-    public class Device
+    public class Device: DeviceModelBase, IEntityBase
     {
         #region CONSTRUCTOR
         /// <summary>
@@ -26,36 +26,15 @@ namespace Gizmo.Web.Api.Models
         /// Gets device id.
         /// </summary>
         [DataMember]
-        [Key(0)]
+        [Key(4)]
         public int Id { get; set; }
-
-        /// <summary>
-        /// Gets device name.
-        /// </summary>
-        [DataMember]
-        [Key(1)]
-        public string Name { get; set; }
-
-        /// <summary>
-        /// Gets if device is deleted.
-        /// </summary>
-        [DataMember]
-        [Key(2)]
-        public bool IsDeleted { get; set; }
-
-        /// <summary>
-        /// Gets if device is enabled.
-        /// </summary>
-        [DataMember]
-        [Key(3)]
-        public bool IsEnabled { get; set; }
 
         /// <summary>
         /// Gets device type.
         /// </summary>
         [DataMember]
-        [Key(4)]
-        public DeviceType Type { get; set; }
+        [Key(5)]
+        public DeviceType DeviceType { get; set; }
 
         #endregion
     }

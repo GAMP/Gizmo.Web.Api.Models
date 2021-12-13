@@ -40,12 +40,11 @@ namespace Gizmo.Web.Api.Models
         public bool IsDeleted { get; set; }
 
         /// <summary>
-        /// Gets or sets unique device ide.
+        /// The hdmi device object attached to this device if the device is an hdmi device, otherwise it will be null.
         /// </summary>
-        [StringLength(255)]
-        [DataMember()]
+        [DataMember]
         [MessagePack.Key(3)]
-        public string UniqueId { get; set; }
+        public HdmiDevice HdmiDevice { get; set; }
 
         #endregion
     }

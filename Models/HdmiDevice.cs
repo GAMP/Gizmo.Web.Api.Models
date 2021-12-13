@@ -1,25 +1,27 @@
 ﻿using MessagePack;
 using System;
+using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Device creation model.
+    /// Hdmi Device model.
     /// </summary>
     [Serializable]
     [DataContract]
     [MessagePackObject()]
-    public class DeviceModelCreate : DeviceModelBase
+    public class HdmiDevice
     {
         #region PROPERTIES
-        
+
         /// <summary>
-        /// Gets or sets device type.
+        /// Gets or sets unique device ide.
         /// </summary>
-        [DataMember]
-        [Key(4)]
-        public DeviceType DeviceType { get; set; } 
+        [StringLength(255)]
+        [DataMember()]
+        [MessagePack.Key(0)]
+        public string UniqueId { get; set; }
 
         #endregion
     }
