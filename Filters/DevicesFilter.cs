@@ -19,12 +19,6 @@ namespace Gizmo.Web.Api.Models
         [EnumValue]
         public DeviceType? DeviceType { get; set; }
 
-        /// <summary>
-        /// Return deleted devices.
-        /// </summary>
-        [DataMember]
-        public bool? IsDeleted { get; set; }
-
         #endregion
     }
 }
