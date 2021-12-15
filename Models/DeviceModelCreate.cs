@@ -18,7 +18,7 @@ namespace Gizmo.Web.Api.Models
         /// Gets or sets device type.
         /// </summary>
         [DataMember]
-        [Key(4)]
+        [Key(3)]
         public DeviceType DeviceType { get; set; } 
 
         #endregion

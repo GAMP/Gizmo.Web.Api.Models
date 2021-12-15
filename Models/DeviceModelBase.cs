@@ -33,17 +33,10 @@ namespace Gizmo.Web.Api.Models
         public bool IsEnabled { get; set; }
 
         /// <summary>
-        /// Gets or sets if device is deleted.
-        /// </summary>
-        [DataMember]
-        [MessagePack.Key(2)]
-        public bool IsDeleted { get; set; }
-
-        /// <summary>
         /// The hdmi device object attached to this device if the device is an hdmi device, otherwise it will be null.
         /// </summary>
         [DataMember]
-        [MessagePack.Key(3)]
+        [MessagePack.Key(2)]
         public HdmiDevice HdmiDevice { get; set; }
 
         #endregion

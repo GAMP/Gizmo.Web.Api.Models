@@ -15,7 +15,7 @@ namespace Gizmo.Web.Api.Models
         #region PROPERTIES
         
         /// <inheritdoc/>
-        [Key(4)]
+        [Key(3)]
         public int Id { get; set; } 
 
         #endregion

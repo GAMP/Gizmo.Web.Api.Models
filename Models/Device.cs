@@ -26,14 +26,14 @@ namespace Gizmo.Web.Api.Models
         /// Gets device id.
         /// </summary>
         [DataMember]
-        [Key(4)]
+        [Key(3)]
         public int Id { get; set; }
 
         /// <summary>
         /// Gets device type.
         /// </summary>
         [DataMember]
-        [Key(5)]
+        [Key(4)]
         public DeviceType DeviceType { get; set; }
 
         #endregion
