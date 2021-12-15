@@ -11,8 +11,9 @@ namespace Gizmo.Web.Api.Models
     [Serializable()]
     [DataContract]
     [MessagePackObject()]
-    [Union(0, typeof(DeviceModelCreate))]
-    [Union(1, typeof(DeviceModelUpdate))]
+    [Union(0, typeof(Device))]
+    [Union(1, typeof(DeviceModelCreate))]
+    [Union(2, typeof(DeviceModelUpdate))]
     public class DeviceModelBase
     {
         #region PROPERTIES
