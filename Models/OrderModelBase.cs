@@ -24,6 +24,12 @@ namespace Gizmo.Web.Api.Models
         public int UserId { get; set; }
 
         /// <summary>
+        /// The Id of the host this order is associated with.
+        /// </summary>
+        [DataMember]
+        public int? HostId { get; set; }
+
+        /// <summary>
         /// The status of the order.
         /// </summary>
         [DataMember]
