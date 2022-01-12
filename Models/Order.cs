@@ -19,6 +19,12 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         public int Id { get; set; }
 
+        /// <summary>
+        /// The invoice of the order.
+        /// </summary>
+        [DataMember]
+        public Invoice Invoice { get; set; }
+
         #endregion
     }
 }
