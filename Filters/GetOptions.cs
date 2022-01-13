@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
-    public class GetOptions
+    public class GetOptions : IUrlQueryParameters
     {
         /// <summary>
         /// Include specified objects in the result.
