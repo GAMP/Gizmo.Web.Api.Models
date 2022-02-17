@@ -43,8 +43,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Infrastructure\Messaging\Messages\CommandMessage\" />
-	  <Folder Include="Infrastructure\Messaging\Messages\ControlMessage\" />
+	  <Folder Include="Messages\CommandMessage\" />
+	  <Folder Include="Messages\ControlMessage\" />
 	</ItemGroup>
 
 </Project>
