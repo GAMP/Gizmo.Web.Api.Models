@@ -1,13 +1,12 @@
 ﻿using MessagePack;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Represents web api error.
     /// </summary>
-    [DataContract()]
     [MessagePackObject()]
+    [Union(0,typeof(WebApiValidationError))]
     public class WebApiError
     {
         #region CONSTRUCTOR
@@ -21,7 +20,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Creates new instance.
         /// </summary>
-        /// <param name="message"></param>
+        /// <param name="message">Error message.</param>
         public WebApiError(string message)
         {
             Message = message;
@@ -33,7 +32,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Error message.
         /// </summary>
-        [DataMember(EmitDefaultValue = false)]
         [Key(0)]
         public string Message
         {

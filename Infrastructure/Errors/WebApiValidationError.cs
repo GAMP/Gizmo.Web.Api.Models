@@ -1,13 +1,10 @@
 ﻿using MessagePack;
-using System.ComponentModel;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Represents web api validation error.
     /// </summary>
-    [DataContract()]
     [MessagePackObject()]
     public class WebApiValidationError : WebApiError
     {
@@ -27,8 +24,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Property name.
         /// </summary>
-        [DefaultValue(null)]
-        [DataMember(EmitDefaultValue = false)]
         [Key(0)]
         public string PropertyName
         {
