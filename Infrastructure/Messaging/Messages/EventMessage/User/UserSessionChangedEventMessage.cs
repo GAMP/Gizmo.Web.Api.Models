@@ -31,19 +31,10 @@ namespace Gizmo.Web.Api.Messaging
         }
 
         /// <summary>
-        /// Gets old state.
-        /// </summary>
-        [Key(3)]
-        public UserSessionState OldState
-        {
-            get; init;
-        }
-
-        /// <summary>
         /// Gets span.
         /// </summary>
         [DataMember()]
-        [Key(4)]
+        [Key(3)]
         public double Span
         {
             get; init;
@@ -53,7 +44,7 @@ namespace Gizmo.Web.Api.Messaging
         /// Gets slot.
         /// </summary>
         [DataMember()]
-        [Key(5)]
+        [Key(4)]
         public int Slot
         {
             get; init;
@@ -63,7 +54,7 @@ namespace Gizmo.Web.Api.Messaging
         /// Gets user session host id.
         /// </summary>
         [DataMember()]
-        [Key(6)]
+        [Key(5)]
         public int HostId
         {
             get; init;
