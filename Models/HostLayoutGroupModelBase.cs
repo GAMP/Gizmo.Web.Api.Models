@@ -1,29 +1,31 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Order.
+    /// Host layout group.
     /// </summary>
     [Serializable]
     [DataContract]
-    public class Order : OrderModelBase, IEntityBase
+    public class HostLayoutGroupModelBase
     {
         #region PROPERTIES
 
         /// <summary>
-        /// The Id of the object.
+        /// The name of the host group.
         /// </summary>
         [DataMember]
-        public int Id { get; set; }
+        [Required]
+        [StringLength(45)]
+        public string Name { get; set; }
 
         /// <summary>
-        /// The invoice of the order.
+        /// The display order of the layout group.
         /// </summary>
         [DataMember]
-        public Invoice Invoice { get; set; }
+        public int DisplayOrder { get; set; }
 
         #endregion
     }

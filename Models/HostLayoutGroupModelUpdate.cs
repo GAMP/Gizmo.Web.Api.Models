@@ -1,23 +1,24 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Filters that can be applied when searching for devices.
+    /// Host layout group.
     /// </summary>
     [Serializable]
     [DataContract]
-    public class DevicesFilter : PaginationFilter, IUrlQueryParameters
+    public class HostLayoutGroupModelUpdate : HostLayoutGroupModelBase, IEntityBase, IUrlQueryParameters
     {
         #region PROPERTIES
 
         /// <summary>
-        /// Return devices of the specified device type.
+        /// The Id of the object.
         /// </summary>
         [DataMember]
-        [EnumValue]
-        public DeviceType? DeviceType { get; set; }
+        [Required]
+        public int Id { get; set; }
 
         #endregion
     }

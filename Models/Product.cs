@@ -35,6 +35,12 @@ namespace Gizmo.Web.Api.Models
         public Guid Guid { get; set; }
 
         /// <summary>
+        /// The taxes of the product.
+        /// </summary>
+        [DataMember]
+        public IEnumerable<ProductTax> ProductTaxes { get; set; }
+
+        /// <summary>
         /// The images of the product.
         /// </summary>
         [DataMember]

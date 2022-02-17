@@ -1,35 +1,28 @@
-﻿using MessagePack;
-using System;
+﻿using System;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Device host relation model.
+    /// Host layout.
     /// </summary>
-    [Serializable()]
+    [Serializable]
     [DataContract]
-    [MessagePackObject()]
-    public class DeviceHost : DeviceHostModelBase, IEntityBase
+    public class HostLayout : HostLayoutModelBase, IEntityBase
     {
         #region PROPERTIES
 
         /// <summary>
-        /// Gets object id. 
+        /// The Id of the object.
         /// </summary>
         [DataMember]
-        [Key(1)]
         public int Id { get; set; }
 
         /// <summary>
-        /// Gets host id.
+        /// The Id of the host layout group this host layout belongs to.
         /// </summary>
         [DataMember]
-        [Key(2)]
-        public int HostId
-        {
-            get; set;
-        }
+        public int HostLayoutGroupId { get; set; }
 
         #endregion
     }

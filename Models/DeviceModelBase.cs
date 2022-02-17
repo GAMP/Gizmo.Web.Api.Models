@@ -11,8 +11,9 @@ namespace Gizmo.Web.Api.Models
     [Serializable()]
     [DataContract]
     [MessagePackObject()]
-    [Union(0, typeof(DeviceModelCreate))]
-    [Union(1, typeof(DeviceModelUpdate))]
+    [Union(0, typeof(Device))]
+    [Union(1, typeof(DeviceModelCreate))]
+    [Union(2, typeof(DeviceModelUpdate))]
     public class DeviceModelBase
     {
         #region PROPERTIES
@@ -33,19 +34,11 @@ namespace Gizmo.Web.Api.Models
         public bool IsEnabled { get; set; }
 
         /// <summary>
-        /// Gets or sets if device is deleted.
+        /// The hdmi device object attached to this device if the device is an hdmi device, otherwise it will be null.
         /// </summary>
         [DataMember]
         [MessagePack.Key(2)]
-        public bool IsDeleted { get; set; }
-
-        /// <summary>
-        /// Gets or sets unique device ide.
-        /// </summary>
-        [StringLength(255)]
-        [DataMember()]
-        [MessagePack.Key(3)]
-        public string UniqueId { get; set; }
+        public HdmiDevice HdmiDevice { get; set; }
 
         #endregion
     }

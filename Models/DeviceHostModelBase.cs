@@ -10,23 +10,16 @@ namespace Gizmo.Web.Api.Models
     [Serializable()]
     [DataContract]
     [MessagePackObject()]
-    public class DeviceHost : DeviceHostModelBase, IEntityBase
+    public class DeviceHostModelBase
     {
         #region PROPERTIES
 
         /// <summary>
-        /// Gets object id. 
+        /// Gets device id.
         /// </summary>
         [DataMember]
-        [Key(1)]
-        public int Id { get; set; }
-
-        /// <summary>
-        /// Gets host id.
-        /// </summary>
-        [DataMember]
-        [Key(2)]
-        public int HostId
+        [Key(0)]
+        public int DeviceId
         {
             get; set;
         }
