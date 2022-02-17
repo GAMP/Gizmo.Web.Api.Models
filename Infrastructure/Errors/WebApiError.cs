@@ -6,8 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// Represents web api error.
     /// </summary>
     [MessagePackObject()]
-    [Union(0,typeof(WebApiValidationError))]
-    public class WebApiError
+    public class WebApiError : WebApiErrorBase
     {
         #region CONSTRUCTOR
 

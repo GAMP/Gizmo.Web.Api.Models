@@ -45,9 +45,9 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         /// <param name="httpStatusCode">Http status code.</param>
         /// <param name="errors">Extended errors.</param>
-        public WebApiErrorResponse(int httpStatusCode, IEnumerable<WebApiError> errors) : base(httpStatusCode, true)
+        public WebApiErrorResponse(int httpStatusCode, IEnumerable<WebApiErrorBase> errors) : base(httpStatusCode, true)
         {
-            Errors = errors ?? Enumerable.Empty<WebApiError>();
+            Errors = errors ?? Enumerable.Empty<WebApiErrorBase>();
         }
 
         #endregion
@@ -103,7 +103,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [JsonPropertyOrder(4)]
         [Key(7)]
-        public IEnumerable<WebApiError>? Errors
+        public IEnumerable<WebApiErrorBase>? Errors
         {
             get; set;
         }

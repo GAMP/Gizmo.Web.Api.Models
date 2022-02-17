@@ -24,7 +24,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Property name.
         /// </summary>
-        [Key(0)]
+        [Key(1)]
         public string PropertyName
         {
             get; protected set;
