@@ -3,14 +3,13 @@ using MessagePack;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Serialization;
+using System.Text.Json.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Web api error response model.
     /// </summary>
-    [DataContract()]
     [MessagePackObject()]
     public class WebApiErrorResponse : WebApiResponseBase
     {
@@ -62,7 +61,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Optional error code type.
         /// </summary>
-        [DataMember(EmitDefaultValue = false, Order = 0)]
+        [JsonPropertyOrder(0)]
         [Key(3)]
         public int? ErrorCodeType
         {
@@ -72,7 +71,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Optional error code type in human readable form.
         /// </summary>
-        [DataMember(EmitDefaultValue = false, Order = 1)]
+        [JsonPropertyOrder(1)]
         [Key(4)]
         public string? ErrorCodeTypeReadable
         {
@@ -82,7 +81,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Optional error code.
         /// </summary>
-        [DataMember(EmitDefaultValue = false, Order = 2)]
+        [JsonPropertyOrder(2)]
         [Key(5)]
         public int? ErrorCode
         {
@@ -92,7 +91,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Optional error code in human readable form.
         /// </summary>
-        [DataMember(EmitDefaultValue = false, Order = 3)]
+        [JsonPropertyOrder(3)]
         [Key(6)]
         public string? ErrorCodeReadable
         {
@@ -102,7 +101,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Extended error collection.
         /// </summary>
-        [DataMember(EmitDefaultValue = false, Order = 4)]
+        [JsonPropertyOrder(4)]
         [Key(7)]
         public IEnumerable<WebApiError>? Errors
         {

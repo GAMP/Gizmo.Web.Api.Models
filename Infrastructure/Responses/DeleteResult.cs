@@ -1,6 +1,5 @@
 ﻿using MessagePack;
 using System;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -8,7 +7,6 @@ namespace Gizmo.Web.Api.Models
     /// Delete result.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject()]
     public class DeleteResult
     { }

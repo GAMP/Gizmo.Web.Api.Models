@@ -1,5 +1,4 @@
 ﻿using MessagePack;
-using System.ComponentModel;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
@@ -36,8 +35,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Get response version.
         /// </summary>
-        [DefaultValue(null)]
-        [DataMember(EmitDefaultValue = false, IsRequired = false)]
         [Key(3)]
         public string Version
         {
@@ -47,8 +44,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Gets response result.
         /// </summary>
-        [DefaultValue(null)]
-        [DataMember(EmitDefaultValue = false, IsRequired = false)]
         [Key(4)]
         public T Result
         {

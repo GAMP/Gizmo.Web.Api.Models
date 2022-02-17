@@ -1,13 +1,10 @@
 ﻿using MessagePack;
-using System.ComponentModel;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Base class for web api responses.
     /// </summary>
-    [DataContract()]   
     [MessagePackObject()]
     [Union(0,typeof(WebApiResponse<>))]
     [Union(1, typeof(WebApiErrorResponse))]
@@ -38,7 +35,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// HTTP status code.
         /// </summary>
-        [DataMember()]
         [Key(0)]
         public int HttpStatusCode
         {
@@ -48,8 +44,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Gets response message.
         /// </summary>
-        [DefaultValue(null)]
-        [DataMember(EmitDefaultValue = false, IsRequired = false)]
         [Key(1)]
         public string Message
         {
@@ -59,8 +53,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Indicates if object represents an error response.
         /// </summary>
-        [DefaultValue(false)]
-        [DataMember(EmitDefaultValue =false)]
         [Key(2)]
         public bool IsError
         {
