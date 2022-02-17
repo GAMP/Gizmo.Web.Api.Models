@@ -3,7 +3,7 @@
     /// <summary>
     /// Control message interface.
     /// </summary>
-    public interface IControlMessage
+    public interface IControlMessage : IMessage, ISerializationType
     {
     }
 }
