@@ -11,7 +11,7 @@ namespace Gizmo.Web.Api.Messaging
     {
         #region FIELDS
 
-        private const string DESCRIMINATOR_NAME = "Type";
+        private const string DESCRIMINATOR_NAME = "MessageType";
 
         #endregion
 

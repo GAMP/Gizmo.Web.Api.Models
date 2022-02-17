@@ -7,25 +7,30 @@ using System.Text.Json;
 
 namespace Gizmo.Web.Api.Messaging
 {
-    /// <inheritdoc/>
-    /// <typeparam name="TMessage">Message type, this type must derive <see cref="IEventMessage"/> and must not be equal to <see cref="IEventMessage"/>.</typeparam>
-    public class EventMessageJsonConverter<TMessage> : PolymorphicObjectJsonConverter<TMessage> where TMessage : IEventMessage
+    /// <summary>
+    /// Converter using MessagePack Union attribute to identiyf messages.
+    /// </summary>
+    /// <typeparam name="TMessage">Message type, this type must derive <see cref="IMessage"/> and must not be equal to <see cref="IMessage"/>.</typeparam>
+    public class MessagePackUnionMessageJsonConverter<TMessage> : PolymorphicObjectJsonConverter<TMessage> where TMessage : IMessage
     {
         #region CONSTRUCTOR
 
         /// <inheritdoc/>
-        public EventMessageJsonConverter() : base()
+        public MessagePackUnionMessageJsonConverter() : base()
         {
-            if (typeof(TMessage) == typeof(IEventMessage))
-                throw new NotSupportedException($"Type of {nameof(IEventMessage)} not supported. Use derived types instead.");
+            if (typeof(TMessage) == typeof(IMessage))
+                throw new NotSupportedException($"Type of {nameof(IMessage)} not supported. Use derived types instead.");
         }
 
         /// <summary>
         /// Static constructor.
         /// </summary>
-        static EventMessageJsonConverter()
+        static MessagePackUnionMessageJsonConverter()
         {
+            //get all union attributes applied to the generic target type
             var exactTypes = targetType.GetCustomAttributes<UnionAttribute>();
+
+            //create look up dictionaries
             unionCodeLookup = exactTypes.ToDictionary(key => key.Key, value => value.SubType);
             typeLookup = exactTypes.ToDictionary(key => key.SubType, value => value.Key);
         }
@@ -37,7 +42,7 @@ namespace Gizmo.Web.Api.Messaging
         private static readonly Type targetType = typeof(TMessage);
         private static readonly Dictionary<int, Type> unionCodeLookup;
         private static readonly Dictionary<Type, int> typeLookup;
-        private static readonly string PAYLOAD_PROPERTY_NAME = "Event";
+        private static readonly string PAYLOAD_PROPERTY_NAME = "Message";
 
         #endregion      
 
@@ -48,7 +53,7 @@ namespace Gizmo.Web.Api.Messaging
         {
             return typeLookup.ContainsKey(typeToConvert) || typeToConvert.IsAssignableFrom(targetType);
         }
-     
+
         /// <inheritdoc/>
         public override TMessage? Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {
@@ -63,7 +68,7 @@ namespace Gizmo.Web.Api.Messaging
             var type = GetUnionByInterfaceType(descriminator);
 
             //deserialize to associated type
-            object result = JsonSerializer.Deserialize(ref reader,type);       
+            object result = JsonSerializer.Deserialize(ref reader, type);
 
             //read to the end of message
             reader.Read();
@@ -99,16 +104,18 @@ namespace Gizmo.Web.Api.Messaging
         #endregion
 
         #region PRIVATE FUNCTIONS
-        
+
         private Type GetUnionByInterfaceType(int unionCode)
         {
+            //we could use try get value methods here
             return unionCodeLookup[unionCode];
         }
 
         private int GetUnionByExactType(Type exactType)
         {
+            //we could use try get value methods here
             return typeLookup[exactType];
-        } 
+        }
 
         #endregion
     }

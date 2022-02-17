@@ -8,14 +8,14 @@ namespace Gizmo.Web.Api.Messaging
     /// </summary>
     [DataContract()]
     [MessagePackObject()]
-    public class CommandMessage : MessageBase
+    public abstract class CommandMessage : SerializationTypeMessage
     {
         #region CONSTRUCTOR
         
         /// <summary>
         /// Creates new instance.
         /// </summary>
-        public CommandMessage() : base()
+        public CommandMessage() : base(ICommandMessage)
         { } 
 
         #endregion

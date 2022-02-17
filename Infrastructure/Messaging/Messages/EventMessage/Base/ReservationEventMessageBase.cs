@@ -8,13 +8,13 @@ namespace Gizmo.Web.Api.Messaging
     /// </summary>
     [DataContract()]
     [MessagePackObject()]
-    public abstract class ReservationEventMessageBase : EventMessage , IReservationEventMessage
+    public abstract class ReservationEventMessageBase : EventMessage
     {
         #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
-        public ReservationEventMessageBase() : base(EventMessageTypeCache.IReservationEventMessage)
+        public ReservationEventMessageBase() : base()
         { }
         #endregion
 

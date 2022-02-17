@@ -21,15 +21,15 @@ namespace Gizmo.Web.Api.Messaging
                 throw new ArgumentNullException(nameof(options));
 
             //get target interfacce
-            var targetInterfaceType = typeof(IEventMessage);
+            var targetInterfaceType = typeof(IMessage);
 
             //get target assembly containing event message interface
-            var targetAssembly = typeof(IEventMessage).Assembly;
+            var targetAssembly = typeof(IMessage).Assembly;
 
             //get converter type
-            var converterType = typeof(EventMessageJsonConverter<>);
+            var converterType = typeof(MessagePackUnionMessageJsonConverter<>);
 
-            //process all the types
+            //process all the types that implement IMessage interface and add a converter for them
             foreach (Type type in targetAssembly
                 .GetTypes()
                 .Where(mytype => mytype.GetInterfaces().Contains(targetInterfaceType))

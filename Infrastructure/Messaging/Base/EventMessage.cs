@@ -1,5 +1,4 @@
 ﻿using MessagePack;
-using System;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Messaging
@@ -9,14 +8,14 @@ namespace Gizmo.Web.Api.Messaging
     /// </summary>
     [DataContract()]
     [MessagePackObject()]
-    public abstract class EventMessage : SerializationTypeMessage, IEventMessage
+    public class EventMessage : SerializationTypeMessage, IEventMessage
     {
         #region CONSTRUCTOR
 
         /// <summary>
         /// Creates new instance.
         /// </summary>
-        public EventMessage(Type serializationType) : base(serializationType)
+        public EventMessage() : base(IEventMessage)
         { }
 
         #endregion

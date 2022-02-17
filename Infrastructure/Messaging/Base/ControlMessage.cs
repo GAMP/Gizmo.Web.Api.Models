@@ -8,13 +8,13 @@ namespace Gizmo.Web.Api.Messaging
     /// </summary>
     [DataContract()]
     [MessagePackObject()]
-    public class ControlMessage : MessageBase , IControlMessage
+    public abstract class ControlMessage : SerializationTypeMessage , IControlMessage
     {
         #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
-        public ControlMessage() : base()
+        public ControlMessage() : base(IControlMessage)
         { } 
         #endregion
     }

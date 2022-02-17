@@ -8,13 +8,13 @@ namespace Gizmo.Web.Api.Messaging
     /// </summary>
     [DataContract()]
     [MessagePackObject()]
-    public abstract class HostEventMessageBase : EventMessage , IHostEventMessage
+    public abstract class HostEventMessageBase : EventMessage
     {
         #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
-        public HostEventMessageBase() : base(EventMessageTypeCache.IHostEventMessage)
+        public HostEventMessageBase() : base()
         { } 
         #endregion
 

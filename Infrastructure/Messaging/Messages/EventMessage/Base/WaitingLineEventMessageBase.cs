@@ -8,13 +8,13 @@ namespace Gizmo.Web.Api.Messaging
     /// </summary>
     [DataContract()]
     [MessagePackObject()]
-    public abstract class WaitingLineEventMessageBase : EventMessage , IWaitingLineEventMessage
+    public abstract class WaitingLineEventMessageBase : EventMessage
     {
         #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
-        public WaitingLineEventMessageBase() : base(EventMessageTypeCache.IHostEventMessage)
+        public WaitingLineEventMessageBase() : base()
         {
         }
         #endregion
