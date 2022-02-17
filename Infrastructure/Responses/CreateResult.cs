@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MessagePack;
+using System;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
@@ -8,6 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
+    [MessagePackObject()]
     public class CreateResult
     {
         #region PROPERTIES
@@ -16,6 +18,7 @@ namespace Gizmo.Web.Api.Models
         /// The Id of the newly created object.
         /// </summary>
         [DataMember]
+        [Key(0)]
         public int Id { get; set; } 
 
         #endregion

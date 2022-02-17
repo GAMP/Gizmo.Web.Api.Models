@@ -1,0 +1,2 @@
+﻿1) DataMember,DataContract attributes are no longer required as they are not used by System.Text.Json https://docs.microsoft.com/en-us/dotnet/standard/serialization/system-text-json-how-to?pivots=dotnet-6-0
+2) Use new set of System.Tex.Json compatible attributes such as JsonIgnore when dont want a property to be included
