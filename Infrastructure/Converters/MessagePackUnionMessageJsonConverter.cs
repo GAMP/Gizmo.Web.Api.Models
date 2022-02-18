@@ -8,7 +8,7 @@ using System.Text.Json;
 namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
-    /// Converter using MessagePack Union attribute to identiyf messages.
+    /// Converter using MessagePack Union attribute to identify message types.
     /// </summary>
     /// <typeparam name="TMessage">Message type, this type must derive <see cref="IMessage"/> and must not be equal to <see cref="IMessage"/>.</typeparam>
     public class MessagePackUnionMessageJsonConverter<TMessage> : PolymorphicObjectJsonConverter<TMessage> where TMessage : IMessage
