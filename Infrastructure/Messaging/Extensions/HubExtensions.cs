@@ -20,30 +20,33 @@ namespace Gizmo.Web.Api.Messaging
             if (options == null)
                 throw new ArgumentNullException(nameof(options));
 
-            //get target interfacce
-            var targetInterfaceType = typeof(IMessage);
+            //add event message converter
+            options.PayloadSerializerOptions.Converters.Add(new MessagePackUnionMessageJsonConverter<IEventMessage>("EventType", "Event"));
 
-            //get target assembly containing event message interface
-            var targetAssembly = typeof(IMessage).Assembly;
+            ////get target interfacce
+            //var targetInterfaceType = typeof(IMessage);
 
-            //get converter type
-            var converterType = typeof(MessagePackUnionMessageJsonConverter<>);
+            ////get target assembly containing event message interface
+            //var targetAssembly = typeof(IMessage).Assembly;
 
-            //process all the types that implement IMessage interface and add a converter for them
-            foreach (Type type in targetAssembly
-                .GetTypes()
-                .Where(mytype => mytype.GetInterfaces().Contains(targetInterfaceType))
-                .Where(myType => myType.IsInterface))
-            {
-                //create generic type
-                var converterGenericType = converterType.MakeGenericType(type);
+            ////get converter type
+            //var converterType = typeof(MessagePackUnionMessageJsonConverter<>);
 
-                //create convert instance
-                var converter = Activator.CreateInstance(converterGenericType) as JsonConverter;
+            ////process all the types that implement IMessage interface and add a converter for them
+            //foreach (Type type in targetAssembly
+            //    .GetTypes()
+            //    .Where(mytype => mytype.GetInterfaces().Contains(targetInterfaceType))
+            //    .Where(myType => myType.IsInterface))
+            //{
+            //    //create generic type
+            //    var converterGenericType = converterType.MakeGenericType(type);
 
-                //add to supported serializers
-                options.PayloadSerializerOptions.Converters.Add(converter);
-            }
+            //    //create convert instance
+            //    var converter = Activator.CreateInstance(converterGenericType) as JsonConverter;
+
+            //    //add to supported serializers
+            //    options.PayloadSerializerOptions.Converters.Add(converter);
+            //}
 
             return options;
         }

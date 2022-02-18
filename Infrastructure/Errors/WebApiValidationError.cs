@@ -3,7 +3,7 @@
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Represents web api validation error.
+    /// Represents web api validation error with property name and description.
     /// </summary>
     [MessagePackObject()]
     public class WebApiValidationError : WebApiError

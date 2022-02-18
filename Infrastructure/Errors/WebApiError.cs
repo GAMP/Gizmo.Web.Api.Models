@@ -3,7 +3,7 @@
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Represents web api error.
+    /// Represents web api error with single error message description.
     /// </summary>
     [MessagePackObject()]
     public class WebApiError : WebApiErrorBase
