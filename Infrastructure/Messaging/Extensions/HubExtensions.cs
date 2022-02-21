@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Linq;
-using System.Text.Json.Serialization;
 
 namespace Gizmo.Web.Api.Messaging
 {
@@ -14,7 +12,7 @@ namespace Gizmo.Web.Api.Messaging
         /// </summary>
         /// <param name="options">Json hub options.</param>
         /// <returns>Json hub options.</returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException">thrown in case <paramref name="options"/>being equal to null.</exception>
         public static Microsoft.AspNetCore.SignalR.JsonHubProtocolOptions AddConverters(this Microsoft.AspNetCore.SignalR.JsonHubProtocolOptions options)
         {
             if (options == null)
