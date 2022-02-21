@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MessagePack;
+using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 
@@ -10,6 +11,7 @@ namespace Gizmo.Web.Api.Models
     /// <typeparam name="T"></typeparam>
     [Serializable]
     [DataContract]
+    [MessagePackObject]
     public class PagedList<T>
     {
         public PagedList(IEnumerable<T> data, PaginationMetadata meta)

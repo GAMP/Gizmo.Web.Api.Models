@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MessagePack;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
@@ -9,6 +10,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
+    [MessagePackObject]
     public class UserNoteModelBase
     {
         #region PROPERTIES
@@ -19,6 +21,7 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         [Required]
         [StringLength(65535)]
+        [MessagePack.Key(0)]
         public string Text { get; set; }
 
         /// <summary>
@@ -26,6 +29,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [EnumValue]
+        [MessagePack.Key(1)]
         public NoteSeverity Severity { get; set; }
 
         #endregion

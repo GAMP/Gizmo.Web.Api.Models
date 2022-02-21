@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MessagePack;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
@@ -9,6 +10,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
+    [MessagePackObject]
     public class BundledProductModelBase
     {
         #region PROPERTIES
@@ -18,6 +20,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [Required]
+        [MessagePack.Key(0)]
         public int ProductId { get; set; }
 
         /// <summary>
@@ -26,6 +29,7 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         [Required]
         [Range(1, int.MaxValue)]
+        [MessagePack.Key(1)]
         public decimal Quantity { get; set; }
 
         /// <summary>
@@ -33,6 +37,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [Required]
+        [MessagePack.Key(2)]
         public decimal UnitPrice { get; set; }
 
         #endregion

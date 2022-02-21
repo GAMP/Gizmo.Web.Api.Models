@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MessagePack;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
@@ -9,6 +10,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
+    [MessagePackObject]
     public class ApplicationModelBase
     {
         #region PROPERTIES
@@ -19,12 +21,14 @@ namespace Gizmo.Web.Api.Models
         [Required]
         [DataMember]
         [StringLength(255)]
+        [MessagePack.Key(0)]
         public string Title { get; set; }
 
         /// <summary>
         /// The description of the application.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(1)]
         public string Description { get; set; }
 
         /// <summary>
@@ -32,6 +36,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [StringLength(45)]
+        [MessagePack.Key(2)]
         public string Version { get; set; }
 
         /// <summary>
@@ -39,36 +44,42 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [Required]
+        [MessagePack.Key(3)]
         public int ApplicationCategoryId { get; set; }
 
         /// <summary>
         /// The Id of the application enterprise that is the developer of the application.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(4)]
         public int? DeveloperId { get; set; }
 
         /// <summary>
         /// The Id of the application enterprise that is the publisher of the application.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(5)]
         public int? PublisherId { get; set; }
 
         /// <summary>
         /// The age rating of the application.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(6)]
         public int AgeRating { get; set; }
 
         /// <summary>
         /// The release date of the application.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(7)]
         public DateTime? ReleaseDate { get; set; }
 
         /// <summary>
         /// The Id of the executable this application uses by default.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(8)]
         public int? DefaultExecutableId { get; set; }
 
         #endregion

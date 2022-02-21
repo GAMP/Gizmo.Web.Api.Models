@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MessagePack;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
@@ -9,6 +10,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
+    [MessagePackObject]
     public class ApplicationEnterpriseModelBase
     {
         #region PROPERTIES
@@ -19,6 +21,7 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         [Required]
         [StringLength(255)]
+        [MessagePack.Key(0)]
         public string Name { get; set; }
 
         #endregion

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MessagePack;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
@@ -9,6 +10,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
+    [MessagePackObject]
     public class ApplicationLicenseModelBase
     {
         #region PROPERTIES
@@ -19,6 +21,7 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         [Required]
         [StringLength(255)]
+        [MessagePack.Key(0)]
         public string Name { get; set; }
 
         /// <summary>
@@ -27,6 +30,7 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         [Required]
         [StringLength(255)]
+        [MessagePack.Key(1)]
         public string Plugin { get; set; }
 
         /// <summary>
@@ -35,6 +39,7 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         [Required]
         [StringLength(255)]
+        [MessagePack.Key(2)]
         public string Assembly { get; set; }
 
         #endregion

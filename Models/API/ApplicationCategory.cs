@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MessagePack;
+using System;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
@@ -8,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
-    [MessagePack.MessagePackObject()]
+    [MessagePackObject]
     public class ApplicationCategory : ApplicationCategoryModelBase, IEntityBase
     {
         #region PROPERTIES

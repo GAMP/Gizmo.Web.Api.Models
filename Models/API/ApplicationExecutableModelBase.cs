@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MessagePack;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
@@ -9,6 +10,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
+    [MessagePackObject]
     public class ApplicationExecutableModelBase
     {
         #region PROPERTIES
@@ -17,6 +19,7 @@ namespace Gizmo.Web.Api.Models
         /// Whether the executable is accessible.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(0)]
         public bool Accessible { get; set; }
 
         /// <summary>
@@ -24,6 +27,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [StringLength(255)]
+        [MessagePack.Key(1)]
         public string Caption { get; set; }
 
         /// <summary>
@@ -31,12 +35,14 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [StringLength(255)]
+        [MessagePack.Key(2)]
         public string Description { get; set; }
 
         /// <summary>
         /// The application modes object attached to this executable.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(3)]
         public ApplicationModes ApplicationModes { get; set; }
 
         /// <summary>
@@ -45,6 +51,7 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         [Required]
         [StringLength(255)]
+        [MessagePack.Key(4)]
         public string ExecutablePath { get; set; }
 
         /// <summary>
@@ -52,6 +59,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [StringLength(255)]
+        [MessagePack.Key(5)]
         public string WorkingDirectory { get; set; }
 
         /// <summary>
@@ -59,6 +67,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [StringLength(255)]
+        [MessagePack.Key(6)]
         public string Arguments { get; set; }
 
         /// <summary>
@@ -66,6 +75,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [EnumValue]
+        [MessagePack.Key(7)]
         public RunMode RunMode { get; set; }
 
         /// <summary>
@@ -73,18 +83,21 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [EnumValue]
+        [MessagePack.Key(8)]
         public LicenseReservationType ReservationType { get; set; }
 
         /// <summary>
         /// The executable options object attached to this executable.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(9)]
         public ApplicationExecutableOptions ExecutableOptions { get; set; }
 
         /// <summary>
         /// The display order of the executable.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(10)]
         public int DisplayOrder { get; set; }
 
         /// <summary>
@@ -92,12 +105,14 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [Required]
+        [MessagePack.Key(11)]
         public int ApplicationId { get; set; }
 
         /// <summary>
         /// The Id of the deployment profile this executable uses by default.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(12)]
         public int? DefaultDeploymentId { get; set; }
 
         #endregion

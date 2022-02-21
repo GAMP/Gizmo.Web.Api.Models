@@ -1,8 +1,11 @@
-﻿namespace Gizmo.Web.Api.Models
+﻿using MessagePack;
+
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Application deployment options.
     /// </summary>
+    [MessagePackObject]
     public class ApplicationDeploymentOptions
     {
         /// <summary>

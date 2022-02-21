@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MessagePack;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
@@ -9,6 +10,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
+    [MessagePackObject]
     public class ProductGroupModelBase
     {
         #region PROPERTIES
@@ -19,14 +21,14 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         [Required]
         [StringLength(45)]
-        [MessagePack.Key(1)]
+        [MessagePack.Key(0)]
         public string Name { get; set; }
 
         /// <summary>
         /// The display order of the product group.
         /// </summary>
         [DataMember]
-        [MessagePack.Key(2)]
+        [MessagePack.Key(1)]
         public int DisplayOrder { get; set; }
 
         /// <summary>
@@ -35,7 +37,7 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         [Required]
         [EnumValue]
-        [MessagePack.Key(3)]
+        [MessagePack.Key(2)]
         public ProductSortOptionType SortOption { get; set; }
 
         #endregion

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MessagePack;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
@@ -9,6 +10,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
+    [MessagePackObject]
     public class ProductDisallowedUserGroupModelBase
     {
         #region PROPERTIES
@@ -18,12 +20,14 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [Required]
+        [MessagePack.Key(0)]
         public int UserGroupId { get; set; }
 
         /// <summary>
         /// Whether this user group is disallowed for this product.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(1)]
         public bool IsDisallowed { get; set; }
 
         #endregion

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MessagePack;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
@@ -9,6 +10,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
+    [MessagePackObject]
     public class UserGroupModelBase
     {
         /// <summary>
@@ -17,6 +19,7 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         [Required]
         [StringLength(45)]
+        [MessagePack.Key(0)]
         public string Name { get; set; }
 
         /// <summary>
@@ -24,102 +27,119 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [StringLength(255)]
+        [MessagePack.Key(1)]
         public string Description { get; set; }
 
         /// <summary>
         /// The Id of the billing profile this user group is associated with.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(2)]
         public int? BillingProfileId { get; set; }
 
         /// <summary>
         /// The required user info object attached to this user group.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(3)]
         public RequiredUserInfo RequiredUserInfo { get; set; }
 
         /// <summary>
         /// Whether to override the default application group.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(4)]
         public bool OverrideApplicationGroup { get; set; }
 
         /// <summary>
         /// The Id of the application profile this user group is associated with.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(5)]
         public int? ApplicationGroupId { get; set; }
 
         /// <summary>
         /// Whether to override the default security profile.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(6)]
         public bool OverrideSecurityProfile { get; set; }
 
         /// <summary>
         /// The Id of the security profile this user group is associated with.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(7)]
         public int? SecurityProfileId { get; set; }
 
         /// <summary>
         /// Whether to override the default age rating.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(8)]
         public bool OverrideAgeRating { get; set; }
 
         /// <summary>
         /// Whether the age rating is enabled for the user group.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(9)]
         public bool IsAgeRatingEnabled { get; set; }
 
         /// <summary>
         /// Enable personal storage.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(10)]
         public bool EnablePersonalStorage { get; set; }
 
         /// <summary>
         /// Hide logout button.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(11)]
         public bool HideLogoutButton { get; set; }
 
         /// <summary>
         /// Disallow login from client.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(12)]
         public bool DisallowLoginFromClient { get; set; }
 
         /// <summary>
         /// Allow guest use.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(13)]
         public bool GuestUse { get; set; }
 
         /// <summary>
         /// Allow only guest use.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(14)]
         public bool GuestUseOnly { get; set; }
 
         /// <summary>
         /// Disallow login from manager.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(15)]
         public bool DisallowLoginFromManager { get; set; }
 
         /// <summary>
         /// Whether the users of this user group are allowed to have negative balance.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(16)]
         public bool IsNegativeBalanceAllowed { get; set; }
 
         /// <summary>
         /// The credit limit of the user group.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(17)]
         public decimal CreditLimit { get; set; }
 
         /// <summary>
@@ -127,60 +147,70 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [EnumValue]
+        [MessagePack.Key(18)]
         public TimePointAwardOptionType PointsAwardOptions { get; set; }
 
         /// <summary>
         /// The points money ratio.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(19)]
         public decimal PointsMoneyRatio { get; set; }
 
         /// <summary>
         /// The points time ratio.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(20)]
         public int PointsTimeRatio { get; set; }
 
         /// <summary>
         /// The amount of points to award.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(21)]
         public int? PointsAward { get; set; }
 
         /// <summary>
         /// Whether the user group is default for new users.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(22)]
         public bool IsDefault { get; set; }
 
         /// <summary>
         /// Disable use of time offers.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(23)]
         public bool DisableTimeOffer { get; set; }
 
         /// <summary>
         /// Disable use of fixed time purchase.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(24)]
         public bool DisableFixedTime { get; set; }
 
         /// <summary>
         /// Disable use of deposits for time.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(25)]
         public bool DisableDeposit { get; set; }
 
         /// <summary>
         /// Whether the waiting line priority is enabled for the user group.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(26)]
         public bool IsWaitingLinePriorityEnabled { get; set; }
 
         /// <summary>
         /// The waiting line priority of the user group.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(27)]
         public int WaitingLinePriority { get; set; }
     }
 }

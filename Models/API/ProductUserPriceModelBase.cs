@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MessagePack;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
@@ -9,6 +10,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
+    [MessagePackObject]
     public class ProductUserPriceModelBase : ProductUserPriceBase
     {
         #region PROPERTIES
@@ -17,6 +19,7 @@ namespace Gizmo.Web.Api.Models
         /// The price in points for this user price.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(100)]
         public int? PointsPrice { get; set; }
 
         /// <summary>
@@ -25,12 +28,14 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         [Required]
         [EnumValue]
+        [MessagePack.Key(101)]
         public PurchaseOptionType PurchaseOptions { get; set; }
 
         /// <summary>
         /// Whether the user prices is enabled.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(102)]
         public bool IsEnabled { get; set; }
 
         #endregion
