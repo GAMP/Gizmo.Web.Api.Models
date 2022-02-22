@@ -16,6 +16,7 @@ namespace Gizmo.Web.Api.Models
         /// The order object to invoice.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(100)]
         public CalculateOrderOptionsModelBase Order { get; set; }
     }
 }

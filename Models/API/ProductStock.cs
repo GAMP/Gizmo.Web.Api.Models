@@ -18,12 +18,14 @@ namespace Gizmo.Web.Api.Models
         /// The Id of the object.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(0)]
         public int Id { get; set; }
 
         /// <summary>
         /// The amount of stock.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(1)]
         public decimal? OnHand { get; set; }
 
         #endregion

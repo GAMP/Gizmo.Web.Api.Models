@@ -18,6 +18,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [StringLength(24)]
+        [MessagePack.Key(100)]
         public string Password { get; set; }
     }
 }

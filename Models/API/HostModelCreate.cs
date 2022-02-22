@@ -19,6 +19,7 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         [Required]
         [EnumValue]
+        [MessagePack.Key(100)]
         public HostType HostType { get; set; }
     }
 }

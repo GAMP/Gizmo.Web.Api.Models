@@ -19,6 +19,7 @@ namespace Gizmo.Web.Api.Models
         /// The Id of the object.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(300)]
         public int Id { get; set; }
 
         /// <summary>
@@ -26,6 +27,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [Required]
+        [MessagePack.Key(301)]
         public int BundledProductId { get; set; }
 
         #endregion

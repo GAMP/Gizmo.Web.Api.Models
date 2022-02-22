@@ -13,9 +13,9 @@ namespace Gizmo.Web.Api.Models
     public class DeviceModelUpdate : DeviceModelBase, IEntityBase
     {
         #region PROPERTIES
-        
+
         /// <inheritdoc/>
-        [Key(3)]
+        [MessagePack.Key(100)]
         public int Id { get; set; } 
 
         #endregion

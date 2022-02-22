@@ -18,14 +18,14 @@ namespace Gizmo.Web.Api.Models
         /// Gets object id. 
         /// </summary>
         [DataMember]
-        [Key(1)]
+        [MessagePack.Key(100)]
         public int Id { get; set; }
 
         /// <summary>
         /// Gets host id.
         /// </summary>
         [DataMember]
-        [Key(2)]
+        [MessagePack.Key(101)]
         public int HostId
         {
             get; set;

@@ -19,6 +19,7 @@ namespace Gizmo.Web.Api.Models
         /// The stock options of the bundle.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(0)]
         public bool SelfStock { get; set; }
 
         #endregion

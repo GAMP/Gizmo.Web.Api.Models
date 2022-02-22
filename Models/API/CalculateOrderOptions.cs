@@ -17,6 +17,7 @@ namespace Gizmo.Web.Api.Models
         /// The Id of the payment method that is preferred.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(100)]
         public int? PreferredPaymentMethodId { get; set; }
     }
 }

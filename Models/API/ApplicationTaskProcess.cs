@@ -21,6 +21,7 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         [Required]
         [StringLength(255)]
+        [MessagePack.Key(0)]
         public string FileName { get; set; }
 
         /// <summary>
@@ -28,6 +29,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [StringLength(255)]
+        [MessagePack.Key(1)]
         public string Arguments { get; set; }
 
         /// <summary>
@@ -35,6 +37,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [StringLength(255)]
+        [MessagePack.Key(2)]
         public string WorkingDirectory { get; set; }
 
         /// <summary>
@@ -42,6 +45,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [StringLength(45)]
+        [MessagePack.Key(3)]
         public string Username { get; set; }
 
         /// <summary>
@@ -49,18 +53,21 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [StringLength(45)]
+        [MessagePack.Key(4)]
         public string Password { get; set; }
 
         /// <summary>
         /// Whether the process is awaited until exit.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(5)]
         public bool Wait { get; set; }
 
         /// <summary>
         /// Whether the process is invisible.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(6)]
         public bool NoWindow { get; set; }
 
         #endregion

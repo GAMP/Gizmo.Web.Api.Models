@@ -21,12 +21,14 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [Required]
+        [MessagePack.Key(0)]
         public DayOfWeek Day { get; set; }
 
         /// <summary>
         /// The timespans during which the rate is applicable for this day.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(1)]
         public IEnumerable<BillingProfileRateDayTime> DayTimesApplicable { get; set; }
 
         #endregion

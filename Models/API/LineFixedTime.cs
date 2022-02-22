@@ -17,6 +17,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [EnumValue]
+        [MessagePack.Key(0)]
         public FixedTimeQuantityType QuantityType { get; set; }
     }
 }

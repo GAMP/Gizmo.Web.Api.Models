@@ -19,6 +19,7 @@ namespace Gizmo.Web.Api.Models
         /// The Id of the application group.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(100)]
         public int ApplicationGroupId { get; set; }
 
         #endregion

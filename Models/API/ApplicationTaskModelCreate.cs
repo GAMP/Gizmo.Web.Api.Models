@@ -19,6 +19,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [EnumValue]
+        [MessagePack.Key(100)]
         public TaskType TaskType { get; set; }
 
         #endregion

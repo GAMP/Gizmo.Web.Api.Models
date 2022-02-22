@@ -18,12 +18,14 @@ namespace Gizmo.Web.Api.Models
         /// The quantity of delivered items.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(0)]
         public decimal? DeliveredQuantity { get; set; }
 
         /// <summary>
         /// Whether all items have been delivered.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(1)]
         public bool? IsDelivered { get; set; }
 
         #endregion

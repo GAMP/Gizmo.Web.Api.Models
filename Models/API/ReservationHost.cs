@@ -20,6 +20,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [Required]
+        [MessagePack.Key(0)]
         public int HostId { get; set; }
 
         #endregion

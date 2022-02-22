@@ -20,6 +20,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [Required]
+        [MessagePack.Key(100)]
         public int Id { get; set; }
 
         /// <summary>
@@ -27,6 +28,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [Required]
+        [MessagePack.Key(101)]
         public int UserId { get; set; }
 
         #endregion

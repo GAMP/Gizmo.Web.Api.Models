@@ -18,7 +18,7 @@ namespace Gizmo.Web.Api.Models
         /// Gets device id.
         /// </summary>
         [DataMember]
-        [Key(0)]
+        [MessagePack.Key(0)]
         public int DeviceId
         {
             get; set;

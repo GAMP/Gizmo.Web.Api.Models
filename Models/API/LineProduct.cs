@@ -16,6 +16,7 @@ namespace Gizmo.Web.Api.Models
         /// The Id of the product.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(0)]
         public int ProductId { get; set; }
     }
 }

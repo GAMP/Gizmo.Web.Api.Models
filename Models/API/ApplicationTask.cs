@@ -19,6 +19,7 @@ namespace Gizmo.Web.Api.Models
         /// The Id of the object.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(100)]
         public int Id { get; set; }
 
         /// <summary>
@@ -26,12 +27,14 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [EnumValue]
+        [MessagePack.Key(101)]
         public TaskType TaskType { get; set; }
 
         /// <summary>
         /// The GUID of the product.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(102)]
         public Guid Guid { get; set; }
 
         #endregion

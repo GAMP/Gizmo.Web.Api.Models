@@ -21,6 +21,7 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         [Required]
         [StringLength(255)]
+        [MessagePack.Key(0)]
         public string Title { get; set; }
 
         /// <summary>
@@ -29,12 +30,14 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         [Required]
         [StringLength(65536)]
+        [MessagePack.Key(1)]
         public string Message { get; set; }
 
         /// <summary>
         /// Whether to wait until the user responds to the notification.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(2)]
         public bool Wait { get; set; }
 
         #endregion

@@ -18,6 +18,7 @@ namespace Gizmo.Web.Api.Models
         /// The Id of the object.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(0)]
         public int Id { get; set; }
 
         /// <summary>
@@ -25,12 +26,14 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [EnumValue]
+        [MessagePack.Key(1)]
         public StockTransactionType Type { get; set; }
 
         /// <summary>
         /// The amount of the stock transaction.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(2)]
         public decimal Amount { get; set; }
 
         #endregion

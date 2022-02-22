@@ -17,6 +17,7 @@ namespace Gizmo.Web.Api.Models
         /// The list of payments for the invoice.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(0)]
         public IEnumerable<InvoicePaymentModelBase> Payments { get; set; }
 
     }

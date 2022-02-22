@@ -21,6 +21,7 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         [Required]
         [StringLength(255)]
+        [MessagePack.Key(0)]
         public string SourceDirectory { get; set; }
 
         /// <summary>
@@ -29,12 +30,14 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         [Required]
         [StringLength(255)]
+        [MessagePack.Key(1)]
         public string DestinationDirectory { get; set; }
 
         /// <summary>
         /// Whether the junction deletes the destination.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(2)]
         public bool DeleteDestination { get; set; }
 
         #endregion

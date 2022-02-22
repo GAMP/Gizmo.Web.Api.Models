@@ -16,6 +16,7 @@ namespace Gizmo.Web.Api.Models
         /// The Id of the payment method to use for the refund.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(0)]
         public int? RefundMethodId { get; set; }
     }
 }

@@ -19,6 +19,7 @@ namespace Gizmo.Web.Api.Models
         /// The Id of the application executable.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(100)]
         public int ApplicationExecutableId { get; set; }
 
         #endregion
