@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MessagePack;
+using System;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
@@ -8,6 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
+    [MessagePackObject]
     public class DeviceHostFilter : PaginationFilter, IUrlQueryParameters
     {
         #region PROPERTIES
@@ -16,6 +18,7 @@ namespace Gizmo.Web.Api.Models
         /// Specifies explicit object id.
         /// </summary>
         [DataMember()]
+        [MessagePack.Key(200)]
         public int? Id
         {
             get; set;
@@ -25,6 +28,7 @@ namespace Gizmo.Web.Api.Models
         /// Specifies host id.
         /// </summary>
         [DataMember()]
+        [MessagePack.Key(201)]
         public int? HostId
         {
             get; set;
@@ -34,6 +38,7 @@ namespace Gizmo.Web.Api.Models
         /// Specifies device id.
         /// </summary>
         [DataMember()]
+        [MessagePack.Key(202)]
         public int? DeviceId
         {
             get; set;

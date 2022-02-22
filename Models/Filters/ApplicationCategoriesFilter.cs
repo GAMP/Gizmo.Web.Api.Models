@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MessagePack;
+using System;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
@@ -8,12 +9,14 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
+    [MessagePackObject]
     public class ApplicationCategoriesFilter : PaginationFilter, IUrlQueryParameters
     {
         /// <summary>
         /// Return categories with names that contain the specified string.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(200)]
         public string CategoryName { get; set; }
 
         /// <summary>
@@ -24,6 +27,7 @@ namespace Gizmo.Web.Api.Models
         /// To return all parent categories fill this field with 0.
         /// </remarks>
         [DataMember]
+        [MessagePack.Key(201)]
         public int? ParentId { get; set; }
     }
 }

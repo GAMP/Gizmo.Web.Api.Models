@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MessagePack;
+using System;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
@@ -8,6 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [DataContract]
+    [MessagePackObject]
     public class PaginationFilter : GetOptions
     {
         private const int DEFAULT_LIMIT = 10;
@@ -19,18 +21,21 @@ namespace Gizmo.Web.Api.Models
         /// Return records after the specified Id.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(100)]
         public int? StartingAfter { get; set; }
 
         /// <summary>
         /// Return records before the specified Id.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(101)]
         public int? EndingBefore { get; set; }
 
         /// <summary>
         /// Limit the number of records to return. Limit can range between 1 and 100. The default value is 10.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(102)]
         public int Limit
         {
             get
