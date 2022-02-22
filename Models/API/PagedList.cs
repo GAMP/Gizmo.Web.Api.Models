@@ -24,12 +24,14 @@ namespace Gizmo.Web.Api.Models
         /// The data of the current result set.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(0)]
         public IEnumerable<T> Data { get; }
 
         /// <summary>
         /// The pagination metadata of the current result set.
         /// </summary>
         [DataMember]
+        [MessagePack.Key(1)]
         public PaginationMetadata Meta { get; }
     }
 }
