@@ -8,7 +8,7 @@ namespace Gizmo.Web.Api.Models
     [MessagePackObject()]
     [Union(0,typeof(WebApiResponse<>))]
     [Union(1, typeof(WebApiErrorResponse))]
-    public class WebApiResponseBase
+    public abstract class WebApiResponseBase
     {
         #region CONSTRUCTOR
 
