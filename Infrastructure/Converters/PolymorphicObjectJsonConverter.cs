@@ -7,8 +7,8 @@ namespace Gizmo.Web.Api.Messaging
     /// <summary>
     /// Polymorphic object json converter.
     /// </summary>
-    /// <typeparam name="TObjectType">Object type.</typeparam>
-    public abstract class PolymorphicObjectJsonConverter<TObjectType> : JsonConverter<TObjectType>
+    /// <typeparam name="T">The type of object or value handled by the converter.</typeparam>
+    public abstract class PolymorphicObjectJsonConverter<T> : JsonConverter<T>
     {
         #region CONSTRUCTOR
 

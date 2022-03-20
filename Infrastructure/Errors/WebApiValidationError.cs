@@ -1,4 +1,5 @@
 ﻿using MessagePack;
+using System.Text.Json.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -25,6 +26,7 @@ namespace Gizmo.Web.Api.Models
         /// Property name.
         /// </summary>
         [Key(1)]
+        [JsonPropertyOrder(0)]
         public string PropertyName
         {
             get; protected set;

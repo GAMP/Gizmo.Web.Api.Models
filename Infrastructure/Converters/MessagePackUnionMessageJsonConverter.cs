@@ -10,16 +10,14 @@ namespace Gizmo.Web.Api.Messaging
     /// <summary>
     /// Converter using MessagePack Union attribute to identify message types.
     /// </summary>
-    /// <typeparam name="TMessage">Message type, this type must derive <see cref="IMessage"/> and must not be equal to <see cref="IMessage"/>.</typeparam>
-    public class MessagePackUnionMessageJsonConverter<TMessage> : PolymorphicObjectJsonConverter<TMessage> where TMessage : IMessage
+    /// <typeparam name="T"><inheritdoc/></typeparam>
+    public class MessagePackUnionMessageJsonConverter<T> : PolymorphicObjectJsonConverter<T> 
     {
         #region CONSTRUCTOR
 
         /// <inheritdoc/>
         public MessagePackUnionMessageJsonConverter() : base()
         {
-            if (typeof(TMessage) == typeof(IMessage))
-                throw new NotSupportedException($"Type of {nameof(IMessage)} not supported. Use derived types instead.");
         }
 
         /// <summary>
@@ -28,7 +26,7 @@ namespace Gizmo.Web.Api.Messaging
         /// <param name="payloadPropertyName">Payload property name.</param>
         /// <param name="descriminatorPropertyName">Descriminator property name.</param>
         /// <exception cref="ArgumentNullException">thrown if value specified by <paramref name="payloadPropertyName"/>is null or empty string.</exception>
-        public MessagePackUnionMessageJsonConverter(string payloadPropertyName,string descriminatorPropertyName):base(descriminatorPropertyName)
+        public MessagePackUnionMessageJsonConverter(string descriminatorPropertyName,string payloadPropertyName):base(descriminatorPropertyName)
         {
             if(string.IsNullOrEmpty(payloadPropertyName))
                 throw new ArgumentNullException(nameof(payloadPropertyName));
@@ -53,7 +51,7 @@ namespace Gizmo.Web.Api.Messaging
 
         #region FIELDS
 
-        private static readonly Type targetType = typeof(TMessage);
+        private static readonly Type targetType = typeof(T);
         private static readonly Dictionary<int, Type> unionCodeLookup;
         private static readonly Dictionary<Type, int> typeLookup;
         private readonly string PAYLOAD_PROPERTY_NAME = DEFAULT_PAYLOAD_PROPERTY_NAME;
@@ -66,11 +64,11 @@ namespace Gizmo.Web.Api.Messaging
         /// <inheritdoc/>                    
         public override bool CanConvert(Type typeToConvert)
         {
-            return typeLookup.ContainsKey(typeToConvert) || typeToConvert.IsAssignableFrom(targetType);
+            return typeLookup.ContainsKey(typeToConvert) || targetType.IsAssignableFrom(typeToConvert);
         }
 
         /// <inheritdoc/>
-        public override TMessage? Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+        public override T? Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {
             //read event descriminator
             var descriminator = ReadDescriminator(ref reader);
@@ -88,11 +86,11 @@ namespace Gizmo.Web.Api.Messaging
             //read to the end of message
             reader.Read();
 
-            return (TMessage)result;
+            return (T)result;
         }
 
         /// <inheritdoc/>
-        public override void Write(Utf8JsonWriter writer, TMessage value, JsonSerializerOptions options)
+        public override void Write(Utf8JsonWriter writer, T value, JsonSerializerOptions options)
         {
             //start of our message
             writer.WriteStartObject();
@@ -107,7 +105,7 @@ namespace Gizmo.Web.Api.Messaging
             WriteDescriminator(writer, typeCode);
 
             //write the message property
-            writer.WritePropertyName(DEFAULT_PAYLOAD_PROPERTY_NAME);
+            writer.WritePropertyName(PAYLOAD_PROPERTY_NAME);
 
             //serialize message
             JsonSerializer.Serialize(writer, value, valueType);

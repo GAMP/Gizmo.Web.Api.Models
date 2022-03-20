@@ -19,32 +19,7 @@ namespace Gizmo.Web.Api.Messaging
                 throw new ArgumentNullException(nameof(options));
 
             //add event message converter
-            options.PayloadSerializerOptions.Converters.Add(new MessagePackUnionMessageJsonConverter<IEventMessage>("EventType", "Event"));
-
-            ////get target interfacce
-            //var targetInterfaceType = typeof(IMessage);
-
-            ////get target assembly containing event message interface
-            //var targetAssembly = typeof(IMessage).Assembly;
-
-            ////get converter type
-            //var converterType = typeof(MessagePackUnionMessageJsonConverter<>);
-
-            ////process all the types that implement IMessage interface and add a converter for them
-            //foreach (Type type in targetAssembly
-            //    .GetTypes()
-            //    .Where(mytype => mytype.GetInterfaces().Contains(targetInterfaceType))
-            //    .Where(myType => myType.IsInterface))
-            //{
-            //    //create generic type
-            //    var converterGenericType = converterType.MakeGenericType(type);
-
-            //    //create convert instance
-            //    var converter = Activator.CreateInstance(converterGenericType) as JsonConverter;
-
-            //    //add to supported serializers
-            //    options.PayloadSerializerOptions.Converters.Add(converter);
-            //}
+            options.PayloadSerializerOptions.Converters.Add(new MessagePackUnionMessageJsonConverter<IEventMessage>("EventType","Event"));
 
             return options;
         }

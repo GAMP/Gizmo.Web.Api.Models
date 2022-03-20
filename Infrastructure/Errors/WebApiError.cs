@@ -1,4 +1,5 @@
 ﻿using MessagePack;
+using System.Text.Json.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -32,6 +33,7 @@ namespace Gizmo.Web.Api.Models
         /// Error message.
         /// </summary>
         [Key(0)]
+        [JsonPropertyOrder(0)]
         public string Message
         {
             get; set;
