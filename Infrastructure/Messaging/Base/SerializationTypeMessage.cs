@@ -33,7 +33,7 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Command message type.
         /// </summary>
-        public static readonly Type ICommandMessage = typeof(IControlMessage);
+        public static readonly Type ICommandMessage = typeof(ICommandMessage);
 
         /// <summary>
         /// Control message type.

@@ -1,4 +1,5 @@
 ﻿using MessagePack;
+using System;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Messaging
@@ -26,7 +27,8 @@ namespace Gizmo.Web.Api.Messaging
         /// Gets command correlation id.
         /// </summary>
         [DataMember(Order = 2,IsRequired =false)]
-        public string CorellationId
+        [Key(1)]
+        public Guid CorrelationId
         {
             get; set;
         } 
@@ -35,6 +37,7 @@ namespace Gizmo.Web.Api.Messaging
         /// Gets server timeout.
         /// </summary>
         [DataMember(Order = 3,IsRequired =false)]
+        [Key(2)]
         public int? ServerTimeout
         {
             get;set;

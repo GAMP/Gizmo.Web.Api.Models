@@ -44,7 +44,6 @@
 
 	<ItemGroup>
 	  <Folder Include="Infrastructure\Errors\Interfaces\" />
-	  <Folder Include="Models\Messages\CommandMessage\" />
 	  <Folder Include="Models\Messages\ControlMessage\" />
 	</ItemGroup>
 

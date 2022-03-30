@@ -3,7 +3,7 @@
     /// <summary>
     /// Command message interface.
     /// </summary>
-    public interface ICommandMessage : IMessage, ISerializationType
-    {
+    public partial interface ICommandMessage : IMessage, ISerializationType, ICorrelationMessage
+    {        
     }
 }
