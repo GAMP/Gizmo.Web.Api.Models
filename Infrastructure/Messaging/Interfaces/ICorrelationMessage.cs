@@ -14,11 +14,6 @@ namespace Gizmo.Web.Api.Messaging
         /// </summary>
         public Guid CorrelationId { get; }
 
-        /// <summary>
-        /// Gets server timeout.
-        /// </summary>
-        int? ServerTimeout { get; }
-
         #endregion
     }
 }

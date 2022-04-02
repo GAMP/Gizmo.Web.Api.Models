@@ -6,5 +6,6 @@
     [MessagePack.MessagePackObject()]
     public class FiscalPrinterCommandResponseMessage : CommandMessage
     {
+        public object Payload { get; set; }
     }
 }
