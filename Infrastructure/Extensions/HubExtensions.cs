@@ -20,6 +20,7 @@ namespace Gizmo.Web.Api.Messaging
 
             //add event message converter
             options.PayloadSerializerOptions.Converters.Add(new MessagePackUnionMessageJsonConverter<IEventMessage>("EventType","Event"));
+
             //add event message converter
             options.PayloadSerializerOptions.Converters.Add(new MessagePackUnionMessageJsonConverter<ICommandMessage>("CommandType", "Command"));
 
