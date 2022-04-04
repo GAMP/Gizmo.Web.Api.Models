@@ -8,7 +8,7 @@ namespace Gizmo.Web.Api.Messaging
     /// </summary>
     [DataContract()]
     [MessagePackObject()]
-    public abstract class LicenseReservationMessageBase : EventMessage
+    public abstract class LicenseReservationMessageBase : APIEventMessage
     {
         #region CONSTRUCTOR
         /// <summary>

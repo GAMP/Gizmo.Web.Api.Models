@@ -3,7 +3,7 @@
     /// <summary>
     /// Generic event message interface.
     /// </summary>
-    public partial interface IEventMessage : IMessage, ISerializationType
+    public partial interface IAPIEventMessage : IEventMessage
     {
     }
 }

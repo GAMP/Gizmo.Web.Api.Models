@@ -24,6 +24,12 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <Compile Remove="Models\Messages\ControlMessage\**" />
+	  <EmbeddedResource Remove="Models\Messages\ControlMessage\**" />
+	  <None Remove="Models\Messages\ControlMessage\**" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="MessagePack" Version="2.3.85" />
 		<PackageReference Include="Microsoft.AspNetCore.SignalR.Protocols.Json" Version="6.0.0" />
 		<PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
@@ -44,7 +50,6 @@
 
 	<ItemGroup>
 	  <Folder Include="Infrastructure\Errors\Interfaces\" />
-	  <Folder Include="Models\Messages\ControlMessage\" />
 	</ItemGroup>
 
 </Project>

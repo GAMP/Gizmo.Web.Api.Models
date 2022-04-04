@@ -2,7 +2,7 @@
 
 namespace Gizmo.Web.Api.Messaging
 {
-    public partial interface IEventMessage
+    public partial interface IAPIEventMessage
     {
     }
 }

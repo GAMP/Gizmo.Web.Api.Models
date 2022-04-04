@@ -15,11 +15,6 @@ namespace Gizmo.Web.Api.Messaging
     {
         #region CONSTRUCTOR
 
-        /// <inheritdoc/>
-        public MessagePackUnionMessageJsonConverter() : base()
-        {
-        }
-
         /// <summary>
         /// Creates new instance.
         /// </summary>

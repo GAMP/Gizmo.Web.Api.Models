@@ -8,7 +8,7 @@ namespace Gizmo.Web.Api.Messaging
     /// </summary>
     [DataContract()]
     [MessagePackObject()]
-    public abstract class UserEventMessageBase : EventMessage
+    public abstract class UserEventMessageBase : APIEventMessage
     {
         #region CONSTRUCTOR
         /// <summary>

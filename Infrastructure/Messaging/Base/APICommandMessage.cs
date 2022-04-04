@@ -1,34 +1,32 @@
 ﻿using MessagePack;
+using System;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
-    /// Host event message base.
+    /// Command message.
     /// </summary>
     [DataContract()]
     [MessagePackObject()]
-    public abstract class HostEventMessageBase : APIEventMessage
+    public abstract class APICommandMessage : CommandMessage
     {
         #region CONSTRUCTOR
+        
         /// <summary>
         /// Creates new instance.
         /// </summary>
-        public HostEventMessageBase() : base()
-        { } 
+        public APICommandMessage() : base(ISerializationType)
+        { }
+
         #endregion
 
-        #region PROPERTIES
-
+        #region READ ONLY FILEDS
+        
         /// <summary>
-        /// Gets host id.
+        /// Serialization type.
         /// </summary>
-        [Key(1)]
-        [DataMember()]
-        public int HostId
-        {
-            get; init;
-        } 
+        public static readonly Type ISerializationType = typeof(APICommandMessage); 
 
         #endregion
     }

@@ -29,12 +29,12 @@ namespace Gizmo.Web.Api.Messaging
 
                 var converterType = typeof(MessagePackUnionMessageJsonConverter<>);
                 var constructedType = converterType.MakeGenericType(type);
-                converter = Activator.CreateInstance(constructedType) as JsonConverter;
+                converter = Activator.CreateInstance(constructedType,"CommandType","Command") as JsonConverter;
                 return true;
             }
             catch
             {
-                //treat all exceptions as failures
+                throw;
             }
             return false;
         }

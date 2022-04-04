@@ -19,10 +19,18 @@ namespace Gizmo.Web.Api.Messaging
                 throw new ArgumentNullException(nameof(options));
 
             //add event message converter
-            options.PayloadSerializerOptions.Converters.Add(new MessagePackUnionMessageJsonConverter<IEventMessage>("EventType","Event"));
+            options.PayloadSerializerOptions.Converters.Add(new MessagePackUnionMessageJsonConverter<IAPIEventMessage>("EventType", "Event"));
 
-            //add event message converter
-            options.PayloadSerializerOptions.Converters.Add(new MessagePackUnionMessageJsonConverter<ICommandMessage>("CommandType", "Command"));
+            //add command message converter
+            options.PayloadSerializerOptions.Converters.Add(new MessagePackUnionMessageJsonConverter<IAPICommandMessage>("CommandType", "Command"));
+
+            //add control message converter
+            options.PayloadSerializerOptions.Converters.Add(new MessagePackUnionMessageJsonConverter<IAPIControlMessage>("ControlType", "Command"));
+
+            if (DynamicConverterLoader.TryCreate("Gizmo.Companion.Shared", "ICompanionCommandMessage", out var converter))
+            {
+                options.PayloadSerializerOptions.Converters.Add(converter);
+            }
 
             return options;
         }

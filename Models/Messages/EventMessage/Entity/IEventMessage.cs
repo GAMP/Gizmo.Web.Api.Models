@@ -3,7 +3,7 @@
 namespace Gizmo.Web.Api.Messaging
 {
     [Union(100, typeof(EntityChangeEventMessage))]
-    public partial interface IEventMessage
+    public partial interface IAPIEventMessage
     {
     }
 }
