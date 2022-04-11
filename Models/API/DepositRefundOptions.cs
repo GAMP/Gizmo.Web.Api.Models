@@ -18,5 +18,12 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         [MessagePack.Key(100)]
         public decimal? Amount { get; set; }
+
+        /// <summary>
+        /// Whether to override the receipt.
+        /// </summary>
+        [DataMember]
+        [MessagePack.Key(101)]
+        public bool ReceiptOverride { get; set; }
     }
 }

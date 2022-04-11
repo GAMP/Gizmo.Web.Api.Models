@@ -12,5 +12,11 @@ namespace Gizmo.Web.Api.Models
     [MessagePackObject]
     public class DepositTransactionModelCreate : DepositTransactionModelBase
     {
+        /// <summary>
+        /// Whether to override the receipt.
+        /// </summary>
+        [DataMember]
+        [MessagePack.Key(100)]
+        public bool ReceiptOverride { get; set; }
     }
 }
