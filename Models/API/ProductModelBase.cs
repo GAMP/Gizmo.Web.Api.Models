@@ -164,6 +164,13 @@ namespace Gizmo.Web.Api.Models
         public bool IsDeleted { get; set; }
 
         /// <summary>
+        /// The product represents a service.
+        /// </summary>
+        [DataMember()]
+        [MessagePack.Key(23)]
+        public bool IsService { get; set; }
+
+        /// <summary>
         /// The display order of the product.
         /// </summary>
         [DataMember]
@@ -182,7 +189,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [MessagePack.Key(22)]
-        public Bundle Bundle { get; set; }
+        public Bundle Bundle { get; set; }       
 
         #endregion
     }
