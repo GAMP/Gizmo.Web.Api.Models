@@ -12,5 +12,11 @@ namespace Gizmo.Web.Api.Models
     [MessagePackObject]
     public class UserAgreementsFilter : PaginationFilter, IUrlQueryParameters
     {
+        /// <summary>
+        /// Return enabled user agreements.
+        /// </summary>
+        [DataMember]
+        [MessagePack.Key(200)]
+        public bool? IsEnabled { get; set; }
     }
 }

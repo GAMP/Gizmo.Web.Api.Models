@@ -18,32 +18,39 @@ namespace Gizmo.Web.Api.Models
         #region PROPERTIES
 
         /// <summary>
-        /// The agreement text.
+        /// The name of the user agreement.
         /// </summary>
         [DataMember]
         [Key(0)]
-        public string Agreement { get; set; }
+        public string Name { get; set; }
 
         /// <summary>
-        /// The options of the agreement.
+        /// The user agreement text.
         /// </summary>
         [DataMember]
         [Key(1)]
-        public UserAgreementOptions Options { get; set; }
+        public string Agreement { get; set; }
 
         /// <summary>
-        /// The display options of the agreement.
+        /// The display order of the user agreement.
         /// </summary>
         [DataMember]
         [Key(2)]
-        public UserAgreementDisplayOptions DisplayOptions { get; set; }
+        public int DisplayOrder { get; set; }
 
         /// <summary>
-        /// The display order of the agreement.
+        /// Whether the user agreement is enabled.
         /// </summary>
         [DataMember]
         [Key(3)]
-        public int DisplayOrder { get; set; }
+        public bool IsEnabled { get; set; }
+
+        /// <summary>
+        /// Whether the user agreement is rejectable.
+        /// </summary>
+        [DataMember]
+        [Key(4)]
+        public bool IsRejectable { get; set; }
 
         #endregion
     }

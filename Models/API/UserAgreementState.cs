@@ -33,7 +33,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [MessagePack.Key(2)]
-        public int AcceptState { get; set; }
+        public UserAgreementAcceptState AcceptState { get; set; }
 
         #endregion
     }
