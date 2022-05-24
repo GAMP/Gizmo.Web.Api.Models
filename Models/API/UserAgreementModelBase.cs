@@ -52,6 +52,13 @@ namespace Gizmo.Web.Api.Models
         [Key(4)]
         public bool IsRejectable { get; set; }
 
+        /// <summary>
+        /// Whether the user agreement should ignore state.
+        /// </summary>
+        [DataMember]
+        [Key(5)]
+        public bool IgnoreState { get; set; }
+
         #endregion
     }
 }
