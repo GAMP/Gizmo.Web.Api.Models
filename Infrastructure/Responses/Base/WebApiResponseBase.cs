@@ -1,4 +1,5 @@
 ﻿using MessagePack;
+using System.Text.Json.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -36,6 +37,7 @@ namespace Gizmo.Web.Api.Models
         /// HTTP status code.
         /// </summary>
         [Key(0)]
+        [JsonPropertyOrder(0)]
         public int HttpStatusCode
         {
             get; set;
@@ -45,6 +47,7 @@ namespace Gizmo.Web.Api.Models
         /// Gets response message.
         /// </summary>
         [Key(1)]
+        [JsonPropertyOrder(1)]
         public string Message
         {
             get; set;
@@ -54,6 +57,7 @@ namespace Gizmo.Web.Api.Models
         /// Indicates if object represents an error response.
         /// </summary>
         [Key(2)]
+        [JsonPropertyOrder(2)]
         public bool IsError
         {
             get;set;

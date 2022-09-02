@@ -61,7 +61,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Optional error code type.
         /// </summary>
-        [JsonPropertyOrder(0)]
+        [JsonPropertyOrder(3)]
         [Key(3)]
         public int? ErrorCodeType
         {
@@ -71,7 +71,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Optional error code type in human readable form.
         /// </summary>
-        [JsonPropertyOrder(1)]
+        [JsonPropertyOrder(4)]
         [Key(4)]
         public string? ErrorCodeTypeReadable
         {
@@ -81,7 +81,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Optional error code.
         /// </summary>
-        [JsonPropertyOrder(2)]
+        [JsonPropertyOrder(5)]
         [Key(5)]
         public int? ErrorCode
         {
@@ -91,7 +91,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Optional error code in human readable form.
         /// </summary>
-        [JsonPropertyOrder(3)]
+        [JsonPropertyOrder(6)]
         [Key(6)]
         public string? ErrorCodeReadable
         {
@@ -101,7 +101,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Extended error collection.
         /// </summary>
-        [JsonPropertyOrder(4)]
+        [JsonPropertyOrder(7)]
         [Key(7)]
         public IEnumerable<WebApiErrorBase>? Errors
         {

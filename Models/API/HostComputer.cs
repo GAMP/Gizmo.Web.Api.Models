@@ -20,6 +20,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [Required]
+        [MessagePack.Key(0)]
         public string WindowsName { get; set; }
 
         /// <summary>
@@ -28,6 +29,7 @@ namespace Gizmo.Web.Api.Models
         [DataMember]
         [Required]
         [MacAddress]
+        [MessagePack.Key(1)]
         public string MacAddress { get; set; }
 
         #endregion
