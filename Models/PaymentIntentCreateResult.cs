@@ -5,6 +5,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Payment intent creation result.
     /// </summary>
+    [Serializable]
     [MessagePack.MessagePackObject()]
     public class PaymentIntentCreateResult : PaymentRequestCreateResult
     {

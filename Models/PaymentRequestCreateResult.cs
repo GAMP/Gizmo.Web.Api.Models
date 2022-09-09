@@ -5,6 +5,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Payment request creation result.
     /// </summary>
+    [Serializable]
     [MessagePack.MessagePackObject()]
     public class PaymentRequestCreateResult
     {

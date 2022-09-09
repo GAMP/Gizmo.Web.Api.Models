@@ -1,8 +1,11 @@
-﻿namespace Gizmo.Web.Api.Models
+﻿using System;
+
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Base model for payment intent creation.
     /// </summary>
+    [Serializable]
     [MessagePack.MessagePackObject()]
     public abstract class PaymentIntentCreateParametersBase
     {
