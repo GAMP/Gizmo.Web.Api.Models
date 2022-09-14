@@ -188,7 +188,7 @@ namespace Gizmo.Web.Api.Models
         /// <param name="errorCode">Error code.</param>
         /// <param name="errors">Extended error collection.</param>
         /// <returns>Web api error response.</returns>
-        private static WebApiErrorResponse CreateBadRequestResponse(string? errorMessage,
+        public static WebApiErrorResponse CreateBadRequestResponse(string? errorMessage,
             Enum? errorCodeType,
             Enum? errorCode,
             IEnumerable<WebApiErrorBase>? errors)
