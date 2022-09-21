@@ -1,4 +1,5 @@
-﻿using System;
+﻿#nullable enable
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
@@ -54,7 +55,7 @@ namespace Gizmo.Web.Api.Models
         public string? CancelUrl
         {
             get; init;
-        } = "http://localhost/payment/failure";
+        }
 
         /// <summary>
         /// Gets success url.
@@ -64,7 +65,7 @@ namespace Gizmo.Web.Api.Models
         public string? SuccessUrl
         {
             get; init;
-        } = "http://localhost/payment/success";
+        }
 
         /// <summary>
         /// Gets customer email address.
@@ -86,6 +87,9 @@ namespace Gizmo.Web.Api.Models
             set { _metaData = value; }
         }
 
+        /// <summary>
+        /// Gets payment intent.
+        /// </summary>
         [JsonIgnore()]
         [MessagePack.IgnoreMember()]
         public Guid PaymentIntent

@@ -4,10 +4,10 @@ using System;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Payment provider metdata model.
+    /// Provider metdata model.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class PaymentProviderMetadata
+    public sealed class ProviderMetadata
     {
         #region CONSTRUCTOR
 
@@ -17,7 +17,7 @@ namespace Gizmo.Web.Api.Models
         /// <param name="type">Type name.</param>
         /// <param name="name">Provider name.</param>
         /// <param name="guid">Provider guid.</param>
-        public PaymentProviderMetadata(string type, string name, Guid guid)
+        public ProviderMetadata(string type, string name, Guid guid)
         {            
             Type = type;
             Name = name;
