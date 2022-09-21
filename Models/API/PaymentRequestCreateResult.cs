@@ -1,12 +1,14 @@
-﻿using System;
+﻿#nullable enable
+using System;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Payment request creation result.
     /// </summary>
-    [Serializable]
     [MessagePack.MessagePackObject()]
+    [MessagePack.Union(0,typeof(PaymentIntentCreateResult))]
+    [ProtoBuf.ProtoContract()]
     public class PaymentRequestCreateResult
     {
         #region PROPERTIES
@@ -15,6 +17,7 @@ namespace Gizmo.Web.Api.Models
         /// Gets payment url.
         /// </summary>
         [MessagePack.Key(0)]
+        [ProtoBuf.ProtoMember(1)]
         public string PaymentUrl
         {
             get; init;
@@ -24,6 +27,7 @@ namespace Gizmo.Web.Api.Models
         /// Gets QR Image.
         /// </summary>
         [MessagePack.Key(1)]
+        [ProtoBuf.ProtoMember(2)]
         public string QrImage
         {
             get; init;
@@ -36,15 +40,17 @@ namespace Gizmo.Web.Api.Models
         /// This value is optional.
         /// </remarks>
         [MessagePack.Key(2)]
+        [ProtoBuf.ProtoMember(3)]
         public string? NativeQrImage
         {
-            get; set;
+            get; init;
         }
 
         /// <summary>
         /// Gets provider used to create the request.
         /// </summary>
         [MessagePack.Key(3)]
+        [ProtoBuf.ProtoMember(4)]
         public Guid Provider
         {
             get; init;
