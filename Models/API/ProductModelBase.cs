@@ -81,7 +81,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [Required]
-        [EnumValue]
+        [EnumValueValidation]
         [MessagePack.Key(8)]
         public PurchaseOptionType PurchaseOptions { get; set; }
 

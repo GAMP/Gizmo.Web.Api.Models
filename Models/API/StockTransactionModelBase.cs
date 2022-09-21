@@ -33,7 +33,7 @@ namespace Gizmo.Web.Api.Models
         /// The type of the stock transaction.
         /// </summary>
         [DataMember]
-        [EnumValue]
+        [EnumValueValidation]
         [MessagePack.Key(2)]
         public StockTransactionType Type { get; set; }
 

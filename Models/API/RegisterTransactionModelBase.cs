@@ -1,5 +1,6 @@
 ﻿using MessagePack;
 using System;
+using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
@@ -16,7 +17,7 @@ namespace Gizmo.Web.Api.Models
         /// The type of the register transaction.
         /// </summary>
         [DataMember]
-        [EnumValue]
+        [EnumValueValidation]
         [MessagePack.Key(0)]
         public RegisterTransactionType Type { get; set; }
 

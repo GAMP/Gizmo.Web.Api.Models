@@ -1,5 +1,6 @@
 ﻿using MessagePack;
 using System;
+using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
@@ -18,7 +19,7 @@ namespace Gizmo.Web.Api.Models
         /// Return devices of the specified device type.
         /// </summary>
         [DataMember]
-        [EnumValue]
+        [EnumValueValidation]
         [MessagePack.Key(200)]
         public DeviceType? DeviceType { get; set; }
 

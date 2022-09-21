@@ -26,7 +26,7 @@ namespace Gizmo.Web.Api.Models
         /// The type of the application task.
         /// </summary>
         [DataMember]
-        [EnumValue]
+        [EnumValueValidation]
         [MessagePack.Key(101)]
         public TaskType TaskType { get; set; }
 

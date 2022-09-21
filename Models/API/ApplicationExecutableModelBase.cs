@@ -74,7 +74,7 @@ namespace Gizmo.Web.Api.Models
         /// The run mode of the executable.
         /// </summary>
         [DataMember]
-        [EnumValue]
+        [EnumValueValidation]
         [MessagePack.Key(7)]
         public RunMode RunMode { get; set; }
 
@@ -82,7 +82,7 @@ namespace Gizmo.Web.Api.Models
         /// The license reservation type of the executable.
         /// </summary>
         [DataMember]
-        [EnumValue]
+        [EnumValueValidation]
         [MessagePack.Key(8)]
         public LicenseReservationType ReservationType { get; set; }
 

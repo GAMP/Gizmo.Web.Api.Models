@@ -37,7 +37,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [StringLength(255)]
-        [MacAddress]
+        [MacAddressValidation]
         [MessagePack.Key(2)]
         public string MacAddress { get; set; }
 

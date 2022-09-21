@@ -19,7 +19,7 @@ namespace Gizmo.Web.Api.Models
         /// The type of the script.
         /// </summary>
         [DataMember]
-        [EnumValue]
+        [EnumValueValidation]
         [MessagePack.Key(0)]
         public ScriptTypes ScriptType { get; set; }
 

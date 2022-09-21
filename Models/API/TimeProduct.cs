@@ -70,7 +70,7 @@ namespace Gizmo.Web.Api.Models
         /// The type of timespan after which the time product expires.
         /// </summary>
         [DataMember]
-        [EnumValue]
+        [EnumValueValidation]
         [MessagePack.Key(5)]
         public ExpireAfterType ExpireAfterType
         {
@@ -91,7 +91,7 @@ namespace Gizmo.Web.Api.Models
         /// The expire from options of the product.
         /// </summary>
         [DataMember]
-        [EnumValue]
+        [EnumValueValidation]
         [MessagePack.Key(7)]
         public ExpireFromOptionType ExpiresFrom
         {

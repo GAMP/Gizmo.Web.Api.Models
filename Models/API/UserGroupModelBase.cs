@@ -146,7 +146,7 @@ namespace Gizmo.Web.Api.Models
         /// The points award options of the user group.
         /// </summary>
         [DataMember]
-        [EnumValue]
+        [EnumValueValidation]
         [MessagePack.Key(18)]
         public TimePointAwardOptionType PointsAwardOptions { get; set; }
 

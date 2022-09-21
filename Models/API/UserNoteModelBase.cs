@@ -28,7 +28,7 @@ namespace Gizmo.Web.Api.Models
         /// The severity of the note.
         /// </summary>
         [DataMember]
-        [EnumValue]
+        [EnumValueValidation]
         [MessagePack.Key(1)]
         public NoteSeverity Severity { get; set; }
 

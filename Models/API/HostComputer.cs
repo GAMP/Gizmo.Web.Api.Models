@@ -28,7 +28,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [Required]
-        [MacAddress]
+        [MacAddressValidation]
         [MessagePack.Key(1)]
         public string MacAddress { get; set; }
 

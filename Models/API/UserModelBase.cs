@@ -31,7 +31,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [StringLength(254)]
-        [EmailNullEmpty]
+        [EmailNullEmptyValidation]
         [MessagePack.Key(1)]
         public string Email { get; set; }
 
@@ -150,7 +150,7 @@ namespace Gizmo.Web.Api.Models
         /// The sex of the user.
         /// </summary>
         [DataMember]
-        [EnumValue]
+        [EnumValueValidation]
         [MessagePack.Key(16)]
         public Sex Sex { get; set; }
 

@@ -1,5 +1,6 @@
 ﻿using MessagePack;
 using System;
+using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
@@ -16,7 +17,7 @@ namespace Gizmo.Web.Api.Models
         /// The type of the order line.
         /// </summary>
         [DataMember]
-        [EnumValue]
+        [EnumValueValidation]
         [MessagePack.Key(0)]
         public LineType LineType { get; set; }
 
@@ -24,7 +25,7 @@ namespace Gizmo.Web.Api.Models
         /// The pay type of the order line.
         /// </summary>
         [DataMember]
-        [EnumValue]
+        [EnumValueValidation]
         [MessagePack.Key(1)]
         public OrderLinePayType PayType { get; set; }
 

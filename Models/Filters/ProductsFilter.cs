@@ -1,7 +1,7 @@
 ﻿using MessagePack;
-using Gizmo;
 using System;
 using System.Runtime.Serialization;
+using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -19,7 +19,7 @@ namespace Gizmo.Web.Api.Models
         /// Return products of the specified product type.
         /// </summary>
         [DataMember]
-        [EnumValue]
+        [EnumValueValidation]
         [MessagePack.Key(200)]
         public ProductType? ProductType { get; set; }
 

@@ -53,7 +53,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [StringLength(254)]
-        [EmailNullEmpty]
+        [EmailNullEmptyValidation]
         [MessagePack.Key(4)]
         public string ContactEmail { get; set; }
 
@@ -77,7 +77,7 @@ namespace Gizmo.Web.Api.Models
         /// The status of the reservation.
         /// </summary>
         [DataMember]
-        [EnumValue]
+        [EnumValueValidation]
         [MessagePack.Key(7)]
         public ReservationStatus Status { get; set; }
 

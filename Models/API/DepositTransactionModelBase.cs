@@ -25,7 +25,7 @@ namespace Gizmo.Web.Api.Models
         /// The type of the deposit transaction.
         /// </summary>
         [DataMember]
-        [EnumValue]
+        [EnumValueValidation]
         [MessagePack.Key(1)]
         public DepositTransactionType Type { get; set; }
 

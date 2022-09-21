@@ -1,5 +1,6 @@
 ﻿using MessagePack;
 using System;
+using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
@@ -16,7 +17,7 @@ namespace Gizmo.Web.Api.Models
         /// The quantity type of the fixed time line.
         /// </summary>
         [DataMember]
-        [EnumValue]
+        [EnumValueValidation]
         [MessagePack.Key(0)]
         public FixedTimeQuantityType QuantityType { get; set; }
     }

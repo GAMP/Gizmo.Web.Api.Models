@@ -28,7 +28,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [DataMember]
         [Required]
-        [EnumValue]
+        [EnumValueValidation]
         [MessagePack.Key(101)]
         public ProductType ProductType { get; set; }
 

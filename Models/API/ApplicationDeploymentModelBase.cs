@@ -56,7 +56,7 @@ namespace Gizmo.Web.Api.Models
         //[DataMember]
         //public FileInfoLevel ComparisonLevel { get; set; }
         [DataMember]
-        [EnumValue]
+        [EnumValueValidation]
         [MessagePack.Key(4)]
         public ApplicationDeploymentComparisonMode ComparisonMode { get; set; }
 
