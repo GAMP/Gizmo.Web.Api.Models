@@ -52,15 +52,6 @@ namespace Gizmo.Web.Api.Models
             get; set;
         }
 
-        /// <summary>
-        /// Result string.
-        /// </summary>
-        [ProtoIgnore()]
-        public string ResultString
-        {
-            get { return Result?.ToString(); }
-        }
-
         #endregion
     }
 }
