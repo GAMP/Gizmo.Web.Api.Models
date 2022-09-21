@@ -1,6 +1,5 @@
 ﻿using ProtoBuf;
 using System;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -8,8 +7,6 @@ namespace Gizmo.Web.Api.Models
     /// Base class for verfication results.
     /// </summary>
     /// <typeparam name="T">Result type.</typeparam>
-    [DataContract()]
-    [Serializable()]
     [ProtoContract()]
     [ProtoInclude(500, typeof(EmailVerificationStartResult))]
     [ProtoInclude(501, typeof(MobilePhoneVerificationStartResult))]
@@ -23,7 +20,6 @@ namespace Gizmo.Web.Api.Models
         /// Verification result code.
         /// </summary>
         [ProtoMember(1)]
-        [DataMember()]
         public T Result
         {
             get; set;
@@ -33,7 +29,6 @@ namespace Gizmo.Web.Api.Models
         /// Confirmation code.
         /// </summary>
         [ProtoMember(2)]
-        [DataMember(EmitDefaultValue = false)]
         public string ConfirmationCode
         {
             get; set;
@@ -43,7 +38,6 @@ namespace Gizmo.Web.Api.Models
         /// Token value.
         /// </summary>
         [ProtoMember(3)]
-        [DataMember(EmitDefaultValue = false)]
         public string Token
         {
             get; set;
@@ -53,7 +47,6 @@ namespace Gizmo.Web.Api.Models
         /// Token id.
         /// </summary>
         [ProtoMember(4)]
-        [DataMember(EmitDefaultValue = false)]
         public int? TokenId
         {
             get; set;
@@ -62,7 +55,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Result string.
         /// </summary>
-        [DataMember(EmitDefaultValue = false)]
         [ProtoIgnore()]
         public string ResultString
         {

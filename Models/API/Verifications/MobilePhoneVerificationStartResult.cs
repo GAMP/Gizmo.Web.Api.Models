@@ -1,14 +1,10 @@
 ﻿using ProtoBuf;
-using System;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Mobile phone verification start result model.
     /// </summary>
-    [DataContract()]
-    [Serializable()]
     [ProtoContract()]
     public class MobilePhoneVerificationStartResult : VerificationResultBase<VerificationStartResultCode>
     {
@@ -18,7 +14,6 @@ namespace Gizmo.Web.Api.Models
         /// Mobile phone being verified.
         /// </summary>
         [ProtoMember(1)]
-        [DataMember(EmitDefaultValue = false)]
         public string MobilePhone
         {
             get; set;
