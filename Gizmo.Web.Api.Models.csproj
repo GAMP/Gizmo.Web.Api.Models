@@ -25,6 +25,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="MessagePack" Version="2.3.85" />
+		<PackageReference Include="protobuf-net" Version="2.4.6" />
 		<PackageReference Include="Microsoft.AspNetCore.SignalR.Protocols.Json" Version="6.0.0" />
 		<PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
 		<PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
