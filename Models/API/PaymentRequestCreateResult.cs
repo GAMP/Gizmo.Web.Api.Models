@@ -8,6 +8,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [MessagePack.MessagePackObject()]
     [MessagePack.Union(0,typeof(PaymentIntentCreateResult))]
+    [ProtoBuf.ProtoInclude(500, typeof(PaymentIntentCreateResult))]
     [ProtoBuf.ProtoContract()]
     public class PaymentRequestCreateResult
     {
