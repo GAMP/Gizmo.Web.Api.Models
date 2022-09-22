@@ -8,6 +8,7 @@ namespace Gizmo.Web.Api.Models
     /// Email verification start result model.
     /// </summary>
     [ProtoContract()]
+    [MessagePack.MessagePackObject()]
     public class EmailVerificationStartResult : VerificationResultBase<VerificationStartResultCode>
     {
         #region PROPERTIES
@@ -16,6 +17,7 @@ namespace Gizmo.Web.Api.Models
         /// Email being verified.
         /// </summary>
         [ProtoMember(1)]
+        [MessagePack.Key(5)]
         public string Email
         {
             get; set;

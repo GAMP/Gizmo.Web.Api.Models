@@ -1,5 +1,4 @@
 ﻿using ProtoBuf;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -7,6 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// Account creation by mobile phone result model.
     /// </summary>
     [ProtoContract()]
+    [MessagePack.MessagePackObject()]
     public class AccountCreationByMobilePhoneResult : VerificationResultBase<VerificationStartResultCode>
     {
         #region PROPERTIES
@@ -15,6 +15,7 @@ namespace Gizmo.Web.Api.Models
         /// Mobile phone used.
         /// </summary>
         [ProtoMember(1)]
+        [MessagePack.Key(5)]
         public string MobilePhone
         {
             get; set;

@@ -1,4 +1,5 @@
-﻿using ProtoBuf;
+﻿using MessagePack;
+using ProtoBuf;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -6,6 +7,7 @@ namespace Gizmo.Web.Api.Models
     /// Mobile phone verification start result model.
     /// </summary>
     [ProtoContract()]
+    [MessagePackObject()]
     public class MobilePhoneVerificationStartResult : VerificationResultBase<VerificationStartResultCode>
     {
         #region PROPERTIES
@@ -14,6 +16,7 @@ namespace Gizmo.Web.Api.Models
         /// Mobile phone being verified.
         /// </summary>
         [ProtoMember(1)]
+        [Key(5)]
         public string MobilePhone
         {
             get; set;
