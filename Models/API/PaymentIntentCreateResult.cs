@@ -1,12 +1,12 @@
-﻿using System;
+﻿using MessagePack;
+using System;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Payment intent creation result.
     /// </summary>
-    [ProtoBuf.ProtoContract()]
-    [MessagePack.MessagePackObject()]
+    [MessagePackObject()]
     public class PaymentIntentCreateResult : PaymentRequestCreateResult
     {
         #region PROPERTIES
@@ -14,8 +14,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Gets payment intent guid.
         /// </summary>
-        [MessagePack.Key(4)]
-        [ProtoBuf.ProtoMember(1)]
+        [Key(4)]
         public Guid PaymentIntent
         {
             get; init;

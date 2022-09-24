@@ -1,4 +1,5 @@
 ﻿#nullable enable
+using MessagePack;
 using System;
 
 namespace Gizmo.Web.Api.Models
@@ -6,10 +7,8 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Payment request creation result.
     /// </summary>
-    [MessagePack.MessagePackObject()]
-    [MessagePack.Union(0,typeof(PaymentIntentCreateResult))]
-    [ProtoBuf.ProtoInclude(500, typeof(PaymentIntentCreateResult))]
-    [ProtoBuf.ProtoContract()]
+    [MessagePackObject()]
+    [Union(0,typeof(PaymentIntentCreateResult))]
     public class PaymentRequestCreateResult
     {
         #region PROPERTIES
@@ -17,8 +16,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Gets payment url.
         /// </summary>
-        [MessagePack.Key(0)]
-        [ProtoBuf.ProtoMember(1)]
+        [Key(0)]
         public string PaymentUrl
         {
             get; init;
@@ -27,8 +25,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Gets QR Image.
         /// </summary>
-        [MessagePack.Key(1)]
-        [ProtoBuf.ProtoMember(2)]
+        [Key(1)]
         public string QrImage
         {
             get; init;
@@ -40,8 +37,7 @@ namespace Gizmo.Web.Api.Models
         /// <remarks>
         /// This value is optional.
         /// </remarks>
-        [MessagePack.Key(2)]
-        [ProtoBuf.ProtoMember(3)]
+        [Key(2)]
         public string? NativeQrImage
         {
             get; init;
@@ -50,8 +46,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Gets provider used to create the request.
         /// </summary>
-        [MessagePack.Key(3)]
-        [ProtoBuf.ProtoMember(4)]
+        [Key(3)]
         public Guid Provider
         {
             get; init;

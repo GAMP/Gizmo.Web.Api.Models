@@ -1,14 +1,11 @@
-﻿using ProtoBuf;
-using System;
-using System.Runtime.Serialization;
+﻿using MessagePack;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Email verification start result model.
     /// </summary>
-    [ProtoContract()]
-    [MessagePack.MessagePackObject()]
+    [MessagePackObject()]
     public class EmailVerificationStartResult : VerificationResultBase<VerificationStartResultCode>
     {
         #region PROPERTIES
@@ -16,8 +13,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Email being verified.
         /// </summary>
-        [ProtoMember(1)]
-        [MessagePack.Key(5)]
+        [Key(5)]
         public string Email
         {
             get; set;

@@ -1,12 +1,11 @@
-﻿using ProtoBuf;
+﻿using MessagePack;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Account creation by mobile phone result model.
     /// </summary>
-    [ProtoContract()]
-    [MessagePack.MessagePackObject()]
+    [MessagePackObject()]
     public class AccountCreationByMobilePhoneResult : VerificationResultBase<VerificationStartResultCode>
     {
         #region PROPERTIES
@@ -14,11 +13,19 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Mobile phone used.
         /// </summary>
-        [ProtoMember(1)]
-        [MessagePack.Key(5)]
+        [Key(4)]
         public string MobilePhone
         {
             get; set;
+        }
+
+        /// <summary>
+        /// Gets confirmation code delivery method.
+        /// </summary>
+        [Key(5)]
+        public ConfirmationCodeDeliveryMethod DeliveryMethod
+        {
+            get; init;
         }
 
         #endregion

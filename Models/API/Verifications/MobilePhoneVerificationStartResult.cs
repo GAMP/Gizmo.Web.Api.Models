@@ -1,12 +1,10 @@
 ﻿using MessagePack;
-using ProtoBuf;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Mobile phone verification start result model.
     /// </summary>
-    [ProtoContract()]
     [MessagePackObject()]
     public class MobilePhoneVerificationStartResult : VerificationResultBase<VerificationStartResultCode>
     {
@@ -15,11 +13,19 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Mobile phone being verified.
         /// </summary>
-        [ProtoMember(1)]
-        [Key(5)]
+        [Key(4)]
         public string MobilePhone
         {
             get; set;
+        }
+
+        /// <summary>
+        /// Gets confirmation code delivery method.
+        /// </summary>
+        [Key(5)]
+        public ConfirmationCodeDeliveryMethod DeliveryMethod
+        {
+            get; init;
         }
 
         #endregion

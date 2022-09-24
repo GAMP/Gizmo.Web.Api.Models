@@ -1,11 +1,11 @@
-﻿using ProtoBuf;
+﻿using MessagePack;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Account creation by token result model.
     /// </summary>
-    [ProtoContract()]
+    [MessagePackObject()]
     public class AccountCreationByTokenCompleteResult : VerificationResultBase<AccountCreationByTokenCompleteResultCode>
     {
         #region PROPERTIES
@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Newly created user id.
         /// </summary>
-        [ProtoMember(1)]
+        [Key(5)]
         public int? CreatedUserId
         {
             get; set;
