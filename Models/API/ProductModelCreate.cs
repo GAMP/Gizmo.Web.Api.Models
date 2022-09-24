@@ -1,7 +1,6 @@
 ﻿using MessagePack;
 using System;
 using System.ComponentModel.DataAnnotations;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -9,17 +8,19 @@ namespace Gizmo.Web.Api.Models
     /// Product.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject]
     public class ProductModelCreate : ProductModelBase, IUrlQueryParameters
     {
+        #region PROPERTIES
+        
         /// <summary>
         /// The type of the product.
         /// </summary>
-        [DataMember]
         [Required]
         [EnumValueValidation]
         [MessagePack.Key(100)]
-        public ProductType ProductType { get; set; }
+        public ProductType ProductType { get; set; } 
+
+        #endregion
     }
 }

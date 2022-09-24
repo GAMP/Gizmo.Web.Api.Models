@@ -1,7 +1,6 @@
 ﻿using MessagePack;
 using System;
 using System.Collections.Generic;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -9,16 +8,17 @@ namespace Gizmo.Web.Api.Models
     /// Invoice order options.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject]
     public class InvoiceOrderOptions
     {
+        #region PROPERTIES
+        
         /// <summary>
         /// The list of payments for the invoice.
         /// </summary>
-        [DataMember]
-        [MessagePack.Key(0)]
-        public IEnumerable<InvoicePaymentModelBase> Payments { get; set; }
+        [Key(0)]
+        public IEnumerable<InvoicePaymentModelBase> Payments { get; set; } 
 
+        #endregion
     }
 }

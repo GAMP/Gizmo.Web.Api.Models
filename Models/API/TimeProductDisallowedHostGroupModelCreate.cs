@@ -1,6 +1,5 @@
 ﻿using MessagePack;
 using System;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -8,7 +7,6 @@ namespace Gizmo.Web.Api.Models
     /// Time product disallowed host group.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject]
     public class TimeProductDisallowedHostGroupModelCreate : TimeProductDisallowedHostGroupModelBase, IUrlQueryParameters
     {

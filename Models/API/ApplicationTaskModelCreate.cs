@@ -1,7 +1,6 @@
 ﻿using MessagePack;
 using System;
 using System.ComponentModel.DataAnnotations;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -9,7 +8,6 @@ namespace Gizmo.Web.Api.Models
     /// Application task.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject]
     public class ApplicationTaskModelCreate : ApplicationTaskModelBase
     {
@@ -18,7 +16,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The type of the application task.
         /// </summary>
-        [DataMember]
         [EnumValueValidation]
         [MessagePack.Key(100)]
         public TaskType TaskType { get; set; }

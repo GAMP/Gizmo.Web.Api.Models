@@ -1,7 +1,6 @@
 ﻿using MessagePack;
 using System;
 using System.ComponentModel.DataAnnotations;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -9,7 +8,6 @@ namespace Gizmo.Web.Api.Models
     /// User note.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject]
     public class UserNoteModelBase
     {
@@ -18,7 +16,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The text of the note.
         /// </summary>
-        [DataMember]
         [Required]
         [StringLength(65535)]
         [MessagePack.Key(0)]
@@ -27,7 +24,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The severity of the note.
         /// </summary>
-        [DataMember]
         [EnumValueValidation]
         [MessagePack.Key(1)]
         public NoteSeverity Severity { get; set; }

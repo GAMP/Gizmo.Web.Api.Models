@@ -1,8 +1,5 @@
-﻿using Microsoft.AspNetCore.WebUtilities;
-using MessagePack;
+﻿using MessagePack;
 using System;
-using System.ComponentModel.DataAnnotations;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -10,7 +7,6 @@ namespace Gizmo.Web.Api.Models
     /// Bundled product.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject]
     public class BundledProduct : BundledProductModelBase, IEntityBase
     {
@@ -19,8 +15,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The Id of the object.
         /// </summary>
-        [DataMember]
-        [MessagePack.Key(100)]
+        [Key(100)]
         public int Id { get; set; }
 
         #endregion

@@ -1,6 +1,5 @@
 ﻿using MessagePack;
 using System;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -8,14 +7,17 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for billing profiles.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject]
     public class BillingProfilesFilter : PaginationFilter, IUrlQueryParameters
     {
+        #region PROPERTIES
+        
         /// <summary>
         /// Return billing profiles with names that contain the specified string.
         /// </summary>
-        [MessagePack.Key(200)]
-        public string BillingProfileName { get; set; }
+        [Key(200)]
+        public string BillingProfileName { get; set; } 
+
+        #endregion
     }
 }

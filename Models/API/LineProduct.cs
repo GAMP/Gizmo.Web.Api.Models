@@ -1,6 +1,5 @@
 ﻿using MessagePack;
 using System;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -8,15 +7,17 @@ namespace Gizmo.Web.Api.Models
     /// Line product.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject]
     public class LineProduct : IUrlQueryParameters
     {
+        #region PROPERTIES
+        
         /// <summary>
         /// The Id of the product.
         /// </summary>
-        [DataMember]
-        [MessagePack.Key(0)]
-        public int ProductId { get; set; }
+        [Key(0)]
+        public int ProductId { get; set; } 
+
+        #endregion
     }
 }

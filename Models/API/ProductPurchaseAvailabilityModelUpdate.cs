@@ -1,6 +1,5 @@
 ﻿using MessagePack;
 using System;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -8,7 +7,6 @@ namespace Gizmo.Web.Api.Models
     /// Product purchase availability.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject]
     public class ProductPurchaseAvailabilityModelUpdate : ProductPurchaseAvailability, IUrlQueryParameters
     {

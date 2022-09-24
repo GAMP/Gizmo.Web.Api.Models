@@ -1,14 +1,12 @@
 ﻿using MessagePack;
 using System;
 using System.ComponentModel.DataAnnotations;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Register.
     /// </summary>
-    [DataContract]
     [Serializable]
     [MessagePackObject]
     public class RegisterModelBase
@@ -18,7 +16,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The number of the register.
         /// </summary>
-        [DataMember]
         [Required]
         [MessagePack.Key(0)]
         public int Number { get; set; }
@@ -26,7 +23,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The name of the register.
         /// </summary>
-        [DataMember]
         [Required]
         [StringLength(45)]
         [MessagePack.Key(1)]
@@ -35,7 +31,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The MAC address of the register.
         /// </summary>
-        [DataMember]
         [StringLength(255)]
         [MacAddressValidation]
         [MessagePack.Key(2)]
@@ -44,7 +39,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The start cash of the register.
         /// </summary>
-        [DataMember]
         [Range(0, double.MaxValue)]
         [MessagePack.Key(3)]
         public decimal StartCash { get; set; }
@@ -52,7 +46,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The idle timeout of the register.
         /// </summary>
-        [DataMember]
         [MessagePack.Key(4)]
         public int? IdleTimeout { get; set; }
 

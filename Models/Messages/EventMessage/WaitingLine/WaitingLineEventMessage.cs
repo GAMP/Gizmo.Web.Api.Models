@@ -1,13 +1,11 @@
 ﻿using MessagePack;
 using System.Collections.Generic;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
     /// Waiting line event message.
     /// </summary>
-    [DataContract()]
     [MessagePackObject()]
     public class WaitingLineEventMessage : WaitingLineEventMessageBase
     {
@@ -24,7 +22,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets or sets host group id.
         /// </summary>
-        [DataMember()]
         [Key(1)]
         public int? HostGroupId
         {
@@ -34,7 +31,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets affected lines.
         /// </summary>
-        [DataMember()]
         [Key(2)]
         public IEnumerable<WaitingLineStateModel> ActiveStates
         {

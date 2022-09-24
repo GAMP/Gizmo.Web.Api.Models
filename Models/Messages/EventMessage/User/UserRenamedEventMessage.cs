@@ -1,12 +1,10 @@
 ﻿using MessagePack;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
     /// User renamed event message.
     /// </summary>
-    [DataContract()]
     [MessagePackObject()]
     public class UserRenamedEventMessage : UserEventMessageBase
     {
@@ -23,7 +21,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets new user name.
         /// </summary>
-        [DataMember()]
         [Key(2)]
         public string NewUserName
         {
@@ -33,7 +30,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets old user name.
         /// </summary>
-        [DataMember()]
         [Key(3)]
         public string OldUserName
         {

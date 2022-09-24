@@ -1,13 +1,11 @@
 ﻿using MessagePack;
 using System;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
     /// Waiting line state model.
     /// </summary>
-    [DataContract()]
     [MessagePackObject()]
     public class WaitingLineStateModel
     {
@@ -16,7 +14,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets or sets host group id.
         /// </summary>
-        [DataMember()]
         [Key(0)]
         public int HostGroupId
         {
@@ -26,7 +23,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets or sets user id.
         /// </summary>
-        [DataMember()]
         [Key(1)]
         public int UserId
         {
@@ -36,7 +32,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets or sets estimated host id.
         /// </summary>
-        [DataMember()]
         [Key(2)]
         public int? EstimatedHostId
         {
@@ -46,7 +41,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets or sets estimated time.
         /// </summary>
-        [DataMember()]
         [Key(3)]
         public double? EstimatedWaitTime
         {
@@ -56,7 +50,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets or sets state.
         /// </summary>
-        [DataMember()]
         [Key(4)]
         public WaitingLineState State
         {
@@ -66,7 +59,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets or sets position.
         /// </summary>
-        [DataMember()]
         [Key(5)]
         public int Position
         {
@@ -76,7 +68,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets or sets if position is manually set.
         /// </summary>
-        [DataMember()]
         [Key(6)]
         public bool IsManualPosition
         {
@@ -86,7 +77,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets total time in waiting line.
         /// </summary>
-        [DataMember()]
         [Key(7)]
         public double TimeInLine
         {
@@ -96,7 +86,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets ready time.
         /// </summary>
-        [DataMember()]
         [Key(8)]
         public double ReadyTime
         {
@@ -106,7 +95,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets if ready timed out.
         /// </summary>
-        [DataMember()]
         [Key(9)]
         public bool IsReadyTimedOut
         {
@@ -116,7 +104,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets or sets entry id.
         /// </summary>
-        [DataMember()]  
         [Key(10)]
         public int EntryId
         {
@@ -126,7 +113,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets or sets created time.
         /// </summary>
-        [DataMember()]
         [Key(11)]
         public DateTime CreatedTime
         {

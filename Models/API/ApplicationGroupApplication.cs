@@ -1,7 +1,5 @@
 ﻿using MessagePack;
 using System;
-using System.ComponentModel.DataAnnotations;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -9,7 +7,6 @@ namespace Gizmo.Web.Api.Models
     /// Application group application.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject]
     public class ApplicationGroupApplication : ApplicationGroupApplicationModelBase
     {
@@ -18,8 +15,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The Id of the application group.
         /// </summary>
-        [DataMember]
-        [MessagePack.Key(100)]
+        [Key(100)]
         public int ApplicationGroupId { get; set; }
 
         #endregion

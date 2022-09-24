@@ -1,6 +1,5 @@
 ﻿using MessagePack;
 using System;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -8,7 +7,6 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for monetary units.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject]
     public class MonetaryUnitsFilter : PaginationFilter, IUrlQueryParameters
     {
@@ -17,8 +15,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Return deleted monetary units.
         /// </summary>
-        [DataMember]
-        [MessagePack.Key(200)]
+        [Key(200)]
         public bool? IsDeleted { get; set; }
 
         #endregion

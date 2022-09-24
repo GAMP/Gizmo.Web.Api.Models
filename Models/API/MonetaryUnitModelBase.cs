@@ -1,14 +1,12 @@
 ﻿using MessagePack;
 using System;
 using System.ComponentModel.DataAnnotations;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Monetary unit.
     /// </summary>
-    [DataContract]
     [Serializable]
     [MessagePackObject]
     public class MonetaryUnitModelBase
@@ -18,7 +16,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The name of the monetary unit.
         /// </summary>
-        [DataMember]
         [Required]
         [StringLength(45)]
         [MessagePack.Key(0)]
@@ -27,7 +24,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The value of the monetary unit.
         /// </summary>
-        [DataMember]
         [Required]
         [MessagePack.Key(1)]
         public decimal Value { get; set; }
@@ -35,14 +31,12 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The display order of the monetary unit.
         /// </summary>
-        [DataMember]
         [MessagePack.Key(2)]
         public int DisplayOrder { get; set; }
 
         /// <summary>
         /// Whether the monetary unit is deleted.
         /// </summary>
-        [DataMember]
         [MessagePack.Key(3)]
         public bool IsDeleted { get; set; }
 

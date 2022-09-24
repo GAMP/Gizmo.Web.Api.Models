@@ -1,13 +1,11 @@
 ﻿using MessagePack;
 using System;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
     /// Order line state model.
     /// </summary>
-    [DataContract()]
     [MessagePackObject()]
     public class OrderLineStateModel
     {
@@ -24,7 +22,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets order line id.
         /// </summary>
-        [DataMember()]
         [Key(0)]
         public int OrderLineId
         {
@@ -34,7 +31,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets if devlivered.
         /// </summary>
-        [DataMember()]
         [Key(1)]
         public bool IsDelivered
         {
@@ -44,7 +40,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets devlivered quantity.
         /// </summary>
-        [DataMember()]
         [Key(2)]
         public decimal DeliveredQuantity
         {
@@ -54,7 +49,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets delivery time.
         /// </summary>
-        [DataMember()]
         [Key(3)]
         public DateTime? DeliverTime
         {

@@ -1,14 +1,12 @@
 ﻿using MessagePack;
 using System;
 using System.ComponentModel.DataAnnotations;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Application task junction.
     /// </summary>
-    [DataContract]
     [Serializable]
     [MessagePackObject]
     public class ApplicationTaskJunction
@@ -18,7 +16,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The source directory of the junction.
         /// </summary>
-        [DataMember]
         [Required]
         [StringLength(255)]
         [MessagePack.Key(0)]
@@ -27,7 +24,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The destination directory of the junction.
         /// </summary>
-        [DataMember]
         [Required]
         [StringLength(255)]
         [MessagePack.Key(1)]
@@ -36,7 +32,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Whether the junction deletes the destination.
         /// </summary>
-        [DataMember]
         [MessagePack.Key(2)]
         public bool DeleteDestination { get; set; }
 

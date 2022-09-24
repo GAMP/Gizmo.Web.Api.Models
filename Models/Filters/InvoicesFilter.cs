@@ -1,6 +1,5 @@
 ﻿using MessagePack;
 using System;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -8,37 +7,35 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for invoices.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject]
     public class InvoicesFilter : PaginationFilter, IUrlQueryParameters
     {
+        #region PROPERTIES
+
         /// <summary>
         /// Return invoices where the date greater than or equal to the specified date.
         /// </summary>
-        [DataMember]
-        [MessagePack.Key(200)]
+        [Key(200)]
         public DateTime? DateFrom { get; set; }
 
         /// <summary>
         /// Return invoices where the date less than or equal to the specified date.
         /// </summary>
-        [DataMember]
-        [MessagePack.Key(201)]
+        [Key(201)]
         public DateTime? DateTo { get; set; }
 
         /// <summary>
         /// Return voided invoices.
         /// </summary>
-        [DataMember]
-        [MessagePack.Key(202)]
+        [Key(202)]
         public bool? IsVoided { get; set; }
 
         /// <summary>
         /// Return invoices of the specified user.
         /// </summary>
-        [DataMember]
-        [MessagePack.Key(203)]
-        public int? UserId { get; set; }
+        [Key(203)]
+        public int? UserId { get; set; } 
 
+        #endregion
     }
 }

@@ -1,5 +1,4 @@
 ﻿using MessagePack;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -9,11 +8,14 @@ namespace Gizmo.Web.Api.Models
     [MessagePackObject]
     public class HostLayoutGroupsFilter : PaginationFilter, IUrlQueryParameters
     {
+        #region PROPERTIES
+        
         /// <summary>
         /// Return layout groups with names that contain the specified string.
         /// </summary>
-        [DataMember]
-        [MessagePack.Key(200)]
-        public string LayoutGroupName { get; set; }
+        [Key(200)]
+        public string LayoutGroupName { get; set; } 
+
+        #endregion
     }
 }

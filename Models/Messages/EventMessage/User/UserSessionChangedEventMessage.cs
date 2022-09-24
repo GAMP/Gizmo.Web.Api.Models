@@ -1,12 +1,10 @@
 ﻿using MessagePack;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
     /// User session changed event message.
     /// </summary>
-    [DataContract()]
     [MessagePackObject()]
     public class UserSessionChangedEventMessage : UserEventMessageBase
     {
@@ -23,7 +21,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets new state.
         /// </summary>
-        [DataMember()]
         [Key(2)]
         public UserSessionState State
         {
@@ -33,7 +30,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets span.
         /// </summary>
-        [DataMember()]
         [Key(3)]
         public double Span
         {
@@ -43,7 +39,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets slot.
         /// </summary>
-        [DataMember()]
         [Key(4)]
         public int Slot
         {
@@ -53,7 +48,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets user session host id.
         /// </summary>
-        [DataMember()]
         [Key(5)]
         public int HostId
         {

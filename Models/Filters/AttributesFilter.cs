@@ -1,6 +1,5 @@
 ﻿using MessagePack;
 using System;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -8,15 +7,17 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for attributes.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject]
     public class AttributesFilter : PaginationFilter, IUrlQueryParameters
     {
+        #region PROPERTIES
+        
         /// <summary>
         /// Return attributes with names that contain the specified string.
         /// </summary>
-        [DataMember]
-        [MessagePack.Key(200)]
-        public string AttributeName { get; set; }
+        [Key(200)]
+        public string AttributeName { get; set; } 
+
+        #endregion
     }
 }

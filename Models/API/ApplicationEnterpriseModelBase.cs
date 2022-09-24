@@ -1,7 +1,6 @@
 ﻿using MessagePack;
 using System;
 using System.ComponentModel.DataAnnotations;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -9,7 +8,6 @@ namespace Gizmo.Web.Api.Models
     /// Application enterprise.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject]
     public class ApplicationEnterpriseModelBase
     {
@@ -18,7 +16,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The name of the enterprise.
         /// </summary>
-        [DataMember]
         [Required]
         [StringLength(255)]
         [MessagePack.Key(0)]

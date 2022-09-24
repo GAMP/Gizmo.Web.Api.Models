@@ -1,14 +1,12 @@
 ﻿using MessagePack;
 using System;
 using System.ComponentModel.DataAnnotations;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Tax.
     /// </summary>
-    [DataContract]
     [Serializable]
     [MessagePackObject]
     public class TaxModelBase
@@ -18,7 +16,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The name of the tax.
         /// </summary>
-        [DataMember]
         [Required]
         [StringLength(45)]
         [MessagePack.Key(0)]
@@ -27,7 +24,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The value of the tax.
         /// </summary>
-        [DataMember]
         [Required]
         [Range(0, 100)]
         [MessagePack.Key(1)]

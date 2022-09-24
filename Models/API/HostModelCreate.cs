@@ -1,7 +1,6 @@
 ﻿using MessagePack;
 using System;
 using System.ComponentModel.DataAnnotations;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -9,17 +8,19 @@ namespace Gizmo.Web.Api.Models
     /// Host.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject]
     public class HostModelCreate : HostModelBase, IUrlQueryParameters
     {
+        #region PROPERTIES
+        
         /// <summary>
         /// The type of the host.
         /// </summary>
-        [DataMember]
         [Required]
         [EnumValueValidation]
         [MessagePack.Key(100)]
-        public HostType HostType { get; set; }
+        public HostType HostType { get; set; } 
+
+        #endregion
     }
 }

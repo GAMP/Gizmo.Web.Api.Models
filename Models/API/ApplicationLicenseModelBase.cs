@@ -1,7 +1,6 @@
 ﻿using MessagePack;
 using System;
 using System.ComponentModel.DataAnnotations;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -9,7 +8,6 @@ namespace Gizmo.Web.Api.Models
     /// Application license.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject]
     public class ApplicationLicenseModelBase
     {
@@ -18,7 +16,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The name of the license.
         /// </summary>
-        [DataMember]
         [Required]
         [StringLength(255)]
         [MessagePack.Key(0)]
@@ -27,7 +24,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The plugin type name of the license.
         /// </summary>
-        [DataMember]
         [Required]
         [StringLength(255)]
         [MessagePack.Key(1)]
@@ -36,7 +32,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The plugin assembly of the license.
         /// </summary>        
-        [DataMember]
         [Required]
         [StringLength(255)]
         [MessagePack.Key(2)]

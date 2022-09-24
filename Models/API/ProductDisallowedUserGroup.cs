@@ -1,6 +1,5 @@
 ﻿using MessagePack;
 using System;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -8,7 +7,6 @@ namespace Gizmo.Web.Api.Models
     /// Product disallowed user group.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject]
     public class ProductDisallowedUserGroup : ProductDisallowedUserGroupModelBase
     {
@@ -17,15 +15,13 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The Id of the object.
         /// </summary>
-        [DataMember]
-        [MessagePack.Key(100)]
+        [Key(100)]
         public int Id { get; set; }
 
         /// <summary>
         /// The Id of the product.
         /// </summary>
-        [DataMember]
-        [MessagePack.Key(101)]
+        [Key(101)]
         public int ProductId { get; set; }
 
         #endregion

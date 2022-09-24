@@ -8,7 +8,6 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Asset.
     /// </summary>
-    [DataContract]
     [Serializable]
     [MessagePackObject]
     public class AssetModelBase
@@ -18,7 +17,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The Id of the asset type this asset belongs to.
         /// </summary>
-        [DataMember]
         [Required]
         [MessagePack.Key(0)]
         public int AssetTypeId { get; set; }
@@ -26,7 +24,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The number of the asset.
         /// </summary>
-        [DataMember]
         [Required]
         [MessagePack.Key(1)]
         public int Number { get; set; }
@@ -34,7 +31,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The tag of the asset.
         /// </summary>
-        [DataMember]
         [StringLength(255)]
         [MessagePack.Key(2)]
         public string Tag { get; set; }
@@ -42,7 +38,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The smart card unique id of the asset.
         /// </summary>
-        [DataMember]
         [StringLength(255)]
         [MessagePack.Key(3)]
         public string SmartCardUid { get; set; }
@@ -50,7 +45,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The barcode of the asset.
         /// </summary>
-        [DataMember]
         [StringLength(255)]
         [MessagePack.Key(4)]
         public string Barcode { get; set; }
@@ -58,7 +52,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The serial number of the asset.
         /// </summary>
-        [DataMember]
         [StringLength(255)]
         [MessagePack.Key(5)]
         public string SerialNumber { get; set; }
@@ -66,7 +59,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Whether the asset is enabled.
         /// </summary>
-        [DataMember]
         [MessagePack.Key(6)]
         public bool IsEnabled { get; set; }
 

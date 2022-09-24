@@ -1,12 +1,10 @@
 ﻿using MessagePack;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
     /// User email changed event message.
     /// </summary>
-    [DataContract()]
     [MessagePackObject()]
     public class UserEmailChangedEventMessage : UserEventMessageBase
     {
@@ -23,7 +21,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets new email value.
         /// </summary>
-        [DataMember()]
         [Key(2)]
         public string NewEmail
         {
@@ -34,7 +31,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets old email value.
         /// </summary>
-        [DataMember()]
         [Key(3)]
         public string OldEmail
         {

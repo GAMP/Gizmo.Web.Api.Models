@@ -1,6 +1,5 @@
 ﻿using MessagePack;
 using System;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -8,7 +7,6 @@ namespace Gizmo.Web.Api.Models
     /// Device creation model.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject()]
     public class DeviceModelCreate : DeviceModelBase
     {
@@ -17,8 +15,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Gets or sets device type.
         /// </summary>
-        [DataMember]
-        [MessagePack.Key(100)]
+        [Key(100)]
         public DeviceType DeviceType { get; set; } 
 
         #endregion

@@ -1,12 +1,10 @@
 ﻿using MessagePack;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
     /// Entity change event message.
     /// </summary>
-    [DataContract()]
     [MessagePackObject()]
     public class EntityChangeEventMessage : EntityEventMessageBase
     {
@@ -15,7 +13,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets entity id.
         /// </summary>
-        [DataMember(Order = 1)]
         [Key(1)]
         public int EntityId
         {
@@ -28,7 +25,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <remarks>
         /// This value identifies database operation such as create,delete,update etc.
         /// </remarks>
-        [DataMember(Order = 2)]
         [Key(2)]
         public EntityEventType EventType
         {
@@ -38,7 +34,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets entity type name.
         /// </summary>
-        [DataMember(Order = 3)]
         [Key(3)]
         public string EntityType
         {

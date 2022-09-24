@@ -1,7 +1,6 @@
 ﻿using MessagePack;
 using System;
 using System.ComponentModel.DataAnnotations;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -9,7 +8,6 @@ namespace Gizmo.Web.Api.Models
     /// Application executable cd image.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject]
     public class ApplicationExecutableCdImageModelBase
     {
@@ -18,7 +16,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The path of the cd image.
         /// </summary>
-        [DataMember]
         [StringLength(255)]
         [MessagePack.Key(0)]
         public string Path { get; set; }
@@ -26,7 +23,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The mounting options of the cd image.
         /// </summary>
-        [DataMember]
         [StringLength(255)]
         [MessagePack.Key(1)]
         public string MountOptions { get; set; }
@@ -34,7 +30,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The device id of the cd image.
         /// </summary>
-        [DataMember]
         [StringLength(3)]
         [MessagePack.Key(2)]
         public string DeviceId { get; set; }
@@ -42,7 +37,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Whether the cd image will check the mounter process exit code value while mounting.
         /// </summary>
-        [DataMember]
         [MessagePack.Key(3)]
         public bool CheckExitCode { get; set; }
 

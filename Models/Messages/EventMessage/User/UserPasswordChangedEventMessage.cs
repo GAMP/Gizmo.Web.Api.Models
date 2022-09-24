@@ -1,12 +1,10 @@
 ﻿using MessagePack;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
     /// User password changed event message.
     /// </summary>
-    [DataContract()]
     [MessagePackObject()]
     public class UserPasswordChangedEventMessage : UserEventMessageBase
     {

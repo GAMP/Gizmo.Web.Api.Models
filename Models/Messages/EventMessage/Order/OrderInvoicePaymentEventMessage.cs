@@ -1,12 +1,10 @@
 ﻿using MessagePack;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
     /// Order invoice payment event message.
     /// </summary>
-    [DataContract()]
     [MessagePackObject()]
     public class OrderInvoicePaymentEventMessage : OrderEventMessageBase
     {
@@ -23,7 +21,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets payment method id.
         /// </summary>
-        [DataMember()]
         [Key(2)]
         public int? PaymentMethodId
         {
@@ -33,7 +30,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets payment amount.
         /// </summary>
-        [DataMember()]
         [Key(3)]
         public decimal Amount
         {
@@ -43,7 +39,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Get outstanding amount on invoice.
         /// </summary>
-        [DataMember()]
         [Key(4)]
         public decimal Outstanding
         {

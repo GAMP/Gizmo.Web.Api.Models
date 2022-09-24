@@ -1,6 +1,5 @@
 ﻿using MessagePack;
 using System;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -8,14 +7,17 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for assets.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject]
     public class AssetsFilter : PaginationFilter, IUrlQueryParameters
     {
+        #region PROPERTIES
+        
         /// <summary>
         /// Return assets with tags that contain the specified string.
         /// </summary>
-        [MessagePack.Key(200)]
-        public string Tag { get; set; }
+        [Key(200)]
+        public string Tag { get; set; } 
+
+        #endregion
     }
 }

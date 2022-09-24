@@ -1,6 +1,5 @@
 ﻿using MessagePack;
 using System;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -8,15 +7,17 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for user agreements.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject]
     public class UserAgreementsFilter : PaginationFilter, IUrlQueryParameters
     {
+        #region PROPERTIES
+
         /// <summary>
         /// Return enabled user agreements.
         /// </summary>
-        [DataMember]
-        [MessagePack.Key(200)]
-        public bool? IsEnabled { get; set; }
+        [Key(200)]
+        public bool? IsEnabled { get; set; } 
+        
+        #endregion
     }
 }

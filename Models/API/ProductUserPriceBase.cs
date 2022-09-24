@@ -1,7 +1,6 @@
 ﻿using MessagePack;
 using System;
 using System.ComponentModel.DataAnnotations;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -9,7 +8,6 @@ namespace Gizmo.Web.Api.Models
     /// Product user price base.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject]
     public class ProductUserPriceBase
     {
@@ -18,7 +16,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The Id of the user group this user price is associated with.
         /// </summary>
-        [DataMember]
         [Required]
         [MessagePack.Key(0)]
         public int UserGroupId { get; set; }
@@ -26,7 +23,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The price for this user price.
         /// </summary>
-        [DataMember]
         [MessagePack.Key(1)]
         public decimal? Price { get; set; }
 

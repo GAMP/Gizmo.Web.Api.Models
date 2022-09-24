@@ -1,6 +1,5 @@
 ﻿using MessagePack;
 using System;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -8,7 +7,6 @@ namespace Gizmo.Web.Api.Models
     /// Host layout.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject]
     public class HostLayout : HostLayoutModelBase, IEntityBase
     {
@@ -17,13 +15,13 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The Id of the object.
         /// </summary>
-        [DataMember]
+        [Key(6)]
         public int Id { get; set; }
 
         /// <summary>
         /// The Id of the host layout group this host layout belongs to.
         /// </summary>
-        [DataMember]
+        [Key(7)]
         public int HostLayoutGroupId { get; set; }
 
         #endregion

@@ -1,7 +1,5 @@
 ﻿using MessagePack;
 using System;
-using System.Collections.Generic;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -9,7 +7,6 @@ namespace Gizmo.Web.Api.Models
     /// Order.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject]
     public class Order : OrderModelBase, IEntityBase
     {
@@ -18,15 +15,13 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The Id of the object.
         /// </summary>
-        [DataMember]
-        [MessagePack.Key(200)]
+        [Key(200)]
         public int Id { get; set; }
 
         /// <summary>
         /// The invoice of the order.
         /// </summary>
-        [DataMember]
-        [MessagePack.Key(201)]
+        [Key(201)]
         public Invoice Invoice { get; set; }
 
         #endregion

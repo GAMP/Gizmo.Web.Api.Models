@@ -1,7 +1,6 @@
 ﻿using MessagePack;
 using System;
 using System.ComponentModel.DataAnnotations;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -9,7 +8,6 @@ namespace Gizmo.Web.Api.Models
     /// User group disallowed host group.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject]
     public class UserGroupDisallowedHostGroupModelUpdate : UserGroupDisallowedHostGroupModelBase, IEntityBase, IUrlQueryParameters
     {
@@ -18,7 +16,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The Id of the object.
         /// </summary>
-        [DataMember]
         [Required]
         [MessagePack.Key(100)]
         public int Id { get; set; }
@@ -26,7 +23,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The Id of the user group.
         /// </summary>
-        [DataMember]
         [Required]
         [MessagePack.Key(101)]
         public int UserGroupId { get; set; }

@@ -1,7 +1,6 @@
 ﻿using MessagePack;
 using System;
 using System.ComponentModel.DataAnnotations;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -9,7 +8,6 @@ namespace Gizmo.Web.Api.Models
     /// Application deployment.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject]
     public class ApplicationDeploymentModelBase
     {
@@ -18,7 +16,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The name of the deployment.
         /// </summary>
-        [DataMember]
         [Required]
         [StringLength(255)]
         [MessagePack.Key(0)]
@@ -27,7 +24,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The registry string of the deployment.
         /// </summary>
-        [DataMember]
         [StringLength(16777215)]
         [MessagePack.Key(1)]
         public string RegistryString { get; set; }
@@ -35,7 +31,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The source of the deployment.
         /// </summary>
-        [DataMember]
         [Required]
         [StringLength(255)]
         [MessagePack.Key(2)]
@@ -44,7 +39,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The destination of the deployment.
         /// </summary>
-        [DataMember]
         [Required]
         [StringLength(255)]
         [MessagePack.Key(3)]
@@ -55,7 +49,6 @@ namespace Gizmo.Web.Api.Models
         ///// </summary>
         //[DataMember]
         //public FileInfoLevel ComparisonLevel { get; set; }
-        [DataMember]
         [EnumValueValidation]
         [MessagePack.Key(4)]
         public ApplicationDeploymentComparisonMode ComparisonMode { get; set; }
@@ -63,7 +56,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The deployment options of the deployment.
         /// </summary>
-        [DataMember]
         [MessagePack.Key(5)]
         public ApplicationDeploymentOptions DeploymentOptions { get; set; }
 

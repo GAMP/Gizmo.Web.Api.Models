@@ -1,12 +1,10 @@
 ﻿using MessagePack;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
     /// Order invoiced event message.
     /// </summary>
-    [DataContract()]
     [MessagePackObject()]
     public class OrderInvoicedEventMessage : OrderEventMessageBase
     {
@@ -23,7 +21,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets invoice id.
         /// </summary>
-        [DataMember()]
         [Key(2)]
         public int InvoiceId
         {

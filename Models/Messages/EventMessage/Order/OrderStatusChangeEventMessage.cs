@@ -1,12 +1,10 @@
 ﻿using MessagePack;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
     /// Order status change event message.
     /// </summary>
-    [DataContract()]
     [MessagePackObject()]
     public class OrderStatusChangeEventMessage : OrderEventMessageBase
     {
@@ -23,7 +21,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets new status.
         /// </summary>
-        [DataMember()]
         [Key(2)]
         public OrderStatus NewStatus
         {
@@ -33,7 +30,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets old status.
         /// </summary>
-        [DataMember()]
         [Key(3)]
         public OrderStatus? OldStatus
         {

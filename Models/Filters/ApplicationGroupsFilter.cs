@@ -1,6 +1,5 @@
 ﻿using MessagePack;
 using System;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -8,15 +7,17 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for application groups.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject]
     public class ApplicationGroupsFilter : PaginationFilter, IUrlQueryParameters
     {
+        #region PROPERTIES
+        
         /// <summary>
         /// Return groups with names that contain the specified string.
         /// </summary>
-        [DataMember]
-        [MessagePack.Key(200)]
-        public string GroupName { get; set; }
+        [Key(200)]
+        public string GroupName { get; set; } 
+
+        #endregion
     }
 }

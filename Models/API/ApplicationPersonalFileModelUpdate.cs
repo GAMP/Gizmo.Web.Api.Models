@@ -1,6 +1,5 @@
 ﻿using MessagePack;
 using System;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -8,7 +7,6 @@ namespace Gizmo.Web.Api.Models
     /// Application personal file.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject]
     public class ApplicationPersonalFileModelUpdate : ApplicationPersonalFileModelBase, IEntityBase
     {
@@ -17,8 +15,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The Id of the object.
         /// </summary>
-        [DataMember]
-        [MessagePack.Key(100)]
+        [Key(100)]
         public int Id { get; set; }
 
         #endregion

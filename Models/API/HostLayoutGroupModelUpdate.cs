@@ -1,7 +1,5 @@
 ﻿using MessagePack;
 using System;
-using System.ComponentModel.DataAnnotations;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -9,7 +7,6 @@ namespace Gizmo.Web.Api.Models
     /// Host layout group.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject]
     public class HostLayoutGroupModelUpdate : HostLayoutGroupModelBase, IEntityBase, IUrlQueryParameters
     {
@@ -18,8 +15,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The Id of the object.
         /// </summary>
-        [DataMember]
-        [Required]
+        [Key(2)]
         public int Id { get; set; }
 
         #endregion

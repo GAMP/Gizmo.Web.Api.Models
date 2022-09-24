@@ -1,7 +1,6 @@
 ﻿using MessagePack;
 using System;
 using System.ComponentModel.DataAnnotations;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -9,7 +8,6 @@ namespace Gizmo.Web.Api.Models
     /// Application executable task.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject]
     public class ApplicationExecutableTaskModelUpdate : ApplicationExecutableTaskModelBase
     {
@@ -18,7 +16,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The Id of the executable this task is associated with.
         /// </summary>
-        [DataMember]
         [Required]
         [MessagePack.Key(100)]
         public int ApplicationExecutableId { get; set; }

@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -10,7 +9,6 @@ namespace Gizmo.Web.Api.Models
     /// Billing profile rate day.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject]
     public class BillingProfileRateDay
     {
@@ -19,7 +17,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The day of the week.
         /// </summary>
-        [DataMember]
         [Required]
         [MessagePack.Key(0)]
         public DayOfWeek Day { get; set; }
@@ -27,7 +24,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The timespans during which the rate is applicable for this day.
         /// </summary>
-        [DataMember]
         [MessagePack.Key(1)]
         public IEnumerable<BillingProfileRateDayTime> DayTimesApplicable { get; set; }
 

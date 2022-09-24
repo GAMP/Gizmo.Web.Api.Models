@@ -1,12 +1,10 @@
 ﻿using MessagePack;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
     /// User usage session event message.
     /// </summary>
-    [DataContract()]
     [MessagePackObject()]
     public class UserUsageSessionChangedEventArgs : UserEventMessageBase
     {
@@ -23,7 +21,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets current time poroduct name.
         /// </summary>
-        [DataMember()]
         [Key(2)]
         public string CurrentTimeProduct
         {
@@ -33,7 +30,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets current usage type.
         /// </summary>
-        [DataMember()]
         [Key(3)]
         public UsageType CurrentUsageType
         {

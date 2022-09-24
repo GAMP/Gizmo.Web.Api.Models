@@ -1,5 +1,4 @@
 ﻿using MessagePack;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -7,7 +6,6 @@ namespace Gizmo.Web.Api.Models
     /// Generic web api response with result.
     /// </summary>
     /// <typeparam name="T">Result type.</typeparam>
-    [DataContract()]
     [MessagePackObject()]
     public class WebApiResponse<T> : WebApiResponseBase
     {

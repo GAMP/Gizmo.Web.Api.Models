@@ -1,12 +1,10 @@
 ﻿using MessagePack;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Variable.
     /// </summary>
-    [DataContract]
     [MessagePackObject]
     public class Variable : VariableModelBase, IEntityBase
     {
@@ -15,8 +13,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The Id of the object.
         /// </summary>
-        [DataMember]
-        [MessagePack.Key(100)]
+        [Key(100)]
         public int Id { get; set; }
 
         #endregion

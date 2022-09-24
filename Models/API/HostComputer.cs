@@ -1,7 +1,6 @@
 using MessagePack;
 using System;
 using System.ComponentModel.DataAnnotations;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -9,7 +8,6 @@ namespace Gizmo.Web.Api.Models
     /// Host computer.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject]
     public class HostComputer
     {
@@ -18,7 +16,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The windows name of the computer.
         /// </summary>
-        [DataMember]
         [Required]
         [MessagePack.Key(0)]
         public string WindowsName { get; set; }
@@ -26,7 +23,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The MAC Address of the computer.
         /// </summary>
-        [DataMember]
         [Required]
         [MacAddressValidation]
         [MessagePack.Key(1)]

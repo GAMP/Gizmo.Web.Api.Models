@@ -1,14 +1,12 @@
 ﻿using MessagePack;
 using System;
 using System.ComponentModel.DataAnnotations;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Billing profile rate step.
     /// </summary>
-    [DataContract]
     [Serializable]
     [MessagePackObject]
     public class BillingProfileRateStep
@@ -18,14 +16,12 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The minute of the rate step.
         /// </summary>
-        [DataMember]
         [MessagePack.Key(0)]
         public int Minute { get; set; }
 
         /// <summary>
         /// The action of the rate step.
         /// </summary>
-        [DataMember]
         [EnumValueValidation]
         [MessagePack.Key(1)]
         public BillingRateStepAction Action { get; set; }
@@ -33,21 +29,18 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The charge value of the rate step.
         /// </summary>
-        [DataMember]
         [MessagePack.Key(2)]
         public decimal Charge { get; set; }
 
         /// <summary>
         /// The rate value of the rate step.
         /// </summary>
-        [DataMember]
         [MessagePack.Key(3)]
         public decimal Rate { get; set; }
 
         /// <summary>
         /// The target minute of the rate step.
         /// </summary>
-        [DataMember]
         [MessagePack.Key(4)]
         public int TargetMinute { get; set; }
 

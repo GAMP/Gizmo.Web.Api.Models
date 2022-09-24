@@ -1,7 +1,5 @@
 ﻿using MessagePack;
 using System;
-using System.ComponentModel.DataAnnotations;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -9,7 +7,6 @@ namespace Gizmo.Web.Api.Models
     /// Host layout.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject]
     public class HostLayoutModelBase
     {
@@ -18,28 +15,37 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The id of the host.
         /// </summary>
-        [DataMember]
-        [MessagePack.Key(0)]
+        [Key(0)]
         public int HostId { get; set; }
 
-        [DataMember]
-        [MessagePack.Key(1)]
+        /// <summary>
+        /// X Position.
+        /// </summary>
+        [Key(1)]
         public int X { get; set; }
 
-        [DataMember]
-        [MessagePack.Key(2)]
+        /// <summary>
+        /// Y Position.
+        /// </summary>
+        [Key(2)]
         public int Y { get; set; }
 
-        [DataMember]
-        [MessagePack.Key(3)]
+        /// <summary>
+        /// Display height.
+        /// </summary>
+        [Key(3)]
         public int Height { get; set; }
 
-        [DataMember]
-        [MessagePack.Key(4)]
+        /// <summary>
+        /// Display width.
+        /// </summary>
+        [Key(4)]
         public int Width { get; set; }
 
-        [DataMember]
-        [MessagePack.Key(5)]
+        /// <summary>
+        /// Indicates if hidden from layout.
+        /// </summary>
+        [Key(5)]
         public bool IsHidden { get; set; }
 
         #endregion

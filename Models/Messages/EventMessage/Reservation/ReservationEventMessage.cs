@@ -1,13 +1,11 @@
 ﻿using MessagePack;
 using System.Collections.Generic;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
     /// Reservation event message.
     /// </summary>
-    [DataContract()]
     [MessagePackObject()]
     public class ReservationEventMessage : ReservationEventMessageBase
     {
@@ -24,7 +22,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets reserved users.
         /// </summary>
-        [DataMember()]
         [Key(2)]
         public HashSet<int> Users
         {
@@ -34,7 +31,6 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets reserved hosts.
         /// </summary>
-        [DataMember()]
         [Key(3)]
         public HashSet<int> Hosts
         {

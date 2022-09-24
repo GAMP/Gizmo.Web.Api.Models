@@ -1,6 +1,5 @@
 ﻿using MessagePack;
 using System;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -8,15 +7,17 @@ namespace Gizmo.Web.Api.Models
     /// Invoice line.
     /// </summary>
     [Serializable]
-    [DataContract]
     [MessagePackObject]
     public class InvoiceLine : InvoiceLineModelBase, IEntityBase
     {
+        #region PROPERTIES
+        
         /// <summary>
         /// The Id of the object.
         /// </summary>
-        [DataMember]
-        [MessagePack.Key(100)]
-        public int Id { get; set; }
+        [Key(100)]
+        public int Id { get; set; } 
+
+        #endregion
     }
 }
