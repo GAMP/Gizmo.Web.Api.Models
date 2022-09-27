@@ -140,7 +140,7 @@ namespace Gizmo.Web.Api.Models
                 throw new ArgumentNullException(nameof(target));
 
             return target.GetType()
-                .GetProperties()
+                .GetProperties(BindingFlags.Instance | BindingFlags.Public)
                 .Where(prop => prop.GetCustomAttribute<DataMemberAttribute>() != null)
                 .Select(prop => prop)
                 .ToList();

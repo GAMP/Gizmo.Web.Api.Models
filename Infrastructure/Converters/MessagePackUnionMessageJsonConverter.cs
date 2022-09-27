@@ -1,11 +1,12 @@
-﻿using MessagePack;
+﻿#nullable enable
+using MessagePack;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Text.Json;
 
-namespace Gizmo.Web.Api.Messaging
+namespace Gizmo.Web.Api
 {
     /// <summary>
     /// Polymorphic json converter using MessagePack Union attribute to identify message types.
@@ -75,8 +76,14 @@ namespace Gizmo.Web.Api.Messaging
             //get associated type
             var type = GetUnionByInterfaceType(descriminator);
 
+            if (type == null)
+                throw new ArgumentException("Invalid type.");
+
             //deserialize to associated type
-            object result = JsonSerializer.Deserialize(ref reader, type);
+            var result = JsonSerializer.Deserialize(ref reader, type);
+
+            if (result == null)
+                return default;
 
             //read to the end of message
             reader.Read();
@@ -89,6 +96,9 @@ namespace Gizmo.Web.Api.Messaging
         {
             //start of our message
             writer.WriteStartObject();
+
+            if (value == null)
+                throw new ArgumentNullException(nameof(value));
 
             //get exact value type
             var valueType = value.GetType();

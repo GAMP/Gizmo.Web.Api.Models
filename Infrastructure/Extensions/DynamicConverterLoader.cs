@@ -3,7 +3,7 @@ using System;
 using System.Reflection;
 using System.Text.Json.Serialization;
 
-namespace Gizmo.Web.Api.Messaging
+namespace Gizmo.Web.Api
 {
     /// <summary>
     /// Dynimcally creates Json converter.
@@ -22,21 +22,29 @@ namespace Gizmo.Web.Api.Messaging
             converter = null;
             try
             {
+                //try to load desired assembly
                 var desiredAssmbly = Assembly.Load(assemblyName);
+
+                //find desired type inside of that assembly
                 var type = desiredAssmbly.GetTypes()
-                    .Where(type => string.Compare(type.Name, objectType, System.StringComparison.OrdinalIgnoreCase) == 0)
+                    .Where(type => string.Compare(type.Name, objectType, StringComparison.OrdinalIgnoreCase) == 0)
                     .FirstOrDefault();
 
+                //create gneric converter type
                 var converterType = typeof(MessagePackUnionMessageJsonConverter<>);
+
+                //make generic with type parameters
                 var constructedType = converterType.MakeGenericType(type);
-                converter = Activator.CreateInstance(constructedType,"CommandType","Command") as JsonConverter;
+
+                //create converter
+                converter = (JsonConverter)Activator.CreateInstance(constructedType,"CommandType","Command");
+
                 return true;
             }
             catch
             {
-                throw;
+                return false;
             }
-            return false;
         }
     }
 }

@@ -10,7 +10,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [MessagePackObject()]
     [Union(0,typeof(MobilePhoneVerificationStartResult))]
-    public abstract class MobileVerificationResultBase<TResultCode> : VerificationResultBase<TResultCode> where TResultCode : Enum
+    public abstract class MobileVerificationResultBase<TResultCode> : TokenResultWithCodeBase<TResultCode> where TResultCode : Enum
     {
         #region CONSTRUCTOR
         /// <summary>

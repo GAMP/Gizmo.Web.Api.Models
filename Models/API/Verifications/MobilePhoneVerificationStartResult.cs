@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// Mobile phone verification start result model.
     /// </summary>
     [MessagePackObject()]
-    public class MobilePhoneVerificationStartResult : VerificationResultBase<VerificationStartResultCode>
+    public class MobilePhoneVerificationStartResult : TokenResultWithCodeBase<VerificationStartResultCode>
     {
         #region PROPERTIES
 

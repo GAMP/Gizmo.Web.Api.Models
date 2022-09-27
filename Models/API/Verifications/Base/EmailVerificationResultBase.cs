@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Base verification result for email.
     /// </summary>
     [MessagePackObject()]
-    public abstract class EmailVerificationResultBase<TResultCode> : VerificationResultBase<TResultCode> where TResultCode : Enum
+    public abstract class EmailVerificationResultBase<TResultCode> : TokenResultWithCodeBase<TResultCode> where TResultCode : Enum
     {
         #region CONSTRUCTOR
         /// <summary>

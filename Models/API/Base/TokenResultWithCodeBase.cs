@@ -4,16 +4,20 @@ using System;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Base class for verfication results.
+    /// Base class for token results.
     /// </summary>
     /// <typeparam name="T">Result type.</typeparam>
+    /// <remarks>
+    /// Provides means to return generated token value and enum code in <see cref="TokenResultWithCodeBase{T}.Result"/>.
+    /// </remarks>
     [MessagePackObject()]
     [Union(0, typeof(EmailVerificationStartResult))]
     [Union(1, typeof(MobilePhoneVerificationStartResult))]
     [Union(2, typeof(AccountCreationByMobilePhoneResult))]
     [Union(3, typeof(AccountCreationByEmailResult))]
     [Union(4, typeof(AccountCreationByTokenCompleteResult))]
-    public abstract class VerificationResultBase<T> where T : Enum
+    [Union(5, typeof(PasswordRecoveryStartResult))]
+    public abstract class TokenResultWithCodeBase<T> where T : Enum
     {
         #region PROPERTIES
 

@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// Account creation by token result model.
     /// </summary>
     [MessagePackObject()]
-    public class AccountCreationByTokenCompleteResult : VerificationResultBase<AccountCreationByTokenCompleteResultCode>
+    public class AccountCreationByTokenCompleteResult : TokenResultWithCodeBase<AccountCreationByTokenCompleteResultCode>
     {
         #region PROPERTIES
 

@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Text.Json;
 
-namespace Gizmo.Web.Api.Messaging
+namespace Gizmo.Web.Api
 {
     /// <summary>
     /// Web api json options configuration extensions.
     /// </summary>
     public static class WebApiExtensions
     {
+        #region FUNCTIONS
+        
         /// <summary>
         /// Adds supported Json serializers to the web api json options.
         /// </summary>
@@ -22,6 +24,8 @@ namespace Gizmo.Web.Api.Messaging
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<Models.WebApiErrorBase>("ErrorType", "Error"));
 
             return options;
-        }
+        } 
+
+        #endregion
     }
 }

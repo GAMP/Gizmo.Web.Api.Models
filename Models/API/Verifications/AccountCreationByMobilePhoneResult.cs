@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// Account creation by mobile phone result model.
     /// </summary>
     [MessagePackObject()]
-    public class AccountCreationByMobilePhoneResult : VerificationResultBase<VerificationStartResultCode>
+    public class AccountCreationByMobilePhoneResult : TokenResultWithCodeBase<VerificationStartResultCode>
     {
         #region PROPERTIES
 

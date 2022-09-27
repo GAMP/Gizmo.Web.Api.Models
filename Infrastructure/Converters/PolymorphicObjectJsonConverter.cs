@@ -2,7 +2,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace Gizmo.Web.Api.Messaging
+namespace Gizmo.Web.Api
 {
     /// <summary>
     /// Polymorphic object json converter.

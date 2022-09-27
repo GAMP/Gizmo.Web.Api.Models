@@ -1,12 +1,15 @@
-﻿using System;
+﻿using Gizmo.Web.Api.Messaging;
+using System;
 
-namespace Gizmo.Web.Api.Messaging
+namespace Gizmo.Web.Api
 {
     /// <summary>
     /// Singal R Hub extensions.
     /// </summary>
     public static class HubExtensions
     {
+        #region FUNCTIONS
+        
         /// <summary>
         /// Adds supported Json serializers to the hub options.
         /// </summary>
@@ -33,6 +36,8 @@ namespace Gizmo.Web.Api.Messaging
             }
 
             return options;
-        }
+        } 
+
+        #endregion
     }
 }

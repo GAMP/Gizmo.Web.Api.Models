@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// Account creation by email result model.
     /// </summary>
     [MessagePackObject()]
-    public class AccountCreationByEmailResult : VerificationResultBase<VerificationStartResultCode>
+    public class AccountCreationByEmailResult : TokenResultWithCodeBase<VerificationStartResultCode>
     {
         #region PROPERTIES
 

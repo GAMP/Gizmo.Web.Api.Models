@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// Email verification start result model.
     /// </summary>
     [MessagePackObject()]
-    public class EmailVerificationStartResult : VerificationResultBase<VerificationStartResultCode>
+    public class EmailVerificationStartResult : TokenResultWithCodeBase<VerificationStartResultCode>
     {
         #region PROPERTIES
 
