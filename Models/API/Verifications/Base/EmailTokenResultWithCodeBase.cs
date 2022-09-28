@@ -1,22 +1,24 @@
-﻿using MessagePack;
+﻿#nullable enable
+
+using MessagePack;
+using System;
 using System.Text.Json.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Account creation by token result model.
+    /// Base verification result for email.
     /// </summary>
-    [MessagePackObject()]
-    public sealed class AccountCreationByTokenCompleteResult : TokenResultWithCodeBase<AccountCreationByTokenCompleteResultCode>
+    public abstract class EmailTokenResultWithCodeBase<TResultCode> : TokenResultWithCodeBase<TResultCode> where TResultCode : Enum
     {
         #region PROPERTIES
 
         /// <summary>
-        /// Newly created user id.
+        /// Gets email address.
         /// </summary>
         [Key(3)]
         [JsonPropertyOrder(3)]
-        public int? CreatedUserId
+        public virtual string? Email
         {
             get; set;
         }

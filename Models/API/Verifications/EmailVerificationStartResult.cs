@@ -1,4 +1,5 @@
 ﻿using MessagePack;
+using System.Text.Json.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -6,18 +7,16 @@ namespace Gizmo.Web.Api.Models
     /// Email verification start result model.
     /// </summary>
     [MessagePackObject()]
-    public class EmailVerificationStartResult : TokenResultWithCodeBase<VerificationStartResultCode>
+    public sealed class EmailVerificationStartResult : EmailTokenResultWithCodeBase<VerificationStartResultCode>
     {
         #region PROPERTIES
-
+        
         /// <summary>
-        /// Email being verified.
+        /// Gets or sets email address being verified.
         /// </summary>
-        [Key(5)]
-        public string Email
-        {
-            get; set;
-        }
+        [Key(3)]
+        [JsonPropertyOrder(3)]
+        public override string Email { get => base.Email; set => base.Email = value; } 
 
         #endregion
     }

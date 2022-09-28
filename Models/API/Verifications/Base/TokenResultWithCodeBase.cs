@@ -1,5 +1,6 @@
 ﻿using MessagePack;
 using System;
+using System.Text.Json.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -10,13 +11,6 @@ namespace Gizmo.Web.Api.Models
     /// <remarks>
     /// Provides means to return generated token value and enum code in <see cref="TokenResultWithCodeBase{T}.Result"/>.
     /// </remarks>
-    [MessagePackObject()]
-    [Union(0, typeof(EmailVerificationStartResult))]
-    [Union(1, typeof(MobilePhoneVerificationStartResult))]
-    [Union(2, typeof(AccountCreationByMobilePhoneResult))]
-    [Union(3, typeof(AccountCreationByEmailResult))]
-    [Union(4, typeof(AccountCreationByTokenCompleteResult))]
-    [Union(5, typeof(PasswordRecoveryStartResult))]
     public abstract class TokenResultWithCodeBase<T> where T : Enum
     {
         #region PROPERTIES
@@ -25,16 +19,8 @@ namespace Gizmo.Web.Api.Models
         /// Verification result code.
         /// </summary>
         [Key(0)]
+        [JsonPropertyOrder(0)]
         public T Result
-        {
-            get; set;
-        }
-
-        /// <summary>
-        /// Confirmation code.
-        /// </summary>
-        [Key(1)]
-        public string ConfirmationCode
         {
             get; set;
         }
@@ -42,20 +28,22 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Token value.
         /// </summary>
-        [Key(2)]
+        [Key(1)]
+        [JsonPropertyOrder(1)]
         public string Token
         {
             get; set;
         }
 
         /// <summary>
-        /// Token id.
+        /// Gets confirmation code length.
         /// </summary>
-        [Key(3)]
-        public int? TokenId
+        [Key(2)]
+        [JsonPropertyOrder(2)]
+        public int CodeLength
         {
-            get; set;
-        }   
+            get; init;
+        } = 0;
 
         #endregion
     }

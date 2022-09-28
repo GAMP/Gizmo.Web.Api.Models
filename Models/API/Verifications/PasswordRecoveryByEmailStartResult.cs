@@ -4,15 +4,15 @@ using System.Text.Json.Serialization;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Account creation by email result model.
+    /// Password recovery by email start result.
     /// </summary>
     [MessagePackObject()]
-    public sealed class AccountCreationByEmailResult : EmailTokenResultWithCodeBase<VerificationStartResultCode>
+    public sealed class PasswordRecoveryByEmailStartResult : EmailTokenResultWithCodeBase<PasswordRecoveryStartResultCode>
     {
         #region PROPERTIES
 
         /// <summary>
-        /// Gets or sets email used to create the account.
+        /// Gets or sets email used to recover the password.
         /// </summary>
         [Key(3)]
         [JsonPropertyOrder(3)]

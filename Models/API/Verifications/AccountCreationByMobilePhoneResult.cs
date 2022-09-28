@@ -1,4 +1,5 @@
 ﻿using MessagePack;
+using System.Text.Json.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -6,27 +7,16 @@ namespace Gizmo.Web.Api.Models
     /// Account creation by mobile phone result model.
     /// </summary>
     [MessagePackObject()]
-    public class AccountCreationByMobilePhoneResult : TokenResultWithCodeBase<VerificationStartResultCode>
+    public sealed class AccountCreationByMobilePhoneResult : MobileTokenResultWithCodeBase<VerificationStartResultCode>
     {
         #region PROPERTIES
 
         /// <summary>
-        /// Mobile phone used.
+        /// Gets or sets mobile phone used to create the account.
         /// </summary>
-        [Key(4)]
-        public string MobilePhone
-        {
-            get; set;
-        }
-
-        /// <summary>
-        /// Gets confirmation code delivery method.
-        /// </summary>
-        [Key(5)]
-        public ConfirmationCodeDeliveryMethod DeliveryMethod
-        {
-            get; init;
-        }
+        [Key(3)]
+        [JsonPropertyOrder(3)]
+        public override string MobilePhone { get => base.MobilePhone; set => base.MobilePhone = value; }
 
         #endregion
     }
