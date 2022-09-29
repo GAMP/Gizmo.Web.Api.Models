@@ -9,21 +9,11 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     /// <typeparam name="T">Result type.</typeparam>
     /// <remarks>
-    /// Provides means to return generated token value and enum code in <see cref="TokenResultWithCodeBase{T}.Result"/>.
+    /// Provides means to return generated token value and enum code in <see cref="ResultCodeBase{T}.Result"/>.
     /// </remarks>
-    public abstract class TokenResultWithCodeBase<T> where T : Enum
+    public abstract class TokenResultWithCodeBase<T> : ResultCodeBase<T> where T : Enum
     {
         #region PROPERTIES
-
-        /// <summary>
-        /// Verification result code.
-        /// </summary>
-        [Key(0)]
-        [JsonPropertyOrder(0)]
-        public T Result
-        {
-            get; set;
-        }
 
         /// <summary>
         /// Token value.
