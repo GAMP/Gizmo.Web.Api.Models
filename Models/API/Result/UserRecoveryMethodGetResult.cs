@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     public sealed class UserRecoveryMethodGetResult : ResultCodeBase<UserRecoverMethodGetResultCode>
     {
         #region PROPERTIES
-        
+
         /// <summary>
         /// Gets available recovery method.
         /// </summary>
@@ -23,7 +23,7 @@ namespace Gizmo.Web.Api.Models
         public UserRecoveryMethod RecoveryMethod
         {
             get; init;
-        } = UserRecoveryMethod.None; 
+        } = UserRecoveryMethod.None;
 
         #endregion
     }
