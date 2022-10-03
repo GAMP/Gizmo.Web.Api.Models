@@ -25,7 +25,7 @@ namespace Gizmo.Web.Api
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<Models.WebApiErrorBase>("ErrorType", "Error"));
 
             //add event message converter
-            options.Converters.Add(new MessagePackUnionMessageJsonConverter<IAPIEventMessage>("EventType", "Event"));
+            options.Converters.Add(new MessagePackUnionMessageJsonConverter<IAPIEventMessage>("EventId", "Event"));
 
             //add command message converter
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<IAPICommandMessage>("CommandType", "Command"));

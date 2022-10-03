@@ -22,7 +22,7 @@ namespace Gizmo.Web.Api
                 throw new ArgumentNullException(nameof(options));
 
             //add event message converter
-            options.PayloadSerializerOptions.Converters.Add(new MessagePackUnionMessageJsonConverter<IAPIEventMessage>("EventType", "Event"));
+            options.PayloadSerializerOptions.Converters.Add(new MessagePackUnionMessageJsonConverter<IAPIEventMessage>("EventId", "Event"));
 
             //add command message converter
             options.PayloadSerializerOptions.Converters.Add(new MessagePackUnionMessageJsonConverter<IAPICommandMessage>("CommandType", "Command"));
