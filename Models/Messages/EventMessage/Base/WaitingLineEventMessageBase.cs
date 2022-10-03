@@ -1,11 +1,8 @@
-﻿using MessagePack;
-
-namespace Gizmo.Web.Api.Messaging
+﻿namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
     /// Waiting line event message base.
     /// </summary>
-    [MessagePackObject()]
     public abstract class WaitingLineEventMessageBase : APIEventMessage
     {
         #region CONSTRUCTOR

@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Messaging
     /// User email changed event message.
     /// </summary>
     [MessagePackObject()]
-    public class UserEmailChangedEventMessage : UserEventMessageBase
+    public sealed class UserEmailChangedEventMessage : UserEventMessageBase
     {
         #region CONSTRUCTOR
         /// <summary>

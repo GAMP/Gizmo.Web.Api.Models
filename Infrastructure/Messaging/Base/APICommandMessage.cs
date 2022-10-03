@@ -1,12 +1,10 @@
-﻿using MessagePack;
-using System;
+﻿using System;
 
 namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
     /// Command message.
     /// </summary>
-    [MessagePackObject()]
     public abstract class APICommandMessage : CommandMessage
     {
         #region CONSTRUCTOR

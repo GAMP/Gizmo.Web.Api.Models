@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Messaging
     /// Entity change event message.
     /// </summary>
     [MessagePackObject()]
-    public class EntityChangeEventMessage : EntityEventMessageBase
+    public sealed class EntityChangeEventMessage : EntityEventMessageBase
     {
         #region PROPERTIES
 

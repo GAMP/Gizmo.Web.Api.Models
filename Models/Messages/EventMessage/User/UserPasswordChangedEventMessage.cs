@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Messaging
     /// User password changed event message.
     /// </summary>
     [MessagePackObject()]
-    public class UserPasswordChangedEventMessage : UserEventMessageBase
+    public sealed class UserPasswordChangedEventMessage : UserEventMessageBase
     {
         #region CONSTRUCTOR
         /// <summary>

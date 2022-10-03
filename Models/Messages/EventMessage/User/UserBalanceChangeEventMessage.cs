@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Messaging
     /// User balance changed event message.
     /// </summary>
     [MessagePackObject()]
-    public class UserBalanceChangeEventMessage : UserEventMessageBase
+    public sealed class UserBalanceChangeEventMessage : UserEventMessageBase
     {
         #region CONSTRUCTOR
         /// <summary>

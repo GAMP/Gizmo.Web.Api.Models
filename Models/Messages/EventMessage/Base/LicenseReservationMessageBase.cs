@@ -1,11 +1,8 @@
-﻿using MessagePack;
-
-namespace Gizmo.Web.Api.Messaging
+﻿namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
     /// License reservation message base.
     /// </summary>
-    [MessagePackObject()]
     public abstract class LicenseReservationMessageBase : APIEventMessage
     {
         #region CONSTRUCTOR

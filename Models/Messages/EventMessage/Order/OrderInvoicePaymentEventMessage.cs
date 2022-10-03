@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Messaging
     /// Order invoice payment event message.
     /// </summary>
     [MessagePackObject()]
-    public class OrderInvoicePaymentEventMessage : OrderEventMessageBase
+    public sealed class OrderInvoicePaymentEventMessage : OrderEventMessageBase
     {
         #region CONSTRUCTOR
         /// <summary>

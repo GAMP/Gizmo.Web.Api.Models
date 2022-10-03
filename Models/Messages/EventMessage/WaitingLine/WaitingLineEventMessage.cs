@@ -7,7 +7,7 @@ namespace Gizmo.Web.Api.Messaging
     /// Waiting line event message.
     /// </summary>
     [MessagePackObject()]
-    public class WaitingLineEventMessage : WaitingLineEventMessageBase
+    public sealed class WaitingLineEventMessage : WaitingLineEventMessageBase
     {
         #region CONSTRUCTOR
         /// <summary>

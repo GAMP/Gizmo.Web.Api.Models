@@ -5,7 +5,6 @@ namespace Gizmo.Web.Api.Messaging
     /// <summary>
     /// Order event message base.
     /// </summary>
-    [MessagePackObject()]
     public abstract class OrderEventMessageBase : APIEventMessage
     {
         #region CONSTRUCTOR

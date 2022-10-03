@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Messaging
     /// License reservation message.
     /// </summary>
     [MessagePackObject()]
-    public class LicenseReservationMessage : LicenseReservationMessageBase
+    public sealed class LicenseReservationMessage : LicenseReservationMessageBase
     {
         #region CONSTRUCTOR
         /// <summary>

@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Messaging
     /// User smart card change event message.
     /// </summary>
     [MessagePackObject()]
-    public class UserSmartCardChangeEventMessage : UserEventMessageBase
+    public sealed class UserSmartCardChangeEventMessage : UserEventMessageBase
     {
         #region CONSTRUCTOR
         /// <summary>

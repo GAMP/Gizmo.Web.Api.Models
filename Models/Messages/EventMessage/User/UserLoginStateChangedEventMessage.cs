@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Messaging
     /// User login state event message.
     /// </summary>
     [MessagePackObject()]
-    public class UserLoginStateChangedEventMessage : UserEventMessageBase
+    public sealed class UserLoginStateChangedEventMessage : UserEventMessageBase
     {
         #region CONSTRUCTOR
         /// <summary>

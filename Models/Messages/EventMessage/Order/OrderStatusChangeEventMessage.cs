@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Messaging
     /// Order status change event message.
     /// </summary>
     [MessagePackObject()]
-    public class OrderStatusChangeEventMessage : OrderEventMessageBase
+    public sealed class OrderStatusChangeEventMessage : OrderEventMessageBase
     {
         #region CONSTRUCTOR
         /// <summary>

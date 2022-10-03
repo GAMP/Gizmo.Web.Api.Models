@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Messaging
     /// User session changed event message.
     /// </summary>
     [MessagePackObject()]
-    public class UserSessionChangedEventMessage : UserEventMessageBase
+    public sealed class UserSessionChangedEventMessage : UserEventMessageBase
     {
         #region CONSTRUCTOR
         /// <summary>

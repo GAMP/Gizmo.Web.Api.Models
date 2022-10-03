@@ -5,7 +5,6 @@ namespace Gizmo.Web.Api.Messaging
     /// <summary>
     /// Reservation event message base.
     /// </summary>
-    [MessagePackObject()]
     public abstract class ReservationEventMessageBase : APIEventMessage
     {
         #region CONSTRUCTOR

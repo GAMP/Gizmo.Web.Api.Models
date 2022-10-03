@@ -5,7 +5,6 @@ namespace Gizmo.Web.Api.Messaging
     /// <summary>
     /// Host event message base.
     /// </summary>
-    [MessagePackObject()]
     public abstract class HostEventMessageBase : APIEventMessage
     {
         #region CONSTRUCTOR

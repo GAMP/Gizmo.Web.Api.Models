@@ -1,11 +1,8 @@
-﻿using MessagePack;
-
-namespace Gizmo.Web.Api.Messaging
+﻿namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
     /// Entity event message base.
     /// </summary>
-    [MessagePackObject()]
     public abstract class EntityEventMessageBase : APIEventMessage
     {
         #region CONSTRUCTOR
