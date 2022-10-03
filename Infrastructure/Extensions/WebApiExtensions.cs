@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Gizmo.Web.Api.Messaging;
+using System;
 using System.Text.Json;
 
 namespace Gizmo.Web.Api
@@ -22,6 +23,15 @@ namespace Gizmo.Web.Api
                 throw new ArgumentNullException(nameof(options));
 
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<Models.WebApiErrorBase>("ErrorType", "Error"));
+
+            //add event message converter
+            options.Converters.Add(new MessagePackUnionMessageJsonConverter<IAPIEventMessage>("EventType", "Event"));
+
+            //add command message converter
+            options.Converters.Add(new MessagePackUnionMessageJsonConverter<IAPICommandMessage>("CommandType", "Command"));
+
+            //add control message converter
+            options.Converters.Add(new MessagePackUnionMessageJsonConverter<IAPIControlMessage>("ControlType", "Command"));
 
             return options;
         } 
