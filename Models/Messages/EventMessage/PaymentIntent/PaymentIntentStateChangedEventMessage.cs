@@ -6,6 +6,8 @@ namespace Gizmo.Web.Api.Messaging
     /// Payment intent state changed.
     /// </summary>
     [MessagePackObject()]
+    [System.ComponentModel.DataAnnotations.Name("Created", "PAYMENT_INTENT_STATE_CHANGED_EVENT_NAME")]
+    [System.ComponentModel.DataAnnotations.ExtendedDescription("Indicates payment intent state change", "PAYMENT_INTENT_STATE_CHANGED_EVENT_DESCRIPTION")]
     public sealed class PaymentIntentStateChangedEventMessage : PaymentIntentEventMessageBase
     {
         #region PROPERTIES

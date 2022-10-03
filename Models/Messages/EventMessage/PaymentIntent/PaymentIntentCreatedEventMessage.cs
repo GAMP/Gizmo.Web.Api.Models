@@ -9,6 +9,8 @@ namespace Gizmo.Web.Api.Messaging
     /// Payment intent created message.
     /// </summary>
     [MessagePackObject()]
+    [System.ComponentModel.DataAnnotations.Name("Created", "PAYMENT_INTENT_CREATED_EVENT_NAME")]
+    [System.ComponentModel.DataAnnotations.ExtendedDescription("Indicates payment intent creation", "PAYMENT_INTENT_CREATED_EVENT_DESCRIPTION")]
     public sealed class PaymentIntentCreatedEventMessage : PaymentIntentEventMessageBase
     {
         #region PROPERTIES

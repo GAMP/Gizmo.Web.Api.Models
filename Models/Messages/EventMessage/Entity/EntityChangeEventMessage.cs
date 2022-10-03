@@ -6,6 +6,8 @@ namespace Gizmo.Web.Api.Messaging
     /// Entity change event message.
     /// </summary>
     [MessagePackObject()]
+    [System.ComponentModel.DataAnnotations.Name("Entity change", "ENTITY_CHANGE_EVENT_NAME")]
+    [System.ComponentModel.DataAnnotations.ExtendedDescription("Indicates an database entity chgange", "ENTITY_CHANGE_EVENT_DESCRIPTION")]
     public sealed class EntityChangeEventMessage : EntityEventMessageBase
     {
         #region PROPERTIES

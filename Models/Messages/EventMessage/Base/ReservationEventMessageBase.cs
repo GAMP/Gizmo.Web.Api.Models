@@ -5,6 +5,9 @@ namespace Gizmo.Web.Api.Messaging
     /// <summary>
     /// Reservation event message base.
     /// </summary>
+    [System.ComponentModel.DataAnnotations.Name("Reservation", "RESERVATION_EVENT_GROUP_NAME")]
+    [System.ComponentModel.DataAnnotations.ExtendedDescription("Reservation related events", "RESERVATION_EVENT_GROUP_DESCRIPTION")]
+    [HideMetadata()]
     public abstract class ReservationEventMessageBase : APIEventMessage
     {
         #region CONSTRUCTOR
