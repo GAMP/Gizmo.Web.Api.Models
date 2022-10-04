@@ -8,6 +8,7 @@ namespace Gizmo.Web.Api.Messaging
     [System.ComponentModel.DataAnnotations.Name("Order", "ORDER_EVENT_GROUP_NAME")]
     [System.ComponentModel.DataAnnotations.ExtendedDescription("Order related events", "ORDER_EVENT_GROUP_DESCRIPTION")]
     [HideMetadata()]
+    [EventGroup(2)]
     public abstract class OrderEventMessageBase : APIEventMessage
     {
         #region CONSTRUCTOR

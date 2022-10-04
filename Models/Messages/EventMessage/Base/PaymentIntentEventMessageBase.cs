@@ -8,6 +8,7 @@ namespace Gizmo.Web.Api.Messaging
     /// </summary>
     [System.ComponentModel.DataAnnotations.Name("Payment intent", "PAYMENT_INTENT_EVENT_GROUP_NAME")]
     [System.ComponentModel.DataAnnotations.ExtendedDescription("Payment intent related events", "PAYMENT_INTENT_EVENT_GROUP_DESCRIPTION")]
+    [EventGroup(7)]
     public abstract class PaymentIntentEventMessageBase : APIEventMessage
     {
         #region PROPERTIES
