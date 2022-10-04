@@ -1,5 +1,7 @@
 ﻿#nullable enable
 
+using System.Text.Json.Serialization;
+
 namespace Gizmo.Web.Api.Messaging.Models
 {
     /// <summary>
@@ -22,6 +24,7 @@ namespace Gizmo.Web.Api.Messaging.Models
         /// <summary>
         /// Object type.
         /// </summary>
+        [JsonIgnore()]
         public string Type { get; init; } = string.Empty;
 
         /// <summary>

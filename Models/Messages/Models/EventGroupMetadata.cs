@@ -2,6 +2,7 @@
 
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json.Serialization;
 
 namespace Gizmo.Web.Api.Messaging.Models
 {
@@ -15,7 +16,7 @@ namespace Gizmo.Web.Api.Messaging.Models
         /// <summary>
         /// Event group name.
         /// </summary>
-        public string Name { get; init; } = string.Empty;
+        public string GroupName { get; init; } = string.Empty;
 
         /// <summary>
         /// Event group description.
@@ -25,6 +26,7 @@ namespace Gizmo.Web.Api.Messaging.Models
         /// <summary>
         /// Object type.
         /// </summary>
+        [JsonIgnore()]
         public string Type { get;init;} =string.Empty;
 
         /// <summary>
