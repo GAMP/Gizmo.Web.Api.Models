@@ -151,6 +151,24 @@ namespace Gizmo.Web.Api.Models.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Indicates payment intent completion.
+        /// </summary>
+        internal static string PAYMENT_INTENT_COMPLETED_EVENT_DESCRIPTION {
+            get {
+                return ResourceManager.GetString("PAYMENT_INTENT_COMPLETED_EVENT_DESCRIPTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Completed.
+        /// </summary>
+        internal static string PAYMENT_INTENT_COMPLETED_EVENT_NAME {
+            get {
+                return ResourceManager.GetString("PAYMENT_INTENT_COMPLETED_EVENT_NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Indicates payment intent creation.
         /// </summary>
         internal static string PAYMENT_INTENT_CREATED_EVENT_DESCRIPTION {
@@ -183,24 +201,6 @@ namespace Gizmo.Web.Api.Models.Resources {
         internal static string PAYMENT_INTENT_EVENT_GROUP_NAME {
             get {
                 return ResourceManager.GetString("PAYMENT_INTENT_EVENT_GROUP_NAME", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Indicates payment intent state change.
-        /// </summary>
-        internal static string PAYMENT_INTENT_STATE_CHANGED_EVENT_DESCRIPTION {
-            get {
-                return ResourceManager.GetString("PAYMENT_INTENT_STATE_CHANGED_EVENT_DESCRIPTION", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to State changed.
-        /// </summary>
-        internal static string PAYMENT_INTENT_STATE_CHANGED_EVENT_NAME {
-            get {
-                return ResourceManager.GetString("PAYMENT_INTENT_STATE_CHANGED_EVENT_NAME", resourceCulture);
             }
         }
         

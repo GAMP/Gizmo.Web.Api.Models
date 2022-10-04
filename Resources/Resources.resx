@@ -147,6 +147,12 @@
   <data name="ORDER_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Order</value>
   </data>
+  <data name="PAYMENT_INTENT_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates payment intent completion</value>
+  </data>
+  <data name="PAYMENT_INTENT_COMPLETED_EVENT_NAME" xml:space="preserve">
+    <value>Completed</value>
+  </data>
   <data name="PAYMENT_INTENT_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Indicates payment intent creation</value>
   </data>
@@ -158,12 +164,6 @@
   </data>
   <data name="PAYMENT_INTENT_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Payment intent</value>
-  </data>
-  <data name="PAYMENT_INTENT_STATE_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
-    <value>Indicates payment intent state change</value>
-  </data>
-  <data name="PAYMENT_INTENT_STATE_CHANGED_EVENT_NAME" xml:space="preserve">
-    <value>State changed</value>
   </data>
   <data name="RESERVATION_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
     <value>Reservation related events</value>
