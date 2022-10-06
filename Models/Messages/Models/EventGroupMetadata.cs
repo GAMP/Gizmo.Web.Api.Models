@@ -19,6 +19,11 @@ namespace Gizmo.Web.Api.Messaging.Models
         public string GroupName { get; init; } = string.Empty;
 
         /// <summary>
+        /// Event group id.
+        /// </summary>
+        public int GroupId { get; init; }
+
+        /// <summary>
         /// Event group description.
         /// </summary>
         public string Description { get; init; } = string.Empty;

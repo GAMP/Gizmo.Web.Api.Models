@@ -43,5 +43,15 @@ namespace Gizmo.Web.Api.Messaging
         }
 
         #endregion
+
+        #region OVERRIDES
+
+        /// <inheritdoc/>
+        public override string ToString()
+        {
+            return $"Entity event type [{EventType}], Entity type [{EntityType}], Entity Id [{EntityId}]";
+        } 
+
+        #endregion
     }  
 }
