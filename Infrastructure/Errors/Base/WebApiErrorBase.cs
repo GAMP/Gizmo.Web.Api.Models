@@ -10,6 +10,7 @@ namespace Gizmo.Web.Api.Models
     /// </remarks>
     [Union(0,typeof(WebApiError))]
     [Union(1, typeof(WebApiValidationError))]
+    [Union(2, typeof(WebApiValidationErrors))]
     public abstract class WebApiErrorBase
     {
     }

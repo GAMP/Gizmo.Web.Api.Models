@@ -8,7 +8,7 @@ namespace Gizmo.Web.Api.Models
     /// Payment request creation result.
     /// </summary>
     [MessagePackObject()]
-    [Union(0,typeof(PaymentIntentCreateResult))]
+    [Union(0, typeof(PaymentIntentCreateResult))]
     public class PaymentRequestCreateResult
     {
         #region PROPERTIES
@@ -26,10 +26,10 @@ namespace Gizmo.Web.Api.Models
         /// Gets QR Image.
         /// </summary>
         [Key(1)]
-        public string QrImage
+        public string? QrImage
         {
             get; init;
-        } = string.Empty;
+        }
 
         /// <summary>
         /// Native QR Image to be used with payment apps.

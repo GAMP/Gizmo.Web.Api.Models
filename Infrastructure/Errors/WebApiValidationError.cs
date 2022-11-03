@@ -6,6 +6,9 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Represents web api validation error with property name and description.
     /// </summary>
+    /// <remarks>
+    /// Provides single property / single error message.
+    /// </remarks>
     [MessagePackObject()]
     public class WebApiValidationError : WebApiError
     {

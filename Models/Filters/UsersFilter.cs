@@ -25,6 +25,16 @@ namespace Gizmo.Web.Api.Models
         public string Username { get; set; }
 
         /// <summary>
+        /// Smart card UID.
+        /// </summary>
+        [Key(205)]
+        [System.ComponentModel.DataAnnotations.MaxLength(255)]
+        public string SmartCardUID
+        {
+            get; set;
+        }
+
+        /// <summary>
         /// Return guest users.
         /// </summary>
         [Key(202)]
@@ -40,7 +50,7 @@ namespace Gizmo.Web.Api.Models
         /// Return deleted users.
         /// </summary>
         [Key(204)]
-        public bool? IsDeleted { get; set; } 
+        public bool? IsDeleted { get; set; }    
 
         #endregion
 
