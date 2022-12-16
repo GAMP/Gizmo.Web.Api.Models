@@ -41,9 +41,15 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(4)]
         public PaymentIntentState State { get; set; }
 
+        /// <summary>
+        /// Provider transaction id.
+        /// </summary>
         [MessagePack.Key(5)]
         public string TransactionId { get; set; }
 
+        /// <summary>
+        /// Provider transaction time.
+        /// </summary>
         [MessagePack.Key(6)]
         public DateTime? TransactionTime { get; set; }
 
