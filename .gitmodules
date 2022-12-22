@@ -1,0 +1,3 @@
+[submodule "Submodules/Gizmo.Shared"]
+	path = Submodules/Gizmo.Shared
+	url = https://github.com/GAMP/Gizmo.Shared
