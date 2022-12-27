@@ -30,6 +30,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Models\API\Request\Register\RegisterTransaction.cs~RFe2636cd.TMP" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="MessagePack" Version="2.3.85" />
 		<PackageReference Include="Microsoft.AspNetCore.SignalR.Protocols.Json" Version="6.0.0" />
 		<PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
