@@ -23,7 +23,6 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Executable.Task
         /// <summary>
         /// The Id of the task associated with this application executable.
         /// </summary>
-        [Required]
         [MessagePack.Key(1)]
         public int TaskId { get; set; }
 

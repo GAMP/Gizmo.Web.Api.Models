@@ -2,8 +2,6 @@
 
 using MessagePack;
 
-using System.ComponentModel.DataAnnotations;
-
 namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Executable.Task
 {
     /// <summary>
@@ -17,14 +15,12 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Executable.Task
         /// <summary>
         /// The Id of the executable this task is associated with.
         /// </summary>
-        [Required]
         [MessagePack.Key(0)]
         public int ApplicationExecutableId { get; set; }
 
         /// <summary>
         /// The Id of the task associated with this application executable.
         /// </summary>
-        [Required]
         [MessagePack.Key(1)]
         public int TaskId { get; set; }
 

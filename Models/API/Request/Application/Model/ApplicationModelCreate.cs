@@ -39,7 +39,6 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Model
         /// The Id of the application category this application belongs to.
         /// </summary>
         [MessagePack.Key(3)]
-        [Required]
         public int ApplicationCategoryId { get; set; }
 
         /// <summary>

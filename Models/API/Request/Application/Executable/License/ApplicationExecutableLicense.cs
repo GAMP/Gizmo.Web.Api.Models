@@ -2,8 +2,6 @@
 
 using MessagePack;
 
-using System.ComponentModel.DataAnnotations;
-
 namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Executable.License
 {
     /// <summary>
@@ -23,7 +21,6 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Executable.License
         /// <summary>
         /// The Id of the license associated with this application executable.
         /// </summary>
-        [Required]
         [MessagePack.Key(1)]
         public int LicenseId { get; set; }
 

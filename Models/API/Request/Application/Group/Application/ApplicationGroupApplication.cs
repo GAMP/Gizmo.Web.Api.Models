@@ -2,8 +2,6 @@
 
 using MessagePack;
 
-using System.ComponentModel.DataAnnotations;
-
 namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Group.Application
 {
     /// <summary>
@@ -23,7 +21,6 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Group.Application
         /// <summary>
         /// The Id of the application associated with this application group.
         /// </summary>
-        [Required]
         [MessagePack.Key(1)]
         public int ApplicationId { get; set; }
 

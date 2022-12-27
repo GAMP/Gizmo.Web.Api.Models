@@ -2,8 +2,6 @@
 
 using MessagePack;
 
-using System.ComponentModel.DataAnnotations;
-
 namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Executable.PersonalFile
 {
     /// <summary>
@@ -17,14 +15,12 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Executable.Persona
         /// <summary>
         /// The Id of the executable this personal file is associated with.
         /// </summary>
-        [Required]
         [MessagePack.Key(0)]
         public int ApplicationExecutableId { get; set; }
 
         /// <summary>
         /// The Id of the personal file associated with this application executable.
         /// </summary>
-        [Required]
         [MessagePack.Key(1)]
         public int PersonalFileId { get; set; }
 

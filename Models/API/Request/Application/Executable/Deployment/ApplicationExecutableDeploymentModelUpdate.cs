@@ -2,8 +2,6 @@
 
 using MessagePack;
 
-using System.ComponentModel.DataAnnotations;
-
 namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Executable.Deployment
 {
     /// <summary>
@@ -17,14 +15,12 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Executable.Deploym
         /// <summary>
         /// The Id of the executable this deployment is associated with.
         /// </summary>
-        [Required]
         [MessagePack.Key(0)]
         public int ApplicationExecutableId { get; set; }
 
         /// <summary>
         /// The Id of the deployment associated with this application executable.
         /// </summary>
-        [Required]
         [MessagePack.Key(1)]
         public int DeploymentId { get; set; }
 

@@ -15,17 +15,17 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Task
         /// <summary>
         /// The title of the notification.
         /// </summary>
+        [MessagePack.Key(0)]
         [Required]
         [StringLength(255)]
-        [MessagePack.Key(0)]
         public string Title { get; set; }
 
         /// <summary>
         /// The message of the notification.
         /// </summary>
+        [MessagePack.Key(1)]
         [Required]
         [StringLength(65536)]
-        [MessagePack.Key(1)]
         public string Message { get; set; }
 
         /// <summary>

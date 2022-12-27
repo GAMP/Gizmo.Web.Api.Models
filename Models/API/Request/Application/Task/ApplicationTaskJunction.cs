@@ -15,17 +15,17 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Task
         /// <summary>
         /// The source directory of the junction.
         /// </summary>
+        [MessagePack.Key(0)]
         [Required]
         [StringLength(255)]
-        [MessagePack.Key(0)]
         public string SourceDirectory { get; set; }
 
         /// <summary>
         /// The destination directory of the junction.
         /// </summary>
+        [MessagePack.Key(1)]
         [Required]
         [StringLength(255)]
-        [MessagePack.Key(1)]
         public string DestinationDirectory { get; set; }
 
         /// <summary>

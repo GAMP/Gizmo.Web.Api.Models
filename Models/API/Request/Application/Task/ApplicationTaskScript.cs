@@ -15,16 +15,16 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Task
         /// <summary>
         /// The type of the script.
         /// </summary>
-        [EnumValueValidation]
         [MessagePack.Key(0)]
+        [EnumValueValidation]
         public ScriptTypes ScriptType { get; set; }
 
         /// <summary>
         /// The data of the script.
         /// </summary>
+        [MessagePack.Key(1)]
         [Required]
         [StringLength(65535)]
-        [MessagePack.Key(1)]
         public string Data { get; set; }
 
         /// <summary>

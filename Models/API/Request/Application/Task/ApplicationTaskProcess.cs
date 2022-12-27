@@ -15,37 +15,37 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Task
         /// <summary>
         /// The file name of the process.
         /// </summary>
+        [MessagePack.Key(0)]
         [Required]
         [StringLength(255)]
-        [MessagePack.Key(0)]
         public string FileName { get; set; }
 
         /// <summary>
         /// The arguments of the process.
         /// </summary>
-        [StringLength(255)]
         [MessagePack.Key(1)]
+        [StringLength(255)]
         public string Arguments { get; set; }
 
         /// <summary>
         /// The working directory of the process.
         /// </summary>
-        [StringLength(255)]
         [MessagePack.Key(2)]
+        [StringLength(255)]
         public string WorkingDirectory { get; set; }
 
         /// <summary>
         /// The username of the process.
         /// </summary>
-        [StringLength(45)]
         [MessagePack.Key(3)]
+        [StringLength(45)]
         public string Username { get; set; }
 
         /// <summary>
         /// The password of the process.
         /// </summary>
-        [StringLength(45)]
         [MessagePack.Key(4)]
+        [StringLength(45)]
         public string Password { get; set; }
 
         /// <summary>

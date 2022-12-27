@@ -43,7 +43,7 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Application.License
 
         /// <summary>
         /// The plugin assembly of the license.
-        /// </summary>        
+        /// </summary>
         [MessagePack.Key(4)]
         [Required]
         [StringLength(255)]

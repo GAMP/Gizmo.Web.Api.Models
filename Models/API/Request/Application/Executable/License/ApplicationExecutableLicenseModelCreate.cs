@@ -1,8 +1,6 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
 using MessagePack;
 
-using System.ComponentModel.DataAnnotations;
-
 namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Executable.License
 {
     /// <summary>
@@ -16,7 +14,6 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Executable.License
         /// <summary>
         /// The Id of the license associated with this application executable.
         /// </summary>
-        [Required]
         [MessagePack.Key(0)]
         public int LicenseId { get; set; }
 

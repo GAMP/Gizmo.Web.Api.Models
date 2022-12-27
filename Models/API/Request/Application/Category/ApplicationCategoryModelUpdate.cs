@@ -20,7 +20,6 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Category
         /// The Id of the object.
         /// </summary>
         [MessagePack.Key(0)]
-        [Required]
         public int Id { get; set; }
 
         /// <summary>

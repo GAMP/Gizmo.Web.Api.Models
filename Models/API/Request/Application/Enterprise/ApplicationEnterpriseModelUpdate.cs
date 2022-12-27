@@ -17,7 +17,6 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Enterprise
         /// <summary>
         /// The Id of the object.
         /// </summary>
-        [Required]
         [MessagePack.Key(0)]
         public int Id { get; set; }
 

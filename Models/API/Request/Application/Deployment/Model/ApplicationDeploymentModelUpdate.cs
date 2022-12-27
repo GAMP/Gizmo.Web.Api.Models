@@ -1,6 +1,5 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
 using MessagePack;
-using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Deployment.Model
@@ -16,7 +15,6 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Deployment.Model
         /// <summary>
         /// The Id of the object.
         /// </summary>
-        [Required]
         [MessagePack.Key(0)]
         public int Id { get; set; }
 
@@ -51,9 +49,9 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Deployment.Model
         [StringLength(255)]
         public string Destination { get; set; }
 
-        ///// <summary>
+        /// <summary>
         /// The deployment options of the deployment.
-        ///// </summary>
+        /// </summary>
         [MessagePack.Key(5)]
         [EnumValueValidation]
         public ApplicationDeploymentComparisonMode ComparisonMode { get; set; }

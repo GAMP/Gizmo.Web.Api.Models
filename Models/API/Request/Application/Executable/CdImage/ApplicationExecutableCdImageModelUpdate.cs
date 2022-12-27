@@ -17,14 +17,12 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Executable.CdImage
         /// <summary>
         /// The Id of the object.
         /// </summary>
-        [Required]
         [MessagePack.Key(0)]
         public int Id { get; set; }
 
         /// <summary>
         /// The Id of the executable this cd image belongs to.
         /// </summary>
-        [Required]
         [MessagePack.Key(1)]
         public int ApplicationExecutableId { get; set; }
 

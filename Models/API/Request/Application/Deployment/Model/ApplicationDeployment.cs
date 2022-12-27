@@ -56,9 +56,9 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Deployment.Model
         [StringLength(255)]
         public string Destination { get; set; }
 
-        ///// <summary>
+        /// <summary>
         /// The deployment options of the deployment.
-        ///// </summary>
+        /// </summary>
         [MessagePack.Key(6)]
         [EnumValueValidation]
         public ApplicationDeploymentComparisonMode ComparisonMode { get; set; }
