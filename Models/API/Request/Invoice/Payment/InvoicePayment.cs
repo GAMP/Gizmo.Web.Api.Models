@@ -7,47 +7,64 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Invoice.Payment
     /// <summary>
     /// Invoice payment.
     /// </summary>
-    [Serializable]
     [MessagePackObject]
-    public class InvoicePayment : InvoicePaymentModel, IApiModelIdentifier
+    public sealed class InvoicePayment : IInvoicePaymentApiModel, IApiModelIdentifier
     {
         #region PROPERTIES
 
         /// <summary>
         /// The Id of the object.
         /// </summary>
-        [Key(100)]
+        [Key(0)]
         public int Id { get; set; }
 
         /// <summary>
         /// The date that the invoice payment was created.
         /// </summary>
-        [Key(101)]
+        [Key(1)]
         public DateTime Date { get; set; }
 
         /// <summary>
         /// The Id of the invoice this invoice payment is associated with.
         /// </summary>
-        [Key(102)]
+        [Key(2)]
         public int InvoiceId { get; set; }
 
         /// <summary>
         /// The Id of the operator this invoice payment is associated with.
         /// </summary>
-        [Key(103)]
+        [Key(3)]
         public int? OperatorId { get; set; }
 
         /// <summary>
         /// The Id of the shift this invoice payment is associated with.
         /// </summary>
-        [Key(104)]
+        [Key(4)]
         public int? ShiftId { get; set; }
 
         /// <summary>
         /// The Id of the register this invoice payment is associated with.
         /// </summary>
-        [Key(105)]
+        [Key(5)]
         public int? RegisterId { get; set; }
+
+        /// <summary>
+        /// The Id of the payment method this invoice payment is associated with.
+        /// </summary>
+        [Key(6)]
+        public int PaymentMethodId { get; set; }
+
+        /// <summary>
+        /// The amount of the invoice payment.
+        /// </summary>
+        [Key(7)]
+        public decimal Amount { get; set; }
+
+        /// <summary>
+        /// The amount received for the invoice payment.
+        /// </summary>
+        [Key(8)]
+        public decimal AmountReceived { get; set; }
 
         #endregion
     }

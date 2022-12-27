@@ -4,7 +4,7 @@ using MessagePack;
 
 using System.ComponentModel.DataAnnotations;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Order.Calculate
+namespace Gizmo.Web.Api.Models.Models.API.Request.Order
 {
     /// <summary>
     /// Calculate order line options.

@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Gizmo.Web.Api.Models.Models.API.Request.Order.Calculate;
+using Gizmo.Web.Api.Models.Models.API.Request.Order;
 
 namespace Gizmo.Web.Api.Models.Abstractions.Models.API.Request
 {

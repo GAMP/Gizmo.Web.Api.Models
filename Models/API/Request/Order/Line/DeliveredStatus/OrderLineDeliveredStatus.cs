@@ -1,4 +1,5 @@
 ﻿using MessagePack;
+
 using System;
 
 namespace Gizmo.Web.Api.Models.Models.API.Request.Order.Line.DeliveredStatus
@@ -6,9 +7,8 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Order.Line.DeliveredStatus
     /// <summary>
     /// Order line delivered status.
     /// </summary>
-    [Serializable]
     [MessagePackObject]
-    public class OrderLineDeliveredStatus
+    public sealed class OrderLineDeliveredStatus
     {
         #region PROPERTIES
 

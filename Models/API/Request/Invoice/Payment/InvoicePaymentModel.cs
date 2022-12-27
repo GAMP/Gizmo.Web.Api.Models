@@ -8,7 +8,7 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Invoice.Payment
     /// Invoice payment.
     /// </summary>
     [MessagePackObject]
-    public class InvoicePaymentModel : IInvoicePaymentApiModel
+    public sealed class InvoicePaymentModel : IInvoicePaymentApiModel
     {
         #region PROPERTIES
 

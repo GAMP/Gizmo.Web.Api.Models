@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Order
     /// Order.
     /// </summary>
     [MessagePackObject]
-    public class Order : IOrderApiModel, ICalculatedOrderApiModel, IApiModelIdentifier
+    public sealed class Order : IOrderApiModel, ICalculatedOrderApiModel, IApiModelIdentifier
     {
         #region PROPERTIES
 

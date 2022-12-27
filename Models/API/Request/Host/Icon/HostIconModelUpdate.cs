@@ -1,23 +1,28 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+
 using MessagePack;
-using System;
 
 namespace Gizmo.Web.Api.Models.Models.API.Request.Host.Icon
 {
     /// <summary>
     /// Host icon.
     /// </summary>
-    [Serializable]
     [MessagePackObject]
-    public class HostIconModelUpdate : HostIconModelBase, IApiModelIdentifier, IUrlQueryParameters
+    public sealed class HostIconModelUpdate : IHostIconApiModel, IApiModelIdentifier, IUrlQueryParameters
     {
         #region PROPERTIES
 
         /// <summary>
         /// The Id of the object.
         /// </summary>
-        [Key(1)]
+        [MessagePack.Key(0)]
         public int Id { get; set; }
+
+        /// <summary>
+        /// The image data of the host icon.
+        /// </summary>
+        [MessagePack.Key(1)]
+        public byte[] Image { get; set; }
 
         #endregion
     }
