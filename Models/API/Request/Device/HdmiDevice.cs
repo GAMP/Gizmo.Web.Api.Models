@@ -1,5 +1,5 @@
 ﻿using MessagePack;
-using System;
+
 using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Web.Api.Models.Models.API.Request.Device
@@ -7,17 +7,16 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Device
     /// <summary>
     /// Hdmi Device model.
     /// </summary>
-    [Serializable]
     [MessagePackObject()]
-    public class HdmiDevice
+    public sealed class HdmiDevice
     {
         #region PROPERTIES
 
         /// <summary>
         /// Gets or sets unique device ide.
         /// </summary>
-        [StringLength(255)]
         [MessagePack.Key(0)]
+        [StringLength(255)]
         public string UniqueId { get; set; }
 
         #endregion

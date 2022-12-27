@@ -1,13 +1,12 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+
 using MessagePack;
-using System;
 
 namespace Gizmo.Web.Api.Models.Models.API.Request.Device.Model
 {
     /// <summary>
     /// Device model.
     /// </summary>
-    [Serializable]
     [MessagePackObject()]
     public class Device : DeviceModelBase, IApiModelIdentifier
     {
