@@ -1,6 +1,5 @@
 ﻿#nullable enable
 
-using Gizmo;
 using Gizmo.Web.Api.Models.Abstractions.Models.API.Result;
 using MessagePack;
 using System.Text.Json.Serialization;

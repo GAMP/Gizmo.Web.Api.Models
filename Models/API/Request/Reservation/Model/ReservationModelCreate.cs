@@ -1,14 +1,86 @@
-﻿using MessagePack;
+﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+using MessagePack;
 using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Web.Api.Models.Models.API.Request.Reservation.Model
 {
     /// <summary>
     /// Reservation.
     /// </summary>
-    [Serializable]
     [MessagePackObject]
-    public class ReservationModelCreate : ReservationModelBase, IUrlQueryParameters
+    public sealed class ReservationModelCreate : IReservationApiModel, IUrlQueryParameters
     {
+        #region PROPERTIES
+
+        /// <summary>
+        /// The Id of the user this reservation is associated with.
+        /// </summary>
+        [MessagePack.Key(0)]
+        public int? UserId { get; set; }
+
+        /// <summary>
+        /// The date of the reservation.
+        /// </summary>
+        [MessagePack.Key(1)]
+        public DateTime Date { get; set; }
+
+        /// <summary>
+        /// The duration of the reservation.
+        /// </summary>
+        [MessagePack.Key(2)]
+        [Range(1, int.MaxValue)]
+        public int Duration { get; set; }
+
+        /// <summary>
+        /// The contact phone of the reservation.
+        /// </summary>
+        [MessagePack.Key(3)]
+        [StringLength(20)]
+        public string ContactPhone { get; set; }
+
+        /// <summary>
+        /// The contact email of the reservation.
+        /// </summary>
+        [MessagePack.Key(4)]
+        [StringLength(254)]
+        [EmailNullEmptyValidation]
+        public string ContactEmail { get; set; }
+
+        /// <summary>
+        /// The note of the reservation.
+        /// </summary>
+        [MessagePack.Key(5)]
+        public string Note { get; set; }
+
+        /// <summary>
+        /// The pin of the reservation.
+        /// </summary>
+        [MessagePack.Key(6)]
+        [Required]
+        [StringLength(6)]
+        public string Pin { get; set; }
+
+        /// <summary>
+        /// The status of the reservation.
+        /// </summary>
+        [MessagePack.Key(7)]
+        [EnumValueValidation]
+        public ReservationStatus Status { get; set; }
+
+        /// <summary>
+        /// The reserved hosts by this reservation.
+        /// </summary>
+        [MessagePack.Key(8)]
+        public IEnumerable<ReservationHost> Hosts { get; set; }
+
+        /// <summary>
+        /// The users of this reservation.
+        /// </summary>
+        [MessagePack.Key(9)]
+        public IEnumerable<ReservationUser> Users { get; set; }
+
+        #endregion
     }
 }

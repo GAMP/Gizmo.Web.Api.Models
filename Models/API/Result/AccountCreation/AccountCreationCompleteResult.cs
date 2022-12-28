@@ -1,5 +1,4 @@
-﻿using Gizmo;
-using Gizmo.Web.Api.Models.Abstractions.Models.API.Result;
+﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Result;
 
 using MessagePack;
 

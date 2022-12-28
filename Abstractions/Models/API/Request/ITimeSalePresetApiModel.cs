@@ -1,0 +1,18 @@
+namespace Gizmo.Web.Api.Models.Abstractions.Models.API.Request
+{
+    /// <summary>
+    /// Time sale preset.
+    /// </summary>
+    public interface ITimeSalePresetApiModel
+    {
+        /// <summary>
+        /// The value of the time sale preset.
+        /// </summary>
+        int Value { get; set; }
+
+        /// <summary>
+        /// The display order of the time sale preset.
+        /// </summary>
+        int DisplayOrder { get; set; }
+    }
+}

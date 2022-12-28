@@ -1,0 +1,23 @@
+namespace Gizmo.Web.Api.Models.Abstractions.Models.API.Request
+{
+    /// <summary>
+    /// Register transaction.
+    /// </summary>
+    public interface IRegisterTransactionApiModel
+    {
+        /// <summary>
+        /// The type of the register transaction.
+        /// </summary>
+        RegisterTransactionType Type { get; set; }
+
+        /// <summary>
+        /// The amount of the register transaction.
+        /// </summary>
+        decimal Amount { get; set; }
+
+        /// <summary>
+        /// The note of the register transaction.
+        /// </summary>
+        string Note { get; set; }
+    }
+}
