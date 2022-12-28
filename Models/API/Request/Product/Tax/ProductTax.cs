@@ -1,29 +1,46 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+
 using MessagePack;
-using System;
 
 namespace Gizmo.Web.Api.Models.Models.API.Request.Product.Tax
 {
     /// <summary>
     /// Product tax.
     /// </summary>
-    [Serializable]
     [MessagePackObject]
-    public class ProductTax : ProductTaxModelBase, IApiModelIdentifier
+    public sealed class ProductTax : IProductTaxApiModel, IApiModelIdentifier
     {
         #region PROPERTIES
 
         /// <summary>
         /// The Id of the object.
         /// </summary>
-        [Key(100)]
+        [Key(0)]
         public int Id { get; set; }
 
         /// <summary>
         /// The Id of the product this tax belongs to.
         /// </summary>
-        [Key(100)]
+        [Key(1)]
         public int ProductId { get; set; }
+
+        /// <summary>
+        /// Tax id.
+        /// </summary>
+        [Key(2)]
+        public int TaxId { get; set; }
+
+        /// <summary>
+        /// Use order.
+        /// </summary>
+        [Key(3)]
+        public int UseOrder { get; set; }
+
+        /// <summary>
+        /// Indicates if product tax is enabled.
+        /// </summary>
+        [Key(4)]
+        public bool IsEnabled { get; set; }
 
         #endregion
     }

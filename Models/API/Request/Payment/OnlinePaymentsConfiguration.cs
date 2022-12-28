@@ -6,8 +6,8 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Payment
     /// <summary>
     /// Online payments configuration model.
     /// </summary>
-    [MessagePackObject()]
-    public class OnlinePaymentsConfiguration
+    [MessagePackObject]
+    public sealed class OnlinePaymentsConfiguration
     {
         #region PROPERTIES
 

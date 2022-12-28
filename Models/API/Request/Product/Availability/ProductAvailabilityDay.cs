@@ -1,23 +1,21 @@
 ﻿using MessagePack;
+
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Web.Api.Models.Models.API.Request.Product.Availability
 {
     /// <summary>
     /// Product availability day.
     /// </summary>
-    [Serializable]
     [MessagePackObject]
-    public class ProductAvailabilityDay
+    public sealed class ProductAvailabilityDay
     {
         #region PROPERTIES
 
         /// <summary>
         /// The day of the week.
         /// </summary>
-        [Required]
         [MessagePack.Key(0)]
         public DayOfWeek Day { get; set; }
 

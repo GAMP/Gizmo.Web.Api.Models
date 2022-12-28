@@ -1,6 +1,7 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+
 using MessagePack;
-using System;
+
 using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Web.Api.Models.Models.API.Request.Product.Stock
@@ -8,9 +9,8 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Product.Stock
     /// <summary>
     /// Product stock.
     /// </summary>
-    [Serializable]
     [MessagePackObject]
-    public class ProductStockModelUpdate : IApiModelIdentifier
+    public sealed class ProductStockModelUpdate : IApiModelIdentifier
     {
         #region PROPERTIES
 
@@ -23,8 +23,8 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Product.Stock
         /// <summary>
         /// The type of the stock transaction.
         /// </summary>
-        [EnumValueValidation]
         [MessagePack.Key(1)]
+        [EnumValueValidation]
         public StockTransactionType Type { get; set; }
 
         /// <summary>

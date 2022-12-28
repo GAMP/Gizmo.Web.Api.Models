@@ -1,15 +1,14 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+
 using MessagePack;
-using System;
 
 namespace Gizmo.Web.Api.Models.Models.API.Request.Product.Stock
 {
     /// <summary>
     /// Product stock.
     /// </summary>
-    [Serializable]
     [MessagePackObject]
-    public class ProductStock : IApiModelIdentifier
+    public sealed class ProductStock : IApiModelIdentifier
     {
         #region PROPERTIES
 
