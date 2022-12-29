@@ -1,4 +1,5 @@
-﻿using MessagePack;
+﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+using MessagePack;
 using System;
 using System.ComponentModel.DataAnnotations;
 
@@ -9,7 +10,7 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.User.Group
     /// </summary>
     [Serializable]
     [MessagePackObject]
-    public class UserGroupModelBase
+    public class UserGroupModelBase : IUserGroupApiModel
     {
         #region PROPERTIES
 

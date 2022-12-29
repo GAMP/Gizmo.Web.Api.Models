@@ -1,14 +1,12 @@
 ﻿using MessagePack;
-using System;
 
 namespace Gizmo.Web.Api.Models.Models.API.Request.User.Agreement
 {
     /// <summary>
     /// User agreement state model.
     /// </summary>
-    [Serializable]
-    [MessagePackObject()]
-    public class UserAgreementState
+    [MessagePackObject]
+    public sealed class UserAgreementState
     {
         #region PROPERTIES
 

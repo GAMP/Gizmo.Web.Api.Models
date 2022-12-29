@@ -10,7 +10,7 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.User.Group
     /// </summary>
     [Serializable]
     [MessagePackObject]
-    public class UserGroupModelUpdate : UserGroupModelBase, IApiModelIdentifier, IUrlQueryParameters
+    public class UserGroupModelUpdate : IUserGroupApiModel, IApiModelIdentifier, IUrlQueryParameters
     {
         #region PROPERTIES
 
