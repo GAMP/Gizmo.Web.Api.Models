@@ -1,19 +1,25 @@
-﻿using MessagePack;
-using System;
+﻿using System.Collections.Generic;
+using Gizmo.Web.Api.Models.Abstractions.Models.API.Filters;
+using MessagePack;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Filters that can be applied when searching for application categories.
     /// </summary>
-    [Serializable]
     [MessagePackObject]
-    public class ApplicationCategoriesFilter : PaginationFilter, IUrlQueryParameters
+    public sealed class ApplicationCategoriesFilter : IFilterModel
     {
+        /// <summary>
+        /// Filter for cursor-based pagination.
+        /// </summary>
+        [Key(0)]
+        public PaginationFilter PaginationFilter { get; set; }
+
         /// <summary>
         /// Return categories with names that contain the specified string.
         /// </summary>
-        [Key(200)]
+        [Key(1)]
         public string CategoryName { get; set; }
 
         /// <summary>
@@ -23,7 +29,13 @@ namespace Gizmo.Web.Api.Models
         /// To return all categories leave this field empty.
         /// To return all parent categories fill this field with 0.
         /// </remarks>
-        [Key(201)]
+        [Key(2)]
         public int? ParentId { get; set; }
+
+        /// <summary>
+        /// Include specified objects in the result.
+        /// </summary>
+        [Key(3)]
+        public List<string> Expand { get; set; }
     }
 }

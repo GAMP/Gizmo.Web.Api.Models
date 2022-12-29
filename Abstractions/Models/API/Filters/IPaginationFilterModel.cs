@@ -1,9 +1,13 @@
 namespace Gizmo.Web.Api.Models.Abstractions.Models.API.Filters
 {
-    public interface IPaginationFilterModel : IGetOptionsFilterModel
+    /// <summary>
+    /// Base filter for cursor-based pagination.
+    /// </summary>
+    public interface IPaginationFilterModel
     {
-        int? StartingAfter { get; set; }
-        int? EndingBefore { get; set; }
-        int Limit { get; set; }
+        /// <summary>
+        /// Filter for cursor-based pagination.
+        /// </summary>
+        public PaginationFilter PaginationFilter { get; set; }
     }
 }

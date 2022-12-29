@@ -1,6 +1,4 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Filters;
-using MessagePack;
-using System;
+﻿using MessagePack;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -8,7 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// Base filter for cursor-based pagination.
     /// </summary>
     [MessagePackObject]
-    public sealed class PaginationFilter : IPaginationFilterModel
+    public sealed class PaginationFilter
     {
         #region FIELDS
 
@@ -23,19 +21,19 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Return records after the specified Id.
         /// </summary>
-        [Key(100)]
+        [Key(0)]
         public int? StartingAfter { get; set; }
 
         /// <summary>
         /// Return records before the specified Id.
         /// </summary>
-        [Key(101)]
+        [Key(1)]
         public int? EndingBefore { get; set; }
 
         /// <summary>
         /// Limit the number of records to return. Limit can range between 1 and 100. The default value is 10.
         /// </summary>
-        [Key(102)]
+        [Key(2)]
         public int Limit
         {
             get

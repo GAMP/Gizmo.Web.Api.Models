@@ -1,5 +1,7 @@
-﻿using MessagePack;
+﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Filters;
+using MessagePack;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Web.Api.Models
@@ -7,52 +9,62 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Filters that can be applied when searching for reservations.
     /// </summary>
-    [Serializable]
     [MessagePackObject]
-    public class ReservationsFilter : PaginationFilter, IUrlQueryParameters
+    public sealed class ReservationsFilter : IFilterModel
     {
         #region PROPERTIES
 
         /// <summary>
+        /// Filter for cursor-based pagination.
+        /// </summary>
+        [MessagePack.Key(0)]
+        public PaginationFilter PaginationFilter { get; set; }
+
+        /// <summary>
         /// Return reservations where the date greater than or equal to the specified date.
         /// </summary>
-        [MessagePack.Key(200)]
+        [MessagePack.Key(1)]
         public DateTime? DateFrom { get; set; }
 
         /// <summary>
         /// Return reservations where the date less than or equal to the specified date.
         /// </summary>
-        [MessagePack.Key(201)]
+        [MessagePack.Key(2)]
         public DateTime? DateTo { get; set; }
 
         /// <summary>
         /// Return reservations with the specified reservation status.
         /// </summary>
         [EnumValueValidation]
-        [MessagePack.Key(202)]
+        [MessagePack.Key(3)]
         public ReservationStatus? Status { get; set; }
 
         /// <summary>
         /// Return reservations of the specified user.
         /// </summary>
-        [MessagePack.Key(203)]
+        [MessagePack.Key(4)]
         public int? UserId { get; set; }
 
         /// <summary>
         /// Return reservations with the specified contact phone.
         /// </summary>
         [StringLength(20)]
-        [MessagePack.Key(204)]
+        [MessagePack.Key(5)]
         public string ContactPhone { get; set; }
 
         /// <summary>
         /// Return reservations with the specified contact email.
         /// </summary>
         [StringLength(254)]
-        [MessagePack.Key(205)]
-        public string ContactEmail { get; set; } 
+        [MessagePack.Key(6)]
+        public string ContactEmail { get; set; }
+
+        /// <summary>
+        /// Include specified objects in the result.
+        /// </summary>
+        [MessagePack.Key(7)]
+        public List<string> Expand { get; set; }
 
         #endregion
-
     }
 }
