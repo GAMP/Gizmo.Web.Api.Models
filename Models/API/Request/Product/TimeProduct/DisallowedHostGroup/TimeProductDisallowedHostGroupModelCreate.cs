@@ -2,7 +2,7 @@
 
 using MessagePack;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Product.TimeProduct.DisallowedHostGroup
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Time product disallowed host group.
@@ -15,13 +15,13 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Product.TimeProduct.Disallowed
         /// <summary>
         /// The Id of the host group.
         /// </summary>
-        [MessagePack.Key(0)]
+        [Key(0)]
         public int HostGroupId { get; set; }
 
         /// <summary>
         /// Whether this host group is disallowed for this time product.
         /// </summary>
-        [MessagePack.Key(1)]
+        [Key(1)]
         public bool IsDisallowed { get; set; }
 
         #endregion

@@ -2,7 +2,7 @@
 
 using System.ComponentModel.DataAnnotations;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Device
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Hdmi Device model.

@@ -2,7 +2,7 @@
 
 using MessagePack;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Product.UserPrice
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Product user price.
@@ -15,13 +15,13 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Product.UserPrice
         /// <summary>
         /// The Id of the user group this user price is associated with.
         /// </summary>
-        [MessagePack.Key(0)]
+        [Key(0)]
         public int UserGroupId { get; set; }
 
         /// <summary>
         /// The price for this user price.
         /// </summary>
-        [MessagePack.Key(1)]
+        [Key(1)]
         public decimal? Price { get; set; }
 
         #endregion

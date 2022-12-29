@@ -1,9 +1,10 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+
 using MessagePack;
 
 using System.ComponentModel.DataAnnotations;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Executable.CdImage
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Application executable cd image.

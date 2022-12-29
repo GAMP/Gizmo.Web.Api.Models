@@ -2,7 +2,7 @@
 
 using MessagePack;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Product.DisallowedUserGroup
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Product disallowed user group.
@@ -15,25 +15,25 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Product.DisallowedUserGroup
         /// <summary>
         /// The Id of the object.
         /// </summary>
-        [MessagePack.Key(0)]
+        [Key(0)]
         public int Id { get; set; }
 
         /// <summary>
         /// The Id of the product.
         /// </summary>
-        [MessagePack.Key(1)]
+        [Key(1)]
         public int ProductId { get; set; }
 
         /// <summary>
         /// The Id of the user group.
         /// </summary>
-        [MessagePack.Key(2)]
+        [Key(2)]
         public int UserGroupId { get; set; }
 
         /// <summary>
         /// Whether this user group is disallowed for this product.
         /// </summary>
-        [MessagePack.Key(3)]
+        [Key(3)]
         public bool IsDisallowed { get; set; }
 
         #endregion

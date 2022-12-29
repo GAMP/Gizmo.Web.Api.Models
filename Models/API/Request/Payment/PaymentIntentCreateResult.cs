@@ -3,9 +3,10 @@
 using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
 
 using MessagePack;
+
 using System;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Payment
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Payment intent creation result.

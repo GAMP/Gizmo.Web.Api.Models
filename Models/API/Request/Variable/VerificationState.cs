@@ -2,7 +2,7 @@
 
 using MessagePack;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Variable
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// User verification state info model.

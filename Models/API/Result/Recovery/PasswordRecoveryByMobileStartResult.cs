@@ -1,11 +1,12 @@
 ﻿#nullable enable
 
-using Gizmo;
 using Gizmo.Web.Api.Models.Abstractions.Models.API.Result;
+
 using MessagePack;
+
 using System.Text.Json.Serialization;
 
-namespace Gizmo.Web.Api.Models.Models.API.Result.Recovery
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Password recovery by mobile start result.

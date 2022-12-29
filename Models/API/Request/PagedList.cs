@@ -2,7 +2,7 @@
 
 using System.Collections.Generic;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Paged list.

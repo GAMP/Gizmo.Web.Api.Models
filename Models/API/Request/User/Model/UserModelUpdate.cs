@@ -3,7 +3,7 @@ using MessagePack;
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.User.Model
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// User.

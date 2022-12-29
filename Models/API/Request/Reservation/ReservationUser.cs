@@ -1,6 +1,6 @@
 ﻿using MessagePack;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Reservation
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Reservation User.
@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Reservation
         /// <summary>
         /// The Id of the user.
         /// </summary>
-        [MessagePack.Key(0)]
+        [Key(0)]
         public int UserId { get; set; }
 
         #endregion

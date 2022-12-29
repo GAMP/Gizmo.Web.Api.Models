@@ -1,11 +1,12 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+using Gizmo.Web.Api.Models.Models.API.Request.Host.Layout;
 
 using MessagePack;
 
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Host.Layout.Group
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Host layout group.

@@ -2,7 +2,7 @@
 
 using MessagePack;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Invoice.Payment
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Invoice payment.

@@ -1,8 +1,10 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+
 using MessagePack;
+
 using System;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Transaction.Asset
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Asset transaction.

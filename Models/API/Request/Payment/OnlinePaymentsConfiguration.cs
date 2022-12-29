@@ -1,7 +1,8 @@
 ﻿using MessagePack;
+
 using System.Collections.Generic;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Payment
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Online payments configuration model.

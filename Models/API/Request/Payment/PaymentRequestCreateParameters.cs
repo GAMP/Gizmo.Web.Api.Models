@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Payment
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Payment request creation parameters.
@@ -71,7 +71,7 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Payment
         /// Gets payment intent.
         /// </summary>
         [JsonIgnore]
-        [MessagePack.IgnoreMember]
+        [IgnoreMember]
         public Guid PaymentIntent { get; init; }
 
         #endregion

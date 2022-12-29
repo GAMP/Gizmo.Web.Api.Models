@@ -1,11 +1,10 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
-using Gizmo.Web.Api.Models.Models.API.Request.BillingProfile.Rate.Model;
 
 using MessagePack;
 
 using System.ComponentModel.DataAnnotations;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.BillingProfile
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Billing profile.

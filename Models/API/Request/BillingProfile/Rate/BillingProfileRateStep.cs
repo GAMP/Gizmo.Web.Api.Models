@@ -2,7 +2,7 @@
 
 using System.ComponentModel.DataAnnotations;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.BillingProfile.Rate
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Billing profile rate step.

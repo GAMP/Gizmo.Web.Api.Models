@@ -4,7 +4,7 @@ using MessagePack;
 
 using System.ComponentModel.DataAnnotations;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.MoneySalePreset
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Money sale preset.

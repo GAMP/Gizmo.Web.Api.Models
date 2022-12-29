@@ -1,6 +1,4 @@
-﻿using Gizmo.Web.Api.Models.Models.API.Request.Order.Line;
-
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace Gizmo.Web.Api.Models.Abstractions.Models.API.Request
 {

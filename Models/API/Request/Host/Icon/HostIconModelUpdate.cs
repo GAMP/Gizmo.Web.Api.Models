@@ -2,7 +2,7 @@
 
 using MessagePack;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Host.Icon
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Host icon.
@@ -15,13 +15,13 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Host.Icon
         /// <summary>
         /// The Id of the object.
         /// </summary>
-        [MessagePack.Key(0)]
+        [Key(0)]
         public int Id { get; set; }
 
         /// <summary>
         /// The image data of the host icon.
         /// </summary>
-        [MessagePack.Key(1)]
+        [Key(1)]
         public byte[] Image { get; set; }
 
         #endregion

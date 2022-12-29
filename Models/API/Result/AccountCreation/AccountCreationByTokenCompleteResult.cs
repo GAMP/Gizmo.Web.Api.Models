@@ -1,8 +1,10 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Result;
+
 using MessagePack;
+
 using System.Text.Json.Serialization;
 
-namespace Gizmo.Web.Api.Models.Models.API.Result.AccountCreation
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Account creation by token result model.

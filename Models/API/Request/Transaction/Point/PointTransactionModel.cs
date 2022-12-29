@@ -1,8 +1,10 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+
 using MessagePack;
+
 using System;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Transaction.Point
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Point transaction model.

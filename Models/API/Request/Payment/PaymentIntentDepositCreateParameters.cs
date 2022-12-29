@@ -2,7 +2,7 @@
 
 using MessagePack;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Payment
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Deposit payment intent creation parameters.
@@ -15,13 +15,13 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Payment
         /// <summary>
         /// Gets or sets intent user id.
         /// </summary>
-        [MessagePack.Key(0)]
+        [Key(0)]
         public int UserId { get; set; }
 
         /// <summary>
         /// Gets or sets intent amount.
         /// </summary>
-        [MessagePack.Key(1)]
+        [Key(1)]
         public decimal Amount { get; set; }
 
         /// <summary>
@@ -30,7 +30,7 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Payment
         /// <remarks>
         /// The method must have payment provider set, otherwise operation will fail.
         /// </remarks>
-        [MessagePack.Key(2)]
+        [Key(2)]
         public int PaymentMethodId { get; set; }
 
         #endregion

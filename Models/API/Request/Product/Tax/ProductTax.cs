@@ -2,7 +2,7 @@
 
 using MessagePack;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Product.Tax
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Product tax.

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using Gizmo.Web.Api.Models.Models.API.Request.Product.Availability;
 
 namespace Gizmo.Web.Api.Models.Abstractions.Models.API.Request
 {

@@ -1,6 +1,6 @@
 ﻿using MessagePack;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Application.PersonalFile
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Application personal file directory options.

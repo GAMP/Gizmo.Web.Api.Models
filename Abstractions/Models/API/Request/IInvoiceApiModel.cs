@@ -1,7 +1,4 @@
-﻿using Gizmo.Web.Api.Models.Models.API.Request.Invoice;
-using Gizmo.Web.Api.Models.Models.API.Request.Invoice.Payment;
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 namespace Gizmo.Web.Api.Models.Abstractions.Models.API.Request

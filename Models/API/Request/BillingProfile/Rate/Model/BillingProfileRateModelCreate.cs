@@ -4,7 +4,7 @@ using MessagePack;
 
 using System.Collections.Generic;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.BillingProfile.Rate.Model
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Billing profile rate.

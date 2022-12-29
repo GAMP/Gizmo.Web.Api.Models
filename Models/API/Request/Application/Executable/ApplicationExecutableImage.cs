@@ -2,7 +2,7 @@
 
 using MessagePack;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Executable
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Application executable image.
@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Executable
         /// <summary>
         /// The image data.
         /// </summary>
-        [MessagePack.Key(0)]
+        [Key(0)]
         public byte[] Image { get; set; }
     }
 }

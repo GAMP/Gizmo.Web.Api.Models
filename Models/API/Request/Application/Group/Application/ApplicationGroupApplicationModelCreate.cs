@@ -2,7 +2,7 @@
 
 using MessagePack;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Group.Application
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Application group application.
@@ -15,7 +15,7 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Group.Application
         /// <summary>
         /// The Id of the application associated with this application group.
         /// </summary>
-        [MessagePack.Key(0)]
+        [Key(0)]
         public int ApplicationId { get; set; }
 
         #endregion

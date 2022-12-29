@@ -6,7 +6,7 @@ using MessagePack;
 
 using System.ComponentModel.DataAnnotations;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Category
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Application category.
@@ -16,7 +16,7 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Category
     {
         #region PROPERTIES
 
-       /// <summary>
+        /// <summary>
         /// The Id of the object.
         /// </summary>
         [MessagePack.Key(0)]

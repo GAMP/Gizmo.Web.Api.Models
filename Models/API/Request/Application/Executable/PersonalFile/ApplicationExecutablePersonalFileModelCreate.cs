@@ -2,7 +2,7 @@
 
 using MessagePack;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Executable.PersonalFile
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Application executable personal file.
@@ -15,13 +15,13 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Executable.Persona
         /// <summary>
         /// The Id of the personal file associated with this application executable.
         /// </summary>
-        [MessagePack.Key(0)]
+        [Key(0)]
         public int PersonalFileId { get; set; }
 
         /// <summary>
         /// The order in which the personal file is used.
         /// </summary>
-        [MessagePack.Key(1)]
+        [Key(1)]
         public int UseOrder { get; set; }
 
         #endregion

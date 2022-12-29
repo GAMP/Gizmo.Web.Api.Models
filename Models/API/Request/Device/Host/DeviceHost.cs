@@ -2,7 +2,7 @@
 
 using MessagePack;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Device.Host
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Device host relation model.

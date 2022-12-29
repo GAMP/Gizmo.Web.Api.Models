@@ -1,6 +1,6 @@
 ﻿using MessagePack;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Pagination metadata.

@@ -4,7 +4,7 @@ using MessagePack;
 
 using System.ComponentModel.DataAnnotations;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Host.Group
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Host group.

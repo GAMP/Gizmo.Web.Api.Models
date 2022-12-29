@@ -4,7 +4,7 @@ using MessagePack;
 
 using System.ComponentModel.DataAnnotations;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Attribute
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Attribute.

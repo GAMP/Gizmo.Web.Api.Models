@@ -2,7 +2,7 @@
 
 using MessagePack;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.User.Agreement.Model
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// User agreement model.

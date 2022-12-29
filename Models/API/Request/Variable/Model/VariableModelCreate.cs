@@ -1,8 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
+
 using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+
 using MessagePack;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Variable.Model
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Variable.

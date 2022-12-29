@@ -1,6 +1,6 @@
 ﻿using MessagePack;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Product
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Line product.

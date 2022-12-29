@@ -2,9 +2,7 @@
 
 using MessagePack;
 
-using System.ComponentModel.DataAnnotations;
-
-namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Executable.Task
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Application executable task.

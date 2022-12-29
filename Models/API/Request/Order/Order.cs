@@ -1,12 +1,12 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
-using Gizmo.Web.Api.Models.Models.API.Request.Order.Line;
+
 using MessagePack;
 
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Order
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Order.
@@ -26,7 +26,7 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Order
         /// The invoice of the order.
         /// </summary>
         [MessagePack.Key(1)]
-        public Invoice.Invoice Invoice { get; set; }
+        public Invoice Invoice { get; set; }
 
         /// <summary>
         /// The date that the order was created.

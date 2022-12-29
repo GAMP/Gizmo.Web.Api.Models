@@ -1,5 +1,3 @@
-using Gizmo.Web.Api.Models.Models.API.Request.Device;
-
 namespace Gizmo.Web.Api.Models.Abstractions.Models.API.Request
 {
     /// <summary>

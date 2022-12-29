@@ -1,10 +1,8 @@
-﻿using Gizmo.Web.Api.Models.Models.API.Request.Product;
-
-using MessagePack;
+﻿using MessagePack;
 
 using System.ComponentModel.DataAnnotations;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Order
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Calculate order line options.

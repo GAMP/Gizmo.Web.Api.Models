@@ -6,7 +6,7 @@ using MessagePack;
 
 using System.Text.Json.Serialization;
 
-namespace Gizmo.Web.Api.Models.Models.API.Result.Verification
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Mobile phone verification start result model.

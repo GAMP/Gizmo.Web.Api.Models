@@ -2,7 +2,7 @@
 
 using System;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Order.Line.DeliveredStatus
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Order line delivered status.

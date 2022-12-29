@@ -1,7 +1,8 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+
 using MessagePack;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Deposit
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Deposit refund options.
@@ -22,7 +23,7 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Deposit
         /// </summary>
         [Key(1)]
         public bool ReceiptOverride { get; set; }
-        
+
         /// <summary>
         /// The Id of the payment method to use for the refund.
         /// </summary>

@@ -1,11 +1,11 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
-using Gizmo.Web.Api.Models.Models.API.Request.Product.Availability;
 
 using MessagePack;
+
 using System;
 using System.Collections.Generic;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Product.TimeProduct.UsageAvailability
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Time product usage availability.

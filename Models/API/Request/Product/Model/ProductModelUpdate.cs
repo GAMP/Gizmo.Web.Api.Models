@@ -4,7 +4,7 @@ using MessagePack;
 
 using System.ComponentModel.DataAnnotations;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Product.Model
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Product.
@@ -161,7 +161,7 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Product.Model
         /// The time product object attached to this product if the product is a time product, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(23)]
-        public TimeProduct.TimeProduct TimeProduct { get; set; }
+        public TimeProduct TimeProduct { get; set; }
 
         /// <summary>
         /// The bundle object attached to this product if the product is a bundle, otherwise it will be null.

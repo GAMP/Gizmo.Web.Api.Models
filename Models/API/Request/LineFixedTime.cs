@@ -2,7 +2,7 @@
 
 using System.ComponentModel.DataAnnotations;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Line fixed time.

@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using Gizmo.Web.Api.Models.Models.API.Request.BillingProfile.Rate;
 
 namespace Gizmo.Web.Api.Models.Abstractions.Models.API.Request
 {

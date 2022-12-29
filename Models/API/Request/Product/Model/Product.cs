@@ -1,7 +1,4 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
-using Gizmo.Web.Api.Models.Models.API.Request.Product.Image;
-using Gizmo.Web.Api.Models.Models.API.Request.Product.PurchaseAvailability;
-using Gizmo.Web.Api.Models.Models.API.Request.Product.Tax;
 
 using MessagePack;
 
@@ -9,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Product.Model
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Product.
@@ -197,7 +194,7 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Product.Model
         /// The time product object attached to this product if the product is a time product, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(28)]
-        public TimeProduct.TimeProduct TimeProduct { get; set; }
+        public TimeProduct TimeProduct { get; set; }
 
         /// <summary>
         /// The bundle object attached to this product if the product is a bundle, otherwise it will be null.

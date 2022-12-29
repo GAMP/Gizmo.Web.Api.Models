@@ -2,7 +2,7 @@
 
 using System.ComponentModel.DataAnnotations;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Product.TimeProduct
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Time product.

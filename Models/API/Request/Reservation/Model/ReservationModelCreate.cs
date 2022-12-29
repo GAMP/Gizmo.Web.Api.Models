@@ -1,10 +1,12 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+
 using MessagePack;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Reservation.Model
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Reservation.

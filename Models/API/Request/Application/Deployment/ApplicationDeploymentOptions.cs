@@ -1,6 +1,6 @@
 ﻿using MessagePack;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Deployment
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Application deployment options.

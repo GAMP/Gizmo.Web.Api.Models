@@ -3,7 +3,7 @@ using MessagePack;
 
 using System;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Payment
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Provider metdata model.
@@ -32,19 +32,19 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Payment
         /// <summary>
         /// Gets provider type.
         /// </summary>
-        [MessagePack.Key(0)]
+        [Key(0)]
         public string Type { get; }
 
         /// <summary>
         /// Gets provider name.
         /// </summary>
-        [MessagePack.Key(1)]
+        [Key(1)]
         public string Name { get; }
 
         /// <summary>
         /// Gets provider guid.
         /// </summary>
-        [MessagePack.Key(2)]
+        [Key(2)]
         public Guid Guid { get; }
 
         /// <summary>
@@ -53,16 +53,15 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Payment
         /// <remarks>
         /// This value might be null if payment provider does not have any options associated with it.
         /// </remarks>
-        [MessagePack.Key(3)]
+        [Key(3)]
         public string? OptionsType { get; init; }
 
         /// <summary>
         /// Gets provider description.
         /// </summary>
-        [MessagePack.Key(4)]
+        [Key(4)]
         public string? Description { get; init; }
 
         #endregion
     }
 }
-    

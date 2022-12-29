@@ -1,9 +1,10 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+
 using MessagePack;
 
 using System.Collections.Generic;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Order.Calculate
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Calculate order options.

@@ -1,6 +1,6 @@
 ﻿using MessagePack;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.User
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Required user info.

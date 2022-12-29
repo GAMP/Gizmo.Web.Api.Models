@@ -1,6 +1,6 @@
 ﻿using MessagePack;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.User
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// User picture.
@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.User
         /// <summary>
         /// The image data of the product image.
         /// </summary>
-        [MessagePack.Key(0)]
+        [Key(0)]
         public byte[] Picture { get; set; }
 
         #endregion

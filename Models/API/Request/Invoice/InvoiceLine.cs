@@ -1,11 +1,10 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
-using Gizmo.Web.Api.Models.Models.API.Request.Product;
 
 using MessagePack;
 
 using System.ComponentModel.DataAnnotations;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Invoice
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Invoice line.

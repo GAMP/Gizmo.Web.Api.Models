@@ -1,6 +1,4 @@
-﻿using Gizmo.Web.Api.Models.Models.API.Request.Product;
-
-namespace Gizmo.Web.Api.Models.Abstractions.Models.API.Request
+﻿namespace Gizmo.Web.Api.Models.Abstractions.Models.API.Request
 {
     /// <summary>
     /// Invoice line.

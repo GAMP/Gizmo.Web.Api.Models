@@ -2,7 +2,7 @@
 
 using MessagePack;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Product.Image
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Product image.
@@ -15,19 +15,19 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Product.Image
         /// <summary>
         /// The Id of the object.
         /// </summary>
-        [MessagePack.Key(0)]
+        [Key(0)]
         public int Id { get; set; }
 
         /// <summary>
         /// The Id of the product this image belongs to.
         /// </summary>
-        [MessagePack.Key(1)]
+        [Key(1)]
         public int ProductId { get; set; }
 
         /// <summary>
         /// The image data of the product image.
         /// </summary>
-        [MessagePack.Key(2)]
+        [Key(2)]
         public byte[] Image { get; set; }
 
         #endregion

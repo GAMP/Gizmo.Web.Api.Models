@@ -4,7 +4,7 @@ using MessagePack;
 
 using System.Text.Json.Serialization;
 
-namespace Gizmo.Web.Api.Models.Models.API.Result.AccountCreation
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Account creation complete result model.

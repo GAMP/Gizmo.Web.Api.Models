@@ -1,9 +1,11 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+
 using MessagePack;
+
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Task.Model
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Application task.

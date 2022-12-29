@@ -1,6 +1,6 @@
 ﻿using MessagePack;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.User.Agreement
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// User agreement state model.

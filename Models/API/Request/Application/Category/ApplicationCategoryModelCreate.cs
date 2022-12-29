@@ -1,12 +1,13 @@
 ﻿#nullable enable
 
+using Gizmo;
 using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
 
 using MessagePack;
 
 using System.ComponentModel.DataAnnotations;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Application.Category
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Application category.

@@ -4,7 +4,7 @@ using MessagePack;
 
 using System.ComponentModel.DataAnnotations;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Product.Stock
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Product stock.
