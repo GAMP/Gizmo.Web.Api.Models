@@ -1,32 +1,39 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
 using MessagePack;
-using System;
-using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Web.Api.Models.Models.API.Request.User.Group.DisallowedHostGroup
 {
     /// <summary>
     /// User group disallowed host group.
     /// </summary>
-    [Serializable]
     [MessagePackObject]
-    public class UserGroupDisallowedHostGroupModelUpdate : UserGroupDisallowedHostGroupModelBase, IApiModelIdentifier, IUrlQueryParameters
+    public sealed class UserGroupDisallowedHostGroupModelUpdate : IUserGroupDisallowedHostGroupApiModel, IApiModelIdentifier, IUrlQueryParameters
     {
         #region PROPERTIES
 
         /// <summary>
         /// The Id of the object.
         /// </summary>
-        [Required]
-        [MessagePack.Key(100)]
+        [MessagePack.Key(0)]
         public int Id { get; set; }
 
         /// <summary>
         /// The Id of the user group.
         /// </summary>
-        [Required]
-        [MessagePack.Key(101)]
+        [MessagePack.Key(1)]
         public int UserGroupId { get; set; }
+
+        /// <summary>
+        /// The Id of the host group.
+        /// </summary>
+        [MessagePack.Key(2)]
+        public int HostGroupId { get; set; }
+
+        /// <summary>
+        /// Whether this host group is disallowed for this user group.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public bool IsDisallowed { get; set; }
 
         #endregion
     }

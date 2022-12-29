@@ -1,5 +1,5 @@
-﻿using MessagePack;
-using System;
+﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Filters;
+using MessagePack;
 using System.Collections.Generic;
 
 namespace Gizmo.Web.Api.Models
@@ -7,17 +7,16 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Base filter for cursor-based pagination.
     /// </summary>
-    [Serializable]
     [MessagePackObject]
-    public class GetOptions : IUrlQueryParameters
+    public sealed class GetOptions : IGetOptionsFilterModel, IUrlQueryParameters
     {
         #region PROPERTIES
-        
+
         /// <summary>
         /// Include specified objects in the result.
         /// </summary>
         [Key(0)]
-        public List<string> Expand { get; set; } 
+        public List<string> Expand { get; set; }
 
         #endregion
     }

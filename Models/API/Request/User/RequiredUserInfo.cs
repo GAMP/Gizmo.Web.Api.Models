@@ -1,14 +1,12 @@
 ﻿using MessagePack;
-using System;
 
 namespace Gizmo.Web.Api.Models.Models.API.Request.User
 {
     /// <summary>
     /// Required user info.
     /// </summary>
-    [Serializable]
     [MessagePackObject]
-    public class RequiredUserInfo
+    public sealed class RequiredUserInfo
     {
         #region PROPERTIES
 

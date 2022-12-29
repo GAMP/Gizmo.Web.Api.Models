@@ -1,4 +1,5 @@
-﻿using MessagePack;
+﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Filters;
+using MessagePack;
 using System;
 
 namespace Gizmo.Web.Api.Models
@@ -6,9 +7,8 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Base filter for cursor-based pagination.
     /// </summary>
-    [Serializable]
     [MessagePackObject]
-    public class PaginationFilter : GetOptions
+    public sealed class PaginationFilter : IPaginationFilterModel
     {
         #region FIELDS
 
@@ -53,7 +53,7 @@ namespace Gizmo.Web.Api.Models
                 if (value > 0 && value <= MAX_LIMIT)
                     limit = value;
             }
-        } 
+        }
 
         #endregion
     }

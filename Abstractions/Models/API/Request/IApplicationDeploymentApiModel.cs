@@ -7,9 +7,9 @@ namespace Gizmo.Web.Api.Models.Abstractions.Models.API.Request
     /// </summary>
     public interface IApplicationDeploymentApiModel
     {
-        ///// <summary>
+        /// <summary>
         /// The deployment options of the deployment.
-        ///// </summary>
+        /// </summary>
         ApplicationDeploymentComparisonMode ComparisonMode { get; set; }
 
         /// <summary>
