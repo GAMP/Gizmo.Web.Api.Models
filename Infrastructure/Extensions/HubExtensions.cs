@@ -25,10 +25,10 @@ namespace Gizmo.Web.Api
             options.PayloadSerializerOptions.Converters.Add(new MessagePackUnionMessageJsonConverter<IAPIEventMessage>("EventId", "Event"));
 
             //add command message converter
-            options.PayloadSerializerOptions.Converters.Add(new MessagePackUnionMessageJsonConverter<IAPICommandMessage>("CommandType", "Command"));
+            options.PayloadSerializerOptions.Converters.Add(new MessagePackUnionMessageJsonConverter<IAPICommandMessage>("CommandId", "Command"));
 
             //add control message converter
-            options.PayloadSerializerOptions.Converters.Add(new MessagePackUnionMessageJsonConverter<IAPIControlMessage>("ControlType", "Command"));
+            options.PayloadSerializerOptions.Converters.Add(new MessagePackUnionMessageJsonConverter<IAPIControlMessage>("ControlId", "Control"));
 
             if (DynamicConverterLoader.TryCreate("Gizmo.Companion.Shared", "ICompanionCommandMessage", out var converter))
             {

@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Gizmo.Web.Api.Models.Abstractions.Models.API.Filters;
+using Gizmo.Web.Api.Models.Abstractions.Models.Filters;
 using MessagePack;
 
 namespace Gizmo.Web.Api.Models

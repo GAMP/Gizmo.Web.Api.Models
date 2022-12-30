@@ -1,4 +1,4 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Filters;
+﻿using Gizmo.Web.Api.Models.Abstractions.Models.Filters;
 using MessagePack;
 using System.Collections.Generic;
 

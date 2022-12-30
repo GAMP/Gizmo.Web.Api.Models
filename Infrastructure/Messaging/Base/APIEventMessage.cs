@@ -5,7 +5,7 @@ namespace Gizmo.Web.Api.Messaging
     /// <summary>
     /// Event base message.
     /// </summary>
-    public abstract class APIEventMessage : SerializationTypeMessage, IAPIEventMessage
+    public abstract class APIEventMessage :EventMessage
     {
         #region CONSTRUCTOR
 

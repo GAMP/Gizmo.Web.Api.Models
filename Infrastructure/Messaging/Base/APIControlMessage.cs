@@ -5,7 +5,7 @@ namespace Gizmo.Web.Api.Messaging
     /// <summary>
     /// Control message.
     /// </summary>
-    public abstract class APIControlMessage : SerializationTypeMessage , IAPIControlMessage
+    public abstract class APIControlMessage :ControlMessage
     {
         #region CONSTRUCTOR
         /// <summary>

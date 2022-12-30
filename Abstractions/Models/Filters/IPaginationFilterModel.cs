@@ -1,4 +1,4 @@
-namespace Gizmo.Web.Api.Models.Abstractions.Models.API.Filters
+namespace Gizmo.Web.Api.Models.Abstractions.Models.Filters
 {
     /// <summary>
     /// Base filter for cursor-based pagination.

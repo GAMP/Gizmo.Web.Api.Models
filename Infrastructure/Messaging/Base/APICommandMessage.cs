@@ -22,7 +22,7 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Serialization type.
         /// </summary>
-        public static readonly Type ISerializationType = typeof(APICommandMessage); 
+        public static readonly Type ISerializationType = typeof(IAPICommandMessage); 
 
         #endregion
     }
