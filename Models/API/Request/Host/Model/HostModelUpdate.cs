@@ -71,13 +71,13 @@ namespace Gizmo.Web.Api.Models
         /// The host computer object attached to this host if the host is a computer, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(8)]
-        public HostComputer? HostComputer { get; set; } //TODO: Is reqired?
+        public HostComputer? HostComputer { get; set; } //TODO: Is required?
 
         /// <summary>
         /// The host endpoint object attached to this host if the host is an endpoint, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(9)]
-        public HostEndpoint? HostEndpoint { get; set; } //TODO: Is reqired?
+        public HostEndpoint? HostEndpoint { get; set; } //TODO: Is required?
 
         #endregion
     }

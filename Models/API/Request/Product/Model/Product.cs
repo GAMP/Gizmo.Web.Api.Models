@@ -53,7 +53,7 @@ namespace Gizmo.Web.Api.Models
         /// The purchase availability of the product.
         /// </summary>
         [MessagePack.Key(5)]
-        public ProductPurchaseAvailability? ProductPurchaseAvailability { get; set; } // TODO: Is reqired?
+        public ProductPurchaseAvailability? ProductPurchaseAvailability { get; set; } // TODO: Is required?
 
         /// <summary>
         /// The Id of the product group this product belongs to.

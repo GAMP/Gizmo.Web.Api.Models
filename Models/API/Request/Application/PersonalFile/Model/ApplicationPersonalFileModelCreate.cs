@@ -94,7 +94,7 @@ namespace Gizmo.Web.Api.Models
         /// The directory options object attached to this personal file if the personal file type is file, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(11)]
-        public ApplicationPersonalFileDirectoryOptions? DirectoryOptions { get; set; } // TODO: Is reqired?
+        public ApplicationPersonalFileDirectoryOptions? DirectoryOptions { get; set; } // TODO: Is required?
 
         #endregion
     }

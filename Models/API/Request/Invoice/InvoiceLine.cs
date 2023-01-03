@@ -118,13 +118,13 @@ namespace Gizmo.Web.Api.Models
         /// The product object attached to this invoice line if the invoice line refers to a product, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(16)]
-        public LineProduct? Product { get; set; } //TODO: Is reqired?
+        public LineProduct? Product { get; set; } //TODO: Is required?
 
         /// <summary>
         /// The time product object attached to this invoice line if the invoice line refers to a time product, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(17)]
-        public LineProduct? TimeProduct { get; set; } //TODO: Is reqired?
+        public LineProduct? TimeProduct { get; set; } //TODO: Is required?
 
         /// <summary>
         /// The Id of the bundle line this line belongs to if the line refers to a bundled product, otherwise it will be null.

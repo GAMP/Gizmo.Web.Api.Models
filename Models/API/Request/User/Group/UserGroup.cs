@@ -47,7 +47,7 @@ namespace Gizmo.Web.Api.Models
         /// The required user info object attached to this user group.
         /// </summary>
         [MessagePack.Key(4)]
-        public RequiredUserInfo? RequiredUserInfo { get; set; } // TODO: Is reqired?
+        public RequiredUserInfo? RequiredUserInfo { get; set; } // TODO: Is required?
 
         /// <summary>
         /// Whether to override the default application group.

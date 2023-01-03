@@ -28,7 +28,7 @@ namespace Gizmo.Web.Api.Models
         /// The invoice of the order.
         /// </summary>
         [MessagePack.Key(1)]
-        public Invoice? Invoice { get; set; } // TODO: Is reqiered?
+        public Invoice? Invoice { get; set; } // TODO: Is required?
 
         /// <summary>
         /// The date that the order was created.
