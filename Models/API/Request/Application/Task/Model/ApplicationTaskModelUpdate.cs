@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
@@ -26,31 +28,31 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(1)]
         [Required]
         [StringLength(45)]
-        public string Name { get; set; }
+        public string Name { get; set; } = null!;
 
         /// <summary>
         /// The junction object attached to this task if the task is a junction task, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(2)]
-        public ApplicationTaskJunction TaskJunction { get; set; }
+        public ApplicationTaskJunction? TaskJunction { get; set; } //TODO: Is reqired?
 
         /// <summary>
         /// The notification object attached to this task if the task is a notification task, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(3)]
-        public ApplicationTaskNotification TaskNotification { get; set; }
+        public ApplicationTaskNotification? TaskNotification { get; set; } //TODO: Is reqired?
 
         /// <summary>
         /// The process object attached to this task if the task is a process task, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(4)]
-        public ApplicationTaskProcess TaskProcess { get; set; }
+        public ApplicationTaskProcess? TaskProcess { get; set; } //TODO: Is reqired?
 
         /// <summary>
         /// The script object attached to this task if the task is a script task, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(5)]
-        public ApplicationTaskScript TaskScript { get; set; }
+        public ApplicationTaskScript? TaskScript { get; set; } //TODO: Is reqired?
 
         #endregion
     }

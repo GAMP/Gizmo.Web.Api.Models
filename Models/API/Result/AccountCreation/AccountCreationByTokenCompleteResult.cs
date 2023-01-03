@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Result;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
@@ -9,7 +11,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Account creation by token result model.
     /// </summary>
-    [MessagePackObject()]
+    [MessagePackObject]
     public sealed class AccountCreationByTokenCompleteResult : IResultCode<AccountCreationByTokenCompleteResultCode>
     {
         #region PROPERTIES

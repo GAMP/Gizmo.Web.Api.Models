@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Result;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
@@ -12,7 +14,7 @@ namespace Gizmo.Web.Api.Models
     /// <remarks>
     /// Default <see cref="IResultCode{T}.Result"/> code value is <see cref="UserRecoverMethodGetResultCode.Success"/>.
     /// </remarks>
-    [MessagePackObject()]
+    [MessagePackObject]
     public sealed class UserRecoveryMethodGetResult : IResultCode<UserRecoverMethodGetResultCode>
     {
         #region PROPERTIES

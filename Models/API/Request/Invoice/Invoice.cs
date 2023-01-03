@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
@@ -111,19 +113,19 @@ namespace Gizmo.Web.Api.Models
         /// The lines of the invoice.
         /// </summary>
         [MessagePack.Key(15)]
-        public IEnumerable<InvoiceLine> InvoiceLines { get; set; }
+        public IEnumerable<InvoiceLine>? InvoiceLines { get; set; }
 
         /// <summary>
         /// The payments of the invoice.
         /// </summary>
         [MessagePack.Key(16)]
-        public IEnumerable<InvoicePayment> InvoicePayments { get; set; }
+        public IEnumerable<InvoicePayment>? InvoicePayments { get; set; }
 
         /// <summary>
         /// The refunds of the invoice.
         /// </summary>
         [MessagePack.Key(17)]
-        public IEnumerable<InvoiceRefund> InvoiceRefunds { get; set; }
+        public IEnumerable<InvoiceRefund>? InvoiceRefunds { get; set; }
 
         #endregion
     }

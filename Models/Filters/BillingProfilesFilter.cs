@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿#nullable enable
+
+using System.Collections.Generic;
 using Gizmo.Web.Api.Models.Abstractions.Models.Filters;
 using MessagePack;
 
@@ -8,7 +10,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for billing profiles.
     /// </summary>
     [MessagePackObject]
-    public sealed class BillingProfilesFilter : IFilterModel
+    public sealed class BillingProfilesFilter : IFilterApiModel
     {
         #region PROPERTIES
 
@@ -16,19 +18,19 @@ namespace Gizmo.Web.Api.Models
         /// Filter for cursor-based pagination.
         /// </summary>
         [Key(0)]
-        public PaginationFilter PaginationFilter { get; set; }
+        public PaginationFilter PaginationFilter { get; set; } = new();
 
         /// <summary>
         /// Return billing profiles with names that contain the specified string.
         /// </summary>
         [Key(1)]
-        public string BillingProfileName { get; set; }
+        public string BillingProfileName { get; set; } = null!;
 
         /// <summary>
         /// Include specified objects in the result.
         /// </summary>
         [Key(2)]
-        public List<string> Expand { get; set; }
+        public List<string> Expand { get; set; } = new();
 
         #endregion
     }

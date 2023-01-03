@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
@@ -31,7 +33,7 @@ namespace Gizmo.Web.Api.Models
         /// The note of the register transaction.
         /// </summary>
         [MessagePack.Key(2)]
-        public string Note { get; set; }
+        public string Note { get; set; } = null!;
 
         #endregion
     }

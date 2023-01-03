@@ -1,7 +1,10 @@
-﻿using MessagePack;
+﻿#nullable enable
+
+using MessagePack;
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -23,7 +26,7 @@ namespace Gizmo.Web.Api.Models
         /// The timespans during which the product is available for this day.
         /// </summary>
         [Key(1)]
-        public IEnumerable<ProductAvailabilityDayTime> DayTimesAvailable { get; set; }
+        public IEnumerable<ProductAvailabilityDayTime>? DayTimesAvailable { get; set; }
 
         #endregion
     }

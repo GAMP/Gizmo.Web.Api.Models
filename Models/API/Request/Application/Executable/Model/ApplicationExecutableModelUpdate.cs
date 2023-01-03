@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
@@ -31,20 +33,20 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [StringLength(255)]
         [MessagePack.Key(2)]
-        public string Caption { get; set; }
+        public string Caption { get; set; } = null!;
 
         /// <summary>
         /// The description of the executable.
         /// </summary>
         [StringLength(255)]
         [MessagePack.Key(3)]
-        public string Description { get; set; }
+        public string Description { get; set; } = null!;
 
         /// <summary>
         /// The application modes object attached to this executable.
         /// </summary>
         [MessagePack.Key(4)]
-        public ApplicationModes ApplicationModes { get; set; }
+        public ApplicationModes? ApplicationModes { get; set; } //TODO: Is required?
 
         /// <summary>
         /// The path of the executable.
@@ -52,21 +54,21 @@ namespace Gizmo.Web.Api.Models
         [Required]
         [StringLength(255)]
         [MessagePack.Key(5)]
-        public string ExecutablePath { get; set; }
+        public string ExecutablePath { get; set; } = null!;
 
         /// <summary>
         /// The working directory of the executable.
         /// </summary>
         [StringLength(255)]
         [MessagePack.Key(6)]
-        public string WorkingDirectory { get; set; }
+        public string WorkingDirectory { get; set; } = null!;
 
         /// <summary>
         /// The arguments of the executable.
         /// </summary>
         [StringLength(255)]
         [MessagePack.Key(7)]
-        public string Arguments { get; set; }
+        public string Arguments { get; set; } = null!;
 
         /// <summary>
         /// The run mode of the executable.
@@ -86,7 +88,7 @@ namespace Gizmo.Web.Api.Models
         /// The executable options object attached to this executable.
         /// </summary>
         [MessagePack.Key(10)]
-        public ApplicationExecutableOptions ExecutableOptions { get; set; }
+        public ApplicationExecutableOptions? ExecutableOptions { get; set; } //TODO: Is required?
 
         /// <summary>
         /// The display order of the executable.

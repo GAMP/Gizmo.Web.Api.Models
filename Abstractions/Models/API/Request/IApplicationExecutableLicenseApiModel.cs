@@ -1,4 +1,4 @@
-﻿namespace Gizmo.Web.Api.Models.Abstractions.Models.API.Request
+﻿namespace Gizmo.Web.Api.Models.Abstractions
 {
     /// <summary>
     /// Application executable license.
@@ -9,7 +9,7 @@
         /// The Id of the license associated with this application executable.
         /// </summary>
         int LicenseId { get; set; }
-        
+
         /// <summary>
         /// The order in which the license is used.
         /// </summary>

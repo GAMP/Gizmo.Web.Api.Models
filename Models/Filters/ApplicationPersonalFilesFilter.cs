@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿#nullable enable
+
+using System.Collections.Generic;
 using Gizmo.Web.Api.Models.Abstractions.Models.Filters;
 using MessagePack;
 
@@ -8,7 +10,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for application personal files.
     /// </summary>
     [MessagePackObject]
-    public sealed class ApplicationPersonalFilesFilter : IFilterModel
+    public sealed class ApplicationPersonalFilesFilter : IFilterApiModel
     {
         #region PROPERTIES
 
@@ -16,25 +18,25 @@ namespace Gizmo.Web.Api.Models
         /// Filter for cursor-based pagination.
         /// </summary>
         [Key(0)]
-        public PaginationFilter PaginationFilter { get; set; }
+        public PaginationFilter PaginationFilter { get; set; } = new();
 
         /// <summary>
         /// Return personal files with names that contain the specified string.
         /// </summary>
         [Key(1)]
-        public string PersonalFileName { get; set; }
+        public string PersonalFileName { get; set; } = null!;
 
         /// <summary>
         /// Return personal files with captions that contain the specified string.
         /// </summary>
         [Key(2)]
-        public string PersonalFileCaption { get; set; }
+        public string PersonalFileCaption { get; set; } = null!;
 
         /// <summary>
         /// Include specified objects in the result.
         /// </summary>
         [Key(3)]
-        public List<string> Expand { get; set; }
+        public List<string> Expand { get; set; } = new();
 
         #endregion
     }

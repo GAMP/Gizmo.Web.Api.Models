@@ -1,4 +1,6 @@
-﻿using MessagePack;
+﻿#nullable enable
+
+using MessagePack;
 
 using System.Collections.Generic;
 

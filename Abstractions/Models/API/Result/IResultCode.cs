@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Gizmo.Web.Api.Models.Abstractions.Models.API.Result
+namespace Gizmo.Web.Api.Models.Abstractions
 {
     /// <summary>
     /// Interface suppoorting Enum code result.

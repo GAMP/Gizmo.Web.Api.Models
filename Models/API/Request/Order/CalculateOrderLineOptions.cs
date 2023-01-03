@@ -1,4 +1,6 @@
-﻿using MessagePack;
+﻿#nullable enable
+
+using MessagePack;
 
 using System.ComponentModel.DataAnnotations;
 
@@ -41,19 +43,19 @@ namespace Gizmo.Web.Api.Models
         /// The product object attached to this order line if the order line refers to a product, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(4)]
-        public LineProduct Product { get; set; }
+        public LineProduct? Product { get; set; }
 
         /// <summary>
         /// The time product object attached to this order line if the order line refers to a time product, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(5)]
-        public LineProduct TimeProduct { get; set; }
+        public LineProduct? TimeProduct { get; set; }
 
         /// <summary>
         /// The fixed time object attached to this order line if the order line refers to fixed time, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(6)]
-        public LineFixedTime FixedTime { get; set; }
+        public LineFixedTime? FixedTime { get; set; }
 
         #endregion
     }

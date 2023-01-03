@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
@@ -7,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Device host relation model.
     /// </summary>
-    [MessagePackObject()]
+    [MessagePackObject]
     public sealed class DeviceHost : IDeviceHostApiModel, IApiModelIdentifier
     {
         #region PROPERTIES

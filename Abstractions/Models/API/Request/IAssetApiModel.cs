@@ -1,4 +1,4 @@
-﻿namespace Gizmo.Web.Api.Models.Abstractions.Models.API.Request
+﻿namespace Gizmo.Web.Api.Models.Abstractions
 {
     /// <summary>
     /// Asset.

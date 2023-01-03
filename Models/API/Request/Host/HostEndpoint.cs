@@ -1,3 +1,5 @@
+#nullable enable
+
 using MessagePack;
 
 namespace Gizmo.Web.Api.Models.Models.API.Request.Host

@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
@@ -54,13 +56,13 @@ namespace Gizmo.Web.Api.Models
         /// The steps of the rate.
         /// </summary>
         [Key(6)]
-        public IEnumerable<BillingProfileRateStep> RateSteps { get; set; }
+        public IEnumerable<BillingProfileRateStep>? RateSteps { get; set; }
 
         /// <summary>
         /// The days on which the rate is applicable.
         /// </summary>
         [Key(7)]
-        public IEnumerable<BillingProfileRateDay> Days { get; set; }
+        public IEnumerable<BillingProfileRateDay>? Days { get; set; }
 
         #endregion
     }

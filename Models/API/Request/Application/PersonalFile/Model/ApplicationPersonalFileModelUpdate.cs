@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
@@ -33,21 +35,21 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(2)]
         [Required]
         [StringLength(255)]
-        public string Name { get; set; }
+        public string Name { get; set; } = null!;
 
         /// <summary>
         /// The caption of the personal file.
         /// </summary>
         [MessagePack.Key(3)]
         [StringLength(255)]
-        public string Caption { get; set; }
+        public string Caption { get; set; } = null!;
 
         /// <summary>
         /// The description of the personal file.
         /// </summary>
         [MessagePack.Key(4)]
         [StringLength(255)]
-        public string Description { get; set; }
+        public string Description { get; set; } = null!;
 
         /// <summary>
         /// Whether the personal file is accessible.
@@ -61,7 +63,7 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(6)]
         [Required]
         [StringLength(255)]
-        public string Source { get; set; }
+        public string Source { get; set; } = null!;
 
         /// <summary>
         /// The activation type of the personal file.
@@ -98,7 +100,7 @@ namespace Gizmo.Web.Api.Models
         /// The directory options object attached to this personal file if the personal file type is file, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(12)]
-        public ApplicationPersonalFileDirectoryOptions DirectoryOptions { get; set; }
+        public ApplicationPersonalFileDirectoryOptions? DirectoryOptions { get; set; } // TODO: Is reqired?
 
         #endregion
     }

@@ -1,4 +1,6 @@
-﻿using MessagePack;
+﻿#nullable enable
+
+using MessagePack;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -21,28 +23,28 @@ namespace Gizmo.Web.Api.Models
         /// <remarks>Each entry should be seperated by ; character.</remarks>
         /// </summary>
         [Key(1)]
-        public string ExcludeFiles { get; set; }
+        public string ExcludeFiles { get; set; } = null!;
 
         /// <summary>
         /// The list of directories that should be excluded.
         /// <remarks>Each entry should be seperated by ; character.</remarks>
         /// </summary>
         [Key(2)]
-        public string ExcludeDirectories { get; set; }
+        public string ExcludeDirectories { get; set; } = null!;
 
         /// <summary>
         /// The list of files that should be included.
         /// <remarks>Each entry should be seperated by ; character.</remarks>
         /// </summary>
         [Key(3)]
-        public string IncludeFiles { get; set; }
+        public string IncludeFiles { get; set; } = null!;
 
         /// <summary>
         /// The list of directories that should be included.
         /// <remarks>Each entry should be seperated by ; character.</remarks>
         /// </summary>
         [Key(4)]
-        public string IncludeDirectories { get; set; }
+        public string IncludeDirectories { get; set; } = null!;
 
         #endregion
     }

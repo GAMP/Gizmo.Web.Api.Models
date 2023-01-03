@@ -1,6 +1,6 @@
 ﻿#nullable enable
 
-using Gizmo.Web.Api.Models.Abstractions.Models.API.Result;
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
@@ -11,7 +11,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Account creation by email result model.
     /// </summary>
-    [MessagePackObject()]
+    [MessagePackObject]
     public sealed class AccountCreationByEmailResult : IEmailTokenResultWithCode<VerificationStartResultCode>
     {
         #region PROPERTIES

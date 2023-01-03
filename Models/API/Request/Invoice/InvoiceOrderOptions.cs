@@ -1,8 +1,11 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -18,7 +21,7 @@ namespace Gizmo.Web.Api.Models
         /// The list of payments for the invoice.
         /// </summary>
         [Key(0)]
-        public IEnumerable<InvoicePaymentModel> Payments { get; set; }
+        public IEnumerable<InvoicePaymentModel> Payments { get; set; } = Enumerable.Empty<InvoicePaymentModel>();
 
         #endregion
     }

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Gizmo.Web.Api.Models.Abstractions.Models.API.Result
+namespace Gizmo.Web.Api.Models.Abstractions
 {
     /// <summary>
     /// Interface for token results.
@@ -15,7 +15,7 @@ namespace Gizmo.Web.Api.Models.Abstractions.Models.API.Result
         /// Token value.
         /// </summary>
         string Token { get; set; }
-        
+
         /// <summary>
         /// Gets confirmation code length.
         /// </summary>

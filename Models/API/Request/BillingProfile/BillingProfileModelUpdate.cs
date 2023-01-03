@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
@@ -26,14 +28,13 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(1)]
         [StringLength(255)]
         [Required]
-        public string Name { get; set; }
+        public string Name { get; set; } = null!;
 
         /// <summary>
         /// The default rate of the billing profile.
         /// </summary>
         [MessagePack.Key(2)]
-        [Required]
-        public BillingProfileRateModel DefaultRate { get; set; }
+        public BillingProfileRateModel DefaultRate { get; set; } = null!;
 
         #endregion
     }

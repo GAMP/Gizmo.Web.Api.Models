@@ -1,6 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿#nullable enable
 
-using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+using System.ComponentModel.DataAnnotations;
+
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
@@ -9,7 +11,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Device creation model.
     /// </summary>
-    [MessagePackObject()]
+    [MessagePackObject]
     public sealed class DeviceModelCreate : IDeviceApiModel
     {
         #region PROPERTIES
@@ -25,7 +27,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(1)]
         [StringLength(45)]
-        public string Name { get; set; }
+        public string Name { get; set; } = null!;
 
         /// <summary>
         /// Gets or sets if device is enabled.
@@ -37,7 +39,7 @@ namespace Gizmo.Web.Api.Models
         /// The hdmi device object attached to this device if the device is an hdmi device, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(3)]
-        public HdmiDevice HdmiDevice { get; set; }
+        public HdmiDevice? HdmiDevice { get; set; } //TODO: Is reqired?
 
         #endregion
     }

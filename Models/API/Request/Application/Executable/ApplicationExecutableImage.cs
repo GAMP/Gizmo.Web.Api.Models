@@ -1,6 +1,10 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
+
+using System;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -14,6 +18,6 @@ namespace Gizmo.Web.Api.Models
         /// The image data.
         /// </summary>
         [Key(0)]
-        public byte[] Image { get; set; }
+        public byte[] Image { get; set; } = Array.Empty<byte>();
     }
 }

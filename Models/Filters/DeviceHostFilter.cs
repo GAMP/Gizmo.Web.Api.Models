@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿#nullable enable
+
+using System.Collections.Generic;
 using Gizmo.Web.Api.Models.Abstractions.Models.Filters;
 using MessagePack;
 
@@ -8,7 +10,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for associated hosts or devices.
     /// </summary>
     [MessagePackObject]
-    public sealed class DeviceHostFilter : IFilterModel
+    public sealed class DeviceHostFilter : IFilterApiModel
     {
         #region PROPERTIES
 
@@ -16,7 +18,7 @@ namespace Gizmo.Web.Api.Models
         /// Filter for cursor-based pagination.
         /// </summary>
         [Key(0)]
-        public PaginationFilter PaginationFilter { get; set; }
+        public PaginationFilter PaginationFilter { get; set; } = new();
 
         /// <summary>
         /// Specifies explicit object id.
@@ -40,7 +42,7 @@ namespace Gizmo.Web.Api.Models
         /// Include specified objects in the result.
         /// </summary>
         [Key(4)]
-        public List<string> Expand { get; set; }
+        public List<string> Expand { get; set; } = new();
 
         #endregion
     }

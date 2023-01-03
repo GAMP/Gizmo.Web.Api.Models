@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Gizmo.Web.Api.Models.Abstractions.Models.API.Result
+namespace Gizmo.Web.Api.Models.Abstractions
 {
     /// <summary>
     /// Verification result for mobile phones.
@@ -11,7 +11,7 @@ namespace Gizmo.Web.Api.Models.Abstractions.Models.API.Result
         /// Gets or sets mobile phone.
         /// </summary>
         string MobilePhone { get; set; }
-        
+
         /// <summary>
         /// Gets confirmation code delivery method.
         /// </summary>

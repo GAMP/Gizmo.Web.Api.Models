@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.Filters;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions.Models.Filters;
 using MessagePack;
 using System;
 using System.Collections.Generic;
@@ -9,7 +11,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for invoices.
     /// </summary>
     [MessagePackObject]
-    public sealed class InvoicesFilter : IFilterModel
+    public sealed class InvoicesFilter : IFilterApiModel
     {
         #region PROPERTIES
 
@@ -17,7 +19,7 @@ namespace Gizmo.Web.Api.Models
         /// Filter for cursor-based pagination.
         /// </summary>
         [Key(0)]
-        public PaginationFilter PaginationFilter { get; set; }
+        public PaginationFilter PaginationFilter { get; set; } = new();
 
         /// <summary>
         /// Return invoices where the date greater than or equal to the specified date.
@@ -47,7 +49,7 @@ namespace Gizmo.Web.Api.Models
         /// Include specified objects in the result.
         /// </summary>
         [MessagePack.Key(5)]
-        public List<string> Expand { get; set; }
+        public List<string> Expand { get; set; } = new();
 
         #endregion
     }

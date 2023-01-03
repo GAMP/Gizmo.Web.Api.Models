@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
@@ -26,7 +28,7 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(1)]
         [Required]
         [StringLength(45)]
-        public string Name { get; set; }
+        public string Name { get; set; } = null!;
 
         /// <summary>
         /// The MAC address of the register.
@@ -34,7 +36,7 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(2)]
         [StringLength(255)]
         [MacAddressValidation]
-        public string MacAddress { get; set; }
+        public string MacAddress { get; set; } = null!;
 
         /// <summary>
         /// The start cash of the register.

@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
@@ -20,14 +22,14 @@ namespace Gizmo.Web.Api.Models
         [Required]
         [StringLength(45)]
         [MessagePack.Key(0)]
-        public string Name { get; set; }
+        public string Name { get; set; } = null!;
 
         /// <summary>
         /// The description of the user group.
         /// </summary>
         [StringLength(255)]
         [MessagePack.Key(1)]
-        public string Description { get; set; }
+        public string Description { get; set; } = null!;
 
         /// <summary>
         /// The Id of the billing profile this user group is associated with.
@@ -39,7 +41,7 @@ namespace Gizmo.Web.Api.Models
         /// The required user info object attached to this user group.
         /// </summary>
         [MessagePack.Key(3)]
-        public RequiredUserInfo RequiredUserInfo { get; set; }
+        public RequiredUserInfo? RequiredUserInfo { get; set; } // TODO: Is reqired?
 
         /// <summary>
         /// Whether to override the default application group.

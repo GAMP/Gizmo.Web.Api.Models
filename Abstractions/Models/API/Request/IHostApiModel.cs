@@ -1,6 +1,6 @@
 ﻿using Gizmo.Web.Api.Models.Models.API.Request.Host;
 
-namespace Gizmo.Web.Api.Models.Abstractions.Models.API.Request
+namespace Gizmo.Web.Api.Models.Abstractions
 {
     /// <summary>
     /// Host.

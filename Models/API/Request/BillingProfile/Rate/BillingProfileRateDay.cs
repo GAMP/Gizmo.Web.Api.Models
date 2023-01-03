@@ -1,4 +1,6 @@
-﻿using MessagePack;
+﻿#nullable enable
+
+using MessagePack;
 
 using System;
 using System.Collections.Generic;
@@ -23,7 +25,7 @@ namespace Gizmo.Web.Api.Models
         /// The timespans during which the rate is applicable for this day.
         /// </summary>
         [Key(1)]
-        public IEnumerable<BillingProfileRateDayTime> DayTimesApplicable { get; set; }
+        public IEnumerable<BillingProfileRateDayTime>? DayTimesApplicable { get; set; }
 
         #endregion
     }

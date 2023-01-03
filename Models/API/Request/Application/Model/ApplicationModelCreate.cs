@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
@@ -21,20 +23,20 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(0)]
         [Required]
         [StringLength(255)]
-        public string Title { get; set; }
+        public string Title { get; set; } = null!;
 
         /// <summary>
         /// The description of the application.
         /// </summary>
         [MessagePack.Key(1)]
-        public string Description { get; set; }
+        public string Description { get; set; } = null!;
 
         /// <summary>
         /// The version of the application.
         /// </summary>
         [MessagePack.Key(2)]
         [StringLength(45)]
-        public string Version { get; set; }
+        public string Version { get; set; } = null!;
 
         /// <summary>
         /// The Id of the application category this application belongs to.

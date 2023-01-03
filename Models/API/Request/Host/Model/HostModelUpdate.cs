@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions;
 using Gizmo.Web.Api.Models.Models.API.Request.Host;
 
 using MessagePack;
@@ -39,7 +41,7 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(3)]
         [Required]
         [StringLength(45)]
-        public string Name { get; set; }
+        public string Name { get; set; } = null!;
 
         /// <summary>
         /// Host is out of order.
@@ -69,13 +71,13 @@ namespace Gizmo.Web.Api.Models
         /// The host computer object attached to this host if the host is a computer, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(8)]
-        public HostComputer HostComputer { get; set; }
+        public HostComputer? HostComputer { get; set; } //TODO: Is reqired?
 
         /// <summary>
         /// The host endpoint object attached to this host if the host is an endpoint, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(9)]
-        public HostEndpoint HostEndpoint { get; set; }
+        public HostEndpoint? HostEndpoint { get; set; } //TODO: Is reqired?
 
         #endregion
     }

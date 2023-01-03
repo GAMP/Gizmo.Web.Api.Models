@@ -1,4 +1,6 @@
-﻿using MessagePack;
+﻿#nullable enable
+
+using MessagePack;
 
 using System.ComponentModel.DataAnnotations;
 
@@ -18,7 +20,7 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(0)]
         [Required]
         [StringLength(255)]
-        public string Title { get; set; }
+        public string Title { get; set; } = null!;
 
         /// <summary>
         /// The message of the notification.
@@ -26,7 +28,7 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(1)]
         [Required]
         [StringLength(65536)]
-        public string Message { get; set; }
+        public string Message { get; set; } = null!;
 
         /// <summary>
         /// Whether to wait until the user responds to the notification.

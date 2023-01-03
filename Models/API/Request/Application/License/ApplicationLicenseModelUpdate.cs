@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
@@ -26,7 +28,7 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(1)]
         [Required]
         [StringLength(255)]
-        public string Name { get; set; }
+        public string Name { get; set; } = null!;
 
         /// <summary>
         /// The plugin type name of the license.
@@ -34,7 +36,7 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(2)]
         [Required]
         [StringLength(255)]
-        public string Plugin { get; set; }
+        public string Plugin { get; set; } = null!;
 
         /// <summary>
         /// The plugin assembly of the license.
@@ -42,7 +44,7 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(3)]
         [Required]
         [StringLength(255)]
-        public string Assembly { get; set; }
+        public string Assembly { get; set; } = null!;
 
         #endregion
     }

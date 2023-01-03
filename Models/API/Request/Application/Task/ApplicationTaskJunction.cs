@@ -1,4 +1,6 @@
-﻿using MessagePack;
+﻿#nullable enable
+
+using MessagePack;
 
 using System.ComponentModel.DataAnnotations;
 
@@ -18,7 +20,7 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(0)]
         [Required]
         [StringLength(255)]
-        public string SourceDirectory { get; set; }
+        public string SourceDirectory { get; set; } = null!;
 
         /// <summary>
         /// The destination directory of the junction.
@@ -26,7 +28,7 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(1)]
         [Required]
         [StringLength(255)]
-        public string DestinationDirectory { get; set; }
+        public string DestinationDirectory { get; set; } = null!;
 
         /// <summary>
         /// Whether the junction deletes the destination.

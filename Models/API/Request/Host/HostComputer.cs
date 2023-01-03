@@ -1,3 +1,5 @@
+#nullable enable
+
 using MessagePack;
 using System.ComponentModel.DataAnnotations;
 
@@ -16,7 +18,7 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Host
         /// </summary>
         [MessagePack.Key(0)]
         [Required]
-        public string WindowsName { get; set; }
+        public string WindowsName { get; set; } = null!;
 
         /// <summary>
         /// The MAC Address of the computer.
@@ -24,7 +26,7 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Host
         [MessagePack.Key(1)]
         [Required]
         [MacAddressValidation]
-        public string MacAddress { get; set; }
+        public string MacAddress { get; set; } = null!;
 
         #endregion
     }

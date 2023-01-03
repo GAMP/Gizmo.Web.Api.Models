@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
@@ -37,28 +39,28 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(3)]
         [StringLength(255)]
-        public string Tag { get; set; }
+        public string Tag { get; set; } = null!;
 
         /// <summary>
         /// The smart card unique id of the asset.
         /// </summary>
         [MessagePack.Key(4)]
         [StringLength(255)]
-        public string SmartCardUid { get; set; }
+        public string SmartCardUid { get; set; } = null!;
 
         /// <summary>
         /// The barcode of the asset.
         /// </summary>
         [MessagePack.Key(5)]
         [StringLength(255)]
-        public string Barcode { get; set; }
+        public string Barcode { get; set; } = null!;
 
         /// <summary>
         /// The serial number of the asset.
         /// </summary>
         [MessagePack.Key(6)]
         [StringLength(255)]
-        public string SerialNumber { get; set; }
+        public string SerialNumber { get; set; } = null!;
 
         /// <summary>
         /// Whether the asset is enabled.

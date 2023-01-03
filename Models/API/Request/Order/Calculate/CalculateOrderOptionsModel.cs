@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
@@ -18,7 +20,7 @@ namespace Gizmo.Web.Api.Models
         /// The lines of the order.
         /// </summary>
         [Key(0)]
-        public IEnumerable<CalculateOrderLineOptions> OrderLines { get; set; }
+        public IEnumerable<CalculateOrderLineOptions>? OrderLines { get; set; }
 
         #endregion
     }

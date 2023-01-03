@@ -1,4 +1,5 @@
 ﻿#nullable enable
+
 using MessagePack;
 
 using System;

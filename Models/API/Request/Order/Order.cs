@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
@@ -26,7 +28,7 @@ namespace Gizmo.Web.Api.Models
         /// The invoice of the order.
         /// </summary>
         [MessagePack.Key(1)]
-        public Invoice Invoice { get; set; }
+        public Invoice? Invoice { get; set; } // TODO: Is reqiered?
 
         /// <summary>
         /// The date that the order was created.
@@ -57,7 +59,7 @@ namespace Gizmo.Web.Api.Models
         /// The user note of the order.
         /// </summary>
         [MessagePack.Key(6)]
-        public string UserNote { get; set; }
+        public string UserNote { get; set; } = null!;
 
         /// <summary>
         /// Whether the order is delivered.
@@ -111,7 +113,7 @@ namespace Gizmo.Web.Api.Models
         /// The lines of the order.
         /// </summary>
         [MessagePack.Key(15)]
-        public IEnumerable<OrderLine> OrderLines { get; set; }
+        public IEnumerable<OrderLine>? OrderLines { get; set; }
 
         #endregion
     }

@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.Filters;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions.Models.Filters;
 using MessagePack;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -9,7 +11,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for devices.
     /// </summary>
     [MessagePackObject]
-    public sealed class DevicesFilter : IFilterModel
+    public sealed class DevicesFilter : IFilterApiModel
     {
         #region PROPERTIES
 
@@ -17,7 +19,7 @@ namespace Gizmo.Web.Api.Models
         /// Filter for cursor-based pagination.
         /// </summary>
         [MessagePack.Key(0)]
-        public PaginationFilter PaginationFilter { get; set; }
+        public PaginationFilter PaginationFilter { get; set; } = new();
 
         /// <summary>
         /// Return devices of the specified device type.
@@ -30,7 +32,7 @@ namespace Gizmo.Web.Api.Models
         /// Include specified objects in the result.
         /// </summary>
         [MessagePack.Key(2)]
-        public List<string> Expand { get; set; }
+        public List<string> Expand { get; set; } = new();
 
         #endregion
     }

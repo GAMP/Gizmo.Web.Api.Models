@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿#nullable enable
+
+using System.Collections.Generic;
 using Gizmo.Web.Api.Models.Abstractions.Models.Filters;
 using MessagePack;
 
@@ -8,7 +10,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for application executables.
     /// </summary>
     [MessagePackObject]
-    public sealed class ApplicationExecutablesFilter : IFilterModel
+    public sealed class ApplicationExecutablesFilter : IFilterApiModel
     {
         #region PROPERTIES
 
@@ -16,13 +18,13 @@ namespace Gizmo.Web.Api.Models
         /// Filter for cursor-based pagination.
         /// </summary>
         [Key(0)]
-        public PaginationFilter PaginationFilter { get; set; }
+        public PaginationFilter PaginationFilter { get; set; } = new();
 
         /// <summary>
         /// Return executables with captions that contain the specified string.
         /// </summary>
         [Key(1)]
-        public string ExecutableCaption { get; set; }
+        public string ExecutableCaption { get; set; } = null!;
 
         /// <summary>
         /// Return executables that belongs to the specified application.
@@ -34,7 +36,7 @@ namespace Gizmo.Web.Api.Models
         /// Include specified objects in the result.
         /// </summary>
         [Key(3)]
-        public List<string> Expand { get; set; }
+        public List<string> Expand { get; set; } = new();
 
         #endregion
     }

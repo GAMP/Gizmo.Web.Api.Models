@@ -1,4 +1,6 @@
-﻿using MessagePack;
+﻿#nullable enable
+
+using MessagePack;
 
 using System.ComponentModel.DataAnnotations;
 
@@ -7,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Hdmi Device model.
     /// </summary>
-    [MessagePackObject()]
+    [MessagePackObject]
     public sealed class HdmiDevice
     {
         #region PROPERTIES
@@ -17,7 +19,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(0)]
         [StringLength(255)]
-        public string UniqueId { get; set; }
+        public string UniqueId { get; set; } = null!;
 
         #endregion
     }

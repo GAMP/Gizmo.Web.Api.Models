@@ -1,4 +1,6 @@
-﻿using MessagePack;
+﻿#nullable enable
+
+using MessagePack;
 
 using System.ComponentModel.DataAnnotations;
 
@@ -18,35 +20,35 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(0)]
         [Required]
         [StringLength(255)]
-        public string FileName { get; set; }
+        public string FileName { get; set; } = null!;
 
         /// <summary>
         /// The arguments of the process.
         /// </summary>
         [MessagePack.Key(1)]
         [StringLength(255)]
-        public string Arguments { get; set; }
+        public string Arguments { get; set; } = null!;
 
         /// <summary>
         /// The working directory of the process.
         /// </summary>
         [MessagePack.Key(2)]
         [StringLength(255)]
-        public string WorkingDirectory { get; set; }
+        public string WorkingDirectory { get; set; } = null!;
 
         /// <summary>
         /// The username of the process.
         /// </summary>
         [MessagePack.Key(3)]
         [StringLength(45)]
-        public string Username { get; set; }
+        public string Username { get; set; } = null!;
 
         /// <summary>
         /// The password of the process.
         /// </summary>
         [MessagePack.Key(4)]
         [StringLength(45)]
-        public string Password { get; set; }
+        public string Password { get; set; } = null!;
 
         /// <summary>
         /// Whether the process is awaited until exit.

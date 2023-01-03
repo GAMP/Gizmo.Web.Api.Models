@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
@@ -26,14 +28,14 @@ namespace Gizmo.Web.Api.Models
         [Required]
         [StringLength(255)]
         [MessagePack.Key(1)]
-        public string Name { get; set; }
+        public string Name { get; set; } = null!;
 
         /// <summary>
         /// The value of the variable.
         /// </summary>
         [Required]
         [MessagePack.Key(2)]
-        public string Value { get; set; }
+        public string Value { get; set; } = null!;
 
         /// <summary>
         /// Whether the variable is available in server.

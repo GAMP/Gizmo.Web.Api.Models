@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
@@ -26,7 +28,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(1)]
         [StringLength(24)]
-        public string Password { get; set; }
+        public string Password { get; set; } = null!;
 
         #region UsersOperator
 
@@ -36,7 +38,7 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(2)]
         [Required]
         [StringLength(30)]
-        public string Username { get; set; }
+        public string Username { get; set; } = null!;
 
         /// <summary>
         /// The email of the operator.
@@ -44,7 +46,7 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(3)]
         [StringLength(254)]
         [EmailNullEmptyValidation]
-        public string Email { get; set; }
+        public string Email { get; set; } = null!;
 
         #endregion
 
@@ -55,14 +57,14 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(4)]
         [StringLength(45)]
-        public string FirstName { get; set; }
+        public string FirstName { get; set; } = null!;
 
         /// <summary>
         /// The last name of the operator.
         /// </summary>
         [MessagePack.Key(5)]
         [StringLength(45)]
-        public string LastName { get; set; }
+        public string LastName { get; set; } = null!;
 
         /// <summary>
         /// The birth date of the operator.
@@ -75,42 +77,42 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(7)]
         [StringLength(255)]
-        public string Address { get; set; }
+        public string Address { get; set; } = null!;
 
         /// <summary>
         /// The city of the operator.
         /// </summary>
         [MessagePack.Key(8)]
         [StringLength(45)]
-        public string City { get; set; }
+        public string City { get; set; } = null!;
 
         /// <summary>
         /// The country of the operator.
         /// </summary>
         [MessagePack.Key(9)]
         [StringLength(45)]
-        public string Country { get; set; }
+        public string Country { get; set; } = null!;
 
         /// <summary>
         /// The post code of the operator.
         /// </summary>
         [MessagePack.Key(10)]
         [StringLength(20)]
-        public string PostCode { get; set; }
+        public string PostCode { get; set; } = null!;
 
         /// <summary>
         /// The phone number of the operator.
         /// </summary>
         [MessagePack.Key(11)]
         [StringLength(20)]
-        public string Phone { get; set; }
+        public string Phone { get; set; } = null!;
 
         /// <summary>
         /// The mobile phone number of the operator.
         /// </summary>
         [MessagePack.Key(12)]
         [StringLength(20)]
-        public string MobilePhone { get; set; }
+        public string MobilePhone { get; set; } = null!;
 
         /// <summary>
         /// The sex of the operator.
@@ -136,14 +138,14 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(16)]
         [StringLength(255)]
-        public string SmartCardUid { get; set; }
+        public string SmartCardUid { get; set; } = null!;
 
         /// <summary>
         /// The identification number of the operator.
         /// </summary>
         [MessagePack.Key(17)]
         [StringLength(255)]
-        public string Identification { get; set; }
+        public string Identification { get; set; } = null!;
 
         #endregion
 

@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
@@ -41,7 +43,7 @@ namespace Gizmo.Web.Api.Models
         [Required]
         [StringLength(30)]
         [MessagePack.Key(3)]
-        public string Username { get; set; }
+        public string Username { get; set; } = null!;
 
         /// <summary>
         /// The email of the user.
@@ -49,7 +51,7 @@ namespace Gizmo.Web.Api.Models
         [StringLength(254)]
         [EmailNullEmptyValidation]
         [MessagePack.Key(4)]
-        public string Email { get; set; }
+        public string Email { get; set; } = null!;
 
         /// <summary>
         /// The Id of the users group id this user belongs to.
@@ -90,14 +92,14 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [StringLength(45)]
         [MessagePack.Key(10)]
-        public string FirstName { get; set; }
+        public string FirstName { get; set; } = null!;
 
         /// <summary>
         /// The last name of the user.
         /// </summary>
         [StringLength(45)]
         [MessagePack.Key(11)]
-        public string LastName { get; set; }
+        public string LastName { get; set; } = null!;
 
         /// <summary>
         /// The birth date of the user.
@@ -110,42 +112,42 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [StringLength(255)]
         [MessagePack.Key(13)]
-        public string Address { get; set; }
+        public string Address { get; set; } = null!;
 
         /// <summary>
         /// The city of the user.
         /// </summary>
         [StringLength(45)]
         [MessagePack.Key(14)]
-        public string City { get; set; }
+        public string City { get; set; } = null!;
 
         /// <summary>
         /// The country of the user.
         /// </summary>
         [StringLength(45)]
         [MessagePack.Key(15)]
-        public string Country { get; set; }
+        public string Country { get; set; } = null!;
 
         /// <summary>
         /// The post code of the user.
         /// </summary>
         [StringLength(20)]
         [MessagePack.Key(16)]
-        public string PostCode { get; set; }
+        public string PostCode { get; set; } = null!;
 
         /// <summary>
         /// The phone number of the user.
         /// </summary>
         [StringLength(20)]
         [MessagePack.Key(17)]
-        public string Phone { get; set; }
+        public string Phone { get; set; } = null!;
 
         /// <summary>
         /// The mobile phone number of the user.
         /// </summary>
         [StringLength(20)]
         [MessagePack.Key(18)]
-        public string MobilePhone { get; set; }
+        public string MobilePhone { get; set; } = null!;
 
         /// <summary>
         /// The sex of the user.
@@ -171,14 +173,14 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [StringLength(255)]
         [MessagePack.Key(22)]
-        public string SmartCardUid { get; set; }
+        public string SmartCardUid { get; set; } = null!;
 
         /// <summary>
         /// The identification number of the user.
         /// </summary>
         [StringLength(255)]
         [MessagePack.Key(23)]
-        public string Identification { get; set; }
+        public string Identification { get; set; } = null!;
 
         #endregion
 

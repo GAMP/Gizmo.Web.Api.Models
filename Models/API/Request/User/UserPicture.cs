@@ -1,4 +1,8 @@
-﻿using MessagePack;
+﻿#nullable enable
+
+using MessagePack;
+
+using System;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -14,7 +18,7 @@ namespace Gizmo.Web.Api.Models
         /// The image data of the product image.
         /// </summary>
         [Key(0)]
-        public byte[] Picture { get; set; }
+        public byte[] Picture { get; set; } = Array.Empty<byte>();
 
         #endregion
     }

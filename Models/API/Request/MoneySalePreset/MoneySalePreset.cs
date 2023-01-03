@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
@@ -23,7 +25,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The value of the money sale preset.
         /// </summary>
-        [Range(0, double.MaxValue)]
+        [Range(0, double.MaxValue)] // TODO: double?
         [MessagePack.Key(1)]
         public decimal Value { get; set; }
 

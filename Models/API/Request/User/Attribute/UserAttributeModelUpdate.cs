@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
@@ -38,7 +40,7 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(3)]
         [Required]
         [StringLength(255)]
-        public string Value { get; set; }
+        public string Value { get; set; } = null!;
 
         #endregion
     }

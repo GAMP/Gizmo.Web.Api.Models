@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.Filters;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions.Models.Filters;
 using MessagePack;
 using System.Collections.Generic;
 
@@ -16,7 +18,7 @@ namespace Gizmo.Web.Api.Models
         /// Include specified objects in the result.
         /// </summary>
         [Key(0)]
-        public List<string> Expand { get; set; }
+        public List<string> Expand { get; set; } = new();
 
         #endregion
     }

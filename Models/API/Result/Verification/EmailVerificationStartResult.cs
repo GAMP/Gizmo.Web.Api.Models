@@ -1,6 +1,6 @@
 ﻿#nullable enable
 
-using Gizmo.Web.Api.Models.Abstractions.Models.API.Result;
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
@@ -11,7 +11,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Email verification start result model.
     /// </summary>
-    [MessagePackObject()]
+    [MessagePackObject]
     public sealed class EmailVerificationStartResult : IEmailTokenResultWithCode<VerificationStartResultCode>
     {
         #region PROPERTIES

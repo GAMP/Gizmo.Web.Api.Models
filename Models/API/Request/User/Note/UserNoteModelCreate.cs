@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
@@ -20,7 +22,7 @@ namespace Gizmo.Web.Api.Models
         [Required]
         [StringLength(65535)]
         [MessagePack.Key(0)]
-        public string Text { get; set; }
+        public string Text { get; set; } = null!;
 
         /// <summary>
         /// The severity of the note.

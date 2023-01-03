@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
@@ -39,19 +41,19 @@ namespace Gizmo.Web.Api.Models
         /// The taxes of the product.
         /// </summary>
         [MessagePack.Key(3)]
-        public IEnumerable<ProductTax> ProductTaxes { get; set; }
+        public IEnumerable<ProductTax>? ProductTaxes { get; set; }
 
         /// <summary>
         /// The images of the product.
         /// </summary>
         [MessagePack.Key(4)]
-        public IEnumerable<ProductImage> ProductImages { get; set; }
+        public IEnumerable<ProductImage>? ProductImages { get; set; }
 
         /// <summary>
         /// The purchase availability of the product.
         /// </summary>
         [MessagePack.Key(5)]
-        public ProductPurchaseAvailability ProductPurchaseAvailability { get; set; }
+        public ProductPurchaseAvailability? ProductPurchaseAvailability { get; set; } // TODO: Is reqired?
 
         /// <summary>
         /// The Id of the product group this product belongs to.
@@ -65,14 +67,14 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(7)]
         [Required]
         [StringLength(45)]
-        public string Name { get; set; }
+        public string Name { get; set; } = null!;
 
         /// <summary>
         /// The description of the product.
         /// </summary>
         [MessagePack.Key(8)]
         [StringLength(65535)]
-        public string Description { get; set; }
+        public string Description { get; set; } = null!;
 
         /// <summary>
         /// The price of the product.
@@ -128,7 +130,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(17)]
         [StringLength(255)]
-        public string Barcode { get; set; }
+        public string Barcode { get; set; } = null!;
 
         /// <summary>
         /// Enable stock.
@@ -194,13 +196,13 @@ namespace Gizmo.Web.Api.Models
         /// The time product object attached to this product if the product is a time product, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(28)]
-        public TimeProduct TimeProduct { get; set; }
+        public TimeProduct? TimeProduct { get; set; }
 
         /// <summary>
         /// The bundle object attached to this product if the product is a bundle, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(29)]
-        public Bundle Bundle { get; set; }
+        public Bundle? Bundle { get; set; }
 
         #endregion
     }

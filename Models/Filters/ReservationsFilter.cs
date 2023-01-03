@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.Filters;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions.Models.Filters;
 using MessagePack;
 using System;
 using System.Collections.Generic;
@@ -10,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for reservations.
     /// </summary>
     [MessagePackObject]
-    public sealed class ReservationsFilter : IFilterModel
+    public sealed class ReservationsFilter : IFilterApiModel
     {
         #region PROPERTIES
 
@@ -18,7 +20,7 @@ namespace Gizmo.Web.Api.Models
         /// Filter for cursor-based pagination.
         /// </summary>
         [MessagePack.Key(0)]
-        public PaginationFilter PaginationFilter { get; set; }
+        public PaginationFilter PaginationFilter { get; set; } = new();
 
         /// <summary>
         /// Return reservations where the date greater than or equal to the specified date.
@@ -50,20 +52,20 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [StringLength(20)]
         [MessagePack.Key(5)]
-        public string ContactPhone { get; set; }
+        public string ContactPhone { get; set; } = null!;
 
         /// <summary>
         /// Return reservations with the specified contact email.
         /// </summary>
         [StringLength(254)]
         [MessagePack.Key(6)]
-        public string ContactEmail { get; set; }
+        public string ContactEmail { get; set; } = null!;
 
         /// <summary>
         /// Include specified objects in the result.
         /// </summary>
         [MessagePack.Key(7)]
-        public List<string> Expand { get; set; }
+        public List<string> Expand { get; set; } = new();
 
         #endregion
     }

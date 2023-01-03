@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
@@ -32,21 +34,21 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [StringLength(255)]
         [MessagePack.Key(2)]
-        public string Path { get; set; }
+        public string Path { get; set; } = null!;
 
         /// <summary>
         /// The mounting options of the cd image.
         /// </summary>
         [StringLength(255)]
         [MessagePack.Key(3)]
-        public string MountOptions { get; set; }
+        public string MountOptions { get; set; } = null!;
 
         /// <summary>
         /// The device id of the cd image.
         /// </summary>
         [StringLength(3)]
         [MessagePack.Key(4)]
-        public string DeviceId { get; set; }
+        public string DeviceId { get; set; } = null!;
 
         /// <summary>
         /// Whether the cd image will check the mounter process exit code value while mounting.

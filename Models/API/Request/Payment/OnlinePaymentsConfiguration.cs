@@ -1,4 +1,6 @@
-﻿using MessagePack;
+﻿#nullable enable
+
+using MessagePack;
 
 using System.Collections.Generic;
 
@@ -16,7 +18,7 @@ namespace Gizmo.Web.Api.Models
         /// The preset amounts.
         /// </summary>
         [Key(0)]
-        public List<decimal> Presets { get; set; }
+        public List<decimal> Presets { get; set; } = new();
 
         /// <summary>
         /// Indicates whether the user can set custom value.

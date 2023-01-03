@@ -3,7 +3,7 @@ using System.Collections.Generic;
 namespace Gizmo.Web.Api.Models.Abstractions.Models.Filters
 {
     /// <summary>
-    /// Base filter for cursor-based pagination.
+    /// Specified objects in the result.
     /// </summary>
     public interface IGetOptionsFilterModel
     {

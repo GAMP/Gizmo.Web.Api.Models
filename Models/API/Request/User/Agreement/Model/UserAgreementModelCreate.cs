@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
@@ -16,13 +18,13 @@ namespace Gizmo.Web.Api.Models
         /// The name of the user agreement.
         /// </summary>
         [Key(0)]
-        public string Name { get; set; }
+        public string Name { get; set; } = null!;
 
         /// <summary>
         /// The user agreement text.
         /// </summary>
         [Key(1)]
-        public string Agreement { get; set; }
+        public string Agreement { get; set; } = null!;
 
         /// <summary>
         /// The display order of the user agreement.

@@ -1,4 +1,6 @@
-﻿using MessagePack;
+﻿#nullable enable
+
+using MessagePack;
 
 using System.ComponentModel.DataAnnotations;
 
@@ -25,7 +27,7 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(1)]
         [Required]
         [StringLength(65535)]
-        public string Data { get; set; }
+        public string Data { get; set; } = null!;
 
         /// <summary>
         /// Whether the script is awaited until exit.

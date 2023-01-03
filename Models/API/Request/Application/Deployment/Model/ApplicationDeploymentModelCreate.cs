@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
@@ -20,14 +22,14 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(0)]
         [Required]
         [StringLength(255)]
-        public string Name { get; set; }
+        public string Name { get; set; } = null!;
 
         /// <summary>
         /// The registry string of the deployment.
         /// </summary>
         [MessagePack.Key(1)]
         [StringLength(16777215)]
-        public string RegistryString { get; set; }
+        public string RegistryString { get; set; } = null!;
 
         /// <summary>
         /// The source of the deployment.
@@ -35,7 +37,7 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(2)]
         [Required]
         [StringLength(255)]
-        public string Source { get; set; }
+        public string Source { get; set; } = null!;
 
         /// <summary>
         /// The destination of the deployment.
@@ -43,7 +45,7 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(3)]
         [Required]
         [StringLength(255)]
-        public string Destination { get; set; }
+        public string Destination { get; set; } = null!;
 
         /// <summary>
         /// The deployment options of the deployment.
@@ -56,7 +58,7 @@ namespace Gizmo.Web.Api.Models
         /// The deployment options of the deployment.
         /// </summary>
         [MessagePack.Key(5)]
-        public ApplicationDeploymentOptions DeploymentOptions { get; set; }
+        public ApplicationDeploymentOptions? DeploymentOptions { get; set; }
 
         #endregion
     }

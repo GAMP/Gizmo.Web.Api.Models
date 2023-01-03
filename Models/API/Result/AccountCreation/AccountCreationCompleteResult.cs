@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Result;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
@@ -12,7 +14,7 @@ namespace Gizmo.Web.Api.Models
     /// <remarks>
     /// Used with non-verified account creation.
     /// </remarks>
-    [MessagePackObject()]
+    [MessagePackObject]
     public sealed class AccountCreationCompleteResult : IResultCode<AccountCreationCompleteResultCode>
     {
         #region PROPERTIES

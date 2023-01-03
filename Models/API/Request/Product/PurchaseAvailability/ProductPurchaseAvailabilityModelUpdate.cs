@@ -1,4 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.API.Request;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
@@ -43,7 +45,7 @@ namespace Gizmo.Web.Api.Models
         /// The days on which the product is available.
         /// </summary>
         [Key(4)]
-        public IEnumerable<ProductAvailabilityDay> DaysAvailable { get; set; }
+        public IEnumerable<ProductAvailabilityDay>? DaysAvailable { get; set; }
 
         #endregion
     }
