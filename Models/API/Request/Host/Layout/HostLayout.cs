@@ -1,10 +1,11 @@
 ﻿#nullable enable
 
+using Gizmo;
 using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Host.Layout
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Host layout.

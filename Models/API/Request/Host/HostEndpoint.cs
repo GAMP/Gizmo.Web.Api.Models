@@ -1,8 +1,10 @@
 #nullable enable
 
+using Gizmo;
+
 using MessagePack;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Host
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Host endpoint.

@@ -34,7 +34,7 @@ namespace Gizmo.Web.Api.Models
         /// The default rate of the billing profile.
         /// </summary>
         [MessagePack.Key(2)]
-        public BillingProfileRateModel DefaultRate { get; set; } = null!;
+        public BillingProfileRate DefaultRate { get; set; } = null!;
 
         #endregion
     }

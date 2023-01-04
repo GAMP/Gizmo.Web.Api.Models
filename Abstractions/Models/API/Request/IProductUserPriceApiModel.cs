@@ -1,7 +1,7 @@
 ﻿namespace Gizmo.Web.Api.Models.Abstractions
 {
     /// <summary>
-    /// Product user price base.
+    /// Product user price.
     /// </summary>
     public interface IProductUserPriceApiModel
     {

@@ -5,7 +5,7 @@ namespace Gizmo.Web.Api.Messaging
     /// <summary>
     /// Command message.
     /// </summary>
-    public abstract class APICommandMessage : CommandMessage
+    public abstract class APICommandMessage : CommandMessage, IAPICommandMessage
     {
         #region CONSTRUCTOR
         

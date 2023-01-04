@@ -1,9 +1,12 @@
 #nullable enable
 
+using Gizmo;
+
 using MessagePack;
+
 using System.ComponentModel.DataAnnotations;
 
-namespace Gizmo.Web.Api.Models.Models.API.Request.Host
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Host computer.
