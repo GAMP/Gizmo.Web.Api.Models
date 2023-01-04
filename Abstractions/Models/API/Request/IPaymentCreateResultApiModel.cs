@@ -5,7 +5,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
     /// <summary>
     /// Payment request creation result.
     /// </summary>
-    public interface IPaymentRequestCreateResultApiModel
+    public interface IPaymentCreateResultApiModel
     {
         /// <summary>
         /// Native QR Image to be used with payment apps.

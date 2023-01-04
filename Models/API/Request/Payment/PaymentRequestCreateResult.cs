@@ -12,26 +12,20 @@ namespace Gizmo.Web.Api.Models
     /// Payment intent creation result.
     /// </summary>
     [MessagePackObject]
-    public sealed class PaymentIntentCreateResult : IPaymentCreateResultApiModel
+    public sealed class PaymentRequestCreateResult : IPaymentCreateResultApiModel
     {
         #region PROPERTIES
 
         /// <summary>
-        /// Gets payment intent guid.
-        /// </summary>
-        [Key(0)]
-        public Guid PaymentIntent { get; init; }
-
-        /// <summary>
         /// Gets payment url.
         /// </summary>
-        [Key(1)]
+        [Key(0)]
         public string PaymentUrl { get; init; } = string.Empty;
 
         /// <summary>
         /// Gets QR Image.
         /// </summary>
-        [Key(2)]
+        [Key(1)]
         public string? QrImage { get; init; }
 
         /// <summary>
@@ -40,13 +34,13 @@ namespace Gizmo.Web.Api.Models
         /// <remarks>
         /// This value is optional.
         /// </remarks>
-        [Key(3)]
+        [Key(2)]
         public string? NativeQrImage { get; init; }
 
         /// <summary>
         /// Gets provider used to create the request.
         /// </summary>
-        [Key(4)]
+        [Key(3)]
         public Guid Provider { get; init; }
 
         #endregion
