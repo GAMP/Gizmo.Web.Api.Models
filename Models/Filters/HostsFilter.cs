@@ -24,7 +24,7 @@ namespace Gizmo.Web.Api.Models
         /// Return hosts with names that contain the specified string.
         /// </summary>
         [Key(1)]
-        public string HostName { get; set; } = null!;
+        public string? HostName { get; set; }
 
         /// <summary>
         /// Return deleted hosts.
