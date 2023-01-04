@@ -1,4 +1,9 @@
-﻿using MessagePack;
+﻿#nullable enable
+
+using Gizmo.Web.Api.Models.Abstractions;
+
+using MessagePack;
+
 using System;
 
 namespace Gizmo.Web.Api.Models
@@ -7,56 +12,68 @@ namespace Gizmo.Web.Api.Models
     /// Payment intent.
     /// </summary>
     [MessagePackObject]
-    public class PaymentIntentModelBase
+    public sealed class PaymentIntent : IPaymentIntentApiModel, IApiModelIdentifier
     {
         #region PROPERTIES
 
         /// <summary>
+        /// The Id of the object.
+        /// </summary>
+        [Key(0)]
+        public int Id { get; set; }
+
+        /// <summary>
+        /// The GUID of the payment intent.
+        /// </summary>
+        [Key(1)]
+        public Guid Guid { get; set; }
+
+        /// <summary>
         /// The date that the payment intent was created.
         /// </summary>
-        [MessagePack.Key(0)]
+        [Key(2)]
         public DateTime Date { get; set; }
 
         /// <summary>
         /// The Id of the user this payment intent is associated with.
         /// </summary>
-        [MessagePack.Key(1)]
+        [Key(3)]
         public int UserId { get; set; }
 
         /// <summary>
         /// The Id of the payment method this payment intent is associated with.
         /// </summary>
-        [MessagePack.Key(2)]
+        [Key(4)]
         public int PaymentMethodId { get; set; }
 
         /// <summary>
         /// The amount of the payment intent.
         /// </summary>
-        [MessagePack.Key(3)]
+        [Key(5)]
         public decimal Amount { get; set; }
 
         /// <summary>
         /// The state of the payment intent.
         /// </summary>
-        [MessagePack.Key(4)]
+        [Key(6)]
         public PaymentIntentState State { get; set; }
 
         /// <summary>
         /// Provider transaction id.
         /// </summary>
-        [MessagePack.Key(5)]
-        public string TransactionId { get; set; }
+        [Key(7)]
+        public string TransactionId { get; set; } = null!;
 
         /// <summary>
         /// Provider transaction time.
         /// </summary>
-        [MessagePack.Key(6)]
+        [Key(8)]
         public DateTime? TransactionTime { get; set; }
 
         /// <summary>
         /// The GUID of the provider this payment intent is associated with.
         /// </summary>
-        [MessagePack.Key(7)]
+        [Key(9)]
         public Guid Provider { get; set; }
 
         #endregion

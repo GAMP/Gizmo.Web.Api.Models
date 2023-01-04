@@ -48,7 +48,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Include specified objects in the result.
         /// </summary>
-        [MessagePack.Key(5)]
+        [Key(5)]
         public List<string> Expand { get; set; } = new();
 
         #endregion

@@ -15,7 +15,7 @@ namespace Gizmo.Web.Api.Models.Models.API.Request.Host
         /// <summary>
         /// The maximum number of users the endpoint can host.
         /// </summary>
-        [MessagePack.Key(0)]
+        [Key(0)]
         public int MaximumUsers { get; set; }
 
         #endregion

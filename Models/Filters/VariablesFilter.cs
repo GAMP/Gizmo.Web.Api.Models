@@ -21,7 +21,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Include specified objects in the result.
         /// </summary>
-        [MessagePack.Key(1)]
+        [Key(1)]
         public List<string> Expand { get; set; } = new();
     }
 }
