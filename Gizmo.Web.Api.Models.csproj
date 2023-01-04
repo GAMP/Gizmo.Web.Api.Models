@@ -24,6 +24,12 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <Compile Remove="Submodules\**" />
+	  <EmbeddedResource Remove="Submodules\**" />
+	  <None Remove="Submodules\**" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="MessagePack" Version="2.3.85" />
 		<PackageReference Include="Microsoft.AspNetCore.SignalR.Protocols.Json" Version="6.0.0" />
 		<PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
@@ -32,14 +38,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\Gizmo.Shared\Gizmo.Shared.csproj" />
-	</ItemGroup>
-
-	<ItemGroup>
 		<None Include="Resources\package_icon.png">
 			<Pack>True</Pack>
 			<PackagePath></PackagePath>
 		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="Submodules\Gizmo.Shared\Gizmo.Shared.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
