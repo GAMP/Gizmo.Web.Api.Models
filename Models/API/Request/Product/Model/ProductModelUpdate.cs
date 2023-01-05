@@ -32,7 +32,6 @@ namespace Gizmo.Web.Api.Models
         /// The name of the product.
         /// </summary>
         [MessagePack.Key(2)]
-        [Required]
         [StringLength(45)]
         public string Name { get; set; } = null!;
 
@@ -41,7 +40,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(3)]
         [StringLength(65535)]
-        public string Description { get; set; } = null!;
+        public string? Description { get; set; }
 
         /// <summary>
         /// The price of the product.
@@ -97,7 +96,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(12)]
         [StringLength(255)]
-        public string Barcode { get; set; } = null!;
+        public string? Barcode { get; set; }
 
         /// <summary>
         /// Enable stock.

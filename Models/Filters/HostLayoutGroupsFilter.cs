@@ -24,7 +24,7 @@ namespace Gizmo.Web.Api.Models
         /// Return layout groups with names that contain the specified string.
         /// </summary>
         [Key(1)]
-        public string LayoutGroupName { get; set; } = null!;
+        public string? LayoutGroupName { get; set; }
 
         /// <summary>
         /// Include specified objects in the result.

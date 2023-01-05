@@ -45,7 +45,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [Key(4)]
         public int? UserId { get; set; }
-       
+
         /// <summary>
         /// Include specified objects in the result.
         /// </summary>

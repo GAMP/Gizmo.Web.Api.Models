@@ -24,7 +24,7 @@ namespace Gizmo.Web.Api.Models
         /// Return executables with captions that contain the specified string.
         /// </summary>
         [Key(1)]
-        public string ExecutableCaption { get; set; } = null!;
+        public string? ExecutableCaption { get; set; }
 
         /// <summary>
         /// Return executables that belongs to the specified application.

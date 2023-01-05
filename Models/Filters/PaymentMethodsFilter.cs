@@ -24,7 +24,7 @@ namespace Gizmo.Web.Api.Models
         /// Return payment methods with names that contain the specified string.
         /// </summary>
         [Key(1)]
-        public string Name { get; set; } = null!;
+        public string? Name { get; set; }
 
         /// <summary>
         /// Return deleted payment methods.

@@ -24,7 +24,7 @@ namespace Gizmo.Web.Api.Models
         /// Return tasks with names that contain the specified string.
         /// </summary>
         [Key(1)]
-        public string TaskName { get; set; } = null!;
+        public string? TaskName { get; set; }
 
         /// <summary>
         /// Include specified objects in the result.

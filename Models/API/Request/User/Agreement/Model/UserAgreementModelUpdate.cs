@@ -24,13 +24,13 @@ namespace Gizmo.Web.Api.Models
         /// The name of the user agreement.
         /// </summary>
         [Key(1)]
-        public string Name { get; set; } = null!;
+        public string? Name { get; set; }
 
         /// <summary>
         /// The user agreement text.
         /// </summary>
         [Key(2)]
-        public string Agreement { get; set; } = null!;
+        public string? Agreement { get; set; }
 
         /// <summary>
         /// The display order of the user agreement.

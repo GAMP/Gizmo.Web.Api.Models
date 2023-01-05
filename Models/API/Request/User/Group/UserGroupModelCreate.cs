@@ -19,7 +19,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The name of the user group.
         /// </summary>
-        [Required]
         [StringLength(45)]
         [MessagePack.Key(0)]
         public string Name { get; set; } = null!;
@@ -29,7 +28,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [StringLength(255)]
         [MessagePack.Key(1)]
-        public string Description { get; set; } = null!;
+        public string? Description { get; set; }
 
         /// <summary>
         /// The Id of the billing profile this user group is associated with.
@@ -41,7 +40,7 @@ namespace Gizmo.Web.Api.Models
         /// The required user info object attached to this user group.
         /// </summary>
         [MessagePack.Key(3)]
-        public RequiredUserInfo? RequiredUserInfo { get; set; } // TODO: Is required?
+        public RequiredUserInfo? RequiredUserInfo { get; set; }
 
         /// <summary>
         /// Whether to override the default application group.

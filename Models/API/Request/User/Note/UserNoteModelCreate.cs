@@ -19,7 +19,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The text of the note.
         /// </summary>
-        [Required]
         [StringLength(65535)]
         [MessagePack.Key(0)]
         public string Text { get; set; } = null!;

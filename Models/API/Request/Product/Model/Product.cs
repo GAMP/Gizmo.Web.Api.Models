@@ -53,7 +53,7 @@ namespace Gizmo.Web.Api.Models
         /// The purchase availability of the product.
         /// </summary>
         [MessagePack.Key(5)]
-        public ProductPurchaseAvailability? ProductPurchaseAvailability { get; set; } // TODO: Is required?
+        public ProductPurchaseAvailability? ProductPurchaseAvailability { get; set; }
 
         /// <summary>
         /// The Id of the product group this product belongs to.
@@ -65,7 +65,6 @@ namespace Gizmo.Web.Api.Models
         /// The name of the product.
         /// </summary>
         [MessagePack.Key(7)]
-        [Required]
         [StringLength(45)]
         public string Name { get; set; } = null!;
 
@@ -74,7 +73,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(8)]
         [StringLength(65535)]
-        public string Description { get; set; } = null!;
+        public string? Description { get; set; }
 
         /// <summary>
         /// The price of the product.
@@ -130,7 +129,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(17)]
         [StringLength(255)]
-        public string Barcode { get; set; } = null!;
+        public string? Barcode { get; set; }
 
         /// <summary>
         /// Enable stock.

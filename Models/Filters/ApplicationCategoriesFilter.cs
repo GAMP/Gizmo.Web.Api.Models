@@ -24,7 +24,7 @@ namespace Gizmo.Web.Api.Models
         /// Return categories with names that contain the specified string.
         /// </summary>
         [Key(1)]
-        public string CategoryName { get; set; } = null!;
+        public string? CategoryName { get; set; }
 
         /// <summary>
         /// Return subcategories that belongs to the specified parent category.

@@ -22,7 +22,7 @@ namespace Gizmo.Web.Api.Models
         /// Return deployments with names that contain the specified string.
         /// </summary>
         [Key(1)]
-        public string DeploymentName { get; set; } = null!;
+        public string? DeploymentName { get; set; }
 
         /// <summary>
         /// Include specified objects in the result.

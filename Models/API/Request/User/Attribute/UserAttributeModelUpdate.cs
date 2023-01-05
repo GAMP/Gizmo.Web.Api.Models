@@ -38,7 +38,6 @@ namespace Gizmo.Web.Api.Models
         /// The value of the user attribute.
         /// </summary>
         [MessagePack.Key(3)]
-        [Required]
         [StringLength(255)]
         public string Value { get; set; } = null!;
 

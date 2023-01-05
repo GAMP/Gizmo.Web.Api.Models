@@ -38,7 +38,7 @@ namespace Gizmo.Web.Api.Models
         /// Return products with names that contain the specified string.
         /// </summary>
         [MessagePack.Key(3)]
-        public string ProductName { get; set; } = null!;
+        public string? ProductName { get; set; }
 
         /// <summary>
         /// Return deleted products.

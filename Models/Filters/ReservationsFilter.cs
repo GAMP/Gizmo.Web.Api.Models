@@ -52,14 +52,14 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [StringLength(20)]
         [MessagePack.Key(5)]
-        public string ContactPhone { get; set; } = null!;
+        public string? ContactPhone { get; set; }
 
         /// <summary>
         /// Return reservations with the specified contact email.
         /// </summary>
         [StringLength(254)]
         [MessagePack.Key(6)]
-        public string ContactEmail { get; set; } = null!;
+        public string? ContactEmail { get; set; }
 
         /// <summary>
         /// Include specified objects in the result.

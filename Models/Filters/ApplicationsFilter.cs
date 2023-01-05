@@ -24,7 +24,7 @@ namespace Gizmo.Web.Api.Models
         /// Return applications with titles that contain the specified string.
         /// </summary>
         [Key(1)]
-        public string ApplicationTitle { get; set; } = null!;
+        public string? ApplicationTitle { get; set; }
 
         /// <summary>
         /// Return applications that belongs to the specified category.

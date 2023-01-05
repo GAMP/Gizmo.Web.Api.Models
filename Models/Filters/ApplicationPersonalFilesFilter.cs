@@ -24,13 +24,13 @@ namespace Gizmo.Web.Api.Models
         /// Return personal files with names that contain the specified string.
         /// </summary>
         [Key(1)]
-        public string PersonalFileName { get; set; } = null!;
+        public string? PersonalFileName { get; set; }
 
         /// <summary>
         /// Return personal files with captions that contain the specified string.
         /// </summary>
         [Key(2)]
-        public string PersonalFileCaption { get; set; } = null!;
+        public string? PersonalFileCaption { get; set; }
 
         /// <summary>
         /// Include specified objects in the result.

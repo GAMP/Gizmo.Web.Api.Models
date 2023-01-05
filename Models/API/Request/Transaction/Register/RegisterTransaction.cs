@@ -64,7 +64,7 @@ namespace Gizmo.Web.Api.Models
         /// The note of the register transaction.
         /// </summary>
         [MessagePack.Key(7)]
-        public string Note { get; set; } = null!;
+        public string? Note { get; set; }
 
         #endregion
     }

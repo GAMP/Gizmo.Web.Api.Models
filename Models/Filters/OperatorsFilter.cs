@@ -24,7 +24,7 @@ namespace Gizmo.Web.Api.Models
         /// Return operators with usernames that contain the specified string.
         /// </summary>
         [Key(1)]
-        public string Username { get; set; } = null!;
+        public string? Username { get; set; }
 
         /// <summary>
         /// Return disabled operators.

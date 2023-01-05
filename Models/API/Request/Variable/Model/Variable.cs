@@ -25,7 +25,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The name of the variable.
         /// </summary>
-        [Required]
         [StringLength(255)]
         [MessagePack.Key(1)]
         public string Name { get; set; } = null!;
@@ -33,7 +32,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The value of the variable.
         /// </summary>
-        [Required]
         [MessagePack.Key(2)]
         public string Value { get; set; } = null!;
 

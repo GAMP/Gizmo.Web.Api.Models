@@ -32,7 +32,6 @@ namespace Gizmo.Web.Api.Models
         /// The name of the register.
         /// </summary>
         [MessagePack.Key(2)]
-        [Required]
         [StringLength(45)]
         public string Name { get; set; } = null!;
 
@@ -42,14 +41,14 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(3)]
         [StringLength(255)]
         [MacAddressValidation]
-        public string MacAddress { get; set; } = null!;
+        public string? MacAddress { get; set; }
 
         /// <summary>
         /// The start cash of the register.
         /// </summary>
         [MessagePack.Key(4)]
         [Range(0, double.MaxValue)]
-        public decimal StartCash { get; set; }
+        public decimal StartCash { get; set; } //TODO: Double?
 
         /// <summary>
         /// The idle timeout of the register.

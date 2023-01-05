@@ -48,7 +48,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(4)]
         [StringLength(20)]
-        public string ContactPhone { get; set; } = null!;
+        public string? ContactPhone { get; set; }
 
         /// <summary>
         /// The contact email of the reservation.
@@ -56,19 +56,18 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(5)]
         [StringLength(254)]
         [EmailNullEmptyValidation]
-        public string ContactEmail { get; set; } = null!;
+        public string? ContactEmail { get; set; }
 
         /// <summary>
         /// The note of the reservation.
         /// </summary>
         [MessagePack.Key(6)]
-        public string Note { get; set; } = null!;
+        public string? Note { get; set; }
 
         /// <summary>
         /// The pin of the reservation.
         /// </summary>
         [MessagePack.Key(7)]
-        [Required]
         [StringLength(6)]
         public string Pin { get; set; } = null!;
 

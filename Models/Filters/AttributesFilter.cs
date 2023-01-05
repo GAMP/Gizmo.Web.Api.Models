@@ -24,7 +24,7 @@ namespace Gizmo.Web.Api.Models
         /// Return attributes with names that contain the specified string.
         /// </summary>
         [Key(1)]
-        public string AttributeName { get; set; } = null!;
+        public string? AttributeName { get; set; }
 
         /// <summary>
         /// Include specified objects in the result.
