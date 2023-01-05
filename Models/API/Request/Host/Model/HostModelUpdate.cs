@@ -39,7 +39,6 @@ namespace Gizmo.Web.Api.Models
         /// The name of the host.
         /// </summary>
         [MessagePack.Key(3)]
-        [Required]
         [StringLength(45)]
         public string Name { get; set; } = null!;
 
@@ -71,13 +70,13 @@ namespace Gizmo.Web.Api.Models
         /// The host computer object attached to this host if the host is a computer, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(8)]
-        public HostComputer? HostComputer { get; set; } //TODO: Is required?
+        public HostComputer? HostComputer { get; set; }
 
         /// <summary>
         /// The host endpoint object attached to this host if the host is an endpoint, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(9)]
-        public HostEndpoint? HostEndpoint { get; set; } //TODO: Is required?
+        public HostEndpoint? HostEndpoint { get; set; }
 
         #endregion
     }

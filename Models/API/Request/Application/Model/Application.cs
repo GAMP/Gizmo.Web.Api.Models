@@ -33,7 +33,6 @@ namespace Gizmo.Web.Api.Models
         /// The title of the application.
         /// </summary>
         [MessagePack.Key(2)]
-        [Required]
         [StringLength(255)]
         public string Title { get; set; } = null!;
 
@@ -41,14 +40,14 @@ namespace Gizmo.Web.Api.Models
         /// The description of the application.
         /// </summary>
         [MessagePack.Key(3)]
-        public string Description { get; set; } = null!;
+        public string? Description { get; set; }
 
         /// <summary>
         /// The version of the application.
         /// </summary>
         [MessagePack.Key(4)]
         [StringLength(45)]
-        public string Version { get; set; } = null!;
+        public string? Version { get; set; }
 
         /// <summary>
         /// The Id of the application category this application belongs to.

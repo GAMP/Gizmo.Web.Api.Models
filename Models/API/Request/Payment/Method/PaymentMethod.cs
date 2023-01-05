@@ -26,7 +26,6 @@ namespace Gizmo.Web.Api.Models
         /// The name of the payment method.
         /// </summary>
         [MessagePack.Key(1)]
-        [Required]
         [StringLength(45)]
         public string Name { get; set; } = null!;
 

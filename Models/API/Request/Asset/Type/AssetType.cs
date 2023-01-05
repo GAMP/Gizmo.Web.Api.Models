@@ -26,7 +26,6 @@ namespace Gizmo.Web.Api.Models
         /// The name of the asset type.
         /// </summary>
         [MessagePack.Key(1)]
-        [Required]
         [StringLength(45)]
         public string Name { get; set; } = null!;
 
@@ -34,7 +33,7 @@ namespace Gizmo.Web.Api.Models
         /// The description of the asset type.
         /// </summary>
         [MessagePack.Key(2)]
-        public string Description { get; set; } = null!;
+        public string? Description { get; set; }
 
         #endregion
     }

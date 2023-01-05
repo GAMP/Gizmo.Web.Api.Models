@@ -40,7 +40,6 @@ namespace Gizmo.Web.Api.Models
         /// The name of the task.
         /// </summary>
         [MessagePack.Key(3)]
-        [Required]
         [StringLength(45)]
         public string Name { get; set; } = null!;
 
@@ -48,25 +47,25 @@ namespace Gizmo.Web.Api.Models
         /// The junction object attached to this task if the task is a junction task, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(4)]
-        public ApplicationTaskJunction? TaskJunction { get; set; } //TODO: Is required?
+        public ApplicationTaskJunction? TaskJunction { get; set; }
 
         /// <summary>
         /// The notification object attached to this task if the task is a notification task, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(5)]
-        public ApplicationTaskNotification? TaskNotification { get; set; } //TODO: Is required?
+        public ApplicationTaskNotification? TaskNotification { get; set; }
 
         /// <summary>
         /// The process object attached to this task if the task is a process task, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(6)]
-        public ApplicationTaskProcess? TaskProcess { get; set; } //TODO: Is required?
+        public ApplicationTaskProcess? TaskProcess { get; set; }
 
         /// <summary>
         /// The script object attached to this task if the task is a script task, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(7)]
-        public ApplicationTaskScript? TaskScript { get; set; } //TODO: Is required?
+        public ApplicationTaskScript? TaskScript { get; set; }
 
         #endregion
     }

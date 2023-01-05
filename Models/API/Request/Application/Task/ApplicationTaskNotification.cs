@@ -18,7 +18,6 @@ namespace Gizmo.Web.Api.Models
         /// The title of the notification.
         /// </summary>
         [MessagePack.Key(0)]
-        [Required]
         [StringLength(255)]
         public string Title { get; set; } = null!;
 
@@ -26,7 +25,6 @@ namespace Gizmo.Web.Api.Models
         /// The message of the notification.
         /// </summary>
         [MessagePack.Key(1)]
-        [Required]
         [StringLength(65536)]
         public string Message { get; set; } = null!;
 

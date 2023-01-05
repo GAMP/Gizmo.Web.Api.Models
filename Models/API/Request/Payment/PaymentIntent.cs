@@ -62,7 +62,7 @@ namespace Gizmo.Web.Api.Models
         /// Provider transaction id.
         /// </summary>
         [Key(7)]
-        public string TransactionId { get; set; } = null!;
+        public string? TransactionId { get; set; }
 
         /// <summary>
         /// Provider transaction time.

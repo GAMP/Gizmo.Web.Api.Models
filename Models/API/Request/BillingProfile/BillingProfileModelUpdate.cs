@@ -27,14 +27,13 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(1)]
         [StringLength(255)]
-        [Required]
         public string Name { get; set; } = null!;
 
         /// <summary>
         /// The default rate of the billing profile.
         /// </summary>
         [MessagePack.Key(2)]
-        public BillingProfileRate DefaultRate { get; set; } = null!;
+        public BillingProfileRate? DefaultRate { get; set; }
 
         #endregion
     }

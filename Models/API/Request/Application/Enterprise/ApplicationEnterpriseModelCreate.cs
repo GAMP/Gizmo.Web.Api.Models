@@ -20,7 +20,6 @@ namespace Gizmo.Web.Api.Models
         /// The name of the enterprise.
         /// </summary>
         [MessagePack.Key(0)]
-        [Required]
         [StringLength(255)]
         public string Name { get; set; } = null!;
 

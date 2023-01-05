@@ -39,28 +39,28 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(3)]
         [StringLength(255)]
-        public string Tag { get; set; } = null!;
+        public string? Tag { get; set; }
 
         /// <summary>
         /// The smart card unique id of the asset.
         /// </summary>
         [MessagePack.Key(4)]
         [StringLength(255)]
-        public string SmartCardUid { get; set; } = null!;
+        public string? SmartCardUid { get; set; }
 
         /// <summary>
         /// The barcode of the asset.
         /// </summary>
         [MessagePack.Key(5)]
         [StringLength(255)]
-        public string Barcode { get; set; } = null!;
+        public string? Barcode { get; set; }
 
         /// <summary>
         /// The serial number of the asset.
         /// </summary>
         [MessagePack.Key(6)]
         [StringLength(255)]
-        public string SerialNumber { get; set; } = null!;
+        public string? SerialNumber { get; set; }
 
         /// <summary>
         /// Whether the asset is enabled.

@@ -141,7 +141,8 @@ namespace Gizmo.Web.Api.Models
 
             return target.GetType()
                 .GetProperties(BindingFlags.Instance | BindingFlags.Public)
-                .Where(prop => prop.GetCustomAttribute<DataMemberAttribute>() != null)
+                //TODO: Solve DataMemberAttribute task
+                //.Where(prop => prop.GetCustomAttribute<DataMemberAttribute>() != null)
                 .Select(prop => prop)
                 .ToList();
         } 

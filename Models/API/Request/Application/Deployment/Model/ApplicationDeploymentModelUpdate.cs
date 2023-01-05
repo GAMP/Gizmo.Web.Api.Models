@@ -26,7 +26,6 @@ namespace Gizmo.Web.Api.Models
         /// The name of the deployment.
         /// </summary>
         [MessagePack.Key(1)]
-        [Required]
         [StringLength(255)]
         public string Name { get; set; } = null!;
 
@@ -35,13 +34,12 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(2)]
         [StringLength(16777215)]
-        public string RegistryString { get; set; } = null!;
+        public string? RegistryString { get; set; }
 
         /// <summary>
         /// The source of the deployment.
         /// </summary>
         [MessagePack.Key(3)]
-        [Required]
         [StringLength(255)]
         public string Source { get; set; } = null!;
 
@@ -49,7 +47,6 @@ namespace Gizmo.Web.Api.Models
         /// The destination of the deployment.
         /// </summary>
         [MessagePack.Key(4)]
-        [Required]
         [StringLength(255)]
         public string Destination { get; set; } = null!;
 

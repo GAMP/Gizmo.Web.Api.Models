@@ -1,6 +1,5 @@
 ﻿#nullable enable
 
-using Gizmo.Web.Api.Models;
 using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
@@ -25,24 +24,23 @@ namespace Gizmo.Web.Api.Models
         public int Id { get; set; }
 
         /// <summary>
-        /// The host layouts of the host layout group.
-        /// </summary>
-        [MessagePack.Key(1)]
-        public IEnumerable<HostLayout>? HostLayouts { get; set; }
-
-        /// <summary>
         /// The name of the host group.
         /// </summary>
-        [MessagePack.Key(2)]
-        [Required]
+        [MessagePack.Key(1)]
         [StringLength(45)]
         public string Name { get; set; } = null!;
 
         /// <summary>
         /// The display order of the layout group.
         /// </summary>
-        [MessagePack.Key(3)]
+        [MessagePack.Key(2)]
         public int DisplayOrder { get; set; }
+
+        /// <summary>
+        /// The host layouts of the host layout group.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public IEnumerable<HostLayout>? HostLayouts { get; set; }
 
         #endregion
     }

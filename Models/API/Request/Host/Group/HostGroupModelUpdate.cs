@@ -26,7 +26,6 @@ namespace Gizmo.Web.Api.Models
         /// The name of the host group.
         /// </summary>
         [MessagePack.Key(1)]
-        [Required]
         [StringLength(45)]
         public string Name { get; set; } = null!;
 
@@ -35,7 +34,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(2)]
         [StringLength(255)]
-        public string SkinName { get; set; } = null!;
+        public string? SkinName { get; set; }
 
         /// <summary>
         /// The Id of the application profile this host group is associated with.

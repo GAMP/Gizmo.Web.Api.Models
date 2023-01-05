@@ -33,7 +33,6 @@ namespace Gizmo.Web.Api.Models
         /// The name of the personal file.
         /// </summary>
         [MessagePack.Key(2)]
-        [Required]
         [StringLength(255)]
         public string Name { get; set; } = null!;
 
@@ -42,14 +41,14 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(3)]
         [StringLength(255)]
-        public string Caption { get; set; } = null!;
+        public string? Caption { get; set; }
 
         /// <summary>
         /// The description of the personal file.
         /// </summary>
         [MessagePack.Key(4)]
         [StringLength(255)]
-        public string Description { get; set; } = null!;
+        public string? Description { get; set; }
 
         /// <summary>
         /// Whether the personal file is accessible.
@@ -61,7 +60,6 @@ namespace Gizmo.Web.Api.Models
         /// The source path of the personal file.
         /// </summary>
         [MessagePack.Key(6)]
-        [Required]
         [StringLength(255)]
         public string Source { get; set; } = null!;
 
@@ -100,7 +98,7 @@ namespace Gizmo.Web.Api.Models
         /// The directory options object attached to this personal file if the personal file type is file, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(12)]
-        public ApplicationPersonalFileDirectoryOptions? DirectoryOptions { get; set; } // TODO: Is required?
+        public ApplicationPersonalFileDirectoryOptions? DirectoryOptions { get; set; }
 
         #endregion
     }

@@ -40,7 +40,7 @@ namespace Gizmo.Web.Api.Models
         /// The name of the item in the invoice line.
         /// </summary>
         [MessagePack.Key(3)]
-        public string ProductName { get; set; } = null!;
+        public string? ProductName { get; set; }
 
         /// <summary>
         /// The quantity of items in the invoice line.
@@ -118,13 +118,13 @@ namespace Gizmo.Web.Api.Models
         /// The product object attached to this invoice line if the invoice line refers to a product, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(16)]
-        public LineProduct? Product { get; set; } //TODO: Is required?
+        public LineProduct? Product { get; set; }
 
         /// <summary>
         /// The time product object attached to this invoice line if the invoice line refers to a time product, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(17)]
-        public LineProduct? TimeProduct { get; set; } //TODO: Is required?
+        public LineProduct? TimeProduct { get; set; }
 
         /// <summary>
         /// The Id of the bundle line this line belongs to if the line refers to a bundled product, otherwise it will be null.

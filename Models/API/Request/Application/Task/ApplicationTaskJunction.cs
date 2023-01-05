@@ -18,7 +18,6 @@ namespace Gizmo.Web.Api.Models
         /// The source directory of the junction.
         /// </summary>
         [MessagePack.Key(0)]
-        [Required]
         [StringLength(255)]
         public string SourceDirectory { get; set; } = null!;
 
@@ -26,7 +25,6 @@ namespace Gizmo.Web.Api.Models
         /// The destination directory of the junction.
         /// </summary>
         [MessagePack.Key(1)]
-        [Required]
         [StringLength(255)]
         public string DestinationDirectory { get; set; } = null!;
 

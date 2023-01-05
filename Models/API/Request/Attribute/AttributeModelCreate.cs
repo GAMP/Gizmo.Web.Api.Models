@@ -20,7 +20,6 @@ namespace Gizmo.Web.Api.Models
         /// The name of the attribute.
         /// </summary>
         [MessagePack.Key(0)]
-        [Required]
         [StringLength(45)]
         public string Name { get; set; } = null!;
 
@@ -29,7 +28,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(1)]
         [StringLength(45)]
-        public string FriendlyName { get; set; } = null!;
+        public string? FriendlyName { get; set; }
 
         #endregion
     }

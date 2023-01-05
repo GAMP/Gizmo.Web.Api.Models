@@ -19,7 +19,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(0)]
         [StringLength(255)]
-        public string UniqueId { get; set; } = null!;
+        public string? UniqueId { get; set; }
 
         #endregion
     }

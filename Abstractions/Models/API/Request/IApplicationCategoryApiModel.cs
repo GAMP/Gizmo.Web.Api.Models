@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace Gizmo.Web.Api.Models.Abstractions
+﻿namespace Gizmo.Web.Api.Models.Abstractions
 {
     /// <summary>
     /// Application category.
@@ -10,7 +8,6 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// The name of the application category.
         /// </summary>
-        [StringLength(45)]
         string Name { get; set; }
 
         /// <summary>

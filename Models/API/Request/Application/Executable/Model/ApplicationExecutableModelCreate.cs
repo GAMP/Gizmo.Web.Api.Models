@@ -27,25 +27,24 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [StringLength(255)]
         [MessagePack.Key(1)]
-        public string Caption { get; set; } = null!;
+        public string? Caption { get; set; }
 
         /// <summary>
         /// The description of the executable.
         /// </summary>
         [StringLength(255)]
         [MessagePack.Key(2)]
-        public string Description { get; set; } = null!;
+        public string? Description { get; set; }
 
         /// <summary>
         /// The application modes object attached to this executable.
         /// </summary>
         [MessagePack.Key(3)]
-        public ApplicationModes? ApplicationModes { get; set; } //TODO: Is required?
+        public ApplicationModes? ApplicationModes { get; set; }
 
         /// <summary>
         /// The path of the executable.
         /// </summary>
-        [Required]
         [StringLength(255)]
         [MessagePack.Key(4)]
         public string ExecutablePath { get; set; } = null!;
@@ -55,14 +54,14 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [StringLength(255)]
         [MessagePack.Key(5)]
-        public string WorkingDirectory { get; set; } = null!;
+        public string? WorkingDirectory { get; set; }
 
         /// <summary>
         /// The arguments of the executable.
         /// </summary>
         [StringLength(255)]
         [MessagePack.Key(6)]
-        public string Arguments { get; set; } = null!;
+        public string? Arguments { get; set; }
 
         /// <summary>
         /// The run mode of the executable.
@@ -82,7 +81,7 @@ namespace Gizmo.Web.Api.Models
         /// The executable options object attached to this executable.
         /// </summary>
         [MessagePack.Key(9)]
-        public ApplicationExecutableOptions? ExecutableOptions { get; set; } //TODO: Is required?
+        public ApplicationExecutableOptions? ExecutableOptions { get; set; }
 
         /// <summary>
         /// The display order of the executable.

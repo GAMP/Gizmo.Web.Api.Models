@@ -40,7 +40,7 @@ namespace Gizmo.Web.Api.Models
         /// The name of the item in the order line.
         /// </summary>
         [MessagePack.Key(3)]
-        public string ProductName { get; set; } = null!;
+        public string? ProductName { get; set; }
 
         /// <summary>
         /// The quantity of items in the order line.

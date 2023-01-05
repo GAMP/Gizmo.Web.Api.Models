@@ -37,9 +37,8 @@ namespace Gizmo.Web.Api.Models
         /// Gets payment description.
         /// </summary>
         [MessagePack.Key(2)]
-        [Required]
         [StringLength(255, MinimumLength = 1)]
-        public string Description { get; init; } = string.Empty;
+        public string Description { get; init; } = null!;
 
         /// <summary>
         /// Gets cancel url.

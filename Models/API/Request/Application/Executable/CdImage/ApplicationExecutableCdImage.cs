@@ -34,21 +34,21 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [StringLength(255)]
         [MessagePack.Key(2)]
-        public string Path { get; set; } = null!;
+        public string? Path { get; set; }
 
         /// <summary>
         /// The mounting options of the cd image.
         /// </summary>
         [StringLength(255)]
         [MessagePack.Key(3)]
-        public string MountOptions { get; set; } = null!;
+        public string? MountOptions { get; set; }
 
         /// <summary>
         /// The device id of the cd image.
         /// </summary>
         [StringLength(3)]
         [MessagePack.Key(4)]
-        public string DeviceId { get; set; } = null!;
+        public string? DeviceId { get; set; }
 
         /// <summary>
         /// Whether the cd image will check the mounter process exit code value while mounting.

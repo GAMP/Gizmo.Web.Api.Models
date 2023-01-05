@@ -20,7 +20,6 @@ namespace Gizmo.Web.Api.Models
         /// The name of the host group.
         /// </summary>
         [MessagePack.Key(0)]
-        [Required]
         [StringLength(45)]
         public string Name { get; set; } = null!;
 

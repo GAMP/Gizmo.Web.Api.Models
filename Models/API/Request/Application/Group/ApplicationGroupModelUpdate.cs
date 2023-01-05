@@ -20,14 +20,12 @@ namespace Gizmo.Web.Api.Models
         /// The Id of the object.
         /// </summary>
         [MessagePack.Key(0)]
-        [Required]
         public int Id { get; set; }
 
         /// <summary>
         /// The name of the application group.
         /// </summary>
         [MessagePack.Key(1)]
-        [Required]
         [StringLength(45)]
         public string Name { get; set; } = null!;
 

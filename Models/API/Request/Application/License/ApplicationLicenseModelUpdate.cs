@@ -26,7 +26,6 @@ namespace Gizmo.Web.Api.Models
         /// The name of the license.
         /// </summary>
         [MessagePack.Key(1)]
-        [Required]
         [StringLength(255)]
         public string Name { get; set; } = null!;
 
@@ -34,7 +33,6 @@ namespace Gizmo.Web.Api.Models
         /// The plugin type name of the license.
         /// </summary>
         [MessagePack.Key(2)]
-        [Required]
         [StringLength(255)]
         public string Plugin { get; set; } = null!;
 
@@ -42,7 +40,6 @@ namespace Gizmo.Web.Api.Models
         /// The plugin assembly of the license.
         /// </summary>
         [MessagePack.Key(3)]
-        [Required]
         [StringLength(255)]
         public string Assembly { get; set; } = null!;
 

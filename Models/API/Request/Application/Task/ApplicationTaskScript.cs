@@ -25,7 +25,6 @@ namespace Gizmo.Web.Api.Models
         /// The data of the script.
         /// </summary>
         [MessagePack.Key(1)]
-        [Required]
         [StringLength(65535)]
         public string Data { get; set; } = null!;
 

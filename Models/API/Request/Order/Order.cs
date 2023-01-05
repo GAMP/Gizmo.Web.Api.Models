@@ -28,7 +28,7 @@ namespace Gizmo.Web.Api.Models
         /// The invoice of the order.
         /// </summary>
         [MessagePack.Key(1)]
-        public Invoice? Invoice { get; set; } // TODO: Is required?
+        public Invoice? Invoice { get; set; }
 
         /// <summary>
         /// The date that the order was created.
@@ -59,7 +59,7 @@ namespace Gizmo.Web.Api.Models
         /// The user note of the order.
         /// </summary>
         [MessagePack.Key(6)]
-        public string UserNote { get; set; } = null!;
+        public string? UserNote { get; set; }
 
         /// <summary>
         /// Whether the order is delivered.

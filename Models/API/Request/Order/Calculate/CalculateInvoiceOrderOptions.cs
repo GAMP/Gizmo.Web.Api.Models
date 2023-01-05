@@ -20,7 +20,7 @@ namespace Gizmo.Web.Api.Models
         /// The order object to invoice.
         /// </summary>
         [Key(0)]
-        public CalculateOrderOptionsModel Order { get; set; } = null!;
+        public CalculateOrderOptionsModel? Order { get; set; }
 
         /// <summary>
         /// The list of payments for the invoice.
