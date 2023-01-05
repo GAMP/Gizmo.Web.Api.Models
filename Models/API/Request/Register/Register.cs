@@ -47,8 +47,8 @@ namespace Gizmo.Web.Api.Models
         /// The start cash of the register.
         /// </summary>
         [MessagePack.Key(4)]
-        [Range(0, double.MaxValue)]
-        public decimal StartCash { get; set; } //TODO: Double?
+        [Range(0.0, 1_000_000_000_000)]
+        public decimal StartCash { get; set; }
 
         /// <summary>
         /// The idle timeout of the register.

@@ -19,7 +19,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The value of the money sale preset.
         /// </summary>
-        [Range(0, double.MaxValue)] //TODO: double?
+        [Range(0.0, 1_000_000_000_000)]
         [MessagePack.Key(0)]
         public decimal Value { get; set; }
 
