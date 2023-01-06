@@ -5,6 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.Serialization;
+using System.Text.Json.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -141,8 +142,8 @@ namespace Gizmo.Web.Api.Models
 
             return target.GetType()
                 .GetProperties(BindingFlags.Instance | BindingFlags.Public)
-                //TODO: Solve DataMemberAttribute task
-                //.Where(prop => prop.GetCustomAttribute<DataMemberAttribute>() != null)
+                //TODO: How needs excluding the route parameters here
+                .Where(prop => prop.GetCustomAttribute<JsonIgnoreAttribute>() == null)
                 .Select(prop => prop)
                 .ToList();
         } 
