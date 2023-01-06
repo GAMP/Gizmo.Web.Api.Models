@@ -1,5 +1,6 @@
 ﻿#nullable enable
 
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using Gizmo.Web.Api.Models.Abstractions.Models.Filters;
@@ -10,7 +11,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Filters that can be applied when searching for users.
     /// </summary>
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public sealed class UsersFilter : IFilterApiModel
     {
         #region PROPERTIES

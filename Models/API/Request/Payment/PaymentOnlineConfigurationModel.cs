@@ -2,6 +2,7 @@
 
 using MessagePack;
 
+using System;
 using System.Collections.Generic;
 
 namespace Gizmo.Web.Api.Models
@@ -9,7 +10,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Online payments configuration model.
     /// </summary>
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public sealed class PaymentOnlineConfigurationModel
     {
         #region PROPERTIES

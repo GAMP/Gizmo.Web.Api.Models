@@ -4,6 +4,7 @@ using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
+using System;
 using System.Text.Json.Serialization;
 
 namespace Gizmo.Web.Api.Models
@@ -14,7 +15,7 @@ namespace Gizmo.Web.Api.Models
     /// <remarks>
     /// Used with non-verified account creation.
     /// </remarks>
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public sealed class AccountCreationCompleteResult : IResultCode<AccountCreationCompleteResultCode>
     {
         #region PROPERTIES

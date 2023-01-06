@@ -1,5 +1,6 @@
 ﻿#nullable enable
 
+using System;
 using System.ComponentModel.DataAnnotations;
 
 using Gizmo.Web.Api.Models.Abstractions;
@@ -11,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Device creation model.
     /// </summary>
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public sealed class DeviceModelCreate : IDeviceApiModel
     {
         #region PROPERTIES

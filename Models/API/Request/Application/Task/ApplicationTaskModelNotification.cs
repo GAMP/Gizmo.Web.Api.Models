@@ -2,6 +2,7 @@
 
 using MessagePack;
 
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Web.Api.Models
@@ -9,7 +10,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Application task notification.
     /// </summary>
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public sealed class ApplicationTaskModelNotification
     {
         #region PROPERTIES

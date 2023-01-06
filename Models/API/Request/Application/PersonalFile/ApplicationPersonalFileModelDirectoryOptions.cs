@@ -2,12 +2,14 @@
 
 using MessagePack;
 
+using System;
+
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Application personal file directory options.
     /// </summary>
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public sealed class ApplicationPersonalFileModelDirectoryOptions
     {
         #region PROPERTIES

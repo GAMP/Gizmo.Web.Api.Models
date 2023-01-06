@@ -4,6 +4,7 @@ using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Web.Api.Models
@@ -11,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Invoice line.
     /// </summary>
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public sealed class InvoiceModelLine : IInvoiceLineApiModel, IApiModelIdentifier
     {
         #region PROPERTIES
@@ -118,13 +119,13 @@ namespace Gizmo.Web.Api.Models
         /// The product object attached to this invoice line if the invoice line refers to a product, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(16)]
-        public LineProduct? Product { get; set; }
+        public ProductLineModel? Product { get; set; }
 
         /// <summary>
         /// The time product object attached to this invoice line if the invoice line refers to a time product, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(17)]
-        public LineProduct? TimeProduct { get; set; }
+        public ProductLineModel? TimeProduct { get; set; }
 
         /// <summary>
         /// The Id of the bundle line this line belongs to if the line refers to a bundled product, otherwise it will be null.

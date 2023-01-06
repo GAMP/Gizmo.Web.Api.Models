@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Product purchase availability.
     /// </summary>
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public sealed class ProductPurchaseAvailabilityModelUpdate : IProductPurchaseAvailabilityApiModel, IUrlQueryParameters
     {
         #region PROPERTIES
@@ -45,7 +45,7 @@ namespace Gizmo.Web.Api.Models
         /// The days on which the product is available.
         /// </summary>
         [Key(4)]
-        public IEnumerable<ProductAvailabilityDay>? DaysAvailable { get; set; }
+        public IEnumerable<ProductModelAvailabilityDay>? DaysAvailable { get; set; }
 
         #endregion
     }

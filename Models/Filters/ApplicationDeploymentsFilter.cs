@@ -1,5 +1,6 @@
 ﻿#nullable enable
 
+using System;
 using System.Collections.Generic;
 using Gizmo.Web.Api.Models.Abstractions.Models.Filters;
 using MessagePack;
@@ -9,7 +10,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Filters that can be applied when searching for application deployments.
     /// </summary>
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public sealed class ApplicationDeploymentsFilter : IFilterApiModel
     {
         /// <summary>

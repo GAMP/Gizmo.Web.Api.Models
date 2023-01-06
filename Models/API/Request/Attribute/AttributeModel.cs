@@ -4,6 +4,7 @@ using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Web.Api.Models
@@ -11,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Attribute.
     /// </summary>
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public sealed class AttributeModel : IAttributeApiModel, IApiModelIdentifier
     {
         #region PROPERTIES

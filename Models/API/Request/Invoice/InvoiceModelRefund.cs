@@ -11,7 +11,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Invoice refund.
     /// </summary>
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public sealed class InvoiceModelRefund : IApiModelIdentifier
     {
         #region PROPERTIES

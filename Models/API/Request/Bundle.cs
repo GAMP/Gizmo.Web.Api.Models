@@ -2,12 +2,14 @@
 
 using MessagePack;
 
+using System;
+
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Bundle.
     /// </summary>
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public sealed class Bundle
     {
         #region PROPERTIES

@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Operator.
     /// </summary>
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public sealed class OperatorModel : IOperatorApiModel, IApiModelIdentifier
     {
         #region PROPERTIES

@@ -4,6 +4,7 @@ using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
@@ -12,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Billing profile.
     /// </summary>
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public sealed class BillingProfileModel : IBillingProfileApiModel, IApiModelIdentifier
     {
         #region PROPERTIES

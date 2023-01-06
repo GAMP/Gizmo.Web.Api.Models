@@ -123,6 +123,6 @@
         /// <summary>
         /// The time product object attached to this product if the product is a time product, otherwise it will be null.
         /// </summary>
-        TimeProduct TimeProduct { get; set; }
+        ProductTime TimeProduct { get; set; }
     }
 }

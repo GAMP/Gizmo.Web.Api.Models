@@ -6,8 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Create result.
     /// </summary>
-    [Serializable]
-    [MessagePackObject()]
+    [Serializable, MessagePackObject]
     public class CreateResult
     {
         #region PROPERTIES

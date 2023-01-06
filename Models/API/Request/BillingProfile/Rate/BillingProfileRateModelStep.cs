@@ -2,6 +2,7 @@
 
 using MessagePack;
 
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Web.Api.Models
@@ -9,7 +10,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Billing profile rate step.
     /// </summary>
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public sealed class BillingProfileRateModelStep
     {
         #region PROPERTIES

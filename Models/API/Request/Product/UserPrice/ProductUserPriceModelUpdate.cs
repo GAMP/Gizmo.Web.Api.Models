@@ -4,6 +4,7 @@ using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Web.Api.Models
@@ -11,8 +12,8 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Product user price.
     /// </summary>
-    [MessagePackObject]
-    public sealed class ProductUserPriceModelUpdate : IProductUserPriceBaseApiModel, IApiModelIdentifier, IUrlQueryParameters
+    [Serializable, MessagePackObject]
+    public sealed class ProductUserPriceModelUpdate : IProductUserPriceApiModel, IApiModelIdentifier, IUrlQueryParameters
     {
         #region PROPERTIES
 

@@ -2,12 +2,14 @@
 
 using MessagePack;
 
+using System;
+
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Billing profile rate day time.
     /// </summary>
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public sealed class BillingProfileRateModelDayTime
     {
         #region PROPERTIES

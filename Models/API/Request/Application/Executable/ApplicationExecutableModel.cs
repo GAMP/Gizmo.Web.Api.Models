@@ -10,7 +10,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Application executable.
     /// </summary>
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public sealed class ApplicationExecutableModel : IApplicationExecutableApiModel, IApiModelIdentifier
     {
 

@@ -2,6 +2,8 @@
 
 using Gizmo.Web.Api.Models.Abstractions.Models.Filters;
 using MessagePack;
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
@@ -10,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Filters that can be applied when searching for devices.
     /// </summary>
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public sealed class DevicesFilter : IFilterApiModel
     {
         #region PROPERTIES

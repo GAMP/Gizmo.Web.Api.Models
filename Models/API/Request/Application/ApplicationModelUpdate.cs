@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Application.
     /// </summary>
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public sealed class ApplicationModelUpdate : IApplicationApiModel, IApiModelIdentifier
     {
         #region PROPERTIES

@@ -6,8 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Delete result.
     /// </summary>
-    [Serializable]
-    [MessagePackObject()]
+    [Serializable, MessagePackObject]
     public class DeleteResult
     { }
 }

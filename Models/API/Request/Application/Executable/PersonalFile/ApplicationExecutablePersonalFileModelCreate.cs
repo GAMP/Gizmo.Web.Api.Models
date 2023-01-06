@@ -4,12 +4,14 @@ using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
+using System;
+
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Application executable personal file.
     /// </summary>
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public sealed class ApplicationExecutablePersonalFileModelCreate : IApplicationExecutablePersonalFileApiModel
     {
         #region PROPERTIES

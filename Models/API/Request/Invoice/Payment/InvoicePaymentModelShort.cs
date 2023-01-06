@@ -4,12 +4,14 @@ using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
+using System;
+
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Invoice payment.
     /// </summary>
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public sealed class InvoicePaymentModelShort : IInvoicePaymentApiModel
     {
         #region PROPERTIES

@@ -11,7 +11,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Product image.
     /// </summary>
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public sealed class ProductImageModelUpdate : IProductImageApiModel, IApiModelIdentifier, IUrlQueryParameters
     {
         #region PROPERTIES

@@ -4,6 +4,7 @@ using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
+using System;
 using System.Text.Json.Serialization;
 
 namespace Gizmo.Web.Api.Models
@@ -11,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Account creation by token result model.
     /// </summary>
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public sealed class AccountCreationByTokenCompleteResult : IResultCode<AccountCreationByTokenCompleteResultCode>
     {
         #region PROPERTIES

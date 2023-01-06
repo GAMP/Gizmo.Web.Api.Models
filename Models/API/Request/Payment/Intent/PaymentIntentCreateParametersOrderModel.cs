@@ -4,12 +4,14 @@ using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
+using System;
+
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Order intent creation parameters.
     /// </summary>
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public sealed class PaymentIntentCreateParametersOrderModel : IPaymentIntentCreateParametersApiModel
     {
         #region PROPERTIES

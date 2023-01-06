@@ -4,6 +4,7 @@ using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Web.Api.Models
@@ -11,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// User group.
     /// </summary>
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public sealed class UserGroupModelCreate : IUserGroupApiModel, IUrlQueryParameters
     {
         #region PROPERTIES
@@ -40,7 +41,7 @@ namespace Gizmo.Web.Api.Models
         /// The required user info object attached to this user group.
         /// </summary>
         [MessagePack.Key(3)]
-        public RequiredUserInfo? RequiredUserInfo { get; set; }
+        public UserModelRequiredInfo? RequiredUserInfo { get; set; }
 
         /// <summary>
         /// Whether to override the default application group.

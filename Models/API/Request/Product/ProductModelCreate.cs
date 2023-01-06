@@ -4,6 +4,7 @@ using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Web.Api.Models
@@ -11,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Product.
     /// </summary>
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public sealed class ProductModelCreate : IProductApiModel, IUrlQueryParameters
     {
         #region PROPERTIES
@@ -163,7 +164,7 @@ namespace Gizmo.Web.Api.Models
         /// The time product object attached to this product if the product is a time product, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(23)]
-        public TimeProduct? TimeProduct { get; set; }
+        public ProductTime? TimeProduct { get; set; }
 
         /// <summary>
         /// The bundle object attached to this product if the product is a bundle, otherwise it will be null.

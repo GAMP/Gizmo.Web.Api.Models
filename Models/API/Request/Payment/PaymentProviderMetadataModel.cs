@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Provider metdata model.
     /// </summary>
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public sealed class PaymentProviderMetadataModel
     {
         #region CONSTRUCTOR

@@ -3,16 +3,22 @@
     /// <summary>
     /// Product user price.
     /// </summary>
-    public interface IProductUserPriceApiModel
+    public interface IProductUserPriceApiModel : IProductBundledUserPriceApiModel
     {
-        /// <summary>
-        /// The price for this user price.
-        /// </summary>
-        decimal? Price { get; set; }
 
         /// <summary>
-        /// The Id of the user group this user price is associated with.
+        /// The price in points for this user price.
         /// </summary>
-        int UserGroupId { get; set; }
+        int? PointsPrice { get; set; }
+
+        /// <summary>
+        /// The purchase options for this user price.
+        /// </summary>
+        PurchaseOptionType PurchaseOptions { get; set; }
+
+        /// <summary>
+        /// Whether the user prices is enabled.
+        /// </summary>
+        bool IsEnabled { get; set; }
     }
 }

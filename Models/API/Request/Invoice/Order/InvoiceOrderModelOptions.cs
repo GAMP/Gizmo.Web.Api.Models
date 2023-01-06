@@ -4,6 +4,7 @@ using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -12,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Invoice order options.
     /// </summary>
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public sealed class InvoiceOrderModelOptions : IInvoiceOrderOptionsApiModel
     {
         #region PROPERTIES

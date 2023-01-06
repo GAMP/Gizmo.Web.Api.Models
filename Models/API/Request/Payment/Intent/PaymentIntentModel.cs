@@ -11,7 +11,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Payment intent.
     /// </summary>
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public sealed class PaymentIntentModel : IPaymentIntentApiModel, IApiModelIdentifier
     {
         #region PROPERTIES

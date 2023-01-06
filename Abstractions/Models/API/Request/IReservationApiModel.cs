@@ -51,11 +51,11 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// The reserved hosts by this reservation.
         /// </summary>
-        IEnumerable<ReservationHost> Hosts { get; set; }
+        IEnumerable<ReservationModelHost> Hosts { get; set; }
 
         /// <summary>
         /// The users of this reservation.
         /// </summary>
-        IEnumerable<ReservationUser> Users { get; set; }
+        IEnumerable<ReservationModelUser> Users { get; set; }
     }
 }

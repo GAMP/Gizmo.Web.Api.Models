@@ -4,12 +4,14 @@ using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
+using System;
+
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Product disallowed user group.
     /// </summary>
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public sealed class ProductDisallowedUserGroupModelCreate : IProductDisallowedUserGroupApiModel, IUrlQueryParameters
     {
         #region PROPERTIES

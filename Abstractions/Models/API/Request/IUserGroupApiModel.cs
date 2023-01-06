@@ -23,7 +23,7 @@
         /// <summary>
         /// The required user info object attached to this user group.
         /// </summary>
-        RequiredUserInfo RequiredUserInfo { get; set; }
+        UserModelRequiredInfo RequiredUserInfo { get; set; }
 
         /// <summary>
         /// Whether to override the default application group.

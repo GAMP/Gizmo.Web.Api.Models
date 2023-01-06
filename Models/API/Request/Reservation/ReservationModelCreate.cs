@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Reservation.
     /// </summary>
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public sealed class ReservationModelCreate : IReservationApiModel, IUrlQueryParameters
     {
         #region PROPERTIES
@@ -76,13 +76,13 @@ namespace Gizmo.Web.Api.Models
         /// The reserved hosts by this reservation.
         /// </summary>
         [MessagePack.Key(8)]
-        public IEnumerable<ReservationHost>? Hosts { get; set; }
+        public IEnumerable<ReservationModelHost>? Hosts { get; set; }
 
         /// <summary>
         /// The users of this reservation.
         /// </summary>
         [MessagePack.Key(9)]
-        public IEnumerable<ReservationUser>? Users { get; set; }
+        public IEnumerable<ReservationModelUser>? Users { get; set; }
 
         #endregion
     }

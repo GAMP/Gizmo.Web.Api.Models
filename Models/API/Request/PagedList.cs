@@ -2,6 +2,7 @@
 
 using MessagePack;
 
+using System;
 using System.Collections.Generic;
 
 namespace Gizmo.Web.Api.Models
@@ -10,7 +11,7 @@ namespace Gizmo.Web.Api.Models
     /// Paged list.
     /// </summary>
     /// <typeparam name="T">Data type.</typeparam>
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public sealed class PagedList<T>
     {
         #region CONSTRUCTOR

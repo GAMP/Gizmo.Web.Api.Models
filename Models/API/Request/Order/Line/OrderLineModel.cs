@@ -4,6 +4,7 @@ using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Web.Api.Models
@@ -11,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Order line.
     /// </summary>
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public sealed class OrderLineModel : IOrderLineApiModel, IApiModelIdentifier
     {
         #region PROPERTIES
@@ -136,13 +137,13 @@ namespace Gizmo.Web.Api.Models
         /// The product object attached to this order line if the order line refers to a product, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(19)]
-        public LineProduct? Product { get; set; }
+        public ProductLineModel? Product { get; set; }
 
         /// <summary>
         /// The time product object attached to this order line if the order line refers to a time product, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(20)]
-        public LineProduct? TimeProduct { get; set; }
+        public ProductLineModel? TimeProduct { get; set; }
 
         #endregion
     }

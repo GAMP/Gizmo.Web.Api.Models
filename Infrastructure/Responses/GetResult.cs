@@ -6,8 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Get result.
     /// </summary>
-    [Serializable]
-    [MessagePackObject]
+    [Serializable, MessagePackObject]
     public class GetResult<T>
     {
         #region PROPERTIES
