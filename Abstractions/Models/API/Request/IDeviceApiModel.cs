@@ -18,6 +18,6 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// The hdmi device object attached to this device if the device is an hdmi device, otherwise it will be null.
         /// </summary>
-        HdmiDevice HdmiDevice { get; set; }
+        DeviceModelHdmi HdmiDevice { get; set; }
     }
 }

@@ -1,5 +1,6 @@
 ﻿#nullable enable
 
+using Gizmo.Web.Api.Models;
 using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
@@ -33,7 +34,7 @@ namespace Gizmo.Web.Api.Models
         /// The default rate of the billing profile.
         /// </summary>
         [MessagePack.Key(2)]
-        public BillingProfileRate? DefaultRate { get; set; }
+        public BillingProfileRateModel? DefaultRate { get; set; }
 
         #endregion
     }

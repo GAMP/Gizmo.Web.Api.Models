@@ -48,7 +48,7 @@
         /// <summary>
         /// The executable options object attached to this executable.
         /// </summary>
-        ApplicationExecutableOptions ExecutableOptions { get; set; }
+        ApplicationExecutableModelOptions ExecutableOptions { get; set; }
 
         /// <summary>
         /// The path of the executable.

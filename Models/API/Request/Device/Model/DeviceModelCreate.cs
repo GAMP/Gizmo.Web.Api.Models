@@ -39,7 +39,7 @@ namespace Gizmo.Web.Api.Models
         /// The hdmi device object attached to this device if the device is an hdmi device, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(3)]
-        public HdmiDevice? HdmiDevice { get; set; }
+        public DeviceModelHdmi? HdmiDevice { get; set; }
 
         #endregion
     }

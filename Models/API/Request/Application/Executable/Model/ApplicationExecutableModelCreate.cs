@@ -1,5 +1,6 @@
 ﻿#nullable enable
 
+using Gizmo.Web.Api.Models;
 using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
@@ -81,7 +82,7 @@ namespace Gizmo.Web.Api.Models
         /// The executable options object attached to this executable.
         /// </summary>
         [MessagePack.Key(9)]
-        public ApplicationExecutableOptions? ExecutableOptions { get; set; }
+        public ApplicationExecutableModelOptions? ExecutableOptions { get; set; }
 
         /// <summary>
         /// The display order of the executable.

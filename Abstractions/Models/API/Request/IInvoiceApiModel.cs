@@ -16,17 +16,17 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// The lines of the invoice.
         /// </summary>
-        IEnumerable<InvoiceLine> InvoiceLines { get; set; }
+        IEnumerable<InvoiceModelLine> InvoiceLines { get; set; }
 
         /// <summary>
         /// The payments of the invoice.
         /// </summary>
-        IEnumerable<InvoicePayment> InvoicePayments { get; set; }
+        IEnumerable<InvoicePaymentModel> InvoicePayments { get; set; }
 
         /// <summary>
         /// The refunds of the invoice.
         /// </summary>
-        IEnumerable<InvoiceRefund> InvoiceRefunds { get; set; }
+        IEnumerable<InvoiceModelRefund> InvoiceRefunds { get; set; }
 
         /// <summary>
         /// Whether the invoice is voided.

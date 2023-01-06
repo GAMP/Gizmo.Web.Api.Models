@@ -38,7 +38,7 @@
         /// <summary>
         /// The directory options object attached to this personal file if the personal file type is file, otherwise it will be null.
         /// </summary>
-        ApplicationPersonalFileDirectoryOptions DirectoryOptions { get; set; }
+        ApplicationPersonalFileModelDirectoryOptions DirectoryOptions { get; set; }
 
         /// <summary>
         /// The quota of the personal file.

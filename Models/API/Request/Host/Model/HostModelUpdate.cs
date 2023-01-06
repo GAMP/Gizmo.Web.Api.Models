@@ -70,13 +70,13 @@ namespace Gizmo.Web.Api.Models
         /// The host computer object attached to this host if the host is a computer, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(8)]
-        public HostComputer? HostComputer { get; set; }
+        public HostModelComputer? HostComputer { get; set; }
 
         /// <summary>
         /// The host endpoint object attached to this host if the host is an endpoint, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(9)]
-        public HostEndpoint? HostEndpoint { get; set; }
+        public HostModelEndpoint? HostEndpoint { get; set; }
 
         #endregion
     }

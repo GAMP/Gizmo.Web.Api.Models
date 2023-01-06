@@ -13,7 +13,7 @@
         /// <summary>
         /// The deployment options of the deployment.
         /// </summary>
-        ApplicationDeploymentOptions DeploymentOptions { get; set; }
+        ApplicationDeploymentModelOptions DeploymentOptions { get; set; }
 
         /// <summary>
         /// The destination of the deployment.
