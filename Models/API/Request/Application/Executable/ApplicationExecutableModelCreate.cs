@@ -1,6 +1,5 @@
 ﻿#nullable enable
 
-using Gizmo.Web.Api.Models;
 using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;

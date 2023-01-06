@@ -1,6 +1,5 @@
 ﻿#nullable enable
 
-using Gizmo.Web.Api.Models;
 using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
@@ -13,16 +12,15 @@ namespace Gizmo.Web.Api.Models
     /// Host.
     /// </summary>
     [MessagePackObject]
-    public sealed class HostModelCreate : IHostApiModel, IUrlQueryParameters
+    public sealed class HostModelUpdate : IHostApiModel, IApiModelIdentifier, IUrlQueryParameters
     {
         #region PROPERTIES
 
         /// <summary>
-        /// The type of the host.
+        /// The Id of the object.
         /// </summary>
-        [EnumValueValidation]
         [MessagePack.Key(0)]
-        public HostType HostType { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// The Id of the host group this host belongs to.
