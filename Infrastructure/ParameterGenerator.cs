@@ -143,7 +143,7 @@ namespace Gizmo.Web.Api.Models
             return target.GetType()
                 .GetProperties(BindingFlags.Instance | BindingFlags.Public)
                 //TODO: How needs excluding the route parameters here
-                .Where(prop => prop.GetCustomAttribute<JsonIgnoreAttribute>() == null)
+                //.Where(prop => prop.GetCustomAttribute<JsonIgnoreAttribute>() == null)
                 .Select(prop => prop)
                 .ToList();
         } 
