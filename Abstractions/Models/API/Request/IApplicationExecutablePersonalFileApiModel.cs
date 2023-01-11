@@ -3,7 +3,7 @@
     /// <summary>
     /// Application executable personal file.
     /// </summary>
-    public interface IApplicationExecutablePersonalFileApiModel
+    public interface IApplicationExecutablePersonalFileApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The Id of the personal file associated with this application executable.

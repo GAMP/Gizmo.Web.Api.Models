@@ -3,7 +3,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
     /// <summary>
     /// User note.
     /// </summary>
-    public interface IUserNoteApiModel
+    public interface IUserNoteApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The text of the note.

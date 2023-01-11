@@ -3,7 +3,7 @@
     /// <summary>
     /// Host.
     /// </summary>
-    public interface IHostApiModel
+    public interface IHostApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The host computer object attached to this host if the host is a computer, otherwise it will be null.

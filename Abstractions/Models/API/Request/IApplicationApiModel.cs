@@ -5,7 +5,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
     /// <summary>
     /// Application.
     /// </summary>
-    public interface IApplicationApiModel
+    public interface IApplicationApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The age rating of the application.

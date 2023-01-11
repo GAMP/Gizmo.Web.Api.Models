@@ -3,7 +3,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
     /// <summary>
     /// Deposit transaction.
     /// </summary>
-    public interface IDepositTransactionApiModel
+    public interface IDepositTransactionApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The Id of the user this deposit transaction is associated with.

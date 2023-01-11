@@ -3,7 +3,7 @@
     /// <summary>
     /// Application deployment.
     /// </summary>
-    public interface IApplicationDeploymentApiModel
+    public interface IApplicationDeploymentApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The deployment options of the deployment.

@@ -3,7 +3,7 @@
     /// <summary>
     /// Application task.
     /// </summary>
-    public interface IApplicationTaskApiModel
+    public interface IApplicationTaskApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The name of the task.

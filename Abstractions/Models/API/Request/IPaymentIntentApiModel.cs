@@ -5,7 +5,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
     /// <summary>
     /// Payment intent.
     /// </summary>
-    public interface IPaymentIntentApiModel
+    public interface IPaymentIntentApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The amount of the payment intent.

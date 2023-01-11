@@ -3,7 +3,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
     /// <summary>
     /// User group disallowed host group.
     /// </summary>
-    public interface IUserGroupDisallowedHostGroupApiModel
+    public interface IUserGroupDisallowedHostGroupApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The Id of the host group.

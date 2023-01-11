@@ -3,7 +3,7 @@
     /// <summary>
     /// Register.
     /// </summary>
-    public interface IRegisterApiModel
+    public interface IRegisterApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The idle timeout of the register.

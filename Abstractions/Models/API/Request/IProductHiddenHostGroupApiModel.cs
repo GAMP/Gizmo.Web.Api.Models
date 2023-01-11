@@ -3,7 +3,7 @@
     /// <summary>
     /// Product hidden host group.
     /// </summary>
-    public interface IProductHiddenHostGroupApiModel
+    public interface IProductHiddenHostGroupApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The Id of the host group.

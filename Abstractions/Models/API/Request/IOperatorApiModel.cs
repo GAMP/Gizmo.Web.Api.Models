@@ -5,7 +5,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
     /// <summary>
     /// Operator.
     /// </summary>
-    public interface IOperatorApiModel
+    public interface IOperatorApiModel : IWebApiClientModel
     {
         #region UsersOperator
 

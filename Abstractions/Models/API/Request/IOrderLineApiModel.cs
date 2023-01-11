@@ -3,7 +3,7 @@
     /// <summary>
     /// Order line.
     /// </summary>
-    public interface IOrderLineApiModel
+    public interface IOrderLineApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The Id of the bundle line this line belongs to if the line refers to a bundled product, otherwise it will be null.

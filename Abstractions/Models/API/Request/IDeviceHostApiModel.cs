@@ -3,7 +3,7 @@
     /// <summary>
     /// Device host relation model.
     /// </summary>
-    public interface IDeviceHostApiModel
+    public interface IDeviceHostApiModel : IWebApiClientModel
     {
         /// <summary>
         /// Gets device id.

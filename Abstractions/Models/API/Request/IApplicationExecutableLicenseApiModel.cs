@@ -3,7 +3,7 @@
     /// <summary>
     /// Application executable license.
     /// </summary>
-    public interface IApplicationExecutableLicenseApiModel
+    public interface IApplicationExecutableLicenseApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The Id of the license associated with this application executable.

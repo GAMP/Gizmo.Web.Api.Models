@@ -3,7 +3,7 @@
     /// <summary>
     /// User agreement model.
     /// </summary>
-    public interface IUserAgreementApiModel
+    public interface IUserAgreementApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The user agreement text.

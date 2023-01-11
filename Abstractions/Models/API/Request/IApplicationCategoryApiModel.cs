@@ -3,7 +3,7 @@
     /// <summary>
     /// Application category.
     /// </summary>
-    public interface IApplicationCategoryApiModel
+    public interface IApplicationCategoryApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The name of the application category.

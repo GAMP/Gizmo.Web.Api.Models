@@ -3,7 +3,7 @@
     /// <summary>
     /// Application personal file.
     /// </summary>
-    public interface IApplicationPersonalFileApiModel
+    public interface IApplicationPersonalFileApiModel : IWebApiClientModel
     {
         /// <summary>
         /// Whether the personal file is accessible.

@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
     /// <summary>
     /// Invoice.
     /// </summary>
-    public interface IInvoiceApiModel
+    public interface IInvoiceApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The date that the invoice was created.

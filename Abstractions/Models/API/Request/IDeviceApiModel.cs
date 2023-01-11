@@ -3,7 +3,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
     /// <summary>
     /// Device model base.
     /// </summary>
-    public interface IDeviceApiModel
+    public interface IDeviceApiModel : IWebApiClientModel
     {
         /// <summary>
         /// Gets or sets device name.

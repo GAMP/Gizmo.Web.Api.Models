@@ -3,7 +3,7 @@
     /// <summary>
     /// Product user price.
     /// </summary>
-    public interface IProductBundledUserPriceApiModel
+    public interface IProductBundledUserPriceApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The price for this user price.

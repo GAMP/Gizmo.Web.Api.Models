@@ -3,7 +3,7 @@
     /// <summary>
     /// Application group application.
     /// </summary>
-    public interface IApplicationGroupApplicationApiModel
+    public interface IApplicationGroupApplicationApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The Id of the application associated with this application group.

@@ -3,7 +3,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
     /// <summary>
     /// Tax.
     /// </summary>
-    public interface ITaxApiModel
+    public interface ITaxApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The name of the tax.

@@ -5,7 +5,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
     /// <summary>
     /// Asset transaction.
     /// </summary>
-    public interface IAssetTransactionApiModel
+    public interface IAssetTransactionApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The date that the asset transaction was created.

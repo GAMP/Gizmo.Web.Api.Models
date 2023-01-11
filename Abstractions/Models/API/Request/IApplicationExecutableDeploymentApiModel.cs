@@ -3,7 +3,7 @@
     /// <summary>
     /// Application executable deployment.
     /// </summary>
-    public interface IApplicationExecutableDeploymentApiModel
+    public interface IApplicationExecutableDeploymentApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The Id of the deployment associated with this application executable.

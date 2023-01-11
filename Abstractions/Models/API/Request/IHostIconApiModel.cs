@@ -3,7 +3,7 @@
     /// <summary>
     /// Host icon.
     /// </summary>
-    public interface IHostIconApiModel
+    public interface IHostIconApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The image data of the host icon.

@@ -3,7 +3,7 @@
     /// <summary>
     /// User group.
     /// </summary>
-    public interface IUserGroupApiModel
+    public interface IUserGroupApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The name of the user group.

@@ -3,7 +3,7 @@
     /// <summary>
     /// Application license.
     /// </summary>
-    public interface IApplicationLicenseApiModel
+    public interface IApplicationLicenseApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The plugin assembly of the license.

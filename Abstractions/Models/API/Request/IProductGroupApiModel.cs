@@ -3,7 +3,7 @@
     /// <summary>
     /// Product group.
     /// </summary>
-    public interface IProductGroupApiModel
+    public interface IProductGroupApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The display order of the product group.

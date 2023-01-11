@@ -3,7 +3,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
     /// <summary>
     /// Variable.
     /// </summary>
-    public interface IVariableApiModel
+    public interface IVariableApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The name of the variable.

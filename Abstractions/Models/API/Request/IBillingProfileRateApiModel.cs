@@ -5,7 +5,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
     /// <summary>
     /// Billing profile rate.
     /// </summary>
-    public interface IBillingProfileRateApiModel
+    public interface IBillingProfileRateApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The number of minutes before the first charge.

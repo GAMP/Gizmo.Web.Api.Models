@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
     /// <summary>
     /// Product availability.
     /// </summary>
-    public interface IProductAvailabilityApiModel
+    public interface IProductAvailabilityApiModel : IWebApiClientModel
     {
         /// <summary>
         /// Whether the product is available only for a specific date range.

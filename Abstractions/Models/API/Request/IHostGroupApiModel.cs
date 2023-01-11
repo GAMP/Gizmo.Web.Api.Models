@@ -3,7 +3,7 @@
     /// <summary>
     /// Host group.
     /// </summary>
-    public interface IHostGroupApiModel
+    public interface IHostGroupApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The Id of the guest group this host group uses by default.

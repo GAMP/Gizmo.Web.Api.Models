@@ -3,7 +3,7 @@
     /// <summary>
     /// Application executable cd image.
     /// </summary>
-    public interface IApplicationExecutableCdImageApiModel
+    public interface IApplicationExecutableCdImageApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The path of the cd image.

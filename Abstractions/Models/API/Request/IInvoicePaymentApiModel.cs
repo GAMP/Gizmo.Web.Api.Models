@@ -3,7 +3,7 @@
     /// <summary>
     /// Invoice payment.
     /// </summary>
-    public interface IInvoicePaymentApiModel
+    public interface IInvoicePaymentApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The amount of the invoice payment.

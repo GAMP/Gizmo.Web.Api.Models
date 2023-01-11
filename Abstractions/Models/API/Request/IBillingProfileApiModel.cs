@@ -3,7 +3,7 @@
     /// <summary>
     /// Billing profile.
     /// </summary>
-    public interface IBillingProfileApiModel
+    public interface IBillingProfileApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The default rate of the billing profile.

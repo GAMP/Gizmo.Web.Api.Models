@@ -3,7 +3,7 @@
     /// <summary>
     /// Application executable task.
     /// </summary>
-    public interface IApplicationExecutableTaskApiModel
+    public interface IApplicationExecutableTaskApiModel : IWebApiClientModel
     {
         /// <summary>
         /// Whether the executable is enabled.

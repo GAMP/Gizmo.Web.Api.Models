@@ -3,7 +3,7 @@
     /// <summary>
     /// Product tax.
     /// </summary>
-    public interface IProductTaxApiModel
+    public interface IProductTaxApiModel : IWebApiClientModel
     {
         /// <summary>
         /// Indicates if product tax is enabled.

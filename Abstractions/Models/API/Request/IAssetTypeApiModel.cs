@@ -3,7 +3,7 @@
     /// <summary>
     /// Asset type.
     /// </summary>
-    public interface IAssetTypeApiModel
+    public interface IAssetTypeApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The description of the asset type.

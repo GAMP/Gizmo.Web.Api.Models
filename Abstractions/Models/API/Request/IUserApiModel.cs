@@ -5,7 +5,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
     /// <summary>
     /// User.
     /// </summary>
-    public interface IUserApiModel
+    public interface IUserApiModel : IWebApiClientModel
     {
         #region UserMember
 

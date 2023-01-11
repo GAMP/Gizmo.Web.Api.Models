@@ -3,7 +3,7 @@
     /// <summary>
     /// Money sale preset.
     /// </summary>
-    public interface IMoneySalePresetApiModel
+    public interface IMoneySalePresetApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The display order of the money sale preset.

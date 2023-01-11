@@ -3,7 +3,7 @@
     /// <summary>
     /// Application group.
     /// </summary>
-    public interface IApplicationGroupApiModel
+    public interface IApplicationGroupApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The name of the application group.

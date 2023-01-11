@@ -3,7 +3,7 @@
     /// <summary>
     /// Product.
     /// </summary>
-    public interface IProductApiModel
+    public interface IProductApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The barcode of the product.

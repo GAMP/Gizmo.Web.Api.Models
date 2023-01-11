@@ -3,7 +3,7 @@
     /// <summary>
     /// Application enterprise.
     /// </summary>
-    public interface IApplicationEnterpriseApiModel
+    public interface IApplicationEnterpriseApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The name of the enterprise.

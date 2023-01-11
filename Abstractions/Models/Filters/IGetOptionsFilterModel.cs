@@ -5,7 +5,7 @@ namespace Gizmo.Web.Api.Models.Abstractions.Models.Filters
     /// <summary>
     /// Specified objects in the result.
     /// </summary>
-    public interface IGetOptionsFilterModel
+    public interface IGetOptionsFilterModel : IUrlQueryParameters
     {
         /// <summary>
         /// Include specified objects in the result.

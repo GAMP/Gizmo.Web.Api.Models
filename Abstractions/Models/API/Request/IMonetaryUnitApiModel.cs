@@ -3,7 +3,7 @@
     /// <summary>
     /// Monetary unit.
     /// </summary>
-    public interface IMonetaryUnitApiModel
+    public interface IMonetaryUnitApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The display order of the monetary unit.

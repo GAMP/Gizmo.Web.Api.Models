@@ -3,7 +3,7 @@
     /// <summary>
     /// Application executable.
     /// </summary>
-    public interface IApplicationExecutableApiModel
+    public interface IApplicationExecutableApiModel : IWebApiClientModel
     {
         /// <summary>
         /// Whether the executable is accessible.

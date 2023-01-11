@@ -3,7 +3,7 @@
     /// <summary>
     /// Host layout.
     /// </summary>
-    public interface IHostLayoutApiModel
+    public interface IHostLayoutApiModel : IWebApiClientModel
     {
         /// <summary>
         /// Display height.

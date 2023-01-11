@@ -5,7 +5,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
     /// <summary>
     /// Stock transaction.
     /// </summary>
-    public interface IStockTransactionApiModel
+    public interface IStockTransactionApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The date that the stock transaction was created.

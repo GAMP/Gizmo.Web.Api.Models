@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     /// Base filter for cursor-based pagination.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class GetOptions : IGetOptionsFilterModel, IUrlQueryParameters
+    public sealed class GetOptions : IGetOptionsFilterModel
     {
         #region PROPERTIES
 

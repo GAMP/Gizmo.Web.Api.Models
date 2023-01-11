@@ -3,7 +3,7 @@
     /// <summary>
     /// User attribute.
     /// </summary>
-    public interface IUserAttributeApiModel
+    public interface IUserAttributeApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The Id of the attribute this user attribute is associated with.

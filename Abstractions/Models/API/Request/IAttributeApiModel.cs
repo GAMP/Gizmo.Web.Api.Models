@@ -3,7 +3,7 @@
     /// <summary>
     /// Attribute.
     /// </summary>
-    public interface IAttributeApiModel
+    public interface IAttributeApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The friendly name of the attribute.

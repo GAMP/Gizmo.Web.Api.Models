@@ -5,7 +5,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
     /// <summary>
     /// Calculate order options.
     /// </summary>
-    public interface IOrderCalculateOptionsApiModel
+    public interface IOrderCalculateOptionsApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The lines of the order.

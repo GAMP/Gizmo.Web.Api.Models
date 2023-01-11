@@ -3,7 +3,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
     /// <summary>
     /// Point transaction model base.
     /// </summary>
-    public interface IPointTransactionApiModel
+    public interface IPointTransactionApiModel : IWebApiClientModel
     {
         /// <summary>
         /// Gets or sets user id.

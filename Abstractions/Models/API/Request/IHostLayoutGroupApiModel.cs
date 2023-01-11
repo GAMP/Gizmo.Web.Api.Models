@@ -3,7 +3,7 @@
     /// <summary>
     /// Host layout group.
     /// </summary>
-    public interface IHostLayoutGroupApiModel
+    public interface IHostLayoutGroupApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The display order of the layout group.

@@ -3,7 +3,7 @@
     /// <summary>
     /// Time product disallowed host group.
     /// </summary>
-    public interface IProductTimeDisallowedHostGroupApiModel
+    public interface IProductTimeDisallowedHostGroupApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The Id of the host group.

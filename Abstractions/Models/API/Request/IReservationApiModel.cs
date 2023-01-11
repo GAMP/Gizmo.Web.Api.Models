@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
     /// <summary>
     /// Reservation.
     /// </summary>
-    public interface IReservationApiModel
+    public interface IReservationApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The Id of the user this reservation is associated with.

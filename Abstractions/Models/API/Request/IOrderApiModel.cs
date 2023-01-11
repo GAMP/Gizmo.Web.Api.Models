@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
     /// <summary>
     /// Order.
     /// </summary>
-    public interface IOrderApiModel
+    public interface IOrderApiModel : IWebApiClientModel
     {
 
         /// <summary>

@@ -3,7 +3,7 @@
     /// <summary>
     /// Product disallowed user group.
     /// </summary>
-    public interface IProductDisallowedUserGroupApiModel
+    public interface IProductDisallowedUserGroupApiModel : IWebApiClientModel
     {
         /// <summary>
         /// Whether this user group is disallowed for this product.

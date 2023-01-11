@@ -3,7 +3,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
     /// <summary>
     /// Register transaction.
     /// </summary>
-    public interface IRegisterTransactionApiModel
+    public interface IRegisterTransactionApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The type of the register transaction.

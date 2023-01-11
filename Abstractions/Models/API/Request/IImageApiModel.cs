@@ -3,7 +3,7 @@
     /// <summary>
     /// Image.
     /// </summary>
-    public interface IImageApiModel
+    public interface IImageApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The image data.

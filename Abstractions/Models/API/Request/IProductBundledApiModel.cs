@@ -3,7 +3,7 @@
     /// <summary>
     /// Bundled product.
     /// </summary>
-    public interface IProductBundledApiModel
+    public interface IProductBundledApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The Id of the product.

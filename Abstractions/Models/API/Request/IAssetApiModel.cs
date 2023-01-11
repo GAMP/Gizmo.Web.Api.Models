@@ -3,7 +3,7 @@
     /// <summary>
     /// Asset.
     /// </summary>
-    public interface IAssetApiModel
+    public interface IAssetApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The Id of the asset type this asset belongs to.

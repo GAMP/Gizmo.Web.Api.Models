@@ -3,7 +3,7 @@
     /// <summary>
     /// Invoice line.
     /// </summary>
-    public interface IInvoiceLineApiModel
+    public interface IInvoiceLineApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The Id of the bundle line this line belongs to if the line refers to a bundled product, otherwise it will be null.

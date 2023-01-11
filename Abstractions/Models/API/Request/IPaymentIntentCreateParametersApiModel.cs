@@ -3,7 +3,7 @@
     /// <summary>
     /// Base model for payment intent creation.
     /// </summary>
-    public interface IPaymentIntentCreateParametersApiModel
+    public interface IPaymentIntentCreateParametersApiModel : IWebApiClientModel
     {
         /// <summary>
         /// Gets or sets intent amount.

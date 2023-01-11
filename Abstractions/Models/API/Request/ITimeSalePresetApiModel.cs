@@ -3,7 +3,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
     /// <summary>
     /// Time sale preset.
     /// </summary>
-    public interface ITimeSalePresetApiModel
+    public interface ITimeSalePresetApiModel : IWebApiClientModel
     {
         /// <summary>
         /// The value of the time sale preset.

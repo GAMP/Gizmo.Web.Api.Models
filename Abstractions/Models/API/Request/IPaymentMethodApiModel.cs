@@ -3,7 +3,7 @@
     /// <summary>
     /// Payment method.
     /// </summary>
-    public interface IPaymentMethodApiModel
+    public interface IPaymentMethodApiModel : IWebApiClientModel
     {
         /// <summary>
         /// Whether the payment method can be used by clients.
