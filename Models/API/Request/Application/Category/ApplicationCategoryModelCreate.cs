@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Application category.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ApplicationCategoryModelCreate : IApplicationCategoryApiModel
+    public sealed class ApplicationCategoryModelCreate : IApplicationCategoryModel
     {
         #region PROPERTIES
 

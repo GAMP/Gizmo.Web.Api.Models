@@ -11,7 +11,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for asset types.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class AssetTypesFilter : IFilterApiModel
+    public sealed class AssetTypesFilter : IModelFilter
     {
         #region PROPERTIES
 
@@ -19,7 +19,7 @@ namespace Gizmo.Web.Api.Models
         /// Filter for cursor-based pagination.
         /// </summary>
         [Key(0)]
-        public PaginationFilter PaginationFilter { get; set; } = new();
+        public ModelFilterPagination Pagination { get; set; } = new();
 
         /// <summary>
         /// Return asset types with names that contain the specified string.

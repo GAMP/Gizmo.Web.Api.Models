@@ -11,13 +11,13 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for application deployments.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ApplicationDeploymentsFilter : IFilterApiModel
+    public sealed class ApplicationDeploymentsFilter : IModelFilter
     {
         /// <summary>
         /// Filter for cursor-based pagination.
         /// </summary>
         [Key(0)]
-        public PaginationFilter PaginationFilter { get; set; } = new();
+        public ModelFilterPagination Pagination { get; set; } = new();
 
         /// <summary>
         /// Return deployments with names that contain the specified string.

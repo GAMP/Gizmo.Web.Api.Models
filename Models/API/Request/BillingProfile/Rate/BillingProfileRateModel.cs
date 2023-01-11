@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Billing profile rate.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class BillingProfileRateModel : IBillingProfileRateApiModel, IApiModelIdentifier
+    public sealed class BillingProfileRateModel : IBillingProfileRateModel, IModelIntIdentifier
     {
         #region PROPERTIES
 

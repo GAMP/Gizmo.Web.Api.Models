@@ -14,7 +14,7 @@ namespace Gizmo.Web.Api.Models
     /// Order.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class OrderModel : IOrderApiModel, IOrderCalculatedApiModel, IApiModelIdentifier
+    public sealed class OrderModel : IOrderModel, IOrderCalculatedModel, IModelIntIdentifier
     {
         #region PROPERTIES
 

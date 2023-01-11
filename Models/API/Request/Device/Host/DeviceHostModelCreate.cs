@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     /// Device host relation model.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class DeviceHostModelCreate : IDeviceHostApiModel
+    public sealed class DeviceHostModelCreate : IDeviceHostModel
     {
         #region PROPERTIES
 

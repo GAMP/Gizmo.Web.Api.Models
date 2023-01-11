@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Host group.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class HostGroupModelUpdate : IHostGroupApiModel, IApiModelIdentifier, IUrlQueryParameters
+    public sealed class HostGroupModelUpdate : IHostGroupModel, IModelIntIdentifier, IUrlQueryParameters
     {
         #region PROPERTIES
 

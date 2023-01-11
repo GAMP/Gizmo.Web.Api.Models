@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     /// Deposit payment intent creation parameters.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class PaymentIntentCreateParametersDepositModel : IPaymentIntentCreateParametersApiModel
+    public sealed class PaymentIntentCreateParametersDepositModel : IPaymentIntentCreateParametersModel
     {
         #region PROPERTIES
 

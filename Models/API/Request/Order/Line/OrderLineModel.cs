@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Order line.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class OrderLineModel : IOrderLineApiModel, IApiModelIdentifier
+    public sealed class OrderLineModel : IOrderLineModel, IModelIntIdentifier
     {
         #region PROPERTIES
 

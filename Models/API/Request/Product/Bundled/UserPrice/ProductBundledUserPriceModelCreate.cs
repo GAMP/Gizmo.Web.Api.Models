@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     /// Bundled product user price.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ProductBundledUserPriceModelCreate : IProductBundledUserPriceApiModel, IUrlQueryParameters
+    public sealed class ProductBundledUserPriceModelCreate : IProductBundledUserPriceModel, IUrlQueryParameters
     {
         #region PROPERTIES
 

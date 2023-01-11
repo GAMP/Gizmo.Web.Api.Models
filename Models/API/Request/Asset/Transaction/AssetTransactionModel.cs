@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     /// Asset transaction.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class AssetTransactionModel : IAssetTransactionApiModel, IApiModelIdentifier
+    public sealed class AssetTransactionModel : IAssetTransactionModel, IModelIntIdentifier
     {
         #region PROPERTIES
 

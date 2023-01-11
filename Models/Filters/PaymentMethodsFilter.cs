@@ -11,7 +11,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for payment methods.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class PaymentMethodsFilter : IFilterApiModel
+    public sealed class PaymentMethodsFilter : IModelFilter
     {
         #region PROPERTIES
 
@@ -19,7 +19,7 @@ namespace Gizmo.Web.Api.Models
         /// Filter for cursor-based pagination.
         /// </summary>
         [Key(0)]
-        public PaginationFilter PaginationFilter { get; set; } = new();
+        public ModelFilterPagination Pagination { get; set; } = new();
 
         /// <summary>
         /// Return payment methods with names that contain the specified string.

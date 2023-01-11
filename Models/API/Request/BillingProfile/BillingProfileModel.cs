@@ -14,7 +14,7 @@ namespace Gizmo.Web.Api.Models
     /// Billing profile.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class BillingProfileModel : IBillingProfileApiModel, IApiModelIdentifier
+    public sealed class BillingProfileModel : IBillingProfileModel, IModelIntIdentifier
     {
         #region PROPERTIES
 

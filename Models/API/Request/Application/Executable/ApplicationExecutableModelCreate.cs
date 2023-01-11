@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Application executable.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ApplicationExecutableModelCreate : IApplicationExecutableApiModel, IUrlQueryParameters
+    public sealed class ApplicationExecutableModelCreate : IApplicationExecutableModel, IUrlQueryParameters
     {
         #region PROPERTIES
 

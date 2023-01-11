@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// User group.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class UserGroupModel : IUserGroupApiModel, IApiModelIdentifier
+    public sealed class UserGroupModel : IUserGroupModel, IModelIntIdentifier
     {
         #region PROPERTIES
 

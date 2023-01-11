@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     /// Order intent creation parameters.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class PaymentIntentCreateParametersOrderModel : IPaymentIntentCreateParametersApiModel
+    public sealed class PaymentIntentCreateParametersOrderModel : IPaymentIntentCreateParametersModel
     {
         #region PROPERTIES
 

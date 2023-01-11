@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Deposit transaction.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class DepositTransactionModelCreate : IDepositTransactionApiModel
+    public sealed class DepositTransactionModelCreate : IDepositTransactionModel
     {
         #region PROPERTIES
 

@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     /// Application image.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ApplicationModelImage : IImageApiModel
+    public sealed class ApplicationModelImage : IImageModel
     {
         /// <summary>
         /// The image data.

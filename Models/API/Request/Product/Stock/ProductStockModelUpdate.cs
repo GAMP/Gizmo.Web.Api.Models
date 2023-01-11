@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Product stock.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ProductStockModelUpdate : IApiModelIdentifier
+    public sealed class ProductStockModelUpdate : IModelIntIdentifier
     {
         #region PROPERTIES
 

@@ -11,7 +11,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for stock transactions.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class StockTransactionsFilter : IFilterApiModel
+    public sealed class StockTransactionsFilter : IModelFilter
     {
         #region PROPERTIES
 
@@ -19,7 +19,7 @@ namespace Gizmo.Web.Api.Models
         /// Filter for cursor-based pagination.
         /// </summary>
         [Key(0)]
-        public PaginationFilter PaginationFilter { get; set; } = new();
+        public ModelFilterPagination Pagination { get; set; } = new();
 
         /// <summary>
         /// Return stock transactions where the date greater than or equal to the specified date.

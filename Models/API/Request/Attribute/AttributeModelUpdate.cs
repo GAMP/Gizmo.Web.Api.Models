@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Attribute.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class AttributeModelUpdate : IAttributeApiModel, IApiModelIdentifier, IUrlQueryParameters
+    public sealed class AttributeModelUpdate : IAttributeModel, IModelIntIdentifier, IUrlQueryParameters
     {
         #region PROPERTIES
 

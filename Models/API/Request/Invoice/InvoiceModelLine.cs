@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Invoice line.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class InvoiceModelLine : IInvoiceLineApiModel, IApiModelIdentifier
+    public sealed class InvoiceModelLine : IInvoiceLineModel, IModelIntIdentifier
     {
         #region PROPERTIES
 

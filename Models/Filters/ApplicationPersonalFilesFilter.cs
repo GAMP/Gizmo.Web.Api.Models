@@ -11,7 +11,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for application personal files.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ApplicationPersonalFilesFilter : IFilterApiModel
+    public sealed class ApplicationPersonalFilesFilter : IModelFilter
     {
         #region PROPERTIES
 
@@ -19,7 +19,7 @@ namespace Gizmo.Web.Api.Models
         /// Filter for cursor-based pagination.
         /// </summary>
         [Key(0)]
-        public PaginationFilter PaginationFilter { get; set; } = new();
+        public ModelFilterPagination Pagination { get; set; } = new();
 
         /// <summary>
         /// Return personal files with names that contain the specified string.

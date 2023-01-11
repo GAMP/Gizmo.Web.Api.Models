@@ -11,7 +11,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for applications.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ApplicationsFilter : IFilterApiModel
+    public sealed class ApplicationsFilter : IModelFilter
     {
         #region PROPERTIES
 
@@ -19,7 +19,7 @@ namespace Gizmo.Web.Api.Models
         /// Filter for cursor-based pagination.
         /// </summary>
         [Key(0)]
-        public PaginationFilter PaginationFilter { get; set; } = new();
+        public ModelFilterPagination Pagination { get; set; } = new();
 
         /// <summary>
         /// Return applications with titles that contain the specified string.

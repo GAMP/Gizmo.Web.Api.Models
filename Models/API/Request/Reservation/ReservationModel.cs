@@ -14,7 +14,7 @@ namespace Gizmo.Web.Api.Models
     /// Reservation.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ReservationModel : IReservationApiModel, IApiModelIdentifier
+    public sealed class ReservationModel : IReservationModel, IModelIntIdentifier
     {
         #region PROPERTIES
 

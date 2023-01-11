@@ -14,7 +14,7 @@ namespace Gizmo.Web.Api.Models
     /// Invoice order options.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class InvoiceOrderModelOptions : IInvoiceOrderOptionsApiModel
+    public sealed class InvoiceOrderModelOptions : IInvoiceOrderOptionsModel
     {
         #region PROPERTIES
 

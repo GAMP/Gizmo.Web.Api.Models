@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     /// Host icon.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class HostIconModel : IHostIconApiModel, IApiModelIdentifier
+    public sealed class HostIconModel : IHostIconModel, IModelIntIdentifier
     {
         #region PROPERTIES
 

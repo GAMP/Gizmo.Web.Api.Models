@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     /// User agreement model.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class UserAgreementModelUpdate : IUserAgreementApiModel, IApiModelIdentifier
+    public sealed class UserAgreementModelUpdate : IUserAgreementModel, IModelIntIdentifier
     {
         #region PROPERTIES
 

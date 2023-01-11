@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     /// Application executable license.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ApplicationExecutableLicenseModel : IApplicationExecutableLicenseApiModel
+    public sealed class ApplicationExecutableLicenseModel : IApplicationExecutableLicenseModel
     {
         #region PROPERTIES
 

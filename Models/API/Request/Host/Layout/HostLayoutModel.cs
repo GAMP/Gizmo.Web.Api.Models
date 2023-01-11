@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     /// Host layout.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class HostLayoutModel : IHostLayoutApiModel, IApiModelIdentifier
+    public sealed class HostLayoutModel : IHostLayoutModel, IModelIntIdentifier
     {
         #region PROPERTIES
 

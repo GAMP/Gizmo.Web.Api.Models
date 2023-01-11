@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Device update model.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class DeviceModelUpdate : IDeviceApiModel, IApiModelIdentifier
+    public sealed class DeviceModelUpdate : IDeviceModel, IModelIntIdentifier
     {
         #region PROPERTIES
 

@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     /// Product hidden host group.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ProductHiddenHostGroupModelUpdate : IProductHiddenHostGroupApiModel, IApiModelIdentifier, IUrlQueryParameters
+    public sealed class ProductHiddenHostGroupModelUpdate : IProductHiddenHostGroupModel, IModelIntIdentifier, IUrlQueryParameters
     {
         #region PROPERTIES
 

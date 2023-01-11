@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Payment method.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class PaymentMethodModelCreate : IPaymentMethodApiModel, IUrlQueryParameters
+    public sealed class PaymentMethodModelCreate : IPaymentMethodModel, IUrlQueryParameters
     {
         #region PROPERTIES
 

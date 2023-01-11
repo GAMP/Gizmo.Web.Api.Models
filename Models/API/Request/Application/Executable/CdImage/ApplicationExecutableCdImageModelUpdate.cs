@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Application executable cd image.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ApplicationExecutableCdImageModelUpdate : IApplicationExecutableCdImageApiModel, IApiModelIdentifier
+    public sealed class ApplicationExecutableCdImageModelUpdate : IApplicationExecutableCdImageModel, IModelIntIdentifier
     {
         #region PROPERTIES
 

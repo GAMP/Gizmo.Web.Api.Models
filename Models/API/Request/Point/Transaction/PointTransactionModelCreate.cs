@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     /// Point transaction creation model.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class PointTransactionModelCreate : IPointTransactionApiModel
+    public sealed class PointTransactionModelCreate : IPointTransactionModel
     {
         #region PROPERTIES  
 

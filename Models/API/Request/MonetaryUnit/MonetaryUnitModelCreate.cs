@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Monetary unit.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class MonetaryUnitModelCreate : IMonetaryUnitApiModel, IUrlQueryParameters
+    public sealed class MonetaryUnitModelCreate : IMonetaryUnitModel, IUrlQueryParameters
     {
         #region PROPERTIES
 

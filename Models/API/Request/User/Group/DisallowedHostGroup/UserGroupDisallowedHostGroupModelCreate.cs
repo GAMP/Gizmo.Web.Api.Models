@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     /// User group disallowed host group.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class UserGroupDisallowedHostGroupModelCreate : IUserGroupDisallowedHostGroupApiModel, IUrlQueryParameters
+    public sealed class UserGroupDisallowedHostGroupModelCreate : IUserGroupDisallowedHostGroupModel, IUrlQueryParameters
     {
         #region PROPERTIES
 

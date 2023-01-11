@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     /// Invoice payment.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class InvoicePaymentModelShort : IInvoicePaymentApiModel
+    public sealed class InvoicePaymentModelShort : IInvoicePaymentModel
     {
         #region PROPERTIES
 

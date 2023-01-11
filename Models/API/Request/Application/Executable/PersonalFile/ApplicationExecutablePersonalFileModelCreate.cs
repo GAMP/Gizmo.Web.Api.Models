@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     /// Application executable personal file.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ApplicationExecutablePersonalFileModelCreate : IApplicationExecutablePersonalFileApiModel
+    public sealed class ApplicationExecutablePersonalFileModelCreate : IApplicationExecutablePersonalFileModel
     {
         #region PROPERTIES
 

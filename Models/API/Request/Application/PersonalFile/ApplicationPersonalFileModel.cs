@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Application personal file.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ApplicationPersonalFileModel : IApplicationPersonalFileApiModel, IApiModelIdentifier
+    public sealed class ApplicationPersonalFileModel : IApplicationPersonalFileModel, IModelIntIdentifier
     {
         #region PROPERTIES
 

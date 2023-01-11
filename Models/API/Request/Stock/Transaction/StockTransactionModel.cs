@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Stock transaction.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class StockTransactionModel : IStockTransactionApiModel, IApiModelIdentifier
+    public sealed class StockTransactionModel : IStockTransactionModel, IModelIntIdentifier
     {
         #region PROPERTIES
 

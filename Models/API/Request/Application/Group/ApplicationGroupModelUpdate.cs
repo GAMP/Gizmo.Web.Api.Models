@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Application group.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ApplicationGroupModelUpdate : IApplicationGroupApiModel, IApiModelIdentifier
+    public sealed class ApplicationGroupModelUpdate : IApplicationGroupModel, IModelIntIdentifier
     {
         #region PROPERTIES
 

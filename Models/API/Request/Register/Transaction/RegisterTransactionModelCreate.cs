@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Register transaction.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class RegisterTransactionModelCreate : IRegisterTransactionApiModel
+    public sealed class RegisterTransactionModelCreate : IRegisterTransactionModel
     {
         #region PROPERTIES
 

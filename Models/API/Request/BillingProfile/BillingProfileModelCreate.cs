@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Billing profile.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class BillingProfileModelCreate : IBillingProfileApiModel, IUrlQueryParameters
+    public sealed class BillingProfileModelCreate : IBillingProfileModel, IUrlQueryParameters
     {
         #region PROPERTIES
 

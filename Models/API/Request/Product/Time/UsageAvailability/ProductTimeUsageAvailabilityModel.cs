@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Time product usage availability.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ProductTimeUsageAvailabilityModel : IProductTimeUsageAvailabilityApiModel
+    public sealed class ProductTimeUsageAvailabilityModel : IProductTimeUsageAvailabilityModel
     {
         #region PROPERTIES
 

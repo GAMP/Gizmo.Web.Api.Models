@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     /// Application executable deployment.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ApplicationExecutableDeploymentModelUpdate : IApplicationExecutableDeploymentApiModel
+    public sealed class ApplicationExecutableDeploymentModelUpdate : IApplicationExecutableDeploymentModel
     {
         #region PROPERTIES
 

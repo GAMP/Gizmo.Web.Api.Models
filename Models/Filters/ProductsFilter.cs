@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for products.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ProductsFilter : IFilterApiModel
+    public sealed class ProductsFilter : IModelFilter
     {
         #region PROPERTIES
 
@@ -21,7 +21,7 @@ namespace Gizmo.Web.Api.Models
         /// Filter for cursor-based pagination.
         /// </summary>
         [MessagePack.Key(0)]
-        public PaginationFilter PaginationFilter { get; set; } = new();
+        public ModelFilterPagination Pagination { get; set; } = new();
 
         /// <summary>
         /// Return products of the specified product type.

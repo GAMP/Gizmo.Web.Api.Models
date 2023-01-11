@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Product user price.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ProductUserPriceModelUpdate : IProductUserPriceApiModel, IApiModelIdentifier, IUrlQueryParameters
+    public sealed class ProductUserPriceModelUpdate : IProductUserPriceModel, IModelIntIdentifier, IUrlQueryParameters
     {
         #region PROPERTIES
 

@@ -11,13 +11,13 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for money sale presets.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class MoneySalePresetsFilter : IFilterApiModel
+    public sealed class MoneySalePresetsFilter : IModelFilter
     {
         /// <summary>
         /// Filter for cursor-based pagination.
         /// </summary>
         [Key(0)]
-        public PaginationFilter PaginationFilter { get; set; } = new();
+        public ModelFilterPagination Pagination { get; set; } = new();
 
         /// <summary>
         /// Include specified objects in the result.

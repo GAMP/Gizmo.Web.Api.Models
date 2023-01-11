@@ -67,4 +67,8 @@
 	  </EmbeddedResource>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Models\API\Result\AccountCreation\Complete\" />
+	</ItemGroup>
+
 </Project>

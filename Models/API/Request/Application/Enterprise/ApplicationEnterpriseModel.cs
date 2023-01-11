@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Application enterprise.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ApplicationEnterpriseModel : IApplicationEnterpriseApiModel, IApiModelIdentifier
+    public sealed class ApplicationEnterpriseModel : IApplicationEnterpriseModel, IModelIntIdentifier
     {
         #region PROPERTIES
 

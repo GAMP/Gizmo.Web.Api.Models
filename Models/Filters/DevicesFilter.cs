@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for devices.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class DevicesFilter : IFilterApiModel
+    public sealed class DevicesFilter : IModelFilter
     {
         #region PROPERTIES
 
@@ -21,7 +21,7 @@ namespace Gizmo.Web.Api.Models
         /// Filter for cursor-based pagination.
         /// </summary>
         [MessagePack.Key(0)]
-        public PaginationFilter PaginationFilter { get; set; } = new();
+        public ModelFilterPagination Pagination { get; set; } = new();
 
         /// <summary>
         /// Return devices of the specified device type.

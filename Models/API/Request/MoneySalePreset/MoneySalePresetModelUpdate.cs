@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Money sale preset.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class MoneySalePresetModelUpdate : IMoneySalePresetApiModel, IApiModelIdentifier
+    public sealed class MoneySalePresetModelUpdate : IMoneySalePresetModel, IModelIntIdentifier
     {
         #region PROPERTIES
 

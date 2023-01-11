@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for users.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class UsersFilter : IFilterApiModel
+    public sealed class UsersFilter : IModelFilter
     {
         #region PROPERTIES
 
@@ -20,7 +20,7 @@ namespace Gizmo.Web.Api.Models
         /// Filter for cursor-based pagination.
         /// </summary>
         [MessagePack.Key(0)]
-        public PaginationFilter PaginationFilter { get; set; } = new();
+        public ModelFilterPagination Pagination { get; set; } = new();
 
         /// <summary>
         /// Return users of the specified user group.

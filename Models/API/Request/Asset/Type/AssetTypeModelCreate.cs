@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Asset type.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class AssetTypeModelCreate : IAssetTypeApiModel, IUrlQueryParameters
+    public sealed class AssetTypeModelCreate : IAssetTypeModel, IUrlQueryParameters
     {
         #region PROPERTIES
 

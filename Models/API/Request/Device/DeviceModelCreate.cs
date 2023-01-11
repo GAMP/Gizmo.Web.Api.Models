@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Device creation model.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class DeviceModelCreate : IDeviceApiModel
+    public sealed class DeviceModelCreate : IDeviceModel
     {
         #region PROPERTIES
 

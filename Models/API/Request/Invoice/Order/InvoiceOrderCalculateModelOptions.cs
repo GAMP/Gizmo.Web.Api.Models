@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Invoice user order options.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class InvoiceOrderCalculateModelOptions : IInvoiceOrderOptionsApiModel
+    public sealed class InvoiceOrderCalculateModelOptions : IInvoiceOrderOptionsModel
     {
         #region PROPERTIES
 

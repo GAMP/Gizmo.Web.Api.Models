@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     /// Application executable task.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ApplicationExecutableTaskModelUpdate : IApplicationExecutableTaskApiModel
+    public sealed class ApplicationExecutableTaskModelUpdate : IApplicationExecutableTaskModel
     {
         #region PROPERTIES
 

@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Product group.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ProductGroupModelUpdate : IProductGroupApiModel, IApiModelIdentifier, IUrlQueryParameters
+    public sealed class ProductGroupModelUpdate : IProductGroupModel, IModelIntIdentifier, IUrlQueryParameters
     {
         #region PROPERTIES
 

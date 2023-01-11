@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Time sale preset.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class TimeSalePresetModel : ITimeSalePresetApiModel, IApiModelIdentifier
+    public sealed class TimeSalePresetModel : ITimeSalePresetModel, IModelIntIdentifier
     {
         #region PROPERTIES
 

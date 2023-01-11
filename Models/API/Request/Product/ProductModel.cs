@@ -14,7 +14,7 @@ namespace Gizmo.Web.Api.Models
     /// Product.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ProductModel : IProductApiModel, IApiModelIdentifier
+    public sealed class ProductModel : IProductModel, IModelIntIdentifier
     {
         #region PROPERTIES
 

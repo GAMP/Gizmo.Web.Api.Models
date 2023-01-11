@@ -11,13 +11,13 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for time sale presets.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class TimeSalePresetsFilter : IFilterApiModel
+    public sealed class TimeSalePresetsFilter : IModelFilter
     {
         /// <summary>
         /// Filter for cursor-based pagination.
         /// </summary>
         [Key(0)]
-        public PaginationFilter PaginationFilter { get; set; } = new();
+        public ModelFilterPagination Pagination { get; set; } = new();
 
         /// <summary>
         /// Include specified objects in the result.

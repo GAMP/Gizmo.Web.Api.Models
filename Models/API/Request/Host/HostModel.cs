@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Host.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class HostModel : IHostApiModel, IApiModelIdentifier
+    public sealed class HostModel : IHostModel, IModelIntIdentifier
     {
         #region PROPERTIES
 
