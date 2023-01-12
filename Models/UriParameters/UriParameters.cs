@@ -1,6 +1,4 @@
-﻿#nullable enable
-
-using Gizmo.Web.Api.Models.Abstractions;
+﻿using Gizmo.Web.Api.Models.Abstractions;
 
 using Microsoft.AspNetCore.WebUtilities;
 

@@ -1,6 +1,4 @@
-﻿#nullable enable
-
-using Gizmo.Web.Api.Models.Abstractions.Models.Filters;
+﻿using Gizmo.Web.Api.Models.Abstractions.Models.Filters;
 using MessagePack;
 using System;
 using System.Collections.Generic;

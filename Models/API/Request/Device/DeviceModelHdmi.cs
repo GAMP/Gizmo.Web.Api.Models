@@ -1,6 +1,4 @@
-﻿#nullable enable
-
-using MessagePack;
+﻿using MessagePack;
 
 using System;
 using System.ComponentModel.DataAnnotations;
