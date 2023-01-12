@@ -1,5 +1,7 @@
 ﻿#nullable enable
 
+using Gizmo.Web.Api.Models.Abstractions;
+
 using MessagePack;
 
 using System;
@@ -11,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Calculate order line options.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class OrderLineModelOptions : IUrlQueryParameters
+    public sealed class OrderLineModelOptions : IUriParametersQuery
     {
         #region PROPERTIES
 

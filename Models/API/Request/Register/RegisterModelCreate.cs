@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Register.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class RegisterModelCreate : IRegisterModel, IUrlQueryParameters
+    public sealed class RegisterModelCreate : IRegisterModel, IUriParametersQuery
     {
         #region PROPERTIES
 

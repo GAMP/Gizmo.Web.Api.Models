@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// User note.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class UserNoteModelCreate : IUserNoteModel, IUrlQueryParameters
+    public sealed class UserNoteModelCreate : IUserNoteModel, IUriParametersQuery
     {
         #region PROPERTIES
 

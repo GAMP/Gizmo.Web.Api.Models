@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Tax.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class TaxModelCreate : ITaxModel, IUrlQueryParameters
+    public sealed class TaxModelCreate : ITaxModel, IUriParametersQuery
     {
         #region PROPERTIES
 

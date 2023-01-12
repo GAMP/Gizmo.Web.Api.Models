@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Bundled product.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ProductBundledModelCreate : IProductBundledModel, IUrlQueryParameters
+    public sealed class ProductBundledModelCreate : IProductBundledModel, IUriParametersQuery
     {
         #region PROPERTIES
 

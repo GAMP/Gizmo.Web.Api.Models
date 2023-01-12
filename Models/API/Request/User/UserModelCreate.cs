@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// User.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class UserModelCreate : IUserModel, IUrlQueryParameters
+    public sealed class UserModelCreate : IUserModel, IUriParametersQuery
     {
         #region PROPERTIES
 

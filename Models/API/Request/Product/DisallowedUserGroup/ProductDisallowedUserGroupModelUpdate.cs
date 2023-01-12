@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     /// Product disallowed user group.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ProductDisallowedUserGroupModelUpdate : IProductDisallowedUserGroupModel, IModelIntIdentifier, IUrlQueryParameters
+    public sealed class ProductDisallowedUserGroupModelUpdate : IProductDisallowedUserGroupModel, IModelIntIdentifier, IUriParametersQuery
     {
         #region PROPERTIES
 

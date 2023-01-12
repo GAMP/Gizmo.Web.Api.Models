@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Calculate order options.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class OrderCalculatePaymentModelOptions : IOrderCalculateOptionsModel, IUrlQueryParameters
+    public sealed class OrderCalculatePaymentModelOptions : IOrderCalculateOptionsModel
     {
         #region PROPERTIES
 

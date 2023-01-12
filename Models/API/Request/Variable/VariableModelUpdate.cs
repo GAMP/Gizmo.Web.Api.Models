@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Variable.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class VariableModelUpdate : IVariableModel, IModelIntIdentifier, IUrlQueryParameters
+    public sealed class VariableModelUpdate : IVariableModel, IModelIntIdentifier, IUriParametersQuery
     {
         #region PROPERTIES
 

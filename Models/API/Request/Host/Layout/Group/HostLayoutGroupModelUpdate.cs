@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Host layout group.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class HostLayoutGroupModelUpdate : IHostLayoutGroupModel, IModelIntIdentifier, IUrlQueryParameters
+    public sealed class HostLayoutGroupModelUpdate : IHostLayoutGroupModel, IModelIntIdentifier, IUriParametersQuery
     {
         #region PROPERTIES
 

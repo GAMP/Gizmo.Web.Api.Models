@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// User.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class UserModelUpdate : IUserModel, IModelIntIdentifier, IUrlQueryParameters
+    public sealed class UserModelUpdate : IUserModel, IModelIntIdentifier, IUriParametersQuery
     {
         #region PROPERTIES
 

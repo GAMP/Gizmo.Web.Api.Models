@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Product purchase availability.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ProductPurchaseAvailabilityModelUpdate : IProductPurchaseAvailabilityModel, IUrlQueryParameters
+    public sealed class ProductPurchaseAvailabilityModelUpdate : IProductPurchaseAvailabilityModel, IUriParametersQuery
     {
         #region PROPERTIES
 

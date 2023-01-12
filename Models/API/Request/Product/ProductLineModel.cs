@@ -1,5 +1,7 @@
 ﻿#nullable enable
 
+using Gizmo.Web.Api.Models.Abstractions;
+
 using MessagePack;
 
 using System;
@@ -10,7 +12,7 @@ namespace Gizmo.Web.Api.Models
     /// Line product.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ProductLineModel : IUrlQueryParameters
+    public sealed class ProductLineModel : IUriParametersQuery
     {
         #region PROPERTIES
 

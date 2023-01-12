@@ -11,7 +11,7 @@ namespace Gizmo.Web.Api.Models
     /// Time product disallowed host group.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ProductTimeDisallowedHostGroupModelUpdate : IProductTimeDisallowedHostGroupModel, IModelIntIdentifier, IUrlQueryParameters
+    public sealed class ProductTimeDisallowedHostGroupModelUpdate : IProductTimeDisallowedHostGroupModel, IModelIntIdentifier, IUriParametersQuery
     {
         #region PROPERTIES
 

@@ -14,7 +14,7 @@ namespace Gizmo.Web.Api.Models
     /// Reservation.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ReservationModelCreate : IReservationModel, IUrlQueryParameters
+    public sealed class ReservationModelCreate : IReservationModel, IUriParametersQuery
     {
         #region PROPERTIES
 
