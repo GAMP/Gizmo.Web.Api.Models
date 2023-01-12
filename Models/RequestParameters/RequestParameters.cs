@@ -18,13 +18,14 @@ namespace Gizmo.Web.Api.Models
 
         /// <inheritdoc/>
         public RequestParameters() { }
-        /// <inheritdoc/>
-        public RequestParameters(IRequestParametersQuery queryParameters) => 
-            Query = GetQuery(queryParameters);
 
         /// <inheritdoc/>
-        public RequestParameters(IRequestParametersPath pathParameters) => 
+        public RequestParameters(IRequestParametersPath pathParameters) =>
             Path = GetPath(pathParameters);
+
+        /// <inheritdoc/>
+        public RequestParameters(IRequestParametersQuery queryParameters) =>
+            Query = GetQuery(queryParameters);
 
         /// <inheritdoc/>
         public RequestParameters(IRequestParametersPath pathParameters, IRequestParametersQuery queryParameters)
