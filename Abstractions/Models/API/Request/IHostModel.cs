@@ -8,12 +8,12 @@
         /// <summary>
         /// The host computer object attached to this host if the host is a computer, otherwise it will be null.
         /// </summary>
-        HostModelComputer HostComputer { get; set; }
+        HostModelComputer? HostComputer { get; set; }
 
         /// <summary>
         /// The host endpoint object attached to this host if the host is an endpoint, otherwise it will be null.
         /// </summary>
-        HostModelEndpoint HostEndpoint { get; set; }
+        HostModelEndpoint? HostEndpoint { get; set; }
 
         /// <summary>
         /// The Id of the host group this host belongs to.

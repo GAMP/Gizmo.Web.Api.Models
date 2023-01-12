@@ -11,7 +11,7 @@ using System.Runtime.CompilerServices;
 namespace Gizmo.Web.Api.Models
 {
     /// <inheritdoc/>
-    public sealed class UriParameters : IUriParameters
+    public readonly struct UriParameters : IUriParameters
     {
         /// <inheritdoc/>
         public string? Query { get; }
@@ -19,20 +19,31 @@ namespace Gizmo.Web.Api.Models
         public string? Path { get; }
 
         /// <inheritdoc/>
-        public UriParameters() { }
+        public UriParameters()
+        {
+            Path = null;
+            Query = null;
+        }
 
         /// <inheritdoc/>
-        public UriParameters(int id) 
+        public UriParameters(int id)
         {
-            Path= $"/{id}";
+            Path = $"/{id}";
+            Query = null;
         }
         /// <inheritdoc/>
-        public UriParameters(object[] pathParameters) =>
+        public UriParameters(object[] pathParameters)
+        {
             Path = GetPath(pathParameters);
+            Query = null;
+        }
 
         /// <inheritdoc/>
-        public UriParameters(IUriParametersQuery queryParameters) =>
+        public UriParameters(IUriParametersQuery queryParameters)
+        {
             Query = GetQuery(queryParameters);
+            Path = null;
+        }
 
         /// <inheritdoc/>
         public UriParameters(object[] pathParameters, IUriParametersQuery queryParameters)
@@ -48,7 +59,6 @@ namespace Gizmo.Web.Api.Models
                 .GetProperties(BindingFlags.Instance | BindingFlags.Public)
                 //.Where(prop => prop.GetCustomAttribute<JsonIgnoreAttribute>() == null)
                 .ToList();
-
 
             //create query parameters collection
             var queryCollection = new Dictionary<string, string>();
@@ -91,7 +101,7 @@ namespace Gizmo.Web.Api.Models
                             {
                                 queryCollection.Add($"{paramPrefix}{property.Name}[{index}]", s.ToString());
                             }
-                            index += 1;
+                            index++;
                         }
                     }
                     else if (propertyValue is IUriParametersQuery subObject)
@@ -139,7 +149,7 @@ namespace Gizmo.Web.Api.Models
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         private static string GetPath(object[] pathParameters)
         {
-            return string.Join("/", pathParameters.Select(x => x.ToString()));
+            return string.Join("/", pathParameters);
         }
     }
 }

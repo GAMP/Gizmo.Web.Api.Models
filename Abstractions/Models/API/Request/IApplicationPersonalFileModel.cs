@@ -18,7 +18,7 @@
         /// <summary>
         /// The caption of the personal file.
         /// </summary>
-        string Caption { get; set; }
+        string? Caption { get; set; }
 
         /// <summary>
         /// Whether to clean up before restore.
@@ -33,12 +33,12 @@
         /// <summary>
         /// The description of the personal file.
         /// </summary>
-        string Description { get; set; }
+        string? Description { get; set; }
 
         /// <summary>
         /// The directory options object attached to this personal file if the personal file type is file, otherwise it will be null.
         /// </summary>
-        ApplicationPersonalFileModelDirectoryOptions DirectoryOptions { get; set; }
+        ApplicationPersonalFileModelDirectoryOptions? DirectoryOptions { get; set; }
 
         /// <summary>
         /// The quota of the personal file.

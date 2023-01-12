@@ -53,12 +53,12 @@
         /// <summary>
         /// The product object attached to this order line if the order line refers to a product, otherwise it will be null.
         /// </summary>
-        ProductLineModel Product { get; set; }
+        ProductLineModel? Product { get; set; }
 
         /// <summary>
         /// The name of the item in the order line.
         /// </summary>
-        string ProductName { get; set; }
+        string? ProductName { get; set; }
 
         /// <summary>
         /// The quantity of items in the order line.
@@ -78,7 +78,7 @@
         /// <summary>
         /// The time product object attached to this order line if the order line refers to a time product, otherwise it will be null.
         /// </summary>
-        ProductLineModel TimeProduct { get; set; }
+        ProductLineModel? TimeProduct { get; set; }
 
         /// <summary>
         /// The total amount of the order line.

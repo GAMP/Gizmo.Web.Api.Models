@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Creates new instance.
         /// </summary>
-        public APIEventMessage() : base(ISerializationType)
+        protected APIEventMessage() : base(ISerializationType)
         { }
 
         #endregion

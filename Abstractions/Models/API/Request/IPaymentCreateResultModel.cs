@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <remarks>
         /// This value is optional.
         /// </remarks>
-        string NativeQrImage { get; init; }
+        string? NativeQrImage { get; init; }
 
         /// <summary>
         /// Gets payment url.
@@ -28,6 +28,6 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// Gets QR Image.
         /// </summary>
-        string QrImage { get; init; }
+        string? QrImage { get; init; }
     }
 }

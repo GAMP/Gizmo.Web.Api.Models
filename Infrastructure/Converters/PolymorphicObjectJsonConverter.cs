@@ -53,8 +53,8 @@ namespace Gizmo.Web.Api
             if (reader.TokenType != JsonTokenType.PropertyName)
                 throw new JsonException();
 
-            string propertyName = reader.GetString();
-            if (propertyName != DESCRIMINATOR_NAME)
+            string? propertyName = reader.GetString();
+            if (propertyName == null || propertyName != DESCRIMINATOR_NAME)
                 throw new JsonException();
 
             reader.Read();

@@ -17,7 +17,7 @@ namespace Gizmo.Web.Api
         /// <param name="objectType">MsgPack object or interface type.</param>
         /// <param name="converter">Created converter.</param>
         /// <returns>True for success otherwise false.</returns>
-        public static bool TryCreate(string assemblyName,string objectType,out JsonConverter converter)
+        public static bool TryCreate(string assemblyName,string objectType, out JsonConverter? converter)
         {
             converter = null;
             try

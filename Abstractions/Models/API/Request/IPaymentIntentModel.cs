@@ -35,7 +35,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// Provider transaction id.
         /// </summary>
-        string TransactionId { get; set; }
+        string? TransactionId { get; set; }
 
         /// <summary>
         /// Provider transaction time.

@@ -20,7 +20,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// The days on which the rate is applicable.
         /// </summary>
-        IEnumerable<BillingProfileRateModelDay> Days { get; set; }
+        IEnumerable<BillingProfileRateModelDay>? Days { get; set; }
 
         /// <summary>
         /// Whether the rate is step based.
@@ -40,7 +40,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// The steps of the rate.
         /// </summary>
-        IEnumerable<BillingProfileRateModelStep> RateSteps { get; set; }
+        IEnumerable<BillingProfileRateModelStep>? RateSteps { get; set; }
 
         /// <summary>
         /// The start fee of the rate.

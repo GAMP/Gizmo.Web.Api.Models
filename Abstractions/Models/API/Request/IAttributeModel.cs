@@ -8,7 +8,7 @@
         /// <summary>
         /// The friendly name of the attribute.
         /// </summary>
-        string FriendlyName { get; set; }
+        string? FriendlyName { get; set; }
 
         /// <summary>
         /// The name of the attribute.

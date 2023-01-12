@@ -25,7 +25,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// The description of the application.
         /// </summary>
-        string Description { get; set; }
+        string? Description { get; set; }
 
         /// <summary>
         /// The Id of the application enterprise that is the developer of the application.
@@ -50,6 +50,6 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// The version of the application.
         /// </summary>
-        string Version { get; set; }
+        string? Version { get; set; }
     }
 }

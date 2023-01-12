@@ -15,7 +15,7 @@ namespace Gizmo.Web.Api.Models
         /// The value.
         /// </summary>
         [Key(0)]
-        public T Value { get; set; }
+        public T? Value { get; set; }
 
         #endregion
     }

@@ -10,6 +10,6 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// The list of payments for the invoice.
         /// </summary>
-        IEnumerable<InvoicePaymentModelShort> Payments { get; set; }
+        IEnumerable<InvoicePaymentModelShort>? Payments { get; set; }
     }
 }

@@ -8,7 +8,7 @@
     /// </remarks>
     public interface IUriParameters
     {
-        string Query { get; }
-        string Path { get; }
+        string? Query { get; }
+        string? Path { get; }
     }
 }

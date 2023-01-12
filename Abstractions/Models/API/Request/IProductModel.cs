@@ -8,12 +8,12 @@
         /// <summary>
         /// The barcode of the product.
         /// </summary>
-        string Barcode { get; set; }
+        string? Barcode { get; set; }
 
         /// <summary>
         /// The bundle object attached to this product if the product is a bundle, otherwise it will be null.
         /// </summary>
-        Bundle Bundle { get; set; }
+        Bundle? Bundle { get; set; }
 
         /// <summary>
         /// The cost of the product.
@@ -23,7 +23,7 @@
         /// <summary>
         /// The description of the product.
         /// </summary>
-        string Description { get; set; }
+        string? Description { get; set; }
 
         /// <summary>
         /// Disallow order from client.
@@ -123,6 +123,6 @@
         /// <summary>
         /// The time product object attached to this product if the product is a time product, otherwise it will be null.
         /// </summary>
-        ProductTime TimeProduct { get; set; }
+        ProductTime? TimeProduct { get; set; }
     }
 }

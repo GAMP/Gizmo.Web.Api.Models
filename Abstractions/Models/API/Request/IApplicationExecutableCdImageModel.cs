@@ -8,12 +8,12 @@
         /// <summary>
         /// The path of the cd image.
         /// </summary>
-        string Path { get; set; }
+        string? Path { get; set; }
 
         /// <summary>
         /// The mounting options of the cd image.
         /// </summary>
-        string MountOptions { get; set; }
+        string? MountOptions { get; set; }
 
         /// <summary>
         /// Whether the cd image will check the mounter process exit code value while mounting.
@@ -23,6 +23,6 @@
         /// <summary>
         /// The device id of the cd image.
         /// </summary>
-        string DeviceId { get; set; }
+        string? DeviceId { get; set; }
     }
 }

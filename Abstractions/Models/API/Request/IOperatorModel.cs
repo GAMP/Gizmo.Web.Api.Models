@@ -17,7 +17,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// The email of the operator.
         /// </summary>
-        string Email { get; set; }
+        string? Email { get; set; }
 
         #endregion
 
@@ -26,7 +26,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// The address of the operator.
         /// </summary>
-        string Address { get; set; }
+        string? Address { get; set; }
 
         /// <summary>
         /// The birth date of the operator.
@@ -36,17 +36,17 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// The city of the operator.
         /// </summary>
-        string City { get; set; }
+        string? City { get; set; }
 
         /// <summary>
         /// The country of the operator.
         /// </summary>
-        string Country { get; set; }
+        string? Country { get; set; }
 
         /// <summary>
         /// The first name of the operator.
         /// </summary>
-        string FirstName { get; set; }
+        string? FirstName { get; set; }
 
         /// <summary>
         /// The identification number of the operator.
@@ -66,22 +66,22 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// The last name of the operator.
         /// </summary>
-        string LastName { get; set; }
+        string? LastName { get; set; }
 
         /// <summary>
         /// The mobile phone number of the operator.
         /// </summary>
-        string MobilePhone { get; set; }
+        string? MobilePhone { get; set; }
 
         /// <summary>
         /// The phone number of the operator.
         /// </summary>
-        string Phone { get; set; }
+        string? Phone { get; set; }
 
         /// <summary>
         /// The post code of the operator.
         /// </summary>
-        string PostCode { get; set; }
+        string? PostCode { get; set; }
 
         /// <summary>
         /// The sex of the operator.
@@ -91,7 +91,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// The SmartCard UID of the operator.
         /// </summary>
-        string SmartCardUid { get; set; }
+        string? SmartCardUid { get; set; }
 
         #endregion
     }

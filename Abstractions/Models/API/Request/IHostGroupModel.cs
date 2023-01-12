@@ -28,6 +28,6 @@
         /// <summary>
         /// The name of the skin this host group uses by default.
         /// </summary>
-        string SkinName { get; set; }
+        string? SkinName { get; set; }
     }
 }

@@ -8,7 +8,7 @@
         /// <summary>
         /// The user agreement text.
         /// </summary>
-        string Agreement { get; set; }
+        string? Agreement { get; set; }
 
         /// <summary>
         /// The display order of the user agreement.
@@ -33,6 +33,6 @@
         /// <summary>
         /// The name of the user agreement.
         /// </summary>
-        string Name { get; set; }
+        string? Name { get; set; }
     }
 }

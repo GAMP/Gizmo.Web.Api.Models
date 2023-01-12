@@ -17,7 +17,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// The email of the user.
         /// </summary>
-        string Email { get; set; }
+        string? Email { get; set; }
 
         /// <summary>
         /// The Id of the users group id this user belongs to.
@@ -51,12 +51,12 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// The first name of the user.
         /// </summary>
-        string FirstName { get; set; }
+        string? FirstName { get; set; }
 
         /// <summary>
         /// The last name of the user.
         /// </summary>
-        string LastName { get; set; }
+        string? LastName { get; set; }
 
         /// <summary>
         /// The birth date of the user.
@@ -66,32 +66,32 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// The address of the user.
         /// </summary>
-        string Address { get; set; }
+        string? Address { get; set; }
 
         /// <summary>
         /// The city of the user.
         /// </summary>
-        string City { get; set; }
+        string? City { get; set; }
 
         /// <summary>
         /// The country of the user.
         /// </summary>
-        string Country { get; set; }
+        string? Country { get; set; }
 
         /// <summary>
         /// The post code of the user.
         /// </summary>
-        string PostCode { get; set; }
+        string? PostCode { get; set; }
 
         /// <summary>
         /// The phone number of the user.
         /// </summary>
-        string Phone { get; set; }
+        string? Phone { get; set; }
 
         /// <summary>
         /// The mobile phone number of the user.
         /// </summary>
-        string MobilePhone { get; set; }
+        string? MobilePhone { get; set; }
 
         /// <summary>
         /// The sex of the user.
@@ -111,12 +111,12 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// The SmartCard UID of the user.
         /// </summary>
-        string SmartCardUid { get; set; }
+        string? SmartCardUid { get; set; }
 
         /// <summary>
         /// The identification number of the user.
         /// </summary>
-        string Identification { get; set; }
+        string? Identification { get; set; }
 
         #endregion
     }

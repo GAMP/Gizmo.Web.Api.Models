@@ -13,7 +13,7 @@
         /// <summary>
         /// The description of the user group.
         /// </summary>
-        string Description { get; set; }
+        string? Description { get; set; }
 
         /// <summary>
         /// The Id of the billing profile this user group is associated with.
@@ -23,7 +23,7 @@
         /// <summary>
         /// The required user info object attached to this user group.
         /// </summary>
-        UserModelRequiredInfo RequiredUserInfo { get; set; }
+        UserModelRequiredInfo? RequiredUserInfo { get; set; }
 
         /// <summary>
         /// Whether to override the default application group.

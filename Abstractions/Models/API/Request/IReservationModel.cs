@@ -26,17 +26,17 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// The contact phone of the reservation.
         /// </summary>
-        string ContactPhone { get; set; }
+        string? ContactPhone { get; set; }
 
         /// <summary>
         /// The contact email of the reservation.
         /// </summary>
-        string ContactEmail { get; set; }
+        string? ContactEmail { get; set; }
 
         /// <summary>
         /// The note of the reservation.
         /// </summary>
-        string Note { get; set; }
+        string? Note { get; set; }
 
         /// <summary>
         /// The pin of the reservation.
@@ -51,11 +51,11 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// The reserved hosts by this reservation.
         /// </summary>
-        IEnumerable<ReservationModelHost> Hosts { get; set; }
+        IEnumerable<ReservationModelHost>? Hosts { get; set; }
 
         /// <summary>
         /// The users of this reservation.
         /// </summary>
-        IEnumerable<ReservationModelUser> Users { get; set; }
+        IEnumerable<ReservationModelUser>? Users { get; set; }
     }
 }

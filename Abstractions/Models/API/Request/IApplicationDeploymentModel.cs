@@ -13,7 +13,7 @@
         /// <summary>
         /// The deployment options of the deployment.
         /// </summary>
-        ApplicationDeploymentModelOptions DeploymentOptions { get; set; }
+        ApplicationDeploymentModelOptions? DeploymentOptions { get; set; }
 
         /// <summary>
         /// The destination of the deployment.
@@ -28,7 +28,7 @@
         /// <summary>
         /// The registry string of the deployment.
         /// </summary>
-        string RegistryString { get; set; }
+        string? RegistryString { get; set; }
 
         /// <summary>
         /// The source of the deployment.

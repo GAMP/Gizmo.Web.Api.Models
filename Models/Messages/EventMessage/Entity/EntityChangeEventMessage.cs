@@ -37,7 +37,7 @@ namespace Gizmo.Web.Api.Messaging
         /// Gets entity type name.
         /// </summary>
         [Key(3)]
-        public string EntityType
+        public string? EntityType
         {
             get; set;
         }

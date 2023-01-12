@@ -17,7 +17,7 @@ namespace Gizmo.Web.Api.Models
         /// Error key.
         /// </summary>
         [Key(0)]
-        public string PropertyName
+        public string? PropertyName
         {
             get; init;
         }
@@ -26,7 +26,7 @@ namespace Gizmo.Web.Api.Models
         /// Error values.
         /// </summary>
         [Key(1)]
-        public string[] Messages
+        public string[]? Messages
         {
             get; init;
         } 

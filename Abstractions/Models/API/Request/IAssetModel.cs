@@ -13,7 +13,7 @@
         /// <summary>
         /// The barcode of the asset.
         /// </summary>
-        string Barcode { get; set; }
+        string? Barcode { get; set; }
 
         /// <summary>
         /// Whether the asset is enabled.
@@ -28,16 +28,16 @@
         /// <summary>
         /// The serial number of the asset.
         /// </summary>
-        string SerialNumber { get; set; }
+        string? SerialNumber { get; set; }
 
         /// <summary>
         /// The smart card unique id of the asset.
         /// </summary>
-        string SmartCardUid { get; set; }
+        string? SmartCardUid { get; set; }
 
         /// <summary>
         /// The tag of the asset.
         /// </summary>
-        string Tag { get; set; }
+        string? Tag { get; set; }
     }
 }

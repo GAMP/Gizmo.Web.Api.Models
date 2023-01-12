@@ -13,7 +13,7 @@
         /// <summary>
         /// The MAC address of the register.
         /// </summary>
-        string MacAddress { get; set; }
+        string? MacAddress { get; set; }
 
         /// <summary>
         /// The name of the register.

@@ -15,7 +15,7 @@ namespace Gizmo.Web.Api.Messaging
         /// Creates new instance.
         /// </summary>
         public OrderDeliveredEventMessage() : base()
-        { } 
+        { }
         #endregion
 
         #region PROPERTIES

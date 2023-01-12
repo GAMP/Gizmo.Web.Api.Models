@@ -18,17 +18,17 @@
         /// <summary>
         /// The application modes object attached to this executable.
         /// </summary>
-        ApplicationModes ApplicationModes { get; set; }
+        ApplicationModes? ApplicationModes { get; set; }
 
         /// <summary>
         /// The arguments of the executable.
         /// </summary>
-        string Arguments { get; set; }
+        string? Arguments { get; set; }
 
         /// <summary>
         /// The caption of the executable.
         /// </summary>
-        string Caption { get; set; }
+        string? Caption { get; set; }
 
         /// <summary>
         /// The Id of the deployment profile this executable uses by default.
@@ -38,7 +38,7 @@
         /// <summary>
         /// The description of the executable.
         /// </summary>
-        string Description { get; set; }
+        string? Description { get; set; }
 
         /// <summary>
         /// The display order of the executable.
@@ -48,7 +48,7 @@
         /// <summary>
         /// The executable options object attached to this executable.
         /// </summary>
-        ApplicationExecutableModelOptions ExecutableOptions { get; set; }
+        ApplicationExecutableModelOptions? ExecutableOptions { get; set; }
 
         /// <summary>
         /// The path of the executable.
@@ -68,6 +68,6 @@
         /// <summary>
         /// The working directory of the executable.
         /// </summary>
-        string WorkingDirectory { get; set; }
+        string? WorkingDirectory { get; set; }
     }
 }

@@ -8,7 +8,7 @@
         /// <summary>
         /// The description of the asset type.
         /// </summary>
-        string Description { get; set; }
+        string? Description { get; set; }
 
         /// <summary>
         /// The name of the asset type.

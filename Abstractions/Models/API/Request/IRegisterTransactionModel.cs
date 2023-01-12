@@ -18,6 +18,6 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// The note of the register transaction.
         /// </summary>
-        string Note { get; set; }
+        string? Note { get; set; }
     }
 }
