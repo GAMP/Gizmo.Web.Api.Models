@@ -43,10 +43,7 @@ namespace Gizmo.Web.Api.Models
         /// Gets response result.
         /// </summary>
         [Key(4)]
-        public T Result
-        {
-            get; set;
-        } 
+        public T Result { get; set; }
 
         #endregion
     }

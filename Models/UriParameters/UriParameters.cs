@@ -81,7 +81,7 @@ namespace Gizmo.Web.Api.Models
                     {
                         //specific use of byte array(image case)
                         if (property.Name == "Image")
-                            queryCollection.Add($"{paramPrefix}{property.Name}", Convert.ToBase64String(array, 0, array.Length));
+                            queryCollection.Add(paramPrefix + property.Name, Convert.ToBase64String(array, 0, array.Length));
                     }
                     else if (propertyValue is System.Collections.ICollection enumerable)
                     {
@@ -106,7 +106,7 @@ namespace Gizmo.Web.Api.Models
                     }
                     else if (propertyValue is IUriParametersQuery subObject)
                     {
-                        var subObjectQuery = GetQuery(subObject, $"{paramPrefix}{property.Name}");
+                        var subObjectQuery = GetQuery(subObject, paramPrefix + property.Name);
                         if (!string.IsNullOrEmpty(subObjectQuery))
                         {
                             subObjectQuery = subObjectQuery.Substring(1); //Remove question mark.
@@ -115,7 +115,7 @@ namespace Gizmo.Web.Api.Models
                     }
                     else
                     {
-                        queryCollection.Add($"{paramPrefix}{property.Name}", propertyValue.ToString());
+                        queryCollection.Add(paramPrefix + property.Name, propertyValue.ToString());
                     }
                 }
             }
@@ -149,7 +149,7 @@ namespace Gizmo.Web.Api.Models
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         private static string GetPath(object[] pathParameters)
         {
-            return string.Join("/", pathParameters);
+            return '/' + string.Join("/", pathParameters);
         }
     }
 }
