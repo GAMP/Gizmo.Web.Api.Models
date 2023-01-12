@@ -21,7 +21,7 @@ namespace Gizmo.Web.Api.Models
         /// Gets device id.
         /// </summary>
         [MessagePack.Key(0)]
-        public int Id { get; set; }
+        public int Id { get; init; }
 
         /// <summary>
         /// Gets device type.

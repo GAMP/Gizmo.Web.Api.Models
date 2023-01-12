@@ -21,7 +21,7 @@ namespace Gizmo.Web.Api.Models
         /// The Id of the object.
         /// </summary>
         [Key(0)]
-        public int Id { get; set; }
+        public int Id { get; init; }
 
         /// <summary>
         /// The start fee of the rate.

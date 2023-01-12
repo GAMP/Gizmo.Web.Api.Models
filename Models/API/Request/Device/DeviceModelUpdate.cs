@@ -19,7 +19,7 @@ namespace Gizmo.Web.Api.Models
 
         /// <inheritdoc/>
         [MessagePack.Key(0)]
-        public int Id { get; set; }
+        public int Id { get; init; }
 
         /// <summary>
         /// Gets or sets device name.

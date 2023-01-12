@@ -1,11 +1,10 @@
 ﻿using Microsoft.AspNetCore.WebUtilities;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
-using System.Runtime.Serialization;
-using System.Text.Json.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -140,9 +139,10 @@ namespace Gizmo.Web.Api.Models
             if (target == null)
                 throw new ArgumentNullException(nameof(target));
 
+            //TODO: How needs excluding the route parameters here
+            
             return target.GetType()
                 .GetProperties(BindingFlags.Instance | BindingFlags.Public)
-                //TODO: How needs excluding the route parameters here
                 //.Where(prop => prop.GetCustomAttribute<JsonIgnoreAttribute>() == null)
                 .Select(prop => prop)
                 .ToList();

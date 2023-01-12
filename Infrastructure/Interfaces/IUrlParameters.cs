@@ -8,5 +8,6 @@
     /// </remarks>
     public interface IUrlParameters
     {
+        //IUrlQueryParameters? QueryParameters
     }
 }

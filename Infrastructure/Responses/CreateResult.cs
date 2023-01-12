@@ -15,7 +15,7 @@ namespace Gizmo.Web.Api.Models
         /// The Id of the newly created object.
         /// </summary>
         [Key(0)]
-        public int Id { get; set; } 
+        public int Id { get; init; } 
 
         #endregion
     }

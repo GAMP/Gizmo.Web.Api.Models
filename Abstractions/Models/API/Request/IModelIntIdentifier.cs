@@ -8,6 +8,6 @@
         /// <summary>
         /// The Id of the object.
         /// </summary>
-        int Id { get; set; }
+        int Id { get; init; }
     }
 }

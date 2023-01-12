@@ -20,7 +20,7 @@ namespace Gizmo.Web.Api.Models
         /// Gets or sets transaction id.
         /// </summary>
         [Key(0)]
-        public int Id { get; set; }
+        public int Id { get; init; }
 
         /// <summary>
         /// The date that the points transaction was created.
