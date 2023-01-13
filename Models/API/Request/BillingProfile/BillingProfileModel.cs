@@ -5,6 +5,7 @@ using MessagePack;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -39,7 +40,7 @@ namespace Gizmo.Web.Api.Models
         /// The rates of the billing profile.
         /// </summary>
         [MessagePack.Key(3)]
-        public IEnumerable<BillingProfileRateModel>? Rates { get; set; }
+        public IEnumerable<BillingProfileRateModel> Rates { get; set; } = Enumerable.Empty<BillingProfileRateModel>();
 
         #endregion
     }

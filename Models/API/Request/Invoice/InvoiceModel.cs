@@ -5,6 +5,7 @@ using MessagePack;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -111,19 +112,19 @@ namespace Gizmo.Web.Api.Models
         /// The lines of the invoice.
         /// </summary>
         [MessagePack.Key(15)]
-        public IEnumerable<InvoiceModelLine>? InvoiceLines { get; set; }
+        public IEnumerable<InvoiceModelLine> InvoiceLines { get; set; } = Enumerable.Empty<InvoiceModelLine>();
 
         /// <summary>
         /// The payments of the invoice.
         /// </summary>
         [MessagePack.Key(16)]
-        public IEnumerable<InvoicePaymentModel>? InvoicePayments { get; set; }
+        public IEnumerable<InvoicePaymentModel> InvoicePayments { get; set; } = Enumerable.Empty<InvoicePaymentModel>();
 
         /// <summary>
         /// The refunds of the invoice.
         /// </summary>
         [MessagePack.Key(17)]
-        public IEnumerable<InvoiceModelRefund>? InvoiceRefunds { get; set; }
+        public IEnumerable<InvoiceModelRefund> InvoiceRefunds { get; set; } = Enumerable.Empty<InvoiceModelRefund>();
 
         #endregion
     }

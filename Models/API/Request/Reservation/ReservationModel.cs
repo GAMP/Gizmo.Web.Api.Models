@@ -5,6 +5,7 @@ using MessagePack;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -80,13 +81,13 @@ namespace Gizmo.Web.Api.Models
         /// The reserved hosts by this reservation.
         /// </summary>
         [MessagePack.Key(9)]
-        public IEnumerable<ReservationModelHost>? Hosts { get; set; }
+        public IEnumerable<ReservationModelHost> Hosts { get; set; } = Enumerable.Empty<ReservationModelHost>();
 
         /// <summary>
         /// The users of this reservation.
         /// </summary>
         [MessagePack.Key(10)]
-        public IEnumerable<ReservationModelUser>? Users { get; set; }
+        public IEnumerable<ReservationModelUser> Users { get; set; } = Enumerable.Empty<ReservationModelUser>();
 
         #endregion
     }

@@ -32,7 +32,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// The lines of the order.
         /// </summary>
-        IEnumerable<OrderLineModel>? OrderLines { get; set; }
+        IEnumerable<OrderLineModel> OrderLines { get; set; }
 
         /// <summary>
         /// The total cost in points of the order line.

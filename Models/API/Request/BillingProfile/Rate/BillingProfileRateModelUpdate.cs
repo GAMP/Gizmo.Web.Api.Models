@@ -4,6 +4,7 @@ using MessagePack;
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -61,13 +62,13 @@ namespace Gizmo.Web.Api.Models
         /// The steps of the rate.
         /// </summary>
         [Key(7)]
-        public IEnumerable<BillingProfileRateModelStep>? RateSteps { get; set; }
+        public IEnumerable<BillingProfileRateModelStep> RateSteps { get; set; } = Enumerable.Empty<BillingProfileRateModelStep>();
 
         /// <summary>
         /// The days on which the rate is applicable.
         /// </summary>
         [Key(8)]
-        public IEnumerable<BillingProfileRateModelDay>? Days { get; set; }
+        public IEnumerable<BillingProfileRateModelDay> Days { get; set; } = Enumerable.Empty<BillingProfileRateModelDay>();
 
         #endregion
     }

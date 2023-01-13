@@ -16,7 +16,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// The days on which the product is available.
         /// </summary>
-        IEnumerable<ProductModelAvailabilityDay>? DaysAvailable { get; set; }
+        IEnumerable<ProductModelAvailabilityDay> DaysAvailable { get; set; }
 
         /// <summary>
         /// The date from which the product stops to be available.

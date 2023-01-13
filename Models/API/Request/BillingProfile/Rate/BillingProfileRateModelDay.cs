@@ -2,6 +2,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -23,7 +24,7 @@ namespace Gizmo.Web.Api.Models
         /// The timespans during which the rate is applicable for this day.
         /// </summary>
         [Key(1)]
-        public IEnumerable<BillingProfileRateModelDayTime>? DayTimesApplicable { get; set; }
+        public IEnumerable<BillingProfileRateModelDayTime> DayTimesApplicable { get; set; } = Enumerable.Empty<BillingProfileRateModelDayTime>();
 
         #endregion
     }

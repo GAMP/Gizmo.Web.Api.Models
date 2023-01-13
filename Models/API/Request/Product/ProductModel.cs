@@ -5,6 +5,7 @@ using MessagePack;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -39,13 +40,13 @@ namespace Gizmo.Web.Api.Models
         /// The taxes of the product.
         /// </summary>
         [MessagePack.Key(3)]
-        public IEnumerable<ProductTaxModel>? ProductTaxes { get; set; }
+        public IEnumerable<ProductTaxModel> ProductTaxes { get; set; } = Enumerable.Empty<ProductTaxModel>();
 
         /// <summary>
         /// The images of the product.
         /// </summary>
         [MessagePack.Key(4)]
-        public IEnumerable<ProductImageModel>? ProductImages { get; set; }
+        public IEnumerable<ProductImageModel> ProductImages { get; set; } = Enumerable.Empty<ProductImageModel>();
 
         /// <summary>
         /// The purchase availability of the product.

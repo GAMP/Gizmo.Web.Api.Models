@@ -5,6 +5,7 @@ using MessagePack;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -39,7 +40,7 @@ namespace Gizmo.Web.Api.Models
         /// The host layouts of the host layout group.
         /// </summary>
         [MessagePack.Key(3)]
-        public IEnumerable<HostLayoutModel>? HostLayouts { get; set; }
+        public IEnumerable<HostLayoutModel> HostLayouts { get; set; } = Enumerable.Empty<HostLayoutModel>();
 
         #endregion
     }

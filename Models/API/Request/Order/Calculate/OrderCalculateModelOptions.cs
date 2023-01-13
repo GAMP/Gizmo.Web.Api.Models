@@ -4,6 +4,7 @@ using MessagePack;
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -19,7 +20,7 @@ namespace Gizmo.Web.Api.Models
         /// The lines of the order.
         /// </summary>
         [Key(0)]
-        public IEnumerable<OrderLineModelOptions>? OrderLines { get; set; }
+        public IEnumerable<OrderLineModelOptions> OrderLines { get; set; } = Enumerable.Empty<OrderLineModelOptions>();
 
         #endregion
     }

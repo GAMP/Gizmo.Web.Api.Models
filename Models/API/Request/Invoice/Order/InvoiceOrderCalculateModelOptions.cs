@@ -4,6 +4,7 @@ using MessagePack;
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -25,7 +26,7 @@ namespace Gizmo.Web.Api.Models
         /// The list of payments for the invoice.
         /// </summary>
         [Key(1)]
-        public IEnumerable<InvoicePaymentModelShort>? Payments { get; set; }
+        public IEnumerable<InvoicePaymentModelShort> Payments { get; set; } = Enumerable.Empty<InvoicePaymentModelShort>();
 
         #endregion
     }

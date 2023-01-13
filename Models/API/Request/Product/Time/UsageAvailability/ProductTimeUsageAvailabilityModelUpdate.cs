@@ -4,6 +4,7 @@ using MessagePack;
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -43,7 +44,7 @@ namespace Gizmo.Web.Api.Models
         /// The days on which the product is available.
         /// </summary>
         [Key(4)]
-        public IEnumerable<ProductModelAvailabilityDay>? DaysAvailable { get; set; }
+        public IEnumerable<ProductModelAvailabilityDay> DaysAvailable { get; set; } = Enumerable.Empty<ProductModelAvailabilityDay>();
 
         #endregion
     }
