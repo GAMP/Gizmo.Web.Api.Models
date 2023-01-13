@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
+using System.Text;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -143,30 +144,17 @@ namespace Gizmo.Web.Api.Models
                 }
             }
 
-            var result = QueryHelpers.AddQueryString(string.Empty, queryCollection);
+            var result = new StringBuilder(QueryHelpers.AddQueryString(string.Empty, queryCollection));
 
             //Add all subobjects to the query.
             foreach (var subObjectQuery in subObjectQueries)
-            {
-                //If there is no base query then add question mark.
-                if (string.IsNullOrEmpty(result))
+                if (!string.IsNullOrEmpty(subObjectQuery))
                 {
-                    if (!string.IsNullOrEmpty(subObjectQuery))
-                    {
-                        result += $"?{subObjectQuery}";
-                    }
+                    result.Append(result.Length == 0 ? '?' : '$');
+                    result.Append(subObjectQuery);
                 }
-                else
-                {
-                    //If there is a base query then add &
-                    if (!string.IsNullOrEmpty(subObjectQuery))
-                    {
-                        result += $"&{subObjectQuery}";
-                    }
-                }
-            }
 
-            return result;
+            return result.ToString();
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
