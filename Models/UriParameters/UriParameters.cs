@@ -10,47 +10,70 @@ using System.Runtime.CompilerServices;
 
 namespace Gizmo.Web.Api.Models
 {
-    /// <inheritdoc/>
+    /// <summary>
+    /// URI parameters converter
+    /// </summary>
     public readonly struct UriParameters : IUriParameters
     {
-        /// <inheritdoc/>
+        /// <summary>
+        /// Query parameters from ModelFilter as string
+        /// </summary>
         public string? Query { get; }
-        /// <inheritdoc/>
+        /// <summary>
+        /// Path parameters from WebClient API as string
+        /// </summary>
         public string? Path { get; }
 
-        /// <inheritdoc/>
+        /// <summary>
+        /// An instance sets the Query property as NULL and the Path property as NULL.
+        /// </summary>
         public UriParameters()
         {
             Path = null;
             Query = null;
         }
 
-        /// <inheritdoc/>
+        /// <summary>
+        /// An instance sets the Path property as /{id} and the Query property as NULL.
+        /// </summary>
+        /// <param name="id">Identifier entity</param>
         public UriParameters(int id)
         {
             Path = $"/{id}";
             Query = null;
         }
-        /// <inheritdoc/>
+
+        /// <summary>
+        /// An instance sets the Path property as /{pathParameters[0]}/{pathParameters[1]}/...} and the Query property as NULL.
+        /// </summary>
+        /// <param name="pathParameters">An array which will be serialized to the string for URI.Path</param>
         public UriParameters(object[] pathParameters)
         {
             Path = GetPath(pathParameters);
             Query = null;
         }
 
-        /// <inheritdoc/>
+        /// <summary>
+        /// An instance sets the Query property as ?{prop.name}={prop.value} and the Path property as NULL.
+        /// </summary>
+        /// <param name="queryParameters">An object which will be serialized to the string for URI.Query.</param>
         public UriParameters(IUriParametersQuery queryParameters)
         {
             Query = GetQuery(queryParameters);
             Path = null;
         }
 
-        /// <inheritdoc/>
+        /// <summary>
+        /// An instance sets the Query property as ?{prop.name}={prop.value}and the Path property as /{pathParameters[0]}/{pathParameters[1]}/...}
+        /// </summary>
+        /// <param name="pathParameters">An array which will be serialized to the string for URI.Path</param>
+        /// <param name="queryParameters">An object which will be serialized to the string for URI.Query.</param>
         public UriParameters(object[] pathParameters, IUriParametersQuery queryParameters)
         {
             Path = GetPath(pathParameters);
             Query = GetQuery(queryParameters);
         }
+
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         private static string GetQuery(IUriParametersQuery queryParameters, string? prefix = null)
@@ -147,9 +170,6 @@ namespace Gizmo.Web.Api.Models
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static string GetPath(object[] pathParameters)
-        {
-            return '/' + string.Join("/", pathParameters);
-        }
+        private static string GetPath(object[] pathParameters) => '/' + string.Join("/", pathParameters);
     }
 }
