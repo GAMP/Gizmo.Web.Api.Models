@@ -1,6 +1,4 @@
-﻿using Gizmo.Web.Api.Models.Abstractions;
-
-using MessagePack;
+﻿using MessagePack;
 
 using System;
 
@@ -10,7 +8,7 @@ namespace Gizmo.Web.Api.Models
     /// Base filter for cursor-based pagination.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ModelFilterPagination : IUriParametersQuery
+    public sealed class ModelFilterPagination
     {
         #region FIELDS
 

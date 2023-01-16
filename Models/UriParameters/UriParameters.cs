@@ -5,9 +5,8 @@ using Microsoft.AspNetCore.WebUtilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
 using System.Runtime.CompilerServices;
-using System.Text;
+using System.Text.Json;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -50,7 +49,7 @@ namespace Gizmo.Web.Api.Models
         /// <param name="pathParameters">An array which will be serialized to the string for URI.Path</param>
         public UriParameters(object[] pathParameters)
         {
-            Path = GetPath(pathParameters);
+            Path = BuildUriPath(pathParameters);
             Query = null;
         }
 
@@ -60,7 +59,7 @@ namespace Gizmo.Web.Api.Models
         /// <param name="queryParameters">An object which will be serialized to the string for URI.Query.</param>
         public UriParameters(IUriParametersQuery queryParameters)
         {
-            Query = GetQuery(queryParameters);
+            Query = BuildUriQuery(queryParameters);
             Path = null;
         }
 
@@ -71,93 +70,65 @@ namespace Gizmo.Web.Api.Models
         /// <param name="queryParameters">An object which will be serialized to the string for URI.Query.</param>
         public UriParameters(object[] pathParameters, IUriParametersQuery queryParameters)
         {
-            Path = GetPath(pathParameters);
-            Query = GetQuery(queryParameters);
+            Path = BuildUriPath(pathParameters);
+            Query = BuildUriQuery(queryParameters);
         }
 
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static string GetQuery(IUriParametersQuery queryParameters, string? prefix = null)
+        private static string BuildUriQuery(IUriParametersQuery queryParameters)
         {
-            var properties = queryParameters.GetType()
-                .GetProperties(BindingFlags.Instance | BindingFlags.Public)
-                //.Where(prop => prop.GetCustomAttribute<JsonIgnoreAttribute>() == null)
-                .ToList();
-
-            //create query parameters collection
-            var queryCollection = new Dictionary<string, string>();
-
-            var paramPrefix = string.IsNullOrEmpty(prefix) ? "" : $"{prefix}.";
-
-            var subObjectQueries = new List<string>();
-
-            //add properties
-            foreach (var property in properties)
+            var queryStringParameters = new Dictionary<string, string>();
+            const string  ErrorMessage = $"The method '{nameof(ParseObjectForQueryStringParameters)}' can't parse the {nameof(IUriParametersQuery)} object.";
+            
+            ParseObjectForQueryStringParameters(queryParameters);
+            
+            return QueryHelpers.AddQueryString(string.Empty, queryStringParameters);
+            
+            void ParseObjectForQueryStringParameters(object data, string? propName = null)
             {
-                //get property value
-                var propertyValue = property.GetValue(queryParameters);
-
-                //check if null values should be added
-                if (propertyValue != null)
+                if (data.GetType().IsClass)
                 {
-                    //excludes byte of the ICollection if below
-                    if (propertyValue is Byte[] array)
+                    var serializedObject = JsonSerializer.Serialize(data);
+                    var serializedObjectAsDictionary = JsonSerializer.Deserialize<Dictionary<string, object>>(serializedObject);
+
+                    if (serializedObjectAsDictionary is null)
+                        throw new NotSupportedException(ErrorMessage);
+
+                    foreach (var item in serializedObjectAsDictionary.Where(x => x.Value is not null))
+                        ParseObjectForQueryStringParameters(item.Value, propName is null ? item.Key : $"{propName}.{item.Key}");
+                }
+                else
+                {
+                    var serializedJsonElement = (JsonElement)data;
+
+                    if (serializedJsonElement.ValueKind == JsonValueKind.Array)
                     {
-                        //specific use of byte array(image case)
-                        if (property.Name == "Image")
-                            queryCollection.Add(paramPrefix + property.Name, Convert.ToBase64String(array, 0, array.Length));
+                        var serializedJsonElementArray = JsonSerializer.Deserialize<object[]>(serializedJsonElement);
+
+                        if (serializedJsonElementArray is null)
+                            throw new NotSupportedException(ErrorMessage);
+
+                        for (int i = 0; i < serializedJsonElementArray.Length; i++)
+                            ParseObjectForQueryStringParameters(serializedJsonElementArray[i], $"{propName}[{i}]");
                     }
-                    else if (propertyValue is System.Collections.ICollection enumerable)
+                    else if (serializedJsonElement.ValueKind == JsonValueKind.Object)
                     {
-                        int index = 0;
-                        foreach (var s in enumerable)
-                        {
-                            if (s is IUriParametersQuery subObject)
-                            {
-                                var subObjectQuery = GetQuery(subObject, $"{paramPrefix}{property.Name}[{index}]");
-                                if (!string.IsNullOrEmpty(subObjectQuery))
-                                {
-                                    subObjectQuery = subObjectQuery.Substring(1); //Remove question mark.
-                                    subObjectQueries.Add(subObjectQuery);
-                                }
-                            }
-                            else
-                            {
-                                queryCollection.Add($"{paramPrefix}{property.Name}[{index}]", s.ToString());
-                            }
-                            index++;
-                        }
-                    }
-                    else if (propertyValue is IUriParametersQuery subObject)
-                    {
-                        var subObjectQuery = GetQuery(subObject, paramPrefix + property.Name);
-                        if (!string.IsNullOrEmpty(subObjectQuery))
-                        {
-                            subObjectQuery = subObjectQuery.Substring(1); //Remove question mark.
-                            subObjectQueries.Add(subObjectQuery);
-                        }
+                        var serializedJsonElementObject = JsonSerializer.Deserialize<Dictionary<string, object>>(serializedJsonElement);
+
+                        if (serializedJsonElementObject is null)
+                            throw new NotSupportedException(ErrorMessage);
+
+                        foreach (var item in serializedJsonElementObject.Where(x => x.Value is not null))
+                            ParseObjectForQueryStringParameters(item.Value, $"{propName}.{item.Key}");
                     }
                     else
-                    {
-                        queryCollection.Add(paramPrefix + property.Name, propertyValue.ToString());
-                    }
+                        queryStringParameters.Add(propName!, data.ToString());
                 }
             }
-
-            var result = new StringBuilder(QueryHelpers.AddQueryString(string.Empty, queryCollection));
-
-            //Add all subobjects to the query.
-            foreach (var subObjectQuery in subObjectQueries)
-                if (!string.IsNullOrEmpty(subObjectQuery))
-                {
-                    result.Append(result.Length == 0 ? '?' : '$');
-                    result.Append(subObjectQuery);
-                }
-
-            return result.ToString();
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static string GetPath(object[] pathParameters) => '/' + string.Join("/", pathParameters);
+        private static string BuildUriPath(object[] pathParameters) => '/' + string.Join("/", pathParameters);
     }
 }
