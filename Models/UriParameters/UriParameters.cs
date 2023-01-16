@@ -74,12 +74,11 @@ namespace Gizmo.Web.Api.Models
             Query = BuildUriQuery(queryParameters);
         }
 
-
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         private static string BuildUriQuery(IUriParametersQuery queryParameters)
         {
             var queryStringParameters = new Dictionary<string, string>();
-            
+
             ParseObjectForQueryStringParameters(queryParameters);
 
             return QueryHelpers.AddQueryString(string.Empty, queryStringParameters);
@@ -105,7 +104,7 @@ namespace Gizmo.Web.Api.Models
                     {
                         case JsonValueKind.Array:
                             {
-                                var serializedJsonElementArray = JsonSerializer.Deserialize<object[]>(serializedJsonElement);
+                                var serializedJsonElementArray = serializedJsonElement.Deserialize<object[]>();
 
                                 if (serializedJsonElementArray is null)
                                     throw new NotSupportedException($"The method '{nameof(ParseObjectForQueryStringParameters)}' can't parse the {typeof(IUriParametersQuery).Name}.");
@@ -117,7 +116,7 @@ namespace Gizmo.Web.Api.Models
                             }
                         case JsonValueKind.Object:
                             {
-                                var serializedJsonElementObject = JsonSerializer.Deserialize<Dictionary<string, object>>(serializedJsonElement);
+                                var serializedJsonElementObject = serializedJsonElement.Deserialize<Dictionary<string, object>>();
 
                                 if (serializedJsonElementObject is null)
                                     throw new NotSupportedException($"The method '{nameof(ParseObjectForQueryStringParameters)}' can't parse the {typeof(IUriParametersQuery).Name}.");
