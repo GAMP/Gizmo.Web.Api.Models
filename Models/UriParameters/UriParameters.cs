@@ -79,12 +79,12 @@ namespace Gizmo.Web.Api.Models
         private static string BuildUriQuery(IUriParametersQuery queryParameters)
         {
             var queryStringParameters = new Dictionary<string, string>();
-            const string  ErrorMessage = $"The method '{nameof(ParseObjectForQueryStringParameters)}' can't parse the {nameof(IUriParametersQuery)} object.";
-            
+            const string ErrorMessage = $"The method '{nameof(ParseObjectForQueryStringParameters)}' can't parse the {nameof(IUriParametersQuery)} object.";
+
             ParseObjectForQueryStringParameters(queryParameters);
-            
+
             return QueryHelpers.AddQueryString(string.Empty, queryStringParameters);
-            
+
             void ParseObjectForQueryStringParameters(object data, string? propName = null)
             {
                 if (data.GetType().IsClass)
@@ -102,28 +102,39 @@ namespace Gizmo.Web.Api.Models
                 {
                     var serializedJsonElement = (JsonElement)data;
 
-                    if (serializedJsonElement.ValueKind == JsonValueKind.Array)
+                    switch (serializedJsonElement.ValueKind)
                     {
-                        var serializedJsonElementArray = JsonSerializer.Deserialize<object[]>(serializedJsonElement);
+                        case JsonValueKind.Array:
+                            {
+                                var serializedJsonElementArray = JsonSerializer.Deserialize<object[]>(serializedJsonElement);
 
-                        if (serializedJsonElementArray is null)
-                            throw new NotSupportedException(ErrorMessage);
+                                if (serializedJsonElementArray is null)
+                                    throw new NotSupportedException(ErrorMessage);
 
-                        for (int i = 0; i < serializedJsonElementArray.Length; i++)
-                            ParseObjectForQueryStringParameters(serializedJsonElementArray[i], $"{propName}[{i}]");
+                                for (int i = 0; i < serializedJsonElementArray.Length; i++)
+                                    ParseObjectForQueryStringParameters(serializedJsonElementArray[i], $"{propName}[{i}]");
+
+                                break;
+                            }
+                        case JsonValueKind.Object:
+                            {
+                                var serializedJsonElementObject = JsonSerializer.Deserialize<Dictionary<string, object>>(serializedJsonElement);
+
+                                if (serializedJsonElementObject is null)
+                                    throw new NotSupportedException(ErrorMessage);
+
+                                foreach (var item in serializedJsonElementObject.Where(x => x.Value is not null))
+                                    ParseObjectForQueryStringParameters(item.Value, $"{propName}.{item.Key}");
+
+                                break;
+                            }
+                        default:
+                            {
+                                queryStringParameters.Add(propName!, data.ToString());
+
+                                break;
+                            }
                     }
-                    else if (serializedJsonElement.ValueKind == JsonValueKind.Object)
-                    {
-                        var serializedJsonElementObject = JsonSerializer.Deserialize<Dictionary<string, object>>(serializedJsonElement);
-
-                        if (serializedJsonElementObject is null)
-                            throw new NotSupportedException(ErrorMessage);
-
-                        foreach (var item in serializedJsonElementObject.Where(x => x.Value is not null))
-                            ParseObjectForQueryStringParameters(item.Value, $"{propName}.{item.Key}");
-                    }
-                    else
-                        queryStringParameters.Add(propName!, data.ToString());
                 }
             }
         }
