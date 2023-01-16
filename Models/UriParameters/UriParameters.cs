@@ -79,8 +79,7 @@ namespace Gizmo.Web.Api.Models
         private static string BuildUriQuery(IUriParametersQuery queryParameters)
         {
             var queryStringParameters = new Dictionary<string, string>();
-            const string ErrorMessage = $"The method '{nameof(ParseObjectForQueryStringParameters)}' can't parse the {nameof(IUriParametersQuery)} object.";
-
+            
             ParseObjectForQueryStringParameters(queryParameters);
 
             return QueryHelpers.AddQueryString(string.Empty, queryStringParameters);
@@ -93,7 +92,7 @@ namespace Gizmo.Web.Api.Models
                     var serializedObjectAsDictionary = JsonSerializer.Deserialize<Dictionary<string, object>>(serializedObject);
 
                     if (serializedObjectAsDictionary is null)
-                        throw new NotSupportedException(ErrorMessage);
+                        throw new NotSupportedException($"The method '{nameof(ParseObjectForQueryStringParameters)}' can't parse the {typeof(IUriParametersQuery).Name}.");
 
                     foreach (var item in serializedObjectAsDictionary.Where(x => x.Value is not null))
                         ParseObjectForQueryStringParameters(item.Value, propName is null ? item.Key : $"{propName}.{item.Key}");
@@ -109,7 +108,7 @@ namespace Gizmo.Web.Api.Models
                                 var serializedJsonElementArray = JsonSerializer.Deserialize<object[]>(serializedJsonElement);
 
                                 if (serializedJsonElementArray is null)
-                                    throw new NotSupportedException(ErrorMessage);
+                                    throw new NotSupportedException($"The method '{nameof(ParseObjectForQueryStringParameters)}' can't parse the {typeof(IUriParametersQuery).Name}.");
 
                                 for (int i = 0; i < serializedJsonElementArray.Length; i++)
                                     ParseObjectForQueryStringParameters(serializedJsonElementArray[i], $"{propName}[{i}]");
@@ -121,7 +120,7 @@ namespace Gizmo.Web.Api.Models
                                 var serializedJsonElementObject = JsonSerializer.Deserialize<Dictionary<string, object>>(serializedJsonElement);
 
                                 if (serializedJsonElementObject is null)
-                                    throw new NotSupportedException(ErrorMessage);
+                                    throw new NotSupportedException($"The method '{nameof(ParseObjectForQueryStringParameters)}' can't parse the {typeof(IUriParametersQuery).Name}.");
 
                                 foreach (var item in serializedJsonElementObject.Where(x => x.Value is not null))
                                     ParseObjectForQueryStringParameters(item.Value, $"{propName}.{item.Key}");
