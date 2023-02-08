@@ -24,6 +24,20 @@ namespace Gizmo.Web.Api.Models
         [Key(1)]
         public int PreviousCursor { get; set; }
 
+        [Key(2)]
+        public string? Next {get; set;}
+
+        [Key(3)]
+        public string? Prev {get; set;}
+
         #endregion
+    }
+
+    public class Cursor
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Value { get; set; }
+        public bool IsForward { get; set; }
     }
 }

@@ -55,6 +55,14 @@ namespace Gizmo.Web.Api.Models
             }
         }
 
+        [Key(3)]
+        public string? Next { get; set; }
+
+        [Key(4)]
+        public string? Prev { get; set; }
+
+        [Key(5)]
+        public string? SortingFieldName { get; set; }
         #endregion
     }
 }
