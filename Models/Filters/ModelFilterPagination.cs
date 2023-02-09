@@ -56,10 +56,10 @@ namespace Gizmo.Web.Api.Models
         }
 
         [Key(3)]
-        public string? Next { get; set; }
+        public string? NextCursor { get; set; }
 
         [Key(4)]
-        public string? Prev { get; set; }
+        public string? PrevCursor { get; set; }
 
         [Key(5)]
         public string? SortingFieldName { get; set; }

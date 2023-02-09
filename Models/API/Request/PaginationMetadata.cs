@@ -25,10 +25,10 @@ namespace Gizmo.Web.Api.Models
         public int PreviousCursor { get; set; }
 
         [Key(2)]
-        public string? Next {get; set;}
+        public string? NextCursor_ {get; set;}
 
         [Key(3)]
-        public string? Prev {get; set;}
+        public string? PrevCursor_ {get; set;}
 
         #endregion
     }
@@ -37,7 +37,7 @@ namespace Gizmo.Web.Api.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Value { get; set; }
+        public string? Value { get; set; }
         public bool IsForward { get; set; }
     }
 }
