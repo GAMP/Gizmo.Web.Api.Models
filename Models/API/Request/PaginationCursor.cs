@@ -17,7 +17,7 @@ namespace Gizmo.Web.Api.Models
         [Key(1)]
         public string Name { get; set; }
         [Key(2)]
-        public object Value { get; set; }
+        public object? Value { get; set; }
         [Key(3)]
         public bool IsForward { get; set; }
 
