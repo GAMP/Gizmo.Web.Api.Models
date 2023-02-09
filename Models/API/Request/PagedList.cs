@@ -18,10 +18,9 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         /// <param name="data">Data.</param>
         /// <param name="meta">Meta data.</param>
-        public PagedList(IEnumerable<T> data, PaginationMetadata meta)
+        public PagedList(IEnumerable<T> data)
         {
             Data = data;
-            Meta = meta;
         }
         #endregion
 
@@ -33,11 +32,11 @@ namespace Gizmo.Web.Api.Models
         [Key(0)]
         public IEnumerable<T> Data { get; }
 
-        /// <summary>
-        /// The pagination metadata of the current result set.
-        /// </summary>
         [Key(1)]
-        public PaginationMetadata Meta { get; }
+        public PaginationCursor? NextCursor { get; set; }
+
+        [Key(2)]
+        public PaginationCursor? PrevCursor { get; set; }
 
         #endregion
     }
