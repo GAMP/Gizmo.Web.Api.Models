@@ -17,7 +17,6 @@ namespace Gizmo.Web.Api.Models
         /// Creates new instance.
         /// </summary>
         /// <param name="data">Data.</param>
-        /// <param name="meta">Meta data.</param>
         public PagedList(IEnumerable<T> data)
         {
             Data = data;
@@ -32,9 +31,15 @@ namespace Gizmo.Web.Api.Models
         [Key(0)]
         public IEnumerable<T> Data { get; }
 
+        /// <summary>
+        /// Cursor for the request of the next chunk of the records
+        /// </summary>
         [Key(1)]
         public PaginationCursor? NextCursor { get; set; }
 
+        /// <summary>
+        /// Cursor for the request of the previous chunk of the records
+        /// </summary>
         [Key(2)]
         public PaginationCursor? PrevCursor { get; set; }
 
