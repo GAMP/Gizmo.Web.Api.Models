@@ -21,7 +21,7 @@ namespace Gizmo.Web.Api.Models
         #region PROPERTIES
 
         /// <summary>
-        /// Limit records for the response. Default limit is 10. Max limit is 100
+        /// Limit records for the response. Default limit is 10. Max limit is 100.
         /// </summary>
         [Key(0)]
         public int Limit
@@ -44,7 +44,7 @@ namespace Gizmo.Web.Api.Models
         }
 
         /// <summary>
-        /// Cursor for the next or previous chunk of the records
+        /// Cursor for the next or previous chunk of the records.
         /// </summary>
         [Key(1)]
         public PaginationCursor? Cursor { get; set; }

@@ -32,13 +32,13 @@ namespace Gizmo.Web.Api.Models
         public IEnumerable<T> Data { get; }
 
         /// <summary>
-        /// Cursor for the request of the next chunk of the records
+        /// Cursor for the request of the next chunk of the records.
         /// </summary>
         [Key(1)]
         public PaginationCursor? NextCursor { get; set; }
 
         /// <summary>
-        /// Cursor for the request of the previous chunk of the records
+        /// Cursor for the request of the previous chunk of the records.
         /// </summary>
         [Key(2)]
         public PaginationCursor? PrevCursor { get; set; }
