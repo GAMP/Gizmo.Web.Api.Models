@@ -99,6 +99,12 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(11)]
         public Sex Sex { get; set; }
 
+        /// <summary>
+        /// The id of the user.
+        /// </summary>
+        [MessagePack.Key(12)]
+        public int Id { get; set; }
+
         #endregion
     }
 }
