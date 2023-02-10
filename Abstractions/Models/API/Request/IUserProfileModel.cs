@@ -3,9 +3,9 @@
 namespace Gizmo.Web.Api.Models.Abstractions
 {
     /// <summary>
-    /// Member registration.
+    /// User profile.
     /// </summary>
-    public interface IMemberRegistrationModel : IWebApiModel
+    public interface IUserProfileModel : IWebApiModel
     {
         /// <summary>
         /// The username of the user.

@@ -8,10 +8,10 @@ using System.ComponentModel.DataAnnotations;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Member registration.
+    /// User profile.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class MemberRegistrationModelCreate : IMemberRegistrationModel, IUriParametersQuery
+    public sealed class UserProfileModelUpdate : IUserProfileModel, IUriParametersQuery
     {
         #region PROPERTIES
 
