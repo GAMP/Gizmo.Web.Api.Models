@@ -5,7 +5,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// New model.
     /// </summary>
-    public interface INewModel : IWebApiModel
+    public interface INewsModel : IWebApiModel
     {
         /// <summary>
         /// Gets or sets feed title.

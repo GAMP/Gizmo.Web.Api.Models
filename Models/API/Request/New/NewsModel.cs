@@ -5,7 +5,7 @@ namespace Gizmo.Web.Api.Models
 {
     /// <inheritdoc/>
     [Serializable, MessagePackObject]
-    public sealed class NewModel : INewModel
+    public sealed class NewsModel : INewsModel
     {
         /// <inheritdoc/>
         [Key(0)]
