@@ -31,7 +31,7 @@ namespace Gizmo.Web.Api.Models
         /// Direction of the scrolling.
         /// </summary>
         [Key(3)]
-        public bool IsForward { get; set; }
+        public bool IsForward { get; set; } = true;
 
         #endregion
     }

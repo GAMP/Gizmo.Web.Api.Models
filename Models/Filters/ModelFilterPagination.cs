@@ -12,8 +12,8 @@ namespace Gizmo.Web.Api.Models
     {
         #region FIELDS
 
-        private const int DEFAULT_LIMIT = 10;
-        private const int MAX_LIMIT = 100;
+        private const int DEFAULT_LIMIT = 1;
+        private const int MAX_LIMIT = int.MaxValue;
         private int limit = DEFAULT_LIMIT;
 
         #endregion
