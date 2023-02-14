@@ -26,7 +26,7 @@ namespace Gizmo.Web.Api.Models
         /// Value result of the sorting field.
         /// </summary>
         [Key(2)]
-        public string? Value { get; set; }
+        public object? Value { get; set; }
         /// <summary>
         /// Direction of the scrolling.
         /// </summary>
