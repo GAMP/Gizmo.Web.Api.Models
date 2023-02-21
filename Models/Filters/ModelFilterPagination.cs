@@ -11,16 +11,16 @@ namespace Gizmo.Web.Api.Models
     {
         #region FIELDS
 
-        private const int DEFAULT_LIMIT = 1;
-        private const int MAX_LIMIT = int.MaxValue;
-        private int limit = DEFAULT_LIMIT;
+        private const int DefaultLimit = 10;
+
+        private int limit = DefaultLimit;
 
         #endregion
 
         #region PROPERTIES
 
         /// <summary>
-        /// Limit records for the response. Default limit is 10. Max limit is 100.
+        /// Limit records for the response. Default limit is 10.
         /// </summary>
         [Key(0)]
         public int Limit
@@ -31,14 +31,13 @@ namespace Gizmo.Web.Api.Models
             }
             set
             {
-                if (value <= 0)
-                    limit = DEFAULT_LIMIT;
-
-                if (value > MAX_LIMIT)
-                    limit = MAX_LIMIT;
-
-                if (value > 0 && value <= MAX_LIMIT)
-                    limit = value;
+                limit = value switch
+                {
+                    0 => DefaultLimit,
+                    -1 => int.MaxValue,
+                    < -1 => DefaultLimit,
+                    _ => value
+                };
             }
         }
 
