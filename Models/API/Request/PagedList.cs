@@ -53,19 +53,25 @@ namespace Gizmo.Web.Api.Models
         /// Set the filter for the request next data.
         /// </summary>
         /// <param name="filter">Current filter for the request T entities.</param>
-        public void SetNextCursor(IModelFilter filter) => filter.Pagination.Cursor =
-            filter.Pagination.Cursor is not null
-                ? filter.Pagination.Cursor.IsForward ? NextCursor : PrevCursor
-                : filter.Pagination.Cursor = NextCursor;
-        
+        public void SetNextCursor(IModelFilter filter)
+        {
+            filter.Pagination.Cursor = NextCursor;
+
+            if (filter.Pagination.Cursor is not null)
+                filter.Pagination.Cursor.IsForward = true;
+        }
+
         /// <summary>
         /// Set the filter for the request previous data.
         /// </summary>
         /// <param name="filter">Current filter for the request T entities.</param>
-        public void SetPrevCursor(IModelFilter filter) => filter.Pagination.Cursor = 
-            filter.Pagination.Cursor != null
-                ? filter.Pagination.Cursor.IsForward ? PrevCursor : NextCursor
-                : filter.Pagination.Cursor = PrevCursor;
+        public void SetPrevCursor(IModelFilter filter)
+        {
+            filter.Pagination.Cursor = PrevCursor;
+
+            if (filter.Pagination.Cursor is not null)
+                filter.Pagination.Cursor.IsForward = false;
+        }
 
         #endregion
     }
