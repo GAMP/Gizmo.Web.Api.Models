@@ -1,9 +1,9 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.Filters;
+﻿using System;
+using System.Collections.Generic;
+
+using Gizmo.Web.Api.Models.Abstractions.Models.Filters;
 
 using MessagePack;
-
-using System;
-using System.Collections.Generic;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -50,27 +50,35 @@ namespace Gizmo.Web.Api.Models
         #region FUNCTIONS
 
         /// <summary>
-        /// Set the filter for the request next data.
+        /// Set the filter for the request data.
         /// </summary>
         /// <param name="filter">Current filter for the request T entities.</param>
-        public void SetNextCursor(IModelFilter filter)
+        public void SetCursor(IModelFilter filter)
         {
-            filter.Pagination.Cursor = NextCursor;
-
             if (filter.Pagination.Cursor is not null)
-                filter.Pagination.Cursor.IsForward = true;
-        }
+            {
+                if (filter.Pagination.Cursor.IsForward)
+                {
+                    if (NextCursor is null)
+                        NextCursor = filter.Pagination.Cursor;
+                    else
+                        filter.Pagination.Cursor = NextCursor;
+                }
+                else
+                {
+                    if (filter.Pagination.Cursor.Id == -1)
+                        filter.Pagination.Cursor.Id = int.MaxValue;
 
-        /// <summary>
-        /// Set the filter for the request previous data.
-        /// </summary>
-        /// <param name="filter">Current filter for the request T entities.</param>
-        public void SetPrevCursor(IModelFilter filter)
-        {
-            filter.Pagination.Cursor = PrevCursor;
-
-            if (filter.Pagination.Cursor is not null)
-                filter.Pagination.Cursor.IsForward = false;
+                    if (PrevCursor is null)
+                        PrevCursor = filter.Pagination.Cursor;
+                    else
+                        filter.Pagination.Cursor = PrevCursor;
+                }
+            }
+            else
+            {
+                filter.Pagination.Cursor = NextCursor;
+            }
         }
 
         #endregion
