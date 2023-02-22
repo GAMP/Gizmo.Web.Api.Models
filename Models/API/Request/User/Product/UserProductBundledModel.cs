@@ -12,11 +12,13 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The Id of the bundled product.
         /// </summary>
+        [Key(0)]
         public int ProductId { get; set; }
 
         /// <summary>
         /// The quantity of the bundled product.
         /// </summary>
+        [Key(1)]
         public int Quantity { get; set; }
     }
 }
