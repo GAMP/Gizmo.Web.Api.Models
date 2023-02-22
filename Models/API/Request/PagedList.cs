@@ -8,7 +8,7 @@ using MessagePack;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Paged list.
+    /// Model for the paginated data.
     /// </summary>
     /// <typeparam name="T">Data type.</typeparam>
     [Serializable, MessagePackObject]
@@ -50,7 +50,7 @@ namespace Gizmo.Web.Api.Models
         #region FUNCTIONS
 
         /// <summary>
-        /// Set the filter for the request data.
+        /// Set the cursor for the nex request.
         /// </summary>
         /// <param name="filter">Current filter for the request T entities.</param>
         public void SetCursor(IModelFilter filter)
