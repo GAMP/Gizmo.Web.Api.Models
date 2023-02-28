@@ -7,10 +7,10 @@ using System;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// User application executable model.
+    /// User executable model.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class UserApplicationExecutableModel : IUserApplicationExecutableModel, IModelIntIdentifier
+    public sealed class UserExecutableModel : IUserApplicationExecutableModel, IModelIntIdentifier
     {
         #region PROPERTIES
 

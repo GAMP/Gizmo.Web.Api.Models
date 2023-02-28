@@ -6,10 +6,10 @@ using MessagePack;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Filters that can be applied when searching for user application executables.
+    /// Filters that can be applied when searching for user executables.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class UserApplicationExecutablesFilter : IModelFilter
+    public sealed class UserExecutablesFilter : IModelFilter
     {
         #region PROPERTIES
 
