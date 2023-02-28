@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 using Gizmo.Web.Api.Models.Abstractions.Models.Filters;
 
@@ -31,7 +32,7 @@ namespace Gizmo.Web.Api.Models
         /// The data of the current result set.
         /// </summary>
         [Key(0)]
-        public IEnumerable<T> Data { get; }
+        public IEnumerable<T> Data { get; } = Enumerable.Empty<T>();
 
         /// <summary>
         /// Cursor for the request of the next chunk of the records.

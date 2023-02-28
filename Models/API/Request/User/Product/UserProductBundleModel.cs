@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+
 using MessagePack;
 
 namespace Gizmo.Web.Api.Models
@@ -14,6 +16,6 @@ namespace Gizmo.Web.Api.Models
         /// The bundled products in this bundle.
         /// </summary>
         [Key(0)]
-        IEnumerable<UserProductBundledModel> BundledProducts { get; set; }
+        public IEnumerable<UserProductBundledModel> BundledProducts { get; set; } = Enumerable.Empty<UserProductBundledModel>();
     }
 }
