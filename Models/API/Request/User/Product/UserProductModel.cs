@@ -33,57 +33,51 @@ namespace Gizmo.Web.Api.Models
         public int ProductGroupId { get; set; }
 
         /// <summary>
-        /// The name of the product group this product belongs to.
-        /// </summary>
-        [Key(3)]
-        public string ProductGroupName { get; set; } = null!;
-
-        /// <summary>
         /// The name of the product.
         /// </summary>
-        [Key(4)]
+        [Key(3)]
         public string Name { get; set; } = null!;
 
         /// <summary>
         /// The description of the product.
         /// </summary>
-        [Key(5)]
+        [Key(4)]
         public string? Description { get; set; }
 
         /// <summary>
         /// The price of the product.
         /// </summary>
-        [Key(6)]
+        [Key(5)]
         public decimal Price { get; set; }
 
         /// <summary>
         /// The cost in points of the product.
         /// </summary>
-        [Key(7)]
+        [Key(6)]
         public int? PointsPrice { get; set; }
 
         /// <summary>
         /// The amount of points the user earns when purchasing this product.
         /// </summary>
-        [Key(8)]
+        [Key(7)]
         public int? PointsAward { get; set; }
 
         /// <summary>
         /// The purchase options of the product.
         /// </summary>
-        [Key(9)]
+        [Key(8)]
         public PurchaseOptionType PurchaseOptions { get; set; }
 
         /// <summary>
         /// The time product object attached to this product if the product is a time product, otherwise it will be null.
         /// </summary>
-        [Key(10)]
+        [Key(9)]
         public UserProductTimeModel? TimeProduct { get; set; }
 
         /// <summary>
         /// The bundle object attached to this product if the product is a bundle, otherwise it will be null.
         /// </summary>
-        [Key(11)]
+        [Key(10)]
         public UserProductBundleModel? Bundle { get; set; }
 
         #endregion
