@@ -8,9 +8,20 @@ namespace Gizmo.Web.Api.Models
     public interface INewsModel : IWebApiModel
     {
         /// <summary>
+        /// Gets or sets new Id.
+        /// </summary>
+        int Id { get; init; }
+
+        /// <summary>
+        /// When custom template enabled user will only be able to specify entry Data.
+        /// We will essentially be forcing him to provide his own visual template and data for the entry.
+        /// </summary>
+        bool IsCustomTemplate { get; init; }
+
+        /// <summary>
         /// Gets or sets feed title.
         /// </summary>
-        public string Title { get; init; }
+        string? Title { get; init; }
 
         /// <summary>
         /// Gets or sets feed data.
@@ -18,31 +29,31 @@ namespace Gizmo.Web.Api.Models
         /// Data can be set to plain text or html.
         /// </remarks>
         /// </summary>
-        public string Data { get; init; }
+        string Data { get; init; }
 
         /// <summary>
         /// Gets or sets start date.
         /// </summary>
-        public DateTime? StartDate { get; init; }
+        DateTime? StartDate { get; init; }
 
         /// <summary>
         /// Gets or sets end date.
         /// </summary>
-        public DateTime? EndDate { get; init; }
+        DateTime? EndDate { get; init; }
 
         /// <summary>
-        /// Gets external url string.
+        /// Optional external URL or a custom command. (Action URL).
         /// </summary>
-        public string Url { get; init; }
+        string? Url { get; init; }
 
         /// <summary>
-        /// Gets or sets media url string.
+        /// Optional external media URL.
         /// </summary>
-        public string MediaUrl { get; init; }
+        string? MediaUrl { get; init; }
 
         /// <summary>
-        /// Gets or sets new Id.
+        /// Optional thumbnail URL.
         /// </summary>
-        public int Id { get; init; }
+        string? ThumbnailUrl { get; init; }
     }
 }
