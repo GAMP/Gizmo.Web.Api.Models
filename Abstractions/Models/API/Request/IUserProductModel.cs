@@ -44,5 +44,20 @@
         /// The purchase options of the product.
         /// </summary>
         PurchaseOptionType PurchaseOptions { get; set; }
+
+        /// <summary>
+        /// The time product object attached to this product if the product is a time product, otherwise it will be null.
+        /// </summary>
+        UserProductTimeModel? TimeProduct { get; set; }
+
+        /// <summary>
+        /// The bundle object attached to this product if the product is a bundle, otherwise it will be null.
+        /// </summary>
+        UserProductBundleModel? Bundle { get; set; }
+
+        /// <summary>
+        /// The Id of the default image for this product.
+        /// </summary>
+        int? DefaultImageId { get; set; }
     }
 }
