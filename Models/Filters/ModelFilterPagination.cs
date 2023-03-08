@@ -1,4 +1,5 @@
 ﻿using System;
+
 using MessagePack;
 
 namespace Gizmo.Web.Api.Models
@@ -37,7 +38,7 @@ namespace Gizmo.Web.Api.Models
                 _limit = value switch
                 {
                     0 => DefaultLimit,
-                    -1 => int.MaxValue,
+                    -1 => int.MaxValue - 1,
                     < -1 => DefaultLimit,
                     _ => value
                 };
