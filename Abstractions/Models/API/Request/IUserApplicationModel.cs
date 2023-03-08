@@ -56,5 +56,10 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// The release date of the application.
         /// </summary>
         DateTime? ReleaseDate { get; init; }
+
+        /// <summary>
+        /// The Id of the application's image.
+        /// </summary>
+        int? ImageId { get; init; }
     }
 }

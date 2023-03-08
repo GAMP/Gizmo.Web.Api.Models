@@ -80,6 +80,12 @@ namespace Gizmo.Web.Api.Models
         [Key(5)]
         public DateTime? ReleaseDate { get; init; }
 
+        /// <summary>
+        /// The Id of the application's image.
+        /// </summary>
+        [Key(6)]
+        public int? ImageId { get; init; }
+
         #endregion
     }
 }

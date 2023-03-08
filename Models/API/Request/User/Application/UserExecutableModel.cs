@@ -3,6 +3,8 @@
 using MessagePack;
 
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -43,6 +45,18 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [Key(4)]
         public int DisplayOrder { get; set; }
+
+        /// <summary>
+        /// The personal files of this executable.
+        /// </summary>
+        [Key(5)]
+        public IEnumerable<int> PersonalFiles { get; set; } = Enumerable.Empty<int>();
+
+        /// <summary>
+        /// The Id of the executable's image.
+        /// </summary>
+        [Key(6)]
+        public int? ImageId { get; init; }
 
         #endregion
     }

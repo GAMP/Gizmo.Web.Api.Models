@@ -1,4 +1,6 @@
-﻿namespace Gizmo.Web.Api.Models.Abstractions
+﻿using System.Collections.Generic;
+
+namespace Gizmo.Web.Api.Models.Abstractions
 {
     /// <summary>
     /// User application executable model.
@@ -24,5 +26,15 @@
         /// The display order of the executable.
         /// </summary>
         int DisplayOrder { get; set; }
+
+        /// <summary>
+        /// The personal files of this executable.
+        /// </summary>
+        IEnumerable<int> PersonalFiles { get; set; }
+
+        /// <summary>
+        /// The Id of the executable's image.
+        /// </summary>
+        int? ImageId { get; init; }
     }
 }
