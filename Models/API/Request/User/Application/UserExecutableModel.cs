@@ -50,7 +50,7 @@ namespace Gizmo.Web.Api.Models
         /// The personal files of this executable.
         /// </summary>
         [Key(5)]
-        public IEnumerable<int> PersonalFiles { get; set; } = Enumerable.Empty<int>();
+        public IEnumerable<UserExecutablePersonalFileModel> PersonalFiles { get; set; } = Enumerable.Empty<UserExecutablePersonalFileModel>();
 
         /// <summary>
         /// The Id of the executable's image.

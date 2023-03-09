@@ -30,7 +30,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// The personal files of this executable.
         /// </summary>
-        IEnumerable<int> PersonalFiles { get; set; }
+        IEnumerable<UserExecutablePersonalFileModel> PersonalFiles { get; set; }
 
         /// <summary>
         /// The Id of the executable's image.
