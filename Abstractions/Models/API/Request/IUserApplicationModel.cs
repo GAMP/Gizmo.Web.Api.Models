@@ -38,16 +38,6 @@ namespace Gizmo.Web.Api.Models.Abstractions
         int? DefaultExecutableId { get; init; }
 
         /// <summary>
-        /// The age rating of the application.
-        /// </summary>
-        int AgeRating { get; init; }
-
-        /// <summary>
-        /// The age rating type of the application.
-        /// </summary>
-        AgeRatingType AgeRatingType { get; init; }
-
-        /// <summary>
         /// The date when the application added.
         /// </summary>
         DateTime AddDate { get; init; }

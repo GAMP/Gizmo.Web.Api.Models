@@ -11,15 +11,15 @@ namespace Gizmo.Web.Api.Models
     /// User executable personal file model.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class UserExecutablePersonalFileModel : IUserExecutablePersonalFileModel
+    public sealed class UserExecutablePersonalFileModel : IUserExecutablePersonalFileModel, IModelIntIdentifier
     {
         #region PROPERTIES
 
         /// <summary>
-        /// Gets or sets personal user file id.
+        /// The Id of the object.
         /// </summary>
         [Key(0)]
-        public int PersonalFileId { get; init; }
+        public int Id { get; init; }
 
         /// <summary>
         /// Gets or sets order.

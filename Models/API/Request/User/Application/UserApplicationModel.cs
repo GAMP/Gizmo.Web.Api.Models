@@ -41,49 +41,37 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The Id of the application enterprise that is the publisher of the application.
         /// </summary>
-        [Key(6)]
+        [Key(4)]
         public int? PublisherId { get; init; }
 
         /// <summary>
         /// The Id of the application enterprise that is the developer of the application.
         /// </summary>
-        [Key(7)]
+        [Key(5)]
         public int? DeveloperId { get; init; }
 
         /// <summary>
         /// The Id of the executable this application uses by default.
         /// </summary>
-        [Key(8)]
+        [Key(6)]
         public int? DefaultExecutableId { get; init; }
-
-        /// <summary>
-        /// The age rating of the application.
-        /// </summary>
-        [Key(9)]
-        public int AgeRating { get; init; }
-
-        /// <summary>
-        /// The age rating type of the application.
-        /// </summary>
-        [Key(10)]
-        public AgeRatingType AgeRatingType { get; init; }
 
         /// <summary>
         /// The date when the application added.
         /// </summary>
-        [Key(4)]
+        [Key(7)]
         public DateTime AddDate { get; init; }
 
         /// <summary>
         /// The release date of the application.
         /// </summary>
-        [Key(5)]
+        [Key(8)]
         public DateTime? ReleaseDate { get; init; }
 
         /// <summary>
         /// The Id of the application's image.
         /// </summary>
-        [Key(6)]
+        [Key(9)]
         public int? ImageId { get; init; }
 
         #endregion

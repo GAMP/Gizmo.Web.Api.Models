@@ -6,22 +6,27 @@
     public interface IUserApplicationLinkModel : IWebApiModel
     {
         /// <summary>
+        /// The Id of the application this link belongs to.
+        /// </summary>
+        public int ApplicationId { get; set; }
+
+        /// <summary>
         /// The caption of the link.
         /// </summary>
         string Caption { get; init; }
 
         /// <summary>
-        /// The caption of the link.
+        /// The description of the link.
         /// </summary>
         string Description { get; init; }
 
         /// <summary>
-        /// The caption of the link.
+        /// The url of the link.
         /// </summary>
         string Url { get; init; }
 
         /// <summary>
-        /// The caption of the link.
+        /// The display order of the link.
         /// </summary>
         int DisplayOrder { get; init; }
     }

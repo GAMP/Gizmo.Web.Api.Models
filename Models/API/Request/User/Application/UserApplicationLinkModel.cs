@@ -21,27 +21,33 @@ namespace Gizmo.Web.Api.Models
         public int Id { get; init; }
 
         /// <summary>
-        /// The caption of the link.
+        /// The Id of the application this link belongs to.
         /// </summary>
         [Key(1)]
-        public string Caption { get; init; } = null!;
+        public int ApplicationId { get; set; }
 
         /// <summary>
         /// The caption of the link.
         /// </summary>
         [Key(2)]
+        public string Caption { get; init; } = null!;
+
+        /// <summary>
+        /// The description of the link.
+        /// </summary>
+        [Key(3)]
         public string Description { get; init; } = null!;
 
         /// <summary>
-        /// The caption of the link.
+        /// The url of the link.
         /// </summary>
-        [Key(3)]
+        [Key(4)]
         public string Url { get; init; } = null!;
 
         /// <summary>
-        /// The caption of the link.
+        /// The display order of the link.
         /// </summary>
-        [Key(4)]
+        [Key(5)]
         public int DisplayOrder { get; init; }
 
         #endregion

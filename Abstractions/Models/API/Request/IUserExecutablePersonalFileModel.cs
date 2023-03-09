@@ -8,7 +8,7 @@
         /// <summary>
         /// Gets or sets personal user file id.
         /// </summary>
-        int PersonalFileId { get; init; }
+        int Id { get; init; }
 
         /// <summary>
         /// Gets or sets order.
