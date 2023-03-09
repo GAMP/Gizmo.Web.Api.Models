@@ -35,6 +35,6 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// The Id of the executable's image.
         /// </summary>
-        int? ImageId { get; init; }
+        int? ImageId { get; set; }
     }
 }

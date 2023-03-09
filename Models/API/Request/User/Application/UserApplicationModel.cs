@@ -72,7 +72,7 @@ namespace Gizmo.Web.Api.Models
         /// The Id of the application's image.
         /// </summary>
         [Key(9)]
-        public int? ImageId { get; init; }
+        public int? ImageId { get; set; }
 
         #endregion
     }

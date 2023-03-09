@@ -50,6 +50,6 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// The Id of the application's image.
         /// </summary>
-        int? ImageId { get; init; }
+        int? ImageId { get; set; }
     }
 }
