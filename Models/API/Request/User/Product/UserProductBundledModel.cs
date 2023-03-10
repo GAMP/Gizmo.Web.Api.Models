@@ -19,6 +19,6 @@ namespace Gizmo.Web.Api.Models
         /// The quantity of the bundled product.
         /// </summary>
         [Key(1)]
-        public int Quantity { get; set; }
+        public decimal Quantity { get; set; }
     }
 }
