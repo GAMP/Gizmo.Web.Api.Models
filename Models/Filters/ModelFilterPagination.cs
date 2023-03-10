@@ -40,7 +40,7 @@ namespace Gizmo.Web.Api.Models
                     0 => DefaultLimit,
                     -1 => int.MaxValue - 1,
                     < -1 => DefaultLimit,
-                    _ => value
+                    _ => value -1
                 };
             }
         }
