@@ -80,6 +80,12 @@ namespace Gizmo.Web.Api.Models
         [Key(10)]
         public UserProductBundleModel? Bundle { get; set; }
 
+        /// <summary>
+        /// The Id of the default image for this product.
+        /// </summary>
+        [Key(11)]
+        public int? DefaultImageId { get; set; }
+
         #endregion
     }
 }
