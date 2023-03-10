@@ -9,30 +9,38 @@ namespace Gizmo.Web.Api.Models
     {
         /// <inheritdoc/>
         [Key(0)]
-        public string Title { get; init; }
+        public int Id { get; init; }
 
         /// <inheritdoc/>
         [Key(1)]
-        public string Data { get; init; }
+        public bool IsCustomTemplate { get; init; }
 
         /// <inheritdoc/>
         [Key(2)]
-        public DateTime? StartDate { get; init; }
+        public string? Title { get; init; }
 
         /// <inheritdoc/>
         [Key(3)]
-        public DateTime? EndDate { get; init; }
+        public string Data { get; init; } = null!;
 
         /// <inheritdoc/>
         [Key(4)]
-        public string Url { get; init; }
+        public DateTime? StartDate { get; init; }
 
         /// <inheritdoc/>
         [Key(5)]
-        public string MediaUrl { get; init; }
+        public DateTime? EndDate { get; init; }
 
         /// <inheritdoc/>
         [Key(6)]
-        public int Id { get; init; }
+        public string? Url { get; init; }
+
+        /// <inheritdoc/>
+        [Key(7)]
+        public string? MediaUrl { get; init; }
+
+        /// <inheritdoc/>
+        [Key(8)]
+        public string? ThumbnailUrl { get; init; }
     }
 }
