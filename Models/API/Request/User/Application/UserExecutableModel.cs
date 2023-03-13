@@ -58,6 +58,12 @@ namespace Gizmo.Web.Api.Models
         [Key(6)]
         public int? ImageId { get; set; }
 
+        /// <summary>
+        /// The executable options.
+        /// </summary>
+        [Key(7)]
+        public ExecutableOptionType Options { get; set; }
+
         #endregion
     }
 }

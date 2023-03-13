@@ -36,5 +36,10 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// The Id of the executable's image.
         /// </summary>
         int? ImageId { get; set; }
+
+        /// <summary>
+        /// The executable options.
+        /// </summary>
+        ExecutableOptionType Options { get; set; }
     }
 }
