@@ -20,13 +20,13 @@ namespace Gizmo.Web.Api.Models
         public ModelFilterPagination Pagination { get; set; } = new();
 
         /// <summary>
-        /// Return invoices where the date greater than or equal to the specified date.
+        /// Return invoices where the date is greater than or equal to the specified date.
         /// </summary>
         [Key(1)]
         public DateTime? DateFrom { get; set; }
 
         /// <summary>
-        /// Return invoices where the date less than or equal to the specified date.
+        /// Return invoices where the date is less than or equal to the specified date.
         /// </summary>
         [Key(2)]
         public DateTime? DateTo { get; set; }
