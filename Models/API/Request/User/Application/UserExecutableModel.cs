@@ -64,6 +64,12 @@ namespace Gizmo.Web.Api.Models
         [Key(7)]
         public ExecutableOptionType Options { get; set; }
 
+        /// <summary>
+        /// The executable modes.
+        /// </summary>
+        [Key(8)]
+        public Gizmo.ApplicationModes Modes { get; set; }
+
         #endregion
     }
 }
