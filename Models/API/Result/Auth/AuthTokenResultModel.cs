@@ -4,13 +4,13 @@ using MessagePack;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Authentication token result.
+    /// Authentication token result model.
     /// </summary>
     /// <remarks>
     /// This model is used for returing authentication and refresh tokens.
     /// </remarks>
     [MessagePackObject()]
-    public sealed class TokenResult
+    public sealed class AuthTokenResultModel
     {
         /// <summary>
         /// Token.
