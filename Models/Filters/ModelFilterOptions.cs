@@ -10,7 +10,7 @@ namespace Gizmo.Web.Api.Models
     /// Options of model filter
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ModelFilterOptions : IModelFIlterOptions
+    public sealed class ModelFilterOptions : IModelFilterOptions
     {
         #region PROPERTIES
 

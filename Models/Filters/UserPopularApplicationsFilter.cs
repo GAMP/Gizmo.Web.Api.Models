@@ -4,10 +4,10 @@ using MessagePack;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Filters that can be applied when searching for popular executables.
+    /// Filters that can be applied when searching for user popular applications.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class PopularExecutablesFilter
+    public sealed class UserPopularApplicationsFilter
     {
         #region FIELDS
 
@@ -45,15 +45,9 @@ namespace Gizmo.Web.Api.Models
         }
 
         /// <summary>
-        /// Return popular executables for the specified user.
+        /// Return popular applications since the specified date.
         /// </summary>
         [Key(1)]
-        public int? UserId { get; set; }
-
-        /// <summary>
-        /// Return popular executables since the specified date.
-        /// </summary>
-        [Key(2)]
         public DateTime? DateFrom { get; set; }
 
         #endregion

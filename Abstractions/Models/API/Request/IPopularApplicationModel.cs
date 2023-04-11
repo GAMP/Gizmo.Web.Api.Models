@@ -1,10 +1,11 @@
 ﻿namespace Gizmo.Web.Api.Models.Abstractions
 {
     /// <summary>
-    /// Popular executable.
+    /// Popular application.
     /// </summary>
-    public interface IPopularExecutableModel : IWebApiModel
+    public interface IPopularApplicationModel : IWebApiModel
     {
+
         /// <summary>
         /// Total execution time.
         /// </summary>

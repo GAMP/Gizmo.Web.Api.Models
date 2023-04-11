@@ -1,11 +1,11 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace Gizmo.Web.Api.Models.Abstractions.Models.Filters
 {
     /// <summary>
     /// Specified objects in the result.
     /// </summary>
-    public interface IModelFIlterOptions : IUriParametersQuery
+    public interface IModelFilterOptions : IUriParametersQuery
     {
         /// <summary>
         /// Include specified objects in the result.

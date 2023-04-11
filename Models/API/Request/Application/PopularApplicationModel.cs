@@ -7,10 +7,10 @@ using System;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Popular product.
+    /// Popular executable.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class PopularProductModel : IPopularProductModel, IModelIntIdentifier
+    public sealed class PopularApplicationModel : IPopularApplicationModel, IModelIntIdentifier
     {
         /// <summary>
         /// The Id of the object.
@@ -19,9 +19,9 @@ namespace Gizmo.Web.Api.Models
         public int Id { get; init; }
 
         /// <summary>
-        /// Total purchases.
+        /// Total execution time.
         /// </summary>
         [MessagePack.Key(1)]
-        public int TotalPurchases { get; init; }
+        public double TotalExecutionTime { get; init; }
     }
 }

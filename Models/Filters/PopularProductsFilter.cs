@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using Gizmo.Web.Api.Models.Abstractions.Models.Filters;
 using MessagePack;
 
 namespace Gizmo.Web.Api.Models
@@ -9,21 +7,54 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for popular products.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class PopularProductsFilter : IModelFilter
+    public sealed class PopularProductsFilter
     {
+        #region FIELDS
+
+        private const int DefaultLimit = 10;
+        private int _limit = DefaultLimit;
+
+        #endregion
+
         #region PROPERTIES
 
         /// <summary>
-        /// Filter for cursor-based pagination.
+        /// Limit records for the response.
+        ///  equal 0 => DefaultLimit;
+        ///  equal -1 => int.MaxValue;
+        ///  less then -1 => DefaultLimit;
+        ///  Default limit is 10.
         /// </summary>
         [Key(0)]
-        public ModelFilterPagination Pagination { get; set; } = new();
+        public int Limit
+        {
+            get
+            {
+                return _limit;
+            }
+            set
+            {
+                _limit = value switch
+                {
+                    0 => DefaultLimit,
+                    -1 => int.MaxValue - 1,
+                    < -1 => DefaultLimit,
+                    _ => value - 1
+                };
+            }
+        }
 
         /// <summary>
-        /// Include specified objects in the result.
+        /// Return popular products for the specified user.
         /// </summary>
         [Key(1)]
-        public List<string> Expand { get; set; } = new();
+        public int? UserId { get; set; }
+
+        /// <summary>
+        /// Return popular products since the specified date.
+        /// </summary>
+        [Key(2)]
+        public DateTime? DateFrom { get; set; }
 
         #endregion
     }

@@ -17,5 +17,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(0)]
         public int Id { get; init; }
+
+        /// <summary>
+        /// Total execution time.
+        /// </summary>
+        [MessagePack.Key(1)]
+        public double TotalExecutionTime { get; init; }
     }
 }

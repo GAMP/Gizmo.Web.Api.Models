@@ -5,5 +5,9 @@
     /// </summary>
     public interface IPopularProductModel : IWebApiModel
     {
+        /// <summary>
+        /// Total purchases.
+        /// </summary>
+        int TotalPurchases { get; init; }
     }
 }
