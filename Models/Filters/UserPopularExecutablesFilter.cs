@@ -50,6 +50,12 @@ namespace Gizmo.Web.Api.Models
         [Key(1)]
         public DateTime? DateFrom { get; set; }
 
+        /// <summary>
+        /// Return popular executables for current user only.
+        /// </summary>
+        [Key(2)]
+        public bool CurrentUserOnly { get; set; }
+
         #endregion
     }
 }
