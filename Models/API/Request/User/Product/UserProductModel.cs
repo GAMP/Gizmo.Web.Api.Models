@@ -86,6 +86,30 @@ namespace Gizmo.Web.Api.Models
         [Key(11)]
         public int? DefaultImageId { get; set; }
 
+        /// <summary>
+        /// The usage availability of the time product.
+        /// </summary>
+        [Key(12)]
+        public ProductPurchaseAvailabilityModel? PurchaseAvailability { get; set; }
+
+        /// <summary>
+        /// Whether the product has enabled stock control and disallow sale out of stock.
+        /// </summary>
+        [Key(13)]
+        public bool IsStockLimited { get; set; }
+
+        /// <summary>
+        /// Whether the product is restricted for guest and current user is guest.
+        /// </summary>
+        [Key(14)]
+        public bool IsRestrictedForGuest { get; set; }
+
+        /// <summary>
+        /// Whether the product is restricted for current user group.
+        /// </summary>
+        [Key(15)]
+        public bool IsRestrictedForUserGroup { get; set; }
+
         #endregion
     }
 }
