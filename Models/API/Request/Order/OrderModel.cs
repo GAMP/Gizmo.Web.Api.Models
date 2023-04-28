@@ -85,25 +85,25 @@ namespace Gizmo.Web.Api.Models
         public int? RegisterId { get; set; }
 
         /// <summary>
-        /// The subtotal of the order line.
+        /// The subtotal of the order.
         /// </summary>
         [MessagePack.Key(11)]
         public decimal SubTotal { get; set; }
 
         /// <summary>
-        /// The total tax of the order line.
+        /// The total tax of the order.
         /// </summary>
         [MessagePack.Key(12)]
         public decimal TaxTotal { get; set; }
 
         /// <summary>
-        /// The total amount of the order line.
+        /// The total amount of the order.
         /// </summary>
         [MessagePack.Key(13)]
         public decimal Total { get; set; }
 
         /// <summary>
-        /// The total cost in points of the order line.
+        /// The total cost in points of the order.
         /// </summary>
         [MessagePack.Key(14)]
         public int PointsTotal { get; set; }
