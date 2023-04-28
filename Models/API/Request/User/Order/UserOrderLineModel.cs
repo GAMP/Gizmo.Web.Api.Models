@@ -54,6 +54,12 @@ namespace Gizmo.Web.Api.Models
         [Key(6)]
         public int PointsTotal { get; set; }
 
+        /// <summary>
+        /// The Id of the product this order line is associated with.
+        /// </summary>
+        [Key(7)]
+        public int? ProductId { get; set; }
+
         #endregion
     }
 }

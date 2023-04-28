@@ -34,5 +34,10 @@
         /// The total cost in points of the order line.
         /// </summary>
         int PointsTotal { get; set; }
+
+        /// <summary>
+        /// The Id of the product this order line is associated with.
+        /// </summary>
+        int? ProductId { get; set; }
     }
 }
