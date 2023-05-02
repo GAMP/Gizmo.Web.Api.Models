@@ -15,7 +15,7 @@ namespace Gizmo.Web.Api.Models
         /// Integer identifier of the record.
         /// </summary>
         [Key(0)]
-        public int Id { get; set; } = -1;
+        public int Id { get; set; }
 
         /// <summary>
         /// Sorting field name (column name) of the record.
