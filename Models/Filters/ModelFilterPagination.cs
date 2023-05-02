@@ -29,20 +29,15 @@ namespace Gizmo.Web.Api.Models
         [Key(0)]
         public int Limit
         {
-            get
+            get => _limit;
+            set => _limit = value switch
             {
-                return _limit;
-            }
-            set
-            {
-                _limit = value switch
-                {
-                    0 => DefaultLimit,
-                    -1 => int.MaxValue - 1,
-                    < -1 => DefaultLimit,
-                    _ => value -1
-                };
-            }
+                < -1 => DefaultLimit,
+                -1 => int.MaxValue - 1,
+                0 => DefaultLimit,
+                int.MaxValue => int.MaxValue - 1,
+                _ => value
+            };
         }
 
         /// <summary>
