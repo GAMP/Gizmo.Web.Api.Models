@@ -1,4 +1,5 @@
-﻿using Gizmo.Web.Api.Models.Abstractions;
+﻿using System;
+using Gizmo.Web.Api.Models.Abstractions;
 using MessagePack;
 
 namespace Gizmo.Web.Api.Models
@@ -12,34 +13,40 @@ namespace Gizmo.Web.Api.Models
         #region PROPERTIES
 
         /// <summary>
-        /// The Id of the product this order line is associated with.
+        /// The guid of the order line.
         /// </summary>
         [Key(0)]
+        public Guid Guid { get; init; }
+
+        /// <summary>
+        /// The Id of the product this order line is associated with.
+        /// </summary>
+        [Key(1)]
         public int ProductId { get; set; }
 
         /// <summary>
         /// The quantity of the product.
         /// </summary>
-        [Key(1)]
+        [Key(2)]
         public int Quantity { get; set; }
 
         /// <summary>
         /// The pay type of the order line.
         /// </summary>
         [System.ComponentModel.DataAnnotations.EnumValueValidation]
-        [Key(2)]
+        [Key(3)]
         public OrderLinePayType PayType { get; set; }
 
         /*/// <summary>
         /// The total amount of the order line.
         /// </summary>
-        [Key(3)]
+        [Key(4)]
         public decimal Total { get; set; }
 
         /// <summary>
         /// The total cost in points of the order line.
         /// </summary>
-        [Key(4)]
+        [Key(5)]
         public int PointsTotal { get; set; }*/
 
         #endregion
