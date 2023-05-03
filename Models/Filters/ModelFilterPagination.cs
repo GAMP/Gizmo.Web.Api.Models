@@ -41,9 +41,18 @@ namespace Gizmo.Web.Api.Models
         }
 
         /// <summary>
+        /// Sorting direction of the cursor data.
+        /// </summary>
+        /// <value>
+        /// true - for a paging view, false - for a scrolling view.
+        /// </value>
+        [Key(1)]
+        public bool IsPagingSorting { get; set; } = true;
+
+        /// <summary>
         /// Cursor for the request.
         /// </summary>
-        [Key(1)]
+        [Key(2)]
         public PaginationCursor? Cursor { get; set; }
 
         #endregion
