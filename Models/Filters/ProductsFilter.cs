@@ -32,12 +32,14 @@ namespace Gizmo.Web.Api.Models
         /// Return products that belongs to the specified product group.
         /// </summary>
         [MessagePack.Key(2)]
+        [Sortable]
         public int? ProductGroupId { get; set; }
 
         /// <summary>
         /// Return products with names that contain the specified string.
         /// </summary>
         [MessagePack.Key(3)]
+        [Sortable("Name")]
         public string? ProductName { get; set; }
 
         /// <summary>
