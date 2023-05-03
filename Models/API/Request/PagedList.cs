@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-using Gizmo.Web.Api.Models.Abstractions.Models.Filters;
+using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
 

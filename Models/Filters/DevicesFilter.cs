@@ -1,9 +1,8 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.Filters;
-using MessagePack;
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using Gizmo.Web.Api.Models.Abstractions;
+using MessagePack;
 
 namespace Gizmo.Web.Api.Models
 {

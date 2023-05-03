@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Gizmo.Web.Api.Models.Abstractions.Models.Filters
+namespace Gizmo.Web.Api.Models.Abstractions
 {
     /// <summary>
     /// Specified objects in the result.
