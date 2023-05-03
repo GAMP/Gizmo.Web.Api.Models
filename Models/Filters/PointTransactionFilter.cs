@@ -1,7 +1,7 @@
-﻿using Gizmo.Web.Api.Models.Abstractions.Models.Filters;
-using MessagePack;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using Gizmo.Web.Api.Models.Abstractions;
+using MessagePack;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -41,7 +41,7 @@ namespace Gizmo.Web.Api.Models
         /// Return points transaction of specified type.
         /// </summary>
         [Key(4)]
-        public PointsTransactionType? Type { get;init; }
+        public PointsTransactionType? Type { get; init; }
 
         /// <summary>
         /// Include specified objects in the result.
