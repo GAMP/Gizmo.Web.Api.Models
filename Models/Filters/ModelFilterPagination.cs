@@ -39,20 +39,37 @@ namespace Gizmo.Web.Api.Models
                 _ => value
             };
         }
-
         /// <summary>
-        /// Sorting direction of the cursor data.
+        /// Sorting field name (column name) of the data.
         /// </summary>
         /// <value>
-        /// true - for a paging view, false - for a scrolling view.
+        /// Default value is "Id".
         /// </value>
         [Key(1)]
-        public bool IsPagingSorting { get; set; } = true;
+        public string SortBy { get; set; } = "Id";
+
+        /// <summary>
+        /// Sorting direction of the data.
+        /// </summary>
+        /// <value>
+        /// true - for ascending, false - for descending.
+        /// </value>
+        [Key(2)]
+        public bool IsAsc { get; set; } = true;
+
+        /// <summary>
+        /// Support infinite scrolling.
+        /// </summary>
+        /// <value>
+        /// true - for infinite scrolling, false - for pagination.
+        /// </value>
+        [Key(3)]
+        public bool IsScroll { get; set; } = false;
 
         /// <summary>
         /// Cursor for the request.
         /// </summary>
-        [Key(2)]
+        [Key(4)]
         public PaginationCursor? Cursor { get; set; }
 
         #endregion

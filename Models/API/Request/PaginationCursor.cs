@@ -28,7 +28,7 @@ namespace Gizmo.Web.Api.Models
         /// It's set from the cursor data of the previous request.
         /// </summary>
         [Key(2)]
-        public string? Value { get; set; }
+        public string Value { get; set; } = null!;
 
         /// <summary>
         /// Direction of the scrolling by sorting field.
