@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for taxes.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class TaxesFilter : IModelFilter
+    public sealed class TaxesFilter : IModelFilter<TaxModel>
     {
         /// <summary>
         /// Filter for cursor-based pagination.

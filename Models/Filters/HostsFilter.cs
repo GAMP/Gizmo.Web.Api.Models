@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for hosts.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class HostsFilter : IModelFilter
+    public sealed class HostsFilter : IModelFilter<HostModel>
     {
         #region PROPERTIES
 

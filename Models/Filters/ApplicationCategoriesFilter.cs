@@ -11,7 +11,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for application categories.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ApplicationCategoriesFilter : IModelFilter
+    public sealed class ApplicationCategoriesFilter : IModelFilter<ApplicationCategoryModel>
     {
         /// <summary>
         /// Filter for cursor-based pagination.

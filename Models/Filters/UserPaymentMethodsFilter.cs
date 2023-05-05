@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for user payment methods.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class UserPaymentMethodsFilter : IModelFilter
+    public sealed class UserPaymentMethodsFilter : IModelFilter<UserPaymentMethodModel>
     {
         #region PROPERTIES
 

@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for news.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class NewsFilter : IModelFilter
+    public sealed class NewsFilter : IModelFilter<NewsModel>
     {
         /// <summary>
         /// Filter for cursor-based pagination.

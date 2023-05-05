@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for register transactions.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class RegisterTransactionsFilter : IModelFilter
+    public sealed class RegisterTransactionsFilter : IModelFilter<RegisterTransactionModel>
     {
         #region PROPERTIES
 

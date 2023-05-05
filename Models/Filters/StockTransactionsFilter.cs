@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for stock transactions.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class StockTransactionsFilter : IModelFilter
+    public sealed class StockTransactionsFilter : IModelFilter<StockTransactionModel>
     {
         #region PROPERTIES
 

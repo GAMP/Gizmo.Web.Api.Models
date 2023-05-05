@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for host icons.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class HostIconsFilter : IModelFilter
+    public sealed class HostIconsFilter : IModelFilter<HostIconModel>
     {
         /// <summary>
         /// Filter for cursor-based pagination.
@@ -22,6 +22,5 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [Key(1)]
         public List<string> Expand { get; set; } = new();
-
     }
 }

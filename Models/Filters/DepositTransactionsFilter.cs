@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for deposit transactions.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class DepositTransactionsFilter : IModelFilter
+    public sealed class DepositTransactionsFilter : IModelFilter<DepositTransactionModel>
     {
         #region PROPERTIES
 

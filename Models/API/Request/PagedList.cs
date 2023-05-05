@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 
-using Gizmo.Web.Api.Models.Abstractions;
-
 using MessagePack;
 
 namespace Gizmo.Web.Api.Models
@@ -51,34 +49,31 @@ namespace Gizmo.Web.Api.Models
         #region FUNCTIONS
 
         /// <summary>
-        /// Set the cursor for the nex request.
+        /// Set cursor for the next request.
         /// </summary>
-        /// <param name="filter">Current filter for the request T entities.</param>
-        public void SetCursor(IModelFilter filter)
+        /// <param name="pagination">Pagination model.</param>
+        public void SetCursor(ModelFilterPagination pagination)
         {
-            if (filter.Pagination.Cursor is not null)
+            if (pagination.Cursor is not null)
             {
-                if (filter.Pagination.Cursor.IsForward)
+                if (pagination.Cursor.IsForward)
                 {
                     if (NextCursor is null)
-                        NextCursor = filter.Pagination.Cursor;
+                        NextCursor = pagination.Cursor;
                     else
-                        filter.Pagination.Cursor = NextCursor;
+                        pagination.Cursor = NextCursor;
                 }
                 else
                 {
-                    if (filter.Pagination.Cursor.Id == -1)
-                        filter.Pagination.Cursor.Id = int.MaxValue;
-
                     if (PrevCursor is null)
-                        PrevCursor = filter.Pagination.Cursor;
+                        PrevCursor = pagination.Cursor;
                     else
-                        filter.Pagination.Cursor = PrevCursor;
+                        pagination.Cursor = PrevCursor;
                 }
             }
             else
             {
-                filter.Pagination.Cursor = NextCursor;
+                pagination.Cursor = NextCursor;
             }
         }
 

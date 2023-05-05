@@ -10,7 +10,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for orders.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class OrdersFilter : IModelFilter
+    public sealed class OrdersFilter : IModelFilter<OrderModel>
     {
         #region PROPERTIES
 

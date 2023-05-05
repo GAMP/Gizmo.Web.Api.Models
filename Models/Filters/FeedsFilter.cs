@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for feeds.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class FeedsFilter : IModelFilter
+    public sealed class FeedsFilter : IModelFilter<FeedModel>
     {
         /// <summary>
         /// Filter for cursor-based pagination.

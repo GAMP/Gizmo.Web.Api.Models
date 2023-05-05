@@ -10,7 +10,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for reservations.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ReservationsFilter : IModelFilter
+    public sealed class ReservationsFilter : IModelFilter<ReservationModel>
     {
         #region PROPERTIES
 

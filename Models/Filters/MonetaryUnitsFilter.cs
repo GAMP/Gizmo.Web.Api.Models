@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for monetary units.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class MonetaryUnitsFilter : IModelFilter
+    public sealed class MonetaryUnitsFilter : IModelFilter<MonetaryUnitModel>
     {
         #region PROPERTIES
 

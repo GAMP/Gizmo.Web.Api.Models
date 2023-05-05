@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for invoices.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class InvoicesFilter : IModelFilter
+    public sealed class InvoicesFilter : IModelFilter<InvoiceModel>
     {
         #region PROPERTIES
 

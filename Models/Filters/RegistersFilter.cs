@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for registers.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class RegistersFilter : IModelFilter
+    public sealed class RegistersFilter : IModelFilter<RegisterModel>
     {
         /// <summary>
         /// Filter for cursor-based pagination.

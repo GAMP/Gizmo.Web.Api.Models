@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for asset transactions.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class AssetTransactionsFilter : IModelFilter
+    public sealed class AssetTransactionsFilter : IModelFilter<AssetTransactionModel>
     {
         #region PROPERTIES
 

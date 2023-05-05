@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for user groups.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class UserGroupsFilter : IModelFilter
+    public sealed class UserGroupsFilter : IModelFilter<UserGroupModel>
     {
         #region PROPERTIES
 

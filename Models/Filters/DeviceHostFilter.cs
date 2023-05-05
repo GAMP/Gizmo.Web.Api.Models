@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for associated hosts or devices.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class DeviceHostFilter : IModelFilter
+    public sealed class DeviceHostFilter : IModelFilter<DeviceHostModel>
     {
         #region PROPERTIES
 

@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for attributes.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class AttributesFilter : IModelFilter
+    public sealed class AttributesFilter : IModelFilter<AttributeModel>
     {
         #region PROPERTIES
 

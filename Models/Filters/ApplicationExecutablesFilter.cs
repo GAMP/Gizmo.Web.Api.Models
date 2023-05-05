@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for application executables.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ApplicationExecutablesFilter : IModelFilter
+    public sealed class ApplicationExecutablesFilter : IModelFilter<ApplicationExecutableModel>
     {
         #region PROPERTIES
 

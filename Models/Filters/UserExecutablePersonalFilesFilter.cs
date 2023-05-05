@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for user executable personal files.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class UserExecutablePersonalFilesFilter : IModelFilter
+    public sealed class UserExecutablePersonalFilesFilter : IModelFilter<UserExecutablePersonalFileModel>
     {
         #region PROPERTIES
 

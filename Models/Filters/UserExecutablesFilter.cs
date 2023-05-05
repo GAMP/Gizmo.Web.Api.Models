@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for user executables.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class UserExecutablesFilter : IModelFilter
+    public sealed class UserExecutablesFilter : IModelFilter<UserExecutableModel>
     {
         #region PROPERTIES
 

@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for variables.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class VariablesFilter : IModelFilter
+    public sealed class VariablesFilter : IModelFilter<VariableModel>
     {
         /// <summary>
         /// Filter for cursor-based pagination.

@@ -1,8 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions;
-
+﻿using System;
+using Gizmo.Web.Api.Models.Abstractions;
 using MessagePack;
-
-using System;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -10,7 +8,7 @@ namespace Gizmo.Web.Api.Models
     /// Product stock.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ProductStockModel : IModelIntIdentifier
+    public sealed class ProductStockModel : IModelIntIdentifier, IWebApiModel
     {
         #region PROPERTIES
 

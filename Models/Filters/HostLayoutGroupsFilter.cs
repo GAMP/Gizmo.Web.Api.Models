@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for host layout groups.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class HostLayoutGroupsFilter : IModelFilter
+    public sealed class HostLayoutGroupsFilter : IModelFilter<HostLayoutGroupModel>
     {
         #region PROPERTIES
 

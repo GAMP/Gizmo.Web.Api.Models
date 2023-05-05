@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for billing profiles.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class BillingProfilesFilter : IModelFilter
+    public sealed class BillingProfilesFilter : IModelFilter<BillingProfileModel>
     {
         #region PROPERTIES
 

@@ -10,7 +10,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for devices.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class DevicesFilter : IModelFilter
+    public sealed class DevicesFilter : IModelFilter<DeviceModel>
     {
         #region PROPERTIES
 

@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for application enterprises.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ApplicationEnterprisesFilter : IModelFilter
+    public sealed class ApplicationEnterprisesFilter : IModelFilter<ApplicationEnterpriseModel>
     {
         /// <summary>
         /// Filter for cursor-based pagination.

@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for user personal files.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class UserPersonalFilesFilter : IModelFilter
+    public sealed class UserPersonalFilesFilter : IModelFilter<UserPersonalFileModel>
     {
         #region PROPERTIES
 

@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Point transaction filter class.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class PointTransactionFilter : IModelFilter
+    public sealed class PointTransactionFilter : IModelFilter<PointTransactionModel>
     {
         #region PROPERTIES
 

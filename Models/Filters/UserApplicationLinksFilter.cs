@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for user application links.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class UserApplicationLinksFilter : IModelFilter
+    public sealed class UserApplicationLinksFilter : IModelFilter<UserApplicationLinkModel>
     {
         #region PROPERTIES
 

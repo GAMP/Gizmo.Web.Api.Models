@@ -3,7 +3,7 @@
     /// <summary>
     /// Filter.
     /// </summary>
-    public interface IModelFilter : IModelFilterPagination, IModelFilterOptions, IUriParametersQuery
+    public interface IModelFilter<T> : IModelFilterPagination, IModelFilterOptions, IUriParametersQuery where T : class, IWebApiModel
     {
     }
 }

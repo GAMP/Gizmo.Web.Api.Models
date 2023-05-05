@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for user notes.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class UserNotesFilter : IModelFilter
+    public sealed class UserNotesFilter : IModelFilter<UserNoteModel>
     {
         /// <summary>
         /// Filter for cursor-based pagination.

@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for application groups.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ApplicationGroupsFilter : IModelFilter
+    public sealed class ApplicationGroupsFilter : IModelFilter<ApplicationGroupModel>
     {
         #region PROPERTIES
 

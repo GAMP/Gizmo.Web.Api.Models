@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for host groups.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class HostGroupsFilter : IModelFilter
+    public sealed class HostGroupsFilter : IModelFilter<HostGroupModel>
     {
         #region PROPERTIES
 

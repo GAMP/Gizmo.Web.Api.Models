@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for user application categories.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class UserApplicationCategoriesFilter : IModelFilter
+    public sealed class UserApplicationCategoriesFilter : IModelFilter<UserApplicationCategoryModel>
     {
         #region PROPERTIES
 

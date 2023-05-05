@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for operators.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class OperatorsFilter : IModelFilter
+    public sealed class OperatorsFilter : IModelFilter<OperatorModel>
     {
         #region PROPERTIES
 

@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for application licenses.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ApplicationLicensesFilter : IModelFilter
+    public sealed class ApplicationLicensesFilter : IModelFilter<ApplicationLicenseModel>
     {
         #region PROPERTIES
 

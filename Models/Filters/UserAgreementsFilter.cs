@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for user agreements.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class UserAgreementsFilter : IModelFilter
+    public sealed class UserAgreementsFilter : IModelFilter<UserAgreementModel>
     {
         #region PROPERTIES
 

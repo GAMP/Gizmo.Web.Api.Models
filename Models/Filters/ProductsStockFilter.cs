@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for products stock.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ProductsStockFilter : IModelFilter
+    public sealed class ProductsStockFilter : IModelFilter<ProductStockModel>
     {
         /// <summary>
         /// Filter for cursor-based pagination.

@@ -4,10 +4,10 @@ using MessagePack;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Filters that can be applied when searching for user popular products.
+    /// Filters that can be applied when searching for popular products.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class UserPopularProductsFilter
+    public sealed class PopularProductsFilter
     {
         #region FIELDS
 
@@ -36,25 +36,26 @@ namespace Gizmo.Web.Api.Models
             {
                 _limit = value switch
                 {
-                    0 => DefaultLimit,
-                    -1 => int.MaxValue - 1,
                     < -1 => DefaultLimit,
-                    _ => value - 1
+                    -1 => int.MaxValue - 1,
+                    0 => DefaultLimit,
+                    int.MaxValue => int.MaxValue - 1,
+                    _ => value
                 };
             }
         }
 
         /// <summary>
-        /// Return popular products since the specified date.
+        /// Return popular products for the specified user.
         /// </summary>
         [Key(1)]
-        public DateTime? DateFrom { get; set; }
+        public int? UserId { get; set; }
 
         /// <summary>
-        /// Return popular products for current user only.
+        /// Return popular products since the specified date.
         /// </summary>
         [Key(2)]
-        public bool CurrentUserOnly { get; set; }
+        public DateTime? DateFrom { get; set; }
 
         #endregion
     }
