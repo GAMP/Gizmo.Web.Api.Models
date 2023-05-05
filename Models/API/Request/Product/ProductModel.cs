@@ -58,6 +58,7 @@ namespace Gizmo.Web.Api.Models
         /// The Id of the product group this product belongs to.
         /// </summary>
         [MessagePack.Key(6)]
+        [Sortable()]
         public int ProductGroupId { get; set; }
 
         /// <summary>
@@ -65,6 +66,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(7)]
         [StringLength(45)]
+        [Sortable()]
         public string Name { get; set; } = null!;
 
         /// <summary>
@@ -78,12 +80,14 @@ namespace Gizmo.Web.Api.Models
         /// The price of the product.
         /// </summary>
         [MessagePack.Key(9)]
+        [Sortable()]
         public decimal Price { get; set; }
 
         /// <summary>
         /// The cost of the product.
         /// </summary>
         [MessagePack.Key(10)]
+        [Sortable()]
         public decimal? Cost { get; set; }
 
         /// <summary>
@@ -188,6 +192,7 @@ namespace Gizmo.Web.Api.Models
         /// The display order of the product.
         /// </summary>
         [MessagePack.Key(27)]
+        [Sortable()]
         public int DisplayOrder { get; set; }
 
         /// <summary>

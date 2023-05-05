@@ -33,18 +33,21 @@ namespace Gizmo.Web.Api.Models
         /// The date that the order was created.
         /// </summary>
         [MessagePack.Key(2)]
+        [Sortable("CreatedTime")]
         public DateTime Date { get; set; }
 
         /// <summary>
         /// The Id of the user this order is associated with.
         /// </summary>
         [MessagePack.Key(3)]
+        [Sortable()]
         public int UserId { get; set; }
 
         /// <summary>
         /// The Id of the host this order is associated with.
         /// </summary>
         [MessagePack.Key(4)]
+        [Sortable()]
         public int? HostId { get; set; }
 
         /// <summary>
@@ -64,6 +67,7 @@ namespace Gizmo.Web.Api.Models
         /// Whether the order is delivered.
         /// </summary>
         [MessagePack.Key(7)]
+        [Sortable()]
         public bool IsDelivered { get; set; }
 
         /// <summary>
