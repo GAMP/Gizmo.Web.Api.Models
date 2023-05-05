@@ -70,6 +70,7 @@ namespace Gizmo.Web.Api.Models
         /// Cursor for the request.
         /// </summary>
         [Key(4)]
+        [System.Text.Json.Serialization.JsonConverter(typeof(CursorBase64Converter))]
         public PaginationCursor? Cursor { get; set; }
 
         #endregion

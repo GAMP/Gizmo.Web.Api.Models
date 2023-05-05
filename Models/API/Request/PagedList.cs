@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
 using MessagePack;
 
 namespace Gizmo.Web.Api.Models
@@ -36,12 +35,14 @@ namespace Gizmo.Web.Api.Models
         /// Cursor for the request of the next chunk of the records.
         /// </summary>
         [Key(1)]
+        [System.Text.Json.Serialization.JsonConverter(typeof(CursorBase64Converter))]
         public PaginationCursor? NextCursor { get; set; }
 
         /// <summary>
         /// Cursor for the request of the previous chunk of the records.
         /// </summary>
         [Key(2)]
+        [System.Text.Json.Serialization.JsonConverter(typeof(CursorBase64Converter))]
         public PaginationCursor? PrevCursor { get; set; }
 
         #endregion
