@@ -52,7 +52,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The total amount of points the user earns from this order line.
         /// </summary>
-        [Key(5)]
+        [Key(6)]
         public int PointsAwardTotal { get; set; }
 
         #endregion
