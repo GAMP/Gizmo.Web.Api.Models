@@ -37,7 +37,7 @@ namespace Gizmo.Web.Api.Models
         [Key(3)]
         public OrderLinePayType PayType { get; set; }
 
-        /*/// <summary>
+        /// <summary>
         /// The total amount of the order line.
         /// </summary>
         [Key(4)]
@@ -47,7 +47,13 @@ namespace Gizmo.Web.Api.Models
         /// The total cost in points of the order line.
         /// </summary>
         [Key(5)]
-        public int PointsTotal { get; set; }*/
+        public int PointsTotal { get; set; }
+
+        /// <summary>
+        /// The total amount of points the user earns from this order line.
+        /// </summary>
+        [Key(5)]
+        public int PointsAwardTotal { get; set; }
 
         #endregion
     }

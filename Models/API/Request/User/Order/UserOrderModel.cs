@@ -30,6 +30,7 @@ namespace Gizmo.Web.Api.Models
         /// The date that the order was created.
         /// </summary>
         [Key(2)]
+        [Sortable("CreatedTime")]
         public DateTime Date { get; set; }
 
         /// <summary>
