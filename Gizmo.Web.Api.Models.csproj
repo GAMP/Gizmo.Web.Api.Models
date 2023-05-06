@@ -25,16 +25,6 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <Compile Remove="Submodules\**" />
-	  <EmbeddedResource Remove="Submodules\**" />
-	  <None Remove="Submodules\**" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <None Remove="Models\API\Request\Register\RegisterTransaction.cs~RFe2636cd.TMP" />
-	</ItemGroup>
-
-	<ItemGroup>
 		<PackageReference Include="MessagePack" Version="2.3.85" />
 		<PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.2.0" />
 		<PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
