@@ -1,6 +1,5 @@
 ﻿using System;
 using MessagePack;
-using Microsoft.AspNetCore.Mvc;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -8,7 +7,6 @@ namespace Gizmo.Web.Api.Models
     /// Pagination cursor for the data scrolling.
     /// </summary>
     [Serializable, MessagePackObject]
-    [ModelBinder(BinderType = typeof(CursorModelBinder))]
     public sealed class PaginationCursor
     {
         #region PROPERTIES

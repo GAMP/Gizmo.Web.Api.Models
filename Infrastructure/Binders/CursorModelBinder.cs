@@ -23,7 +23,7 @@ namespace Gizmo.Web.Api
             if (!bindingContext.HttpContext.Request.Query.TryGetValue("Pagination.Cursor", out var cursor) || !cursor.Any())
                 return Task.CompletedTask;
 
-            //check if the type of the model is supported
+            //check if the type of the model is supported, currently we will only need to use this binder with ModelFilterPagination
             Type? containerType = bindingContext.ModelMetadata.ContainerType;
             if (containerType == null || containerType != SupportedType)
                 return Task.CompletedTask;
@@ -34,6 +34,10 @@ namespace Gizmo.Web.Api
                 var reader = new Utf8JsonReader(span);
                 var model = CursorBase64Converter.Read(ref reader);
                 bindingContext.Result = ModelBindingResult.Success(model);
+            }
+            catch (FormatException)
+            {
+                throw new ArgumentException("Invalid paging cursor supplied.");
             }
             catch
             {
