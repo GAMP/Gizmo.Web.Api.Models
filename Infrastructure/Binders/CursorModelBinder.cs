@@ -41,9 +41,6 @@ namespace Gizmo.Web.Api
             }
             catch
             {
-                //possibly log
-
-                //we have failed to bind, TODO figure out how this affects the request pipeline
                 bindingContext.Result = ModelBindingResult.Failed();
             }
 
