@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using MessagePack;
 
 namespace Gizmo.Web.Api.Models
@@ -6,7 +7,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Pagination cursor for the data scrolling.
     /// </summary>
-    [Serializable, MessagePackObject]
+    [Serializable, MessagePackObject, TypeConverter(typeof(CursorTypeConverter))]
     public sealed class PaginationCursor
     {
         #region PROPERTIES
@@ -39,5 +40,5 @@ namespace Gizmo.Web.Api.Models
         public bool IsForward { get; set; } = true;
 
         #endregion
-    }
+    }   
 }
