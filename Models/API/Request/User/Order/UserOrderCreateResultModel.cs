@@ -14,21 +14,27 @@ namespace Gizmo.Web.Api.Models
         #region PROPERTIES
 
         /// <summary>
-        /// The result for the order.
+        /// Order result.
         /// </summary>
         [Key(0)]
-        public UserOrderCreateResult Result { get; init; }
+        public OrderResult Result { get; init; }
+
+        /// <summary>
+        /// Fail reason.
+        /// </summary>
+        [Key(1)]
+        public OrderFailReason FailReason { get; init; }
 
         /// <summary>
         /// The Id of the newly created object if was successfull.
         /// </summary>
-        [Key(1)]
+        [Key(2)]
         public int? Id { get; init; }
 
         /// <summary>
         /// The lines of the order.
         /// </summary>
-        [Key(2)]
+        [Key(3)]
         public IEnumerable<UserOrderLineCreateResultModel> OrderLines { get; set; } = Enumerable.Empty<UserOrderLineCreateResultModel>();
 
         #endregion
