@@ -32,12 +32,21 @@ namespace Gizmo.Web.Api.Models
         public string Value { get; set; } = null!;
 
         /// <summary>
-        /// Direction of the scrolling by sorting field.
-        /// If true - to the next chunk of the data.
-        /// If false - to the previous chunk of the data.
+        /// Direction of movement in the sorted data.
+        /// If true - forward to the next chunk of the data.
+        /// If false - backward to the previous chunk of the data.
         /// </summary>
         [Key(3)]
         public bool IsForward { get; set; } = true;
+
+        /// <summary>
+        /// Sorting direction of the data.
+        /// </summary>
+        /// <value>
+        /// true - for ascending, false - for descending.
+        /// </value>
+        [Key(4)]
+        public bool IsAsc { get; set; } = true;
 
         #endregion
     }   
