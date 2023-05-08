@@ -53,6 +53,9 @@ namespace Gizmo.Web.Api
                         case "isforward":
                             pcursor.IsForward = jsonReader.GetBoolean();
                             break;
+                        case "isasc":
+                            pcursor.IsAsc = jsonReader.GetBoolean();
+                            break;
                     }
                 }
             }
