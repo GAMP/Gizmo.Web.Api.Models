@@ -1,6 +1,5 @@
 ﻿using System;
 using MessagePack;
-using Microsoft.AspNetCore.Mvc;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -8,9 +7,6 @@ namespace Gizmo.Web.Api.Models
     /// Pagination cursor for the data scrolling.
     /// </summary>
     [Serializable, MessagePackObject]
-    //we could have used IModelBinderProvider but swagger have bug with it when mapping complex type to string
-    //so we need to add the binder as attribute for now
-    [ModelBinder(BinderType = typeof(CursorModelBinder))]
     public sealed class PaginationCursor
     {
         #region PROPERTIES
