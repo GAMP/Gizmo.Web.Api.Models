@@ -32,24 +32,6 @@ namespace Gizmo.Web.Api.Models
         [Key(2)]
         public IEnumerable<UserOrderLineModelCreate> OrderLines { get; set; } = Enumerable.Empty<UserOrderLineModelCreate>();
 
-        /*/// <summary>
-        /// The total amount of the order.
-        /// </summary>
-        [Key(3)]
-        public decimal Total { get; set; }
-
-        /// <summary>
-        /// The total cost in points of the order.
-        /// </summary>
-        [Key(4)]
-        public int PointsTotal { get; set; }
-
-        /// <summary>
-        /// The total amount of points the user earns from this order.
-        /// </summary>
-        [Key(5)]
-        public int PointsAwardTotal { get; set; }*/
-
         #endregion
     }
 }
