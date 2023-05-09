@@ -1,16 +1,13 @@
 ﻿using System;
+using System.ComponentModel;
 using MessagePack;
-using Microsoft.AspNetCore.Mvc;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Pagination cursor for the data scrolling.
     /// </summary>
-    [Serializable, MessagePackObject]
-    //we could have used IModelBinderProvider but swagger have bug with it when mapping complex type to string
-    //so we need to add the binder as attribute for now
-    [ModelBinder(BinderType = typeof(CursorModelBinder))]
+    [Serializable, MessagePackObject, TypeConverter(typeof(CursorTypeConverter))]
     public sealed class PaginationCursor
     {
         #region PROPERTIES
@@ -35,13 +32,22 @@ namespace Gizmo.Web.Api.Models
         public string Value { get; set; } = null!;
 
         /// <summary>
-        /// Direction of the scrolling by sorting field.
-        /// If true - to the next chunk of the data.
-        /// If false - to the previous chunk of the data.
+        /// Direction of movement in the sorted data.
+        /// If true - forward to the next chunk of the data.
+        /// If false - backward to the previous chunk of the data.
         /// </summary>
         [Key(3)]
         public bool IsForward { get; set; } = true;
 
+        /// <summary>
+        /// Sorting direction of the data.
+        /// </summary>
+        /// <value>
+        /// true - for ascending, false - for descending.
+        /// </value>
+        [Key(4)]
+        public bool IsAsc { get; set; } = true;
+
         #endregion
-    }
+    }   
 }
