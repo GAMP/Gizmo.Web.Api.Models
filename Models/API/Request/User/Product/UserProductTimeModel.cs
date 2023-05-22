@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using MessagePack;
 
 namespace Gizmo.Web.Api.Models
@@ -22,9 +24,15 @@ namespace Gizmo.Web.Api.Models
         public ProductTimeUsageAvailabilityModel? UsageAvailability { get; set; }
 
         /// <summary>
-        /// Whether the product is restricted for current host group.
+        /// The list of disallowed host groups.
         /// </summary>
         [Key(2)]
+        public IEnumerable<int> DisallowedHostGroups { get; set; } = Enumerable.Empty<int>();
+
+        /// <summary>
+        /// Whether the product is restricted for current host group.
+        /// </summary>
+        [Key(3)]
         public bool IsRestrictedForHostGroup { get; set; }
     }
 }
