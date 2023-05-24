@@ -3,6 +3,8 @@
 using MessagePack;
 
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -109,6 +111,12 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [Key(15)]
         public bool IsRestrictedForUserGroup { get; set; }
+
+        /// <summary>
+        /// The list of host group where this product is hidden.
+        /// </summary>
+        [Key(16)]
+        public IEnumerable<int> HiddenHostGroups { get; set; } = Enumerable.Empty<int>();
 
         #endregion
     }

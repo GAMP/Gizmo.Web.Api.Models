@@ -1,4 +1,6 @@
-﻿namespace Gizmo.Web.Api.Models.Abstractions
+﻿using System.Collections.Generic;
+
+namespace Gizmo.Web.Api.Models.Abstractions
 {
     /// <summary>
     /// User product model.
@@ -59,5 +61,30 @@
         /// The Id of the default image for this product.
         /// </summary>
         int? DefaultImageId { get; set; }
+
+        /// <summary>
+        /// The usage availability of the time product.
+        /// </summary>
+        ProductPurchaseAvailabilityModel? PurchaseAvailability { get; set; }
+
+        /// <summary>
+        /// Whether the product has enabled stock control and disallow sale out of stock.
+        /// </summary>
+        bool IsStockLimited { get; set; }
+
+        /// <summary>
+        /// Whether the product is restricted for guest and current user is guest.
+        /// </summary>
+        bool IsRestrictedForGuest { get; set; }
+
+        /// <summary>
+        /// Whether the product is restricted for current user group.
+        /// </summary>
+        bool IsRestrictedForUserGroup { get; set; }
+
+        /// <summary>
+        /// The list of host group where this product is hidden.
+        /// </summary>
+        IEnumerable<int> HiddenHostGroups { get; set; }
     }
 }
