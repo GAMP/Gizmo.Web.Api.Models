@@ -118,6 +118,12 @@ namespace Gizmo.Web.Api.Models
         [Key(16)]
         public IEnumerable<int> HiddenHostGroups { get; set; } = Enumerable.Empty<int>();
 
+        /// <summary>
+        /// The order options of the product.
+        /// </summary>
+        [Key(17)]
+        public OrderOptionType OrderOptions { get; set; }
+
         #endregion
     }
 }
