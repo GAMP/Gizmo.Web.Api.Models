@@ -14,5 +14,10 @@
         /// The sort option of the product group.
         /// </summary>
         ProductSortOptionType SortOption { get; set; }
+
+        /// <summary>
+        /// The display order of the product group.
+        /// </summary>
+        int DisplayOrder { get; set; }
     }
 }
