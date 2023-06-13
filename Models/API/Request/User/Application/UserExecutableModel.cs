@@ -70,6 +70,12 @@ namespace Gizmo.Web.Api.Models
         [Key(8)]
         public Gizmo.ApplicationModes Modes { get; set; }
 
+        /// <summary>
+        /// Indicates if executable is accessible.
+        /// </summary>
+        [Key(9)]
+        public bool Accessible { get; set; }
+
         #endregion
     }
 }
