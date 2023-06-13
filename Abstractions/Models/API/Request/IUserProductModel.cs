@@ -86,5 +86,10 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// The list of host group where this product is hidden.
         /// </summary>
         IEnumerable<int> HiddenHostGroups { get; set; }
+
+        /// <summary>
+        /// The display order of the product.
+        /// </summary>
+        int DisplayOrder { get; set; }
     }
 }

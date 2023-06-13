@@ -124,6 +124,10 @@ namespace Gizmo.Web.Api.Models
         [Key(17)]
         public OrderOptionType OrderOptions { get; set; }
 
+        /// <inheritdoc/>
+        [Key(18)]
+        public int DisplayOrder { get; set; }
+
         #endregion
     }
 }

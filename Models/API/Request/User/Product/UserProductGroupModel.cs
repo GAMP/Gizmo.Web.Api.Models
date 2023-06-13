@@ -26,6 +26,10 @@ namespace Gizmo.Web.Api.Models
         [Key(1)]
         public string Name { get; set; } = null!;
 
+        /// <inheritdoc/>
+        [Key(2)]
+        public ProductSortOptionType SortOption { get; set; } = ProductSortOptionType.Default;
+
         #endregion
     }
 }
