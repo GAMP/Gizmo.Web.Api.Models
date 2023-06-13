@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Gizmo.Web.Api.Models.Abstractions
 {
@@ -91,5 +92,10 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// The display order of the product.
         /// </summary>
         int DisplayOrder { get; set; }
+
+        /// <summary>
+        /// Product creation time.
+        /// </summary>
+        DateTime CreatedTime { get; set; }
     }
 }

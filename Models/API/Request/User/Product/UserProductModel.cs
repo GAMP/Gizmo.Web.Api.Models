@@ -128,6 +128,10 @@ namespace Gizmo.Web.Api.Models
         [Key(18)]
         public int DisplayOrder { get; set; }
 
+        /// <inheritdoc/>
+        [Key(19)]
+        public DateTime CreatedTime { get; set; }
+
         #endregion
     }
 }
