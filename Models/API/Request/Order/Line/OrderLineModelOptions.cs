@@ -58,6 +58,12 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(6)]
         public LineFixedTime? FixedTime { get; set; }
 
+        /// <summary>
+        /// The mark if the product is marked product.
+        /// </summary>
+        [MessagePack.Key(7)]
+        public string? Mark { get; set; }
+
         #endregion
     }
 }
