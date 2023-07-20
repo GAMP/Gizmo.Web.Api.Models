@@ -38,6 +38,18 @@ namespace Gizmo.Web.Api.Models
         [Key(3)]
         public bool IsOnline { get; init; }
 
+        /// <summary>
+        /// Payment method is enabled.
+        /// </summary>
+        [Key(4)]
+        public bool IsEnabled { get; init; }
+
+        /// <summary>
+        /// Payment method is deleted.
+        /// </summary>
+        [Key(5)]
+        public bool IsDeleted { get; init; }
+
         #endregion
     }
 }
