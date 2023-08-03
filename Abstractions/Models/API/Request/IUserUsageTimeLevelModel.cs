@@ -3,9 +3,8 @@
     /// <summary>
     /// 
     /// </summary>
-    public interface IUserUsageTimestampModel : IWebApiModel
+    public interface IUserUsageTimeLevelModel : IWebApiModel
     {
-
         /// <summary>
         /// 
         /// </summary>
@@ -22,8 +21,8 @@
         UserUsageTimeFixedModel? TimeFixed { get; set; }
 
         /// <summary>
-        /// 
+        /// Available usage type.
         /// </summary>
-        public UsageType CurrentUsageType { get; init; }
+        UsageType CurrentUsageType { get; init; }
     }
 }

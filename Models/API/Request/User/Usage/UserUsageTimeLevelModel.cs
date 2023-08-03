@@ -8,20 +8,20 @@ namespace Gizmo.Web.Api.Models
 {
     /// <inheritdoc/>
     [Serializable, MessagePackObject]
-    public sealed class UserUsageTimestampModel : IUserUsageTimestampModel
+    public sealed class UserUsageTimeLevelModel : IUserUsageTimeLevelModel
     {
         #region CONSTRUCTOR
 
         /// <summary>
         /// 
         /// </summary>
-        public UserUsageTimestampModel() => CurrentUsageType = UsageType.None;
+        public UserUsageTimeLevelModel() => CurrentUsageType = UsageType.None;
 
         /// <summary>
         /// 
         /// </summary>
         /// <param name="rate"></param>
-        public UserUsageTimestampModel(UserUsageRateModel rate)
+        public UserUsageTimeLevelModel(UserUsageRateModel rate)
         {
             Rate = rate;
             CurrentUsageType = UsageType.Rate;
@@ -31,7 +31,7 @@ namespace Gizmo.Web.Api.Models
         /// 
         /// </summary>
         /// <param name="timeOffer"></param>
-        public UserUsageTimestampModel(UserUsageTimeOfferModel timeOffer)
+        public UserUsageTimeLevelModel(UserUsageTimeOfferModel timeOffer)
         {
             TimeOffer = timeOffer;
             CurrentUsageType = UsageType.TimeOffer;
@@ -41,7 +41,7 @@ namespace Gizmo.Web.Api.Models
         /// 
         /// </summary>
         /// <param name="timeFixed"></param>
-        public UserUsageTimestampModel(UserUsageTimeFixedModel timeFixed)
+        public UserUsageTimeLevelModel(UserUsageTimeFixedModel timeFixed)
         {
             TimeFixed = timeFixed;
             CurrentUsageType = UsageType.TimeFixed;

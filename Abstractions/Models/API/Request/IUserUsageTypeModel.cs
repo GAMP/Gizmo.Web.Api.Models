@@ -10,26 +10,41 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// 
         /// </summary>
-        public int UsageTypeId { get; set; }
+        int UsageTypeId { get; set; }
+
+        /// <summary>
+        /// Name of the usage type.
+        /// </summary>
+        string UsageName { get; set; }
+
+        /// <summary>
+        /// Sum of all usage minutes.
+        /// </summary>
+        int AvailableMinutes { get; set; }
+        
+        /// <summary>
+        /// Sum of all usage minutes in the current session.
+        /// </summary>
+        int UsableMinutes { get; set; }
+
+        /// <summary>
+        /// Time when the usage type would be expired in the current session.
+        /// </summary>
+        DateTime UntilTime { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        public DateTime StartTime { get; set; }
+        bool IsLogoutExpired { get; set; }
 
         /// <summary>
-        /// 
+        /// Number of the order for the usage types roadmap.
         /// </summary>
-        public DateTime EndTime { get; set; }
+        int? OrderNumber { get; set; }
 
         /// <summary>
-        /// 
+        /// Available or not in the current session.
         /// </summary>
-        public int? OrderNumber { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public bool IsAvailable { get; set; }
+        bool IsAvailable { get; set; }
     }
 }
