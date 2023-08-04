@@ -10,6 +10,9 @@ namespace Gizmo.Web.Api.Models
     [Serializable, MessagePackObject]
     public sealed class UserUsageRateModel
     {
-
+        /// <summary>
+        /// Identifier of the bill rate.
+        /// </summary>
+        [Key(0)] public int BillRateId { get; set; }
     }
 }
