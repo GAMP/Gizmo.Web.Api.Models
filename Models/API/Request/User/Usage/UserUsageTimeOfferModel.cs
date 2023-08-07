@@ -19,5 +19,15 @@ namespace Gizmo.Web.Api.Models
         /// Name of the invoice line product.
         /// </summary>
         [Key(1)] public string Name { get; set; } = null!;
+
+        /// <summary>
+        /// Whether the offer expires at logout.
+        /// </summary>
+        [Key(2)] public bool ExpiresAtLogout { get; set; }
+
+        /// <summary>
+        /// Sum of the invoice line.
+        /// </summary>
+        [Key(3)] public int AvailableMinutes { get; set; }
     }
 }

@@ -35,12 +35,12 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// Name of the usage type.
         /// </summary>
-        string UsageName { get; set; }
+        string UsageName { get; init; }
 
         /// <summary>
         /// Sum of all usage minutes.
         /// </summary>
-        int AvailableMinutes { get; set; }
+        int AvailableMinutes { get; init; }
 
         /// <summary>
         /// Sum of all usage minutes in the current session.
@@ -60,7 +60,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// 
         /// </summary>
-        bool IsLogoutExpired { get; set; }
+        bool ExpiresAtLogout { get; init; }
 
         /// <summary>
         /// Available or not in the current session.

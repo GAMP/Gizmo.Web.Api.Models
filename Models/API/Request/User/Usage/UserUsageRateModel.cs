@@ -19,5 +19,10 @@ namespace Gizmo.Web.Api.Models
         /// Name of the bill rate profile.
         /// </summary>
         [Key(1)] public string Name { get; set; } = null!;
+
+        /// <summary>
+        /// Sum of the bill rate.
+        /// </summary>
+        [Key(2)]public int AvailableMinutes { get; set; }
     }
 }

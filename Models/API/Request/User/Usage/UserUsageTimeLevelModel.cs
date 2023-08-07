@@ -18,7 +18,7 @@ namespace Gizmo.Web.Api.Models
         public UserUsageTimeLevelModel()
         {
             CurrentUsageType = UsageType.None;
-            UsageName = "None";
+            UsageName = "Invalid name";
         }
 
         /// <summary>
@@ -30,6 +30,7 @@ namespace Gizmo.Web.Api.Models
             Rate = model;
             CurrentUsageType = UsageType.Rate;
             UsageName = model.Name;
+            AvailableMinutes = model.AvailableMinutes;
         }
 
         /// <summary>
@@ -41,6 +42,8 @@ namespace Gizmo.Web.Api.Models
             TimeOffer = model;
             CurrentUsageType = UsageType.TimeOffer;
             UsageName = model.Name;
+            AvailableMinutes = model.AvailableMinutes;
+            ExpiresAtLogout = model.ExpiresAtLogout;
         }
 
         /// <summary>
@@ -52,6 +55,7 @@ namespace Gizmo.Web.Api.Models
             TimeFixed = model;
             CurrentUsageType = UsageType.TimeFixed;
             UsageName = model.Name;
+            AvailableMinutes = model.AvailableMinutes;
         }
 
         #endregion
@@ -71,9 +75,9 @@ namespace Gizmo.Web.Api.Models
         /// <inheritdoc/>
         [Key(4)] public int UsageTypeId { get; set; }
         /// <inheritdoc/>
-        [Key(5)] public string UsageName { get; set; } = null!;
+        [Key(5)] public string UsageName { get; init; } = null!;
         /// <inheritdoc/>
-        [Key(6)] public int AvailableMinutes { get; set; }
+        [Key(6)] public int AvailableMinutes { get; init; }
         /// <inheritdoc/>
         [Key(7)] public int UsableMinutes { get; set; }
         /// <inheritdoc/>
@@ -81,7 +85,7 @@ namespace Gizmo.Web.Api.Models
         /// <inheritdoc/>
         [Key(9)] public int? OrderNumber { get; set; }
         /// <inheritdoc/>
-        [Key(10)] public bool IsLogoutExpired { get; set; }
+        [Key(10)] public bool ExpiresAtLogout { get; init; }
         /// <inheritdoc/>
         [Key(11)] public bool IsAvailable { get; set; }
     }
