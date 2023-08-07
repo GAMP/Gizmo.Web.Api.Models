@@ -14,5 +14,10 @@ namespace Gizmo.Web.Api.Models
         /// Identifier of the bill rate.
         /// </summary>
         [Key(0)] public int BillRateId { get; set; }
+        
+        /// <summary>
+        /// Name of the bill rate profile.
+        /// </summary>
+        [Key(1)] public string Name { get; set; } = null!;
     }
 }

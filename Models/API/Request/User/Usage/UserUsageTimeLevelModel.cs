@@ -15,36 +15,43 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// 
         /// </summary>
-        public UserUsageTimeLevelModel() => CurrentUsageType = UsageType.None;
+        public UserUsageTimeLevelModel()
+        {
+            CurrentUsageType = UsageType.None;
+            UsageName = "None";
+        }
 
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="rate"></param>
-        public UserUsageTimeLevelModel(UserUsageRateModel rate)
+        /// <param name="model"></param>
+        public UserUsageTimeLevelModel(UserUsageRateModel model)
         {
-            Rate = rate;
+            Rate = model;
             CurrentUsageType = UsageType.Rate;
+            UsageName = model.Name;
         }
 
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="timeOffer"></param>
-        public UserUsageTimeLevelModel(UserUsageTimeOfferModel timeOffer)
+        /// <param name="model"></param>
+        public UserUsageTimeLevelModel(UserUsageTimeOfferModel model)
         {
-            TimeOffer = timeOffer;
+            TimeOffer = model;
             CurrentUsageType = UsageType.TimeOffer;
+            UsageName = model.Name;
         }
 
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="timeFixed"></param>
-        public UserUsageTimeLevelModel(UserUsageTimeFixedModel timeFixed)
+        /// <param name="model"></param>
+        public UserUsageTimeLevelModel(UserUsageTimeFixedModel model)
         {
-            TimeFixed = timeFixed;
+            TimeFixed = model;
             CurrentUsageType = UsageType.TimeFixed;
+            UsageName = model.Name;
         }
 
         #endregion
