@@ -32,6 +32,7 @@ namespace Gizmo.Web.Api.Models
             AvailableMinutes = model.AvailableMinutes;
             UsableMinutes = model.UsableMinutes;
             UntilTime = model.UntilTime;
+            IsAvailable = model.IsAvailable;
         }
 
         /// <summary>
@@ -47,6 +48,7 @@ namespace Gizmo.Web.Api.Models
             ExpiresAtLogout = model.ExpiresAtLogout;
             UsableMinutes = model.UsableMinutes;
             UntilTime = model.UntilTime;
+            IsAvailable = model.IsAvailable;
         }
 
         /// <summary>
@@ -61,6 +63,7 @@ namespace Gizmo.Web.Api.Models
             AvailableMinutes = model.AvailableMinutes;
             UsableMinutes = model.UsableMinutes;
             UntilTime = model.UntilTime;
+            IsAvailable = model.IsAvailable;
         }
 
         #endregion
@@ -88,10 +91,10 @@ namespace Gizmo.Web.Api.Models
         public DateTime UntilTime { get; init; }
         /// <inheritdoc/>
         public bool ExpiresAtLogout { get; init; }
-        
+        /// <inheritdoc/>
+        public bool IsAvailable { get; init; }
+
         /// <inheritdoc/>
         public int? OrderNumber { get; set; }
-        /// <inheritdoc/>
-        public bool IsAvailable { get; set; }
     }
 }
