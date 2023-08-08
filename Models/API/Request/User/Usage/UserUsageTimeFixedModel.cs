@@ -1,5 +1,7 @@
 ﻿using System;
 
+using Gizmo.Web.Api.Models.Abstractions;
+
 using MessagePack;
 
 namespace Gizmo.Web.Api.Models
@@ -8,21 +10,20 @@ namespace Gizmo.Web.Api.Models
     /// 
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class UserUsageTimeFixedModel
+    public sealed class UserUsageTimeFixedModel : IUserUsageTypeModel
     {
-        /// <summary>
-        /// Identifier of the invoice line.
-        /// </summary>
-        [Key(0)] public int InvoiceLineId { get; set; }
-        
-        /// <summary>
-        /// Name of the invoice line product.
-        /// </summary>
-        [Key(1)]public string Name { get; set; } = null!;
+        /// <inheritdoc/>
+        public int UsageTypeId { get; init; }
+        /// <inheritdoc/>
+        public int AvailableMinutes { get; init; }
+        /// <inheritdoc/>
+        public int UsableMinutes { get; init; }
+        /// <inheritdoc/>
+        public DateTime UntilTime { get; init; }
 
         /// <summary>
-        /// Sum of the invoice line.
+        /// 
         /// </summary>
-        [Key(2)] public int AvailableMinutes { get; set; }
+        public int InvoiceLineId { get; init; }
     }
 }

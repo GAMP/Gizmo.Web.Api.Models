@@ -1,5 +1,7 @@
 ﻿using System;
 
+using Gizmo.Web.Api.Models.Abstractions;
+
 using MessagePack;
 
 namespace Gizmo.Web.Api.Models
@@ -8,21 +10,20 @@ namespace Gizmo.Web.Api.Models
     /// 
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class UserUsageRateModel
+    public sealed class UserUsageRateModel : IUserUsageTypeModel
     {
-        /// <summary>
-        /// Identifier of the bill rate.
-        /// </summary>
-        [Key(0)] public int BillRateId { get; set; }
-        
-        /// <summary>
-        /// Name of the bill rate profile.
-        /// </summary>
-        [Key(1)] public string Name { get; set; } = null!;
+        /// <inheritdoc/>
+        public int UsageTypeId { get; init; }
+        /// <inheritdoc/>
+        public int AvailableMinutes { get; init; }
+        /// <inheritdoc/>
+        public int UsableMinutes { get; init; }
+        /// <inheritdoc/>
+        public DateTime UntilTime { get; init; }
 
         /// <summary>
-        /// Sum of the bill rate.
+        /// 
         /// </summary>
-        [Key(2)]public int AvailableMinutes { get; set; }
+        public int BillRateId { get; init; }
     }
 }

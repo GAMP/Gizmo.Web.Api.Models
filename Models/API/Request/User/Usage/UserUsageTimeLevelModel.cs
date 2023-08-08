@@ -18,7 +18,6 @@ namespace Gizmo.Web.Api.Models
         public UserUsageTimeLevelModel()
         {
             CurrentUsageType = UsageType.None;
-            UsageName = "Invalid name";
         }
 
         /// <summary>
@@ -28,9 +27,11 @@ namespace Gizmo.Web.Api.Models
         public UserUsageTimeLevelModel(UserUsageRateModel model)
         {
             Rate = model;
+            UsageTypeId = model.UsageTypeId;
             CurrentUsageType = UsageType.Rate;
-            UsageName = model.Name;
             AvailableMinutes = model.AvailableMinutes;
+            UsableMinutes = model.UsableMinutes;
+            UntilTime = model.UntilTime;
         }
 
         /// <summary>
@@ -40,10 +41,12 @@ namespace Gizmo.Web.Api.Models
         public UserUsageTimeLevelModel(UserUsageTimeOfferModel model)
         {
             TimeOffer = model;
+            UsageTypeId = model.UsageTypeId;
             CurrentUsageType = UsageType.TimeOffer;
-            UsageName = model.Name;
             AvailableMinutes = model.AvailableMinutes;
             ExpiresAtLogout = model.ExpiresAtLogout;
+            UsableMinutes = model.UsableMinutes;
+            UntilTime = model.UntilTime;
         }
 
         /// <summary>
@@ -53,40 +56,42 @@ namespace Gizmo.Web.Api.Models
         public UserUsageTimeLevelModel(UserUsageTimeFixedModel model)
         {
             TimeFixed = model;
+            UsageTypeId = model.UsageTypeId;
             CurrentUsageType = UsageType.TimeFixed;
-            UsageName = model.Name;
             AvailableMinutes = model.AvailableMinutes;
+            UsableMinutes = model.UsableMinutes;
+            UntilTime = model.UntilTime;
         }
 
         #endregion
 
         /// <inheritdoc/>
-        [Key(0)] public UserUsageRateModel? Rate { get; set; }
+        public UserUsageRateModel? Rate { get; init; }
 
         /// <inheritdoc/>
-        [Key(1)] public UserUsageTimeOfferModel? TimeOffer { get; set; }
+        public UserUsageTimeOfferModel? TimeOffer { get; init; }
 
         /// <inheritdoc/>>
-        [Key(2)] public UserUsageTimeFixedModel? TimeFixed { get; set; }
+        public UserUsageTimeFixedModel? TimeFixed { get; init; }
 
         /// <inheritdoc/>
-        [Key(3)] public UsageType CurrentUsageType { get; init; }
+        public UsageType CurrentUsageType { get; init; }
 
         /// <inheritdoc/>
-        [Key(4)] public int UsageTypeId { get; set; }
+        public int UsageTypeId { get; init; }
+
         /// <inheritdoc/>
-        [Key(5)] public string UsageName { get; init; } = null!;
+        public int AvailableMinutes { get; init; }
         /// <inheritdoc/>
-        [Key(6)] public int AvailableMinutes { get; init; }
+        public int UsableMinutes { get; init; }
         /// <inheritdoc/>
-        [Key(7)] public int UsableMinutes { get; set; }
+        public DateTime UntilTime { get; init; }
         /// <inheritdoc/>
-        [Key(8)] public DateTime UntilTime { get; set; }
+        public bool ExpiresAtLogout { get; init; }
+        
         /// <inheritdoc/>
-        [Key(9)] public int? OrderNumber { get; set; }
+        public int? OrderNumber { get; set; }
         /// <inheritdoc/>
-        [Key(10)] public bool ExpiresAtLogout { get; init; }
-        /// <inheritdoc/>
-        [Key(11)] public bool IsAvailable { get; set; }
+        public bool IsAvailable { get; set; }
     }
 }

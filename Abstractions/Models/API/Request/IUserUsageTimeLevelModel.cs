@@ -1,26 +1,24 @@
-﻿using System;
-
-namespace Gizmo.Web.Api.Models.Abstractions
+﻿namespace Gizmo.Web.Api.Models.Abstractions
 {
     /// <summary>
     /// 
     /// </summary>
-    public interface IUserUsageTimeLevelModel : IWebApiModel
+    public interface IUserUsageTimeLevelModel : IUserUsageTypeModel, IWebApiModel
     {
         /// <summary>
         /// 
         /// </summary>
-        UserUsageRateModel? Rate { get; set; }
+        UserUsageRateModel? Rate { get; init; }
 
         /// <summary>
         /// 
         /// </summary>
-        UserUsageTimeOfferModel? TimeOffer { get; set; }
+        UserUsageTimeOfferModel? TimeOffer { get; init; }
 
         /// <summary>
         /// 
         /// </summary>
-        UserUsageTimeFixedModel? TimeFixed { get; set; }
+        UserUsageTimeFixedModel? TimeFixed { get; init; }
 
         /// <summary>
         /// Available usage type.
@@ -30,37 +28,12 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// 
         /// </summary>
-        int UsageTypeId { get; set; }
-
-        /// <summary>
-        /// Name of the usage type.
-        /// </summary>
-        string UsageName { get; init; }
-
-        /// <summary>
-        /// Sum of all usage minutes.
-        /// </summary>
-        int AvailableMinutes { get; init; }
-
-        /// <summary>
-        /// Sum of all usage minutes in the current session.
-        /// </summary>
-        int UsableMinutes { get; set; }
-
-        /// <summary>
-        /// Time when the usage type would be expired in the current session.
-        /// </summary>
-        DateTime UntilTime { get; set; }
+        bool ExpiresAtLogout { get; init; }
 
         /// <summary>
         /// Number of the order for the usage types roadmap.
         /// </summary>
         int? OrderNumber { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        bool ExpiresAtLogout { get; init; }
 
         /// <summary>
         /// Available or not in the current session.
