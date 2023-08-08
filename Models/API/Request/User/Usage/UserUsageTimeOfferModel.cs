@@ -25,6 +25,11 @@ namespace Gizmo.Web.Api.Models
         /// 
         /// </summary>
         public int InvoiceLineId { get; init; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public int ProductId { get; init; }
         
         /// <summary>
         /// 
