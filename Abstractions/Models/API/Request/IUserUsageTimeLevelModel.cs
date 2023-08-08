@@ -34,10 +34,5 @@
         /// Number of the order for the usage types roadmap.
         /// </summary>
         int? OrderNumber { get; set; }
-
-        /// <summary>
-        /// Available or not in the current session.
-        /// </summary>
-        bool IsAvailable { get; set; }
     }
 }

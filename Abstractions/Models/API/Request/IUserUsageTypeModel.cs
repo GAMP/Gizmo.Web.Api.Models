@@ -26,5 +26,10 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// 
         /// </summary>
         DateTime UntilTime { get; init; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        bool IsAvailable { get; init; }
     }
 }

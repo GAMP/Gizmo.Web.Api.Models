@@ -20,11 +20,18 @@ namespace Gizmo.Web.Api.Models
         public int UsableMinutes { get; init; }
         /// <inheritdoc/>
         public DateTime UntilTime { get; init; }
-        
+        /// <inheritdoc/>
+        public bool IsAvailable { get; init; }
+
         /// <summary>
         /// 
         /// </summary>
         public int InvoiceLineId { get; init; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public int OrderLineId { get; init; }
 
         /// <summary>
         /// 
