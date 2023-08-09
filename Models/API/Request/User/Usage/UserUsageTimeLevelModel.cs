@@ -96,5 +96,10 @@ namespace Gizmo.Web.Api.Models
 
         /// <inheritdoc/>
         public int? OrderNumber { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public DateTime StartTime { get; set; }
     }
 }
