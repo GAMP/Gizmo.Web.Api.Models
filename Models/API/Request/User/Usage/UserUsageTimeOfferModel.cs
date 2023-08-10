@@ -13,15 +13,23 @@ namespace Gizmo.Web.Api.Models
     public sealed class UserUsageTimeOfferModel : IUserUsageTypeModel
     {
         /// <inheritdoc/>
-        public int UsageTypeId { get; init; }
-        /// <inheritdoc/>
         public int AvailableMinutes { get; init; }
-        /// <inheritdoc/>
-        public int UsableMinutes { get; init; }
-        /// <inheritdoc/>
-        public DateTime UntilTime { get; init; }
+        
         /// <inheritdoc/>
         public bool IsAvailable { get; init; }
+        
+        /// <inheritdoc/>
+        public DateTime? ActivationTime { get; init; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public int UsableMinutes { get; init; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public DateTime? ExpireTime { get; init; }
 
         /// <summary>
         /// 
@@ -31,21 +39,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// 
         /// </summary>
-        public int OrderLineId { get; init; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         public int ProductId { get; init; }
-        
-        /// <summary>
-        /// 
-        /// </summary>
-        public string Name { get; init; } = null!;
-        
-        /// <summary>
-        /// 
-        /// </summary>
-        public bool ExpiresAtLogout { get; init; }
     }
 }

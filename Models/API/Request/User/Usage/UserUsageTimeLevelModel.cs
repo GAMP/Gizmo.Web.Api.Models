@@ -27,12 +27,11 @@ namespace Gizmo.Web.Api.Models
         public UserUsageTimeLevelModel(UserUsageRateModel model)
         {
             Rate = model;
-            UsageTypeId = model.UsageTypeId;
             CurrentUsageType = UsageType.Rate;
-            AvailableMinutes = model.AvailableMinutes;
-            UsableMinutes = model.UsableMinutes;
-            UntilTime = model.UntilTime;
+            
             IsAvailable = model.IsAvailable;
+            ActivationTime = model.ActivationTime;
+            AvailableMinutes = model.AvailableMinutes;
         }
 
         /// <summary>
@@ -42,13 +41,11 @@ namespace Gizmo.Web.Api.Models
         public UserUsageTimeLevelModel(UserUsageTimeOfferModel model)
         {
             TimeOffer = model;
-            UsageTypeId = model.UsageTypeId;
             CurrentUsageType = UsageType.TimeOffer;
-            AvailableMinutes = model.AvailableMinutes;
-            ExpiresAtLogout = model.ExpiresAtLogout;
-            UsableMinutes = model.UsableMinutes;
-            UntilTime = model.UntilTime;
+            
             IsAvailable = model.IsAvailable;
+            ActivationTime = model.ActivationTime;
+            AvailableMinutes = model.AvailableMinutes;
         }
 
         /// <summary>
@@ -58,12 +55,11 @@ namespace Gizmo.Web.Api.Models
         public UserUsageTimeLevelModel(UserUsageTimeFixedModel model)
         {
             TimeFixed = model;
-            UsageTypeId = model.UsageTypeId;
             CurrentUsageType = UsageType.TimeFixed;
-            AvailableMinutes = model.AvailableMinutes;
-            UsableMinutes = model.UsableMinutes;
-            UntilTime = model.UntilTime;
+            
             IsAvailable = model.IsAvailable;
+            AvailableMinutes = model.AvailableMinutes;
+            ActivationTime = model.ActivationTime;
         }
 
         #endregion
@@ -81,25 +77,15 @@ namespace Gizmo.Web.Api.Models
         public UsageType CurrentUsageType { get; init; }
 
         /// <inheritdoc/>
-        public int UsageTypeId { get; init; }
-
+        public bool IsAvailable { get; init; }
+        
         /// <inheritdoc/>
         public int AvailableMinutes { get; init; }
+        
         /// <inheritdoc/>
-        public int UsableMinutes { get; init; }
+        public DateTime? ActivationTime { get; init; }
+        
         /// <inheritdoc/>
-        public DateTime UntilTime { get; init; }
-        /// <inheritdoc/>
-        public bool ExpiresAtLogout { get; init; }
-        /// <inheritdoc/>
-        public bool IsAvailable { get; init; }
-
-        /// <inheritdoc/>
-        public int? OrderNumber { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public DateTime StartTime { get; set; }
+        public int? ActivationOrder { get; set; }
     }
 }

@@ -26,13 +26,8 @@
         UsageType CurrentUsageType { get; init; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        bool ExpiresAtLogout { get; init; }
-
-        /// <summary>
         /// Number of the order for the usage types roadmap.
         /// </summary>
-        int? OrderNumber { get; set; }
+        int? ActivationOrder { get; set; }
     }
 }
