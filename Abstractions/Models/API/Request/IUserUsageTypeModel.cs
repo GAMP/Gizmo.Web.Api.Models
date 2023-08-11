@@ -10,12 +10,12 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// 
         /// </summary>
-        int AvailableMinutes { get; init; }
-
+        bool IsAvailable { get; init; }
+        
         /// <summary>
         /// 
         /// </summary>
-        bool IsAvailable { get; init; }
+        int AvailableMinutes { get; init; }
         
         /// <summary>
         /// 

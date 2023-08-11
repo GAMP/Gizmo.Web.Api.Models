@@ -13,10 +13,10 @@ namespace Gizmo.Web.Api.Models
     public sealed class UserUsageTimeFixedModel : IUserUsageTypeModel
     {
         /// <inheritdoc/>
-        public int AvailableMinutes { get; init; }
+        public bool IsAvailable { get; init; }
         
         /// <inheritdoc/>
-        public bool IsAvailable { get; init; }
+        public int AvailableMinutes { get; init; }
         
         /// <inheritdoc/>
         public DateTime? ActivationTime { get; init; }

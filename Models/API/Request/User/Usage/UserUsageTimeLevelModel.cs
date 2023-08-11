@@ -17,7 +17,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         public UserUsageTimeLevelModel()
         {
-            CurrentUsageType = UsageType.None;
+            UsageType = UsageType.None;
         }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Gizmo.Web.Api.Models
         public UserUsageTimeLevelModel(UserUsageRateModel model)
         {
             Rate = model;
-            CurrentUsageType = UsageType.Rate;
+            UsageType = UsageType.Rate;
             
             IsAvailable = model.IsAvailable;
             ActivationTime = model.ActivationTime;
@@ -41,7 +41,7 @@ namespace Gizmo.Web.Api.Models
         public UserUsageTimeLevelModel(UserUsageTimeOfferModel model)
         {
             TimeOffer = model;
-            CurrentUsageType = UsageType.TimeOffer;
+            UsageType = UsageType.TimeOffer;
             
             IsAvailable = model.IsAvailable;
             ActivationTime = model.ActivationTime;
@@ -55,7 +55,7 @@ namespace Gizmo.Web.Api.Models
         public UserUsageTimeLevelModel(UserUsageTimeFixedModel model)
         {
             TimeFixed = model;
-            CurrentUsageType = UsageType.TimeFixed;
+            UsageType = UsageType.TimeFixed;
             
             IsAvailable = model.IsAvailable;
             AvailableMinutes = model.AvailableMinutes;
@@ -74,7 +74,7 @@ namespace Gizmo.Web.Api.Models
         public UserUsageTimeFixedModel? TimeFixed { get; init; }
 
         /// <inheritdoc/>
-        public UsageType CurrentUsageType { get; init; }
+        public UsageType UsageType { get; init; }
 
         /// <inheritdoc/>
         public bool IsAvailable { get; init; }

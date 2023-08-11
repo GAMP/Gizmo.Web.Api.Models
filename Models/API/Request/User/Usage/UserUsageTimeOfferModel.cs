@@ -13,10 +13,10 @@ namespace Gizmo.Web.Api.Models
     public sealed class UserUsageTimeOfferModel : IUserUsageTypeModel
     {
         /// <inheritdoc/>
-        public int AvailableMinutes { get; init; }
+        public bool IsAvailable { get; init; }
         
         /// <inheritdoc/>
-        public bool IsAvailable { get; init; }
+        public int AvailableMinutes { get; init; }
         
         /// <inheritdoc/>
         public DateTime? ActivationTime { get; init; }
@@ -29,7 +29,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// 
         /// </summary>
-        public DateTime? ExpireTime { get; init; }
+        public DateTime? ExpirationTime { get; init; }
 
         /// <summary>
         /// 

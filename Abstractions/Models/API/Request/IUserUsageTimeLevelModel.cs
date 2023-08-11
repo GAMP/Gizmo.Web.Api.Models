@@ -23,7 +23,7 @@
         /// <summary>
         /// Available usage type.
         /// </summary>
-        UsageType CurrentUsageType { get; init; }
+        UsageType UsageType { get; init; }
 
         /// <summary>
         /// Number of the order for the usage types roadmap.
