@@ -76,6 +76,18 @@ namespace Gizmo.Web.Api.Models
         [Key(9)]
         public bool Accessible { get; set; }
 
+        /// <summary>
+        /// The path of the executable.
+        /// </summary>
+        [Key(10)]
+        public string ExecutablePath { get; set; } = null!;
+
+        /// <summary>
+        /// The deployment profiles of this executable.
+        /// </summary>
+        [Key(11)]
+        public IEnumerable<UserExecutableDeploymentProfileModel> DeploymentProfiles { get; set; } = Enumerable.Empty<UserExecutableDeploymentProfileModel>();
+
         #endregion
     }
 }
