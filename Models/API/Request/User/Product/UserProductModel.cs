@@ -132,6 +132,10 @@ namespace Gizmo.Web.Api.Models
         [Key(19)]
         public DateTime CreatedTime { get; set; }
 
+        /// <inheritdoc/>
+        [Key(20)]
+        public bool IsDeleted { get; set; }
+
         #endregion
     }
 }

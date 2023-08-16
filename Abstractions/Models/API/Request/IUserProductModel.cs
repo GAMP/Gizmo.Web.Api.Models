@@ -97,5 +97,10 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// Product creation time.
         /// </summary>
         DateTime CreatedTime { get; set; }
+
+        /// <summary>
+        /// Whether the product is deleted.
+        /// </summary>
+        bool IsDeleted { get; set; }
     }
 }
