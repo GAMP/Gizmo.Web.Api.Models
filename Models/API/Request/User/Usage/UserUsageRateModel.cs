@@ -10,16 +10,13 @@ namespace Gizmo.Web.Api.Models
     /// 
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class UserUsageRateModel : IUserUsageTypeModel
+    public sealed class UserUsageRateModel
     {
-        /// <inheritdoc/>
-        public int AvailableMinutes { get; init; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public int? AvailableMinutes { get; set; }
         
-        /// <inheritdoc/>
-        public bool IsAvailable { get; init; }
-        /// <inheritdoc/>
-        public DateTime? ActivationTime { get; init; }
-
         /// <summary>
         /// 
         /// </summary>

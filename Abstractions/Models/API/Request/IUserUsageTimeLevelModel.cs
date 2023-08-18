@@ -3,7 +3,7 @@
     /// <summary>
     /// 
     /// </summary>
-    public interface IUserUsageTimeLevelModel : IUserUsageTypeModel, IWebApiModel
+    public interface IUserUsageTimeLevelModel : IWebApiModel
     {
         /// <summary>
         /// 

@@ -29,8 +29,6 @@ namespace Gizmo.Web.Api.Models
             Rate = model;
             UsageType = UsageType.Rate;
             
-            IsAvailable = model.IsAvailable;
-            ActivationTime = model.ActivationTime;
             AvailableMinutes = model.AvailableMinutes;
         }
 
@@ -43,8 +41,6 @@ namespace Gizmo.Web.Api.Models
             TimeOffer = model;
             UsageType = UsageType.TimeOffer;
             
-            IsAvailable = model.IsAvailable;
-            ActivationTime = model.ActivationTime;
             AvailableMinutes = model.AvailableMinutes;
         }
 
@@ -57,9 +53,7 @@ namespace Gizmo.Web.Api.Models
             TimeFixed = model;
             UsageType = UsageType.TimeFixed;
             
-            IsAvailable = model.IsAvailable;
             AvailableMinutes = model.AvailableMinutes;
-            ActivationTime = model.ActivationTime;
         }
 
         #endregion
@@ -77,13 +71,7 @@ namespace Gizmo.Web.Api.Models
         public UsageType UsageType { get; init; }
 
         /// <inheritdoc/>
-        public bool IsAvailable { get; init; }
-        
-        /// <inheritdoc/>
-        public int AvailableMinutes { get; init; }
-        
-        /// <inheritdoc/>
-        public DateTime? ActivationTime { get; init; }
+        public int? AvailableMinutes { get; init; }
         
         /// <inheritdoc/>
         public int? ActivationOrder { get; set; }

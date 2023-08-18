@@ -1,7 +1,5 @@
 ﻿using System;
 
-using Gizmo.Web.Api.Models.Abstractions;
-
 using MessagePack;
 
 namespace Gizmo.Web.Api.Models
@@ -10,17 +8,13 @@ namespace Gizmo.Web.Api.Models
     /// 
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class UserUsageTimeFixedModel : IUserUsageTypeModel
+    public sealed class UserUsageTimeFixedModel
     {
-        /// <inheritdoc/>
-        public bool IsAvailable { get; init; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public int AvailableMinutes { get; set; }
         
-        /// <inheritdoc/>
-        public int AvailableMinutes { get; init; }
-        
-        /// <inheritdoc/>
-        public DateTime? ActivationTime { get; init; }
-
         /// <summary>
         /// 
         /// </summary>
