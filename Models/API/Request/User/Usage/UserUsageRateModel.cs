@@ -16,7 +16,18 @@ namespace Gizmo.Web.Api.Models
         /// 
         /// </summary>
         public int? AvailableMinutes { get; set; }
-        
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public DateTime AvailableTime { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public DateTime? ExpirationTime { get; set; }
+
+
         /// <summary>
         /// 
         /// </summary>
