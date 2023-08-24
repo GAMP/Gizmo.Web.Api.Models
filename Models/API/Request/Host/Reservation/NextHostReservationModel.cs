@@ -23,6 +23,12 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(1)]
         public DateTime? NextReservationTime { get; set; } = null!;
 
+        /// <summary>
+        /// Gets next reservation duration.
+        /// </summary>
+        [MessagePack.Key(2)]
+        public int? NextReservationDuration { get; set; } = null!;
+
         #endregion
     }
 }
