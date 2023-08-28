@@ -13,11 +13,11 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// 
         /// </summary>
-        public int AvailableMinutes { get; set; }
-        
+        [Key(0)] public int AvailableMinutes { get; set; }
+
         /// <summary>
         /// 
         /// </summary>
-        public int InvoiceLineId { get; init; }
+        [Key(1)] public int InvoiceLineId { get; init; }
     }
 }

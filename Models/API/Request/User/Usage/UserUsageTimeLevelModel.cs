@@ -59,21 +59,21 @@ namespace Gizmo.Web.Api.Models
         #endregion
 
         /// <inheritdoc/>
-        public UserUsageRateModel? Rate { get; init; }
+        [Key(0)] public UserUsageRateModel? Rate { get; init; }
 
         /// <inheritdoc/>
-        public UserUsageTimeOfferModel? TimeOffer { get; init; }
+        [Key(1)] public UserUsageTimeOfferModel? TimeOffer { get; init; }
 
         /// <inheritdoc/>>
-        public UserUsageTimeFixedModel? TimeFixed { get; init; }
+        [Key(2)] public UserUsageTimeFixedModel? TimeFixed { get; init; }
 
         /// <inheritdoc/>
-        public UsageType UsageType { get; init; }
+        [Key(3)] public UsageType UsageType { get; init; }
 
         /// <inheritdoc/>
-        public int? AvailableMinutes { get; init; }
-        
+        [Key(4)] public int? AvailableMinutes { get; init; }
+
         /// <inheritdoc/>
-        public int? ActivationOrder { get; set; }
+        [Key(5)] public int? ActivationOrder { get; set; }
     }
 }

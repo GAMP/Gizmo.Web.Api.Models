@@ -13,26 +13,26 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// 
         /// </summary>
-        public int AvailableMinutes { get; set; }
-        
-        /// <summary>
-        /// 
-        /// </summary>
-        public DateTime AvailableTime { get; set; }
+        [Key(0)] public int AvailableMinutes { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        public DateTime ExpirationTime { get; set; }
+        [Key(1)] public DateTime AvailableTime { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        public int InvoiceLineId { get; init; }
+        [Key(2)] public DateTime ExpirationTime { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        public int ProductId { get; init; }
+        [Key(3)] public int InvoiceLineId { get; init; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [Key(4)] public int ProductId { get; init; }
     }
 }
