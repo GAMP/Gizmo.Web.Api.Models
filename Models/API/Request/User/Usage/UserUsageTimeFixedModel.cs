@@ -19,5 +19,15 @@ namespace Gizmo.Web.Api.Models
         /// 
         /// </summary>
         [Key(1)] public int InvoiceLineId { get; init; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [Key(2)] public DateTime PurchaseDate { get; init; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [Key(3)] public int TotalMinutes { get; init; }
     }
 }

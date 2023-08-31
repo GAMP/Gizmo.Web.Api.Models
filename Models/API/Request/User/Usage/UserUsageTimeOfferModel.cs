@@ -34,5 +34,10 @@ namespace Gizmo.Web.Api.Models
         /// 
         /// </summary>
         [Key(4)] public int ProductId { get; init; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [Key(5)] public DateTime PurchaseDate { get; init; }
     }
 }
