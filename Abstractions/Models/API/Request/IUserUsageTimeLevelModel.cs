@@ -1,4 +1,6 @@
-﻿namespace Gizmo.Web.Api.Models.Abstractions
+﻿using System;
+
+namespace Gizmo.Web.Api.Models.Abstractions
 {
     /// <summary>
     /// 
@@ -24,6 +26,16 @@
         /// Available usage type.
         /// </summary>
         UsageType UsageType { get; init; }
+
+        /// <summary>
+        /// Available minutes.
+        /// </summary>
+        int? AvailableMinutes { get; init; }
+
+        /// <summary>
+        /// Start time.
+        /// </summary>
+        DateTime AvailableTime { get; init; }
 
         /// <summary>
         /// Number of the order for the usage types roadmap.
