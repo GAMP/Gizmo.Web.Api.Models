@@ -23,7 +23,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// 
         /// </summary>
-        [Key(2)] public DateTime ExpirationTime { get; set; }
+        [Key(2)] public DateTime? ExpirationTime { get; set; }
 
         /// <summary>
         /// 
