@@ -35,7 +35,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// Start time of the roadmap step.
         /// </summary>
-        DateTime AvailableTime { get; init; }
+        DateTime? AvailableTime { get; init; }
 
         /// <summary>
         /// The number of a step for the roadmap. Null if the roadmap has a gap.
