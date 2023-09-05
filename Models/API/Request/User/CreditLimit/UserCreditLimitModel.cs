@@ -13,10 +13,10 @@ namespace Gizmo.Web.Api.Models
         #region PROPERTIES
 
         [Key(0)]
-        public CreditType SalesCreditOption { get; set; }
+        public CreditType SalesCreditType { get; set; }
 
         [Key(1)]
-        public CreditType TimeCreditOption { get; set; }
+        public CreditType TimeCreditType { get; set; }
 
         [Key(2)]
         public decimal CreditLimit { get; set; }
