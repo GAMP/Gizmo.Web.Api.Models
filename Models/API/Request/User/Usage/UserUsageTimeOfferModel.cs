@@ -18,7 +18,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Start time of availability the usage type
         /// </summary>
-        [Key(1)] public DateTime? AvailableTime { get; set; }
+        [Key(1)] public DateTime AvailableTime { get; set; }
 
         /// <summary>
         /// Expiration time of the usage type. Null if the usage type does not expire.
@@ -39,5 +39,10 @@ namespace Gizmo.Web.Api.Models
         /// Purchase date of the product.
         /// </summary>
         [Key(5)] public DateTime PurchaseDate { get; init; }
+
+        /// <summary>
+        /// Availability of the host.
+        /// </summary>
+        [Key(6)] public bool IsAvailable { get; init; }
     }
 }
