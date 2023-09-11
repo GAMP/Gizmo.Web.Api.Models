@@ -41,8 +41,13 @@ namespace Gizmo.Web.Api.Models
         [Key(5)] public DateTime PurchaseDate { get; init; }
 
         /// <summary>
+        /// First use date of the usage type.
+        /// </summary>
+        [Key(6)] public DateTime? FirstUseDate { get; init; }
+
+        /// <summary>
         /// Availability of the host.
         /// </summary>
-        [Key(6)] public bool IsAvailable { get; init; }
+        [Key(7)] public bool IsAvailable { get; init; }
     }
 }
