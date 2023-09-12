@@ -117,6 +117,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ASSISTANCE_REQUEST_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates assistance request status change</value>
+  </data>
+  <data name="ASSISTANCE_REQUEST_CHANGE_EVENT_EVENT_NAME" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="ASSISTANCE_REQUEST_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates assistance request creation</value>
+  </data>
+  <data name="ASSISTANCE_REQUEST_CREATED_EVENT_EVENT_NAME" xml:space="preserve">
+    <value>Created</value>
+  </data>
+  <data name="ASSISTANCE_REQUEST_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Assistance request related events</value>
+  </data>
+  <data name="ASSISTANCE_REQUEST_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Assistance request</value>
+  </data>
   <data name="ENTITY_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Indicates an database entity chgange</value>
   </data>

@@ -61,6 +61,60 @@ namespace Gizmo.Web.Api.Models.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Indicates assistance request status change.
+        /// </summary>
+        internal static string ASSISTANCE_REQUEST_CHANGE_EVENT_DESCRIPTION {
+            get {
+                return ResourceManager.GetString("ASSISTANCE_REQUEST_CHANGE_EVENT_DESCRIPTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change.
+        /// </summary>
+        internal static string ASSISTANCE_REQUEST_CHANGE_EVENT_EVENT_NAME {
+            get {
+                return ResourceManager.GetString("ASSISTANCE_REQUEST_CHANGE_EVENT_EVENT_NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Indicates assistance request creation.
+        /// </summary>
+        internal static string ASSISTANCE_REQUEST_CREATED_EVENT_DESCRIPTION {
+            get {
+                return ResourceManager.GetString("ASSISTANCE_REQUEST_CREATED_EVENT_DESCRIPTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Created.
+        /// </summary>
+        internal static string ASSISTANCE_REQUEST_CREATED_EVENT_EVENT_NAME {
+            get {
+                return ResourceManager.GetString("ASSISTANCE_REQUEST_CREATED_EVENT_EVENT_NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Assistance request related events.
+        /// </summary>
+        internal static string ASSISTANCE_REQUEST_EVENT_GROUP_DESCRIPTION {
+            get {
+                return ResourceManager.GetString("ASSISTANCE_REQUEST_EVENT_GROUP_DESCRIPTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Assistance request.
+        /// </summary>
+        internal static string ASSISTANCE_REQUEST_EVENT_GROUP_NAME {
+            get {
+                return ResourceManager.GetString("ASSISTANCE_REQUEST_EVENT_GROUP_NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Indicates an database entity chgange.
         /// </summary>
         internal static string ENTITY_CHANGE_EVENT_DESCRIPTION {
