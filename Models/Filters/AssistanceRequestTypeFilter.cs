@@ -16,5 +16,11 @@ namespace Gizmo.Web.Api.Models
         /// <inheritdoc/>
         [MessagePack.Key(1)]
         public List<string> Expand { get; set; } = new();
+
+        /// <summary>
+        /// Filter soft deleted entries.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public bool IsDeleted { get; set; }
     }
 }

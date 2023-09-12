@@ -10,19 +10,23 @@ namespace Gizmo.Web.Api.Models
     public sealed class AssistanceRequestFilter : IModelFilter<AssistanceRequestModel>
     {
         /// <inheritdoc/>
+        [MessagePack.Key(0)]
         public ModelFilterPagination Pagination { get; set; } = new();
 
         /// <inheritdoc/>
+        [MessagePack.Key(1)]
         public List<string> Expand { get; set; } = new List<string>();
 
         /// <summary>
         /// User id.
         /// </summary>
+        [MessagePack.Key(2)]
         public int? UserId { get; set; }
 
         /// <summary>
         /// Status.
         /// </summary>
+        [MessagePack.Key(3)]
         public AssistanceRequestStatus? Status { get; set; }
     }
 }

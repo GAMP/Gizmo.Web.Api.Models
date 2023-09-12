@@ -9,8 +9,13 @@ namespace Gizmo.Web.Api.Models
     [Serializable, MessagePackObject]
     public class CreateResult
     {
+        /// <summary>
+        /// Default result.
+        /// </summary>
+        public static readonly CreateResult Default = new();
+
         #region PROPERTIES
-        
+
         /// <summary>
         /// The Id of the newly created object.
         /// </summary>

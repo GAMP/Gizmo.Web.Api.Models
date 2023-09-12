@@ -1,13 +1,11 @@
-﻿using System;
-using Gizmo.Web.Api.Models.Abstractions;
-using MessagePack;
+﻿using Gizmo.Web.Api.Models.Abstractions;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Assistance request type.
     /// </summary>
-    [Serializable, MessagePackObject]
+    [MessagePack.MessagePackObject]
     public sealed class AssistanceRequestTypeModel : IAssistanceRequestTypeModel, IModelIntIdentifier
     {
         /// <inheritdoc/>
