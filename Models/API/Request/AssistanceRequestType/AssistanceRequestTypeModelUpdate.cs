@@ -7,7 +7,7 @@ namespace Gizmo.Web.Api.Models
     /// Assistance request type update model.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class AssistanceRequestTypeModelUpdate : IAssistanceRequestTypeModelUpdate, IModelIntIdentifier
+    public sealed class AssistanceRequestTypeModelUpdate : IAssistanceRequestTypeModel, IModelIntIdentifier
     {
         /// <inheritdoc/>
         [MessagePack.Key(0)]
@@ -15,11 +15,15 @@ namespace Gizmo.Web.Api.Models
 
         /// <inheritdoc/>
         [MessagePack.Key(1)]
-        public int? DisplayOrder { get; set; }
+        public int DisplayOrder { get; set; }
 
         /// <inheritdoc/>
         [MessagePack.Key(1)]
         [StringLength(45)]
-        public string? Title { get; set; } = string.Empty;
+        public string Title { get; set; } = string.Empty;
+
+        /// <inheritdoc/>
+        [MessagePack.Key(2)]
+        public bool IsDeleted { get; set; }
     }
 }
