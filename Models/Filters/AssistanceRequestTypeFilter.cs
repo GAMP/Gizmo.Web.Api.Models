@@ -21,6 +21,6 @@ namespace Gizmo.Web.Api.Models
         /// Filter soft deleted entries.
         /// </summary>
         [MessagePack.Key(3)]
-        public bool IsDeleted { get; set; }
+        public bool? IsDeleted { get; set; }
     }
 }
