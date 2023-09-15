@@ -18,12 +18,12 @@ namespace Gizmo.Web.Api.Models
         public int DisplayOrder { get; set; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(1)]
+        [MessagePack.Key(2)]
         [StringLength(45)]
         public string Title { get; set; } = string.Empty;
 
         /// <inheritdoc/>
-        [MessagePack.Key(2)]
+        [MessagePack.Key(3)]
         public bool IsDeleted { get; set; }
     }
 }
