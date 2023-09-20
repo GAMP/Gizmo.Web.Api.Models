@@ -1,4 +1,6 @@
-﻿namespace Gizmo.Web.Api.Messaging
+﻿using System;
+
+namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
     /// Assistance request event message base.
@@ -8,5 +10,22 @@
     [EventGroup(9)]
     public abstract class AssistanceRequestEventMessageBase : APIEventMessage
     {
+        /// <summary>
+        /// Gets user id.
+        /// </summary>
+        [MessagePack.Key(0)]
+        public int? UserId { get; init; }
+
+        /// <summary>
+        /// Gets host id.
+        /// </summary>
+        [MessagePack.Key(1)]
+        public int HostId { get; init; }
+
+        /// <summary>
+        /// Gets last modification time.
+        /// </summary>
+        [MessagePack.Key(2)]
+        public DateTime Time { get; init; }
     }
 }

@@ -11,25 +11,13 @@
         /// <summary>
         /// Gets request id.
         /// </summary>
-        [MessagePack.Key(0)]
+        [MessagePack.Key(3)]
         public int AssistanceRequestId { get; init; }
 
         /// <summary>
         /// Gets request type id.
         /// </summary>
-        [MessagePack.Key(1)]
+        [MessagePack.Key(4)]
         public int AssistanceRequestTypeId { get; init; }
-
-        /// <summary>
-        /// Gets user id.
-        /// </summary>
-        [MessagePack.Key(2)]
-        public int? UserId { get; init; }
-
-        /// <summary>
-        /// Gets host id.
-        /// </summary>
-        [MessagePack.Key(3)]
-        public int HostId { get; init; }
     }
 }
