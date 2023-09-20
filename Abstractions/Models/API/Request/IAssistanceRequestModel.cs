@@ -1,4 +1,6 @@
-﻿namespace Gizmo.Web.Api.Models.Abstractions
+﻿using System;
+
+namespace Gizmo.Web.Api.Models.Abstractions
 {
     /// <summary>
     /// Assistance request.
@@ -29,5 +31,10 @@
         /// Note.
         /// </summary>
         public string? Note { get; set; }
+
+        /// <summary>
+        /// Created time.
+        /// </summary>
+        public DateTime CreatedTime { get; set; }
     }
 }

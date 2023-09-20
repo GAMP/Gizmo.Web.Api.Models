@@ -1,4 +1,5 @@
-﻿using Gizmo.Web.Api.Models.Abstractions;
+﻿using System;
+using Gizmo.Web.Api.Models.Abstractions;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -31,5 +32,9 @@ namespace Gizmo.Web.Api.Models
         /// <inheritdoc/>
         [MessagePack.Key(5)]
         public string? Note { get; set; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(6)]
+        public DateTime CreatedTime { get; set; }
     }
 }

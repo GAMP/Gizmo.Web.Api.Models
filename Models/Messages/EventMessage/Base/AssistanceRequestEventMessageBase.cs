@@ -23,7 +23,7 @@ namespace Gizmo.Web.Api.Messaging
         public int HostId { get; init; }
 
         /// <summary>
-        /// Gets last modification time.
+        /// Gets creation or last modification time.
         /// </summary>
         [MessagePack.Key(2)]
         public DateTime Time { get; init; }
