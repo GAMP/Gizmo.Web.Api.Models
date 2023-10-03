@@ -38,12 +38,12 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Purchase date of the product.
         /// </summary>
-        [Key(5)] public DateTime PurchaseTime { get; init; }
+        [Key(5)] public DateTime PurchaseTime { get; set; }
 
         /// <summary>
         /// First usage time of the usage type.
         /// </summary>
-        [Key(6)] public DateTime? FirstUsageTime { get; init; }
+        [Key(6)] public DateTime? FirstUsageTime { get; set; }
 
         /// <summary>
         /// Availability of the host.

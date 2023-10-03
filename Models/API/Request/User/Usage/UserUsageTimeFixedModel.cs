@@ -23,7 +23,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Purchase date of the usage type.
         /// </summary>
-        [Key(2)] public DateTime PurchaseTime { get; init; }
+        [Key(2)] public DateTime PurchaseTime { get; set; }
 
         /// <summary>
         /// Total minutes of the usage type.

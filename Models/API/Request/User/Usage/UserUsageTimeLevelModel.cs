@@ -26,7 +26,7 @@ namespace Gizmo.Web.Api.Models
         [Key(4)] public int? AvailableMinutes { get; init; }
         
         /// <inheritdoc/>
-        [Key(5)]public DateTime AvailableTime { get; init; }
+        [Key(5)]public DateTime AvailableTime { get; set; }
         
         /// <inheritdoc/>
         [Key(6)] public int? ActivationOrder { get; set; }
