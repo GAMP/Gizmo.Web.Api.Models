@@ -277,6 +277,24 @@ namespace Gizmo.Web.Api.Models.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Shift releated events.
+        /// </summary>
+        internal static string SHIFT_EVENT_GROUP_DESCRIPTION {
+            get {
+                return ResourceManager.GetString("SHIFT_EVENT_GROUP_DESCRIPTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shift.
+        /// </summary>
+        internal static string SHIFT_EVENT_GROUP_NAME {
+            get {
+                return ResourceManager.GetString("SHIFT_EVENT_GROUP_NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to User related events.
         /// </summary>
         internal static string USER_EVENT_GROUP_DESCRIPTION {

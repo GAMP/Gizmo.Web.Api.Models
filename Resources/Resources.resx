@@ -189,6 +189,12 @@
   <data name="RESERVATION_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Reservation</value>
   </data>
+  <data name="SHIFT_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Shift releated events</value>
+  </data>
+  <data name="SHIFT_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Shift</value>
+  </data>
   <data name="USER_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
     <value>User related events</value>
   </data>
