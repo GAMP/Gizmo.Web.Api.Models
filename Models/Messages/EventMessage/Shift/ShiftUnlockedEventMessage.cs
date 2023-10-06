@@ -1,10 +1,10 @@
 ﻿namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
-    /// Shift ended event message.
+    /// Shift unlocked event message.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class ShiftEndedEventMessage : ShiftEventMessageBase
+    public sealed class ShiftUnlockedEventMessage : ShiftEventMessageBase
     {
     }
 }
