@@ -277,6 +277,24 @@ namespace Gizmo.Web.Api.Models.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Indicates shift end.
+        /// </summary>
+        internal static string SHIFT_ENDED_EVENT_DESCRIPTION {
+            get {
+                return ResourceManager.GetString("SHIFT_ENDED_EVENT_DESCRIPTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ended.
+        /// </summary>
+        internal static string SHIFT_ENDED_EVENT_NAME {
+            get {
+                return ResourceManager.GetString("SHIFT_ENDED_EVENT_NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Shift releated events.
         /// </summary>
         internal static string SHIFT_EVENT_GROUP_DESCRIPTION {
@@ -291,6 +309,60 @@ namespace Gizmo.Web.Api.Models.Resources {
         internal static string SHIFT_EVENT_GROUP_NAME {
             get {
                 return ResourceManager.GetString("SHIFT_EVENT_GROUP_NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Indicates shift lock.
+        /// </summary>
+        internal static string SHIFT_LOCKED_EVENT_DESCRIPTION {
+            get {
+                return ResourceManager.GetString("SHIFT_LOCKED_EVENT_DESCRIPTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Locked.
+        /// </summary>
+        internal static string SHIFT_LOCKED_EVENT_NAME {
+            get {
+                return ResourceManager.GetString("SHIFT_LOCKED_EVENT_NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Indicates shift start.
+        /// </summary>
+        internal static string SHIFT_STARTED_EVENT_DESCRIPTION {
+            get {
+                return ResourceManager.GetString("SHIFT_STARTED_EVENT_DESCRIPTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Started.
+        /// </summary>
+        internal static string SHIFT_STARTED_EVENT_NAME {
+            get {
+                return ResourceManager.GetString("SHIFT_STARTED_EVENT_NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Indicates shift unlock.
+        /// </summary>
+        internal static string SHIFT_UNLOCKED_EVENT_DESCRIPTION {
+            get {
+                return ResourceManager.GetString("SHIFT_UNLOCKED_EVENT_DESCRIPTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unlocked.
+        /// </summary>
+        internal static string SHIFT_UNLOCKED_EVENT_NAME {
+            get {
+                return ResourceManager.GetString("SHIFT_UNLOCKED_EVENT_NAME", resourceCulture);
             }
         }
         

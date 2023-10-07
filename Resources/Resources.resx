@@ -189,11 +189,35 @@
   <data name="RESERVATION_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Reservation</value>
   </data>
+  <data name="SHIFT_ENDED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates shift end</value>
+  </data>
+  <data name="SHIFT_ENDED_EVENT_NAME" xml:space="preserve">
+    <value>Ended</value>
+  </data>
   <data name="SHIFT_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
     <value>Shift releated events</value>
   </data>
   <data name="SHIFT_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Shift</value>
+  </data>
+  <data name="SHIFT_LOCKED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates shift lock</value>
+  </data>
+  <data name="SHIFT_LOCKED_EVENT_NAME" xml:space="preserve">
+    <value>Locked</value>
+  </data>
+  <data name="SHIFT_STARTED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates shift start</value>
+  </data>
+  <data name="SHIFT_STARTED_EVENT_NAME" xml:space="preserve">
+    <value>Started</value>
+  </data>
+  <data name="SHIFT_UNLOCKED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates shift unlock</value>
+  </data>
+  <data name="SHIFT_UNLOCKED_EVENT_NAME" xml:space="preserve">
+    <value>Unlocked</value>
   </data>
   <data name="USER_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
     <value>User related events</value>
