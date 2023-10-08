@@ -1,15 +1,19 @@
-﻿namespace Gizmo.Web.Api.Models
+﻿using Gizmo.Web.Api.Models.Abstractions;
+using System.ComponentModel.DataAnnotations;
+
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Access token request model.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class AccessTokenRequestModel
+    public sealed class AccessTokenRequestModel : IUriParametersQuery
     {
         /// <summary>
         /// Username.
         /// </summary>
         [MessagePack.Key(0)]
+        [Required(AllowEmptyStrings = false)]
         public string Username
         {
             get; init;
@@ -19,6 +23,7 @@
         /// Password.
         /// </summary>
         [MessagePack.Key(1)]
+        [Required(AllowEmptyStrings = false)]
         public string Password
         {
             get; init;
