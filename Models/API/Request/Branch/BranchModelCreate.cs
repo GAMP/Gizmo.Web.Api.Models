@@ -5,6 +5,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Branch create model.
     /// </summary>
+    [MessagePack.MessagePackObject()]
     public sealed class BranchModelCreate : IModelIntIdentifier, IBranchModel
     {
         /// <summary>

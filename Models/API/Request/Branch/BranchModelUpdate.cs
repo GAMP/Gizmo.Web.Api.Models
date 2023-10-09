@@ -5,6 +5,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Branch update model.
     /// </summary>
+    [MessagePack.MessagePackObject()]
     public sealed class BranchModelUpdate : IModelIntIdentifier, IBranchModel
     {
         /// <summary>
