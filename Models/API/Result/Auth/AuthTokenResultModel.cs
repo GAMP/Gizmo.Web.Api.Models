@@ -10,7 +10,7 @@ namespace Gizmo.Web.Api.Models
     /// This model is used for returing authentication and refresh tokens.
     /// </remarks>
     [MessagePackObject()]
-    public sealed class AccessTokenResultModel
+    public sealed class AuthTokenResultModel
     {
         /// <summary>
         /// Token.
