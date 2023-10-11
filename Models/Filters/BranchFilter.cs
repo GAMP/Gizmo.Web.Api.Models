@@ -20,14 +20,5 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(1)]
         public List<string> Expand { get; set; } = new();
-
-        /// <summary>
-        /// Operator id.
-        /// </summary>
-        [MessagePack.Key(2)]
-        public int? OperatorId
-        {
-            get;init;
-        }
     }
 }

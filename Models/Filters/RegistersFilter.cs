@@ -23,21 +23,9 @@ namespace Gizmo.Web.Api.Models
         public List<string> Expand { get; set; } = new();
 
         /// <summary>
-        /// Operator id.
-        /// </summary>
-        /// <remarks>
-        /// This value is used in conjunction with branch id.<br></br> It can help filter out registers that are accesible for the operator at specified branch.
-        /// </remarks>
-        [MessagePack.Key(2)]
-        public int? OperatorId
-        {
-            get;init;
-        }
-
-        /// <summary>
         /// Branch id.
         /// </summary>
-        [MessagePack.Key(3)]
+        [MessagePack.Key(2)]
         public int? BranchId
         {
             get;init;
