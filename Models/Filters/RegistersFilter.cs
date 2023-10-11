@@ -22,5 +22,14 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [Key(1)]
         public List<string> Expand { get; set; } = new();
+
+        /// <summary>
+        /// Branch id.
+        /// </summary>
+        [Key(2)]
+        public int? BranchId
+        {
+            get;init;
+        }
     }
 }
