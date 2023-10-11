@@ -4,10 +4,10 @@ using Gizmo.Web.Api.Models.Abstractions;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Branch filter model. 
+    /// Operator branch filter model.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class BranchFilterModel : IModelFilter<BranchModel>
+    public sealed class OpeatorBranchFilter : IModelFilter<BranchModel>
     {
         /// <summary>
         /// <inheritdoc/>
