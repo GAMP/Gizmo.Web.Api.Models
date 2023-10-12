@@ -55,6 +55,15 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(5)]
         public int? IdleTimeout { get; set; }
 
+        /// <summary>
+        /// Deleted status.
+        /// </summary>
+        [MessagePack.Key(6)]
+        public bool IsDeleted
+        {
+            get;set;
+        }
+
         #endregion
     }
 }
