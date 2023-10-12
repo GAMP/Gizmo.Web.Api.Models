@@ -37,5 +37,14 @@ namespace Gizmo.Web.Api.Models
         {
             get; init;
         }
+
+        /// <summary>
+        /// Register id.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public int? RegisterId
+        {
+            get;init;
+        }
     }
 }
