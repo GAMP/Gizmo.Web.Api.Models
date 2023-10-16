@@ -30,5 +30,14 @@ namespace Gizmo.Web.Api.Models
         {
             get;init;
         }
+
+        /// <summary>
+        /// Is deleted.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public bool? IsDeleted
+        {
+            get;init;
+        }
     }
 }
