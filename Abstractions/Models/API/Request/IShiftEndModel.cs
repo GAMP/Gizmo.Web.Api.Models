@@ -10,6 +10,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Shift counts.
         /// </summary>
-        IEnumerable<ShiftCountModel> Counts { get; }
+        IEnumerable<ShiftEndCountModel> Counts { get; }
     }
 }

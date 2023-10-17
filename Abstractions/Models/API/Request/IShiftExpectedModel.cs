@@ -8,28 +8,13 @@ namespace Gizmo.Web.Api.Models
     public interface IShiftExpectedModel : IWebApiModel
     {
         /// <summary>
-        /// Payments.
+        /// Expected amounts.
         /// </summary>
-        IEnumerable<ShiftExpectedTransactionModel> Payments { get; init; }
-
-        /// <summary>
-        /// Refunds.
-        /// </summary>
-        IEnumerable<ShiftExpectedTransactionModel> Refunds { get; }
-
-        /// <summary>
-        /// Deposits.
-        /// </summary>
-        IEnumerable<ShiftExpectedTransactionModel> Deposits { get; }
-
-        /// <summary>
-        /// Withdrawals.
-        /// </summary>
-        IEnumerable<ShiftExpectedTransactionModel> Withdrawals { get; }
+        IEnumerable<ShiftExpectedTransactionModel> Exepected { get; init; }
 
         /// <summary>
         /// Total expected amount.
         /// </summary>
-        decimal Expected { get; init; }
+        decimal ExpectedTotal { get; init; }
     }
 }

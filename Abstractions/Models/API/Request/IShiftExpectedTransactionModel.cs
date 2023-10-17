@@ -18,6 +18,9 @@
         /// <summary>
         /// Transactions count.
         /// </summary>
+        /// <remarks>
+        /// This will include any payments or refund transactions.
+        /// </remarks>
         public int Count { get; }
     }
 }

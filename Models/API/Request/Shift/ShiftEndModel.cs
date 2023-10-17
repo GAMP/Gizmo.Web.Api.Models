@@ -13,6 +13,6 @@ namespace Gizmo.Web.Api.Models
         /// <inheritdoc/>
         /// </summary>
         [MessagePack.Key(0)]
-        public IEnumerable<ShiftCountModel> Counts { get;set; } = Enumerable.Empty<ShiftCountModel>();
+        public IEnumerable<ShiftEndCountModel> Counts { get;set; } = Enumerable.Empty<ShiftEndCountModel>();
     }
 }

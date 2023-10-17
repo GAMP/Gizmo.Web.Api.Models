@@ -13,30 +13,12 @@ namespace Gizmo.Web.Api.Models
         /// <inheritdoc/>
         /// </summary>
         [MessagePack.Key(0)]
-        public IEnumerable<ShiftExpectedTransactionModel> Payments { get; init; } = Enumerable.Empty<ShiftExpectedTransactionModel>();
+        public IEnumerable<ShiftExpectedTransactionModel> Exepected { get; init; } = Enumerable.Empty<ShiftExpectedTransactionModel>();
 
         /// <summary>
         /// <inheritdoc/>
         /// </summary>
         [MessagePack.Key(1)]
-        public IEnumerable<ShiftExpectedTransactionModel> Refunds { get; init; } = Enumerable.Empty<ShiftExpectedTransactionModel>();
-
-        /// <summary>
-        /// <inheritdoc/>
-        /// </summary>
-        [MessagePack.Key(2)]
-        public IEnumerable<ShiftExpectedTransactionModel> Deposits { get; init; } = Enumerable.Empty<ShiftExpectedTransactionModel>();
-
-        /// <summary>
-        /// <inheritdoc/>
-        /// </summary>
-        [MessagePack.Key(3)]
-        public IEnumerable<ShiftExpectedTransactionModel> Withdrawals { get; init; } = Enumerable.Empty<ShiftExpectedTransactionModel>();
-
-        /// <summary>
-        /// <inheritdoc/>
-        /// </summary>
-        [MessagePack.Key(4)]
-        public decimal Expected { get; init; }
+        public decimal ExpectedTotal { get; init; }
     }
 }
