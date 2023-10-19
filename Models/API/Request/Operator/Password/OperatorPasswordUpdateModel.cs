@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Gizmo.Web.Api.Models.Models
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// <inheritdoc cref="IOperatorPasswordUpdateModel"/>
