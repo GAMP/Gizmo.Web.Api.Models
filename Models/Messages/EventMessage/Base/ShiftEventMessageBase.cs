@@ -11,13 +11,13 @@
         /// <summary>
         /// Shift id.
         /// </summary>
-        [MessagePack.Key(0)]
+        [MessagePack.Key(1)]
         public int ShiftId { get; init; }
 
         /// <summary>
         /// Operator id.
         /// </summary>
-        [MessagePack.Key(1)]
+        [MessagePack.Key(2)]
         public int OperatorId { get;init; }
     }
 }
