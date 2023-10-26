@@ -5,15 +5,18 @@ using MessagePack;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// TODO: Make the description
+    /// Time fixed usage model.
     /// </summary>
     [Serializable, MessagePackObject]
     public sealed class UserUsageTimeFixedModel
     {
         /// <summary>
-        /// Left available minutes of the usage type.
+        /// Remaining minutes.
         /// </summary>
-        [Key(0)] public int AvailableMinutes { get; set; }
+        /// <remarks>
+        /// Total remaining minutes in usage type.
+        /// </remarks>
+        [Key(0)] public int RemainingMinutes { get; set; }
 
         /// <summary>
         /// Id of the invoice line that was used to purchase the usage type.
@@ -28,6 +31,9 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Total minutes of the usage type.
         /// </summary>
+        /// <remarks>
+        /// Only set in timed fixed product in order to show the total amount in UI.
+        /// </remarks>
         [Key(3)] public int TotalMinutes { get; init; }
     }
 }

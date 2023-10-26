@@ -23,10 +23,10 @@ namespace Gizmo.Web.Api.Models
         [Key(3)] public UsageType UsageType { get; init; }
 
         /// <inheritdoc/>
-        [Key(4)] public int? AvailableMinutes { get; init; }
+        [Key(4)] public int? UsableMinutes { get; init; }
         
         /// <inheritdoc/>
-        [Key(5)]public DateTime AvailableTime { get; set; }
+        [Key(5)]public DateTime? ActivationTime { get; set; }
         
         /// <inheritdoc/>
         [Key(6)] public int? ActivationOrder { get; set; }

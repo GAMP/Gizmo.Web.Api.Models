@@ -5,15 +5,18 @@ using MessagePack;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// TODO: Make the description
+    /// Time offer usage model.
     /// </summary>
     [Serializable, MessagePackObject]
     public sealed class UserUsageTimeOfferModel
     {
         /// <summary>
-        /// Left available minutes of the usage type.
+        /// Remaining minutes.
         /// </summary>
-        [Key(0)] public int AvailableMinutes { get; set; }
+        /// <remarks>
+        /// Total remaining minutes in usage type.
+        /// </remarks>
+        [Key(0)] public int RemainingMinutes { get; set; }
 
         /// <summary>
         /// Expiration time of the usage type. Null if the usage type does not expire.
@@ -38,6 +41,9 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// First usage time of the usage type.
         /// </summary>
+        /// <remarks>
+        /// This value is used in order to give more context on time offer expiration.
+        /// </remarks>
         [Key(5)] public DateTime? FirstUsageTime { get; set; }
     }
 }

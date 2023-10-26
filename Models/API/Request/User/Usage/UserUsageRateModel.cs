@@ -5,15 +5,20 @@ using MessagePack;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// TODO: Make the description
+    /// Rate usage model.
     /// </summary>
     [Serializable, MessagePackObject]
     public sealed class UserUsageRateModel
     {
         /// <summary>
-        /// Left available minutes of the usage type. Null if the usage type does not expire.
+        /// Remaining minutes.
         /// </summary>
-        [Key(0)] public int? AvailableMinutes { get; set; }
+        /// <remarks>
+        /// Total remaining minutes in usage type.<br></br>
+        /// This value is always the same with <see cref="UserUsageTimeLevelModel.UsableMinutes"/>.<br></br>
+        /// <b>This value is not currently used.</b>
+        /// </remarks>
+        [Key(0)] public int? RemainingMinutes { get; set; }
 
         /// <summary>
         /// Id of the BillRate that was used to purchase the usage type.

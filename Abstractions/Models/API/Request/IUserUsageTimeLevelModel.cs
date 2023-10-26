@@ -8,38 +8,45 @@ namespace Gizmo.Web.Api.Models.Abstractions
     public interface IUserUsageTimeLevelModel : IWebApiModel
     {
         /// <summary>
-        /// Just a users money.
+        /// Rate model.
         /// </summary>
         UserUsageRateModel? Rate { get; init; }
 
         /// <summary>
-        /// Complex product.
+        /// Time offer model.
         /// </summary>
         UserUsageTimeOfferModel? TimeOffer { get; init; }
 
         /// <summary>
-        /// Just a time.
+        /// Time fixed model.
         /// </summary>
         UserUsageTimeFixedModel? TimeFixed { get; init; }
 
         /// <summary>
-        /// Current available usage type.
+        /// Current usage type.
         /// </summary>
         UsageType UsageType { get; init; }
 
         /// <summary>
-        /// Available minutes till the next step of the roadmap. Null is the last step.
+        /// Usable minutes in current usage.
         /// </summary>
-        int? AvailableMinutes { get; init; }
+        /// <remarks>
+        /// This will indicate maximum amount of minutes that can be used in current usage.<br></br>
+        /// This value can be equal to null only in case of rate and will indicate unlimited time.
+        /// </remarks>
+        int? UsableMinutes { get; init; }
 
         /// <summary>
-        /// Start time of the roadmap step.
+        /// Activation time of usage within current usage session.
         /// </summary>
-        DateTime AvailableTime { get; set; }
+        DateTime? ActivationTime { get; set; }
 
         /// <summary>
-        /// The number of a step for the roadmap. Null if the roadmap has a gap.
+        /// Activation order within current usage session.
         /// </summary>
+        /// <remarks>
+        /// The value will be null if product was used in part or not at all within current usage session.
+        /// </remarks>
         int? ActivationOrder { get; set; }
     }
 }
