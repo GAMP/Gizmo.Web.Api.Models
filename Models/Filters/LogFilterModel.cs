@@ -38,7 +38,7 @@ namespace Gizmo.Web.Api.Models
         /// Module type.
         /// </summary>
         [MessagePack.Key(4)]
-        public ModuleType? ModuleType { get; init; } = 0;
+        public ModuleType? ModuleType { get; init; } = null;
 
         /// <summary>
         /// Filter message.
