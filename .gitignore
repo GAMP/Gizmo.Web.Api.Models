@@ -24,4 +24,4 @@ bld/
 [Oo]bj/
 [Ll]og/
 [Tt]est[Rr]esult*/
-# [Bb]uild[Ll]og.*
+[Bb]uild[Ll]og.*
