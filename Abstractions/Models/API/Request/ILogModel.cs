@@ -27,10 +27,5 @@ namespace Gizmo.Web.Api.Models
         /// Time.
         /// </summary>
         DateTime Time { get; init; }
-
-        /// <summary>
-        /// Indicates that log has exception information.
-        /// </summary>
-        public bool HasException { get; init; }
     }
 }

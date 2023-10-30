@@ -37,12 +37,5 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(4)]
         public string Message { get; init; } = string.Empty;
-
-        /// <summary>
-        /// <inheritdoc/>
-        /// </summary>
-        [MessagePack.Key(5)]
-        public bool HasException { get; init; } = false;
-
     }
 }
