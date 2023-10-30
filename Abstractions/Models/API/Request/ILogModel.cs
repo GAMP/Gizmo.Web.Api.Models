@@ -42,5 +42,10 @@ namespace Gizmo.Web.Api.Models
         /// Module version.
         /// </summary>
         string? ModuleVersion { get;init; }
+
+        /// <summary>
+        /// Log message type.
+        /// </summary>
+        LogMessageType MessageType { get;init; }
     }
 }

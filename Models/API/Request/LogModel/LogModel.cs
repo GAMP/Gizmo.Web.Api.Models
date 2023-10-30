@@ -55,5 +55,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(7)]
         public string? ModuleVersion { get; init; }
+
+        /// <summary>
+        /// <inheritdoc/>
+        /// </summary>
+        [MessagePack.Key(8)]
+        public LogMessageType MessageType { get; init; }
     }
 }
