@@ -27,5 +27,20 @@ namespace Gizmo.Web.Api.Models
         /// Time.
         /// </summary>
         DateTime Time { get; init; }
+
+        /// <summary>
+        /// Log category.
+        /// </summary>
+        LogCategory Category { get; init; }
+
+        /// <summary>
+        /// Module type.
+        /// </summary>
+        ModuleType ModuleType { get;init; }
+
+        /// <summary>
+        /// Module version.
+        /// </summary>
+        string? ModuleVersion { get;init; }
     }
 }

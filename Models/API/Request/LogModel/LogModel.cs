@@ -37,5 +37,23 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(4)]
         public string Message { get; init; } = string.Empty;
+
+        /// <summary>
+        /// <inheritdoc/>
+        /// </summary>
+        [MessagePack.Key(5)]
+        public LogCategory Category { get;init; }
+
+        /// <summary>
+        /// <inheritdoc/>
+        /// </summary>
+        [MessagePack.Key(6)]
+        public ModuleType ModuleType { get; init; }
+
+        /// <summary>
+        /// <inheritdoc/>
+        /// </summary>
+        [MessagePack.Key(7)]
+        public string? ModuleVersion { get; init; }
     }
 }
