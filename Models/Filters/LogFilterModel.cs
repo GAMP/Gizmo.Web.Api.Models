@@ -8,7 +8,7 @@ namespace Gizmo.Web.Api.Models
     /// Log filter model.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class LogsFilter : IModelFilter<LogModel>, IModelFilterRange
+    public sealed class LogFilterModel : IModelFilter<LogModel>, IModelFilterRange
     {
         /// <summary>
         /// <inheritdoc/>
@@ -38,7 +38,7 @@ namespace Gizmo.Web.Api.Models
         /// Module type.
         /// </summary>
         [MessagePack.Key(4)]
-        public ModuleType? ModuleType { get; set; } = null;
+        public ModuleType? ModuleType { get; init; } = null;
 
         /// <summary>
         /// Filter message.
