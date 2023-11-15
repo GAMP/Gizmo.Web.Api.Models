@@ -35,15 +35,21 @@ namespace Gizmo.Web.Api.Models
         public DateTime? DateTo { get; set; }
 
         /// <summary>
-        /// Module type.
+        /// Message type.
         /// </summary>
         [MessagePack.Key(4)]
+        public LogMessageType? MessageType { get; set; } = null;
+
+        /// <summary>
+        /// Module type.
+        /// </summary>
+        [MessagePack.Key(5)]
         public ModuleType? ModuleType { get; set; } = null;
 
         /// <summary>
         /// Filter message.
         /// </summary>
-        [MessagePack.Key(5)]
+        [MessagePack.Key(6)]
         public string? Message { get; set; }
     }
 }
