@@ -26,30 +26,42 @@ namespace Gizmo.Web.Api.Models
         /// <inheritdoc/>
         /// </summary>
         [MessagePack.Key(2)]
-        public DateTime? DateFrom { get; set; }
+        public CompareRangeOptions? DateCompareOption { get; set; }
 
         /// <summary>
         /// <inheritdoc/>
         /// </summary>
         [MessagePack.Key(3)]
+        public DateTime? DateFrom { get; set; }
+
+        /// <summary>
+        /// <inheritdoc/>
+        /// </summary>
+        [MessagePack.Key(4)]
         public DateTime? DateTo { get; set; }
 
         /// <summary>
-        /// Message type.
+        /// <inheritdoc/>
         /// </summary>
-        [MessagePack.Key(4)]
+        [MessagePack.Key(5)]
         public LogMessageType? MessageType { get; set; } = null;
 
         /// <summary>
-        /// Module type.
+        /// <inheritdoc/>
         /// </summary>
-        [MessagePack.Key(5)]
+        [MessagePack.Key(6)]
         public ModuleType? ModuleType { get; set; } = null;
 
         /// <summary>
-        /// Filter message.
+        /// <inheritdoc/>
         /// </summary>
-        [MessagePack.Key(6)]
+        [MessagePack.Key(7)]
+        public CompareStringOptions? MessageCompareOption { get; set; }
+
+        /// <summary>
+        /// <inheritdoc/>
+        /// </summary>
+        [MessagePack.Key(8)]
         public string? Message { get; set; }
     }
 }
