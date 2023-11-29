@@ -6,6 +6,7 @@ namespace Gizmo.Web.Api.Messaging
     /// User group changed event message.
     /// </summary>
     [MessagePackObject()]
+    [HideMetadata()]
     public sealed class UserGroupChangedEventMessage : UserEventMessageBase
     {
         #region CONSTRUCTOR

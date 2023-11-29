@@ -6,6 +6,7 @@ namespace Gizmo.Web.Api.Messaging
     /// User enable negative balance changed event message.
     /// </summary>
     [MessagePackObject()]
+    [HideMetadata()]
     public sealed class UserEnableNegativeBalanceEventMessage : UserEventMessageBase
     {
         #region CONSTRUCTOR

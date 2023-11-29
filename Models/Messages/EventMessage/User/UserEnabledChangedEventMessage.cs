@@ -49,6 +49,16 @@ namespace Gizmo.Web.Api.Messaging
             init;
         }
 
+        /// <summary>
+        /// Gets disable reason.
+        /// </summary>
+        [Key(5)]
+        public string? Reason
+        {
+            get;
+            init;
+        }
+
         #endregion
     }
 }

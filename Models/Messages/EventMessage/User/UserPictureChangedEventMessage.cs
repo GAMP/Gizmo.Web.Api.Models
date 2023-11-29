@@ -6,6 +6,7 @@ namespace Gizmo.Web.Api.Messaging
     /// User picture changed event message.
     /// </summary>
     [MessagePackObject()]
+    [HideMetadata()]
     public sealed class UserPictureChangedEventMessage : UserEventMessageBase
     {
         #region CONSTRUCTOR

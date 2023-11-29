@@ -6,6 +6,7 @@ namespace Gizmo.Web.Api.Messaging
     /// User balance changed event message.
     /// </summary>
     [MessagePackObject()]
+    [HideMetadata()]
     public sealed class UserBalanceChangeEventMessage : UserEventMessageBase
     {
         #region CONSTRUCTOR

@@ -6,8 +6,7 @@ namespace Gizmo.Web.Api.Messaging
     /// User event message base.
     /// </summary>
     [System.ComponentModel.DataAnnotations.Name("User", "USER_EVENT_GROUP_NAME")]
-    [System.ComponentModel.DataAnnotations.ExtendedDescription("User related events", "USER_EVENT_GROUP_DESCRIPTION")]   
-    [HideMetadata()]
+    [System.ComponentModel.DataAnnotations.ExtendedDescription("User related events", "USER_EVENT_GROUP_DESCRIPTION")]
     [EventGroup(3)]
     public abstract class UserEventMessageBase : APIEventMessage
     {
@@ -16,7 +15,7 @@ namespace Gizmo.Web.Api.Messaging
         /// Creates new instance.
         /// </summary>
         public UserEventMessageBase() : base()
-        { } 
+        { }
         #endregion
 
         #region PROPERTIES
@@ -28,7 +27,7 @@ namespace Gizmo.Web.Api.Messaging
         public int UserId
         {
             get; set;
-        } 
+        }
 
         #endregion
     }
