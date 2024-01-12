@@ -219,6 +219,12 @@
   <data name="SHIFT_UNLOCKED_EVENT_NAME" xml:space="preserve">
     <value>Unlocked</value>
   </data>
+  <data name="USER_ENABLED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates enablement of an user</value>
+  </data>
+  <data name="USER_ENABLED_EVENT_NAME" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
   <data name="USER_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
     <value>User related events</value>
   </data>

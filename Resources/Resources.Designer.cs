@@ -367,6 +367,24 @@ namespace Gizmo.Web.Api.Models.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Indicates enablement of an user.
+        /// </summary>
+        internal static string USER_ENABLED_EVENT_DESCRIPTION {
+            get {
+                return ResourceManager.GetString("USER_ENABLED_EVENT_DESCRIPTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enabled.
+        /// </summary>
+        internal static string USER_ENABLED_EVENT_NAME {
+            get {
+                return ResourceManager.GetString("USER_ENABLED_EVENT_NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to User related events.
         /// </summary>
         internal static string USER_EVENT_GROUP_DESCRIPTION {

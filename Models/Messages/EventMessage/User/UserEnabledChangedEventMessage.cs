@@ -7,6 +7,8 @@ namespace Gizmo.Web.Api.Messaging
     /// User enabled change event message.
     /// </summary>
     [MessagePackObject()]
+    [System.ComponentModel.DataAnnotations.Name("Enabled", "USER_ENABLED_EVENT_NAME")]
+    [System.ComponentModel.DataAnnotations.ExtendedDescription("Indicates enablement of an user", "USER_ENABLED_EVENT_DESCRIPTION")]
     public sealed class UserEnabledChangedEventMessage : UserEventMessageBase
     {
         #region CONSTRUCTOR
