@@ -1,33 +1,34 @@
-﻿using Gizmo.Web.Api.Models.Abstractions;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
+using Gizmo.Web.Api.Models.Abstractions;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Branch create model.
+    /// Report preset creation model.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class BranchModelCreate : IBranchModel
+    public sealed class ReportPresetModelCreate : IReportPresetModel
     {
-        /// <summary>
         /// <inheritdoc/>
-        /// </summary>
         [MessagePack.Key(0)]
+        [StringLength(45)]
         public string Name { get; init; } = string.Empty;
 
         /// <inheritdoc/>
         [MessagePack.Key(1)]
-        public string? TimeZone { get; init; }
+        public Guid Report { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(2)]
-        public bool IsDefault { get; init; }
+        public string? Filters { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(3)]
-        public bool IsEnabled { get; init; }
+        public ReportPresetRange Range { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(4)]
-        public bool IsDeleted { get; init; }
+        public int DisplayOrder { get; init; }
     }
 }

@@ -1,14 +1,11 @@
-﻿#nullable enable
-
+﻿using System;
 using Gizmo.Web.Api.Models.Abstractions;
 
 namespace Gizmo.Web.Api.Models
 {
-    /// <summary>
-    /// Branch model.
-    /// </summary>
+    /// <inheritdoc cref="IReportPresetModel"/>
     [MessagePack.MessagePackObject()]
-    public sealed class BranchModel : IModelIntIdentifier, IBranchModel
+    public sealed class ReportPresetModel : IModelIntIdentifier, IReportPresetModel
     {
         /// <inheritdoc/>
         [MessagePack.Key(0)]
@@ -20,18 +17,18 @@ namespace Gizmo.Web.Api.Models
 
         /// <inheritdoc/>
         [MessagePack.Key(2)]
-        public string? TimeZone { get; init; }
+        public Guid Report { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(3)]
-        public bool IsDefault { get; init; }
+        public string? Filters { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(4)]
-        public bool IsEnabled { get; init; }
+        public ReportPresetRange Range { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(5)]
-        public bool IsDeleted { get; init; }
+        public int DisplayOrder { get; init; }
     }
 }
