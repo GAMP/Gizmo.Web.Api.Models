@@ -8,9 +8,7 @@
     [MessagePack.MessagePackObject()]
     public sealed class BranchDeletedEventMessage : BranchEventMessageBase
     {
-        /// <summary>
-        /// Creates new instance.
-        /// </summary>
+        /// <inheritdoc/>
         public BranchDeletedEventMessage() : base() { }
     }
 }

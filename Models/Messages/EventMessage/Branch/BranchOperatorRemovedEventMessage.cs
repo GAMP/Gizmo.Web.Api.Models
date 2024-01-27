@@ -8,6 +8,9 @@
     [MessagePack.MessagePackObject()]
     public sealed class BranchOperatorRemovedEventMessage : BranchEventMessageBase
     {
+        /// <inheritdoc/>
+        public BranchOperatorAddedEventMessage() : base();
+
         /// <summary>
         /// Gets operator id.
         /// </summary>

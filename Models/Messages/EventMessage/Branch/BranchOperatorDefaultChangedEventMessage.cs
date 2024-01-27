@@ -8,6 +8,9 @@
     [MessagePack.MessagePackObject()]
     public sealed class BranchOperatorDefaultChangedEventMessage : BranchEventMessageBase
     {
+        /// <inheritdoc/>
+        public BranchOperatorDefaultChangedEventMessage():base() { }
+
         /// <summary>
         /// Gets operator id.
         /// </summary>
