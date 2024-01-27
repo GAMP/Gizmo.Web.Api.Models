@@ -11,6 +11,7 @@
         /// <summary>
         /// Gets new display order.
         /// </summary>
+        [MessagePack.Key(2)]
         public int DisplayOrder { get; init; }
     }
 }

@@ -15,7 +15,7 @@
         /// <summary>
         /// Gets branch id.
         /// </summary>
-        [MessagePack.Key(0)]
+        [MessagePack.Key(1)]
         public int BranchId { get; init; }
     }
 }

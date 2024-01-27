@@ -15,7 +15,7 @@
         /// <summary>
         /// Gets report preset id.
         /// </summary>
-        [MessagePack.Key(0)]
+        [MessagePack.Key(1)]
         public int ReportPresetId { get; init; }
     }
 }

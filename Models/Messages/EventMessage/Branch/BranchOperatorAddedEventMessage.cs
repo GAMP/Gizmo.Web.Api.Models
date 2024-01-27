@@ -11,7 +11,7 @@
         /// <summary>
         /// Gets operator id.
         /// </summary>
-        [MessagePack.Key(1)]
+        [MessagePack.Key(2)]
         public int OperatorId { get; init; }
     }
 }
