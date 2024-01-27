@@ -7,7 +7,11 @@
     [System.ComponentModel.DataAnnotations.ExtendedDescription("Report preset display order changed event", "REPORT_PRESET_ADDED_EVENT_DESCRIPTION")]
     [MessagePack.MessagePackObject()]
     public sealed class ReportPresetDisplayOrderChangedEventMessage : ReportPresetEventMessageBase
-    {
+    { 
+        /// <inheritdoc/>
+        public ReportPresetDisplayOrderChangedEventMessage() : base()
+        { }
+
         /// <summary>
         /// Gets new display order.
         /// </summary>

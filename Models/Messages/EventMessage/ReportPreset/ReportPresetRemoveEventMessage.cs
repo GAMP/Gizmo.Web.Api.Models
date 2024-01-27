@@ -8,5 +8,8 @@
     [MessagePack.MessagePackObject()]
     public sealed class ReportPresetRemoveEventMessage : ReportPresetEventMessageBase
     {
+        /// <inheritdoc/>
+        public ReportPresetRemoveEventMessage() :base()
+        { }
     }
 }
