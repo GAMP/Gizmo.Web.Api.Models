@@ -9,7 +9,7 @@
     public sealed class BranchOperatorRemovedEventMessage : BranchEventMessageBase
     {
         /// <inheritdoc/>
-        public BranchOperatorAddedEventMessage() : base();
+        public BranchOperatorRemovedEventMessage() : base() { }
 
         /// <summary>
         /// Gets operator id.
