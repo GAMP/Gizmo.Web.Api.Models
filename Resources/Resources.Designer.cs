@@ -115,6 +115,150 @@ namespace Gizmo.Web.Api.Models.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Branch created event.
+        /// </summary>
+        internal static string BRANCH_CREATED_EVENT_DESCRIPTION {
+            get {
+                return ResourceManager.GetString("BRANCH_CREATED_EVENT_DESCRIPTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Branch created.
+        /// </summary>
+        internal static string BRANCH_CREATED_EVENT_NAME {
+            get {
+                return ResourceManager.GetString("BRANCH_CREATED_EVENT_NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Branch deleted event.
+        /// </summary>
+        internal static string BRANCH_DELETED_EVENT_DESCRIPTION {
+            get {
+                return ResourceManager.GetString("BRANCH_DELETED_EVENT_DESCRIPTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Deleted.
+        /// </summary>
+        internal static string BRANCH_DELETED_EVENT_NAME {
+            get {
+                return ResourceManager.GetString("BRANCH_DELETED_EVENT_NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Branch releated events.
+        /// </summary>
+        internal static string BRANCH_EVENT_GROUP_DESCRIPTION {
+            get {
+                return ResourceManager.GetString("BRANCH_EVENT_GROUP_DESCRIPTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Branch.
+        /// </summary>
+        internal static string BRANCH_EVENT_GROUP_NAME {
+            get {
+                return ResourceManager.GetString("BRANCH_EVENT_GROUP_NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Operator added event.
+        /// </summary>
+        internal static string BRANCH_OPERATOR_ADDED_EVENT_DESCRIPTION {
+            get {
+                return ResourceManager.GetString("BRANCH_OPERATOR_ADDED_EVENT_DESCRIPTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Operator added.
+        /// </summary>
+        internal static string BRANCH_OPERATOR_ADDED_EVENT_NAME {
+            get {
+                return ResourceManager.GetString("BRANCH_OPERATOR_ADDED_EVENT_NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Operators default branch change event.
+        /// </summary>
+        internal static string BRANCH_OPERATOR_DEFAULT_CHANGED_EVENT_DESCRIPTION {
+            get {
+                return ResourceManager.GetString("BRANCH_OPERATOR_DEFAULT_CHANGED_EVENT_DESCRIPTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Operators default branch change.
+        /// </summary>
+        internal static string BRANCH_OPERATOR_DEFAULT_CHANGED_EVENT_NAME {
+            get {
+                return ResourceManager.GetString("BRANCH_OPERATOR_DEFAULT_CHANGED_EVENT_NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Operator removed event.
+        /// </summary>
+        internal static string BRANCH_OPERATOR_REMOVED_EVENT_DESCRIPTION {
+            get {
+                return ResourceManager.GetString("BRANCH_OPERATOR_REMOVED_EVENT_DESCRIPTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Operator removed.
+        /// </summary>
+        internal static string BRANCH_OPERATOR_REMOVED_EVENT_NAME {
+            get {
+                return ResourceManager.GetString("BRANCH_OPERATOR_REMOVED_EVENT_NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Branch undeleted event.
+        /// </summary>
+        internal static string BRANCH_UNDELETED_EVENT_DESCRIPTION {
+            get {
+                return ResourceManager.GetString("BRANCH_UNDELETED_EVENT_DESCRIPTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Undeleted.
+        /// </summary>
+        internal static string BRANCH_UNDELETED_EVENT_NAME {
+            get {
+                return ResourceManager.GetString("BRANCH_UNDELETED_EVENT_NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Branch updated event.
+        /// </summary>
+        internal static string BRANCH_UPDATED_EVENT_DESCRIPTION {
+            get {
+                return ResourceManager.GetString("BRANCH_UPDATED_EVENT_DESCRIPTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Branch updated.
+        /// </summary>
+        internal static string BRANCH_UPDATED_EVENT_NAME {
+            get {
+                return ResourceManager.GetString("BRANCH_UPDATED_EVENT_NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Indicates an database entity chgange.
         /// </summary>
         internal static string ENTITY_CHANGE_EVENT_DESCRIPTION {
@@ -255,6 +399,60 @@ namespace Gizmo.Web.Api.Models.Resources {
         internal static string PAYMENT_INTENT_EVENT_GROUP_NAME {
             get {
                 return ResourceManager.GetString("PAYMENT_INTENT_EVENT_GROUP_NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Report preset added event.
+        /// </summary>
+        internal static string REPORT_PRESET_ADDED_EVENT_DESCRIPTION {
+            get {
+                return ResourceManager.GetString("REPORT_PRESET_ADDED_EVENT_DESCRIPTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Report preset added.
+        /// </summary>
+        internal static string REPORT_PRESET_ADDED_EVENT_NAME {
+            get {
+                return ResourceManager.GetString("REPORT_PRESET_ADDED_EVENT_NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Report preset removed event.
+        /// </summary>
+        internal static string REPORT_PRESET_REMOVED_EVENT_DESCRIPTION {
+            get {
+                return ResourceManager.GetString("REPORT_PRESET_REMOVED_EVENT_DESCRIPTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Report preset removed.
+        /// </summary>
+        internal static string REPORT_PRESET_REMOVED_EVENT_NAME {
+            get {
+                return ResourceManager.GetString("REPORT_PRESET_REMOVED_EVENT_NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Report preset updated event.
+        /// </summary>
+        internal static string REPORT_PRESET_UPDATED_EVENT_DESCRIPTION {
+            get {
+                return ResourceManager.GetString("REPORT_PRESET_UPDATED_EVENT_DESCRIPTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Report preset updated.
+        /// </summary>
+        internal static string REPORT_PRESET_UPDATED_EVENT_NAME {
+            get {
+                return ResourceManager.GetString("REPORT_PRESET_UPDATED_EVENT_NAME", resourceCulture);
             }
         }
         

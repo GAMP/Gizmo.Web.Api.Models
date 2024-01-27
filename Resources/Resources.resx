@@ -135,6 +135,54 @@
   <data name="ASSISTANCE_REQUEST_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Assistance request</value>
   </data>
+  <data name="BRANCH_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Branch created event</value>
+  </data>
+  <data name="BRANCH_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>Branch created</value>
+  </data>
+  <data name="BRANCH_DELETED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Branch deleted event</value>
+  </data>
+  <data name="BRANCH_DELETED_EVENT_NAME" xml:space="preserve">
+    <value>Deleted</value>
+  </data>
+  <data name="BRANCH_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Branch releated events</value>
+  </data>
+  <data name="BRANCH_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Branch</value>
+  </data>
+  <data name="BRANCH_OPERATOR_ADDED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Operator added event</value>
+  </data>
+  <data name="BRANCH_OPERATOR_ADDED_EVENT_NAME" xml:space="preserve">
+    <value>Operator added</value>
+  </data>
+  <data name="BRANCH_OPERATOR_DEFAULT_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Operators default branch change event</value>
+  </data>
+  <data name="BRANCH_OPERATOR_DEFAULT_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Operators default branch change</value>
+  </data>
+  <data name="BRANCH_OPERATOR_REMOVED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Operator removed event</value>
+  </data>
+  <data name="BRANCH_OPERATOR_REMOVED_EVENT_NAME" xml:space="preserve">
+    <value>Operator removed</value>
+  </data>
+  <data name="BRANCH_UNDELETED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Branch undeleted event</value>
+  </data>
+  <data name="BRANCH_UNDELETED_EVENT_NAME" xml:space="preserve">
+    <value>Undeleted</value>
+  </data>
+  <data name="BRANCH_UPDATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Branch updated event</value>
+  </data>
+  <data name="BRANCH_UPDATED_EVENT_NAME" xml:space="preserve">
+    <value>Branch updated</value>
+  </data>
   <data name="ENTITY_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Indicates an database entity chgange</value>
   </data>
@@ -182,6 +230,24 @@
   </data>
   <data name="PAYMENT_INTENT_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Payment intent</value>
+  </data>
+  <data name="REPORT_PRESET_ADDED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Report preset added event</value>
+  </data>
+  <data name="REPORT_PRESET_ADDED_EVENT_NAME" xml:space="preserve">
+    <value>Report preset added</value>
+  </data>
+  <data name="REPORT_PRESET_REMOVED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Report preset removed event</value>
+  </data>
+  <data name="REPORT_PRESET_REMOVED_EVENT_NAME" xml:space="preserve">
+    <value>Report preset removed</value>
+  </data>
+  <data name="REPORT_PRESET_UPDATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Report preset updated event</value>
+  </data>
+  <data name="REPORT_PRESET_UPDATED_EVENT_NAME" xml:space="preserve">
+    <value>Report preset updated</value>
   </data>
   <data name="RESERVATION_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
     <value>Reservation related events</value>

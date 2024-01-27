@@ -16,7 +16,8 @@ namespace Gizmo.Web.Api.Models
 
         /// <inheritdoc/>
         [MessagePack.Key(2)]
-        [StringLength(45)]
+        [Required()]
+        [StringLength(45, MinimumLength = 1)]
         public string Name { get; init; } = string.Empty;
 
         /// <inheritdoc/>

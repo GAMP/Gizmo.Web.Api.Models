@@ -8,7 +8,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for registers.
     /// </summary>
     [Serializable, MessagePack.MessagePackObject]
-    public sealed class RegistersFilter : IModelFilter<RegisterModel>
+    public sealed class RegistersFilter : IModelFilter<RegisterModel> , IBranchBasedModelFilter
     {
         /// <summary>
         /// Filter for cursor-based pagination.
@@ -22,13 +22,11 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(1)]
         public List<string> Expand { get; set; } = new();
 
-        /// <summary>
-        /// Branch id.
-        /// </summary>
+        /// <inheritdoc/>
         [MessagePack.Key(2)]
         public int? BranchId
         {
-            get;init;
+            get;set;
         }
 
         /// <summary>

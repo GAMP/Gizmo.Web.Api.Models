@@ -10,6 +10,10 @@ namespace Gizmo.Web.Api.Messaging
     [EventGroup(9)]
     public abstract class AssistanceRequestEventMessageBase : APIEventMessage
     {
+        /// <inheritdoc/>
+        public AssistanceRequestEventMessageBase() : base()
+        { }
+
         /// <summary>
         /// Gets user id.
         /// </summary>
