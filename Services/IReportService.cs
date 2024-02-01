@@ -16,5 +16,6 @@ namespace Gizmo.Web.Api.Services
     public interface IReportService
     {
         public Task<OverviewReportModel> OverviewAsync(OverviewReportParametersModel parameters, CancellationToken cancellationToken = default);
+        public Task<FinancialReportModel> FinancialAsync(FinancialReportParametersModel parameters, CancellationToken cancellationToken = default);
     }
 }
