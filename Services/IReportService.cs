@@ -1,4 +1,8 @@
-﻿namespace Gizmo.Web.Api.Services
+﻿using System.Threading;
+using System.Threading.Tasks;
+using Gizmo.Web.Api.Models;
+
+namespace Gizmo.Web.Api.Services
 {
     /// <summary>
     /// Web report generation servcice.
@@ -11,5 +15,6 @@
     /// </remarks>
     public interface IReportService
     {
+        public Task<OverviewReportModel> OverviewAsync(OverviewReportParametersModel parameters, CancellationToken cancellationToken = default);
     }
 }
