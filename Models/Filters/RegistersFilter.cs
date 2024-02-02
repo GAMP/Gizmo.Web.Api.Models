@@ -22,8 +22,17 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(1)]
         public List<string> Expand { get; set; } = new();
 
-        /// <inheritdoc/>
+        /// <summary>
+        /// Register name.
+        /// </summary>
         [MessagePack.Key(2)]
+        public string? Name
+        {
+            get;set;    
+        }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(3)]
         public int? BranchId
         {
             get;set;
@@ -32,7 +41,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Is deleted.
         /// </summary>
-        [MessagePack.Key(3)]
+        [MessagePack.Key(4)]
         public bool? IsDeleted
         {
             get;init;
