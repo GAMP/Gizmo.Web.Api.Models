@@ -5,7 +5,7 @@ using Gizmo.Web.Api.Models;
 namespace Gizmo.Web.Api.Services
 {
     /// <summary>
-    /// Web report generation servcice.
+    /// Report generation servcice.
     /// </summary>
     /// <remarks>
     /// This service will have two implementations.<br></br><br></br>
@@ -15,7 +15,20 @@ namespace Gizmo.Web.Api.Services
     /// </remarks>
     public interface IReportService
     {
+        /// <summary>
+        /// Generates overview report.
+        /// </summary>
+        /// <param name="parameters">Parameters.</param>
+        /// <param name="cancellationToken">Cancellation token.</param>
+        /// <returns>Report.</returns>
         public Task<OverviewReportModel> OverviewAsync(OverviewReportParametersModel parameters, CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Generates financial report.
+        /// </summary>
+        /// <param name="parameters">Parameters.</param>
+        /// <param name="cancellationToken">Cancellation token.</param>
+        /// <returns>Report.</returns>
         public Task<FinancialReportModel> FinancialAsync(FinancialReportParametersModel parameters, CancellationToken cancellationToken = default);
     }
 }
