@@ -25,7 +25,6 @@ namespace Gizmo.Web.Api.Models
 
         object IReportPackModel.ReportModel => ReportModel!;
 
-        object? IReportPackModel.ReportModelAdditional => ReportModelAdditional;
-       
+        object? IReportPackModel.ReportModelAdditional => ReportModelAdditional;       
     }
 }

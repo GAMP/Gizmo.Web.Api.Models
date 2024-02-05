@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Report pack model.<br></br>
-    /// Should contain ReportData, Additional data and filter metada.
+    /// Report pack model.
     /// </summary>
     public interface IReportPackModel : IWebApiModel
     {
