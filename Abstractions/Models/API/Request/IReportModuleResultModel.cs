@@ -5,5 +5,8 @@
     /// </summary>
     public interface IReportModuleResultModel : IWebApiModel
     {
+        object ReportModel { get; }
+
+        object? ReportModelAdditional { get; }
     }
 }
