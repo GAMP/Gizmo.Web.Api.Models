@@ -12,22 +12,20 @@ namespace Gizmo.Web.Api.Models
        where TReportModel : class
        where TReportModelAdditional : class
     {
-        /// <summary>
-        /// Gets report data.
-        /// </summary>
+        /// <inheritdoc cref="IReportModuleResultModel.ReportModel"/>
         [MessagePack.Key(0)]
         public TReportModel ReportModel { get; init; } = default!;
 
-        /// <summary>
-        /// Gets additional report data.
-        /// </summary>
+        /// <inheritdoc cref="IReportModuleResultModel.ReportModelAdditional"/>
         [MessagePack.Key(1)]
         public TReportModelAdditional? ReportModelAdditional { get; init; }
 
+        /// <inheritdoc/>
         [MessagePack.IgnoreMember()]
         [System.Text.Json.Serialization.JsonIgnore()]
         object IReportModuleResultModel.ReportModel => ReportModel;
 
+        /// <inheritdoc/>
         [MessagePack.IgnoreMember()]
         [System.Text.Json.Serialization.JsonIgnore()]
         object? IReportModuleResultModel.ReportModelAdditional => ReportModelAdditional;
