@@ -74,6 +74,17 @@ namespace Gizmo.Web.Api.Models
             Query = BuildUriQuery(queryParameters);
         }
 
+        /// <summary>
+        /// Uri parameters.
+        /// </summary>
+        /// <param name="pathParameters">Path parameters.</param>
+        /// <param name="queryParameters">Query parameters.</param>
+        public UriParameters(object[] pathParameters, IDictionary<string,string> queryParameters)
+        {
+            Path = BuildUriPath(pathParameters);
+            Query = QueryHelpers.AddQueryString(string.Empty, queryParameters);
+        }
+
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         private static string BuildUriQuery(IUriParametersQuery queryParameters)
         {
