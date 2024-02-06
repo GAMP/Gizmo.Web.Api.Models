@@ -45,5 +45,18 @@ namespace Gizmo.Web.Api
             Type reportResultType = GetReportResultType(model.GetType(), additionalModel == null ? typeof(object) : additionalModel.GetType());
             return (IReportModuleResultModel)Activator.CreateInstance(reportResultType, model, additionalModel);
         }
+
+        /// <summary>
+        /// Creates report pack model type.
+        /// </summary>
+        /// <param name="modelType">Model type.</param>
+        /// <param name="additionalModelType">Additional model type.</param>
+        /// <returns></returns>
+        public static Type GetReportPackModelType(Type modelType, Type additionalModelType)
+        {
+            var argsType = typeof(ReportPackModel<,>);
+            var fullType = argsType.MakeGenericType(modelType, additionalModelType);
+            return fullType;
+        }
     }
 }
