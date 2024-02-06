@@ -8,7 +8,7 @@
     /// The primary use of this model is to provide information of filter used to the report rendering engine.
     /// </remarks>
     [MessagePack.MessagePackObject()]
-    public sealed class ReportModuleFilterMetadataModel
+    public sealed class ReportModuleFilterMetadataModel : IWebApiModel
     {
         /// <summary>
         /// Name of the filter property used.
