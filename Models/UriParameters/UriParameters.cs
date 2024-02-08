@@ -16,6 +16,11 @@ namespace Gizmo.Web.Api.Models
     public readonly struct UriParameters : IUriParameters
     {
         /// <summary>
+        /// Empty parameters.
+        /// </summary>
+        public static readonly UriParameters Empty = new UriParameters();
+
+        /// <summary>
         /// Query parameters from ModelFilter as string
         /// </summary>
         public string? Query { get; }
