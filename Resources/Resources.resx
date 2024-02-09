@@ -207,6 +207,18 @@
   <data name="LICENSE_EVENT_GROUP_NAME" xml:space="preserve">
     <value>License</value>
   </data>
+  <data name="OPTIONS_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates options change</value>
+  </data>
+  <data name="OPTIONS_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Changed</value>
+  </data>
+  <data name="OPTIONS_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Options related events</value>
+  </data>
+  <data name="OPTIONS_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Options</value>
+  </data>
   <data name="ORDER_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
     <value>Order related events</value>
   </data>

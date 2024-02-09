@@ -331,6 +331,42 @@ namespace Gizmo.Web.Api.Models.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Indicates options change.
+        /// </summary>
+        internal static string OPTIONS_CHANGED_EVENT_DESCRIPTION {
+            get {
+                return ResourceManager.GetString("OPTIONS_CHANGED_EVENT_DESCRIPTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Changed.
+        /// </summary>
+        internal static string OPTIONS_CHANGED_EVENT_NAME {
+            get {
+                return ResourceManager.GetString("OPTIONS_CHANGED_EVENT_NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Options related events.
+        /// </summary>
+        internal static string OPTIONS_EVENT_GROUP_DESCRIPTION {
+            get {
+                return ResourceManager.GetString("OPTIONS_EVENT_GROUP_DESCRIPTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Options.
+        /// </summary>
+        internal static string OPTIONS_EVENT_GROUP_NAME {
+            get {
+                return ResourceManager.GetString("OPTIONS_EVENT_GROUP_NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Order related events.
         /// </summary>
         internal static string ORDER_EVENT_GROUP_DESCRIPTION {
