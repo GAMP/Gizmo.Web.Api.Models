@@ -30,5 +30,125 @@ namespace Gizmo.Web.Api.Services
         /// <param name="cancellationToken">Cancellation token.</param>
         /// <returns>Report.</returns>
         public Task<FinancialReportModel> FinancialAsync(FinancialReportParametersModel parameters, CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Generates hosts report.
+        /// </summary>
+        /// <param name="parameters">Parameters.</param>
+        /// <param name="cancellationToken">Cancellation token.</param>
+        /// <returns>Report.</returns>
+        public Task<HostsReportModel> HostsAsync(HostsReportParametersModel parameters, CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Generates user report.
+        /// </summary>
+        /// <param name="parameters">Parameters.</param>
+        /// <param name="cancellationToken">Cancellation token.</param>
+        /// <returns>Report.</returns>
+        public Task<UsersReportModel> UsersAsync(UsersReportParametersModel parameters, CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Generates users report.
+        /// </summary>
+        /// <param name="parameters">Parameters.</param>
+        /// <param name="cancellationToken">Cancellation token.</param>
+        /// <returns>Report.</returns>
+        public Task<UserReportModel> UserAsync(UserReportParametersModel parameters, CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Generates user report.
+        /// </summary>
+        /// <param name="parameters">Parameters.</param>
+        /// <param name="cancellationToken">Cancellation token.</param>
+        /// <returns>Report.</returns>
+        public Task<ProductsReportModel> ProductsAsync(ProductsReportParametersModel parameters, CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Generates product log report.
+        /// </summary>
+        /// <param name="parameters">Parameters.</param>
+        /// <param name="cancellationToken">Cancellation token.</param>
+        /// <returns>Report.</returns>
+        public Task<ProductsLogReportModel> ProductLogAsync(ProductsLogReportParametersModel parameters, CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Generates stock report.
+        /// </summary>
+        /// <param name="parameters">Parameters.</param>
+        /// <param name="cancellationToken">Cancellation token.</param>
+        /// <returns>Report.</returns>
+        public Task<StockReportModel> StockAsync(StockReportParametersModel parameters, CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Generates transactions report.
+        /// </summary>
+        /// <param name="parameters">Parameters.</param>
+        /// <param name="cancellationToken">Cancellation token.</param>
+        /// <returns>Report.</returns>
+        public Task<TransactionsReportModel> TransactionsAsync(TransactionReportParametersModel parameters, CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Generates shifts report.
+        /// </summary>
+        /// <param name="parameters">Parameters.</param>
+        /// <param name="cancellationToken">Cancellation token.</param>
+        /// <returns>Report.</returns>
+        public Task<ShiftsReportModel> ShiftsAsync(ShiftsReportParametersModel parameters, CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Generates assets report.
+        /// </summary>
+        /// <param name="parameters">Parameters.</param>
+        /// <param name="cancellationToken">Cancellation token.</param>
+        /// <returns>Report.</returns>
+        public Task<AssetsReportModel> AssetsAsync(AssetsReportParametersModel parameters, CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Generates invoices report.
+        /// </summary>
+        /// <param name="parameters">Parameters.</param>
+        /// <param name="cancellationToken">Cancellation token.</param>
+        /// <returns>Report.</returns>
+        public Task<InvoicesReportModel> InvoicesAsync(InvoicesReportParametersModel parameters, CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Generates zlog report.
+        /// </summary>
+        /// <param name="parameters">Parameters.</param>
+        /// <param name="cancellationToken">Cancellation token.</param>
+        /// <returns>Report.</returns>
+        public Task<ZLogReportModel> ZLogAsync(ZLogReportParametersModel parameters, CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Generates applications report.
+        /// </summary>
+        /// <param name="parameters">Parameters.</param>
+        /// <param name="cancellationToken">Cancellation token.</param>
+        /// <returns>Report.</returns>
+        public Task<ApplicationsReportModel> ApplicationsAsync(ApplicationsReportParametersModel parameters, CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Generates sessions report.
+        /// </summary>
+        /// <param name="parameters">Parameters.</param>
+        /// <param name="cancellationToken">Cancellation token.</param>
+        /// <returns>Report.</returns>
+        public Task<SessionsReportModel> SessionsAsync(SessionsReportParametersModel parameters, CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Generates licenses report.
+        /// </summary>
+        /// <param name="parameters">Parameters.</param>
+        /// <param name="cancellationToken">Cancellation token.</param>
+        /// <returns>Report.</returns>
+        public Task<LicensesReportModel> LicensesAsync(LicensesReportParametersModel parameters, CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Generates orders report.
+        /// </summary>
+        /// <param name="parameters">Parameters.</param>
+        /// <param name="cancellationToken">Cancellation token.</param>
+        /// <returns>Report.</returns>
+        public Task<OrdersReportModel> OrdersAsync(OrdersReportParametersModel parameters, CancellationToken cancellationToken = default);
     }
 }
