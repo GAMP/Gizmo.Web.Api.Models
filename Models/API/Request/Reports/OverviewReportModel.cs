@@ -3,6 +3,5 @@
     [MessagePack.MessagePackObject()]
     public sealed class OverviewReportModel : IWebApiModel
     {
-        public int TransactionCount { get; set; }
     }
 }
