@@ -102,6 +102,18 @@ namespace Gizmo.Web.Api.Models
         [Required]
         public DateTime DateTo { get; set; }
 
+        /// <summary>
+        /// Filter Operator Id.
+        /// </summary>
+        [MessagePack.Key(2)]
+        public int? OperatorId { get; set; }
+
+        /// <summary>
+        /// Filter Register Id.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public int? RegisterId { get; set; }
+
         #endregion
     }
 
