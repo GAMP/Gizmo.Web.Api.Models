@@ -11,6 +11,12 @@ namespace Gizmo.Web.Api.Models
     [MessagePack.MessagePackObject()]
     public sealed class ReportPackModel<TReportModel, TReportAdditionalModel> : IReportPackModel
     {
+        public ReportPackModel(TReportModel reportModel, TReportAdditionalModel reportModelAdditional) 
+        {
+            ReportModel = reportModel;
+            ReportModelAdditional = reportModelAdditional;
+        }
+
         /// <inheritdoc/>
         [MessagePack.Key(0)]
         public TReportModel ReportModel { get; init; } = default!;
