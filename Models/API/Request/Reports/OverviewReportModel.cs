@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
         /// Report Name.
         /// </summary>
         [MessagePack.Key(0)]
-        public string Name { get; set; } = string.Empty;
+        public string? Name { get; set; }
 
         /// <summary>
         /// Filtered Date From.
@@ -30,7 +30,7 @@ namespace Gizmo.Web.Api.Models
         /// Company Name.
         /// </summary>
         [MessagePack.Key(3)]
-        public string CompanyName { get; set; } = string.Empty;
+        public string? CompanyName { get; set; }
 
         ///// <summary>
         ///// Report Type.
@@ -54,7 +54,7 @@ namespace Gizmo.Web.Api.Models
         /// Average daily guest visits duration.
         /// </summary>
         [MessagePack.Key(7)]
-        public string AverageGuestUsagePeriodMinutes { get; set; } = string.Empty;
+        public string? AverageGuestUsagePeriodMinutes { get; set; }
 
         /// <summary>
         /// Average utilization percentage.
@@ -149,7 +149,7 @@ namespace Gizmo.Web.Api.Models
         /// Operator name.
         /// </summary>
         [Key(1)]
-        public string OperatorName { get; set; } = string.Empty;
+        public string? OperatorName { get; set; }
 
         /// <summary>
         /// Total minutes the operator worked.
@@ -247,7 +247,7 @@ namespace Gizmo.Web.Api.Models
         /// Name of the object.
         /// </summary>
         [Key(0)]
-        public string Name { get; set; } = string.Empty;
+        public string? Name { get; set; }
 
         /// <summary>
         /// Value of the object.
@@ -266,7 +266,7 @@ namespace Gizmo.Web.Api.Models
         /// The name of the chart record.
         /// </summary>
         [Key(0)]
-        public string Name { get; set; } = string.Empty;
+        public string? Name { get; set; }
 
         /// <summary>
         /// The value of the chart record.

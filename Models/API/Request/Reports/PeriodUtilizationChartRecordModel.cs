@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
         /// The name of the chart record.
         /// </summary>
         [Key(0)]
-        public string Name { get; set; } = string.Empty;
+        public string? Name { get; set; }
 
         /// <summary>
         /// The value of the chart record.
