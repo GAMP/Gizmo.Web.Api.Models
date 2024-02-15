@@ -55,11 +55,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\API\Result\AccountCreation\Complete\" />
-    <Folder Include="Enumerations\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Gizmo.Shared\Gizmo.Shared.csproj" />
   </ItemGroup>
 
