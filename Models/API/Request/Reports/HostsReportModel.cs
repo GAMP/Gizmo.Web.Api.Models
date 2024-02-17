@@ -101,7 +101,7 @@ namespace Gizmo.Web.Api.Models
         /// Host group name.
         /// </summary>
         [MessagePack.Key(1)]
-        public string HostGroupName { get; set; }
+        public string? HostGroupName { get; set; }
 
         /// <summary>
         /// Total minutes the hosts of the group were used within the reporting period.
@@ -113,7 +113,7 @@ namespace Gizmo.Web.Api.Models
         /// Total hours the hosts of the group were used within the reporting period.
         /// </summary>
         [MessagePack.Key(3)]
-        public string TotalHoursUsed { get; set; }
+        public string? TotalHoursUsed { get; set; }
 
         /// <summary>
         /// Period total minutes multiplied by the number of available hosts.
@@ -157,13 +157,13 @@ namespace Gizmo.Web.Api.Models
         /// Group name.
         /// </summary>
         [MessagePack.Key(0)]
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         /// <summary>
         /// The time the session was running as text.
         /// </summary>
         [MessagePack.Key(1)]
-        public string Duration { get; set; }
+        public string? Duration { get; set; }
 
         /// <summary>
         /// Duration of the user session in minutes.
@@ -196,6 +196,6 @@ namespace Gizmo.Web.Api.Models
         public decimal EstimatedRevenuePercentage { get; set; }
 
         [MessagePack.Key(7)]
-        public List<GroupSessionsEstimationModel> SubGroupSessionsEstimations { get; set; }
+        public List<GroupSessionsEstimationModel>? SubGroupSessionsEstimations { get; set; }
     }
 }
