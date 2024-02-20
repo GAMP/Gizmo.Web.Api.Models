@@ -10,7 +10,7 @@ namespace Gizmo.Web.Api.Models
     /// Transactions Log Report.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class TransactionsReportModel
+    public sealed class TransactionsLogReportModel
     {
         /// <summary>
         /// Report Name.
