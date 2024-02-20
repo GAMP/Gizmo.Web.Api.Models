@@ -54,10 +54,40 @@ namespace Gizmo.Web.Api.Models
         public string UserName { get; set; } = string.Empty;
 
         /// <summary>
-        /// List of applications that ran within the reporting period.
+        /// Filtered Application Id.
         /// </summary>
         [MessagePack.Key(7)]
-        public List<ApplicationInfoModel> Applications { get; set; } = new List<ApplicationInfoModel>();
+        public int ApplicationId { get; set; }
+
+        /// <summary>
+        /// Filtered Application Name.
+        /// </summary>
+        [MessagePack.Key(8)]
+        public string ApplicationName { get; set; }
+
+        /// <summary>
+        /// Application information.
+        /// </summary>
+        [MessagePack.Key(9)]
+        public ApplicationInfoModel Application { get; set; }
+
+        /// <summary>
+        /// List of executables that belongs to the application and ran within the reporting period.
+        /// </summary>
+        [MessagePack.Key(10)]
+        public List<ExecutableExecutionSummaryDTO> Executables { get; set; } = new List<ExecutableExecutionSummaryDTO>();
+
+        /// <summary>
+        /// List of records for the runtime per user group chart.
+        /// </summary>
+        [MessagePack.Key(11)]
+        public List<ChartGroupDTO> HoursPerUserGroupChart { get; set; } = new List<ChartGroupDTO>();
+
+        /// <summary>
+        /// List of records for the runtime per host group chart.
+        /// </summary>
+        [MessagePack.Key(12)]
+        public List<ChartGroupDTO> HoursPerHostGroupChart { get; set; } = new List<ChartGroupDTO>();
     }
 
     /// <summary>
@@ -96,5 +126,92 @@ namespace Gizmo.Web.Api.Models
         public int? UserId { get; set; }
 
         #endregion
+    }
+
+    /// <summary>
+    /// Executable Execution Summary.
+    /// </summary>
+    [MessagePack.MessagePackObject()]
+    public class ExecutableExecutionSummaryDTO
+    {
+        /// <summary>
+        /// Executable Id.
+        /// </summary>
+        [MessagePack.Key(0)]
+        public int ExecutableId { get; set; }
+
+        /// <summary>
+        /// Executable name.
+        /// </summary>
+        [MessagePack.Key(1)]
+        public string ExecutableName { get; set; }
+
+        /// <summary>
+        /// The number of unique users who ran the executable.
+        /// </summary>
+        [MessagePack.Key(2)]
+        public int UniqueUsers { get; set; }
+
+        /// <summary>
+        /// Total number of runs.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public int TotalExecutions { get; set; }
+
+        /// <summary>
+        /// Total seconds the executable was running.
+        /// </summary>
+        [MessagePack.Key(4)]
+        public double TotalSeconds { get; set; }
+
+        /// <summary>
+        /// Total time the executable was running as text.
+        /// </summary>
+        [MessagePack.Key(5)]
+        public string TotalTime { get; set; }
+
+        /// <summary>
+        /// Average daily run time.
+        /// </summary>
+        [MessagePack.Key(6)]
+        public string AverageDailyExecutionTime { get; set; }
+    }
+
+    /// <summary>
+    /// Chart Group.
+    /// </summary>
+    [MessagePack.MessagePackObject()]
+    public class ChartGroupDTO
+    {
+        /// <summary>
+        /// Chart group name.
+        /// </summary>
+        [MessagePack.Key(0)]
+        public string Name { get; set; }
+
+        /// <summary>
+        /// List of records for the group.
+        /// </summary>
+        [MessagePack.Key(1)]
+        public List<ChartRecordDTO> GroupRecords { get; set; }
+    }
+
+    /// <summary>
+    /// Chart Record.
+    /// </summary>
+    [MessagePack.MessagePackObject()]
+    public class ChartRecordDTO
+    {
+        /// <summary>
+        /// The name of the chart record.
+        /// </summary>
+        [MessagePack.Key(0)]
+        public string Name { get; set; }
+
+        /// <summary>
+        /// The value of the chart record.
+        /// </summary>
+        [MessagePack.Key(1)]
+        public decimal Value { get; set; }
     }
 }
