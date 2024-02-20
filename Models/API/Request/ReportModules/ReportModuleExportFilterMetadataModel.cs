@@ -11,7 +11,7 @@ namespace Gizmo.Web.Api.Models
     /// The primary use of this model is to provide information of filter used to the report rendering engine.
     /// </remarks>
     [MessagePack.MessagePackObject()]
-    public sealed class ReportExportFilterMetadataModel : IWebApiModel
+    public sealed class ReportModuleExportFilterMetadataModel : IWebApiModel
     {
         /// <summary>
         /// Name of the filter property used.

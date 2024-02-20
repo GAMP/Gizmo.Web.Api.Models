@@ -8,7 +8,7 @@ namespace Gizmo.Web.Api.Models
     /// Report export metadata model.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class ReportExportMetadataModel : IWebApiModel
+    public sealed class ReportModuleExportMetadataModel : IWebApiModel
     {
         /// <summary>
         /// Gets report preset id used.
@@ -43,10 +43,10 @@ namespace Gizmo.Web.Api.Models
         /// Gets filters used.
         /// </summary>
         [MessagePack.Key(3)]
-        public IEnumerable<ReportExportFilterMetadataModel> Filters 
+        public IEnumerable<ReportModuleExportFilterMetadataModel> Filters 
         {
             get; 
             set; 
-        } = Enumerable.Empty<ReportExportFilterMetadataModel>();
+        } = Enumerable.Empty<ReportModuleExportFilterMetadataModel>();
     }
 }

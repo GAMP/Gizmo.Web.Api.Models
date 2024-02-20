@@ -21,6 +21,6 @@
         /// <remarks>
         /// This will contain parameters and filters used to generate this report.
         /// </remarks>
-        ReportExportMetadataModel Metadata { get; }
+        ReportModuleExportMetadataModel Metadata { get; }
     }
 }

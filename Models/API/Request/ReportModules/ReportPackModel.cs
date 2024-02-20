@@ -24,7 +24,7 @@
 
         /// <inheritdoc/>
         [MessagePack.Key(2)]
-        public ReportExportMetadataModel Metadata { get; init; } = new();
+        public ReportModuleExportMetadataModel Metadata { get; init; } = new();
 
         object IReportPackModel.ReportModel => ReportModel!;
 
