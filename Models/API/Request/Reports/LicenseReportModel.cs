@@ -1,15 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using System;
 using Gizmo.Web.Api.Models.Abstractions;
+using System.Collections.Generic;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Products Report.
+    /// License Report.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class ProductsReportModel : IWebApiModel
+    public sealed class LicenseReportModel : IWebApiModel
     {
         /// <summary>
         /// Report Name.
@@ -42,30 +42,35 @@ namespace Gizmo.Web.Api.Models
         //public ReportTypes ReportType { get; set; }
 
         /// <summary>
-        /// Filtered User Id.
+        /// Filtered License Id.
         /// </summary>
         [MessagePack.Key(5)]
-        public int? UserId { get; set; }
+        public int? LicenseId { get; set; }
 
         /// <summary>
-        /// Filtered User Name.
+        /// Filtered License Name.
         /// </summary>
         [MessagePack.Key(6)]
-        public string? UserName { get; set; }
+        public string LicenseName { get; set; }
 
         /// <summary>
-        /// List of products.
+        /// License usage information.
         /// </summary>
         [MessagePack.Key(7)]
-        public List<GroupedProductSalesDTOModel> Products { get; set; } = new List<GroupedProductSalesDTOModel>();
+        public LicenseUsageInfoDTO LicenseUsage { get; set; }
 
+        /// <summary>
+        /// List of records for the concurrent keys chart.
+        /// </summary>
+        [MessagePack.Key(8)]
+        public List<ChartRecordDTO> LicenseTimeChart { get; set; }
     }
 
     /// <summary>
-    /// Products Report Filter.
+    /// Licenses Report Filter.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class ProductsReportParametersModel : IWebApiModel, IUriParametersQuery
+    public sealed class LicenseReportParametersModel : IWebApiModel, IUriParametersQuery
     {
         /// <summary>
         /// Filter Date From.
@@ -82,15 +87,9 @@ namespace Gizmo.Web.Api.Models
         public DateTime DateTo { get; set; }
 
         /// <summary>
-        /// Filter User Id.
+        /// Filter License Id.
         /// </summary>
         [MessagePack.Key(2)]
-        public int? UserId { get; set; }
-
-        /// <summary>
-        /// Hide unused products.
-        /// </summary>
-        [MessagePack.Key(3)]
-        public bool HideUnused { get; set; }
+        public int LicenseId { get; set; }
     }
 }
