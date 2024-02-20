@@ -13,33 +13,63 @@ namespace Gizmo.Web.Api.Models
     public sealed class InvoiceReportModel : IWebApiModel
     {
         /// <summary>
-        /// Filtered Invoice Id.
+        /// Report Name.
         /// </summary>
         [MessagePack.Key(0)]
+        public string Name { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Filtered Date From.
+        /// </summary>
+        [MessagePack.Key(1)]
+        public DateTime DateFrom { get; set; }
+
+        /// <summary>
+        /// Filtered Date To.
+        /// </summary>
+        [MessagePack.Key(2)]
+        public DateTime DateTo { get; set; }
+
+        /// <summary>
+        /// Company Name.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public string CompanyName { get; set; } = string.Empty;
+
+        ///// <summary>
+        ///// Report Type.
+        ///// </summary>
+        //[MessagePack.Key(4)]
+        //public ReportTypes ReportType { get; set; }
+
+        /// <summary>
+        /// Filtered Invoice Id.
+        /// </summary>
+        [MessagePack.Key(5)]
         public int InvoiceId { get; set; }
 
         /// <summary>
         /// Information of the invoice.
         /// </summary>
-        [MessagePack.Key(1)]
+        [MessagePack.Key(6)]
         public InvoiceInfoModel Invoice { get; set; }
 
         /// <summary>
         /// List of products sold with this invoice.
         /// </summary>
-        [MessagePack.Key(2)]
+        [MessagePack.Key(7)]
         public List<SoldProductDTO> SoldProducts { get; set; } = new List<SoldProductDTO>();
 
         /// <summary>
         /// List of payments performed for this invoice.
         /// </summary>
-        [MessagePack.Key(3)]
+        [MessagePack.Key(8)]
         public List<InvoicePaymentDTO> Payments { get; set; } = new List<InvoicePaymentDTO>();
 
         /// <summary>
         /// List of refunds performed for this invoice.
         /// </summary>
-        [MessagePack.Key(4)]
+        [MessagePack.Key(9)]
         public List<RefundDTO> Refunds { get; set; } = new List<RefundDTO>();
     }
 
