@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace Gizmo.Web.Api.Models
+﻿namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Report pack model.
@@ -18,11 +16,11 @@ namespace Gizmo.Web.Api.Models
         object? ReportModelAdditional { get; }
 
         /// <summary>
-        /// Gets filters metadata.
+        /// Gets export metadata.
         /// </summary>
         /// <remarks>
-        /// This should contain a list of filters used to generate this report.
+        /// This will contain parameters and filters used to generate this report.
         /// </remarks>
-        IEnumerable<ReportModuleFilterMetadataModel> FilterMetadata { get; }
+        ReportModuleExportMetadataModel Metadata { get; }
     }
 }

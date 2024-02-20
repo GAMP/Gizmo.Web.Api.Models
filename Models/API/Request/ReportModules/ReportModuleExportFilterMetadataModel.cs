@@ -1,4 +1,7 @@
-﻿namespace Gizmo.Web.Api.Models
+﻿using System.Collections.Generic;
+using System.Linq;
+
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Filter metadata model.
@@ -8,7 +11,7 @@
     /// The primary use of this model is to provide information of filter used to the report rendering engine.
     /// </remarks>
     [MessagePack.MessagePackObject()]
-    public sealed class ReportModuleFilterMetadataModel : IWebApiModel
+    public sealed class ReportModuleExportFilterMetadataModel : IWebApiModel
     {
         /// <summary>
         /// Name of the filter property used.
@@ -20,21 +23,12 @@
         } = string.Empty;
 
         /// <summary>
-        /// Filter property value used.
+        /// Filter property values used.
         /// </summary>
         [MessagePack.Key(1)]
-        public string? FilterValue
+        public IEnumerable<string?> FilterValues
         {
             get; init;
-        }
-
-        /// <summary>
-        /// Filter property value display value used.
-        /// </summary>
-        [MessagePack.Key(2)]
-        public string? FilterDisplayValue
-        {
-            get; init;
-        }
+        } = Enumerable.Empty<string?>();
     }
 }
