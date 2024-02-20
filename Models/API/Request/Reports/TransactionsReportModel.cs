@@ -95,7 +95,7 @@ namespace Gizmo.Web.Api.Models
     /// Transactions Log Report Filter.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class TransactionReportParametersModel : IWebApiModel, IUriParametersQuery
+    public sealed class TransactionsLogReportParametersModel : IWebApiModel, IUriParametersQuery
     {
         #region PROPERTIES
 

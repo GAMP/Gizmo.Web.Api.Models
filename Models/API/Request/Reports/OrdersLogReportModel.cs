@@ -89,7 +89,7 @@ namespace Gizmo.Web.Api.Models
     /// Orders Log Report Filter.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class OrdersReportParametersModel : IWebApiModel, IUriParametersQuery
+    public sealed class OrdersLogReportParametersModel : IWebApiModel, IUriParametersQuery
     {
         /// <summary>
         /// Filter Date From.

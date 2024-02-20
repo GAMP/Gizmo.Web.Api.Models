@@ -90,7 +90,7 @@ namespace Gizmo.Web.Api.Models
     /// Invoices Log Report Filter.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class InvoicesReportParametersModel : IWebApiModel, IUriParametersQuery
+    public sealed class InvoicesLogReportParametersModel : IWebApiModel, IUriParametersQuery
     {
         #region PROPERTIES
 

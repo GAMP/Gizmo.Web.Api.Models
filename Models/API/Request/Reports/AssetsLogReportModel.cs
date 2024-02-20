@@ -112,7 +112,7 @@ namespace Gizmo.Web.Api.Models
     /// Assets Log Report Filter.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class AssetsReportParametersModel : IWebApiModel , IUriParametersQuery
+    public sealed class AssetsLogReportParametersModel : IWebApiModel , IUriParametersQuery
     {
         #region PROPERTIES
 

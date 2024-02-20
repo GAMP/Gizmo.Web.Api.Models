@@ -107,7 +107,7 @@ namespace Gizmo.Web.Api.Models
     /// Shifts Log Report Filter.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class ShiftsReportParametersModel : IWebApiModel, IUriParametersQuery
+    public sealed class ShiftsLogReportParametersModel : IWebApiModel, IUriParametersQuery
     {
         /// <summary>
         /// Filter Date From.

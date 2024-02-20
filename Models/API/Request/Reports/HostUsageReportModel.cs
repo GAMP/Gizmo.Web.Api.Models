@@ -83,7 +83,7 @@ namespace Gizmo.Web.Api.Models
     /// Host Usage Report Filter.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class HostsReportParametersModel : IWebApiModel, IUriParametersQuery
+    public sealed class HostUsageReportParametersModel : IWebApiModel, IUriParametersQuery
     {
         /// <summary>
         /// Filter Date From.
