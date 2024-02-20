@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-
-namespace Gizmo.Web.Api.Models
+﻿namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// <inheritdoc cref="IReportPackModel"/>
@@ -27,7 +24,7 @@ namespace Gizmo.Web.Api.Models
 
         /// <inheritdoc/>
         [MessagePack.Key(2)]
-        public IEnumerable<ReportModuleFilterMetadataModel> FilterMetadata { get; init; } = Enumerable.Empty<ReportModuleFilterMetadataModel>();
+        public ReportExportMetadataModel Metadata { get; init; } = new();
 
         object IReportPackModel.ReportModel => ReportModel!;
 
