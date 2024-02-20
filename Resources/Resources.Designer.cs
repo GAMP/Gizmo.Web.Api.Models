@@ -457,6 +457,42 @@ namespace Gizmo.Web.Api.Models.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Day.
+        /// </summary>
+        internal static string REPORT_PRESET_RANGE_DAY_NAME {
+            get {
+                return ResourceManager.GetString("REPORT_PRESET_RANGE_DAY_NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Month.
+        /// </summary>
+        internal static string REPORT_PRESET_RANGE_MONTH_NAME {
+            get {
+                return ResourceManager.GetString("REPORT_PRESET_RANGE_MONTH_NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Week.
+        /// </summary>
+        internal static string REPORT_PRESET_RANGE_WEEK_NAME {
+            get {
+                return ResourceManager.GetString("REPORT_PRESET_RANGE_WEEK_NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Year.
+        /// </summary>
+        internal static string REPORT_PRESET_RANGE_YEAR_NAME {
+            get {
+                return ResourceManager.GetString("REPORT_PRESET_RANGE_YEAR_NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Report preset removed event.
         /// </summary>
         internal static string REPORT_PRESET_REMOVED_EVENT_DESCRIPTION {
