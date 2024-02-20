@@ -88,7 +88,7 @@ namespace Gizmo.Web.Api.Models
         /// List of operator transactions.
         /// </summary>
         [MessagePack.Key(12)]
-        public List<OperatorTransactionModel> Transactions { get; set; } = new List<OperatorTransactionModel>();
+        public List<OperatorTransactionDTOModel> Transactions { get; set; } = new List<OperatorTransactionDTOModel>();
     }
 
     /// <summary>

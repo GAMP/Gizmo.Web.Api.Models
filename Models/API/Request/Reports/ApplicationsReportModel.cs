@@ -57,7 +57,7 @@ namespace Gizmo.Web.Api.Models
         /// List of applications that ran within the reporting period.
         /// </summary>
         [MessagePack.Key(7)]
-        public List<ApplicationInfoModel> Applications { get; set; } = new List<ApplicationInfoModel>();
+        public List<ApplicationInfoDTOModel> Applications { get; set; } = new List<ApplicationInfoDTOModel>();
     }
 
     /// <summary>

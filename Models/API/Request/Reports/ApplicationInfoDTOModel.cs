@@ -3,8 +3,8 @@
     /// <summary>
     /// Application Information.
     /// </summary>
-    [MessagePack.MessagePackObject]
-    public sealed class ApplicationInfoModel
+    [MessagePack.MessagePackObject()]
+    public sealed class ApplicationInfoDTOModel
     {
         /// <summary>
         /// Application Id.

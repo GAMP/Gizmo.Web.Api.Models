@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// Host Group Usage Information.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public class HostGroupUsageInfoModel
+    public class HostGroupUsageInfoDTOModel
     {
         /// <summary>
         /// Host group Id.
@@ -60,6 +60,6 @@ namespace Gizmo.Web.Api.Models
         /// List of records for the utilization charts.
         /// </summary>
         [MessagePack.Key(8)]
-        public List<PeriodUtilizationChartRecordModel> UtilizationChart { get; set; } = new List<PeriodUtilizationChartRecordModel>();
+        public List<PeriodUtilizationChartRecordDTOModel> UtilizationChart { get; set; } = new List<PeriodUtilizationChartRecordDTOModel>();
     }
 }

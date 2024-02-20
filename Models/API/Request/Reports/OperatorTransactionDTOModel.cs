@@ -8,7 +8,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     [Serializable]
     [MessagePackObject]
-    public class OperatorTransactionModel
+    public class OperatorTransactionDTOModel
     {
         /// <summary>
         /// Operator name.

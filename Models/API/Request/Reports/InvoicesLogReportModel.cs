@@ -82,7 +82,7 @@ namespace Gizmo.Web.Api.Models
         /// List of invoices.
         /// </summary>
         [MessagePack.Key(11)]
-        public List<InvoiceInfoModel> Invoices { get; set; } = new List<InvoiceInfoModel>();
+        public List<InvoiceDTOModel> Invoices { get; set; } = new List<InvoiceDTOModel>();
 
     }
 

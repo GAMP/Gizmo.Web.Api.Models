@@ -4,7 +4,7 @@
     /// Financial Summary Record.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public class FinancialSummaryRecordDTO
+    public class FinancialSummaryRecordDTOModel
     {
         /// <summary>
         /// Payment method Id.

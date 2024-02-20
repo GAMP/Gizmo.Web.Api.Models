@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// Executable Information.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public class ExecutableInfoDTO
+    public class ExecutableInfoDTOModel
     {
         /// <summary>
         /// The Id of the application on which the executable belongs.
@@ -48,7 +48,7 @@ namespace Gizmo.Web.Api.Models
         /// List of executable runs.
         /// </summary>
         [MessagePack.Key(6)]
-        public List<ExecutableExecutionInfoDTO> Executions { get; set; } = new List<ExecutableExecutionInfoDTO>();
+        public List<ExecutableExecutionInfoDTOModel> Executions { get; set; } = new List<ExecutableExecutionInfoDTOModel>();
 
         /// <summary>
         /// The number of unique users who ran the executable.

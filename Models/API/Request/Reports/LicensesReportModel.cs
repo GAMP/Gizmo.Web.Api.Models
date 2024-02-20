@@ -69,7 +69,7 @@ namespace Gizmo.Web.Api.Models
         /// List of license usages.
         /// </summary>
         [MessagePack.Key(9)]
-        public List<LicenseUsageInfoDTO> Licenses { get; set; } = new List<LicenseUsageInfoDTO>();
+        public List<LicenseUsageInfoDTOModel> Licenses { get; set; } = new List<LicenseUsageInfoDTOModel>();
     }
 
     /// <summary>

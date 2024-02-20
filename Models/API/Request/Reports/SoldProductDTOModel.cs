@@ -4,7 +4,7 @@
     /// Sold Product Information.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public class SoldProductDTO
+    public class SoldProductDTOModel
     {
         /// <summary>
         /// Product Id.

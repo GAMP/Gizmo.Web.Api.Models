@@ -76,73 +76,73 @@ namespace Gizmo.Web.Api.Models
         /// List of deposit operations performed during the reporting period.
         /// </summary>
         [MessagePack.Key(10)]
-        public List<AccountTransactionDTO> Deposits { get; set; } = new List<AccountTransactionDTO>();
+        public List<AccountTransactionDTOModel> Deposits { get; set; } = new List<AccountTransactionDTOModel>();
 
         /// <summary>
         /// List of withdrawal operations performed during the reporting period.
         /// </summary>
         [MessagePack.Key(11)]
-        public List<AccountTransactionDTO> Withdrawals { get; set; } = new List<AccountTransactionDTO>();
+        public List<AccountTransactionDTOModel> Withdrawals { get; set; } = new List<AccountTransactionDTOModel>();
 
         /// <summary>
         /// List of deposit void operations performed during the reporting period.
         /// </summary>
         [MessagePack.Key(12)]
-        public List<AccountTransactionDTO> DepositVoids { get; set; } = new List<AccountTransactionDTO>();
+        public List<AccountTransactionDTOModel> DepositVoids { get; set; } = new List<AccountTransactionDTOModel>();
 
         /// <summary>
         /// List of invoices grouped based on financial report type.
         /// </summary>
         [MessagePack.Key(13)]
-        public List<FinancialReportUserGroupInvoicesDTO> GroupInvoices { get; set; } = new List<FinancialReportUserGroupInvoicesDTO>();
+        public List<FinancialReportUserGroupInvoicesDTOModel> GroupInvoices { get; set; } = new List<FinancialReportUserGroupInvoicesDTOModel>();
 
         /// <summary>
         /// List of voided invoices grouped based on financial report type.
         /// </summary>
         [MessagePack.Key(14)]
-        public List<FinancialReportUserGroupInvoicesDTO> GroupVoidInvoices { get; set; } = new List<FinancialReportUserGroupInvoicesDTO>();
+        public List<FinancialReportUserGroupInvoicesDTOModel> GroupVoidInvoices { get; set; } = new List<FinancialReportUserGroupInvoicesDTOModel>();
 
         /// <summary>
         /// Summary of deposits grouped by payment method.
         /// </summary>
         [MessagePack.Key(15)]
-        public List<FinancialSummaryRecordDTO> DepositsSummary { get; set; } = new List<FinancialSummaryRecordDTO>();
+        public List<FinancialSummaryRecordDTOModel> DepositsSummary { get; set; } = new List<FinancialSummaryRecordDTOModel>();
 
         /// <summary>
         /// Summary of sales grouped by payment method.
         /// </summary>
         [MessagePack.Key(16)]
-        public List<FinancialSummaryRecordDTO> SalesSummary { get; set; } = new List<FinancialSummaryRecordDTO>();
+        public List<FinancialSummaryRecordDTOModel> SalesSummary { get; set; } = new List<FinancialSummaryRecordDTOModel>();
 
         /// <summary>
         /// Summary of voids grouped by refund method.
         /// </summary>
         [MessagePack.Key(17)]
-        public List<FinancialSummaryRecordDTO> VoidInvoicesPaidCash { get; set; } = new List<FinancialSummaryRecordDTO>();
+        public List<FinancialSummaryRecordDTOModel> VoidInvoicesPaidCash { get; set; } = new List<FinancialSummaryRecordDTOModel>();
 
         /// <summary>
         /// Summary of voids with no refund or unpaid.
         /// </summary>
         [MessagePack.Key(18)]
-        public FinancialSummaryRecordDTO VoidInvoicesNoRefundOrUnpaid { get; set; } = new FinancialSummaryRecordDTO();
+        public FinancialSummaryRecordDTOModel VoidInvoicesNoRefundOrUnpaid { get; set; } = new FinancialSummaryRecordDTOModel();
 
         /// <summary>
         /// Summary of past sales paid within the reporting period grouped by payment method.
         /// </summary>
         [MessagePack.Key(19)]
-        public List<FinancialSummaryRecordDTO> PastSalesPaymentsSummary { get; set; } = new List<FinancialSummaryRecordDTO>();
+        public List<FinancialSummaryRecordDTOModel> PastSalesPaymentsSummary { get; set; } = new List<FinancialSummaryRecordDTOModel>();
 
         /// <summary>
         /// List of available payment methods.
         /// </summary>
         [MessagePack.Key(20)]
-        public List<ListItemDTO> PaymentMethods { get; set; } = new List<ListItemDTO>();
+        public List<ListItemDTOModel> PaymentMethods { get; set; } = new List<ListItemDTOModel>();
 
         /// <summary>
         /// List of register transactions performed during the reporting period.
         /// </summary>
         [MessagePack.Key(21)]
-        public List<RegisterTransactionDTO> RegisterTransactions { get; set; } = new List<RegisterTransactionDTO>();
+        public List<RegisterTransactionDTOModel> RegisterTransactions { get; set; } = new List<RegisterTransactionDTOModel>();
     }
 
     /// <summary>

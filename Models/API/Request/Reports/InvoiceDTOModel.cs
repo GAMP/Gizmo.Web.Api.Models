@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// Invoice Information.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public class InvoiceInfoModel
+    public class InvoiceDTOModel
     {
         /// <summary>
         /// Invoice Id.

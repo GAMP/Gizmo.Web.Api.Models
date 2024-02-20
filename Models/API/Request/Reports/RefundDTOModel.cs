@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// Refund Information.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public class RefundDTO
+    public class RefundDTOModel
     {
         /// <summary>
         /// The time the refund was created.

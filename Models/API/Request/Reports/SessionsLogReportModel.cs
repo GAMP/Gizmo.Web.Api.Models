@@ -83,7 +83,7 @@ namespace Gizmo.Web.Api.Models
         /// List of sessions within the reporting period.
         /// </summary>
         [MessagePack.Key(11)]
-        public List<UserSessionDetailsDTO> Sessions { get; set; } = new List<UserSessionDetailsDTO>();
+        public List<UserSessionDetailsDTOModel> Sessions { get; set; } = new List<UserSessionDetailsDTOModel>();
     }
 
     /// <summary>

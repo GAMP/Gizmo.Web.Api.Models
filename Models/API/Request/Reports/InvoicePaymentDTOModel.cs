@@ -7,7 +7,7 @@ namespace Gizmo.Web.Api.Models
     /// Invoice payment information.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public class InvoicePaymentDTO// : InvoicesInfoDTO
+    public class InvoicePaymentDTOModel// : InvoicesInfoDTO
     {
         /// <summary>
         /// The time that invoice payment was created.

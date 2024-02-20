@@ -4,7 +4,7 @@
     /// Executable Execution Summary.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public class ExecutableExecutionSummaryDTO
+    public class ExecutableExecutionSummaryDTOModel
     {
         /// <summary>
         /// Executable Id.

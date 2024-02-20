@@ -4,7 +4,7 @@
     /// Top User Info.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public class TopUserInfoDTO
+    public class TopUserInfoDTOModel
     {
         /// <summary>
         /// User Id.

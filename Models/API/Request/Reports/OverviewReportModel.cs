@@ -45,7 +45,7 @@ namespace Gizmo.Web.Api.Models
         /// List of operator statistics.
         /// </summary>
         [MessagePack.Key(5)]
-        public List<OverviewReportOperatorStatisticsModel> OperatorsStatistics { get; set; } = new List<OverviewReportOperatorStatisticsModel>();
+        public List<OverviewReportOperatorStatisticsDTOModel> OperatorsStatistics { get; set; } = new List<OverviewReportOperatorStatisticsDTOModel>();
 
         /// <summary>
         /// Average daily member visits duration.
@@ -81,19 +81,19 @@ namespace Gizmo.Web.Api.Models
         /// Member counters.
         /// </summary>
         [MessagePack.Key(11)]
-        public MemberCountersModel MemberCounters { get; set; } = new MemberCountersModel();
+        public MemberCountersDTOModel MemberCounters { get; set; } = new MemberCountersDTOModel();
 
         /// <summary>
         /// List of records for the utilization chart.
         /// </summary>
         [MessagePack.Key(12)]
-        public List<PeriodUtilizationChartRecordModel> UtilizationChart { get; set; } = new List<PeriodUtilizationChartRecordModel>();
+        public List<PeriodUtilizationChartRecordDTOModel> UtilizationChart { get; set; } = new List<PeriodUtilizationChartRecordDTOModel>();
 
         /// <summary>
         /// List of records for the financial chart.
         /// </summary>
         [MessagePack.Key(13)]
-        public List<ChartRecordModel> FinancialChart { get; set; } = new List<ChartRecordModel>();
+        public List<ChartRecordDTOModel> FinancialChart { get; set; } = new List<ChartRecordDTOModel>();
 
         /// <summary>
         /// Total pay in-out.
@@ -123,7 +123,7 @@ namespace Gizmo.Web.Api.Models
         /// List of user group revenue.
         /// </summary>
         [MessagePack.Key(18)]
-        public List<NamedDecimalContainerModel> RevenuePerGroup { get; set; } = new List<NamedDecimalContainerModel>();
+        public List<NamedDecimalContainerDTOModel> RevenuePerGroup { get; set; } = new List<NamedDecimalContainerDTOModel>();
     }
 
     /// <summary>

@@ -69,25 +69,25 @@ namespace Gizmo.Web.Api.Models
         /// Application information.
         /// </summary>
         [MessagePack.Key(9)]
-        public ApplicationInfoModel Application { get; set; }
+        public ApplicationInfoDTOModel Application { get; set; }
 
         /// <summary>
         /// List of executables that belongs to the application and ran within the reporting period.
         /// </summary>
         [MessagePack.Key(10)]
-        public List<ExecutableExecutionSummaryDTO> Executables { get; set; } = new List<ExecutableExecutionSummaryDTO>();
+        public List<ExecutableExecutionSummaryDTOModel> Executables { get; set; } = new List<ExecutableExecutionSummaryDTOModel>();
 
         /// <summary>
         /// List of records for the runtime per user group chart.
         /// </summary>
         [MessagePack.Key(11)]
-        public List<ChartGroupDTO> HoursPerUserGroupChart { get; set; } = new List<ChartGroupDTO>();
+        public List<ChartGroupDTOModel> HoursPerUserGroupChart { get; set; } = new List<ChartGroupDTOModel>();
 
         /// <summary>
         /// List of records for the runtime per host group chart.
         /// </summary>
         [MessagePack.Key(12)]
-        public List<ChartGroupDTO> HoursPerHostGroupChart { get; set; } = new List<ChartGroupDTO>();
+        public List<ChartGroupDTOModel> HoursPerHostGroupChart { get; set; } = new List<ChartGroupDTOModel>();
     }
 
     /// <summary>

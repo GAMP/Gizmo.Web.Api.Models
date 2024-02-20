@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// User Session Details.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public class UserSessionDetailsDTO : UserSessionDTO
+    public class UserSessionDetailsDTOModel : UserSessionDTOModel
     {
         /// <summary>
         /// The name of the user to which the session belongs.

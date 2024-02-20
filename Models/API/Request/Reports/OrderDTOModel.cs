@@ -7,7 +7,7 @@ namespace Gizmo.Web.Api.Models
     /// Order Information.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public class OrderInfoModel
+    public class OrderDTOModel
     {
         /// <summary>
         /// Order Id.
@@ -133,6 +133,6 @@ namespace Gizmo.Web.Api.Models
         /// The invoice that was created for the order, null if there is no related invoice.
         /// </summary>
         [MessagePack.Key(20)]
-        public InvoiceInfoModel Invoice { get; set; }
+        public InvoiceDTOModel Invoice { get; set; }
     }
 }

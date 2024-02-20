@@ -105,7 +105,7 @@ namespace Gizmo.Web.Api.Models
         /// List of asset transactions within the reporting period.
         /// </summary>
         [MessagePack.Key(15)]
-        public List<AssetTransactionInfoModel> AssetTransactions { get; set; } = new List<AssetTransactionInfoModel>();
+        public List<AssetTransactionDTOModel> AssetTransactions { get; set; } = new List<AssetTransactionDTOModel>();
     }
 
     /// <summary>

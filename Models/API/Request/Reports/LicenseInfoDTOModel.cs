@@ -4,7 +4,7 @@
     /// License Info.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public class LicenseInfoDTO
+    public class LicenseInfoDTOModel
     {
         /// <summary>
         /// License Id.

@@ -51,37 +51,37 @@ namespace Gizmo.Web.Api.Models
         /// Member counters.
         /// </summary>
         [MessagePack.Key(6)]
-        public MemberCountersDTO MemberCounters { get; set; } = new MemberCountersDTO();
+        public MemberCountersDTOModel MemberCounters { get; set; } = new MemberCountersDTOModel();
 
         /// <summary>
         /// List of top spenders grouped by user group.
         /// </summary>
         [MessagePack.Key(7)]
-        public List<TopUsersReportUserGroupDTO> TopSpenders { get; set; } = new List<TopUsersReportUserGroupDTO>();
+        public List<TopUsersReportUserGroupDTOModel> TopSpenders { get; set; } = new List<TopUsersReportUserGroupDTOModel>();
 
         /// <summary>
         /// List of top point earners grouped by user group.
         /// </summary>
         [MessagePack.Key(8)]
-        public List<TopUsersReportUserGroupDTO> TopPointEarners { get; set; } = new List<TopUsersReportUserGroupDTO>();
+        public List<TopUsersReportUserGroupDTOModel> TopPointEarners { get; set; } = new List<TopUsersReportUserGroupDTOModel>();
 
         /// <summary>
         /// List of top point spenders grouped by user group.
         /// </summary>
         [MessagePack.Key(9)]
-        public List<TopUsersReportUserGroupDTO> TopPointSpenders { get; set; } = new List<TopUsersReportUserGroupDTO>();
+        public List<TopUsersReportUserGroupDTOModel> TopPointSpenders { get; set; } = new List<TopUsersReportUserGroupDTOModel>();
 
         /// <summary>
         /// List of top users based on total usage time grouped by user group.
         /// </summary>
         [MessagePack.Key(10)]
-        public List<TopUsersReportUserGroupDTO> TopSessions { get; set; } = new List<TopUsersReportUserGroupDTO>();
+        public List<TopUsersReportUserGroupDTOModel> TopSessions { get; set; } = new List<TopUsersReportUserGroupDTOModel>();
 
         /// <summary>
         /// List of top users based on longest session grouped by user group.
         /// </summary>
         [MessagePack.Key(11)]
-        public List<TopUsersReportUserGroupDTO> TopSessionDuration { get; set; } = new List<TopUsersReportUserGroupDTO>();
+        public List<TopUsersReportUserGroupDTOModel> TopSessionDuration { get; set; } = new List<TopUsersReportUserGroupDTOModel>();
     }
 
     [MessagePack.MessagePackObject()]

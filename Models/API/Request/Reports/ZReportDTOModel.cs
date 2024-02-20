@@ -1,7 +1,7 @@
 ﻿namespace Gizmo.Web.Api.Models
 {
     [MessagePack.MessagePackObject()]
-    public sealed class ZReportDTO : IWebApiModel
+    public sealed class ZReportDTOModel : IWebApiModel
     {
     }
 }

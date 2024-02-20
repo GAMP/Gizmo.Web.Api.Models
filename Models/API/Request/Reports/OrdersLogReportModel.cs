@@ -82,7 +82,7 @@ namespace Gizmo.Web.Api.Models
         /// List of orders.
         /// </summary>
         [MessagePack.Key(11)]
-        public List<OrderInfoModel> Orders { get; set; } = new List<OrderInfoModel>();
+        public List<OrderDTOModel> Orders { get; set; } = new List<OrderDTOModel>();
     }
 
     /// <summary>

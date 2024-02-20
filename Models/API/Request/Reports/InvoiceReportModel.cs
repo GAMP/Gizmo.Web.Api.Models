@@ -52,25 +52,25 @@ namespace Gizmo.Web.Api.Models
         /// Information of the invoice.
         /// </summary>
         [MessagePack.Key(6)]
-        public InvoiceInfoModel Invoice { get; set; }
+        public InvoiceDTOModel Invoice { get; set; }
 
         /// <summary>
         /// List of products sold with this invoice.
         /// </summary>
         [MessagePack.Key(7)]
-        public List<SoldProductDTO> SoldProducts { get; set; } = new List<SoldProductDTO>();
+        public List<SoldProductDTOModel> SoldProducts { get; set; } = new List<SoldProductDTOModel>();
 
         /// <summary>
         /// List of payments performed for this invoice.
         /// </summary>
         [MessagePack.Key(8)]
-        public List<InvoicePaymentDTO> Payments { get; set; } = new List<InvoicePaymentDTO>();
+        public List<InvoicePaymentDTOModel> Payments { get; set; } = new List<InvoicePaymentDTOModel>();
 
         /// <summary>
         /// List of refunds performed for this invoice.
         /// </summary>
         [MessagePack.Key(9)]
-        public List<RefundDTO> Refunds { get; set; } = new List<RefundDTO>();
+        public List<RefundDTOModel> Refunds { get; set; } = new List<RefundDTOModel>();
     }
 
     /// <summary>

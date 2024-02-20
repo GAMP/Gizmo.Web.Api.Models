@@ -3,8 +3,8 @@
     /// <summary>
     /// Member Counters.
     /// </summary>
-    [MessagePack.MessagePackObject]
-    public class MemberCountersModel
+    [MessagePack.MessagePackObject()]
+    public class MemberCountersDTOModel
     {
         /// <summary>
         /// Number of new members.

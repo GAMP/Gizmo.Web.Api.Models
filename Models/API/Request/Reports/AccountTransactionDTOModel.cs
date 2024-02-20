@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// Account Transaction.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public class AccountTransactionDTO
+    public class AccountTransactionDTOModel
     {
         /// <summary>
         /// The creation time of the account transaction.

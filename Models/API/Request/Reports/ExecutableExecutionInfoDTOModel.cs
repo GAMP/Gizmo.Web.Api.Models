@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// Executable Execution Information.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public class ExecutableExecutionInfoDTO : ExecutableInfoDTO
+    public class ExecutableExecutionInfoDTOModel : ExecutableInfoDTOModel
     {
         /// <summary>
         /// The Id of the user that ran the executable.
@@ -60,6 +60,6 @@ namespace Gizmo.Web.Api.Models
         /// User session information.
         /// </summary>
         [MessagePack.Key(8)]
-        public UserSessionDTO UserSession { get; set; }
+        public UserSessionDTOModel UserSession { get; set; }
     }
 }

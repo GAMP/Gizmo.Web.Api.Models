@@ -3,21 +3,21 @@
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Top Users Report User Group.
+    /// Chart Group.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public class TopUsersReportUserGroupDTO
+    public class ChartGroupDTOModel
     {
         /// <summary>
-        /// User Group Name.
+        /// Chart group name.
         /// </summary>
         [MessagePack.Key(0)]
-        public string UserGroupName { get; set; }
+        public string Name { get; set; }
 
         /// <summary>
-        /// List of users within this group.
+        /// List of records for the group.
         /// </summary>
         [MessagePack.Key(1)]
-        public List<TopUserInfoDTO> TopUsers { get; set; }
+        public List<ChartRecordDTOModel> GroupRecords { get; set; }
     }
 }

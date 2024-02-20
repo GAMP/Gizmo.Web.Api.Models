@@ -57,13 +57,13 @@ namespace Gizmo.Web.Api.Models
         /// License usage information.
         /// </summary>
         [MessagePack.Key(7)]
-        public LicenseUsageInfoDTO LicenseUsage { get; set; }
+        public LicenseUsageInfoDTOModel LicenseUsage { get; set; }
 
         /// <summary>
         /// List of records for the concurrent keys chart.
         /// </summary>
         [MessagePack.Key(8)]
-        public List<ChartRecordDTO> LicenseTimeChart { get; set; }
+        public List<ChartRecordDTOModel> LicenseTimeChart { get; set; }
     }
 
     /// <summary>

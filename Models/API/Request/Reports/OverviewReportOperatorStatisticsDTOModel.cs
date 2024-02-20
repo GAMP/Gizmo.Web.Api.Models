@@ -3,8 +3,8 @@
     /// <summary>
     /// Overview Report Operator Statistics.
     /// </summary>
-    [MessagePack.MessagePackObject]
-    public class OverviewReportOperatorStatisticsModel
+    [MessagePack.MessagePackObject()]
+    public class OverviewReportOperatorStatisticsDTOModel
     {
         /// <summary>
         /// Operator Id.

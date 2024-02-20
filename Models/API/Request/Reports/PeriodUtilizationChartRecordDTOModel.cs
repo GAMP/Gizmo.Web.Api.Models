@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// Period Utilization Chart Record.
     /// </summary>
     [MessagePackObject]
-    public class PeriodUtilizationChartRecordModel
+    public class PeriodUtilizationChartRecordDTOModel
     {
         /// <summary>
         /// The name of the chart record.

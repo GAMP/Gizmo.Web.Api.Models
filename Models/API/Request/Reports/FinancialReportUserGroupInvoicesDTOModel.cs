@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// Financial report information about sales or voids for a single group.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public class FinancialReportUserGroupInvoicesDTO
+    public class FinancialReportUserGroupInvoicesDTOModel
     {
         /// <summary>
         /// Group name.
@@ -18,30 +18,30 @@ namespace Gizmo.Web.Api.Models
         /// List of fixed time sold.
         /// </summary>
         [MessagePack.Key(1)]
-        public List<SoldProductDTO> FixedTimeProductsSold { get; set; } = new List<SoldProductDTO>();
+        public List<SoldProductDTOModel> FixedTimeProductsSold { get; set; } = new List<SoldProductDTOModel>();
 
         /// <summary>
         /// List of session time sold.
         /// </summary>
         [MessagePack.Key(2)]
-        public List<SoldProductDTO> SessionTimeProductsSold { get; set; } = new List<SoldProductDTO>();
+        public List<SoldProductDTOModel> SessionTimeProductsSold { get; set; } = new List<SoldProductDTOModel>();
 
         /// <summary>
         /// List of time offers sold.
         /// </summary>
         [MessagePack.Key(3)]
-        public List<SoldProductDTO> TimeOffersSold { get; set; } = new List<SoldProductDTO>();
+        public List<SoldProductDTOModel> TimeOffersSold { get; set; } = new List<SoldProductDTOModel>();
 
         /// <summary>
         /// List of products sold.
         /// </summary>
         [MessagePack.Key(4)]
-        public List<SoldProductDTO> ProductsSold { get; set; } = new List<SoldProductDTO>();
+        public List<SoldProductDTOModel> ProductsSold { get; set; } = new List<SoldProductDTOModel>();
 
         /// <summary>
         /// List of bundles sold.
         /// </summary>
         [MessagePack.Key(5)]
-        public List<SoldProductDTO> BundlesSold { get; set; } = new List<SoldProductDTO>();
+        public List<SoldProductDTOModel> BundlesSold { get; set; } = new List<SoldProductDTOModel>();
     }
 }

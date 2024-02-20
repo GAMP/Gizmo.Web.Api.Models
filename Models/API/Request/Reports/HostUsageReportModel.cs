@@ -64,7 +64,7 @@ namespace Gizmo.Web.Api.Models
         /// Usage information grouped by host group.
         /// </summary>
         [MessagePack.Key(8)]
-        public List<HostGroupUsageInfoModel> HostGroups { get; set; } = new List<HostGroupUsageInfoModel>();
+        public List<HostGroupUsageInfoDTOModel> HostGroups { get; set; } = new List<HostGroupUsageInfoDTOModel>();
 
         /// <summary>
         /// Total hours the hosts were used within the reporting period.

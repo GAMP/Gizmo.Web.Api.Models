@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// Register Transaction.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public class RegisterTransactionDTO
+    public class RegisterTransactionDTOModel
     {
         /// <summary>
         /// The creation time of the register transaction.

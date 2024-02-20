@@ -82,13 +82,13 @@ namespace Gizmo.Web.Api.Models
         /// List of records for the average delivery time per operator chart.
         /// </summary>
         [MessagePack.Key(11)]
-        public List<ChartGroupDTO> OperatorsPerformance { get; set; } = new List<ChartGroupDTO>();
+        public List<ChartGroupDTOModel> OperatorsPerformance { get; set; } = new List<ChartGroupDTOModel>();
 
         /// <summary>
         /// List of records for the orders per operator chart.
         /// </summary>
         [MessagePack.Key(12)]
-        public List<ChartGroupDTO> OrdersChart { get; set; } = new List<ChartGroupDTO>();
+        public List<ChartGroupDTOModel> OrdersChart { get; set; } = new List<ChartGroupDTOModel>();
     }
 
     [MessagePack.MessagePackObject()]

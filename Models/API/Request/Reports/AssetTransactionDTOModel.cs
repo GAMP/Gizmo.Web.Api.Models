@@ -5,8 +5,8 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Asset transaction information.
     /// </summary>
-    [MessagePack.MessagePackObject]
-    public sealed class AssetTransactionInfoModel
+    [MessagePack.MessagePackObject()]
+    public sealed class AssetTransactionDTOModel
     {
         /// <summary>
         /// Asset type.

@@ -1,21 +1,21 @@
 ﻿namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// List Item.
+    /// Chart Record.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public class ListItemDTO
+    public class ChartRecordDTOModel
     {
         /// <summary>
-        /// Item Id.
+        /// The name of the chart record.
         /// </summary>
         [MessagePack.Key(0)]
-        public int Id { get; set; }
+        public string? Name { get; set; }
 
         /// <summary>
-        /// Item name.
+        /// The value of the chart record.
         /// </summary>
         [MessagePack.Key(1)]
-        public string Name { get; set; }
+        public decimal Value { get; set; }
     }
 }
