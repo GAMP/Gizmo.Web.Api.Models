@@ -1,10 +1,13 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions;
-using MessagePack;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Web.Api.Models
 {
+    /// <summary>
+    /// Overview Report.
+    /// </summary>
     [MessagePack.MessagePackObject()]
     public sealed class OverviewReportModel : IWebApiModel
     {
@@ -123,155 +126,166 @@ namespace Gizmo.Web.Api.Models
         public List<NamedDecimalContainerModel> RevenuePerGroup { get; set; } = new List<NamedDecimalContainerModel>();
     }
 
+    /// <summary>
+    /// Overview Report Filter.
+    /// </summary>
     [MessagePack.MessagePackObject()]
     public sealed class OverviewReportParametersModel : IWebApiModel, IUriParametersQuery
     {
+        /// <summary>
+        /// Filter Date From.
+        /// </summary>
         [MessagePack.Key(0)]
+        [Required]
         public DateTime DateFrom { get; set; }
 
+        /// <summary>
+        /// Filter Date To.
+        /// </summary>
         [MessagePack.Key(1)]
+        [Required]
         public DateTime DateTo { get; set; }
     }
 
     /// <summary>
     /// Overview Report Operator Statistics.
     /// </summary>
-    [MessagePackObject]
+    [MessagePack.MessagePackObject]
     public class OverviewReportOperatorStatisticsModel
     {
         /// <summary>
         /// Operator Id.
         /// </summary>
-        [Key(0)]
+        [MessagePack.Key(0)]
         public int OperatorId { get; set; }
 
         /// <summary>
         /// Operator name.
         /// </summary>
-        [Key(1)]
+        [MessagePack.Key(1)]
         public string? OperatorName { get; set; }
 
         /// <summary>
         /// Total minutes the operator worked.
         /// </summary>
-        [Key(2)]
+        [MessagePack.Key(2)]
         public int MinutesWorked { get; set; }
 
         /// <summary>
         /// Total hours the operator worked as text.
         /// </summary>
-        [Key(3)]
+        [MessagePack.Key(3)]
         public string HoursWorked { get; set; } = string.Empty;
 
         /// <summary>
         /// Total minutes the operator sold.
         /// </summary>
-        [Key(4)]
+        [MessagePack.Key(4)]
         public decimal MinutesSold { get; set; }
 
         /// <summary>
         /// Total hours the operator sold as text.
         /// </summary>
-        [Key(5)]
+        [MessagePack.Key(5)]
         public string HoursSold { get; set; } = string.Empty;
 
         /// <summary>
         /// Number of products the operator sold.
         /// </summary>
-        [Key(6)]
+        [MessagePack.Key(6)]
         public decimal ProductsSold { get; set; }
 
         /// <summary>
         /// Number of time offers the operator sold.
         /// </summary>
-        [Key(7)]
+        [MessagePack.Key(7)]
         public decimal TimeOffersSold { get; set; }
 
         /// <summary>
         /// Number of bundles the operator sold.
         /// </summary>
-        [Key(8)]
+        [MessagePack.Key(8)]
         public decimal BundlesSold { get; set; }
 
         /// <summary>
         /// Number of voids the operator performed.
         /// </summary>
-        [Key(9)]
+        [MessagePack.Key(9)]
         public int Voids { get; set; }
 
         /// <summary>
         /// Total amount of register transactions performed by the operator.
         /// </summary>
-        [Key(10)]
+        [MessagePack.Key(10)]
         public decimal RegisterTransactionsTotal { get; set; }
 
         /// <summary>
         /// Operator revenue.
         /// </summary>
-        [Key(11)]
+        [MessagePack.Key(11)]
         public decimal Revenue { get; set; }
     }
 
     /// <summary>
     /// Member Counters.
     /// </summary>
-    [MessagePackObject]
+    [MessagePack.MessagePackObject]
     public class MemberCountersModel
     {
         /// <summary>
         /// Number of new members.
         /// </summary>
-        [Key(0)]
+        [MessagePack.Key(0)]
         public int NewMembers { get; set; }
 
         /// <summary>
         /// Total number of members.
         /// </summary>
-        [Key(1)]
+        [MessagePack.Key(1)]
         public int TotalMembers { get; set; }
 
         /// <summary>
         /// Number of banned members.
         /// </summary>
-        [Key(2)]
+        [MessagePack.Key(2)]
         public int BannedMembers { get; set; }
     }
 
     /// <summary>
     /// An object containing a name and a decimal value.
     /// </summary>
-    [MessagePackObject]
+    [MessagePack.MessagePackObject]
     public class NamedDecimalContainerModel
     {
         /// <summary>
         /// Name of the object.
         /// </summary>
-        [Key(0)]
+        [MessagePack.Key(0)]
         public string? Name { get; set; }
 
         /// <summary>
         /// Value of the object.
         /// </summary>
-        [Key(1)]
+        [MessagePack.Key(1)]
         public decimal Value { get; set; }
     }
 
     /// <summary>
     /// Chart Record.
     /// </summary>
-    [MessagePackObject]
+    [MessagePack.MessagePackObject]
     public class ChartRecordModel
     {
         /// <summary>
         /// The name of the chart record.
         /// </summary>
-        [Key(0)]
+        [MessagePack.Key(0)]
         public string? Name { get; set; }
 
         /// <summary>
         /// The value of the chart record.
         /// </summary>
-        [Key(1)]
+        [MessagePack.Key(1)]
         public decimal Value { get; set; }
     }
 }

@@ -5,8 +5,11 @@ using Gizmo.Web.Api.Models.Abstractions;
 
 namespace Gizmo.Web.Api.Models
 {
+    /// <summary>
+    /// Assets Log Report.
+    /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class AssetsReportModel : IWebApiModel
+    public sealed class AssetsLogReportModel : IWebApiModel
     {
         /// <summary>
         /// Report Name.
@@ -105,6 +108,9 @@ namespace Gizmo.Web.Api.Models
         public List<AssetTransactionInfoModel> AssetTransactions { get; set; } = new List<AssetTransactionInfoModel>();
     }
 
+    /// <summary>
+    /// Assets Log Report Filter.
+    /// </summary>
     [MessagePack.MessagePackObject()]
     public sealed class AssetsReportParametersModel : IWebApiModel , IUriParametersQuery
     {
@@ -161,7 +167,7 @@ namespace Gizmo.Web.Api.Models
     /// Asset transaction information.
     /// </summary>
     [MessagePack.MessagePackObject]
-    public class AssetTransactionInfoModel
+    public sealed class AssetTransactionInfoModel
     {
         /// <summary>
         /// Asset type.

@@ -7,10 +7,10 @@ using Gizmo.Web.Api.Models.Enumerations;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Transactions Log Report.
+    /// Invoices Log Report.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class TransactionsReportModel
+    public sealed class InvoicesLogReportModel : IWebApiModel
     {
         /// <summary>
         /// Report Name.
@@ -43,59 +43,54 @@ namespace Gizmo.Web.Api.Models
         //public ReportTypes ReportType { get; set; }
 
         /// <summary>
-        /// Filtered Operator Id.
+        /// Filtered Payment Status Type.
         /// </summary>
         [MessagePack.Key(5)]
+        public InvoicesLogPaymentStatusTypes? PaymentStatusType { get; set; }
+
+        /// <summary>
+        /// Filtered Voided Status Type.
+        /// </summary>
+        [MessagePack.Key(6)]
+        public InvoicesLogVoidedStatusTypes? VoidedStatusType { get; set; }
+
+        /// <summary>
+        /// Filtered Operator Id.
+        /// </summary>
+        [MessagePack.Key(7)]
         public int? OperatorId { get; set; }
 
         /// <summary>
         /// Filtered Operator Name.
         /// </summary>
-        [MessagePack.Key(6)]
+        [MessagePack.Key(8)]
         public string OperatorName { get; set; } = string.Empty;
 
         /// <summary>
         /// Filtered Register Id.
         /// </summary>
-        [MessagePack.Key(7)]
+        [MessagePack.Key(9)]
         public int? RegisterId { get; set; }
 
         /// <summary>
         /// Filtered Register Name.
         /// </summary>
-        [MessagePack.Key(8)]
+        [MessagePack.Key(10)]
         public string RegisterName { get; set; } = string.Empty;
 
         /// <summary>
-        /// Filtered User Id.
-        /// </summary>
-        [MessagePack.Key(9)]
-        public int? UserId { get; set; }
-
-        /// <summary>
-        /// Filtered User Name.
-        /// </summary>
-        [MessagePack.Key(10)]
-        public string UserName { get; set; } = string.Empty;
-
-        /// <summary>
-        /// Filtered Transactions Log Action Type.
+        /// List of invoices.
         /// </summary>
         [MessagePack.Key(11)]
-        public TransactionsLogActionTypes? TransactionsLogActionType { get; set; }
+        public List<InvoiceInfoModel> Invoices { get; set; } = new List<InvoiceInfoModel>();
 
-        /// <summary>
-        /// List of operator transactions.
-        /// </summary>
-        [MessagePack.Key(12)]
-        public List<OperatorTransactionModel> Transactions { get; set; } = new List<OperatorTransactionModel>();
     }
 
     /// <summary>
-    /// Transactions Log Report Filter.
+    /// Invoices Log Report Filter.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class TransactionReportParametersModel : IWebApiModel, IUriParametersQuery
+    public sealed class InvoicesReportParametersModel : IWebApiModel, IUriParametersQuery
     {
         #region PROPERTIES
 
@@ -126,22 +121,16 @@ namespace Gizmo.Web.Api.Models
         public int? RegisterId { get; set; }
 
         /// <summary>
-        /// Filter User Id.
+        /// Filter Payment Status Type.
         /// </summary>
         [MessagePack.Key(4)]
-        public int? UserId { get; set; }
+        public InvoicesLogPaymentStatusTypes? PaymentStatusType { get; set; }
 
         /// <summary>
-        /// Filter Void Operator Id.
+        /// Filter Voided Status Type.
         /// </summary>
         [MessagePack.Key(5)]
-        public int? VoidOperatorId { get; set; }
-
-        /// <summary>
-        /// Filter Transactions Log Action Type.
-        /// </summary>
-        [MessagePack.Key(6)]
-        public TransactionsLogActionTypes? TransactionsLogActionType { get; set; }
+        public InvoicesLogVoidedStatusTypes? VoidedStatusType { get; set; }
 
         #endregion
     }

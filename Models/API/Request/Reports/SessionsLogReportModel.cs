@@ -5,18 +5,18 @@ using Gizmo.Web.Api.Models.Abstractions;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Licenses Report.
+    /// Sessions Log Report.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class LicensesReportModel : IWebApiModel
+    public sealed class SessionsLogReportModel : IWebApiModel
     {
     }
 
     /// <summary>
-    /// Licenses Report Filter.
+    /// Sessions Log Report Filter.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class LicensesReportParametersModel : IWebApiModel , IUriParametersQuery
+    public sealed class SessionsLogReportParametersModel : IWebApiModel , IUriParametersQuery
     {
         /// <summary>
         /// Filter Date From.
@@ -31,17 +31,22 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(1)]
         [Required]
         public DateTime DateTo { get; set; }
-
         /// <summary>
-        /// Filter Application Id.
+        /// Filter User Id.
         /// </summary>
         [MessagePack.Key(2)]
-        public int? ApplicationId { get; set; }
+        public int? UserId { get; set; }
 
         /// <summary>
-        /// Hide unused licenses.
+        /// Filter Host Id.
         /// </summary>
         [MessagePack.Key(3)]
-        public bool HideUnused { get; set; }
+        public int? HostId { get; set; }
+
+        /// <summary>
+        /// Filter Operator Id.
+        /// </summary>
+        [MessagePack.Key(4)]
+        public int? OperatorId { get; set; }
     }
 }
