@@ -84,8 +84,11 @@ namespace Gizmo.Web.Api.Models
         public List<TopUsersReportUserGroupDTOModel> TopSessionDuration { get; set; } = new List<TopUsersReportUserGroupDTOModel>();
     }
 
+    /// <summary>
+    /// Top Users Report Filter.
+    /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class UsersReportParametersModel : IWebApiModel, IUriParametersQuery
+    public sealed class TopUsersReportParametersModel : IWebApiModel, IUriParametersQuery
     {
         /// <summary>
         /// Filter Date From.
@@ -100,5 +103,12 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(1)]
         [Required]
         public DateTime DateTo { get; set; }
+
+        /// <summary>
+        /// Filter number of top users to display.
+        /// </summary>
+        [MessagePack.Key(3)]
+        [Required]
+        public int TopUsersNumber { get; set; }
     }
 }
