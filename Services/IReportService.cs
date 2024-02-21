@@ -45,7 +45,7 @@ namespace Gizmo.Web.Api.Services
         /// <param name="parameters">Parameters.</param>
         /// <param name="cancellationToken">Cancellation token.</param>
         /// <returns>Report.</returns>
-        public Task<TopUsersReportModel> UsersAsync(TopUsersReportParametersModel parameters, CancellationToken cancellationToken = default);
+        public Task<TopUsersReportModel> TopUsersAsync(TopUsersReportParametersModel parameters, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Generates users report.
