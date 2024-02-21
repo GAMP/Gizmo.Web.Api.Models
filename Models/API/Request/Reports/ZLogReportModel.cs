@@ -10,7 +10,7 @@ namespace Gizmo.Web.Api.Models
     }
 
     [MessagePack.MessagePackObject()]
-    public sealed class ZLogReportParametersModel : IWebApiModel , IUriParametersQuery
+    public sealed class ZLogReportParametersModel : IWebApiModel, IUriParametersQuery
     {
         /// <summary>
         /// Filter Date From.

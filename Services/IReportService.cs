@@ -32,7 +32,7 @@ namespace Gizmo.Web.Api.Services
         public Task<FinancialReportModel> FinancialAsync(FinancialReportParametersModel parameters, CancellationToken cancellationToken = default);
 
         /// <summary>
-        /// Generates hosts report.
+        /// Generates host usage report.
         /// </summary>
         /// <param name="parameters">Parameters.</param>
         /// <param name="cancellationToken">Cancellation token.</param>
@@ -40,7 +40,7 @@ namespace Gizmo.Web.Api.Services
         public Task<HostUsageReportModel> HostUsageAsync(HostUsageReportParametersModel parameters, CancellationToken cancellationToken = default);
 
         /// <summary>
-        /// Generates user report.
+        /// Generates top users report.
         /// </summary>
         /// <param name="parameters">Parameters.</param>
         /// <param name="cancellationToken">Cancellation token.</param>
@@ -48,7 +48,7 @@ namespace Gizmo.Web.Api.Services
         public Task<TopUsersReportModel> TopUsersAsync(TopUsersReportParametersModel parameters, CancellationToken cancellationToken = default);
 
         /// <summary>
-        /// Generates users report.
+        /// Generates user report.
         /// </summary>
         /// <param name="parameters">Parameters.</param>
         /// <param name="cancellationToken">Cancellation token.</param>
@@ -56,7 +56,15 @@ namespace Gizmo.Web.Api.Services
         public Task<UserReportModel> UserAsync(UserReportParametersModel parameters, CancellationToken cancellationToken = default);
 
         /// <summary>
-        /// Generates user report.
+        /// Generates product report.
+        /// </summary>
+        /// <param name="parameters">Parameters.</param>
+        /// <param name="cancellationToken">Cancellation token.</param>
+        /// <returns>Report.</returns>
+        public Task<ProductReportModel> ProductAsync(ProductReportParametersModel parameters, CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Generates products report.
         /// </summary>
         /// <param name="parameters">Parameters.</param>
         /// <param name="cancellationToken">Cancellation token.</param>
@@ -80,7 +88,7 @@ namespace Gizmo.Web.Api.Services
         public Task<StockReportModel> StockAsync(StockReportParametersModel parameters, CancellationToken cancellationToken = default);
 
         /// <summary>
-        /// Generates transactions report.
+        /// Generates transactions log report.
         /// </summary>
         /// <param name="parameters">Parameters.</param>
         /// <param name="cancellationToken">Cancellation token.</param>
@@ -88,7 +96,7 @@ namespace Gizmo.Web.Api.Services
         public Task<TransactionsLogReportModel> TransactionsLogAsync(TransactionsLogReportParametersModel parameters, CancellationToken cancellationToken = default);
 
         /// <summary>
-        /// Generates shifts report.
+        /// Generates shifts log report.
         /// </summary>
         /// <param name="parameters">Parameters.</param>
         /// <param name="cancellationToken">Cancellation token.</param>
@@ -96,7 +104,7 @@ namespace Gizmo.Web.Api.Services
         public Task<ShiftsLogReportModel> ShiftsLogAsync(ShiftsLogReportParametersModel parameters, CancellationToken cancellationToken = default);
 
         /// <summary>
-        /// Generates assets report.
+        /// Generates assets log report.
         /// </summary>
         /// <param name="parameters">Parameters.</param>
         /// <param name="cancellationToken">Cancellation token.</param>
@@ -104,7 +112,15 @@ namespace Gizmo.Web.Api.Services
         public Task<AssetsLogReportModel> AssetsLogAsync(AssetsLogReportParametersModel parameters, CancellationToken cancellationToken = default);
 
         /// <summary>
-        /// Generates invoices report.
+        /// Generates invoice report.
+        /// </summary>
+        /// <param name="parameters">Parameters.</param>
+        /// <param name="cancellationToken">Cancellation token.</param>
+        /// <returns>Report.</returns>
+        public Task<InvoiceReportModel> InvoiceAsync(InvoiceReportParametersModel parameters, CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Generates invoices log report.
         /// </summary>
         /// <param name="parameters">Parameters.</param>
         /// <param name="cancellationToken">Cancellation token.</param>
@@ -118,6 +134,14 @@ namespace Gizmo.Web.Api.Services
         /// <param name="cancellationToken">Cancellation token.</param>
         /// <returns>Report.</returns>
         public Task<ZLogReportModel> ZLogAsync(ZLogReportParametersModel parameters, CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Generates z report.
+        /// </summary>
+        /// <param name="parameters">Parameters.</param>
+        /// <param name="cancellationToken">Cancellation token.</param>
+        /// <returns>Report.</returns>
+        public Task<ZReportModel> ZAsync(ZReportParametersModel parameters, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Generates application report.
@@ -136,12 +160,20 @@ namespace Gizmo.Web.Api.Services
         public Task<ApplicationsReportModel> ApplicationsAsync(ApplicationsReportParametersModel parameters, CancellationToken cancellationToken = default);
 
         /// <summary>
-        /// Generates sessions report.
+        /// Generates sessions log report.
         /// </summary>
         /// <param name="parameters">Parameters.</param>
         /// <param name="cancellationToken">Cancellation token.</param>
         /// <returns>Report.</returns>
         public Task<SessionsLogReportModel> SessionsLogAsync(SessionsLogReportParametersModel parameters, CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Generates license report.
+        /// </summary>
+        /// <param name="parameters">Parameters.</param>
+        /// <param name="cancellationToken">Cancellation token.</param>
+        /// <returns>Report.</returns>
+        public Task<LicenseReportModel> LicenseAsync(LicenseReportParametersModel parameters, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Generates licenses report.
@@ -152,11 +184,19 @@ namespace Gizmo.Web.Api.Services
         public Task<LicensesReportModel> LicensesAsync(LicensesReportParametersModel parameters, CancellationToken cancellationToken = default);
 
         /// <summary>
-        /// Generates orders report.
+        /// Generates orders log report.
         /// </summary>
         /// <param name="parameters">Parameters.</param>
         /// <param name="cancellationToken">Cancellation token.</param>
         /// <returns>Report.</returns>
         public Task<OrdersLogReportModel> OrdersLogAsync(OrdersLogReportParametersModel parameters, CancellationToken cancellationToken = default);
+        
+        /// <summary>
+        /// Generates orders statistics report.
+        /// </summary>
+        /// <param name="parameters">Parameters.</param>
+        /// <param name="cancellationToken">Cancellation token.</param>
+        /// <returns>Report.</returns>
+        public Task<OrdersStatisticsReportModel> OrdersStatisticsAsync(OrdersStatisticsReportParametersModel parameters, CancellationToken cancellationToken = default);
     }
 }
