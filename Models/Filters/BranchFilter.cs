@@ -20,5 +20,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(1)]
         public List<string> Expand { get; set; } = new();
+
+        /// <summary>
+        /// Branch name.
+        /// </summary>
+        [MessagePack.Key(2)]
+        public string? Name { get; init; } 
     }
 }
