@@ -15,7 +15,7 @@ namespace Gizmo.Web.Api.Models
         /// Report Name.
         /// </summary>
         [MessagePack.Key(0)]
-        public string Name { get; set; } = string.Empty;
+        public string? Name { get; set; }
 
         /// <summary>
         /// Filtered Date From.
@@ -33,7 +33,7 @@ namespace Gizmo.Web.Api.Models
         /// Company Name.
         /// </summary>
         [MessagePack.Key(3)]
-        public string CompanyName { get; set; } = string.Empty;
+        public string? CompanyName { get; set; }
 
         ///// <summary>
         ///// Report Type.
@@ -51,7 +51,7 @@ namespace Gizmo.Web.Api.Models
         /// Filtered User Name.
         /// </summary>
         [MessagePack.Key(6)]
-        public string UserName { get; set; } = string.Empty;
+        public string? UserName { get; set; }
 
         /// <summary>
         /// List of applications that ran within the reporting period.

@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
         /// License info.
         /// </summary>
         [MessagePack.Key(0)]
-        public LicenseInfoDTOModel LicenseInfo { get; set; }
+        public LicenseInfoDTOModel LicenseInfo { get; set; } = new LicenseInfoDTOModel();
 
         /// <summary>
         /// Total seconds the license was in use.
@@ -25,7 +25,7 @@ namespace Gizmo.Web.Api.Models
         /// Total time the license was in use as text.
         /// </summary>
         [MessagePack.Key(2)]
-        public string TotalRunTime { get; set; }
+        public string? TotalRunTime { get; set; }
 
         /// <summary>
         /// Time of license last usage.
@@ -37,6 +37,6 @@ namespace Gizmo.Web.Api.Models
         /// List of executables that use the license and ran within the reporting period.
         /// </summary>
         [MessagePack.Key(4)]
-        public List<ExecutableInfoDTOModel> Executables { get; set; }
+        public List<ExecutableInfoDTOModel> Executables { get; set; } = new List<ExecutableInfoDTOModel>();
     }
 }

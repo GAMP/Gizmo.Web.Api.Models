@@ -16,7 +16,7 @@
         /// License name.
         /// </summary>
         [MessagePack.Key(1)]
-        public string LicenseName { get; set; }
+        public string? LicenseName { get; set; }
 
         /// <summary>
         /// Number of active keys.

@@ -16,6 +16,6 @@
         /// Product information.
         /// </summary>
         [MessagePack.Key(1)]
-        public GroupProductSoldDTOModel Product { get; set; }
+        public GroupProductSoldDTOModel Product { get; set; } = new GroupProductSoldDTOModel();
     }
 }

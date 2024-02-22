@@ -12,13 +12,13 @@ namespace Gizmo.Web.Api.Models
         /// The name of the user to which the session belongs.
         /// </summary>
         [MessagePack.Key(0)]
-        public string UserName { get; set; }
+        public string? UserName { get; set; }
 
         /// <summary>
         /// The name of the host on which the user session ran.
         /// </summary>
         [MessagePack.Key(1)]
-        public string HostName { get; set; }
+        public string? HostName { get; set; }
 
         /// <summary>
         /// The number of the host on which the user session ran.
@@ -36,7 +36,7 @@ namespace Gizmo.Web.Api.Models
         /// The name of the operator that started the session.
         /// </summary>
         [MessagePack.Key(4)]
-        public string LoginOperatorName { get; set; }
+        public string? LoginOperatorName { get; set; }
 
         /// <summary>
         /// The Id of the operator that ended the session.
@@ -48,13 +48,13 @@ namespace Gizmo.Web.Api.Models
         /// The name of the operator that ended the session.
         /// </summary>
         [MessagePack.Key(6)]
-        public string LogoutOperatorName { get; set; }
+        public string? LogoutOperatorName { get; set; }
 
         /// <summary>
         /// The name of the host to which the session was moved.
         /// </summary>
         [MessagePack.Key(7)]
-        public string MoveHostName { get; set; }
+        public string? MoveHostName { get; set; }
 
         /// <summary>
         /// The state of the session.

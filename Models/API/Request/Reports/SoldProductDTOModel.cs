@@ -16,7 +16,7 @@
         /// Product name.
         /// </summary>
         [MessagePack.Key(1)]
-        public string ProductName { get; set; }
+        public string? ProductName { get; set; }
 
         /// <summary>
         /// The unit price of the product.

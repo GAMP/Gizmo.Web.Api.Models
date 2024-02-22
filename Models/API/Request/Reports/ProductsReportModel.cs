@@ -82,15 +82,21 @@ namespace Gizmo.Web.Api.Models
         public DateTime DateTo { get; set; }
 
         /// <summary>
-        /// Filter User Id.
+        /// Filter Product Id.
         /// </summary>
         [MessagePack.Key(2)]
+        public int? ProductId { get; set; }
+
+        /// <summary>
+        /// Filter User Id.
+        /// </summary>
+        [MessagePack.Key(3)]
         public int? UserId { get; set; }
 
         /// <summary>
         /// Hide unused products.
         /// </summary>
-        [MessagePack.Key(3)]
+        [MessagePack.Key(4)]
         public bool HideUnused { get; set; }
     }
 }

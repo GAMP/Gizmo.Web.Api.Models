@@ -51,7 +51,7 @@ namespace Gizmo.Web.Api.Models
         /// Filtered Product Name.
         /// </summary>
         [MessagePack.Key(6)]
-        public string ProductName { get; set; }
+        public string? ProductName { get; set; }
 
         /// <summary>
         /// Filtered User Id.
@@ -63,13 +63,13 @@ namespace Gizmo.Web.Api.Models
         /// Filtered User Name.
         /// </summary>
         [MessagePack.Key(8)]
-        public string UserName { get; set; }
+        public string? UserName { get; set; }
 
         /// <summary>
         /// List of product sales per user group.
         /// </summary>
         [MessagePack.Key(9)]
-        public List<UserGroupProductsSoldDTOModel> UserGroups { get; set; }
+        public List<UserGroupProductsSoldDTOModel> UserGroups { get; set; } = new List<UserGroupProductsSoldDTOModel>();
 
         /// <summary>
         /// List of records for the general sales chart.

@@ -16,7 +16,7 @@
         /// Application name.
         /// </summary>
         [MessagePack.Key(1)]
-        public string ApplicationName { get; set; } = string.Empty;
+        public string? ApplicationName { get; set; }
 
         /// <summary>
         /// The number of unique users who ran the application.
@@ -46,7 +46,7 @@
         /// Total time the application was running as text.
         /// </summary>
         [MessagePack.Key(6)]
-        public string TotalTime { get; set; } = string.Empty;
+        public string? TotalTime { get; set; }
 
         /// <summary>
         /// Run time percentage in comparison with other applications within the same period.
@@ -58,6 +58,6 @@
         /// Average daily run time as text.
         /// </summary>
         [MessagePack.Key(8)]
-        public string AverageDailyExecutionTime { get; set; } = string.Empty;
+        public string? AverageDailyExecutionTime { get; set; }
     }
 }

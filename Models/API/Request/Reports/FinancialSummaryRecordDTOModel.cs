@@ -16,7 +16,7 @@
         /// Payment method name.
         /// </summary>
         [MessagePack.Key(1)]
-        public string PaymentMethodName { get; set; }
+        public string? PaymentMethodName { get; set; }
 
         /// <summary>
         /// Number of items within the record.

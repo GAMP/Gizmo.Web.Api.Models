@@ -10,7 +10,7 @@
         /// The name of the chart record.
         /// </summary>
         [MessagePack.Key(0)]
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         /// <summary>
         /// The value of the chart record.

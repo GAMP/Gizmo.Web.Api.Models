@@ -76,7 +76,7 @@ namespace Gizmo.Web.Api.Models
         /// Report Shifts.
         /// </summary>
         [MessagePack.Key(10)]
-        public List<ShiftDTOModel> Shifts { get; set; }
+        public List<ShiftDTOModel> Shifts { get; set; } = new List<ShiftDTOModel>();
 
         /// <summary>
         /// Total amount expected the active shifts to end with excluding start cash.

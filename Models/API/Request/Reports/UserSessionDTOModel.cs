@@ -78,6 +78,6 @@ namespace Gizmo.Web.Api.Models
         /// The time the session was running as text.
         /// </summary>
         [MessagePack.Key(11)]
-        public string Duration { get; set; }
+        public string? Duration { get; set; }
     }
 }

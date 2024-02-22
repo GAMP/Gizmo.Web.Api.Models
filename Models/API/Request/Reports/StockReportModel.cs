@@ -45,7 +45,7 @@ namespace Gizmo.Web.Api.Models
         /// List of products with stock.
         /// </summary>
         [MessagePack.Key(5)]
-        public List<ProductStockDTOModel> Products { get; set; }
+        public List<ProductStockDTOModel> Products { get; set; } = new List<ProductStockDTOModel>();
     }
 
     /// <summary>

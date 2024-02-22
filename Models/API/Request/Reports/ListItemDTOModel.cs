@@ -16,6 +16,6 @@
         /// Item name.
         /// </summary>
         [MessagePack.Key(1)]
-        public string Name { get; set; }
+        public string? Name { get; set; }
     }
 }

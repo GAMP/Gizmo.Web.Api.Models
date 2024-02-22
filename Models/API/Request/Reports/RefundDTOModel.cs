@@ -24,7 +24,7 @@ namespace Gizmo.Web.Api.Models
         /// The name of the operator that performed the refund.
         /// </summary>
         [MessagePack.Key(2)]
-        public string OperatorName { get; set; }
+        public string? OperatorName { get; set; }
 
         /// <summary>
         /// The Id of the register on which the refund performed.
@@ -36,7 +36,7 @@ namespace Gizmo.Web.Api.Models
         /// The name of the register on which the refund was performed.
         /// </summary>
         [MessagePack.Key(4)]
-        public string RegisterName { get; set; }
+        public string? RegisterName { get; set; }
 
         /// <summary>
         /// Refund method Id.
@@ -48,7 +48,7 @@ namespace Gizmo.Web.Api.Models
         /// Refund method name.
         /// </summary>
         [MessagePack.Key(6)]
-        public string RefundMethodName { get; set; }
+        public string? RefundMethodName { get; set; }
 
         /// <summary>
         /// Amount refunded.

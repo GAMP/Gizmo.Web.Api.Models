@@ -76,7 +76,7 @@ namespace Gizmo.Web.Api.Models
         /// List of product transactions within the reporting period.
         /// </summary>
         [MessagePack.Key(10)]
-        public List<ProductTransactionDTOModel> ProductTransactions { get; set; }
+        public List<ProductTransactionDTOModel> ProductTransactions { get; set; } = new List<ProductTransactionDTOModel>();
     }
 
     /// <summary>

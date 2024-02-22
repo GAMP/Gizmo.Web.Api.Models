@@ -12,12 +12,12 @@ namespace Gizmo.Web.Api.Models
         /// User Group Name.
         /// </summary>
         [MessagePack.Key(0)]
-        public string UserGroupName { get; set; }
+        public string? UserGroupName { get; set; }
 
         /// <summary>
         /// List of users within this group.
         /// </summary>
         [MessagePack.Key(1)]
-        public List<TopUserInfoDTOModel> TopUsers { get; set; }
+        public List<TopUserInfoDTOModel> TopUsers { get; set; } = new List<TopUserInfoDTOModel>();
     }
 }

@@ -31,7 +31,7 @@ namespace Gizmo.Web.Api.Models
         /// Payment method name.
         /// </summary>
         [MessagePack.Key(3)]
-        public string PaymentMethodName { get; set; }
+        public string? PaymentMethodName { get; set; }
 
         /// <summary>
         /// Amount of the invoice payment.
@@ -67,7 +67,7 @@ namespace Gizmo.Web.Api.Models
         /// The name of the operator that performed the invoice payment.
         /// </summary>
         [MessagePack.Key(9)]
-        public string OperatorName { get; set; }
+        public string? OperatorName { get; set; }
 
         /// <summary>
         /// The Id of the register on which the invoice payment was performed.
@@ -79,7 +79,7 @@ namespace Gizmo.Web.Api.Models
         /// The name of the register on which the invoice payment was performed.
         /// </summary>
         [MessagePack.Key(11)]
-        public string RegisterName { get; set; }
+        public string? RegisterName { get; set; }
 
         /// <summary>
         /// The Id of the shift that the invoice payment belongs.

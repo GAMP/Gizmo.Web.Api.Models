@@ -60,6 +60,6 @@ namespace Gizmo.Web.Api.Models
         /// User session information.
         /// </summary>
         [MessagePack.Key(8)]
-        public UserSessionDTOModel UserSession { get; set; }
+        public UserSessionDTOModel UserSession { get; set; } = new UserSessionDTOModel();
     }
 }

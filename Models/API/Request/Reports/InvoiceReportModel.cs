@@ -16,7 +16,7 @@ namespace Gizmo.Web.Api.Models
         /// Report Name.
         /// </summary>
         [MessagePack.Key(0)]
-        public string Name { get; set; } = string.Empty;
+        public string? Name { get; set; }
 
         /// <summary>
         /// Filtered Date From.
@@ -34,7 +34,7 @@ namespace Gizmo.Web.Api.Models
         /// Company Name.
         /// </summary>
         [MessagePack.Key(3)]
-        public string CompanyName { get; set; } = string.Empty;
+        public string? CompanyName { get; set; }
 
         ///// <summary>
         ///// Report Type.
@@ -52,7 +52,7 @@ namespace Gizmo.Web.Api.Models
         /// Information of the invoice.
         /// </summary>
         [MessagePack.Key(6)]
-        public InvoiceDTOModel Invoice { get; set; }
+        public InvoiceDTOModel Invoice { get; set; } = new InvoiceDTOModel();
 
         /// <summary>
         /// List of products sold with this invoice.

@@ -28,7 +28,7 @@
         /// Total hours the operator worked as text.
         /// </summary>
         [MessagePack.Key(3)]
-        public string HoursWorked { get; set; } = string.Empty;
+        public string? HoursWorked { get; set; }
 
         /// <summary>
         /// Total minutes the operator sold.
@@ -40,7 +40,7 @@
         /// Total hours the operator sold as text.
         /// </summary>
         [MessagePack.Key(5)]
-        public string HoursSold { get; set; } = string.Empty;
+        public string? HoursSold { get; set; }
 
         /// <summary>
         /// Number of products the operator sold.

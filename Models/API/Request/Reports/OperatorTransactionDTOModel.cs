@@ -14,7 +14,7 @@ namespace Gizmo.Web.Api.Models
         /// Operator name.
         /// </summary>
         [Key(0)]
-        public string OperatorName { get; set; } = string.Empty;
+        public string? OperatorName { get; set; }
 
         /// <summary>
         /// The creation time of the transaction.
@@ -32,13 +32,13 @@ namespace Gizmo.Web.Api.Models
         /// The transaction title.
         /// </summary>
         [Key(3)]
-        public string Title { get; set; } = string.Empty;
+        public string? Title { get; set; }
 
         /// <summary>
         /// The username of the customer for whom the transaction was created.
         /// </summary>
         [Key(4)]
-        public string CustomerName { get; set; } = string.Empty;
+        public string? CustomerName { get; set; }
 
         /// <summary>
         /// The Id of the invoice related to the transaction.
@@ -68,18 +68,18 @@ namespace Gizmo.Web.Api.Models
         /// Payment Method Name.
         /// </summary>
         [Key(9)]
-        public string PaymentMethodName { get; set; } = string.Empty;
+        public string? PaymentMethodName { get; set; }
 
         /// <summary>
         /// Register Name.
         /// </summary>
         [Key(10)]
-        public string RegisterName { get; set; } = string.Empty;
+        public string? RegisterName { get; set; }
 
         /// <summary>
         /// Note.
         /// </summary>
         [Key(11)]
-        public string Note { get; set; } = string.Empty;
+        public string? Note { get; set; }
     }
 }

@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
         /// Asset type.
         /// </summary>
         [MessagePack.Key(0)]
-        public string AssetType { get; set; } = string.Empty;
+        public string? AssetType { get; set; }
 
         /// <summary>
         /// Asset number.
@@ -24,13 +24,13 @@ namespace Gizmo.Web.Api.Models
         /// Asset name.
         /// </summary>
         [MessagePack.Key(2)]
-        public string AssetName { get; set; } = string.Empty;
+        public string? AssetName { get; set; }
 
         /// <summary>
         /// Customer name.
         /// </summary>
         [MessagePack.Key(3)]
-        public string Customer { get; set; } = string.Empty;
+        public string? Customer { get; set; }
 
         /// <summary>
         /// The time the asset was checked out.
@@ -42,7 +42,7 @@ namespace Gizmo.Web.Api.Models
         /// Name of the operator that checked out the asset.
         /// </summary>
         [MessagePack.Key(5)]
-        public string CheckOutOperator { get; set; } = string.Empty;
+        public string? CheckOutOperator { get; set; }
 
         /// <summary>
         /// The time the asset was checked in or null if is still checked out.
@@ -54,12 +54,12 @@ namespace Gizmo.Web.Api.Models
         /// Name of the operator that checked in the asset.
         /// </summary>
         [MessagePack.Key(7)]
-        public string CheckInOperator { get; set; } = string.Empty;
+        public string? CheckInOperator { get; set; }
 
         /// <summary>
         /// Duration of the lease as text.
         /// </summary>
         [MessagePack.Key(8)]
-        public string LeaseDuration { get; set; } = string.Empty;
+        public string? LeaseDuration { get; set; }
     }
 }

@@ -24,7 +24,7 @@ namespace Gizmo.Web.Api.Models
         /// The payment type name of the transaction.
         /// </summary>
         [MessagePack.Key(2)]
-        public string PaymentMethodName { get; set; }
+        public string? PaymentMethodName { get; set; }
 
         /// <summary>
         /// The amount of the transaction.

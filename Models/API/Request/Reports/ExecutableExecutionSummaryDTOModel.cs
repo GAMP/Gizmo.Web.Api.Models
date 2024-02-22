@@ -16,7 +16,7 @@
         /// Executable name.
         /// </summary>
         [MessagePack.Key(1)]
-        public string ExecutableName { get; set; }
+        public string? ExecutableName { get; set; }
 
         /// <summary>
         /// The number of unique users who ran the executable.
@@ -40,12 +40,12 @@
         /// Total time the executable was running as text.
         /// </summary>
         [MessagePack.Key(5)]
-        public string TotalTime { get; set; }
+        public string? TotalTime { get; set; }
 
         /// <summary>
         /// Average daily run time.
         /// </summary>
         [MessagePack.Key(6)]
-        public string AverageDailyExecutionTime { get; set; }
+        public string? AverageDailyExecutionTime { get; set; }
     }
 }

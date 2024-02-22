@@ -51,7 +51,7 @@ namespace Gizmo.Web.Api.Models
         /// Average daily member visits duration.
         /// </summary>
         [MessagePack.Key(6)]
-        public string AverageMemberUsagePeriodMinutes { get; set; } = string.Empty;
+        public string? AverageMemberUsagePeriodMinutes { get; set; }
 
         /// <summary>
         /// Average daily guest visits duration.

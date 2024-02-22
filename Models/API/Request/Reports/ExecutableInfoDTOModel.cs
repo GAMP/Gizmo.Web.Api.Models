@@ -18,7 +18,7 @@ namespace Gizmo.Web.Api.Models
         /// The name of the application on which the executable belongs.
         /// </summary>
         [MessagePack.Key(1)]
-        public string ApplicationName { get; set; }
+        public string? ApplicationName { get; set; }
 
         /// <summary>
         /// Executable Id.
@@ -30,7 +30,7 @@ namespace Gizmo.Web.Api.Models
         /// Executable name.
         /// </summary>
         [MessagePack.Key(3)]
-        public string ExecutableName { get; set; }
+        public string? ExecutableName { get; set; }
 
         /// <summary>
         /// Total seconds the executable was running.
@@ -42,7 +42,7 @@ namespace Gizmo.Web.Api.Models
         /// Total time the executable was running as text.
         /// </summary>
         [MessagePack.Key(5)]
-        public string TotalTime { get; set; }
+        public string? TotalTime { get; set; }
 
         /// <summary>
         /// List of executable runs.
@@ -72,6 +72,6 @@ namespace Gizmo.Web.Api.Models
         /// Average daily run time.
         /// </summary>
         [MessagePack.Key(10)]
-        public string AverageDailyExecutionTime { get; set; }
+        public string? AverageDailyExecutionTime { get; set; }
     }
 }

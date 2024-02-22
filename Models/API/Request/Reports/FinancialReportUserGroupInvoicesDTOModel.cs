@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
         /// Group name.
         /// </summary>
         [MessagePack.Key(0)]
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         /// <summary>
         /// List of fixed time sold.

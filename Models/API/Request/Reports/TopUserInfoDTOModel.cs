@@ -16,7 +16,7 @@
         /// User name.
         /// </summary>
         [MessagePack.Key(1)]
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         /// <summary>
         /// The score the user achieved.
@@ -28,6 +28,6 @@
         /// The score the user achieved as text.
         /// </summary>
         [MessagePack.Key(3)]
-        public string ScoreText { get; set; }
+        public string? ScoreText { get; set; }
     }
 }

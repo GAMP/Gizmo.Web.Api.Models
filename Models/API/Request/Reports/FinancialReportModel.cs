@@ -52,7 +52,7 @@ namespace Gizmo.Web.Api.Models
         /// Filtered Operator Name.
         /// </summary>
         [MessagePack.Key(6)]
-        public string OperatorName { get; set; }
+        public string? OperatorName { get; set; }
 
         /// <summary>
         /// Filtered Register Id.
@@ -64,7 +64,7 @@ namespace Gizmo.Web.Api.Models
         /// Filtered Register Name.
         /// </summary>
         [MessagePack.Key(8)]
-        public string RegisterName { get; set; }
+        public string? RegisterName { get; set; }
 
         /// <summary>
         /// Filtered Financial Report Type.

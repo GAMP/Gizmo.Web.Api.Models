@@ -15,7 +15,7 @@ namespace Gizmo.Web.Api.Models
         /// Report Name.
         /// </summary>
         [MessagePack.Key(0)]
-        public string Name { get; set; } = string.Empty;
+        public string? Name { get; set; }
 
         /// <summary>
         /// Filtered Date From.
@@ -33,7 +33,7 @@ namespace Gizmo.Web.Api.Models
         /// Company Name.
         /// </summary>
         [MessagePack.Key(3)]
-        public string CompanyName { get; set; } = string.Empty;
+        public string? CompanyName { get; set; }
 
         ///// <summary>
         ///// Report Type.
@@ -51,7 +51,7 @@ namespace Gizmo.Web.Api.Models
         /// Filtered Asset Type Name.
         /// </summary>
         [MessagePack.Key(6)]
-        public string AssetTypeName { get; set; } = string.Empty;
+        public string? AssetTypeName { get; set; }
 
         /// <summary>
         /// Filtered Asset Id.
@@ -63,7 +63,7 @@ namespace Gizmo.Web.Api.Models
         /// Filtered Asset Name.
         /// </summary>
         [MessagePack.Key(8)]
-        public string AssetName { get; set; } = string.Empty;
+        public string? AssetName { get; set; }
 
         /// <summary>
         /// Filtered Check Out Operator Id.
@@ -75,7 +75,7 @@ namespace Gizmo.Web.Api.Models
         /// Filtered Check Out Operator Name.
         /// </summary>
         [MessagePack.Key(10)]
-        public string CheckOutOperatorName { get; set; } = string.Empty;
+        public string? CheckOutOperatorName { get; set; }
 
         /// <summary>
         /// Filtered Check In Operator Id.
@@ -87,7 +87,7 @@ namespace Gizmo.Web.Api.Models
         /// Filtered Check In Operator Name.
         /// </summary>
         [MessagePack.Key(12)]
-        public string CheckInOperatorName { get; set; } = string.Empty;
+        public string? CheckInOperatorName { get; set; }
 
         /// <summary>
         /// Filtered User Id.
@@ -99,7 +99,7 @@ namespace Gizmo.Web.Api.Models
         /// Filtered User Name.
         /// </summary>
         [MessagePack.Key(14)]
-        public string UserName { get; set; } = string.Empty;
+        public string? UserName { get; set; }
 
         /// <summary>
         /// List of asset transactions within the reporting period.

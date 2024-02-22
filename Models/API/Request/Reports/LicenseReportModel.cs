@@ -51,19 +51,19 @@ namespace Gizmo.Web.Api.Models
         /// Filtered License Name.
         /// </summary>
         [MessagePack.Key(6)]
-        public string LicenseName { get; set; }
+        public string? LicenseName { get; set; }
 
         /// <summary>
         /// License usage information.
         /// </summary>
         [MessagePack.Key(7)]
-        public LicenseUsageInfoDTOModel LicenseUsage { get; set; }
+        public LicenseUsageInfoDTOModel LicenseUsage { get; set; } = new LicenseUsageInfoDTOModel();
 
         /// <summary>
         /// List of records for the concurrent keys chart.
         /// </summary>
         [MessagePack.Key(8)]
-        public List<ChartRecordDTOModel> LicenseTimeChart { get; set; }
+        public List<ChartRecordDTOModel> LicenseTimeChart { get; set; } = new List<ChartRecordDTOModel>();
     }
 
     /// <summary>

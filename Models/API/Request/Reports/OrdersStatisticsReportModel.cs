@@ -7,7 +7,7 @@ using Gizmo.Web.Api.Models.Enumerations;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Orders Log Report.
+    /// Orders Statistics Report.
     /// </summary>
     [MessagePack.MessagePackObject()]
     public sealed class OrdersStatisticsReportModel : IWebApiModel
@@ -64,7 +64,7 @@ namespace Gizmo.Web.Api.Models
         /// Filtered Operator Name.
         /// </summary>
         [MessagePack.Key(8)]
-        public string OperatorName { get; set; }
+        public string? OperatorName { get; set; }
 
         /// <summary>
         /// Filtered User Id.
@@ -76,7 +76,7 @@ namespace Gizmo.Web.Api.Models
         /// Filtered User Name.
         /// </summary>
         [MessagePack.Key(10)]
-        public string UserName { get; set; }
+        public string? UserName { get; set; }
 
         /// <summary>
         /// List of records for the average delivery time per operator chart.
@@ -91,6 +91,9 @@ namespace Gizmo.Web.Api.Models
         public List<ChartGroupDTOModel> OrdersChart { get; set; } = new List<ChartGroupDTOModel>();
     }
 
+    /// <summary>
+    /// Orders Statistics Report Filter.
+    /// </summary>
     [MessagePack.MessagePackObject()]
     public sealed class OrdersStatisticsReportParametersModel : IWebApiModel, IUriParametersQuery
     {
@@ -107,5 +110,29 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(1)]
         [Required]
         public DateTime DateTo { get; set; }
+
+        /// <summary>
+        /// Filter Order Source.
+        /// </summary>
+        [MessagePack.Key(2)]
+        public OrderSource? OrderSource { get; set; }
+
+        /// <summary>
+        /// Filter Order Status.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public OrderStatus? OrderStatus { get; set; }
+
+        /// <summary>
+        /// Filter Operator Id.
+        /// </summary>
+        [MessagePack.Key(4)]
+        public int? OperatorId { get; set; }
+
+        /// <summary>
+        /// Filter User Id.
+        /// </summary>
+        [MessagePack.Key(5)]
+        public int? UserId { get; set; }
     }
 }

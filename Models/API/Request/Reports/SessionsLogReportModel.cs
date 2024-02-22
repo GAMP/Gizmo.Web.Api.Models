@@ -53,7 +53,7 @@ namespace Gizmo.Web.Api.Models
         /// Filtered User Name.
         /// </summary>
         [MessagePack.Key(6)]
-        public string UserName { get; set; }
+        public string? UserName { get; set; }
 
         /// <summary>
         /// Filtered Host Id.
@@ -65,7 +65,7 @@ namespace Gizmo.Web.Api.Models
         /// Filtered Host Name.
         /// </summary>
         [MessagePack.Key(8)]
-        public string HostName { get; set; }
+        public string? HostName { get; set; }
 
         /// <summary>
         /// Filtered Operator Id.
@@ -77,7 +77,7 @@ namespace Gizmo.Web.Api.Models
         /// Filtered Operator Name.
         /// </summary>
         [MessagePack.Key(10)]
-        public string OperatorName { get; set; }
+        public string? OperatorName { get; set; }
 
         /// <summary>
         /// List of sessions within the reporting period.
