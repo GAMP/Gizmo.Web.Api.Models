@@ -2,8 +2,6 @@
 using System;
 using Gizmo.Web.Api.Models.Abstractions;
 using System.Collections.Generic;
-using System.Runtime.Serialization;
-using Gizmo.Web.Api.Models.Enumerations;
 
 namespace Gizmo.Web.Api.Models
 {
