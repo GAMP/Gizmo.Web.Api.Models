@@ -128,11 +128,5 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(19)]
         public string? UserNote { get; set; }
-
-        /// <summary>
-        /// The invoice that was created for the order, null if there is no related invoice.
-        /// </summary>
-        [MessagePack.Key(20)]
-        public InvoiceDTOModel Invoice { get; set; } = new InvoiceDTOModel();
     }
 }
