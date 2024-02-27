@@ -12,57 +12,27 @@ namespace Gizmo.Web.Api.Models
     public sealed class LicenseReportModel : IWebApiModel
     {
         /// <summary>
-        /// Report Name.
-        /// </summary>
-        [MessagePack.Key(0)]
-        public string? Name { get; set; }
-
-        /// <summary>
-        /// Filtered Date From.
-        /// </summary>
-        [MessagePack.Key(1)]
-        public DateTime DateFrom { get; set; }
-
-        /// <summary>
-        /// Filtered Date To.
-        /// </summary>
-        [MessagePack.Key(2)]
-        public DateTime DateTo { get; set; }
-
-        /// <summary>
-        /// Company Name.
-        /// </summary>
-        [MessagePack.Key(3)]
-        public string? CompanyName { get; set; }
-
-        ///// <summary>
-        ///// Report Type.
-        ///// </summary>
-        //[MessagePack.Key(4)]
-        //public ReportTypes ReportType { get; set; }
-
-        /// <summary>
         /// Filtered License Id.
         /// </summary>
-        [MessagePack.Key(5)]
+        [MessagePack.Key(0)]
         public int? LicenseId { get; set; }
 
         /// <summary>
         /// Filtered License Name.
         /// </summary>
-        [MessagePack.Key(6)]
+        [MessagePack.Key(1)]
         public string? LicenseName { get; set; }
 
         /// <summary>
         /// License usage information.
         /// </summary>
-        [MessagePack.Key(7)]
+        [MessagePack.Key(2)]
         public LicenseUsageInfoDTOModel LicenseUsage { get; set; } = new LicenseUsageInfoDTOModel();
 
         /// <summary>
         /// List of records for the concurrent keys chart.
         /// </summary>
-        [MessagePack.Key(8)]
+        [MessagePack.Key(3)]
         public List<ChartRecordDTOModel> LicenseTimeChart { get; set; } = new List<ChartRecordDTOModel>();
     }
 

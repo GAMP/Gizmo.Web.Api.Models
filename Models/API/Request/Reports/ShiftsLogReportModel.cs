@@ -13,93 +13,63 @@ namespace Gizmo.Web.Api.Models
     public sealed class ShiftsLogReportModel : IWebApiModel
     {
         /// <summary>
-        /// Report Name.
-        /// </summary>
-        [MessagePack.Key(0)]
-        public string? Name { get; set; }
-
-        /// <summary>
-        /// Filtered Date From.
-        /// </summary>
-        [MessagePack.Key(1)]
-        public DateTime DateFrom { get; set; }
-
-        /// <summary>
-        /// Filtered Date To.
-        /// </summary>
-        [MessagePack.Key(2)]
-        public DateTime DateTo { get; set; }
-
-        /// <summary>
-        /// Company Name.
-        /// </summary>
-        [MessagePack.Key(3)]
-        public string? CompanyName { get; set; }
-
-        ///// <summary>
-        ///// Report Type.
-        ///// </summary>
-        //[MessagePack.Key(4)]
-        //public ReportTypes ReportType { get; set; }
-
-        /// <summary>
         /// Filtered Operator Id.
         /// </summary>
-        [MessagePack.Key(5)]
+        [MessagePack.Key(0)]
         public int? OperatorId { get; set; }
 
         /// <summary>
         /// Filtered Operator Name.
         /// </summary>
-        [MessagePack.Key(6)]
+        [MessagePack.Key(1)]
         public string? OperatorName { get; set; }
 
         /// <summary>
         /// Filtered Register Id.
         /// </summary>
-        [MessagePack.Key(7)]
+        [MessagePack.Key(2)]
         public int? RegisterId { get; set; }
 
         /// <summary>
         /// Filtered Register Name.
         /// </summary>
-        [MessagePack.Key(8)]
+        [MessagePack.Key(3)]
         public string? RegisterName { get; set; }
 
         /// <summary>
         /// Filtered Shifts Log Report Types.
         /// </summary>
-        [MessagePack.Key(9)]
+        [MessagePack.Key(4)]
         public ShiftsLogReportTypes ShiftsLogReportType { get; set; }
 
         /// <summary>
         /// Report Shifts.
         /// </summary>
-        [MessagePack.Key(10)]
+        [MessagePack.Key(5)]
         public List<ShiftDTOModel> Shifts { get; set; } = new List<ShiftDTOModel>();
 
         /// <summary>
         /// Total amount expected the active shifts to end with excluding start cash.
         /// </summary>
-        [MessagePack.Key(11)]
+        [MessagePack.Key(6)]
         public decimal? TotalExpectedExcludingStartCashActive { get; set; }
 
         /// <summary>
         /// Total duration of the shifts as text.
         /// </summary>
-        [MessagePack.Key(12)]
+        [MessagePack.Key(7)]
         public string? TotalDuration { get; set; }
 
         /// <summary>
         /// Total amount expected the shifts to end with excluding start cash.
         /// </summary>
-        [MessagePack.Key(13)]
+        [MessagePack.Key(8)]
         public decimal? TotalExpectedExcludingStartCash { get; set; }
 
         /// <summary>
         /// Total difference between the expected and the actual amount.
         /// </summary>
-        [MessagePack.Key(14)]
+        [MessagePack.Key(9)]
         public decimal? TotalDifference { get; set; }
     }
 

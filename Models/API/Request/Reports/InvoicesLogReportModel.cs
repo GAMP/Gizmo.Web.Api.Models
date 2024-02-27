@@ -13,77 +13,46 @@ namespace Gizmo.Web.Api.Models
     public sealed class InvoicesLogReportModel : IWebApiModel
     {
         /// <summary>
-        /// Report Name.
-        /// </summary>
-        [MessagePack.Key(0)]
-        public string? Name { get; set; }
-
-        /// <summary>
-        /// Filtered Date From.
-        /// </summary>
-        [MessagePack.Key(1)]
-        public DateTime DateFrom { get; set; }
-
-        /// <summary>
-        /// Filtered Date To.
-        /// </summary>
-        [MessagePack.Key(2)]
-        public DateTime DateTo { get; set; }
-
-        /// <summary>
-        /// Company Name.
-        /// </summary>
-        [MessagePack.Key(3)]
-        public string? CompanyName { get; set; }
-
-        ///// <summary>
-        ///// Report Type.
-        ///// </summary>
-        //[MessagePack.Key(4)]
-        //public ReportTypes ReportType { get; set; }
-
-        /// <summary>
         /// Filtered Payment Status Type.
         /// </summary>
-        [MessagePack.Key(5)]
+        [MessagePack.Key(0)]
         public InvoicesLogPaymentStatusTypes? PaymentStatusType { get; set; }
 
         /// <summary>
         /// Filtered Voided Status Type.
         /// </summary>
-        [MessagePack.Key(6)]
+        [MessagePack.Key(1)]
         public InvoicesLogVoidedStatusTypes? VoidedStatusType { get; set; }
 
         /// <summary>
         /// Filtered Operator Id.
         /// </summary>
-        [MessagePack.Key(7)]
+        [MessagePack.Key(2)]
         public int? OperatorId { get; set; }
 
         /// <summary>
         /// Filtered Operator Name.
         /// </summary>
-        [MessagePack.Key(8)]
+        [MessagePack.Key(3)]
         public string? OperatorName { get; set; }
 
         /// <summary>
         /// Filtered Register Id.
         /// </summary>
-        [MessagePack.Key(9)]
+        [MessagePack.Key(4)]
         public int? RegisterId { get; set; }
 
         /// <summary>
         /// Filtered Register Name.
         /// </summary>
-        [MessagePack.Key(10)]
+        [MessagePack.Key(5)]
         public string? RegisterName { get; set; }
 
         /// <summary>
         /// List of invoices.
         /// </summary>
-        [MessagePack.Key(11)]
+        [MessagePack.Key(6)]
         public List<InvoiceDTOModel> Invoices { get; set; } = new List<InvoiceDTOModel>();
-
     }
 
     /// <summary>

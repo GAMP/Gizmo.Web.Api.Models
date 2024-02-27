@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace Gizmo.Web.Api.Models
+﻿namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Executable Information.
@@ -43,35 +41,5 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(5)]
         public string? TotalTime { get; set; }
-
-        /// <summary>
-        /// List of executable runs.
-        /// </summary>
-        [MessagePack.Key(6)]
-        public List<ExecutableExecutionInfoDTOModel> Executions { get; set; } = new List<ExecutableExecutionInfoDTOModel>();
-
-        /// <summary>
-        /// The number of unique users who ran the executable.
-        /// </summary>
-        [MessagePack.Key(7)]
-        public int UniqueUsers { get; set; }
-
-        /// <summary>
-        /// The number of unique session in which the executable ran.
-        /// </summary>
-        [MessagePack.Key(8)]
-        public int UniqueSessions { get; set; }
-
-        /// <summary>
-        /// Total number of runs.
-        /// </summary>
-        [MessagePack.Key(9)]
-        public int TotalExecutions { get; set; }
-
-        /// <summary>
-        /// Average daily run time.
-        /// </summary>
-        [MessagePack.Key(10)]
-        public string? AverageDailyExecutionTime { get; set; }
     }
 }

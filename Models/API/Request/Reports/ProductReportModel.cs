@@ -12,99 +12,69 @@ namespace Gizmo.Web.Api.Models
     public sealed class ProductReportModel : IWebApiModel
     {
         /// <summary>
-        /// Report Name.
-        /// </summary>
-        [MessagePack.Key(0)]
-        public string? Name { get; set; }
-
-        /// <summary>
-        /// Filtered Date From.
-        /// </summary>
-        [MessagePack.Key(1)]
-        public DateTime DateFrom { get; set; }
-
-        /// <summary>
-        /// Filtered Date To.
-        /// </summary>
-        [MessagePack.Key(2)]
-        public DateTime DateTo { get; set; }
-
-        /// <summary>
-        /// Company Name.
-        /// </summary>
-        [MessagePack.Key(3)]
-        public string? CompanyName { get; set; }
-
-        ///// <summary>
-        ///// Report Type.
-        ///// </summary>
-        //[MessagePack.Key(4)]
-        //public ReportTypes ReportType { get; set; }
-
-        /// <summary>
         /// Filtered Product Id.
         /// </summary>
-        [MessagePack.Key(5)]
+        [MessagePack.Key(0)]
         public int ProductId { get; set; }
 
         /// <summary>
         /// Filtered Product Name.
         /// </summary>
-        [MessagePack.Key(6)]
+        [MessagePack.Key(1)]
         public string? ProductName { get; set; }
 
         /// <summary>
         /// Filtered User Id.
         /// </summary>
-        [MessagePack.Key(7)]
+        [MessagePack.Key(2)]
         public int? UserId { get; set; }
 
         /// <summary>
         /// Filtered User Name.
         /// </summary>
-        [MessagePack.Key(8)]
+        [MessagePack.Key(3)]
         public string? UserName { get; set; }
 
         /// <summary>
         /// List of product sales per user group.
         /// </summary>
-        [MessagePack.Key(9)]
+        [MessagePack.Key(4)]
         public List<UserGroupProductsSoldDTOModel> UserGroups { get; set; } = new List<UserGroupProductsSoldDTOModel>();
 
         /// <summary>
         /// List of records for the general sales chart.
         /// </summary>
-        [MessagePack.Key(10)]
+        [MessagePack.Key(5)]
         public List<ChartRecordDTOModel> SalesChart { get; set; } = new List<ChartRecordDTOModel>();
 
         /// <summary>
         /// List of records for the sales per day chart.
         /// </summary>
-        [MessagePack.Key(11)]
+        [MessagePack.Key(6)]
         public List<ChartRecordDTOModel> SalesChartPerDay { get; set; } = new List<ChartRecordDTOModel>();
 
         /// <summary>
         /// List of records for the sales per hour chart.
         /// </summary>
-        [MessagePack.Key(12)]
+        [MessagePack.Key(7)]
         public List<ChartRecordDTOModel> SalesChartPerHour { get; set; } = new List<ChartRecordDTOModel>();
 
         /// <summary>
         /// List of records with minimum values for the stock chart.
         /// </summary>
-        [MessagePack.Key(13)]
+        [MessagePack.Key(8)]
         public List<ChartRecordDTOModel> StockChartMin { get; set; } = new List<ChartRecordDTOModel>();
 
         /// <summary>
         /// List of records with maximum values for the stock chart.
         /// </summary>
-        [MessagePack.Key(14)]
+        [MessagePack.Key(9)]
         public List<ChartRecordDTOModel> StockChartMax { get; set; } = new List<ChartRecordDTOModel>();
 
         /// <summary>
         /// List of records for the time usage chart.
         /// </summary>
-        [MessagePack.Key(15)]
+        [MessagePack.Key(10)]
         public List<TimeUsageChartRecordDTOModel> TimeUsageChart { get; set; } = new List<TimeUsageChartRecordDTOModel>();
     }
 

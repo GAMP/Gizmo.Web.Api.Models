@@ -12,63 +12,33 @@ namespace Gizmo.Web.Api.Models
     public sealed class LicensesReportModel : IWebApiModel
     {
         /// <summary>
-        /// Report Name.
-        /// </summary>
-        [MessagePack.Key(0)]
-        public string? Name { get; set; }
-
-        /// <summary>
-        /// Filtered Date From.
-        /// </summary>
-        [MessagePack.Key(1)]
-        public DateTime DateFrom { get; set; }
-
-        /// <summary>
-        /// Filtered Date To.
-        /// </summary>
-        [MessagePack.Key(2)]
-        public DateTime DateTo { get; set; }
-
-        /// <summary>
-        /// Company Name.
-        /// </summary>
-        [MessagePack.Key(3)]
-        public string? CompanyName { get; set; }
-
-        ///// <summary>
-        ///// Report Type.
-        ///// </summary>
-        //[MessagePack.Key(4)]
-        //public ReportTypes ReportType { get; set; }
-
-        /// <summary>
         /// Filtered License Id.
         /// </summary>
-        [MessagePack.Key(5)]
+        [MessagePack.Key(0)]
         public int? LicenseId { get; set; }
 
         /// <summary>
         /// Filtered License Name.
         /// </summary>
-        [MessagePack.Key(6)]
+        [MessagePack.Key(1)]
         public int? LicenseName { get; set; }
 
         /// <summary>
         /// Filtered Application Id.
         /// </summary>
-        [MessagePack.Key(7)]
+        [MessagePack.Key(2)]
         public int? ApplicationId { get; set; }
 
         /// <summary>
         /// Filtered Application Name.
         /// </summary>
-        [MessagePack.Key(8)]
+        [MessagePack.Key(3)]
         public int? ApplicationName { get; set; }
 
         /// <summary>
         /// List of license usages.
         /// </summary>
-        [MessagePack.Key(9)]
+        [MessagePack.Key(4)]
         public List<LicenseUsageInfoDTOModel> Licenses { get; set; } = new List<LicenseUsageInfoDTOModel>();
     }
 
