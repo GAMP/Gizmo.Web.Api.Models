@@ -201,6 +201,54 @@
   <data name="HOST_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Host</value>
   </data>
+  <data name="HOST_LAYOUT_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Host layout created event</value>
+  </data>
+  <data name="HOST_LAYOUT_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>Host layout created</value>
+  </data>
+  <data name="HOST_LAYOUT_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Host layout related events</value>
+  </data>
+  <data name="HOST_LAYOUT_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Host layout</value>
+  </data>
+  <data name="HOST_LAYOUT_GROUP_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Host layout group created event</value>
+  </data>
+  <data name="HOST_LAYOUT_GROUP_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>Host layout group created</value>
+  </data>
+  <data name="HOST_LAYOUT_GROUP_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Host layout group related events</value>
+  </data>
+  <data name="HOST_LAYOUT_GROUP_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Host layout group</value>
+  </data>
+  <data name="HOST_LAYOUT_GROUP_REMOVED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Host layout group removed event</value>
+  </data>
+  <data name="HOST_LAYOUT_GROUP_REMOVED_EVENT_NAME" xml:space="preserve">
+    <value>Host layout group removed</value>
+  </data>
+  <data name="HOST_LAYOUT_GROUP_UPDATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Host layout group updated event</value>
+  </data>
+  <data name="HOST_LAYOUT_GROUP_UPDATED_EVENT_NAME" xml:space="preserve">
+    <value>Host layout group updated</value>
+  </data>
+  <data name="HOST_LAYOUT_REMOVED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Host layout removed event</value>
+  </data>
+  <data name="HOST_LAYOUT_REMOVED_EVENT_NAME" xml:space="preserve">
+    <value>Host layout removed</value>
+  </data>
+  <data name="HOST_LAYOUT_UPDATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Host layout updated event</value>
+  </data>
+  <data name="HOST_LAYOUT_UPDATED_EVENT_NAME" xml:space="preserve">
+    <value>Host layout updated</value>
+  </data>
   <data name="LICENSE_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
     <value>License related events</value>
   </data>

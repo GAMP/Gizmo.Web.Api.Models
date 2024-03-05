@@ -1,7 +1,7 @@
 ﻿namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
-    /// Branch request event message base.
+    /// Branch event message base.
     /// </summary>
     [System.ComponentModel.DataAnnotations.Name("Branch", "BRANCH_EVENT_GROUP_NAME")]
     [System.ComponentModel.DataAnnotations.ExtendedDescription("Branch related events", "BRANCH_EVENT_GROUP_DESCRIPTION")]
