@@ -20,6 +20,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(0)]
         [StringLength(255)]
+        [Required()]
         public string Name { get; set; } = null!;
 
         /// <summary>
@@ -27,6 +28,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(1)]
         [StringLength(255)]
+        [Required()]
         public string Plugin { get; set; } = null!;
 
         /// <summary>
@@ -34,6 +36,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(2)]
         [StringLength(255)]
+        [Required()]
         public string Assembly { get; set; } = null!;
 
         #endregion
