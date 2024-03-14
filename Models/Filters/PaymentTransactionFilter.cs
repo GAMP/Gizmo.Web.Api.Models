@@ -21,7 +21,7 @@ namespace Gizmo.Web.Api.Models
         /// Include specified objects in the result.
         /// </summary>
         [MessagePack.Key(1)]
-        public List<string> Expand { get; set; } = new();
+        public List<string> Expand { get; set; } = [];
 
         /// <summary>
         /// Date from.
@@ -45,9 +45,18 @@ namespace Gizmo.Web.Api.Models
         }
 
         /// <summary>
-        /// Operator id.
+        /// Register id.
         /// </summary>
         [MessagePack.Key(5)]
+        public int? RegisterId
+        {
+            get; init;
+        }
+
+        /// <summary>
+        /// Operator id.
+        /// </summary>
+        [MessagePack.Key(6)]
         public int? OperatorId
         {
             get; init;
@@ -56,7 +65,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Customer id.
         /// </summary>
-        [MessagePack.Key(6)]
+        [MessagePack.Key(7)]
         public int? UserId
         {
             get; init;
@@ -65,7 +74,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Payment method id.
         /// </summary>
-        [MessagePack.Key(7)]
+        [MessagePack.Key(8)]
         public int? PaymentMethodId
         {
             get; init;
@@ -74,7 +83,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Direction type.
         /// </summary>
-        [MessagePack.Key(8)]
+        [MessagePack.Key(9)]
         public PaymentTransactionDirection? PaymentDirection
         {
             get; init;
@@ -83,7 +92,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Include invoice payments.
         /// </summary>
-        [MessagePack.Key(9)]
+        [MessagePack.Key(10)]
         public bool? IncludeInvoicePayments
         {
             get; init;
@@ -92,18 +101,16 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Include deposit payments.
         /// </summary>
-        [MessagePack.Key(10)]
+        [MessagePack.Key(11)]
         public bool? IncludeDepositPayments
         {
             get;init;
         }
 
-
-
         /// <summary>
         /// Include deposit refund payments.
         /// </summary>
-        [MessagePack.Key(11)]
+        [MessagePack.Key(12)]
         public bool? IncludeDepositRefunds
         {
             get; init;
@@ -112,7 +119,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Include invoice refund payments.
         /// </summary>
-        [MessagePack.Key(12)]
+        [MessagePack.Key(13)]
         public bool? IncludeInvoiceRefunds
         {
             get; init;
@@ -121,7 +128,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Include pay-in payments.
         /// </summary>
-        [MessagePack.Key(13)]
+        [MessagePack.Key(14)]
         public bool? IncludePayIns
         {
             get; init;
@@ -130,19 +137,10 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Include pay-out payments.
         /// </summary>
-        [MessagePack.Key(14)]
+        [MessagePack.Key(15)]
         public bool? IncludePayOuts
         {
             get; init;
-        }
-
-        /// <summary>
-        /// Register id.
-        /// </summary>
-        [MessagePack.Key(15)]
-        public int? RegisterId
-        {
-            get;init;
-        }
+        }    
     }
 }

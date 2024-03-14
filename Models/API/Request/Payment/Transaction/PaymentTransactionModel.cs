@@ -24,19 +24,10 @@ namespace Gizmo.Web.Api.Models
         }
 
         /// <summary>
-        /// Gets transaction date.
+        /// Optional register id.
         /// </summary>
         [MessagePack.Key(1)]
-        public DateTime Date
-        {
-            get; init;
-        }
-
-        /// <summary>
-        /// Gets transaction amount.
-        /// </summary>
-        [MessagePack.Key(2)]
-        public decimal Amount
+        public int? RegisterId
         {
             get; init;
         }
@@ -47,7 +38,7 @@ namespace Gizmo.Web.Api.Models
         /// <remarks>
         /// This might be null in some cases for example for online deposit.
         /// </remarks>
-        [MessagePack.Key(3)]
+        [MessagePack.Key(2)]
         public int? OperatorId
         {
             get; init;
@@ -56,17 +47,26 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Optional user id.
         /// </summary>
-        [MessagePack.Key(4)]
+        [MessagePack.Key(3)]
         public int? UserId
         {
-            get;init;
+            get; init;
         }
 
         /// <summary>
-        /// Gets payment transaction type.
+        /// Gets transaction date.
+        /// </summary>
+        [MessagePack.Key(4)]
+        public DateTime Date
+        {
+            get; init;
+        }
+
+        /// <summary>
+        /// Gets transaction amount.
         /// </summary>
         [MessagePack.Key(5)]
-        public PaymentTransactionType Type
+        public decimal Amount
         {
             get; init;
         }
@@ -81,21 +81,45 @@ namespace Gizmo.Web.Api.Models
         }
 
         /// <summary>
-        /// Optional transaction host id.
+        /// Gets payment transaction type.
         /// </summary>
         [MessagePack.Key(7)]
+        public PaymentTransactionType Type
+        {
+            get; init;
+        }
+
+        /// <summary>
+        /// Optional transaction host id.
+        /// </summary>
+        [MessagePack.Key(8)]
         public int? HostId
         {
             get; init;
         }
 
         /// <summary>
-        /// Optional register id.
+        /// Invoice id.
         /// </summary>
-        [MessagePack.Key(8)]
-        public int? RegisterId
+        /// <remarks>
+        /// This value will only be set for invoice payments.
+        /// </remarks>
+        [MessagePack.Key(9)]
+        public int? InvoiceId
         {
-            get;init;
+            get; init;
+        }
+
+        /// <summary>
+        /// Deposit payment id.
+        /// </summary>
+        /// <remarks>
+        /// This value will only be set for deposit payments.
+        /// </remarks>
+        [MessagePack.Key(10)]
+        public int? DepositPaymentId
+        {
+            get; init;
         }
     }
 }
