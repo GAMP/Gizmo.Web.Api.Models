@@ -54,10 +54,10 @@ namespace Gizmo.Web.Api.Models
         }
 
         /// <summary>
-        /// Optional customer id.
+        /// Optional user id.
         /// </summary>
         [MessagePack.Key(4)]
-        public int? CustomerId
+        public int? UserId
         {
             get;init;
         }
@@ -78,6 +78,24 @@ namespace Gizmo.Web.Api.Models
         public int PaymentMthodId
         {
             get; init;
+        }
+
+        /// <summary>
+        /// Optional transaction host id.
+        /// </summary>
+        [MessagePack.Key(7)]
+        public int? HostId
+        {
+            get; init;
+        }
+
+        /// <summary>
+        /// Optional register id.
+        /// </summary>
+        [MessagePack.Key(8)]
+        public int? RegisterId
+        {
+            get;init;
         }
     }
 }

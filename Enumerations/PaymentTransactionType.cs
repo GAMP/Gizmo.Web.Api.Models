@@ -39,6 +39,5 @@
         /// Manual withdraw.
         /// </summary>
         Withdraw = 6,
-
     }
 }
