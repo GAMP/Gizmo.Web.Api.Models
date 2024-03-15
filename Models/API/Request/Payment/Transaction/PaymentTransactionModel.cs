@@ -57,6 +57,7 @@ namespace Gizmo.Web.Api.Models
         /// Gets transaction date.
         /// </summary>
         [MessagePack.Key(4)]
+        [Sortable("CreatedTime")]
         public DateTime Date
         {
             get; init;
