@@ -1,7 +1,6 @@
 ﻿using MessagePack;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Gizmo.Web.Api.Messaging
 {
@@ -46,7 +45,7 @@ namespace Gizmo.Web.Api.Messaging
         public IEnumerable<OrderLineStateModel> States
         {
             get; init;
-        } = Enumerable.Empty<OrderLineStateModel>();
+        } = [];
 
         #endregion
     }
