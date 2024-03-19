@@ -76,7 +76,7 @@ namespace Gizmo.Web.Api.Models
         /// Gets transaction payment method.
         /// </summary>
         [MessagePack.Key(6)]
-        public int PaymentMthodId
+        public int PaymentMethodId
         {
             get; init;
         }
