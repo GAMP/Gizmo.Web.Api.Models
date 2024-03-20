@@ -54,7 +54,7 @@ namespace Gizmo.Web.Api
                 throw new JsonException();
 
             string? propertyName = reader.GetString();
-            if (propertyName == null || propertyName != DESCRIMINATOR_NAME)
+            if (propertyName == null || string.Compare(propertyName , DESCRIMINATOR_NAME, StringComparison.OrdinalIgnoreCase) != 0)
                 throw new JsonException();
 
             reader.Read();

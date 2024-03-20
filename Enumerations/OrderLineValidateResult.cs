@@ -1,9 +1,9 @@
 ﻿namespace Gizmo.Web.Api.Models.Enumerations
 {
     /// <summary>
-    /// Order line validation result.
+    /// Order line validation result code.
     /// </summary>
-    public enum OrderLineValidatonResult
+    public enum OrderLineValidateResult
     {
         /// <summary>
         /// Success.
@@ -29,5 +29,13 @@
         /// Invalid product id.
         /// </summary>
         InvalidProductId = 5,
+        /// <summary>
+        /// Invalid user type.
+        /// </summary>
+        InvalidUserType =6,
+        /// <summary>
+        /// Guest sale restricted.
+        /// </summary>
+        GuestRestricted =7,
     }
 }

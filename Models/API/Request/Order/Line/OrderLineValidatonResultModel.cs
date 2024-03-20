@@ -20,9 +20,18 @@ namespace Gizmo.Web.Api.Models.Models
         /// Validation result.
         /// </summary>
         [MessagePack.Key(1)]
-        public OrderLineValidatonResult Result
+        public OrderLineValidateResult Result
         {
             get; init;
+        }
+
+        /// <summary>
+        /// Readable result.
+        /// </summary>
+        [MessagePack.IgnoreMember()]
+        public string ResultReadable
+        {
+            get { return Result.ToString(); }
         }
 
         /// <summary>
@@ -31,7 +40,7 @@ namespace Gizmo.Web.Api.Models.Models
         /// <param name="model">Model.</param>
         /// <param name="result">Result.</param>
         /// <returns>New result model.</returns>
-        public static OrderLineValidatonResultModel Create(IOrderLineCreateModel model, OrderLineValidatonResult result)
+        public static OrderLineValidatonResultModel Create(IOrderLineCreateModel model, OrderLineValidateResult result)
         {
             return new OrderLineValidatonResultModel() { Guid = model.Guid, Result = result };
         }

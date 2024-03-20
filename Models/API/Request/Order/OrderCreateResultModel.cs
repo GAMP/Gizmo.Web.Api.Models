@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Gizmo.Web.Api.Models.Enumerations;
 using Gizmo.Web.Api.Models.Models;
 
 namespace Gizmo.Web.Api.Models
@@ -18,9 +19,15 @@ namespace Gizmo.Web.Api.Models
         public Guid? Guid { get; init; }
 
         /// <summary>
-        /// Gets the created order id.
+        /// Creation result.
         /// </summary>
         [MessagePack.Key(1)]
+        public OrderCreateResult Result { get; init; }
+
+        /// <summary>
+        /// Gets the created order id.
+        /// </summary>
+        [MessagePack.Key(2)]
         public int? OrderId
         {
             get; init;
@@ -32,7 +39,7 @@ namespace Gizmo.Web.Api.Models
         /// <remarks>
         /// This will only have value if order was created.
         /// </remarks>
-        [MessagePack.Key(2)]
+        [MessagePack.Key(3)]
         public Gizmo.OrderStatus OrderStatus
         {
             get; init;
@@ -41,7 +48,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Gets created invoice id.
         /// </summary>
-        [MessagePack.Key(3)]
+        [MessagePack.Key(4)]
         public int? InoviceId
         {
             get; init;
@@ -53,7 +60,7 @@ namespace Gizmo.Web.Api.Models
         /// <remarks>
         /// This will only have value if invoice was created.
         /// </remarks>
-        [MessagePack.Key(4)]
+        [MessagePack.Key(5)]
         public Gizmo.InvoiceStatus? InvoiceStatus
         {
             get; init;
@@ -62,16 +69,16 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Gets invalid lines.
         /// </summary>
-        [MessagePack.Key(5)]
+        [MessagePack.Key(6)]
         public IEnumerable<OrderLineValidatonResultModel> InvalidLines { get; init; } = [];
 
         /// <summary>
-        /// Gets if order is valid.
+        /// Result readable.
         /// </summary>
         [MessagePack.IgnoreMember()]
-        public bool IsValid
+        public string ResultReadable
         {
-            get { return !InvalidLines.Any(); }
+            get { return Result.ToString(); }
         }
     }
 }
