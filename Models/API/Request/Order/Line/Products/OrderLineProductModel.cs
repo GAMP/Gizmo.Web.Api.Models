@@ -1,25 +1,17 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions;
 
-using MessagePack;
-
-using System;
-
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Line product.
+    /// Product order line.
     /// </summary>
-    [Serializable, MessagePackObject]
-    public sealed class ProductLineModel : IUriParametersQuery
+    [MessagePack.MessagePackObject]
+    public sealed class OrderLineProductModel : IUriParametersQuery
     {
-        #region PROPERTIES
-
         /// <summary>
         /// The Id of the product.
         /// </summary>
-        [Key(0)]
+        [MessagePack.Key(0)]
         public int ProductId { get; set; }
-
-        #endregion
     }
 }

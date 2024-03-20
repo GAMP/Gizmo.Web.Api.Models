@@ -135,13 +135,13 @@ namespace Gizmo.Web.Api.Models
         /// The product object attached to this order line if the order line refers to a product, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(19)]
-        public ProductLineModel? Product { get; set; }
+        public OrderLineProductModel? Product { get; set; }
 
         /// <summary>
         /// The time product object attached to this order line if the order line refers to a time product, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(20)]
-        public ProductLineModel? TimeProduct { get; set; }
+        public OrderLineProductModel? TimeProduct { get; set; }
 
         #endregion
     }

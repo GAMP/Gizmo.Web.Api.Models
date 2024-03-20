@@ -20,7 +20,7 @@ namespace Gizmo.Web.Api.Models
         /// The lines of the order.
         /// </summary>
         [Key(0)]
-        public IEnumerable<OrderLineModelOptions> OrderLines { get; set; } = Enumerable.Empty<OrderLineModelOptions>();
+        public IEnumerable<OrderLineCreateModel> OrderLines { get; set; } = Enumerable.Empty<OrderLineCreateModel>();
 
         #endregion
     }

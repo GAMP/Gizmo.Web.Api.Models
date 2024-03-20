@@ -1,19 +1,26 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions;
-
-using MessagePack;
-
 using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Calculate order line options.
+    /// Order line creation model.
     /// </summary>
-    [Serializable, MessagePackObject]
-    public sealed class OrderLineModelOptions : IUriParametersQuery
+    /// <remarks>
+    /// This model will be posted as part of order creation model.
+    /// </remarks>
+    [MessagePack.MessagePackObject]
+    public sealed class OrderLineCreateModel : IUriParametersQuery
     {
-        #region PROPERTIES
+        /// <summary>
+        /// Optional order line model guid.
+        /// </summary>
+        /// <remarks>
+        /// This parameter can be used to identify order line in the cart.
+        /// </remarks>
+        [MessagePack.Key(0)]
+        public Guid? Guid { get; set; }
 
         /// <summary>
         /// The type of the order line.
@@ -44,26 +51,24 @@ namespace Gizmo.Web.Api.Models
         /// The product object attached to this order line if the order line refers to a product, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(4)]
-        public ProductLineModel? Product { get; set; }
+        public OrderLineProductModel? Product { get; set; }
 
         /// <summary>
         /// The time product object attached to this order line if the order line refers to a time product, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(5)]
-        public ProductLineModel? TimeProduct { get; set; }
+        public OrderLineProductModel? TimeProduct { get; set; }
 
         /// <summary>
         /// The fixed time object attached to this order line if the order line refers to fixed time, otherwise it will be null.
         /// </summary>
         [MessagePack.Key(6)]
-        public LineFixedTime? FixedTime { get; set; }
+        public OrderLineFixedTimeModel? FixedTime { get; set; }
 
         /// <summary>
         /// The mark if the product is marked product.
         /// </summary>
         [MessagePack.Key(7)]
         public string? Mark { get; set; }
-
-        #endregion
     }
 }

@@ -10,6 +10,6 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// The lines of the order.
         /// </summary>
-        IEnumerable<OrderLineModelOptions> OrderLines { get; set; }
+        IEnumerable<OrderLineCreateModel> OrderLines { get; set; }
     }
 }

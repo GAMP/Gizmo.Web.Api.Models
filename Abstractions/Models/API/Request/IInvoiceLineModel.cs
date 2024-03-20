@@ -43,7 +43,7 @@
         /// <summary>
         /// The product object attached to this invoice line if the invoice line refers to a product, otherwise it will be null.
         /// </summary>
-        ProductLineModel? Product { get; set; }
+        OrderLineProductModel? Product { get; set; }
 
         /// <summary>
         /// The name of the item in the invoice line.
@@ -68,7 +68,7 @@
         /// <summary>
         /// The time product object attached to this invoice line if the invoice line refers to a time product, otherwise it will be null.
         /// </summary>
-        ProductLineModel? TimeProduct { get; set; }
+        OrderLineProductModel? TimeProduct { get; set; }
 
         /// <summary>
         /// The total amount of the invoice line.

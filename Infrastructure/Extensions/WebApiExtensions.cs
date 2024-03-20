@@ -1,4 +1,5 @@
 ﻿using Gizmo.Web.Api.Messaging;
+using Gizmo.Web.Api.Models.Abstractions;
 using System;
 using System.Text.Json;
 
@@ -10,7 +11,7 @@ namespace Gizmo.Web.Api
     public static class WebApiExtensions
     {
         #region FUNCTIONS
-        
+
         /// <summary>
         /// Adds supported Json serializers to the web api json options.
         /// </summary>
@@ -33,8 +34,11 @@ namespace Gizmo.Web.Api
             //add control message converter
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<IAPIControlMessage>("ControlType", "Command"));
 
+            //add orderline converter
+            options.Converters.Add(new MessagePackUnionMessageJsonConverter<IOrderLineCreateModel>("Type", "Parameters"));
+
             return options;
-        } 
+        }
 
         #endregion
     }
