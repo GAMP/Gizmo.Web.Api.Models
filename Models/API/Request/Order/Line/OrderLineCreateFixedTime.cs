@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using Gizmo.Web.Api.Models.Abstractions;
+using Gizmo.Web.Api.Models.Enumerations;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -13,7 +14,7 @@ namespace Gizmo.Web.Api.Models
         /// <inheritdoc/>
         [MessagePack.IgnoreMember()]
         [System.Text.Json.Serialization.JsonIgnore()]
-        public LineType Type => LineType.Product;
+        public OrderLineCreateType Type =>  OrderLineCreateType.FixedTime;
 
         /// <inheritdoc/>
         [MessagePack.Key(0)]

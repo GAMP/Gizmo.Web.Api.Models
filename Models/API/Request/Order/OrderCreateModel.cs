@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using Gizmo.Web.Api.Models.Abstractions;
 
 namespace Gizmo.Web.Api.Models
@@ -32,9 +33,22 @@ namespace Gizmo.Web.Api.Models
         }
 
         /// <summary>
+        /// Optional user note.
+        /// </summary>
+        /// <remarks>
+        /// Right now its only used when order is posted from client by user.
+        /// </remarks>
+        [MessagePack.Key(2)]
+        [StringLength(255)]
+        public string? UserNote
+        {
+            get; init;
+        }
+
+        /// <summary>
         /// Gets order lines.
         /// </summary>
-        [MessagePack.Key(2)]
+        [MessagePack.Key(3)]
         public IEnumerable<IOrderLineCreateModel> OrderLines { get; init; } = [];
     }
 }

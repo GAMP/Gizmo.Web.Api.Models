@@ -51,6 +51,7 @@ namespace Gizmo.Web.Api
         private static readonly Dictionary<Type, int> typeLookup;
         private readonly string PAYLOAD_PROPERTY_NAME = DEFAULT_PAYLOAD_PROPERTY_NAME;
         private static readonly string DEFAULT_PAYLOAD_PROPERTY_NAME = "Message";
+        private static readonly System.Text.Json.JsonSerializerOptions DefaultJsonOptions = new JsonSerializerOptions() {   PropertyNameCaseInsensitive = true };
 
         #endregion      
 
@@ -79,7 +80,7 @@ namespace Gizmo.Web.Api
                 throw new ArgumentException("Invalid type.");
 
             //deserialize to associated type
-            var result = JsonSerializer.Deserialize(ref reader, type);
+            var result = JsonSerializer.Deserialize(ref reader, type, DefaultJsonOptions);
 
             if (result == null)
                 return default;
@@ -112,7 +113,7 @@ namespace Gizmo.Web.Api
             writer.WritePropertyName(PAYLOAD_PROPERTY_NAME);
 
             //serialize message
-            JsonSerializer.Serialize(writer, value, valueType);
+            JsonSerializer.Serialize(writer, value, valueType, DefaultJsonOptions);
 
             //end of our message
             writer.WriteEndObject();

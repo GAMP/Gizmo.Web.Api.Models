@@ -19,5 +19,20 @@
         /// Invalid user id.
         /// </summary>
         InvalidUserId =2,
+
+        /// <summary>
+        /// No guest group.
+        /// </summary>
+        NoGuestGroup =3,
+
+        /// <summary>
+        /// Error.
+        /// </summary>
+        Error =4,
+
+        /// <summary>
+        /// Invalid source host id.
+        /// </summary>
+        InvalidSourceHostId = 5,
     }
 }

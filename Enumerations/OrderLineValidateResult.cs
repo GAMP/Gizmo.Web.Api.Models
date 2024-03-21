@@ -37,5 +37,10 @@
         /// Guest sale restricted.
         /// </summary>
         GuestRestricted =7,
+        /// <summary>
+        /// Error validating.
+        /// </summary>
+        Error=8,
+        InvalidQuantity =9,
     }
 }

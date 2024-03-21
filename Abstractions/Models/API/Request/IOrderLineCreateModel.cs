@@ -1,14 +1,14 @@
 ﻿using System;
+using Gizmo.Web.Api.Models.Enumerations;
 
 namespace Gizmo.Web.Api.Models.Abstractions
 {
     /// <summary>
     /// Order line creation model.
     /// </summary>
-    [MessagePack.Union((int)LineType.Product,typeof(OrderLineCreateProductModel))]
-    [MessagePack.Union((int)LineType.TimeProduct, typeof(OrderLineCreateTimeProductModel))]
-    [MessagePack.Union((int)LineType.FixedTime, typeof(OrderLineCreateFixedTime))]
-    [MessagePack.Union((int)LineType.Deposit, typeof(OrderLineCreateDepositModel))]
+    [MessagePack.Union((int)OrderLineCreateType.Product,typeof(OrderLineCreateProductModel))]
+    [MessagePack.Union((int)OrderLineCreateType.FixedTime, typeof(OrderLineCreateFixedTime))]
+    [MessagePack.Union((int)OrderLineCreateType.Deposit, typeof(OrderLineCreateDepositModel))]
     public interface IOrderLineCreateModel
     {
         /// <summary>
@@ -22,6 +22,6 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// Gets order line type.
         /// </summary>
-        public LineType Type { get; }
+        public OrderLineCreateType Type { get; }
     }
 }
