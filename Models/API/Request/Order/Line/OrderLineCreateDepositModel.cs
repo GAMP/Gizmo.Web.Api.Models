@@ -7,6 +7,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Deposit order line.
     /// </summary>
+    [MessagePack.MessagePackObject()]
     public sealed class OrderLineCreateDepositModel : IOrderLineCreateModel
     {
         /// <inheritdoc/>

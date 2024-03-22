@@ -7,6 +7,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Product creation order line model.
     /// </summary>
+    [MessagePack.MessagePackObject()]
     public sealed class OrderLineCreateProductModel : IOrderLineCreateModel
     {
         /// <inheritdoc/>
