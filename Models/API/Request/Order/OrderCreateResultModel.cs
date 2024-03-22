@@ -40,7 +40,7 @@ namespace Gizmo.Web.Api.Models
         /// This will only have value if order was created.
         /// </remarks>
         [MessagePack.Key(3)]
-        public Gizmo.OrderStatus OrderStatus
+        public Gizmo.OrderStatus? OrderStatus
         {
             get; init;
         }

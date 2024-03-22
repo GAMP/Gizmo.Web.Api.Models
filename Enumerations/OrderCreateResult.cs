@@ -38,5 +38,6 @@
         InvalidPaymentMethod=7,
         InvalisPaymentAmount =8,
         PartialPaymentNotAllowed =9,
+        EmptyOrder =10,
     }
 }
