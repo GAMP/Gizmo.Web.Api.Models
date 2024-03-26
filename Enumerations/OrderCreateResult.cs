@@ -36,7 +36,7 @@
         InvalidSourceHostId = 5,
         PaymentExceedsOrderAmount =6,
         InvalidPaymentMethod=7,
-        InvalisPaymentAmount =8,
+        InvalidPaymentAmount =8,
         PartialPaymentNotAllowed =9,
         EmptyOrder =10,
     }

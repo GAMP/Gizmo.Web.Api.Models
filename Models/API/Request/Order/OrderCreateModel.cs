@@ -50,14 +50,5 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(3)]
         public IEnumerable<IOrderLineCreateModel> OrderLines { get; init; } = [];
-
-        /// <summary>
-        /// Optional invoice payments.
-        /// </summary>
-        [MessagePack.Key(4)]
-        public IEnumerable<PaymentCreateModel> Payments
-        {
-            get; init;
-        } = [];
     }
 }

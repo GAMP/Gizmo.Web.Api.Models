@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
         /// Gets creation options.
         /// </summary>
         [MessagePack.Key(0)]
-        public OrderCreateParametersModel Parameters { get; init; } = new();
+        public OrderInvoiceParametersModel Parameters { get; init; } = new();
 
         /// <summary>
         /// Gets orders.
