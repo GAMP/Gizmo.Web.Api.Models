@@ -8,7 +8,7 @@
         /// <summary>
         /// Sucess.
         /// </summary>
-        Sucess = 0,
+        Success = 0,
 
         /// <summary>
         /// Invalid lines.
