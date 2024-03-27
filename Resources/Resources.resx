@@ -267,6 +267,12 @@
   <data name="OPTIONS_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Options</value>
   </data>
+  <data name="ORDER_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates creation of an order</value>
+  </data>
+  <data name="ORDER_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>Created</value>
+  </data>
   <data name="ORDER_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
     <value>Order related events</value>
   </data>
