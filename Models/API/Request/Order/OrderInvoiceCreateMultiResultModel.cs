@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// Multiple orders creation result.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class OrderInvoiceCreateMultiResult : IWebApiModel
+    public sealed class OrderInvoiceCreateMultiResultModel : IWebApiModel
     {
         /// <summary>
         /// Order creation results.
