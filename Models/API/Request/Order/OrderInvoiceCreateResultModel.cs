@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using Gizmo.Web.Api.Models.Enumerations;
 using Gizmo.Web.Api.Models.Models;
 
@@ -10,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Order creation result.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class OrderCreateResultModel :IWebApiModel
+    public sealed class OrderInvoiceCreateResultModel :IWebApiModel
     {
         /// <summary>
         /// Unique client side request identification of order line.

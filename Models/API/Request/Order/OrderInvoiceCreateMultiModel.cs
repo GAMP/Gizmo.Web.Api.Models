@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// Multi order creation result.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public class OrderCreateMultiModel : IWebApiModel
+    public class OrderInvoiceCreateMultiModel : IWebApiModel
     {
         /// <summary>
         /// Gets creation options.
