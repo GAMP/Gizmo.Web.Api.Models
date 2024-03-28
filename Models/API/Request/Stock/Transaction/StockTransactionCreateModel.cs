@@ -1,25 +1,20 @@
-﻿using Gizmo.Web.Api.Models.Abstractions;
-
-using MessagePack;
-
-using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Product stock.
     /// </summary>
-    [Serializable, MessagePackObject]
-    public sealed class ProductStockModelUpdate : IModelIntIdentifier
+    [MessagePack.MessagePackObject]
+    public sealed class StockTransactionCreateModel : IWebApiModel
     {
         #region PROPERTIES
 
         /// <summary>
-        /// The Id of the object.
+        /// Product id.
         /// </summary>
         [MessagePack.Key(0)]
-        public int Id { get; init; }
+        public int ProductId { get; init; }
 
         /// <summary>
         /// The type of the stock transaction.
