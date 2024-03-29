@@ -297,6 +297,18 @@
   <data name="PAYMENT_INTENT_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Payment intent</value>
   </data>
+  <data name="PRODUCT_STOCK_CHANGE_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Indicates product stock level change</value>
+  </data>
+  <data name="PRODUCT_STOCK_CHANGE_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="PRODUCT_STOCK_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Product stock related events</value>
+  </data>
+  <data name="PRODUCT_STOCK_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Product stock</value>
+  </data>
   <data name="REPORT_PRESET_ADDED_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Report preset added event</value>
   </data>

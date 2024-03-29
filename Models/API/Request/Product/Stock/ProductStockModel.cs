@@ -24,6 +24,12 @@ namespace Gizmo.Web.Api.Models
         [Key(1)]
         public decimal? OnHand { get; set; }
 
+        /// <summary>
+        /// Indicates that product have reached alert level.
+        /// </summary>
+        [Key(2)]
+        public bool AlertLevelReached { get; init; }
+
         #endregion
     }
 }
