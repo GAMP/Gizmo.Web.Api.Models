@@ -21,6 +21,9 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The amount of stock.
         /// </summary>
+        /// <remarks>
+        /// Null value indicates that there are no stock transactions made for the product effectively meaning that the current stock level is unknown.
+        /// </remarks>
         [Key(1)]
         public decimal? OnHand { get; set; }
 
