@@ -5,10 +5,10 @@ using Gizmo.Web.Api.Models.Enumerations;
 namespace Gizmo.Web.Api.Models.Models
 {
     /// <summary>
-    /// Order line validation result model.
+    /// Order line creation error result model.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class OrderLineValidatonResultModel
+    public sealed class OrderLineCreateErrorResultModel
     {
         /// <summary>
         /// Line guid.
@@ -20,7 +20,7 @@ namespace Gizmo.Web.Api.Models.Models
         /// Validation result.
         /// </summary>
         [MessagePack.Key(1)]
-        public OrderLineValidateResult Result
+        public OrderLineCreateErrorResult Result
         {
             get; init;
         }
@@ -40,9 +40,9 @@ namespace Gizmo.Web.Api.Models.Models
         /// <param name="model">Model.</param>
         /// <param name="result">Result.</param>
         /// <returns>New result model.</returns>
-        public static OrderLineValidatonResultModel Create(IOrderLineCreateModel model, OrderLineValidateResult result)
+        public static OrderLineCreateErrorResultModel Create(IOrderLineCreateModel model, OrderLineCreateErrorResult result)
         {
-            return new OrderLineValidatonResultModel() { Guid = model.Guid, Result = result };
+            return new OrderLineCreateErrorResultModel() { Guid = model.Guid, Result = result };
         }
     }
 }

@@ -48,7 +48,7 @@ namespace Gizmo.Web.Api.Models
         /// Gets created invoice id.
         /// </summary>
         [MessagePack.Key(4)]
-        public int? InoviceId
+        public int? InvoiceId
         {
             get; init;
         }
@@ -69,7 +69,16 @@ namespace Gizmo.Web.Api.Models
         /// Gets invalid lines.
         /// </summary>
         [MessagePack.Key(6)]
-        public IEnumerable<OrderLineValidatonResultModel> InvalidLines { get; init; } = [];
+        public IEnumerable<OrderLineCreateErrorResultModel> InvalidLines { get; init; } = [];
+
+        /// <summary>
+        /// Gets invalid payments.
+        /// </summary>
+        [MessagePack.Key(7)]
+        public IEnumerable<OrderPaymentCreateErrorResultModel> InvalidPayments
+        {
+            get; init;
+        } = [];
 
         /// <summary>
         /// Result readable.
