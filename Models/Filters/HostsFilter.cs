@@ -36,6 +36,12 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [Key(3)]
         public List<string> Expand { get; set; } = new();
+        
+        /// <summary>
+        /// Include specific host type.
+        /// </summary>
+        [Key(4)]
+        public HostType? HostType { get; set; }
 
         #endregion
     }
