@@ -207,6 +207,13 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(29)]
         public Bundle? Bundle { get; set; }
 
+        /// <summary>
+        /// The date and time that the product was created.
+        /// </summary>
+        [MessagePack.Key(30)]
+        [Sortable()]
+        public DateTime CreatedTime { get; set; }
+
         #endregion
     }
 }
