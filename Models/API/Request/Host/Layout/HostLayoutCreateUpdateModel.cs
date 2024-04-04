@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// Host group layout host parameters model.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class HostLayoutGroupLayoutModel : IUriParametersQuery
+    public sealed class HostLayoutCreateUpdateModel : IUriParametersQuery
     {
         /// <inheritdoc/>
         [MessagePack.Key(0)]
