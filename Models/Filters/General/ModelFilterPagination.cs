@@ -10,6 +10,11 @@ namespace Gizmo.Web.Api.Models
     [Serializable, MessagePackObject]
     public sealed class ModelFilterPagination
     {
+        /// <summary>
+        /// Unlimited pagination.
+        /// </summary>
+        public static readonly ModelFilterPagination DefaultUnlimited = new() { Limit = 1 };
+
         #region FIELDS
 
         private const int DefaultLimit = 10;
