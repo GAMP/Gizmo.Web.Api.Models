@@ -26,6 +26,5 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(2)]
         public List<string> Expand { get; set; } = new();
-
     }
 }
