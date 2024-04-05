@@ -16,10 +16,10 @@ namespace Gizmo.Web.Api.Models
         public ModelFilterPagination Pagination { get; set; } = new();
 
         /// <summary>
-        /// Specifies explicit object id.
+        /// Specifies explicit device id.
         /// </summary>
         [MessagePack.Key(1)]
-        public int? Id { get; set; }
+        public int? DeviceId { get; set; }
 
         /// <summary>
         /// Include specified objects in the result.
