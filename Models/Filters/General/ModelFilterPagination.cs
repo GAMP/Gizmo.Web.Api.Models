@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Unlimited pagination.
         /// </summary>
-        public static readonly ModelFilterPagination DefaultUnlimited = new() { Limit = 1 };
+        public static readonly ModelFilterPagination DefaultUnlimited = new() { Limit = -1 };
 
         #region FIELDS
 
