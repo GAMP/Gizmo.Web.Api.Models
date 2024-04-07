@@ -7,7 +7,7 @@
     /// This parameters are sent to client and used to connect to a remote session on specified server.
     /// </remarks>
     [MessagePack.MessagePackObject()]
-    public sealed class RemoteSessionStartModel
+    public sealed class RemoteControlSessionConnectModel
     {
         /// <summary>
         /// Gets remote session server URL.
