@@ -1,14 +1,12 @@
-﻿using MessagePack;
-using System;
+﻿using System;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Remote control model.
+    /// Remote control session creation model.
     /// </summary>
-    
-    [Serializable, MessagePackObject]
-    public sealed class RemoteControlSessionModel : IWebApiModel
+    [MessagePack.MessagePackObject]
+    public sealed class RemoteControlSessionCreateModel : IWebApiModel
     {
         /// <summary>
         /// The Id of the remote control session.
@@ -23,9 +21,18 @@ namespace Gizmo.Web.Api.Models
         public string AccessKey { get; set; } = null!;
 
         /// <summary>
-        /// Host url.
+        /// Desktop url.
         /// </summary>
         [MessagePack.Key(2)]
-        public string HostUrl { get; set; } = null!;
+        public string DesktopUrl { get; set; } = null!;
+
+        /// <summary>
+        /// Optional viewer URL.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public string? ViewerUrl
+        {
+            get; init;
+        } = null!;
     }
 }

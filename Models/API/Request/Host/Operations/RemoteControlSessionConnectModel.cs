@@ -35,5 +35,14 @@
         {
             get; init;
         } = string.Empty;
+
+        /// <summary>
+        /// Additional arguments.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public string? AdditionalArguments
+        {
+            get; init;
+        }
     }
 }
