@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// Remote control session creation model.
     /// </summary>
     [MessagePack.MessagePackObject]
-    public sealed class RemoteControlSessionCreateModel : IWebApiModel
+    public sealed class RemoteControlSessionCreateResultModel : IWebApiModel
     {
         /// <summary>
         /// The Id of the remote control session.
