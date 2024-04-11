@@ -21,5 +21,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(1)]
         public string AccessKey { get; set; } = null!;
+
+        /// <summary>
+        /// Host url.
+        /// </summary>
+        [MessagePack.Key(2)]
+        public string HostUrl { get; set; } = null!;
     }
 }
