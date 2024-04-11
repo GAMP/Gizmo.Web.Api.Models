@@ -10,10 +10,10 @@
     public sealed class RemoteControlSessionConnectModel
     {
         /// <summary>
-        /// Gets remote session server URL.
+        /// Gets remote desktop session URL.
         /// </summary>
         [MessagePack.Key(0)]
-        public string ServerUrl
+        public string DesktopUrl
         {
             get; init;
         } = string.Empty;
