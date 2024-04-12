@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+
 using MessagePack;
 
 namespace Gizmo.Web.Api.Models
@@ -11,6 +12,12 @@ namespace Gizmo.Web.Api.Models
     public sealed class PaginationCursor
     {
         #region PROPERTIES
+
+        /// <summary>
+        /// Integer identifier of the record.
+        /// </summary>
+        [Key(0)]
+        public int Id { get; set; }
 
         /// <summary>
         /// Sorting field name (column name) of the record.
@@ -41,8 +48,7 @@ namespace Gizmo.Web.Api.Models
         /// </value>
         [Key(4)]
         public bool IsAsc { get; set; } = true;
-        public int Offset { get; set; }
 
         #endregion
-    }   
+    }
 }

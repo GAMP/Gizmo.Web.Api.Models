@@ -41,6 +41,9 @@ namespace Gizmo.Web.Api
                     jsonReader.Read();
                     switch (propertyName)
                     {
+                        case "id":
+                            pcursor.Id = jsonReader.GetInt32();
+                            break;
                         case "name":
                             pcursor.Name = jsonReader.GetString()!;
                             break;
