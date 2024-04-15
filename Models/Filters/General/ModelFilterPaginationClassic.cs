@@ -22,8 +22,8 @@ namespace Gizmo.Web.Api.Models
         /// Gets or sets the page size.
         /// </summary>
         [Key(1)]
-        public int PageSize { get; set; } = 5;
-
+        public int PageSize { get; set; } = 10;
+        
         #endregion
     }
 }
