@@ -16,7 +16,7 @@ namespace Gizmo.Web.Api.Models
         /// Gets or sets the page number.
         /// </summary>
         [Key(0)]
-        public int Page { get; set; } = 1;
+        public int PageNumber { get; set; } = 1;
 
         ///<summary>
         /// Gets or sets the page size.
