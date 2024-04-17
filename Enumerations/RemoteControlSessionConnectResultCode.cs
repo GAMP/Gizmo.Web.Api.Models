@@ -11,6 +11,11 @@
         Success = 0,
 
         /// <summary>
+        /// Generic error.
+        /// </summary>
+        Error = 1,
+
+        /// <summary>
         /// Process reported invalid parameters.
         /// </summary>
         InvalidParameters = 1,
