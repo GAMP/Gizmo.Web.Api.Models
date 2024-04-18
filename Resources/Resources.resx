@@ -195,11 +195,41 @@
   <data name="ENTITY_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Database entity</value>
   </data>
+  <data name="HOST_COMPUTER_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Host computer related events</value>
+  </data>
+  <data name="HOST_COMPUTER_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Host computer</value>
+  </data>
+  <data name="HOST_COMPUTER_INPUT_LOCK_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Input lock changed event</value>
+  </data>
+  <data name="HOST_COMPUTER_INPUT_LOCK_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Input lock changed</value>
+  </data>
+  <data name="HOST_COMPUTER_MAINTENANCE_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Maintenance changed event</value>
+  </data>
+  <data name="HOST_COMPUTER_MAINTENANCE_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Maintenance changed</value>
+  </data>
+  <data name="HOST_COMPUTER_SECURITY_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Security changed event</value>
+  </data>
+  <data name="HOST_COMPUTER_SECURITY_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Security changed</value>
+  </data>
   <data name="HOST_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
     <value>Host related events</value>
   </data>
   <data name="HOST_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Host</value>
+  </data>
+  <data name="HOST_IN_ORDER_STATE_CHANED_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Host in order state changed</value>
+  </data>
+  <data name="HOST_IN_ORDER_STATE_CHANED_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>In order state changed</value>
   </data>
   <data name="HOST_LAYOUT_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Host layout created event</value>
@@ -248,6 +278,12 @@
   </data>
   <data name="HOST_LAYOUT_UPDATED_EVENT_NAME" xml:space="preserve">
     <value>Host layout updated</value>
+  </data>
+  <data name="HOST_LOCK_STATE_CHANED_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Host lock state changed</value>
+  </data>
+  <data name="HOST_LOCK_STATE_CHANED_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Lock state changed</value>
   </data>
   <data name="LICENSE_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
     <value>License related events</value>

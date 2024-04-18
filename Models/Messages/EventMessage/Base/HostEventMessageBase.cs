@@ -7,7 +7,6 @@ namespace Gizmo.Web.Api.Messaging
     /// </summary>
     [System.ComponentModel.DataAnnotations.Name("Host", "HOST_EVENT_GROUP_NAME")]
     [System.ComponentModel.DataAnnotations.ExtendedDescription("Host related events", "HOST_EVENT_GROUP_DESCRIPTION")]
-    [HideMetadata()]
     [EventGroup(8)]
     public abstract class HostEventMessageBase : APIEventMessage
     {
