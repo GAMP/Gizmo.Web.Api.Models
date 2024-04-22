@@ -29,5 +29,14 @@
         {
             get;init;
         }
+
+        /// <summary>
+        /// Indicates that removal was caused by cancellation.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public bool IsCancelled
+        {
+            get;init;
+        }
     }
 }
