@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// <param name="totalItems">Total number of items.</param>
     /// <param name="totalPages">Total number of pages.</param>
     [Serializable, MessagePackObject]
-    public sealed class PagedClassicList<T>(IEnumerable<T> data, int totalItems, int totalPages)
+    public sealed class PagedListClassic<T>(IEnumerable<T> data, int totalItems, int totalPages)
     {
         /// <summary>
         /// The data of the current result set.
