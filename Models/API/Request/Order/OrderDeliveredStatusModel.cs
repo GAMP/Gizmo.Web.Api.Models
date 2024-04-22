@@ -18,6 +18,6 @@ namespace Gizmo.Web.Api.Models
         /// Gets deliver time.
         /// </summary>
         [MessagePack.Key(1)]
-        public DateTime? DeliverdTime { get; init; }
+        public DateTime? DeliveredTime { get; init; }
     }
 }
