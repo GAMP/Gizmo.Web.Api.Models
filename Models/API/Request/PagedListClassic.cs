@@ -5,15 +5,17 @@ using MessagePack;
 
 namespace Gizmo.Web.Api.Models
 {
+
     /// <summary>
     /// Model for the classic paginated data.
     /// </summary>
     /// <typeparam name="T">Data type.</typeparam>
     /// <param name="data">Data.</param>
     /// <param name="totalItems">Total number of items.</param>
-    /// <param name="totalPages">Total number of pages.</param>
+    /// <param name="pageSize"> Page size from the filter.</param>
+    /// <exception cref="DivideByZeroException">Thrown when page size is zero.</exception>"
     [Serializable, MessagePackObject]
-    public sealed class PagedListClassic<T>(IEnumerable<T> data, int totalItems, int totalPages)
+    public sealed class PagedListClassic<T>(IEnumerable<T> data, int totalItems, int pageSize)
     {
         /// <summary>
         /// The data of the current result set.
@@ -31,6 +33,6 @@ namespace Gizmo.Web.Api.Models
         /// The total number of pages.
         /// </summary>
         [Key(2)]
-        public int TotalPages { get; } = totalPages;
+        public int TotalPages { get; } = totalItems / pageSize + (totalItems % pageSize == 0 ? 0 : 1);
     }
 }
