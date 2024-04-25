@@ -2,7 +2,7 @@
 using Gizmo.Web.Api.Models.Abstractions;
 using Gizmo.Web.Api.Models.Enumerations;
 
-namespace Gizmo.Web.Api.Models.Models
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Order line creation error result model.
