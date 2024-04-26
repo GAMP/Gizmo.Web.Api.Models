@@ -1,18 +1,21 @@
-﻿namespace Gizmo.Web.Api.Messaging
+﻿using Gizmo.Web.Api.Models.Enumerations;
+
+namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
-    /// Waiting line user removed event message.
+    /// Waiting line user move event message.
     /// </summary>
-    [System.ComponentModel.DataAnnotations.Name("User removed", "WAITING_LINE_USER_REMOVED_EVENT_NAME")]
-    [System.ComponentModel.DataAnnotations.ExtendedDescription("User removed event", "WAITING_LINE_USER_REMOVED_EVENT_DESCRIPTION")]
+    [System.ComponentModel.DataAnnotations.Name("User moved", "WAITING_LINE_USER_MOVED_EVENT_NAME")]
+    [System.ComponentModel.DataAnnotations.ExtendedDescription("User moved event", "WAITING_LINE_USER_MOVED_EVENT_DESCRIPTION")]
     [MessagePack.MessagePackObject()]
-    public sealed class WaitingLineUserRemovedEventMessage : WaitingLineEventMessageBase
+    public sealed class WaitingLineUserMoveEventMessage : WaitingLineEventMessageBase
     {
         /// <summary>
         /// Creates new instance.
         /// </summary>
-        public WaitingLineUserRemovedEventMessage() : base()
-        { }
+        public WaitingLineUserMoveEventMessage():base()
+        {
+        }
 
         /// <summary>
         /// Waiting line entry id.
@@ -38,14 +41,23 @@
         [MessagePack.Key(3)]
         public int UserId
         {
-            get;init;
+            get; init;
         }
 
         /// <summary>
-        /// Indicates that removal was caused by cancellation.
+        /// Move type.
         /// </summary>
         [MessagePack.Key(4)]
-        public bool IsCancelled
+        public WaitingLineMoveType MoveType
+        {
+            get; init;
+        }
+
+        /// <summary>
+        /// New position.
+        /// </summary>
+        [MessagePack.Key(5)]
+        public int Position
         {
             get;init;
         }

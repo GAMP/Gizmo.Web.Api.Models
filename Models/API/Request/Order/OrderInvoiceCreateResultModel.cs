@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using Gizmo.Web.Api.Models.Enumerations;
-using Gizmo.Web.Api.Models.Models;
 
 namespace Gizmo.Web.Api.Models
 {
