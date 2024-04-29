@@ -63,6 +63,12 @@ namespace Gizmo.Web.Api.Models
             };
         }
 
+        /// <summary>
+        /// Gets or sets the sort by.
+        /// </summary>
+        [Key(2)]
+        public string SortBy { get; set; } = null!;
+
         #endregion
     }
 }
