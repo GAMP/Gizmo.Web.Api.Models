@@ -66,8 +66,20 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Gets or sets the sort by.
         /// </summary>
+        /// <remarks>
+        /// The property is required.
+        /// </remarks>
         [Key(2)]
         public string SortBy { get; set; } = null!;
+
+        /// <summary>
+        /// Sorting direction of the data.
+        /// </summary>
+        /// <value>
+        /// true - for ascending, false - for descending.
+        /// </value>
+        [Key(2)]
+        public bool IsAsc { get; set; } = true;
 
         #endregion
     }
