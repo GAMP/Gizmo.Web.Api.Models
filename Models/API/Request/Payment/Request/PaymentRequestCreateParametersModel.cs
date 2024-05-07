@@ -60,9 +60,63 @@ namespace Gizmo.Web.Api.Models
         public string? CustomerEmail { get; init; }
 
         /// <summary>
-        /// Gets metadata dictionary.
+        /// Indicates that payment request represents an service payment.
         /// </summary>
         [MessagePack.Key(6)]
+        public bool IsService
+        {
+            get; init;
+        }
+
+        /// <summary>
+        /// Tax system.
+        /// </summary>
+        [MessagePack.Key(7)]
+        public TaxSystems? TaxSystem
+        {
+            get; init;
+        }
+
+        /// <summary>
+        /// Gets VAT rate.
+        /// </summary>
+        [MessagePack.Key(8)]
+        public VatRates? VatRate
+        {
+            get; init;
+        }
+
+        /// <summary>
+        /// Gets advance payment type.
+        /// </summary>
+        [MessagePack.Key(9)]
+        public AdvancePaymentTypes? AdvancePaymentType
+        {
+            get; init;
+        }
+
+        /// <summary>
+        /// Gets business VAT ID number.
+        /// </summary>
+        [MessagePack.Key(10)]
+        public string? BusinessVATNumber
+        {
+            get; init;
+        }
+
+        /// <summary>
+        /// Gets seller web address.
+        /// </summary>
+        [MessagePack.Key(11)]
+        public string? BusinessWebSite
+        {
+            get; init;
+        }
+
+        /// <summary>
+        /// Gets metadata dictionary.
+        /// </summary>
+        [MessagePack.Key(12)]
         public Dictionary<string, string> Metadata { get { return _metaData; } set { _metaData = value; } }
 
         /// <summary>
