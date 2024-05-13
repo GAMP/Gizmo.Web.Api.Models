@@ -33,6 +33,6 @@ namespace Gizmo.Web.Api.Models
         /// The total number of pages.
         /// </summary>
         [Key(2)]
-        public int TotalPages { get; } = totalItems / pageSize + (totalItems % pageSize == 0 ? 0 : 1);
+        public int TotalPages { get; } = pageSize <=0 ? 0 : totalItems / pageSize + (totalItems % pageSize == 0 ? 0 : 1);
     }
 }
