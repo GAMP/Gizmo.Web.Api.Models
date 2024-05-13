@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+
 using MessagePack;
 
 namespace Gizmo.Web.Api.Models
@@ -49,5 +50,5 @@ namespace Gizmo.Web.Api.Models
         public bool IsAsc { get; set; } = true;
 
         #endregion
-    }   
+    }
 }
