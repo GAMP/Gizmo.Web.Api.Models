@@ -70,6 +70,7 @@ namespace Gizmo.Web.Api.Models
         /// The property is required.
         /// </remarks>
         [Key(2)]
+        [System.ComponentModel.DataAnnotations.Required]
         public string SortBy { get; set; } = null!;
 
         /// <summary>
@@ -78,7 +79,7 @@ namespace Gizmo.Web.Api.Models
         /// <value>
         /// true - for ascending, false - for descending.
         /// </value>
-        [Key(2)]
+        [Key(3)]
         public bool IsAsc { get; set; } = true;
 
         #endregion
