@@ -19,7 +19,7 @@ namespace Gizmo.Web.Api.Models
         /// <param name="data">Results.</param>
         /// <param name="totalItems">Total items.</param>
         /// <param name="pageSize">Page size.</param>
-        /// <returns></returns>
+        /// <returns>Paged list result.</returns>
         public static PagedListClassic<T> Create(IEnumerable<T> data, int totalItems, int pageSize)
         {
             return new PagedListClassic<T>
