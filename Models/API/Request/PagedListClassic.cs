@@ -14,6 +14,10 @@ namespace Gizmo.Web.Api.Models
     [Serializable, MessagePackObject]
     public sealed class PagedListClassic<T>
     {
+        [MessagePack.SerializationConstructor()]
+        public PagedListClassic()
+        { }
+
         /// <summary>
         /// Creates new instance.
         /// </summary>
