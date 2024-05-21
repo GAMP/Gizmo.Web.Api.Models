@@ -7,7 +7,7 @@
     ///This model is used to set grid based host position within a host layout group.
     /// </remarks>
     [MessagePack.MessagePackObject()]
-    public sealed class HostLayoutPositionCreateUpdateModel : IWebApiModel
+    public sealed class HostLayoutGridPositionCreateUpdateModel : IWebApiModel
     {
         /// <summary>
         /// Host layout row.
