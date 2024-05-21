@@ -62,6 +62,24 @@ namespace Gizmo.Web.Api.Models
         [Key(7)]
         public bool IsHidden { get; set; }
 
+        /// <summary>
+        /// Display row.
+        /// </summary>
+        [Key(8)]
+        public int Row
+        {
+            get;set;
+        }
+
+        /// <summary>
+        /// Display column.
+        /// </summary>
+        [Key(9)]
+        public int Column
+        {
+            get;set;
+        }
+
         #endregion
     }
 }
