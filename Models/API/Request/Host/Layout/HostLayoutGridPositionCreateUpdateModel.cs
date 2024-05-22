@@ -10,7 +10,7 @@
     public sealed class HostLayoutGridPositionCreateUpdateModel : IWebApiModel
     {
         /// <summary>
-        /// Host layout row.
+        /// Host grid layout row.
         /// </summary>
         [MessagePack.Key(0)]
         public int Row
@@ -19,7 +19,7 @@
         }
 
         /// <summary>
-        /// Host layout column.
+        /// Host grid layout column.
         /// </summary>
         [MessagePack.Key(1)]
         public int Column
