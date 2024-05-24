@@ -26,7 +26,7 @@ namespace Gizmo.Web.Api.Messaging
         [Key(1)]
         public int ReservationId
         {
-            get; protected set;
+            get; init;
         }
 
         #endregion
