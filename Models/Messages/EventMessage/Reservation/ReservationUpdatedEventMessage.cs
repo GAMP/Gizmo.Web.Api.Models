@@ -1,13 +1,11 @@
-﻿using MessagePack;
-
-namespace Gizmo.Web.Api.Messaging
+﻿namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
     /// Reservation event message.
     /// </summary>
     [System.ComponentModel.DataAnnotations.Name("Updated", "RESERVATION_UPDATED_EVENT_NAME")]
     [System.ComponentModel.DataAnnotations.ExtendedDescription("Reservation updated", "RESERVATION_UPDATED_EVENT_DESCRIPTION")]
-    [MessagePackObject()]
+    [MessagePack.MessagePackObject()]
     public sealed class ReservationUpdatedEventMessage : ReservationEventMessageBase
     {
         #region CONSTRUCTOR
