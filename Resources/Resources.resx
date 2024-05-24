@@ -375,11 +375,29 @@
   <data name="REPORT_PRESET_UPDATED_EVENT_NAME" xml:space="preserve">
     <value>Report preset updated</value>
   </data>
+  <data name="RESERVATION_CANCELLED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Reservation cancelled</value>
+  </data>
+  <data name="RESERVATION_CANCELLED_EVENT_NAME" xml:space="preserve">
+    <value>Cancelled</value>
+  </data>
+  <data name="RESERVATION_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Reservation created</value>
+  </data>
+  <data name="RESERVATION_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>Created</value>
+  </data>
   <data name="RESERVATION_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
     <value>Reservation related events</value>
   </data>
   <data name="RESERVATION_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Reservation</value>
+  </data>
+  <data name="RESERVATION_UPDATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Reservation updated</value>
+  </data>
+  <data name="RESERVATION_UPDATED_EVENT_NAME" xml:space="preserve">
+    <value>Updated</value>
   </data>
   <data name="SHIFT_ENDED_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Indicates shift end</value>
