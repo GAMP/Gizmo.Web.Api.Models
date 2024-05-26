@@ -78,6 +78,21 @@ namespace Gizmo.Web.Api.Models
             }
         }
 
+        /// <summary>
+        /// Maps paged data. 
+        /// </summary>
+        /// <typeparam name="TTarget">Target model type.</typeparam>
+        /// <param name="map">Mapping delegate function.</param>
+        /// <returns>Mapped paged list.</returns>
+        public PagedList<TTarget> Map<TTarget>(Func<T,TTarget> map)
+        {
+            return new PagedList<TTarget>(Data.Select(map))
+            {
+                NextCursor = NextCursor,
+                PrevCursor = PrevCursor
+            };
+        }
+
         #endregion
     }
 }
