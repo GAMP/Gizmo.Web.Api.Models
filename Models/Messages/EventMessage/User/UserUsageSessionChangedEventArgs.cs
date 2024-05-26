@@ -20,10 +20,10 @@ namespace Gizmo.Web.Api.Messaging
         #region PROPERTIES
 
         /// <summary>
-        /// Gets current time poroduct name.
+        /// Gets current time product name.
         /// </summary>
         [Key(2)]
-        public string CurrentTimeProduct
+        public string? CurrentTimeProduct
         {
             get; init;
         }
