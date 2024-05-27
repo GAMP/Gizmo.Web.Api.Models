@@ -19,9 +19,9 @@ namespace Gizmo.Web.Api
         /// Creates new instance.
         /// </summary>
         /// <param name="payloadPropertyName">Payload property name.</param>
-        /// <param name="descriminatorPropertyName">Descriminator property name.</param>
+        /// <param name="discriminatorPropertyName">Discriminator property name.</param>
         /// <exception cref="ArgumentNullException">thrown if value specified by <paramref name="payloadPropertyName"/>is null or empty string.</exception>
-        public MessagePackUnionMessageJsonConverter(string descriminatorPropertyName,string payloadPropertyName):base(descriminatorPropertyName)
+        public MessagePackUnionMessageJsonConverter(string discriminatorPropertyName,string payloadPropertyName):base(discriminatorPropertyName)
         {
             if(string.IsNullOrEmpty(payloadPropertyName))
                 throw new ArgumentNullException(nameof(payloadPropertyName));
