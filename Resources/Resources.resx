@@ -441,6 +441,30 @@
   <data name="USER_EVENT_GROUP_NAME" xml:space="preserve">
     <value>User</value>
   </data>
+  <data name="USER_SESSION_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>User session created</value>
+  </data>
+  <data name="USER_SESSION_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>Created</value>
+  </data>
+  <data name="USER_SESSION_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>User session related events</value>
+  </data>
+  <data name="USER_SESSION_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>User session</value>
+  </data>
+  <data name="USER_SESSION_MOVED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>User session moved</value>
+  </data>
+  <data name="USER_SESSION_MOVED_EVENT_NAME" xml:space="preserve">
+    <value>Moved</value>
+  </data>
+  <data name="USER_SESSION_STATE_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>State changed</value>
+  </data>
+  <data name="USER_SESSION_STATE_CHANGED_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>User session state changed</value>
+  </data>
   <data name="WAITING_LINE_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
     <value>Waiting line</value>
   </data>
