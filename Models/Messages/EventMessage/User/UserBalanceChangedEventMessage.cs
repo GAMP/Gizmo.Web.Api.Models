@@ -28,7 +28,7 @@
         /// Time balance.
         /// </summary>
         [MessagePack.Key(4)]
-        public int? Time
+        public double? Time
         {
             get;init;
         }
@@ -37,7 +37,7 @@
         /// Credited time balance.
         /// </summary>
         [MessagePack.Key(5)]
-        public int? CreditedTime { get; init;}
+        public double? CreditedTime { get; init;}
 
         /// <summary>
         /// Points balance.
