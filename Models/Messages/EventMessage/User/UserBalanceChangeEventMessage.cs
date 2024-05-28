@@ -1,20 +1,39 @@
-﻿using MessagePack;
-
-namespace Gizmo.Web.Api.Messaging
+﻿namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
     /// User balance changed event message.
     /// </summary>
-    [MessagePackObject()]
-    [HideMetadata()]
+    [MessagePack.MessagePackObject()]
     public sealed class UserBalanceChangeEventMessage : UserEventMessageBase
     {
-        #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
         public UserBalanceChangeEventMessage() : base()
         { }
-        #endregion
+
+        /// <summary>
+        /// Balance.
+        /// </summary>
+        [MessagePack.Key(2)]
+        public decimal Balance { get; init; }
+
+        /// <summary>
+        /// Deposit balance.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public decimal Deposits { get; init; }
+
+        /// <summary>
+        /// Time balance.
+        /// </summary>
+        [MessagePack.Key(4)]
+        public int? Time { get; init;}
+
+        /// <summary>
+        /// Points balance.
+        /// </summary>
+        [MessagePack.Key(5)]
+        public int Points { get; init;}
     }
 }
