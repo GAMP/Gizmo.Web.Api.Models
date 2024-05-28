@@ -4,12 +4,12 @@
     /// User balance changed event message.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class UserBalanceChangeEventMessage : UserEventMessageBase
+    public sealed class UserBalanceChangedEventMessage : UserEventMessageBase
     {
         /// <summary>
         /// Creates new instance.
         /// </summary>
-        public UserBalanceChangeEventMessage() : base()
+        public UserBalanceChangedEventMessage() : base()
         { }
 
         /// <summary>
@@ -28,12 +28,21 @@
         /// Time balance.
         /// </summary>
         [MessagePack.Key(4)]
-        public int? Time { get; init;}
+        public int? Time
+        {
+            get;init;
+        }
+
+        /// <summary>
+        /// Credited time balance.
+        /// </summary>
+        [MessagePack.Key(5)]
+        public int? CreditedTime { get; init;}
 
         /// <summary>
         /// Points balance.
         /// </summary>
-        [MessagePack.Key(5)]
+        [MessagePack.Key(6)]
         public int Points { get; init;}
     }
 }

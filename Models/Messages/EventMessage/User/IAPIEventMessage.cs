@@ -2,7 +2,7 @@
 
 namespace Gizmo.Web.Api.Messaging
 {
-    [Union(300, typeof(UserBalanceChangeEventMessage))]
+    [Union(300, typeof(UserBalanceChangedEventMessage))]
     [Union(301, typeof(UserSessionChangedEventMessage))]
     [Union(302, typeof(UserBalanceCloseEventMessage))]
     [Union(303, typeof(UserEnabledChangedEventMessage))]
