@@ -34,8 +34,11 @@ namespace Gizmo.Web.Api
             //add control message converter
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<IAPIControlMessage>("ControlType", "Command"));
 
-            //add orderline converter
+            //add order line converter
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<IOrderLineCreateModel>("Type", "Parameters"));
+
+            //add usage converter
+            options.Converters.Add(new MessagePackUnionMessageJsonConverter<UsageSessionUsage>("Type", "Usage"));
 
             return options;
         }
