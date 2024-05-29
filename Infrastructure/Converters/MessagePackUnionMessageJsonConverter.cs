@@ -26,7 +26,7 @@ namespace Gizmo.Web.Api
             if(string.IsNullOrEmpty(payloadPropertyName))
                 throw new ArgumentNullException(nameof(payloadPropertyName));
 
-            PAYLOAD_PROPERTY_NAME = payloadPropertyName;
+            _payloadPropertyName = payloadPropertyName;
         }
 
         /// <summary>
@@ -35,21 +35,21 @@ namespace Gizmo.Web.Api
         static MessagePackUnionMessageJsonConverter()
         {
             //get all union attributes applied to the generic target type
-            var exactTypes = targetType.GetCustomAttributes<UnionAttribute>();
+            var exactTypes = TargetType.GetCustomAttributes<UnionAttribute>();
 
             //create look up dictionaries
-            unionCodeLookup = exactTypes.ToDictionary(key => key.Key, value => value.SubType);
-            typeLookup = exactTypes.ToDictionary(key => key.SubType, value => value.Key);
+            UnionCodeLookup = exactTypes.ToDictionary(key => key.Key, value => value.SubType);
+            TypeLookup = exactTypes.ToDictionary(key => key.SubType, value => value.Key);
         }
 
         #endregion
 
         #region FIELDS
 
-        private static readonly Type targetType = typeof(T);
-        private static readonly Dictionary<int, Type> unionCodeLookup;
-        private static readonly Dictionary<Type, int> typeLookup;
-        private readonly string PAYLOAD_PROPERTY_NAME = DEFAULT_PAYLOAD_PROPERTY_NAME;
+        private static readonly Type TargetType = typeof(T);
+        private static readonly Dictionary<int, Type> UnionCodeLookup;
+        private static readonly Dictionary<Type, int> TypeLookup;
+        private readonly string _payloadPropertyName = DEFAULT_PAYLOAD_PROPERTY_NAME;
         private static readonly string DEFAULT_PAYLOAD_PROPERTY_NAME = "Message";
         private static readonly System.Text.Json.JsonSerializerOptions DefaultJsonOptions = new JsonSerializerOptions() {   PropertyNameCaseInsensitive = true };
 
@@ -60,21 +60,21 @@ namespace Gizmo.Web.Api
         /// <inheritdoc/>                    
         public override bool CanConvert(Type typeToConvert)
         {
-            return typeLookup.ContainsKey(typeToConvert) || targetType.IsAssignableFrom(typeToConvert);
+            return TypeLookup.ContainsKey(typeToConvert) || TargetType.IsAssignableFrom(typeToConvert);
         }
 
         /// <inheritdoc/>
         public override T? Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {
-            //read event descriminator
-            var descriminator = ReadDescriminator(ref reader);
+            //read event discriminator
+            var discriminator = ReadDiscriminator(ref reader);
 
             //read to the event value property
             if (!reader.Read())
                 throw new JsonException();
 
             //get associated type
-            var type = GetUnionByInterfaceType(descriminator);
+            var type = GetUnionByInterfaceType(discriminator);
 
             if (type == null)
                 throw new ArgumentException("Invalid type.");
@@ -106,11 +106,11 @@ namespace Gizmo.Web.Api
             //get value type code
             int typeCode = GetUnionByExactType(valueType);
 
-            //write descriminator type
-            WriteDescriminator(writer, typeCode);
+            //write discriminator type
+            WriteDiscriminator(writer, typeCode);
 
             //write the message property
-            writer.WritePropertyName(PAYLOAD_PROPERTY_NAME);
+            writer.WritePropertyName(_payloadPropertyName);
 
             //serialize message
             JsonSerializer.Serialize(writer, value, valueType, DefaultJsonOptions);
@@ -126,13 +126,13 @@ namespace Gizmo.Web.Api
         private Type GetUnionByInterfaceType(int unionCode)
         {
             //we could use try get value methods here
-            return unionCodeLookup[unionCode];
+            return UnionCodeLookup[unionCode];
         }
 
         private int GetUnionByExactType(Type exactType)
         {
             //we could use try get value methods here
-            return typeLookup[exactType];
+            return TypeLookup[exactType];
         }
 
         #endregion

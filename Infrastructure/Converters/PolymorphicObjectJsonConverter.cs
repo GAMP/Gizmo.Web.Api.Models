@@ -21,40 +21,40 @@ namespace Gizmo.Web.Api
         /// <summary>
         /// Creates new instance.
         /// </summary>
-        /// <param name="descriminatorName">Custom discrimantor name.</param>
-        /// <exception cref="ArgumentNullException">thrown if value specified by <paramref name="descriminatorName"/>is null or empty string.</exception>
-        public PolymorphicObjectJsonConverter(string descriminatorName)
+        /// <param name="discriminatorName">Custom discriminator name.</param>
+        /// <exception cref="ArgumentNullException">thrown if value specified by <paramref name="discriminatorName"/>is null or empty string.</exception>
+        public PolymorphicObjectJsonConverter(string discriminatorName)
         {
-            if (string.IsNullOrEmpty(descriminatorName))
-                throw new ArgumentNullException(nameof(descriminatorName));
+            if (string.IsNullOrEmpty(discriminatorName))
+                throw new ArgumentNullException(nameof(discriminatorName));
 
-            DESCRIMINATOR_NAME = descriminatorName;
+            DISCRIMINATOR_NAME = discriminatorName;
         } 
 
         #endregion
 
         #region FIELDS
 
-        private readonly string DESCRIMINATOR_NAME = DEFAULT_DESCRIMINATOR_NAME;
-        private const string DEFAULT_DESCRIMINATOR_NAME = "MessageType";
+        private readonly string DISCRIMINATOR_NAME = DEFAULT_DISCRIMINATOR_NAME;
+        private const string DEFAULT_DISCRIMINATOR_NAME = "MessageType";
 
         #endregion
 
         #region HELPERS
 
         /// <summary>
-        /// Reads object descriminator.
+        /// Reads object discriminator.
         /// </summary>
         /// <param name="reader">Json reader.</param>
-        /// <returns>Object desciminator.</returns>
-        protected virtual int ReadDescriminator(ref Utf8JsonReader reader)
+        /// <returns>Object discriminator.</returns>
+        protected virtual int ReadDiscriminator(ref Utf8JsonReader reader)
         {
             reader.Read();
             if (reader.TokenType != JsonTokenType.PropertyName)
                 throw new JsonException();
 
             string? propertyName = reader.GetString();
-            if (propertyName == null || string.Compare(propertyName , DESCRIMINATOR_NAME, StringComparison.OrdinalIgnoreCase) != 0)
+            if (propertyName == null || string.Compare(propertyName , DISCRIMINATOR_NAME, StringComparison.OrdinalIgnoreCase) != 0)
                 throw new JsonException();
 
             reader.Read();
@@ -65,13 +65,13 @@ namespace Gizmo.Web.Api
         }
 
         /// <summary>
-        /// Writes descriminator.
+        /// Writes discriminator.
         /// </summary>
         /// <param name="writer">Json writer.</param>
-        /// <param name="descriminator">Desciminator.</param>
-        protected virtual void WriteDescriminator(Utf8JsonWriter writer, int descriminator)
+        /// <param name="discriminator">Discriminator.</param>
+        protected virtual void WriteDiscriminator(Utf8JsonWriter writer, int discriminator)
         {
-            writer.WriteNumber(DESCRIMINATOR_NAME, descriminator);
+            writer.WriteNumber(DISCRIMINATOR_NAME, discriminator);
         }
 
         #endregion
