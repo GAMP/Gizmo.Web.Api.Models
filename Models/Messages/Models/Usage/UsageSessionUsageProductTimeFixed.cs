@@ -10,7 +10,7 @@
         /// Gets product time id.
         /// </summary>
         [MessagePack.Key(1)]
-        public int ProductTimeFixedId
+        public int ProductTimeFixedPurchaseId
         {
             get;init;
         }

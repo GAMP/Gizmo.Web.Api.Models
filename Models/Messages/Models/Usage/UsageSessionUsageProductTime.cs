@@ -14,5 +14,14 @@
         {
             get;init;
         }
+
+        /// <summary>
+        /// Gets product time id.
+        /// </summary>
+        [MessagePack.Key(2)]
+        public int ProductTimeId
+        {
+            get;init;
+        }
     }
 }
