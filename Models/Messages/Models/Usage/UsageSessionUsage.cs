@@ -6,7 +6,6 @@
     [MessagePack.Union(0,typeof(UsageSessionUsageRate))]
     [MessagePack.Union(1, typeof(UsageSessionUsageProductTime))]
     [MessagePack.Union(2, typeof(UsageSessionUsageProductTimeFixed))]
-    [MessagePack.MessagePackObject()]
     public abstract class UsageSessionUsage
     {
         /// <summary>

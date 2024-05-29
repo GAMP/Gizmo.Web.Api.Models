@@ -7,10 +7,10 @@
     public sealed class UsageSessionUsageProductTime : UsageSessionUsage
     {
         /// <summary>
-        /// Gets product time id.
+        /// Gets product time purchase id (Invoice line).
         /// </summary>
         [MessagePack.Key(1)]
-        public int ProductTimeId
+        public int ProductTimePurchaseId
         {
             get;init;
         }

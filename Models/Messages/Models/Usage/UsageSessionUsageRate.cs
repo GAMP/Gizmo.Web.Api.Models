@@ -13,9 +13,12 @@
         public int RateId { get; init; }
 
         /// <summary>
-        /// Gets billing profile id.
+        /// Gets rate billing profile id.
         /// </summary>
         [MessagePack.Key(2)]
-        public int BillingProfileId { get; init; }
+        public int BillingProfileId
+        {
+            get;init;
+        }
     }
 }
