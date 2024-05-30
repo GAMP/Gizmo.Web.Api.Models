@@ -1,4 +1,5 @@
 ﻿using Gizmo.Web.Api.Messaging;
+using Gizmo.Web.Api.Models;
 using Gizmo.Web.Api.Models.Abstractions;
 using System;
 using System.Text.Json;
@@ -39,6 +40,7 @@ namespace Gizmo.Web.Api
 
             //add usage converter
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<UsageSessionUsage>("Type", "Usage"));
+            options.Converters.Add(new MessagePackUnionMessageJsonConverter<UsageModel>("Type", "Usage"));
 
             return options;
         }

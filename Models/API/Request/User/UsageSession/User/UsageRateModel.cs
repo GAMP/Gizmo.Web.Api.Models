@@ -4,7 +4,7 @@
     /// Active usage rate model.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class ActiveUsageRateModel : ActiveUsageModel
+    public sealed class UsageRateModel : UsageModel
     {
         /// <summary>
         /// Gets billing rate id.
