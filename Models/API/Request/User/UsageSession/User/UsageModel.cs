@@ -6,7 +6,6 @@
     [MessagePack.Union(0, typeof(UsageRateModel))]
     [MessagePack.Union(1, typeof(UsageProductTimeModel))]
     [MessagePack.Union(2, typeof(UsageProductTimeFixedModel))]
-    [MessagePack.MessagePackObject()]
     public abstract class UsageModel : IWebApiModel
     {
         /// <summary>
