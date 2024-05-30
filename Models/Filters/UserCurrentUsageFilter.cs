@@ -13,7 +13,6 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(0)]
         public ModelFilterPagination Pagination { get; set; } = new();
 
-
         /// <inheritdoc/>
         [MessagePack.Key(1)]
         public List<string> Expand { get; set; } = new();
