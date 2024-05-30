@@ -9,13 +9,13 @@
         /// <summary>
         /// Gets purchase invoice line id.
         /// </summary>
-        [MessagePack.Key(3)]
+        [MessagePack.Key(2)]
         public int InvoiceLineId { get; init; }
 
         /// <summary>
         /// Gets product time id.
         /// </summary>
-        [MessagePack.Key(4)]
+        [MessagePack.Key(3)]
         public int ProductTimeId { get; init; }
     }
 }

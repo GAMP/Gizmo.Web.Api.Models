@@ -9,7 +9,7 @@
         /// <summary>
         /// Gets purchase invoice line id.
         /// </summary>
-        [MessagePack.Key(3)]
+        [MessagePack.Key(2)]
         public int InvoiceLineId { get; init; }
     }
 }
