@@ -120,6 +120,18 @@ namespace Gizmo.Web.Api.Models
         public Dictionary<string, string> Metadata { get { return _metaData; } set { _metaData = value; } }
 
         /// <summary>
+        /// Indicates if online e-receipt should be created.
+        /// </summary>
+        /// <remarks>
+        /// This option will only have an effect in payment requests where payment provider supports e-receipt.
+        /// </remarks>
+        [MessagePack.Key(13)]
+        public bool OnlineReceipt
+        {
+            get; init;
+        }
+
+        /// <summary>
         /// Gets payment intent.
         /// </summary>
         [JsonIgnore]
