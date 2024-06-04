@@ -1,9 +1,9 @@
 ﻿namespace Gizmo.Web.Api.Models.Enumerations
 {
     /// <summary>
-    /// Order line creation error result code.
+    /// Order line creation result code.
     /// </summary>
-    public enum OrderLineCreateErrorResult
+    public enum OrderLineCreateResult
     {
         /// <summary>
         /// Success.

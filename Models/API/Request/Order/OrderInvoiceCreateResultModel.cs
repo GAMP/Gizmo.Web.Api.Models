@@ -68,13 +68,13 @@ namespace Gizmo.Web.Api.Models
         /// Gets invalid lines.
         /// </summary>
         [MessagePack.Key(6)]
-        public IEnumerable<OrderLineCreateErrorResultModel> InvalidLines { get; init; } = [];
+        public IEnumerable<OrderLineCreateResultModel> InvalidLines { get; init; } = [];
 
         /// <summary>
         /// Gets invalid payments.
         /// </summary>
         [MessagePack.Key(7)]
-        public IEnumerable<OrderPaymentCreateErrorResultModel> InvalidPayments
+        public IEnumerable<PaymentCreateResultModel> InvalidPayments
         {
             get; init;
         } = [];

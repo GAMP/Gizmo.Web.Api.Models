@@ -1,9 +1,9 @@
 ﻿namespace Gizmo.Web.Api.Models.Enumerations
 {
     /// <summary>
-    /// Order payment creation error result.
+    /// Payment creation result.
     /// </summary>
-    public enum OrderPaymentCreateErrorResult
+    public enum PaymentCreateResult
     {
         /// <summary>
         /// Success.

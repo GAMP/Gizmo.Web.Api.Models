@@ -3,10 +3,13 @@
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Order invoice parameters model.
+    /// Order invoicing parameters model.
     /// </summary>
+    /// <remarks>
+    /// Invoicing parameters for newly created orders.
+    /// </remarks>
     [MessagePack.MessagePackObject()]
-    public sealed class OrderInvoiceParametersModel : IWebApiModel
+    public sealed class OrderInvoicingParametersModel : IWebApiModel
     {
         /// <summary>
         /// Indicates that invoice should be created.

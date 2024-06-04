@@ -8,7 +8,7 @@ namespace Gizmo.Web.Api.Models
     /// Order line creation error result model.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class OrderLineCreateErrorResultModel
+    public sealed class OrderLineCreateResultModel
     {
         /// <summary>
         /// Line guid.
@@ -20,7 +20,7 @@ namespace Gizmo.Web.Api.Models
         /// Validation result.
         /// </summary>
         [MessagePack.Key(1)]
-        public OrderLineCreateErrorResult Result
+        public OrderLineCreateResult Result
         {
             get; init;
         }
@@ -40,9 +40,9 @@ namespace Gizmo.Web.Api.Models
         /// <param name="model">Model.</param>
         /// <param name="result">Result.</param>
         /// <returns>New result model.</returns>
-        public static OrderLineCreateErrorResultModel Create(IOrderLineCreateModel model, OrderLineCreateErrorResult result)
+        public static OrderLineCreateResultModel Create(IOrderLineCreateModel model, OrderLineCreateResult result)
         {
-            return new OrderLineCreateErrorResultModel() { Guid = model.Guid, Result = result };
+            return new OrderLineCreateResultModel() { Guid = model.Guid, Result = result };
         }
     }
 }

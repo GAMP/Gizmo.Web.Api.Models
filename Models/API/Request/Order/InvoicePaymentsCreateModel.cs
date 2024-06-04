@@ -4,17 +4,17 @@ using System.Linq;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Order invoice model.
+    /// Invoice payments creation model.
     /// </summary>
-    /// <remarks>
-    /// Model used to create invoice for existing order.
-    /// </remarks>
     [MessagePack.MessagePackObject()]
-    public sealed class OrderInvoiceModel : IWebApiModel
+    public sealed class InvoicePaymentsCreateModel
     {
         /// <summary>
-        /// Gets invoice payments.
+        /// Invoice payments.
         /// </summary>
+        /// <remarks>
+        /// Invoice payments to be created on invoice.
+        /// </remarks>
         [MessagePack.Key(0)]
         public IEnumerable<PaymentCreateModel> Payments { get; init; } = Enumerable.Empty<PaymentCreateModel>();
     }

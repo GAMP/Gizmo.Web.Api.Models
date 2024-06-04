@@ -14,5 +14,4 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(0)]
         public IEnumerable<OrderInvoiceCreateResultModel> Results { get; init; } = [];
     }
-
 }

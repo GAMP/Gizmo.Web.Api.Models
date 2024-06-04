@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// Order payment processing creation result model.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class OrderPaymentCreateErrorResultModel : IWebApiModel
+    public sealed class PaymentCreateResultModel : IWebApiModel
     {
         /// <summary>
         /// Payment method id.
@@ -21,6 +21,6 @@ namespace Gizmo.Web.Api.Models
         /// Result.
         /// </summary>
         [MessagePack.Key(1)]
-        public OrderPaymentCreateErrorResult Result { get; init; }
+        public PaymentCreateResult Result { get; init; }
     }
 }
