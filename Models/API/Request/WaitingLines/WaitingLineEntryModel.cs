@@ -57,7 +57,7 @@ namespace Gizmo.Web.Api.Models
         /// Total time in line.
         /// </summary>
         [MessagePack.Key(5)]
-        public TimeSpan TimeInLine
+        public double TimeInLine
         {
             get; init;
         }
@@ -66,7 +66,7 @@ namespace Gizmo.Web.Api.Models
         /// Ready timeout time.
         /// </summary>
         [MessagePack.Key(6)]
-        public TimeSpan ReadyTime
+        public double ReadyTime
         {
             get; init;
         }
