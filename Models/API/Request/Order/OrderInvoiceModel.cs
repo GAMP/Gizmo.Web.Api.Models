@@ -17,5 +17,18 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(0)]
         public IEnumerable<PaymentCreateModel> Payments { get; init; } = Enumerable.Empty<PaymentCreateModel>();
+
+        /// <summary>
+        /// Disable receipt printing.
+        /// </summary>
+        [MessagePack.Key(1)]
+        public bool DisableReceiptPrinting { get; init; }
+
+        /// <summary>
+        /// Enables auto completion.
+        /// </summary>
+        /// <remarks>
+        [MessagePack.Key(2)]
+        public bool AutoComplete { get; init; }
     }
 }

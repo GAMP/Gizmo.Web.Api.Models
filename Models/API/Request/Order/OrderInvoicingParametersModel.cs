@@ -61,5 +61,15 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(5)]
         public bool DisableReceiptPrinting { get; init; }
+
+        /// <summary>
+        /// Enables auto completion.
+        /// </summary>
+        /// <remarks>
+        /// This will only have effect if <see cref="CreateInvoice"/> is equal to true.<br></br> 
+        /// In case no invoice created for the order the order cannot transition to completed state.
+        /// </remarks>
+        [MessagePack.Key(6)]
+        public bool AutoComplete {  get; init; }
     }
 }
