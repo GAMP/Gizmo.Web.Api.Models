@@ -477,6 +477,12 @@
   <data name="WAITING_LINE_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Waiting line related events</value>
   </data>
+  <data name="WAITING_LINE_TIMED_OUT_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Waiting line timed out event</value>
+  </data>
+  <data name="WAITING_LINE_TIMED_OUT_EVENT_NAME" xml:space="preserve">
+    <value>Timed out</value>
+  </data>
   <data name="WAITING_LINE_USER_ADDED_EVENT_DESCRIPTION" xml:space="preserve">
     <value>User added event</value>
   </data>

@@ -1,4 +1,6 @@
-﻿namespace Gizmo.Web.Api.Messaging
+﻿using Gizmo.Web.Api.Models.Enumerations;
+
+namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
     /// Waiting line user removed event message.
@@ -42,10 +44,10 @@
         }
 
         /// <summary>
-        /// Indicates that removal was caused by cancellation.
+        /// Removal reason.
         /// </summary>
         [MessagePack.Key(4)]
-        public bool IsCancelled
+        public WaitingLineRemoveReason Reason
         {
             get;init;
         }
