@@ -465,6 +465,12 @@
   <data name="USER_SESSION_STATE_CHANGED_GROUP_DESCRIPTION" xml:space="preserve">
     <value>User session state changed</value>
   </data>
+  <data name="WAITING_LINE_ESTIMATION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Estimation changed event</value>
+  </data>
+  <data name="WAITING_LINE_ESTIMATION_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Estimation changed</value>
+  </data>
   <data name="WAITING_LINE_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
     <value>Waiting line</value>
   </data>
