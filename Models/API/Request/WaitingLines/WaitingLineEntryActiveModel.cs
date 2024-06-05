@@ -3,16 +3,16 @@
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Waiting line entry model.
+    /// Active waiting line entry model.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class WaitingLineEntryModel : IWebApiModel , IModelIntIdentifier
+    public sealed class WaitingLineEntryActiveModel : IWebApiModel , IModelIntIdentifier
     {
         /// <inheritdoc/>
         [MessagePack.Key(0)]
         public int Id
         {
-            get;init;
+            get; init;
         }
 
         /// <summary>
@@ -79,28 +79,19 @@ namespace Gizmo.Web.Api.Models
         }
 
         /// <summary>
-        /// Entry is active.
+        /// Estimated host id.
         /// </summary>
         [MessagePack.Key(8)]
-        public bool IsActive
+        public int? EstimatedHostId
         {
             get; init;
         }
 
         /// <summary>
-        /// Entry is processed.
+        /// Estimated wait time.
         /// </summary>
         [MessagePack.Key(9)]
-        public bool IsProcessed
-        {
-            get; init;
-        }
-
-        /// <summary>
-        /// Entry cancelled.
-        /// </summary>
-        [MessagePack.Key(10)]
-        public bool IsCancelled
+        public double? EstimatedWaitTime
         {
             get; init;
         }
