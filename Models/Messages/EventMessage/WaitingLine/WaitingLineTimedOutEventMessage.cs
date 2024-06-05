@@ -24,9 +24,18 @@
         }
 
         /// <summary>
-        /// User id.
+        /// Gets or sets host group id.
         /// </summary>
         [MessagePack.Key(2)]
+        public int HostGroupId
+        {
+            get; init;
+        }
+
+        /// <summary>
+        /// User id.
+        /// </summary>
+        [MessagePack.Key(3)]
         public int UserId
         {
             get; init;

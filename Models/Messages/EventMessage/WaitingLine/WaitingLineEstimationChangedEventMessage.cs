@@ -24,9 +24,27 @@
         }
 
         /// <summary>
-        /// Estimated host id.
+        /// Gets or sets host group id.
         /// </summary>
         [MessagePack.Key(2)]
+        public int HostGroupId
+        {
+            get; init;
+        }
+
+        /// <summary>
+        /// User id.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public int UserId
+        {
+            get; init;
+        }
+
+        /// <summary>
+        /// Estimated host id.
+        /// </summary>
+        [MessagePack.Key(4)]
         public int? EstimatedHostId
         {
             get; init;
@@ -35,7 +53,7 @@
         /// <summary>
         /// Estimated wait time.
         /// </summary>
-        [MessagePack.Key(3)]
+        [MessagePack.Key(5)]
         public double? EstimatedWaitTime
         {
             get; init;
