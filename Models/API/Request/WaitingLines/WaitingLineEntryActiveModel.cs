@@ -34,9 +34,18 @@ namespace Gizmo.Web.Api.Models
         }
 
         /// <summary>
-        /// Position in line.
+        /// User group id.
         /// </summary>
         [MessagePack.Key(3)]
+        public int UserGroupId
+        {
+            get; init;
+        }
+
+        /// <summary>
+        /// Position in line.
+        /// </summary>
+        [MessagePack.Key(4)]
         public int Position
         {
             get; init;
@@ -45,7 +54,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Manual position.
         /// </summary>
-        [MessagePack.Key(4)]
+        [MessagePack.Key(5)]
         public bool IsManualPosition
         {
             get; init;
@@ -54,7 +63,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Total time in line.
         /// </summary>
-        [MessagePack.Key(5)]
+        [MessagePack.Key(6)]
         public double TimeInLine
         {
             get; init;
@@ -63,7 +72,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Ready timeout time.
         /// </summary>
-        [MessagePack.Key(6)]
+        [MessagePack.Key(7)]
         public double ReadyTime
         {
             get; init;
@@ -72,7 +81,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Indicates ready timeout.
         /// </summary>
-        [MessagePack.Key(7)]
+        [MessagePack.Key(8)]
         public bool IsReadyTimedOut
         {
             get; init;
@@ -81,7 +90,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Estimated host id.
         /// </summary>
-        [MessagePack.Key(8)]
+        [MessagePack.Key(9)]
         public int? EstimatedHostId
         {
             get; init;
@@ -90,7 +99,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Estimated wait time.
         /// </summary>
-        [MessagePack.Key(9)]
+        [MessagePack.Key(10)]
         public double? EstimatedWaitTime
         {
             get; init;
