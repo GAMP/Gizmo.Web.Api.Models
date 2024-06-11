@@ -6,12 +6,12 @@ using System.Text.Json.Serialization;
 namespace Gizmo.Web.Api
 {
     /// <summary>
-    /// Dynimcally creates Json converter.
+    /// Dynamically creates Json converter.
     /// </summary>
     public static class DynamicConverterLoader
     {
         /// <summary>
-        /// Tries to create Msjpack json converter.
+        /// Tries to create MSJPACK json converter.
         /// </summary>
         /// <param name="assemblyName">Assembly name.</param>
         /// <param name="objectType">MsgPack object or interface type.</param>
@@ -23,14 +23,14 @@ namespace Gizmo.Web.Api
             try
             {
                 //try to load desired assembly
-                var desiredAssmbly = Assembly.Load(assemblyName);
+                var desiredAssembly = Assembly.Load(assemblyName);
 
                 //find desired type inside of that assembly
-                var type = desiredAssmbly.GetTypes()
+                var type = desiredAssembly.GetTypes()
                     .Where(type => string.Compare(type.Name, objectType, StringComparison.OrdinalIgnoreCase) == 0)
                     .FirstOrDefault();
 
-                //create gneric converter type
+                //create generic converter type
                 var converterType = typeof(MessagePackUnionMessageJsonConverter<>);
 
                 //make generic with type parameters
