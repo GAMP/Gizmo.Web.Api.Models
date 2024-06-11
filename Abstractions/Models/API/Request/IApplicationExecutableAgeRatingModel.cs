@@ -3,7 +3,7 @@
     /// <summary>
     /// Application executable model age rating.
     /// </summary>
-    public interface IApplicationExecutableModelAgeRating : IWebApiModel
+    public interface IApplicationExecutableAgeRatingModel : IWebApiModel
     {
         
         /// <summary>
