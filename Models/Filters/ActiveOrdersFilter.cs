@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace Gizmo.Web.Api.Models
 {
+    /// <summary>
+    /// Active orders filter model.
+    /// </summary>
     [MessagePack.MessagePackObject()]
     public sealed class ActiveOrdersFilter : IModelFilter<ActiveOrderModel>
     {

@@ -1,7 +1,7 @@
 ﻿using Gizmo.Web.Api.Models.Enumerations;
 using System;
 
-namespace Gizmo.Web.Api.Models.
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Active order model.
