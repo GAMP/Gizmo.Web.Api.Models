@@ -56,5 +56,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(7)]
         public ActiveOrderPaymentStatus PaymentStatus { get; init; }
+
+        /// <summary>
+        /// Gets order delivery state.
+        /// </summary>
+        [MessagePack.Key(8)]
+        public bool IsDelivered { get; init; }
     }
 }
