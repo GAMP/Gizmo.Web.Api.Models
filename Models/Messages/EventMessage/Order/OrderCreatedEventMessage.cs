@@ -11,6 +11,10 @@
         /// <summary>
         /// Gets order status.
         /// </summary>
+        /// <remarks>
+        /// This will be equal to initial order status.<br></br>
+        /// Order might be completed or invoiced (accepted) at creation and we wont be sending logical status transitions changes messages.
+        /// </remarks>
         [MessagePack.Key(2)]
         public OrderStatus Status { get; init; }
     }
