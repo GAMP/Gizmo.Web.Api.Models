@@ -3,13 +3,13 @@
     /// <summary>
     /// Options changed event message.
     /// </summary>
-    [System.ComponentModel.DataAnnotations.Name("Changed", "OPTIONS_CHANGED_EVENT_NAME")]
-    [System.ComponentModel.DataAnnotations.ExtendedDescription("Indicates options change", "OPTIONS_CHANGED_EVENT_DESCRIPTION")]
+    [System.ComponentModel.DataAnnotations.Name("Change", "OPTIONS_CHANGE_EVENT_NAME")]
+    [System.ComponentModel.DataAnnotations.ExtendedDescription("Indicates options change", "OPTIONS_CHANGE_EVENT_DESCRIPTION")]
     [MessagePack.MessagePackObject()]
-    public sealed class OptionsChangedEventMessage : OptionsEventMessageBase
+    public sealed class OptionsChangeEventMessage : OptionsEventMessageBase
     {
         /// <inheritdoc/>
-        public OptionsChangedEventMessage() : base() { }
+        public OptionsChangeEventMessage() : base() { }
 
         /// <summary>
         /// Gets option type.

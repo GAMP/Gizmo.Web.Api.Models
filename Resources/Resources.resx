@@ -285,17 +285,35 @@
   <data name="HOST_LOCK_STATE_CHANED_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Lock state changed</value>
   </data>
+  <data name="INVOICE_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates creation of an invoice</value>
+  </data>
+  <data name="INVOICE_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>Created</value>
+  </data>
+  <data name="INVOICE_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Invoice related events</value>
+  </data>
+  <data name="INVOICE_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Invoice</value>
+  </data>
+  <data name="INVOICE_PAYMENT_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates creation of an invoice payment</value>
+  </data>
+  <data name="INVOICE_PAYMENT_EVENT_NAME" xml:space="preserve">
+    <value>Payment</value>
+  </data>
   <data name="LICENSE_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
     <value>License related events</value>
   </data>
   <data name="LICENSE_EVENT_GROUP_NAME" xml:space="preserve">
     <value>License</value>
   </data>
-  <data name="OPTIONS_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+  <data name="OPTIONS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Indicates options change</value>
   </data>
-  <data name="OPTIONS_CHANGED_EVENT_NAME" xml:space="preserve">
-    <value>Changed</value>
+  <data name="OPTIONS_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Change</value>
   </data>
   <data name="OPTIONS_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
     <value>Options related events</value>
@@ -309,11 +327,29 @@
   <data name="ORDER_CREATED_EVENT_NAME" xml:space="preserve">
     <value>Created</value>
   </data>
+  <data name="ORDER_DELIVERY_STATUS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates order delivery status change</value>
+  </data>
+  <data name="ORDER_DELIVERY_STATUS_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Change</value>
+  </data>
   <data name="ORDER_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
     <value>Order related events</value>
   </data>
   <data name="ORDER_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Order</value>
+  </data>
+  <data name="ORDER_LINE_DELIVERY_STATUS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates order line delivery status change</value>
+  </data>
+  <data name="ORDER_LINE_DELIVERY_STATUS_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="ORDER_STATUS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates order status change</value>
+  </data>
+  <data name="ORDER_STATUS_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Change</value>
   </data>
   <data name="PAYMENT_INTENT_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Indicates payment intent completion</value>

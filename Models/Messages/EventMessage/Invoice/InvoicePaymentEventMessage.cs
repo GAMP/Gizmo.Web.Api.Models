@@ -3,48 +3,44 @@
 namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
-    /// Order invoice payment event message.
+    /// Invoice payment event message.
     /// </summary>
+    [System.ComponentModel.DataAnnotations.Name("Payment", "INVOICE_PAYMENT_EVENT_NAME")]
+    [System.ComponentModel.DataAnnotations.ExtendedDescription("Indicates creation of an invoice payment", "INVOICE_PAYMENT_EVENT_DESCRIPTION")]
     [MessagePackObject()]
-    public sealed class OrderInvoicePaymentEventMessage : OrderEventMessageBase
+    public sealed class InvoicePaymentEventMessage : InvoiceEventMessageBase
     {
-        #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
-        public OrderInvoicePaymentEventMessage() : base()
+        public InvoicePaymentEventMessage() : base()
         { }
-        #endregion
-
-        #region PROPERTIES
 
         /// <summary>
-        /// Gets payment method id.
+        /// Payment method id.
         /// </summary>
-        [Key(2)]
+        [Key(3)]
         public int? PaymentMethodId
         {
             get; init;
         }
 
         /// <summary>
-        /// Gets payment amount.
+        /// Payment amount.
         /// </summary>
-        [Key(3)]
+        [Key(4)]
         public decimal Amount
         {
             get; init;
         }
 
         /// <summary>
-        /// Get outstanding amount on invoice.
+        /// Outstanding amount on invoice.
         /// </summary>
-        [Key(4)]
+        [Key(5)]
         public decimal Outstanding
         {
             get; init;
         }
-
-        #endregion
     }
 }

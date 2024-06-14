@@ -5,6 +5,8 @@ namespace Gizmo.Web.Api.Messaging
     /// <summary>
     /// Order status change event message.
     /// </summary>
+    [System.ComponentModel.DataAnnotations.Name("Change", "ORDER_STATUS_CHANGE_EVENT_NAME")]
+    [System.ComponentModel.DataAnnotations.ExtendedDescription("Indicates order status change", "ORDER_STATUS_CHANGE_EVENT_DESCRIPTION")]
     [MessagePackObject()]
     public sealed class OrderStatusChangeEventMessage : OrderEventMessageBase
     {
@@ -22,16 +24,16 @@ namespace Gizmo.Web.Api.Messaging
         /// Gets new status.
         /// </summary>
         [Key(2)]
-        public OrderStatus NewStatus
+        public OrderStatus Status
         {
             get; init;
         }
 
         /// <summary>
-        /// Gets old status.
+        /// Gets previous status.
         /// </summary>
         [Key(3)]
-        public OrderStatus? OldStatus
+        public OrderStatus? PreviousStatus
         {
             get; init;
         }

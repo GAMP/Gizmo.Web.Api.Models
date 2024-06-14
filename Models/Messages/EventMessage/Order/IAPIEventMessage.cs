@@ -2,11 +2,10 @@
 
 namespace Gizmo.Web.Api.Messaging
 {    
-    [Union(200, typeof(OrderDeliveredEventMessage))]
-    [Union(201, typeof(OrderInvoicedEventMessage))]
-    [Union(202, typeof(OrderInvoicePaymentEventMessage))]
-    [Union(203, typeof(OrderStatusChangeEventMessage))]
-    [Union(204, typeof(OrderCreatedEventMessage))]
+    [Union(200, typeof(OrderCreatedEventMessage))]
+    [Union(201, typeof(OrderStatusChangeEventMessage))]
+    [Union(202, typeof(OrderDeliveryStatusChangeEventMessage))]
+    [Union(203, typeof(OrderLineDeliveryStatusChangeEventMessage))]
     public partial interface IAPIEventMessage
     {
     }
