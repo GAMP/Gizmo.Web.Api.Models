@@ -118,6 +118,12 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(15)]
         public IEnumerable<OrderLineModel> OrderLines { get; set; } = Enumerable.Empty<OrderLineModel>();
 
+        /// <summary>
+        /// The preferred payment method id of the order.
+        /// </summary>
+        [MessagePack.Key(16)]
+        public int? PreferredPaymentMethodId { get; set; }
+
         #endregion
     }
 }
