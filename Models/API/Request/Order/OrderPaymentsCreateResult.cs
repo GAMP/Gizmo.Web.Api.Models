@@ -12,6 +12,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Gets result.
         /// </summary>
+        [MessagePack.Key(0)]
         public OrderPaymentsResult Result { get; init; }
 
         /// <summary>
@@ -21,6 +22,7 @@ namespace Gizmo.Web.Api.Models
         /// This will only have value if the payment function succeeded.<br></br>
         /// This will have value of existing or newly created invoice.
         /// </remarks>
+        [MessagePack.Key(1)]
         public int? InvoiceId { get; init; }
 
         /// <summary>
@@ -29,11 +31,13 @@ namespace Gizmo.Web.Api.Models
         /// <remarks>
         /// If this value is false then existing invoice where used to execute payments.
         /// </remarks>
+        [MessagePack.Key(2)]
         public bool InvoiceCreated { get; init; }
 
         /// <summary>
         /// Gets invalid payments.
         /// </summary>
+        [MessagePack.Key(3)]
         public IEnumerable<PaymentCreateResultModel> FailedPayments { get; init; } = Enumerable.Empty<PaymentCreateResultModel>();
 
         /// <summary>
