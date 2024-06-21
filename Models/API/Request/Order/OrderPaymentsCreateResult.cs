@@ -45,17 +45,17 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         /// <param name="result">Result.</param>
         /// <returns>Create result model.</returns>
-        public static OrderPaymentsCreateResult Create(OrderPaymentsResult result) => new OrderPaymentsCreateResult { Result = result };
+        public static OrderPaymentsCreateResult Create(OrderPaymentsResult result) => new() { Result = result };
 
         /// <summary>
         /// Creates new create result model.
         /// </summary>
-        /// <param name="failedPayments">Failed payments.</param>
+        /// <param name="invalidOrFailedPayments">Failed payments.</param>
         /// <returns>Create result model.</returns>
-        public static OrderPaymentsCreateResult Create(IEnumerable<PaymentCreateResultModel> failedPayments) => new OrderPaymentsCreateResult 
+        public static OrderPaymentsCreateResult Create(IEnumerable<PaymentCreateResultModel> invalidOrFailedPayments) => new()
         {
             Result =  OrderPaymentsResult.InvalidPayments,
-            InvalidPayments = failedPayments 
+            InvalidPayments = invalidOrFailedPayments 
         };
     }
 }
