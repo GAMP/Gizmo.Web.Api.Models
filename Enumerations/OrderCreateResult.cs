@@ -3,6 +3,9 @@
     /// <summary>
     /// Order create result.
     /// </summary>
+    /// <remarks>
+    /// This is result is used for single order creation.
+    /// </remarks>
     public enum OrderCreateResult
     {
         /// <summary>
@@ -40,7 +43,7 @@
         /// <remarks>
         /// This will happen if no usable guest group exists in the system and guest order is being processed.
         /// </remarks>
-        NoGuestGroup = 4, 
+        NoGuestGroup = 4,
 
         /// <summary>
         /// Invalid source host id.
@@ -59,28 +62,12 @@
         PaymentExceedsOrderAmount = 6,
 
         /// <summary>
-        /// Invalid payment method id.
-        /// </summary>
-        /// <remarks>
-        /// This will indicate the the payment method id specified does not exist in the database.
-        /// </remarks>
-        InvalidPaymentMethodId = 7,
-
-        /// <summary>
-        /// Invalid payment amount.
-        /// </summary>
-        /// <remarks>
-        /// This will indicate that zero or negative amount specified for payment.
-        /// </remarks>
-        InvalidPaymentAmount = 8,
-
-        /// <summary>
         /// Partial payment not allowed.
         /// </summary>
         /// <remarks>
         /// This will indicate that its not to partially or pay later. This will be either due to user permission or order type, for example multiple orders cannot be paid partially.
         /// </remarks>
-        PartialOrNonPaymentNotAllowed = 9,
+        PartialOrNonPaymentNotAllowed = 7,
 
         /// <summary>
         /// Empty order.
@@ -88,17 +75,12 @@
         /// <remarks>
         /// Indicates that order does not have any order lines.
         /// </remarks>
-        EmptyOrder = 10,
-
-        /// <summary>
-        /// Specified payment method is not allowed for the current order.
-        /// </summary>
-        NotAllowedPaymentMethod = 11,
+        EmptyOrder = 8,
 
         /// <summary>
         /// Multiple payment methods not allowed.
         /// </summary>
-        MultiplePaymentsNotAllowed = 12,
+        MultiplePaymentsNotAllowed = 9,
 
         /// <summary>
         /// Cannot process order.
@@ -106,6 +88,20 @@
         /// <remarks>
         /// Indicates cases where payment or stock transactions cannot be processed.
         /// </remarks>
-        ErrorProcessing = 13,
+        ErrorProcessing = 10,
+
+        /// <summary>
+        /// Invalid payments.
+        /// </summary>
+        /// <remarks>
+        /// Indicates that one or more payments failed due to validation.
+        /// </remarks>
+        InvalidPayments = 11,
+
+        /// <summary>
+        /// Invalid payments parameters.
+        /// </summary>
+        /// <remarks>Indicates that we have specified both payments and preferred payment parameters.</remarks>
+        InvalidPaymentsParameters = 12,
     }
 }

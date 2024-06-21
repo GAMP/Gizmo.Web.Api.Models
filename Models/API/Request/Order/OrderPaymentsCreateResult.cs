@@ -38,7 +38,7 @@ namespace Gizmo.Web.Api.Models
         /// Gets invalid payments.
         /// </summary>
         [MessagePack.Key(3)]
-        public IEnumerable<PaymentCreateResultModel> FailedPayments { get; init; } = Enumerable.Empty<PaymentCreateResultModel>();
+        public IEnumerable<PaymentCreateResultModel> InvalidPayments { get; init; } = Enumerable.Empty<PaymentCreateResultModel>();
 
         /// <summary>
         /// Creates new create result model.
@@ -54,8 +54,8 @@ namespace Gizmo.Web.Api.Models
         /// <returns>Create result model.</returns>
         public static OrderPaymentsCreateResult Create(IEnumerable<PaymentCreateResultModel> failedPayments) => new OrderPaymentsCreateResult 
         {
-            Result =  OrderPaymentsResult.PaymentsError,
-            FailedPayments = failedPayments 
+            Result =  OrderPaymentsResult.InvalidPayments,
+            InvalidPayments = failedPayments 
         };
     }
 }

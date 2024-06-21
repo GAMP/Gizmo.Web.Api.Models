@@ -3,6 +3,9 @@
     /// <summary>
     /// Order payments result.
     /// </summary>
+    /// <remarks>
+    /// This result is used for single order payment.
+    /// </remarks>
     public enum OrderPaymentsResult
     {
         /// <summary>
@@ -16,7 +19,7 @@
         /// <remarks>
         /// This will indicate an attempt to make an payment which amount exceeds the order totals.
         /// </remarks>
-        PaymentsExceedsOrderAmount = 1,     
+        PaymentsExceedsOrderAmount = 1,
 
         /// <summary>
         /// Partial payment not allowed.
@@ -27,25 +30,29 @@
         PartialOrNonPaymentNotAllowed = 2,
 
         /// <summary>
-        /// Non unique payments.
+        /// Invalid payments.
         /// </summary>
         /// <remarks>
-        /// This will indicate that same payment method was specified multiple times.
+        /// Indicates that one or more payments failed due to validation.
         /// </remarks>
-        NonUniquePayments = 3,
-
-        /// <summary>
-        /// Payments error.
-        /// </summary>
-        PaymentsError = 4,
+        InvalidPayments = 3,
 
         /// <summary>
         /// The order is already fully paid.
         /// </summary>
-        AlreadyPaid = 5,
+        AlreadyPaid = 4,
+
         /// <summary>
         /// Order is voided.
         /// </summary>
-        Voided = 6,
+        Voided = 5,
+
+        /// <summary>
+        /// Cannot process order.
+        /// </summary>
+        /// <remarks>
+        /// Indicates cases where payment or stock transactions cannot be processed.
+        /// </remarks>
+        ErrorProcessing = 6,
     }
 }
