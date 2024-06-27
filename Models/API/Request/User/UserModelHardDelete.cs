@@ -13,10 +13,10 @@ namespace Gizmo.Web.Api.Models
         #region PROPERTIES
 
         /// <summary>
-        /// The id of the user to hard delete.
+        /// The ids of the users to hard delete.
         /// </summary>
         [Key(0)]
-        public int? UserId { get; set; }
+        public int[] UserIds { get; set; } = [];
 
         /// <summary>
         /// Keep user statistics.
