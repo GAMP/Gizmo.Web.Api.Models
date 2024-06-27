@@ -38,24 +38,24 @@ namespace Gizmo.Web.Api.Models
         /// Gets invalid payments.
         /// </summary>
         [MessagePack.Key(3)]
-        public IEnumerable<PaymentCreateResultModel> FailedPayments { get; init; } = Enumerable.Empty<PaymentCreateResultModel>();
+        public IEnumerable<PaymentCreateResultModel> InvalidPayments { get; init; } = Enumerable.Empty<PaymentCreateResultModel>();
 
         /// <summary>
         /// Creates new create result model.
         /// </summary>
         /// <param name="result">Result.</param>
         /// <returns>Create result model.</returns>
-        public static OrderPaymentsCreateResult Create(OrderPaymentsResult result) => new OrderPaymentsCreateResult { Result = result };
+        public static OrderPaymentsCreateResult Create(OrderPaymentsResult result) => new() { Result = result };
 
         /// <summary>
         /// Creates new create result model.
         /// </summary>
-        /// <param name="failedPayments">Failed payments.</param>
+        /// <param name="invalidOrFailedPayments">Failed payments.</param>
         /// <returns>Create result model.</returns>
-        public static OrderPaymentsCreateResult Create(IEnumerable<PaymentCreateResultModel> failedPayments) => new OrderPaymentsCreateResult 
+        public static OrderPaymentsCreateResult Create(IEnumerable<PaymentCreateResultModel> invalidOrFailedPayments) => new()
         {
-            Result =  OrderPaymentsResult.PaymentsError,
-            FailedPayments = failedPayments 
+            Result =  OrderPaymentsResult.InvalidPayments,
+            InvalidPayments = invalidOrFailedPayments 
         };
     }
 }

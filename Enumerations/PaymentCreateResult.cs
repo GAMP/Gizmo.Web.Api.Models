@@ -32,11 +32,27 @@
         InvalidPaymentAmount = 3,
 
         /// <summary>
+        /// Invalid received amount.
+        /// </summary>
+        /// <remarks>
+        /// This will indicate that received amount is less or equal to zero or received amount is less than payment amount.
+        /// </remarks>
+        InvalidReceivedAmount = 4,
+
+        /// <summary>
         /// Payment method not allowed.
         /// </summary>
         /// <remarks>
         /// This will indicate an attempt to use an payment method that is not allowed, for example specifying points as payment method.
         /// </remarks>
-        PaymentMethodNotAllowed = 4,
+        PaymentMethodNotAllowed = 5,
+
+        /// <summary>
+        /// Non unique payment method.
+        /// </summary>
+        /// <remarks>
+        /// This will indicate that same payment method where specified multiple times.
+        /// </remarks>
+        NonUniquePaymentMethod = 6,
     }
 }
