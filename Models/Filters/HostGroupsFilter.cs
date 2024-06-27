@@ -20,7 +20,7 @@ namespace Gizmo.Web.Api.Models
         public ModelFilterPagination Pagination { get; set; } = new();
 
         /// <summary>
-        /// Return groups with names that contain the specified string.
+        /// Return host groups with names that contain the specified string.
         /// </summary>
         [Key(1)]
         public string? GroupName { get; set; }
@@ -30,6 +30,12 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [Key(2)]
         public List<string> Expand { get; set; } = new();
+
+        /// <summary>
+        /// Return host groups of the specified branch.
+        /// </summary>
+        [Key(3)]
+        public int? BranchId { get; set; }
 
         #endregion
     }

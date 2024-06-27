@@ -31,6 +31,12 @@ namespace Gizmo.Web.Api.Models
         [Key(2)]
         public List<string> Expand { get; set; } = new();
 
+        /// <summary>
+        /// Return layout groups of the specified branch.
+        /// </summary>
+        [Key(3)]
+        public int? BranchId { get; set; }
+
         #endregion
     }
 }
