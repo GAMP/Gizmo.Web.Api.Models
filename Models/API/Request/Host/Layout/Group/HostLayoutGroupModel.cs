@@ -42,6 +42,12 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(3)]
         public IEnumerable<HostLayoutModel> HostLayouts { get; set; } = Enumerable.Empty<HostLayoutModel>();
 
+        /// <summary>
+        /// The Id of the branch this layout belongs to.
+        /// </summary>
+        [MessagePack.Key(4)]
+        public int BranchId { get; set; }
+
         #endregion
     }
 }
