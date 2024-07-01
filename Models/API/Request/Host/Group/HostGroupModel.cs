@@ -53,6 +53,12 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(5)]
         public int? DefaultGuestGroupId { get; set; }
 
+        /// <summary>
+        /// The Id of the branch this host group belongs to.
+        /// </summary>
+        [MessagePack.Key(6)]
+        public int BranchId { get; set; }
+
         #endregion
     }
 }

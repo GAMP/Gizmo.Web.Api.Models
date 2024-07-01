@@ -6,10 +6,10 @@ using MessagePack;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Filters that can be applied when searching for host groups.
+    /// Filters that can be applied when searching for security profiles.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class HostGroupsFilter : IModelFilter<HostGroupModel>
+    public sealed class SecurityProfilesFilter : IModelFilter<SecurityProfileModel>
     {
         #region PROPERTIES
 
@@ -20,22 +20,16 @@ namespace Gizmo.Web.Api.Models
         public ModelFilterPagination Pagination { get; set; } = new();
 
         /// <summary>
-        /// Return host groups with names that contain the specified string.
+        /// Return security profiles with names that contain the specified string.
         /// </summary>
         [Key(1)]
-        public string? GroupName { get; set; }
+        public string? Name { get; set; }
 
         /// <summary>
         /// Include specified objects in the result.
         /// </summary>
         [Key(2)]
         public List<string> Expand { get; set; } = new();
-
-        /// <summary>
-        /// Return host groups of the specified branch.
-        /// </summary>
-        [Key(3)]
-        public int? BranchId { get; set; }
 
         #endregion
     }

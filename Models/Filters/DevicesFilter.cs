@@ -33,6 +33,12 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(2)]
         public List<string> Expand { get; set; } = new();
 
+        /// <summary>
+        /// Return devices of the specified branch.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public int? BranchId { get; set; }
+
         #endregion
     }
 }
