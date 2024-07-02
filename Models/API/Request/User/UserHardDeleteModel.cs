@@ -5,15 +5,19 @@ using MessagePack;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// User Ids to hard delete.
+    /// User  information to hard delete.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class UserModelHardDelete : IWebApiModel
+    public sealed class UserHardDeleteModel : IWebApiModel
     {
+        #region PROPERTIES
+
         /// <summary>
-        /// The ids of the users to hard delete.
+        /// The id of the user.
         /// </summary>
         [Key(0)]
-        public int[] UserIds { get; set; } = [];
+        public int UserId { get; set; }
+
+        #endregion
     }
 }
