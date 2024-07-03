@@ -18,6 +18,18 @@ namespace Gizmo.Web.Api.Models
         [Key(0)]
         public int UserId { get; set; }
 
+        /// <summary>
+        /// The username of the user.
+        /// </summary>
+        [Key(1)]
+        public string Username { get; set; } = null!;
+
+        /// <summary>
+        /// The email of the user.
+        /// </summary>
+        [Key(2)]
+        public string? Email { get; set; }
+
         #endregion
     }
 }
