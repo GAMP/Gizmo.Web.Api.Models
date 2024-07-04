@@ -10,7 +10,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for devices.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class DevicesFilter : IModelFilter<DeviceModel>
+    public sealed class DevicesFilter : IModelFilter<DeviceModel> , IBranchBasedModelFilter
     {
         #region PROPERTIES
 
@@ -33,9 +33,7 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(2)]
         public List<string> Expand { get; set; } = new();
 
-        /// <summary>
-        /// Return devices of the specified branch.
-        /// </summary>
+        /// <inheritdoc/>
         [MessagePack.Key(3)]
         public int? BranchId { get; set; }
 
