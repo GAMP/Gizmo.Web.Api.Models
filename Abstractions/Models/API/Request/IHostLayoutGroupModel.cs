@@ -14,5 +14,10 @@
         /// The name of the host group.
         /// </summary>
         string Name { get; set; }
+
+        /// <summary>
+        /// Branch id.
+        /// </summary>
+        public int BranchId { get; set; }
     }
 }

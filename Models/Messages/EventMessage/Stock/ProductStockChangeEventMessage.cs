@@ -11,7 +11,7 @@
         /// <summary>
         /// Gets on hand amount.
         /// </summary>
-        [MessagePack.Key(2)]
+        [MessagePack.Key(3)]
         public decimal OnHand
         {
             get;init;
@@ -20,7 +20,7 @@
         /// <summary>
         /// Gets if alert level currently reached.
         /// </summary>
-        [MessagePack.Key(3)]
+        [MessagePack.Key(4)]
         public bool AlertLevelReached
         {
             get;init;
