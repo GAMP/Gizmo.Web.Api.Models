@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for assets.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class AssetsFilter : IModelFilter<AssetModel>
+    public sealed class AssetsFilter : IModelFilter<AssetModel> , IBranchBasedModelFilter
     {
         #region PROPERTIES
 
@@ -30,6 +30,10 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [Key(2)]
         public List<string> Expand { get; set; } = new();
+
+        /// <inheritdoc/>
+        [Key(3)]
+        public int? BranchId { get; set; }
 
         #endregion
     }
