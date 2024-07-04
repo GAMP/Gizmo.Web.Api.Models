@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 namespace Gizmo.Web.Api.Models.Abstractions
@@ -57,5 +57,10 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// The users of this reservation.
         /// </summary>
         IEnumerable<ReservationModelUser> Users { get; set; }
+
+        /// <summary>
+        /// Branch id.
+        /// </summary>
+        int BranchId { get; set; }
     }
 }
