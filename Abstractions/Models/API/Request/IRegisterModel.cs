@@ -29,5 +29,10 @@
         /// The start cash of the register.
         /// </summary>
         decimal StartCash { get; set; }
+
+        /// <summary>
+        /// Branch id.
+        /// </summary>
+        int BranchId { get; set; }
     }
 }
