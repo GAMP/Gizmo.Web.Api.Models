@@ -41,5 +41,10 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// Start cash.
         /// </summary>
         decimal StartCash { get; }
+
+        /// <summary>
+        /// Branch id.
+        /// </summary>
+        int BranchId { get; set; }
     }
 }
