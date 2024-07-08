@@ -38,6 +38,10 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(3)]
         public DeviceModelHdmi? HdmiDevice { get; set; }
 
+        /// <inheritdoc/>
+        [MessagePack.Key(4)]
+        public int BranchId { get; set; }
+
         #endregion
     }
 }

@@ -64,6 +64,10 @@ namespace Gizmo.Web.Api.Models
             get;set;
         }
 
+        /// <inheritdoc/>
+        [MessagePack.Key(7)]
+        public int BranchId { get; set; }
+
         #endregion
     }
 }

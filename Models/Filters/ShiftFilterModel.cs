@@ -7,7 +7,7 @@ namespace Gizmo.Web.Api.Models
     /// Shift filter model.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class ShiftFilterModel : IModelFilter<ShiftModel>
+    public sealed class ShiftFilterModel : IModelFilter<ShiftModel> , IBranchBasedModelFilter
     {
         /// <summary>
         /// <inheritdoc/>
@@ -28,7 +28,7 @@ namespace Gizmo.Web.Api.Models
         public bool? IsActive { get; init; }
 
         /// <summary>
-        /// Opertor id.
+        /// Operator id.
         /// </summary>
         [MessagePack.Key(3)]
         public int? OperatorId { get; init; }
@@ -38,5 +38,9 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(4)]
         public int? RegisterId { get; init; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(5)]
+        public int? BranchId { get; set; }
     }
 }

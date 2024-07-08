@@ -10,7 +10,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for reservations.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ReservationsFilter : IModelFilter<ReservationModel>
+    public sealed class ReservationsFilter : IModelFilter<ReservationModel> , IBranchBasedModelFilter
     {
         #region PROPERTIES
 
@@ -64,6 +64,10 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(7)]
         public List<string> Expand { get; set; } = new();
+
+        /// <inheritdoc/>
+        [MessagePack.Key(8)]
+        public int? BranchId { get; set; }
 
         #endregion
     }

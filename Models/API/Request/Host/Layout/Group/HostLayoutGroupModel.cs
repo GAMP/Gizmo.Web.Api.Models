@@ -17,22 +17,16 @@ namespace Gizmo.Web.Api.Models
     {
         #region PROPERTIES
 
-        /// <summary>
-        /// The Id of the object.
-        /// </summary>
+        /// <inheritdoc/>
         [MessagePack.Key(0)]
         public int Id { get; init; }
 
-        /// <summary>
-        /// The name of the host group.
-        /// </summary>
+        /// <inheritdoc/>
         [MessagePack.Key(1)]
         [StringLength(45)]
         public string Name { get; set; } = null!;
 
-        /// <summary>
-        /// The display order of the layout group.
-        /// </summary>
+        /// <inheritdoc/>
         [MessagePack.Key(2)]
         public int DisplayOrder { get; set; }
 
@@ -42,9 +36,7 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(3)]
         public IEnumerable<HostLayoutModel> HostLayouts { get; set; } = Enumerable.Empty<HostLayoutModel>();
 
-        /// <summary>
-        /// The Id of the branch this layout belongs to.
-        /// </summary>
+        /// <inheritdoc/>
         [MessagePack.Key(4)]
         public int BranchId { get; set; }
 

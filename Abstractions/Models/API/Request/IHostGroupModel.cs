@@ -29,5 +29,10 @@
         /// The name of the skin this host group uses by default.
         /// </summary>
         string? SkinName { get; set; }
+
+        /// <summary>
+        /// Branch id.
+        /// </summary>
+        public int BranchId { get; set; }
     }
 }

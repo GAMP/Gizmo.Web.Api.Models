@@ -39,5 +39,10 @@
         /// The tag of the asset.
         /// </summary>
         string? Tag { get; set; }
+
+        /// <summary>
+        /// Branch id.
+        /// </summary>
+        int BranchId { get; set; }
     }
 }

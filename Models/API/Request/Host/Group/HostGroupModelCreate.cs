@@ -47,6 +47,12 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(4)]
         public int? DefaultGuestGroupId { get; set; }
 
+        /// <summary>
+        /// <inheritdoc/>
+        /// </summary>
+        [MessagePack.Key(5)]
+        public int BranchId { get; set; }
+
         #endregion
     }
 }

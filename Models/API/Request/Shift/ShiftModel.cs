@@ -56,5 +56,9 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(7)]
         public decimal StartCash { get; init; }
+
+        /// <inheritdoc/>  
+        [MessagePack.Key(8)]
+        public int BranchId { get; set; }
     }
 }

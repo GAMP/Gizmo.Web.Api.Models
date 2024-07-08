@@ -1,4 +1,4 @@
-namespace Gizmo.Web.Api.Models.Abstractions
+﻿namespace Gizmo.Web.Api.Models.Abstractions
 {
     /// <summary>
     /// Device model base.
@@ -16,8 +16,13 @@ namespace Gizmo.Web.Api.Models.Abstractions
         bool IsEnabled { get; set; }
 
         /// <summary>
-        /// The hdmi device object attached to this device if the device is an hdmi device, otherwise it will be null.
+        /// The HDMI device object attached to this device if the device is an HDMI device, otherwise it will be null.
         /// </summary>
         DeviceModelHdmi? HdmiDevice { get; set; }
+
+        /// <summary>
+        /// Branch id.
+        /// </summary>
+        int BranchId { get; set; }
     }
 }

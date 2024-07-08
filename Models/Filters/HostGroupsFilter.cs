@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for host groups.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class HostGroupsFilter : IModelFilter<HostGroupModel>
+    public sealed class HostGroupsFilter : IModelFilter<HostGroupModel> , IBranchBasedModelFilter
     {
         #region PROPERTIES
 
@@ -31,9 +31,7 @@ namespace Gizmo.Web.Api.Models
         [Key(2)]
         public List<string> Expand { get; set; } = new();
 
-        /// <summary>
-        /// Return host groups of the specified branch.
-        /// </summary>
+        /// <inheritdoc/>
         [Key(3)]
         public int? BranchId { get; set; }
 

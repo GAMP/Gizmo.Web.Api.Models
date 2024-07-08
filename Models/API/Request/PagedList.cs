@@ -86,7 +86,7 @@ namespace Gizmo.Web.Api.Models
         /// <returns>Mapped paged list.</returns>
         public PagedList<TTarget> Map<TTarget>(Func<T,TTarget> map)
         {
-            return new PagedList<TTarget>(Data.Select(map))
+            return new PagedList<TTarget>(Data.Select(map).ToList())
             {
                 NextCursor = NextCursor,
                 PrevCursor = PrevCursor

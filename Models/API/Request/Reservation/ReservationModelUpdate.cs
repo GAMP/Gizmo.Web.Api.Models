@@ -89,6 +89,10 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(10)]
         public IEnumerable<ReservationModelUser> Users { get; set; } = Enumerable.Empty<ReservationModelUser>();
 
+        /// <inheritdoc/>
+        [MessagePack.Key(11)]
+        public int BranchId { get; set; }
+
         #endregion
     }
 }

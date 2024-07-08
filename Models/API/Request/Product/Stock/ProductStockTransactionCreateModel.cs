@@ -20,5 +20,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(1)]
         public decimal Amount { get; set; }
+
+        /// <summary>
+        /// Branch id.
+        /// </summary>
+        [MessagePack.Key(2)]
+        public int BranchId { get; set; }
     }
 }

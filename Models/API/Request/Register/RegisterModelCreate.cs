@@ -49,6 +49,10 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(4)]
         public int? IdleTimeout { get; set; }
 
+        /// <inheritdoc/>
+        [MessagePack.Key(5)]
+        public int BranchId { get; set; }
+
         #endregion
     }
 }

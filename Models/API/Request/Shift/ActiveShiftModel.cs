@@ -30,8 +30,6 @@ namespace Gizmo.Web.Api.Models
         /// <inheritdoc/>
         /// </summary>
         [MessagePack.Key(2)]
-        //TODO ignore untill branches implemented
-        [System.Text.Json.Serialization.JsonIgnore()]
         public int BranchId
         {
             get; init;

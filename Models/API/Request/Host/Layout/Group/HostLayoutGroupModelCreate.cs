@@ -15,18 +15,18 @@ namespace Gizmo.Web.Api.Models
     {
         #region PROPERTIES
 
-        /// <summary>
-        /// The name of the host group.
-        /// </summary>
+        /// <inheritdoc/>
         [MessagePack.Key(0)]
         [StringLength(45)]
         public string Name { get; set; } = null!;
 
-        /// <summary>
-        /// The display order of the layout group.
-        /// </summary>
+        /// <inheritdoc/>
         [MessagePack.Key(1)]
         public int DisplayOrder { get; set; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(2)]
+        public int BranchId { get; set; }
 
         #endregion
     }
