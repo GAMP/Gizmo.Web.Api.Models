@@ -1,14 +1,12 @@
 ﻿using MessagePack;
 
-using System;
-
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// User login result.
     /// </summary>
-    [Serializable, MessagePackObject]
-    public sealed class UserLoginResultModel
+    [MessagePackObject]
+    public sealed class UserLoginResultModel : IWebApiModel
     {
         #region PROPERTIES
 
