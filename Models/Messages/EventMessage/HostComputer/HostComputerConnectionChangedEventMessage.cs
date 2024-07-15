@@ -12,6 +12,12 @@
         /// Indicates that host computer is currently connected.
         /// </summary>
         [MessagePack.Key(2)]
-        public bool IsConnected { get;init;}
+        public bool IsConnected { get; init; }
+
+        /// <summary>
+        /// Connection IP Address. Empty string for disconnects.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public string? IPAddress { get; init; }
     }
 }
