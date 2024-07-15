@@ -195,6 +195,12 @@
   <data name="ENTITY_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Database entity</value>
   </data>
+  <data name="HOST_COMPUTER_CLIENT_MODULE_VERSION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Client version changed event</value>
+  </data>
+  <data name="HOST_COMPUTER_CLIENT_MODULE_VERSION_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Client version changed</value>
+  </data>
   <data name="HOST_COMPUTER_CONNECTION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Connection changed event</value>
   </data>
