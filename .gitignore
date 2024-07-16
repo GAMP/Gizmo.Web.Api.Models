@@ -22,6 +22,6 @@ x86/
 bld/
 [Bb]in/
 [Oo]bj/
-[Ll]og/
+#[Ll]og/
 [Tt]est[Rr]esult*/
 # [Bb]uild[Ll]og.*
