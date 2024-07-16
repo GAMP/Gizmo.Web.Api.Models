@@ -16,7 +16,7 @@
         /// Gets host computer id.
         /// </summary>
         [MessagePack.Key(1)]
-        public int HostComputerId
+        public int HostId
         {
             get;init;
         }

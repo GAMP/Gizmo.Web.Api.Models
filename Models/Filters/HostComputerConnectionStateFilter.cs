@@ -25,6 +25,6 @@ namespace Gizmo.Web.Api.Models
         /// Host computer id.
         /// </summary>
         [MessagePack.Key(3)]
-        public int? HostComputerId { get; set; }
+        public int? HostId { get; set; }
     }
 }

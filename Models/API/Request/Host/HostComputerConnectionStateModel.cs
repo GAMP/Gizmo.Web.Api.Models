@@ -10,7 +10,7 @@
         /// Host computer id.
         /// </summary>
         [MessagePack.Key(0)]
-        public int HostComputerId { get; init; }
+        public int HostId { get; init; }
 
         /// <summary>
         /// Indicates that host is connected.
