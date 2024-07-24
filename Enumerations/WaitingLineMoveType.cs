@@ -10,7 +10,7 @@
         /// </summary>
         Custom = 0,
         /// <summary>
-        /// Upd.
+        /// Up.
         /// </summary>
         Up = 1,
         /// <summary>
