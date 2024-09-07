@@ -70,6 +70,34 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(7)]
         public ApplicationDeploymentModelOptions? DeploymentOptions { get; set; }
 
+        /// <summary>
+        /// The list of files that should be excluded.
+        /// <remarks>Each entry should be seperated by ; character.</remarks>
+        /// </summary>
+        [MessagePack.Key(8)]
+        public string? ExcludeFiles { get; set; }
+
+        /// <summary>
+        /// The list of directories that should be excluded.
+        /// <remarks>Each entry should be seperated by ; character.</remarks>
+        /// </summary>
+        [MessagePack.Key(9)]
+        public string? ExcludeDirectories { get; set; }
+
+        /// <summary>
+        /// The list of files that should be included.
+        /// <remarks>Each entry should be seperated by ; character.</remarks>
+        /// </summary>
+        [MessagePack.Key(10)]
+        public string? IncludeFiles { get; set; }
+
+        /// <summary>
+        /// The list of directories that should be included.
+        /// <remarks>Each entry should be seperated by ; character.</remarks>
+        /// </summary>
+        [MessagePack.Key(11)]
+        public string? IncludeDirectories { get; set; }
+
         #endregion
     }
 }

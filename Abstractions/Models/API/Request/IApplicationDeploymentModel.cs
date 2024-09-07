@@ -34,5 +34,29 @@
         /// The source of the deployment.
         /// </summary>
         string Source { get; set; }
+
+        /// <summary>
+        /// The list of files that should be excluded.
+        /// <remarks>Each entry should be seperated by ; character.</remarks>
+        /// </summary>
+        string? ExcludeFiles { get; set; }
+
+        /// <summary>
+        /// The list of directories that should be excluded.
+        /// <remarks>Each entry should be seperated by ; character.</remarks>
+        /// </summary>
+        string? ExcludeDirectories { get; set; }
+
+        /// <summary>
+        /// The list of files that should be included.
+        /// <remarks>Each entry should be seperated by ; character.</remarks>
+        /// </summary>
+        string? IncludeFiles { get; set; }
+
+        /// <summary>
+        /// The list of directories that should be included.
+        /// <remarks>Each entry should be seperated by ; character.</remarks>
+        /// </summary>
+        string? IncludeDirectories { get; set; }
     }
 }
