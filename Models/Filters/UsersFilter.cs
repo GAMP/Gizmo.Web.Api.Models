@@ -63,6 +63,18 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(7)]
         public List<string> Expand { get; set; } = new();
 
+        /// <summary>
+        /// Return logged in users.
+        /// </summary>
+        [MessagePack.Key(8)]
+        public bool? IsLoggedIn { get; set; }
+
+        /// <summary>
+        /// Return users using all active search fields.
+        /// </summary>
+        [MessagePack.Key(9)]
+        public string? SearchValue { get; set; }
+
         #endregion
     }
 }

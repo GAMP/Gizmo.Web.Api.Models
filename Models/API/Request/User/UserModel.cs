@@ -40,6 +40,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [StringLength(30)]
         [MessagePack.Key(3)]
+        [Sortable()]
         public string Username { get; set; } = null!;
 
         /// <summary>
@@ -89,6 +90,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [StringLength(45)]
         [MessagePack.Key(10)]
+        [Sortable()]
         public string? FirstName { get; set; }
 
         /// <summary>
@@ -96,12 +98,14 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [StringLength(45)]
         [MessagePack.Key(11)]
+        [Sortable()]
         public string? LastName { get; set; }
 
         /// <summary>
         /// The birth date of the user.
         /// </summary>
         [MessagePack.Key(12)]
+        [Sortable()]
         public DateTime? BirthDate { get; set; }
 
         /// <summary>
