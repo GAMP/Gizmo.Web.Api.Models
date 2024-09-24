@@ -183,6 +183,30 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(23)]
         public string? Identification { get; set; }
 
+        /// <summary>
+        /// The registration date of the user.
+        /// </summary>
+        [MessagePack.Key(24)]
+        public DateTime RegistrationDate { get; set; }
+
+        /// <summary>
+        /// Whether the user is verified.
+        /// </summary>
+        [MessagePack.Key(25)]
+        public bool IsVerified { get; set; }
+
+        /// <summary>
+        /// Whether the user has notes.
+        /// </summary>
+        [MessagePack.Key(26)]
+        public bool HasNotes { get; set; }
+
+        /// <summary>
+        /// Whether the user has checked out assets.
+        /// </summary>
+        [MessagePack.Key(27)]
+        public bool HasCheckedOutAssets { get; set; }
+
         #endregion
 
         #endregion
