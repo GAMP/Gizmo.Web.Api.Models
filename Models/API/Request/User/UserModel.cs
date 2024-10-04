@@ -209,6 +209,22 @@ namespace Gizmo.Web.Api.Models
 
         #endregion
 
+        #region Guest
+
+        /// <summary>
+        /// Reserved host id if the user is guest.
+        /// </summary>
+        [MessagePack.Key(28)]
+        public int? ReservedHostId { get; set; }
+
+        /// <summary>
+        /// Reserved slot if the user is guest.
+        /// </summary>
+        [MessagePack.Key(29)]
+        public int? ReservedSlot { get; set; }
+
+        #endregion
+
         #endregion
     }
 }
