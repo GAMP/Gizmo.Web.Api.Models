@@ -49,6 +49,12 @@ namespace Gizmo.Web.Api.Models
         [Key(5)]
         public List<string> Expand { get; set; } = new();
 
+        /// <summary>
+        /// Return invoices of the specified status.
+        /// </summary>
+        [Key(6)]
+        public InvoiceStatus? Status { get; set; }
+
         #endregion
     }
 }

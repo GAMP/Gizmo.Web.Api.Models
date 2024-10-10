@@ -74,6 +74,12 @@ namespace Gizmo.Web.Api.Models
         [Key(9)]
         public int? RegisterId { get; set; }
 
+        /// <summary>
+        /// The name of the asset type.
+        /// </summary>
+        [Key(10)]
+        public string? AssetTypeName { get; set; }
+
         #endregion
     }
 }

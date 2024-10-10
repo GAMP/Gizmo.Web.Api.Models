@@ -43,6 +43,12 @@ namespace Gizmo.Web.Api.Models
         [Key(4)]
         public List<string> Expand { get; set; } = new();
 
+        /// <summary>
+        /// Return deposit transactions of the specified type.
+        /// </summary>
+        [Key(5)]
+        public DepositTransactionType? Type { get; set; }
+
         #endregion
     }
 }
