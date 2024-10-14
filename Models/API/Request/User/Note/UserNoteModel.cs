@@ -35,6 +35,18 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(2)]
         public NoteSeverity Severity { get; set; }
 
+        /// <summary>
+        /// The Id of the operator who created the note.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public int? CreatedById { get; set; }
+
+        /// <summary>
+        /// The date that the note was created.
+        /// </summary>
+        [MessagePack.Key(4)]
+        public DateTime CreatedTime { get; set; }
+
         #endregion
     }
 }
