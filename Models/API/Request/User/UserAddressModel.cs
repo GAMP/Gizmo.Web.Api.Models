@@ -34,12 +34,6 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(3)]
         public string? City { get; set; }
 
-        /// <summary>
-        /// The phone number of the user.
-        /// </summary>
-        [MessagePack.Key(4)]
-        public string? Phone { get; set; }
-
         #endregion
     }
 }
