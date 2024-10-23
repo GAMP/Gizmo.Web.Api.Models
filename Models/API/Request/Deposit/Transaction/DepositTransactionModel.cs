@@ -76,6 +76,24 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(9)]
         public int? PaymentMethodId { get; set; }
 
+        /// <summary>
+        /// Whether the deposit transaction was voided.
+        /// </summary>
+        [MessagePack.Key(10)]
+        public bool IsVoided { get; set; }
+
+        /// <summary>
+        /// The date that the deposit transaction was voided.
+        /// </summary>
+        [MessagePack.Key(11)]
+        public DateTime? VoidDate { get; set; }
+
+        /// <summary>
+        /// If the withdraw is a void.
+        /// </summary>
+        [MessagePack.Key(12)]
+        public bool IsVoid { get; set; }
+
         #endregion
     }
 }

@@ -28,5 +28,12 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [Key(2)]
         public int? UserId { get; set; }
+
+        /// <summary>
+        /// Return time products of the specified status.
+        /// </summary>
+        [Key(3)]
+        public TimeProductStatus? Status { get; set; }
+
     }
 }
