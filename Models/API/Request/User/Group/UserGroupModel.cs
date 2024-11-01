@@ -192,6 +192,12 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(28)]
         public int WaitingLinePriority { get; set; }
 
+        /// <summary>
+        /// The credit limit options of the user group.
+        /// </summary>
+        [MessagePack.Key(29)]
+        public CreditLimitOptionType CreditLimitOptions { get; set; }
+
         #endregion
     }
 }

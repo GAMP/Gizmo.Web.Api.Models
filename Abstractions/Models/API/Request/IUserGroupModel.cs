@@ -144,5 +144,10 @@
         /// The waiting line priority of the user group.
         /// </summary>
         int WaitingLinePriority { get; set; }
+
+        /// <summary>
+        /// The credit limit options of the user group.
+        /// </summary>
+        CreditLimitOptionType CreditLimitOptions { get; set; }
     }
 }
