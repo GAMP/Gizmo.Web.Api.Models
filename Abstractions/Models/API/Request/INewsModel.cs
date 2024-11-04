@@ -8,28 +8,23 @@ namespace Gizmo.Web.Api.Models
     public interface INewsModel : IWebApiModel
     {
         /// <summary>
-        /// Gets or sets new Id.
-        /// </summary>
-        int Id { get; init; }
-
-        /// <summary>
         /// When custom template enabled user will only be able to specify entry Data.
         /// We will essentially be forcing him to provide his own visual template and data for the entry.
         /// </summary>
         bool IsCustomTemplate { get; init; }
 
         /// <summary>
-        /// Gets or sets feed title.
+        /// Gets or sets news title.
         /// </summary>
-        string? Title { get; init; }
+        string Title { get; init; }
 
         /// <summary>
-        /// Gets or sets feed data.
+        /// Gets or sets news data.
         /// <remarks>
         /// Data can be set to plain text or html.
         /// </remarks>
         /// </summary>
-        string Data { get; init; }
+        string? Data { get; init; }
 
         /// <summary>
         /// Gets or sets start date.

@@ -1,11 +1,12 @@
 ﻿using System;
+using Gizmo.Web.Api.Models.Abstractions;
 using MessagePack;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <inheritdoc/>
     [Serializable, MessagePackObject]
-    public sealed class NewsModel : INewsModel
+    public sealed class NewsModel : INewsModel , IModelIntIdentifier
     {
         /// <inheritdoc/>
         [Key(0)]
@@ -17,11 +18,11 @@ namespace Gizmo.Web.Api.Models
 
         /// <inheritdoc/>
         [Key(2)]
-        public string? Title { get; init; }
+        public string Title { get; init; } = string.Empty;
 
         /// <inheritdoc/>
         [Key(3)]
-        public string Data { get; init; } = null!;
+        public string? Data { get; init; } = null!;
 
         /// <inheritdoc/>
         [Key(4)]
