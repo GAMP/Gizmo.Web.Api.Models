@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     {
         /// <inheritdoc/>
         [Key(0)]
-        public string Title { get; init; }
+        public string Title { get; init; } = string.Empty;
 
         /// <inheritdoc/>
         [Key(1)]
@@ -17,7 +17,7 @@ namespace Gizmo.Web.Api.Models
 
         /// <inheritdoc/>
         [Key(2)]
-        public string Url { get; init; }
+        public string Url { get; init; } = string.Empty ;
 
         /// <inheritdoc/>
         [Key(3)]
