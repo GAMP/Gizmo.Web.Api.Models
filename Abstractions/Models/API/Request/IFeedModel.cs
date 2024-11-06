@@ -19,10 +19,5 @@
         /// Gets or sets feed url.
         /// </summary>
         public string Url { get; init; }
-
-        /// <summary>
-        /// Gets or sets feed Id.
-        /// </summary>
-        public int Id { get; init; }
     }
 }
