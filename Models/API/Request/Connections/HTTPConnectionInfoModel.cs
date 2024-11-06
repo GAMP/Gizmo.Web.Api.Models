@@ -3,8 +3,7 @@
     /// <summary>
     /// Http connection info model.
     /// </summary>
-    [MessagePack.Union(0, typeof(CompanionConnectionInfoModel))]
-    [MessagePack.Union(1, typeof(HDMIDeviceConnectionInfoModel))]
+    [MessagePack.MessagePackObject()]
     public abstract class HTTPConnectionInfoModel
     {
         /// <summary>
