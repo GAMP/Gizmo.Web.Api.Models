@@ -16,5 +16,17 @@ namespace Gizmo.Web.Api.Models
         /// <inheritdoc/>
         [MessagePack.Key(1)]
         public List<string> Expand { get; set; } = new();
+
+        /// <summary>
+        /// Filters by assigned registers.
+        /// </summary>
+        [MessagePack.Key(2)]
+        public int? RegisterId { get; set; }
+
+        /// <summary>
+        /// Filters by assigned branches.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public int? BranchId { get; set; }
     }
 }
