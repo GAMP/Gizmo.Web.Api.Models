@@ -4,7 +4,7 @@
     /// Branch reference update model.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class BranchReferenceUpdateModel : IWebApiModel
+    public sealed class BranchReferenceModelUpdate : IWebApiModel
     {
         /// <summary>
         /// Branch id.

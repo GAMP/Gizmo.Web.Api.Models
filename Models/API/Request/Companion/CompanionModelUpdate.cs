@@ -7,7 +7,7 @@ namespace Gizmo.Web.Api.Models
     /// Companion update model.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class CompanionUpdateModel : ICompanionModel, IModelIntIdentifier
+    public sealed class CompanionModelUpdate : ICompanionModel, IModelIntIdentifier
     {
         /// <inheritdoc/>
         [MessagePack.Key(0)]

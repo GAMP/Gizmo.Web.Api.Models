@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// Companion create model.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class CompanionCreateModel : ICompanionModel
+    public sealed class CompanionModelCreate : ICompanionModel
     {
         /// <inheritdoc/>
         [Required()]
