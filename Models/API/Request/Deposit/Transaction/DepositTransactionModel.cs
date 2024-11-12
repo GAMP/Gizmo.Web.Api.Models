@@ -94,6 +94,12 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(12)]
         public bool IsVoid { get; set; }
 
+        /// <summary>
+        /// The Id of the deposit payment of this deposit transaction.
+        /// </summary>
+        [MessagePack.Key(13)]
+        public int? DepositPaymentId { get; set; }
+
         #endregion
     }
 }
