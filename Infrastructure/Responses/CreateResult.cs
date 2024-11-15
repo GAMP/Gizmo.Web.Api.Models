@@ -14,6 +14,22 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         public static readonly CreateResult Default = new();
 
+        /// <summary>
+        /// Creates new instance.
+        /// </summary>
+        public CreateResult()
+        {
+        }
+
+        /// <summary>
+        /// Creates new instance.
+        /// </summary>
+        /// <param name="id">Entity id.</param>
+        public CreateResult(int id)
+        {
+            Id = id;
+        }
+
         #region PROPERTIES
 
         /// <summary>
