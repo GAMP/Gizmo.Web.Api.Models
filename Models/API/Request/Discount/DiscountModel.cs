@@ -13,10 +13,12 @@ namespace Gizmo.Web.Api.Models
     {
         /// <inheritdoc/>
         [StringLength(45)]
+        [MessagePack.Key(0)]
         public string Name { get; init; } = null!;
 
         /// <inheritdoc/>
         [StringLength(255)]
+        [MessagePack.Key(1)]
         public string? Description { get; init; }
     }
 }

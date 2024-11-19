@@ -1,10 +1,10 @@
 ﻿namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Inventory adjustment create model.
+    /// Inventory transfer create model.
     /// </summary>
     [MessagePack.MessagePackObject]
-    public sealed class InventoryAdjustmentCreateModel : InventoryCreateModel
+    public sealed class InventoryTransferModelCreate : InventoryModelCreate
     {
     }
 }

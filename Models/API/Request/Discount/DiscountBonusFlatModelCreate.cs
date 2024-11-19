@@ -1,15 +1,15 @@
 ﻿namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Discount bonus flat model.
+    /// Discount bonus flat model create.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class DiscountBonusFlatModel : DiscountModel
+    public sealed class DiscountBonusFlatModelCreate : DiscountModelCreate
     {
         /// <summary>
-        /// The value of the bonus.
+        /// Gets or sets the value.
         /// </summary>
         [MessagePack.Key(2)]
-        public int Value { get; set; }
+        public int Value { get; init; }
     }
 }

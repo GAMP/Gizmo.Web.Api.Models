@@ -9,6 +9,7 @@
         /// <summary>
         /// The value of the bonus.
         /// </summary>
+        [MessagePack.Key(2)]
         public int Value { get; set; }
     }
 }

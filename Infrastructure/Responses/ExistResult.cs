@@ -22,9 +22,19 @@
         }
 
         /// <summary>
+        /// Creates new instance.
+        /// </summary>
+        /// <param name="id">Found entry id.</param>
+        public ExistResult(int? id)
+        {
+            Id = id;
+        }
+
+        /// <summary>
         /// Gets not found result.
         /// </summary>
         public static readonly ExistResult NotFound = new();
+
 
         /// <summary>
         /// Existing id.

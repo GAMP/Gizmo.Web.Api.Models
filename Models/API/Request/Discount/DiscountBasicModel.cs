@@ -6,5 +6,10 @@
     [MessagePack.MessagePackObject()]
     public sealed class DiscountBasicModel : DiscountModel
     {
+        /// <summary>
+        /// Value.
+        /// </summary>
+        [MessagePack.Key(2)]
+        public decimal? Value { get; init; }
     }
 }
