@@ -23,40 +23,64 @@ namespace Gizmo.Web.Api.Models
 
         /// <inheritdoc/>
         [MessagePack.Key(2)]
-        public string? City { get; init; }
+        public string? Country { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(3)]
-        public string? Address { get; init; }
+        public string? City { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(4)]
-        public string? Phone { get; init; }
+        public string? Address { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(5)]
-        public string? Email { get; init; }
+        public string? Phone { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(6)]
-        public string? PostalCode { get; init; }
+        public string? Email { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(7)]
-        public string? Region { get; init; }
+        public string? PostalCode { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(8)]
-        public string? WebSite { get; init; }
+        public string? Region { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(9)]
-        public string? Info { get; init; }
+        public string? WebSite { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(10)]
+        public string? Info { get; init; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(11)]
         [StringLength(45)]
         public string? TimeZone { get; init; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(12)]
+        public bool HasWorkingSchedule { get; init; }
+
+        ///<inheritdoc/>
+        [MessagePack.Key(13)]
+        public int? BusinessStartWeekDay { get; init; }
+
+        ///<inheritdoc/>
+        [MessagePack.Key(14)]
+        public int? BusinessEndWeekDay { get; init; }
+
+        ///<inheritdoc/>
+        [MessagePack.Key(15)]
+        public string? BusinessDayStart { get; init; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(16)]
+        public string? BusinessDayEnd { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(11)]
@@ -68,6 +92,6 @@ namespace Gizmo.Web.Api.Models
 
         /// <inheritdoc/>
         [MessagePack.Key(13)]
-        public Guid Guid { get; init; }
+        public Guid Guid { get; init; }     
     }
 }

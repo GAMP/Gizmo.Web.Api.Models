@@ -13,6 +13,11 @@ namespace Gizmo.Web.Api.Models.Abstractions
         public string Name { get; }
 
         /// <summary>
+        /// Country.
+        /// </summary>
+        public string? Country { get; init; }
+
+        /// <summary>
         /// City.
         /// </summary>
         public string? City { get; }
@@ -20,8 +25,8 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// Address.
         /// </summary>
-        public string? Address { get; } 
-        
+        public string? Address { get; }
+
         /// <summary>
         /// Phone.
         /// </summary>
@@ -56,6 +61,31 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// Branch time zone identifier.
         /// </summary>
         public string? TimeZone { get; }
+
+        /// <summary>
+        /// Gets or sets if branch has working schedule.
+        /// </summary>
+        public bool HasWorkingSchedule { get; }
+
+        /// <summary>
+        /// Gets or sets business start week day.
+        /// </summary>
+        public int? BusinessStartWeekDay { get; }
+
+        /// <summary>
+        /// Gets or sets business end week day.
+        /// </summary>
+        public int? BusinessEndWeekDay { get; }
+
+        /// <summary>
+        /// Gets or sets business day start.
+        /// </summary>
+        public string? BusinessDayStart { get; }
+
+        /// <summary>
+        /// Gets or sets business day end.
+        /// </summary>
+        public string? BusinessDayEnd { get; }
 
         /// <summary>
         /// Indicates that branch is enabled.
