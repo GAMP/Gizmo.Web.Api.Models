@@ -22,9 +22,10 @@ namespace Gizmo.Web.Api.Models
         public List<string> Expand { get; set; } = new();
 
         /// <summary>
-        /// Branch name.
+        /// Is deleted filter.
         /// </summary>
         [MessagePack.Key(2)]
-        public string? Name { get; init; } 
+        public bool? IsDeleted { get; init; } 
+
     }
 }

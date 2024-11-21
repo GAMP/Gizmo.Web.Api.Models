@@ -65,7 +65,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// Gets or sets if branch has working schedule.
         /// </summary>
-        public bool HasWorkingSchedule { get; }
+        public bool HasBusinessSchedule { get; }
 
         /// <summary>
         /// Gets or sets business start week day.

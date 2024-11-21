@@ -71,7 +71,7 @@ namespace Gizmo.Web.Api.Models
 
         /// <inheritdoc/>
         [MessagePack.Key(12)]
-        public bool HasWorkingSchedule { get; init; }
+        public bool HasBusinessSchedule { get; init; }
 
         ///<inheritdoc/>
         [MessagePack.Key(13)]
