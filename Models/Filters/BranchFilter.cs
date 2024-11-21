@@ -22,10 +22,15 @@ namespace Gizmo.Web.Api.Models
         public List<string> Expand { get; set; } = new();
 
         /// <summary>
-        /// Is deleted filter.
+        /// Name filter.
         /// </summary>
         [MessagePack.Key(2)]
-        public bool? IsDeleted { get; init; } 
+        public string? Name { get; init; }
 
+        /// <summary>
+        /// Is deleted filter.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public bool? IsDeleted { get; init; }
     }
 }
