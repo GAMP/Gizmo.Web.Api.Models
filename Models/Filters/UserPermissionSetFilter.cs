@@ -1,13 +1,13 @@
-﻿using Gizmo.Web.Api.Models.Abstractions;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using Gizmo.Web.Api.Models.Abstractions;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Active orders filter model.
+    /// Permission set filter model.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class ActiveOrdersFilter : IModelFilter<ActiveOrderModel>
+    public sealed class UserPermissionSetFilter : IModelFilter<UserPermissionSetModel>
     {
         /// <summary>
         /// <inheritdoc/>
