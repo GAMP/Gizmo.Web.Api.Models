@@ -15,49 +15,47 @@ namespace Gizmo.Web.Api.Models
     {
         #region PROPERTIES
 
-        /// <summary>
-        /// The Id of the object.
-        /// </summary>
+        ///<inheritdoc/>
         [MessagePack.Key(0)]
         public int Id { get; init; }
 
-        /// <summary>
-        /// The number of the register.
-        /// </summary>
+        ///<inheritdoc/>
         [MessagePack.Key(1)]
-        public int Number { get; set; }
+        public int Number { get; init; }
 
-        /// <summary>
-        /// The name of the register.
-        /// </summary>
+        ///<inheritdoc/>
         [MessagePack.Key(2)]
         [StringLength(45)]
-        public string Name { get; set; } = null!;
+        public string Name { get; init; } = null!;
 
-        /// <summary>
-        /// The MAC address of the register.
-        /// </summary>
+        ///<inheritdoc/>
         [MessagePack.Key(3)]
-        [StringLength(255)]
-        [MacAddressValidation]
-        public string? MacAddress { get; set; }
-
-        /// <summary>
-        /// The start cash of the register.
-        /// </summary>
-        [MessagePack.Key(4)]
         [Range(0.0, 1_000_000_000_000)]
-        public decimal StartCash { get; set; }
+        public decimal StartCash { get; init; }
 
-        /// <summary>
-        /// The idle timeout of the register.
-        /// </summary>
+        ///<inheritdoc/>
+        [MessagePack.Key(4)]
+        public int? IdleTimeout { get; init; }
+
+        ///<inheritdoc/>
         [MessagePack.Key(5)]
-        public int? IdleTimeout { get; set; }
+        public int? PaymentTerminalNumber { get; init; }
 
-        /// <inheritdoc/>
+        ///<inheritdoc/>
         [MessagePack.Key(6)]
-        public int BranchId { get; set; }
+        public int? FiscalReceiptPrinterNumber { get; init; }
+
+        ///<inheritdoc/>
+        [MessagePack.Key(7)]
+        public int? StockId { get; init; }
+
+        ///<inheritdoc/>
+        [MessagePack.Key(6)]
+        public int? CompanionId { get; init; }
+
+        ///<inheritdoc/>
+        [MessagePack.Key(8)]
+        public int BranchId { get; init; }
 
         #endregion
     }

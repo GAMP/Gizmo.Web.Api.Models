@@ -6,33 +6,48 @@
     public interface IRegisterModel : IWebApiModel
     {
         /// <summary>
-        /// The idle timeout of the register.
+        /// The number of the register.
         /// </summary>
-        int? IdleTimeout { get; set; }
-
-        /// <summary>
-        /// The MAC address of the register.
-        /// </summary>
-        string? MacAddress { get; set; }
+        int Number { get; }
 
         /// <summary>
         /// The name of the register.
         /// </summary>
-        string Name { get; set; }
+        string Name { get; }
 
         /// <summary>
-        /// The number of the register.
+        /// The idle timeout of the register.
         /// </summary>
-        int Number { get; set; }
+        int? IdleTimeout { get; }
 
         /// <summary>
         /// The start cash of the register.
         /// </summary>
-        decimal StartCash { get; set; }
+        decimal StartCash { get;  }
+
+        /// <summary>
+        /// Payment terminal number.
+        /// </summary>
+        int? PaymentTerminalNumber { get; }
+
+        /// <summary>
+        /// Fiscal receipt printer number.
+        /// </summary>
+        int? FiscalReceiptPrinterNumber { get; }
+
+        /// <summary>
+        /// Stock id.
+        /// </summary>
+        int? StockId { get; }
+
+        /// <summary>
+        /// Companion id.
+        /// </summary>
+        int? CompanionId { get; }
 
         /// <summary>
         /// Branch id.
         /// </summary>
-        int BranchId { get; set; }
+        int BranchId { get; }
     }
 }

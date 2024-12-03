@@ -35,37 +35,45 @@ namespace Gizmo.Web.Api.Models
         public string Name { get; set; } = null!;
 
         /// <summary>
-        /// The MAC address of the register.
-        /// </summary>
-        [MessagePack.Key(3)]
-        [StringLength(255)]
-        [MacAddressValidation]
-        public string? MacAddress { get; set; }
-
-        /// <summary>
         /// The start cash of the register.
         /// </summary>
-        [MessagePack.Key(4)]
+        [MessagePack.Key(3)]
         [Range(0.0, 1_000_000_000_000)]
         public decimal StartCash { get; set; }
 
         /// <summary>
         /// The idle timeout of the register.
         /// </summary>
-        [MessagePack.Key(5)]
+        [MessagePack.Key(4)]
         public int? IdleTimeout { get; set; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(5)]
+        public int? PaymentTerminalNumber { get; init; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(6)]
+        public int? FiscalReceiptPrinterNumber { get; init; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(7)]
+        public int? StockId { get; init; }
 
         /// <summary>
         /// Deleted status.
         /// </summary>
-        [MessagePack.Key(6)]
+        [MessagePack.Key(8)]
         public bool IsDeleted
         {
-            get;set;
+            get; set;
         }
 
         /// <inheritdoc/>
-        [MessagePack.Key(7)]
+        [MessagePack.Key(9)]
+        public int? CompanionId { get; set; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(10)]
         public int BranchId { get; set; }
 
         #endregion
