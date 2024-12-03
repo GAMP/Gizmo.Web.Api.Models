@@ -83,15 +83,69 @@ namespace Gizmo.Web.Api.Models
         public string? BusinessDayEnd { get; init; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(11)]
-        public bool IsEnabled { get; init; }
+        [MessagePack.Key(17)]
+        public bool? IsFiscalizationEnabled { get; set; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(12)]
-        public bool IsDeleted { get; init; }
+        [MessagePack.Key(18)]
+        public string? BusinessVATId { get; init; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(13)]
-        public Guid Guid { get; init; }     
+        [MessagePack.Key(19)]
+        public TaxSystemCountry? TaxSystem { get; init; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(20)]
+        public TaxSystems? GoodsTaxSystem { get; init; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(21)]
+        public TaxSystems? ServicesTaxSystem { get; init; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(22)]
+        public bool? TreatDepositsAsService { get; init; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(23)]
+        public string? DepositServiceDescription { get; init; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(24)]
+        public decimal? TimeBasedServiceVATRate { get; init; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(25)]
+        public VatRates? DepositVATRate
+        {
+            get; init;
+        }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(26)]
+        public AdvancePaymentTypes? DepositAdvancePaymentType
+        {
+            get; init;
+        }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(27)]
+        public int? CompanionId { get; set; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(28)]
+        public Guid Guid { get; set; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(29)]
+        public bool IsDisabled { get; set; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(30)]
+        public DateTime? DisableTime { get; set; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(31)]
+        public bool IsDeleted { get; set; }
     }
 }

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Gizmo.Web.Api.Models.Abstractions
+﻿namespace Gizmo.Web.Api.Models.Abstractions
 {
     /// <summary>
     /// Branch.
@@ -88,18 +86,69 @@ namespace Gizmo.Web.Api.Models.Abstractions
         public string? BusinessDayEnd { get; }
 
         /// <summary>
-        /// Indicates that branch is enabled.
+        /// Gets if branch is fiscalization enabled.
         /// </summary>
-        public bool IsEnabled { get; }
+        public bool? IsFiscalizationEnabled { get; }
 
         /// <summary>
-        /// Indicates that branch is deleted.
+        /// Gets branch VAT id.
+        /// </summary>
+        public string? BusinessVATId { get; }
+
+        /// <summary>
+        /// Gets branch tax system.
+        /// </summary>
+        public TaxSystemCountry? TaxSystem { get; }
+
+        /// <summary>
+        /// Gets branch goods tax system.
+        /// </summary>
+        public TaxSystems? GoodsTaxSystem { get; }
+
+        /// <summary>
+        /// Gets branch services tax system.
+        /// </summary>
+        public TaxSystems? ServicesTaxSystem { get; }
+
+        /// <summary>
+        /// Gets if deposits should be treated as services.
+        /// </summary>
+        public bool? TreatDepositsAsService { get; }
+
+        /// <summary>
+        /// Gets deposit service description.
+        /// </summary>
+        public string? DepositServiceDescription { get; }
+
+        /// <summary>
+        /// Gets time based service VAT rate.
+        /// </summary>
+        public decimal? TimeBasedServiceVATRate { get; }
+
+        /// <summary>
+        /// Gets deposit VAT rate.
+        /// </summary>
+        public VatRates? DepositVATRate
+        {
+            get;
+        }
+
+        /// <summary>
+        /// Gets deposit advance payment type.
+        /// </summary>
+        public AdvancePaymentTypes? DepositAdvancePaymentType
+        {
+            get;
+        }
+
+        /// <summary>
+        /// Gets branch companion id.
+        /// </summary>
+        public int? CompanionId { get; }
+
+        /// <summary>
+        ///  Gets if branch is deleted.
         /// </summary>
         public bool IsDeleted { get; }
-
-        /// <summary>
-        /// Global replication guid.
-        /// </summary>
-        public Guid Guid { get; }
     }
 }
