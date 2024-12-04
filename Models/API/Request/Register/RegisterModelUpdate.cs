@@ -50,11 +50,11 @@ namespace Gizmo.Web.Api.Models
         public int? StockId { get; init; }
 
         ///<inheritdoc/>
-        [MessagePack.Key(6)]
+        [MessagePack.Key(8)]
         public int? CompanionId { get; init; }
 
         ///<inheritdoc/>
-        [MessagePack.Key(8)]
+        [MessagePack.Key(9)]
         public int BranchId { get; init; }
 
         #endregion
