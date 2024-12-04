@@ -2,9 +2,11 @@
 
 namespace Gizmo.Web.Api.Models
 {
-    /// <inheritdoc cref="IStockModel"/>
+    /// <summary>
+    /// Stock update model.
+    /// </summary>
     [MessagePack.MessagePackObject()]
-    public class StockModel : IStockModel , IModelIntIdentifier
+    public sealed class StockModelUpdate : IStockModel, IModelIntIdentifier
     {
         /// <inheritdoc/>
         [MessagePack.Key(0)]

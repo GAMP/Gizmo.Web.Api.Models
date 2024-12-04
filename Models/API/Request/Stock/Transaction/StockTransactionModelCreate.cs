@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// Product stock.
     /// </summary>
     [MessagePack.MessagePackObject]
-    public sealed class StockTransactionCreateModel : IWebApiModel
+    public sealed class StockTransactionModelCreate : IWebApiModel
     {
         #region PROPERTIES
 
