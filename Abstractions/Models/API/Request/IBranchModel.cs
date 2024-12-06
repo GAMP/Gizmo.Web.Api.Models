@@ -11,6 +11,11 @@
         public string Name { get; }
 
         /// <summary>
+        /// Business name.
+        /// </summary>
+        public string? BusinessName { get; }
+
+        /// <summary>
         /// Country.
         /// </summary>
         public string? Country { get; init; }

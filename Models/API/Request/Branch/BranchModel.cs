@@ -23,129 +23,133 @@ namespace Gizmo.Web.Api.Models
 
         /// <inheritdoc/>
         [MessagePack.Key(2)]
-        public string? Country { get; init; }
+        public string? BusinessName { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(3)]
-        public string? City { get; init; }
+        public string? Country { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(4)]
-        public string? Address { get; init; }
+        public string? City { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(5)]
-        public string? Phone { get; init; }
+        public string? Address { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(6)]
-        public string? Email { get; init; }
+        public string? Phone { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(7)]
-        public string? PostalCode { get; init; }
+        public string? Email { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(8)]
-        public string? Region { get; init; }
+        public string? PostalCode { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(9)]
-        public string? WebSite { get; init; }
+        public string? Region { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(10)]
-        public string? Info { get; init; }
+        public string? WebSite { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(11)]
+        public string? Info { get; init; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(12)]
         [StringLength(45)]
         public string? TimeZone { get; init; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(12)]
+        [MessagePack.Key(13)]
         public bool HasBusinessSchedule { get; init; }
 
         ///<inheritdoc/>
-        [MessagePack.Key(13)]
+        [MessagePack.Key(14)]
         public int? BusinessStartWeekDay { get; init; }
 
         ///<inheritdoc/>
-        [MessagePack.Key(14)]
+        [MessagePack.Key(15)]
         public int? BusinessEndWeekDay { get; init; }
 
         ///<inheritdoc/>
-        [MessagePack.Key(15)]
+        [MessagePack.Key(16)]
         public string? BusinessDayStart { get; init; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(16)]
+        [MessagePack.Key(17)]
         public string? BusinessDayEnd { get; init; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(17)]
+        [MessagePack.Key(18)]
         public bool? IsFiscalizationEnabled { get; set; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(18)]
+        [MessagePack.Key(19)]
         public string? BusinessVATId { get; init; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(19)]
+        [MessagePack.Key(20)]
         public TaxSystemCountry? TaxSystem { get; init; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(20)]
+        [MessagePack.Key(21)]
         public TaxSystems? GoodsTaxSystem { get; init; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(21)]
+        [MessagePack.Key(22)]
         public TaxSystems? ServicesTaxSystem { get; init; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(22)]
+        [MessagePack.Key(23)]
         public bool? TreatDepositsAsService { get; init; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(23)]
+        [MessagePack.Key(24)]
         public string? DepositServiceDescription { get; init; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(24)]
+        [MessagePack.Key(25)]
         public decimal? TimeBasedServiceVATRate { get; init; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(25)]
+        [MessagePack.Key(26)]
         public VatRates? DepositVATRate
         {
             get; init;
         }
 
         /// <inheritdoc/>
-        [MessagePack.Key(26)]
+        [MessagePack.Key(27)]
         public AdvancePaymentTypes? DepositAdvancePaymentType
         {
             get; init;
         }
 
         /// <inheritdoc/>
-        [MessagePack.Key(27)]
+        [MessagePack.Key(28)]
         public int? CompanionId { get; set; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(28)]
+        [MessagePack.Key(29)]
         public Guid Guid { get; set; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(29)]
+        [MessagePack.Key(30)]
         public bool IsDisabled { get; set; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(30)]
+        [MessagePack.Key(31)]
         public DateTime? DisableTime { get; set; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(31)]
-        public bool IsDeleted { get; set; }
+        [MessagePack.Key(32)]
+        public bool IsDeleted { get; set; }        
     }
 }

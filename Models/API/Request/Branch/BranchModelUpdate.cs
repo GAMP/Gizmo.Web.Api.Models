@@ -20,123 +20,128 @@ namespace Gizmo.Web.Api.Models
         public string Name { get; init; } = string.Empty;
 
         /// <inheritdoc/>
+        [StringLength(45)]
         [MessagePack.Key(2)]
-        public string? Country { get; init; }
+        public string? BusinessName { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(3)]
+        public string? Country { get; init; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(4)]
         [StringLength(45)]
         public string? City { get; init; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(4)]
+        [MessagePack.Key(5)]
         [StringLength(255)]
         public string? Address { get; init; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(5)]
+        [MessagePack.Key(6)]
         [StringLength(45)]
         public string? Phone { get; init; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(6)]
+        [MessagePack.Key(7)]
         [StringLength(255)]
         public string? Email { get; init; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(7)]
+        [MessagePack.Key(8)]
         [StringLength(45)]
         public string? PostalCode { get; init; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(8)]
+        [MessagePack.Key(9)]
         [StringLength(45)]
         public string? Region { get; init; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(9)]
+        [MessagePack.Key(10)]
         [StringLength(255)]
         public string? WebSite { get; init; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(10)]
+        [MessagePack.Key(11)]
         [StringLength(255)]
         public string? Info { get; init; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(11)]
+        [MessagePack.Key(12)]
         [StringLength(45)]
         public string? TimeZone { get; init; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(12)]
+        [MessagePack.Key(13)]
         public bool HasBusinessSchedule { get; init; }
 
         ///<inheritdoc/>
-        [MessagePack.Key(13)]
+        [MessagePack.Key(14)]
         [Range(0,6)]
         public int? BusinessStartWeekDay { get; init; }
 
         ///<inheritdoc/>
-        [MessagePack.Key(14)]
+        [MessagePack.Key(15)]
         [Range(0, 6)]
         public int? BusinessEndWeekDay { get; init; }
 
         ///<inheritdoc/>
-        [MessagePack.Key(15)]
+        [MessagePack.Key(16)]
         public string? BusinessDayStart { get; init; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(16)]
+        [MessagePack.Key(17)]
         public string? BusinessDayEnd { get; init; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(17)]
+        [MessagePack.Key(18)]
         public bool? IsFiscalizationEnabled { get; set; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(18)]
+        [MessagePack.Key(19)]
         public string? BusinessVATId { get; set; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(19)]
+        [MessagePack.Key(20)]
         public TaxSystemCountry? TaxSystem { get; set; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(20)]
+        [MessagePack.Key(21)]
         public TaxSystems? GoodsTaxSystem { get; set; }
 
         /// <inheritdoc/>        
-        [MessagePack.Key(21)]
+        [MessagePack.Key(22)]
         public TaxSystems? ServicesTaxSystem { get; set; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(22)]
+        [MessagePack.Key(23)]
         public bool? TreatDepositsAsService { get; set; }
 
         /// <inheritdoc/>
         [StringLength(255)]
-        [MessagePack.Key(23)]
+        [MessagePack.Key(24)]
         public string? DepositServiceDescription { get; set; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(24)]
+        [MessagePack.Key(25)]
         public decimal? TimeBasedServiceVATRate { get; set; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(25)]
+        [MessagePack.Key(26)]
         public VatRates? DepositVATRate { get; set; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(26)]
+        [MessagePack.Key(27)]
         public AdvancePaymentTypes? DepositAdvancePaymentType { get; set; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(27)]
+        [MessagePack.Key(28)]
         public int? CompanionId { get; set; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(28)]
+        [MessagePack.Key(29)]
         public bool IsDeleted { get; init; }
     }
 }
