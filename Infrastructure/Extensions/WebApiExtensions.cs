@@ -52,6 +52,9 @@ namespace Gizmo.Web.Api
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<DiscountModelCreate>("Type", "Model"));
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<DiscountModel>("Type", "Model"));
 
+            //notifications converter
+            options.Converters.Add(new MessagePackUnionMessageJsonConverter<NotificationModel>("Type", "Model"));
+
             return options;
         }
 
