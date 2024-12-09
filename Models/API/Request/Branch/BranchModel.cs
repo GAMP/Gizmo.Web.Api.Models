@@ -72,11 +72,11 @@ namespace Gizmo.Web.Api.Models
 
         ///<inheritdoc/>
         [MessagePack.Key(14)]
-        public int? BusinessStartWeekDay { get; init; }
+        public DayOfWeek? BusinessStartWeekDay { get; init; }
 
         ///<inheritdoc/>
         [MessagePack.Key(15)]
-        public int? BusinessEndWeekDay { get; init; }
+        public DayOfWeek? BusinessEndWeekDay { get; init; }
 
         ///<inheritdoc/>
         [MessagePack.Key(16)]

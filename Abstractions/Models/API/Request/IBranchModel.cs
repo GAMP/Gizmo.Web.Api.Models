@@ -1,4 +1,6 @@
-﻿namespace Gizmo.Web.Api.Models.Abstractions
+﻿using System;
+
+namespace Gizmo.Web.Api.Models.Abstractions
 {
     /// <summary>
     /// Branch.
@@ -73,12 +75,12 @@
         /// <summary>
         /// Gets or sets business start week day.
         /// </summary>
-        public int? BusinessStartWeekDay { get; }
+        public DayOfWeek? BusinessStartWeekDay { get; }
 
         /// <summary>
         /// Gets or sets business end week day.
         /// </summary>
-        public int? BusinessEndWeekDay { get; }
+        public DayOfWeek? BusinessEndWeekDay { get; }
 
         /// <summary>
         /// Gets or sets business day start.

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using Gizmo.Web.Api.Models.Abstractions;
 
 namespace Gizmo.Web.Api.Models
@@ -78,12 +79,12 @@ namespace Gizmo.Web.Api.Models
         ///<inheritdoc/>
         [MessagePack.Key(13)]
         [Range(0, 6)]
-        public int? BusinessStartWeekDay { get; init; }
+        public DayOfWeek? BusinessStartWeekDay { get; init; }
 
         ///<inheritdoc/>
         [MessagePack.Key(14)]
         [Range(0, 6)]
-        public int? BusinessEndWeekDay { get; init; }
+        public DayOfWeek? BusinessEndWeekDay { get; init; }
 
         ///<inheritdoc/>
         [MessagePack.Key(15)]
