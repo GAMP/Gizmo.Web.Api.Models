@@ -183,6 +183,18 @@
   <data name="BRANCH_UPDATED_EVENT_NAME" xml:space="preserve">
     <value>Branch updated</value>
   </data>
+  <data name="DEVICE_BARCODE_SCANNED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Barcode scanned event</value>
+  </data>
+  <data name="DEVICE_BARCODE_SCANNED_EVENT_NAME" xml:space="preserve">
+    <value>Barcode scanned</value>
+  </data>
+  <data name="DEVICE_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Device related events</value>
+  </data>
+  <data name="DEVICE_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Device</value>
+  </data>
   <data name="ENTITY_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Indicates an database entity chgange</value>
   </data>
