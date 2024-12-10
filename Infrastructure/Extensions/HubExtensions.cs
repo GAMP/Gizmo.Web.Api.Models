@@ -4,7 +4,7 @@ using System;
 namespace Gizmo.Web.Api
 {
     /// <summary>
-    /// Singal R Hub extensions.
+    /// Signal R Hub extensions.
     /// </summary>
     public static class HubExtensions
     {
@@ -32,7 +32,14 @@ namespace Gizmo.Web.Api
 
             if (DynamicConverterLoader.TryCreate("Gizmo.Companion.Shared", "ICompanionCommandMessage", out var converter))
             {
-                options.PayloadSerializerOptions.Converters.Add(converter);
+                if (converter != null)
+                    options.PayloadSerializerOptions.Converters.Add(converter);
+            }
+
+            if (DynamicConverterLoader.TryCreate("Gizmo.Companion.Shared", "ICompanionEventMessage", out var eventMessageConverter))
+            {
+                if (eventMessageConverter != null)
+                    options.PayloadSerializerOptions.Converters.Add(eventMessageConverter);
             }
 
             return options;
