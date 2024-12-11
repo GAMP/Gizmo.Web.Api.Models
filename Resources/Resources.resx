@@ -195,6 +195,12 @@
   <data name="DEVICE_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Device</value>
   </data>
+  <data name="DEVICE_SMART_CARD_READER_DATA_EVENT_NAME" xml:space="preserve">
+    <value>Smartcard reader data event</value>
+  </data>
+  <data name="DEVICE_SMART_CARD_READER_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Smartcard reader data event</value>
+  </data>
   <data name="ENTITY_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Indicates an database entity chgange</value>
   </data>
