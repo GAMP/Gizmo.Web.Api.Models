@@ -140,6 +140,12 @@ namespace Gizmo.Web.Api.Models
 
         #endregion
 
+        /// <summary>
+        /// The shift options of the operator.
+        /// </summary>
+        [MessagePack.Key(17)]
+        public ShiftOptions ShiftOptions { get; set; }
+
         #endregion
     }
 }

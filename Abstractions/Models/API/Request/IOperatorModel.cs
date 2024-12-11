@@ -93,6 +93,11 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// </summary>
         string? SmartCardUid { get; set; }
 
+        /// <summary>
+        /// The shift options of the operator.
+        /// </summary>
+        ShiftOptions ShiftOptions { get; set; }
+
         #endregion
     }
 }
