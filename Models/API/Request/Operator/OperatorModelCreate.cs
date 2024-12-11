@@ -136,7 +136,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(16)]
         [StringLength(255)]
-        public string Identification { get; set; } = null!;
+        public string? Identification { get; set; }
 
         #endregion
 

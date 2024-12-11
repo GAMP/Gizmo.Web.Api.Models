@@ -51,7 +51,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// The identification number of the operator.
         /// </summary>
-        string Identification { get; set; }
+        string? Identification { get; set; }
 
         /// <summary>
         /// Whether the operator is disabled.
