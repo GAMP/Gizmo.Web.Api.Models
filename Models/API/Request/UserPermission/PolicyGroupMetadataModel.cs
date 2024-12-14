@@ -28,6 +28,6 @@
         /// Description.
         /// </summary>
         [MessagePack.Key(3)]
-        public string? Description { get; init; } = null!;
+        public string Description { get; init; } = null!;
     }
 }
