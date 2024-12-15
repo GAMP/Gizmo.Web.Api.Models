@@ -13,16 +13,12 @@ namespace Gizmo.Web.Api.Models
     [Serializable, MessagePackObject]
     public sealed class UserModelCreate : IUserModel, IUriParametersQuery
     {
-        #region PROPERTIES
-
         /// <summary>
         /// The initial password for the user, if left empty no password will be set.
         /// </summary>
         [StringLength(24)]
         [MessagePack.Key(0)]
         public string? Password { get; set; }
-
-        #region UserMember
 
         /// <summary>
         /// The username of the user.
@@ -68,10 +64,6 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(7)]
         public DateTime? DisabledDate { get; set; }
-
-        #endregion
-
-        #region User
 
         /// <summary>
         /// The first name of the user.
@@ -158,7 +150,7 @@ namespace Gizmo.Web.Api.Models
         /// The SmartCard UID of the user.
         /// </summary>
         [StringLength(255)]
-        [MessagePack.Key(12)]
+        [MessagePack.Key(20)]
         public string? SmartCardUid { get; set; }
 
         /// <summary>
@@ -167,9 +159,5 @@ namespace Gizmo.Web.Api.Models
         [StringLength(255)]
         [MessagePack.Key(21)]
         public string? Identification { get; set; }
-
-        #endregion
-
-        #endregion
     }
 }
