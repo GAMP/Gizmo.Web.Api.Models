@@ -17,5 +17,17 @@
         /// </summary>
         [MessagePack.Key(1)]
         public string Name { get; init; } = null!;
+
+        /// <summary>
+        /// Number of active permissions on this set.
+        /// </summary>
+        [MessagePack.Key(2)]
+        public int Permissions { get; init; }
+
+        /// <summary>
+        /// Number of operators using this set.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public int Operators { get; init; }
     }
 }

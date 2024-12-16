@@ -146,6 +146,12 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(17)]
         public ShiftOptions ShiftOptions { get; set; }
 
+        /// <summary>
+        /// The id of the permission set of the operator.
+        /// </summary>
+        [MessagePack.Key(18)]
+        public int? PermissionSetId { get; set; }
+
         #endregion
     }
 }
