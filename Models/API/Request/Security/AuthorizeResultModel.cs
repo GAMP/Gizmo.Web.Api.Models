@@ -4,7 +4,7 @@
     /// Instance authorization result.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class InstanceAuthorizeResult : IWebApiModel
+    public sealed class AuthorizeResultModel : IWebApiModel
     {
     }
 }

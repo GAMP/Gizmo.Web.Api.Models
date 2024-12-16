@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// Authentication parameters.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class AuthenticationParameters : IWebApiModel
+    public sealed class AuthenticationParametersModel : IWebApiModel
     {
         /// <summary>
         /// Authentication username.

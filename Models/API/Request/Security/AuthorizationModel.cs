@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// Instance authorization model.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class InstanceAuthorizationModel : IWebApiModel
+    public sealed class AuthorizationModel : IWebApiModel
     {
         /// <summary>
         /// License type.
