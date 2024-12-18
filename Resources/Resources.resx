@@ -423,6 +423,18 @@
   <data name="INSTANCE_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Instance</value>
   </data>
+  <data name="INSTANCE_ID_TYPE_HARDWARE_ID_DESCRIPTION" xml:space="preserve">
+    <value>Hardware id</value>
+  </data>
+  <data name="INSTANCE_ID_TYPE_HARDWARE_ID_NAME" xml:space="preserve">
+    <value>Hardware id</value>
+  </data>
+  <data name="INSTANCE_ID_TYPE_INSTANCE_ID_DESCRIPTION" xml:space="preserve">
+    <value>Instance id</value>
+  </data>
+  <data name="INSTANCE_ID_TYPE_INSTANCE_ID_NAME" xml:space="preserve">
+    <value>Instance id</value>
+  </data>
   <data name="INVOICE_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Indicates creation of an invoice</value>
   </data>
