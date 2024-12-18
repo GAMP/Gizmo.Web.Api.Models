@@ -405,6 +405,24 @@
   <data name="HOST_LOCK_STATE_CHANED_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Lock state changed</value>
   </data>
+  <data name="INSTANCE_AUTHENTICATION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Instance authentication changed event</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Instance authentication changed</value>
+  </data>
+  <data name="INSTANCE_AUTHORIZATION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Instance authorization changed event</value>
+  </data>
+  <data name="INSTANCE_AUTHORIZATION_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Instance authorization changed</value>
+  </data>
+  <data name="INSTANCE_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Instance related events</value>
+  </data>
+  <data name="INSTANCE_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Instance</value>
+  </data>
   <data name="INVOICE_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Indicates creation of an invoice</value>
   </data>
