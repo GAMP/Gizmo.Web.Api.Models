@@ -135,6 +135,96 @@
   <data name="ASSISTANCE_REQUEST_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Assistance request</value>
   </data>
+  <data name="AUTHENTICATION_STATE_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>Authentication failed due to an error</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_ERROR_NAME" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_INVALID_DESCRIPTION" xml:space="preserve">
+    <value>Authentication state is invalid</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_INVALID_NAME" xml:space="preserve">
+    <value>Invalid</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_NETWORK_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>Authentication failed due to an network error</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_NETWORK_ERROR_NAME" xml:space="preserve">
+    <value>Network error</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_NO_TOKEN_DESCRIPTION" xml:space="preserve">
+    <value>No token present for authentication</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_NO_TOKEN_NAME" xml:space="preserve">
+    <value>No token</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_UNAUTHORIZED_DESCRIPTION" xml:space="preserve">
+    <value>Unauthorized</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_UNAUTHORIZED_NAME" xml:space="preserve">
+    <value>Unauthorized</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_VALID_DESCRIPTION" xml:space="preserve">
+    <value>Authentication valid</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_VALID_NAME" xml:space="preserve">
+    <value>Valid</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>Failed due to an error</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_ERROR_NAME" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_INVALID_ID_DESCRIPTION" xml:space="preserve">
+    <value>Failed due to an invalid instance id</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_INVALID_ID_NAME" xml:space="preserve">
+    <value>Invalid id</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_NETWORK_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>Failed due to an network error</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_NETWORK_ERROR_NAME" xml:space="preserve">
+    <value>Network error</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
+    <value>Authorization successful</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_SUCCESS_NAME" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_TOKEN_EXPIRED_DESCRIPTION" xml:space="preserve">
+    <value>Failed due to a expired token</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_TOKEN_EXPIRED_NAME" xml:space="preserve">
+    <value>Token expired</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_UNAUTHORIZED_DESCRIPTION" xml:space="preserve">
+    <value>Unauthorized</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_UNAUTHORIZED_NAME" xml:space="preserve">
+    <value>Unauthorized</value>
+  </data>
+  <data name="AUTHORIZATION_WARNINGS_FUTURE_PAYMENT_DESCRIPTION" xml:space="preserve">
+    <value>Future payments may fail due to card expiration</value>
+  </data>
+  <data name="AUTHORIZATION_WARNINGS_FUTURE_PAYMENT_NAME" xml:space="preserve">
+    <value>Future payment warning</value>
+  </data>
+  <data name="AUTHORIZATION_WARNINGS_NONE_DESCRIPTION" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="AUTHORIZATION_WARNINGS_NONE_NAME" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="AUTHORIZATION_WARNINGS_PAYMENT_FAILURE_DESCRIPTION" xml:space="preserve">
+    <value>Payment attempt did not succeed</value>
+  </data>
+  <data name="AUTHORIZATION_WARNINGS_PAYMENT_FAILURE_NAME" xml:space="preserve">
+    <value>Payment failure</value>
+  </data>
   <data name="BRANCH_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Branch created event</value>
   </data>
@@ -338,6 +428,60 @@
   </data>
   <data name="LICENSE_EVENT_GROUP_NAME" xml:space="preserve">
     <value>License</value>
+  </data>
+  <data name="LICENSE_STATE_DISABLED_DESCRIPTION" xml:space="preserve">
+    <value>License is disabled</value>
+  </data>
+  <data name="LICENSE_STATE_DISABLED_INSTANCE_ID_DESCRIPTION" xml:space="preserve">
+    <value>Instance id is disabled/blocked</value>
+  </data>
+  <data name="LICENSE_STATE_DISABLED_INSTANCE_ID_NAME" xml:space="preserve">
+    <value>Disabled instance id</value>
+  </data>
+  <data name="LICENSE_STATE_DISABLED_NAME" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="LICENSE_STATE_EXPIRED_DESCRIPTION" xml:space="preserve">
+    <value>License is expired</value>
+  </data>
+  <data name="LICENSE_STATE_EXPIRED_NAME" xml:space="preserve">
+    <value>Expired</value>
+  </data>
+  <data name="LICENSE_STATE_INVALID_DESCRIPTION" xml:space="preserve">
+    <value>Local license is invalid</value>
+  </data>
+  <data name="LICENSE_STATE_INVALID_NAME" xml:space="preserve">
+    <value>Invalid</value>
+  </data>
+  <data name="LICENSE_STATE_UNAUTHORIZED_DESCRIPTION" xml:space="preserve">
+    <value>Unauthorized</value>
+  </data>
+  <data name="LICENSE_STATE_UNAUTHORIZED_NAME" xml:space="preserve">
+    <value>Unauthorized</value>
+  </data>
+  <data name="LICENSE_STATE_VALID_DESCRIPTION" xml:space="preserve">
+    <value>Valid</value>
+  </data>
+  <data name="LICENSE_STATE_VALID_NAME" xml:space="preserve">
+    <value>Valid</value>
+  </data>
+  <data name="LICENSE_TYPE_NORMAL_DESCRIPTION" xml:space="preserve">
+    <value>Normal license</value>
+  </data>
+  <data name="LICENSE_TYPE_NORMAL_NAME" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="LICENSE_TYPE_TRIAL_DESCRIPTION" xml:space="preserve">
+    <value>Trial license</value>
+  </data>
+  <data name="LICENSE_TYPE_TRIAL_NAME" xml:space="preserve">
+    <value>Trial</value>
+  </data>
+  <data name="LICENSE_TYPE_UNDETERMINED_DESCRIPTION" xml:space="preserve">
+    <value>License type is undetermined</value>
+  </data>
+  <data name="LICENSE_TYPE_UNDETERMINED_NAME" xml:space="preserve">
+    <value>Undetermined</value>
   </data>
   <data name="LOG_CLEARED_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Indicates log being cleared</value>

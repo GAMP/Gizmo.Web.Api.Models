@@ -49,5 +49,26 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(6)]
         public DateTime? VerificationTime { get; init; }
+
+        /// <summary>
+        /// Gets if the subscription payment is recurring.
+        /// </summary>
+        [MessagePack.Key(7)]
+        public bool? IsRecurring { get; init; }
+
+        /// <summary>
+        /// Gets warnings.
+        /// </summary>
+        /// <remarks>
+        /// The enum is flag and need special handling for localization.
+        /// </remarks>
+        [MessagePack.Key(8)]
+        public AuthorizationWarnings? Warnings { get; init; }
+
+        /// <summary>
+        /// Gets if authorization where done locally.
+        /// </summary>
+        [MessagePack.Key(9)]
+        public bool? IsLocal { get; init; }
     }
 }
