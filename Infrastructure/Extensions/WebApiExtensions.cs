@@ -61,6 +61,9 @@ namespace Gizmo.Web.Api
             //recipient models
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<RecipientModel>("Type", "Model"));
 
+            //age restriction model
+            options.Converters.Add(new MessagePackUnionMessageJsonConverter<AgeRestrictionModel>("Type", "Model"));
+
             return options;
         }
 

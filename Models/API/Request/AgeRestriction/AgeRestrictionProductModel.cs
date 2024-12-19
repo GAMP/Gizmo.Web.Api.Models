@@ -3,10 +3,10 @@
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Age restriction login model.
+    /// Age restriction product model.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class AgeRestrictionLoginModel : AgeRestrictionModel , IModelIntIdentifier
+    public sealed class AgeRestrictionProductModel : AgeRestrictionModel , IModelIntIdentifier
     {
         ///<inheritdoc/>
         [MessagePack.Key(0)]
@@ -35,5 +35,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(4)]
         public int? DayMinuteTo { get; init; }
+
+        /// <summary>
+        /// Gets product id.
+        /// </summary>
+        [MessagePack.Key(5)]
+        public int ProductId { get; init; }
     }
 }

@@ -9,5 +9,10 @@
         /// Login.
         /// </summary>
         Login = 0,
+
+        /// <summary>
+        /// Product.
+        /// </summary>
+        Product = 1,
     }
 }
