@@ -8,12 +8,10 @@
     [MessagePack.MessagePackObject()]
     public sealed class ReservationCreatedEventMessage : ReservationEventMessageBase
     {
-        #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
         public ReservationCreatedEventMessage() : base()
         { }
-        #endregion
     }
 }
