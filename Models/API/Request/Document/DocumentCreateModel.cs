@@ -1,10 +1,12 @@
-﻿namespace Gizmo.Web.Api.Models
+﻿using Gizmo.Web.Api.Models.Abstractions;
+
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Document create model.
     /// </summary>
     [MessagePack.MessagePackObject]
-    public sealed class DocumentCreateModel : IDocumentModel
+    public sealed class DocumentCreateModel : IDocumentModel , IUriParametersQuery
     {
         /// <inheritdoc/>
         [MessagePack.Key(0)]
