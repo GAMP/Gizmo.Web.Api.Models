@@ -5,6 +5,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// File creation result model.
     /// </summary>
+    [MessagePack.MessagePackObject()]
     public sealed class FileCreateResultModel : CreateResult, IWebApiModel
     {
         /// <summary>
@@ -20,6 +21,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// File guid.
         /// </summary>
+        [MessagePack.Key(1)]
         public Guid Guid { get; }
     }
 }
