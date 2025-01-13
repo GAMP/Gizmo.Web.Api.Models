@@ -29,6 +29,12 @@ namespace Gizmo.Web.Api.Models
         [Range(0, 100)]
         public decimal Value { get; set; }
 
+        /// <summary>
+        /// The use order of the tax.
+        /// </summary>
+        [MessagePack.Key(2)]
+        public int UseOrder { get; set; }
+
         #endregion
     }
 }

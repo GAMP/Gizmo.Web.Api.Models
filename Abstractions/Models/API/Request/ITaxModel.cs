@@ -1,4 +1,4 @@
-namespace Gizmo.Web.Api.Models.Abstractions
+﻿namespace Gizmo.Web.Api.Models.Abstractions
 {
     /// <summary>
     /// Tax.
@@ -14,5 +14,10 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// The value of the tax.
         /// </summary>
         decimal Value { get; set; }
+
+        /// <summary>
+        /// The use order of the tax.
+        /// </summary>
+        int UseOrder { get; set; }
     }
 }
