@@ -1,4 +1,4 @@
-namespace Gizmo.Web.Api.Models.Abstractions
+﻿namespace Gizmo.Web.Api.Models.Abstractions
 {
     /// <summary>
     /// Variable.
@@ -29,5 +29,10 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// Whether the variable is available in manager.
         /// </summary>
         bool AvailableInManager { get; set; }
+
+        /// <summary>
+        /// Use order of the variable.
+        /// </summary>
+        int UseOrder { get; set; }
     }
 }

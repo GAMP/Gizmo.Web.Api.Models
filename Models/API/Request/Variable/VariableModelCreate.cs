@@ -46,6 +46,12 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(4)]
         public bool AvailableInManager { get; set; }
 
+        /// <summary>
+        /// Use order of the variable.
+        /// </summary>
+        [MessagePack.Key(5)]
+        public int UseOrder { get; set; }
+
         #endregion
     }
 }
