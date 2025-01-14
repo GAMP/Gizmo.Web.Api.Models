@@ -3,6 +3,7 @@
     /// <summary>
     /// Preset reservation time create model.
     /// </summary>
+    [MessagePack.MessagePackObject()]
     public sealed class PresetReservationTimeModelCreate : IWebApiModel
     {
         /// <inheritdoc/>

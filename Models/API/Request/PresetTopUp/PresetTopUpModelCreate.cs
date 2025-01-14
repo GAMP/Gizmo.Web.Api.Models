@@ -3,6 +3,7 @@
     /// <summary>
     /// Preset top up create model.
     /// </summary>
+    [MessagePack.MessagePackObject()]
     public sealed class PresetTopUpModelCreate : IPresetTopUpModel
     {
         /// <inheritdoc/>

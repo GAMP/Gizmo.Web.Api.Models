@@ -3,6 +3,7 @@
     /// <summary>
     /// Preset time sale create model.
     /// </summary>
+    [MessagePack.MessagePackObject()]
     public sealed class PresetTimeSaleModelCreate : IWebApiModel
     {
         /// <inheritdoc/>
