@@ -64,6 +64,9 @@ namespace Gizmo.Web.Api
             //age restriction model
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<AgeRestrictionModel>("Type", "Model"));
 
+            //task model
+            options.Converters.Add(new MessagePackUnionMessageJsonConverter<TaskModel>("Type", "Model"));
+
             return options;
         }
 
