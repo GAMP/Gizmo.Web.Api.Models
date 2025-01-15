@@ -19,7 +19,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [StringLength(255)]
         [Required()]
-        [MessagePack.Key(0)]
+        [MessagePack.Key(1)]
         public string Value { get; init; } = null!;
     }
 }
