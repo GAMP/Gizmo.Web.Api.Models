@@ -17,25 +17,25 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Name.
         /// </summary>
-        [MessagePack.Key(0)]
+        [MessagePack.Key(1)]
         public string Name { get; init; } = null!;
 
         /// <summary>
         /// Disabled drives.
         /// </summary>
-        [MessagePack.Key(1)]
+        [MessagePack.Key(2)]
         public int DisabledDrives { get; init; }
 
         /// <summary>
         /// Restrictions.
         /// </summary>
-        [MessagePack.Key(2)]
+        [MessagePack.Key(3)]
         public IEnumerable<SecurityProfileRestrictionModel> Restrictions { get; init; } = Enumerable.Empty<SecurityProfileRestrictionModel>();
 
         /// <summary>
         /// Policies.
         /// </summary>
-        [MessagePack.Key(3)]
+        [MessagePack.Key(4)]
         public IEnumerable<SecurityProfilePolicyModel> Policies { get; init; } = Enumerable.Empty<SecurityProfilePolicyModel>();
     }
 }
