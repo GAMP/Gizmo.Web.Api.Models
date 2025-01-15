@@ -1,9 +1,9 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions;
-
 using MessagePack;
-
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -33,6 +33,18 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(2)]
         public int DisabledDrives { get; set; }
+
+        /// <summary>
+        /// Restrictions.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public IEnumerable<SecurityProfileRestrictionModel> Restrictions { get; init; } = Enumerable.Empty<SecurityProfileRestrictionModel>();
+
+        /// <summary>
+        /// Policies.
+        /// </summary>
+        [MessagePack.Key(4)]
+        public IEnumerable<SecurityProfilePolicyModel> Policies { get; init; } = Enumerable.Empty<SecurityProfilePolicyModel>();
 
         #endregion
     }
