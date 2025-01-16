@@ -31,18 +31,18 @@ namespace Gizmo.Web.Api.Models
         /// Creation time.
         /// </summary>
         [MessagePack.Key(3)]
-        public DateTimeOffset CreationTime { get; init; }
+        public DateTimeOffset CreationTimeUtc { get; init; }
 
         /// <summary>
         /// Last access time.
         /// </summary>
         [MessagePack.Key(4)]
-        public DateTimeOffset LastAccessTime { get; init; }
+        public DateTimeOffset LastAccessTimeUtc { get; init; }
 
         /// <summary>
         /// Last write time.
         /// </summary>
         [MessagePack.Key(5)]
-        public DateTimeOffset LastWriteTime { get; init; }
+        public DateTimeOffset LastWriteTimeUtc { get; init; }
     }
 }
