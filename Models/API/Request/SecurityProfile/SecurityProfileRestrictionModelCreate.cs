@@ -12,7 +12,7 @@ namespace Gizmo.Web.Api.Models
         /// Type.
         /// </summary>
         [MessagePack.Key(0)]
-        public int Type { get; init; }
+        public RestrictionType Type { get; init; }
 
         /// <summary>
         /// Value.
