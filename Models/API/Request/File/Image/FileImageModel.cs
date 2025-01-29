@@ -2,20 +2,20 @@
 
 namespace Gizmo.Web.Api.Models
 {
-    /// <inheritdoc cref="IFileModel"/>
+    /// <inheritdoc cref="IFileImageModel"/>
     [MessagePack.MessagePackObject]
-    public sealed class FileModel : IFileModel
+    public sealed class FileImageModel : IFileImageModel
     {
         /// <inheritdoc/>
         [MessagePack.Key(0)]
-        public int Id { get; init; }
+        public Guid Id { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(1)]
-        public Guid Guid { get; init; }
+        public string FileName { get; init; } = null!;
 
         /// <inheritdoc/>
         [MessagePack.Key(2)]
-        public string Name { get; init; } = string.Empty;
+        public string MimeType { get; init; } = null!;
     }
 }

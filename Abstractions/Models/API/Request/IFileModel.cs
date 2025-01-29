@@ -8,18 +8,18 @@ namespace Gizmo.Web.Api.Models
     public interface IFileModel : IWebApiModel
     {
         /// <summary>
-        /// File name.
+        /// File id.
         /// </summary>
-        public string FileName { get; init; }
+        public int Id { get; init; }
         
         /// <summary>
-        /// File mime type.
-        /// </summary>
-        public string MimeType { get; init; }
-        
-        /// <summary>
-        /// File identifier.
+        /// File guid identifier.
         /// </summary>
         public Guid Guid { get; init; }
+        
+        /// <summary>
+        /// File name.
+        /// </summary>
+        public string Name { get; init; }
     }
 }
