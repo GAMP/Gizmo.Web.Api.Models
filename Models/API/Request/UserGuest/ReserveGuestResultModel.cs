@@ -29,9 +29,6 @@ namespace Gizmo.Web.Api.Models
         /// <exception cref="ArgumentException">Thrown if <paramref name="result"/> value is equal to <see cref="ReserveGuestResult.Success"/></exception>
         public ReserveGuestResultModel(ReserveGuestResult result)
         {
-            if (result == ReserveGuestResult.Success)
-                throw new ArgumentException();
-
             Result = result;
         }
 
