@@ -80,6 +80,12 @@ namespace Gizmo.Web.Api.Models
         [Key(10)]
         public string? AssetTypeName { get; set; }
 
+        /// <summary>
+        /// The Id of the user who checked out the asset.
+        /// </summary>
+        [Key(11)]
+        public int UserId { get; set; }
+
         #endregion
     }
 }
