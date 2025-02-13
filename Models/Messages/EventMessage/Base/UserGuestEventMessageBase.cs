@@ -1,6 +1,4 @@
-﻿using Gizmo.Web.Api.Messaging;
-
-namespace Gizmo.Web.Api.Models
+﻿namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
     /// User guest event message base.
