@@ -8,10 +8,8 @@ namespace Gizmo.Web.Api.Models
     /// Time product.
     /// </summary>
     [MessagePackObject]
-    public sealed class TimeProductModel
+    public sealed class TimeProductModel : IWebApiModel
     {
-        #region PROPERTIES
-
         [MessagePack.Key(0)]
         public int InvoiceId { get; set; }
 
@@ -53,7 +51,5 @@ namespace Gizmo.Web.Api.Models
 
         [MessagePack.Key(13)]
         public ProductTimeType Type { get; set; }
-
-        #endregion
     }
 }

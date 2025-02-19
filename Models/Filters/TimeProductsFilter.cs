@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for time products.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class TimeProductsFilter : IModelFilter<NewsModel>
+    public sealed class TimeProductsFilter : IModelFilter<TimeProductModel>
     {
         /// <summary>
         /// Filter for cursor-based pagination.
@@ -34,6 +34,5 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [Key(3)]
         public TimeProductStatus? Status { get; set; }
-
     }
 }
