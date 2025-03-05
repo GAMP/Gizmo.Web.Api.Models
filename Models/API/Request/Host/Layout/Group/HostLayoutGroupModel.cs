@@ -28,6 +28,7 @@ namespace Gizmo.Web.Api.Models
 
         /// <inheritdoc/>
         [MessagePack.Key(2)]
+        [Sortable()]
         public int DisplayOrder { get; set; }
 
         /// <summary>
