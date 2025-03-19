@@ -34,5 +34,10 @@
         /// Branch id.
         /// </summary>
         public int BranchId { get; set; }
+
+        /// <summary>
+        /// Billing profile id.
+        /// </summary>
+        public int? BillProfileId { get; set; }
     }
 }

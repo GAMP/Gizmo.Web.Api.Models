@@ -59,6 +59,12 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(6)]
         public int BranchId { get; set; }
 
+        /// <summary>
+        /// The Id of the billing profile this host group uses.
+        /// </summary>
+        [MessagePack.Key(7)]
+        public int? BillProfileId { get; set; }
+
         #endregion
     }
 }

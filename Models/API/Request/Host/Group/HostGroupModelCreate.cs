@@ -53,6 +53,12 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(5)]
         public int BranchId { get; set; }
 
+        /// <summary>
+        /// <inheritdoc/>
+        /// </summary>
+        [MessagePack.Key(6)]
+        public int? BillProfileId { get; set; }
+
         #endregion
     }
 }
