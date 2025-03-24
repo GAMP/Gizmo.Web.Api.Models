@@ -9,5 +9,7 @@
         /// The name of the client option.
         /// </summary>
         string Name { get; set; }
+
+        ClientOptionSkinModel? ClientOptionSkin { get; set; }
     }
 }

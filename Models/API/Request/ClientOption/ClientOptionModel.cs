@@ -1,6 +1,4 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-
+﻿using System.ComponentModel.DataAnnotations;
 using Gizmo.Web.Api.Models.Abstractions;
 
 using MessagePack;
@@ -10,7 +8,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Client option.
     /// </summary>
-    [Serializable, MessagePackObject]
+    [MessagePackObject]
     public sealed class ClientOptionModel : IClientOptionModel, IModelIntIdentifier
     {
         #region PROPERTIES
@@ -27,6 +25,9 @@ namespace Gizmo.Web.Api.Models
         [StringLength(255)]
         [MessagePack.Key(1)]
         public string Name { get; set; } = null!;
+
+        [MessagePack.Key(2)]
+        public ClientOptionSkinModel? ClientOptionSkin { get; set; }
 
         #endregion
     }
