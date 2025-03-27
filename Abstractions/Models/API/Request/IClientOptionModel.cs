@@ -11,5 +11,7 @@
         string Name { get; set; }
 
         ClientOptionSkinModel? ClientOptionSkin { get; set; }
+
+        string? CustomCSS { get; set; }
     }
 }
