@@ -204,8 +204,5 @@ namespace Gizmo.Web.Api.Models
         public bool AssistanceRequestDisabled { get; set; }
 
         #endregion
-
-        [MessagePack.Key(45)]
-        public string? CustomCSS { get; set; }
     }
 }

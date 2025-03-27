@@ -29,6 +29,9 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(2)]
         public ClientOptionSkinModel? ClientOptionSkin { get; set; }
 
+        [MessagePack.Key(3)]
+        public string? CustomCSS { get; set; }
+
         #endregion
     }
 }
