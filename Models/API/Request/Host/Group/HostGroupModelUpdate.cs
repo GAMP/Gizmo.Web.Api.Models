@@ -65,6 +65,12 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(7)]
         public int? BillProfileId { get; set; }
 
+        /// <summary>
+        /// Client options id.
+        /// </summary>
+        [MessagePack.Key(8)]
+        public int? ClientOptionsId { get; set; }
+
         #endregion
     }
 }

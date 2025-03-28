@@ -13,5 +13,7 @@
         ClientOptionSkinModel? ClientOptionSkin { get; set; }
 
         string? CustomCSS { get; set; }
+
+        bool IsDefault { get; set; }
     }
 }

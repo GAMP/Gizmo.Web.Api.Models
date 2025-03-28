@@ -39,5 +39,10 @@
         /// Billing profile id.
         /// </summary>
         public int? BillProfileId { get; set; }
+
+        /// <summary>
+        /// Client options id.
+        /// </summary>
+        public int? ClientOptionsId { get; set; }
     }
 }

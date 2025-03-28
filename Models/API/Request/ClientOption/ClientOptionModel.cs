@@ -32,6 +32,9 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(3)]
         public string? CustomCSS { get; set; }
 
+        [MessagePack.Key(4)]
+        public bool IsDefault { get; set; }
+
         #endregion
     }
 }
