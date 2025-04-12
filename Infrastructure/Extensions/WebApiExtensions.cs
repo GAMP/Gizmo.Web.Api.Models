@@ -67,6 +67,9 @@ namespace Gizmo.Web.Api
             //task model
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<TaskModel>("Type", "Model"));
 
+            //mappings model
+            options.Converters.Add(new MessagePackUnionMessageJsonConverter<MappingModel>("Type", "Model"));
+
             return options;
         }
 
