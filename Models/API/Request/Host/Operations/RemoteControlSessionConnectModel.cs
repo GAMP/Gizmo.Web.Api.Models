@@ -44,5 +44,11 @@
         {
             get; init;
         }
+
+        /// <summary>
+        /// Enable debug console.
+        /// </summary>
+        [MessagePack.Key(4)]
+        public bool EnableConsole { get;init; }
     }
 }
