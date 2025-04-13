@@ -17,19 +17,19 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets user id.
         /// </summary>
-        [MessagePack.Key(0)]
+        [MessagePack.Key(1)]
         public int? UserId { get; init; }
 
         /// <summary>
         /// Gets host id.
         /// </summary>
-        [MessagePack.Key(1)]
+        [MessagePack.Key(2)]
         public int HostId { get; init; }
 
         /// <summary>
         /// Gets creation or last modification time.
         /// </summary>
-        [MessagePack.Key(2)]
+        [MessagePack.Key(3)]
         public DateTime Time { get; init; }
     }
 }

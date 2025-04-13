@@ -11,13 +11,13 @@
         /// <summary>
         /// Gets request id.
         /// </summary>
-        [MessagePack.Key(3)]
+        [MessagePack.Key(4)]
         public int AssistanceRequestId { get; init; }
 
         /// <summary>
         /// Gets request new status.
         /// </summary>
-        [MessagePack.Key(4)]
+        [MessagePack.Key(5)]
         public AssistanceRequestStatus Status { get; init; }
     }
 }
