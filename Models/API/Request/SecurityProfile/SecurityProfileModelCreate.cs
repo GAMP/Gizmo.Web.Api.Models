@@ -32,5 +32,23 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(3)]
         public IEnumerable<SecurityProfilePolicyModelCreate> Policies { get; init; } = Enumerable.Empty<SecurityProfilePolicyModelCreate>();
+
+        /// <summary>
+        /// Disable start.
+        /// </summary>
+        [MessagePack.Key(4)]
+        public bool DisableStart { get; init; }
+
+        /// <summary>
+        /// Disable desktop switching.
+        /// </summary>
+        [MessagePack.Key(5)]
+        public bool DisableDesktopSwitching { get; init; }
+
+        /// <summary>
+        /// Sticky shell.
+        /// </summary>
+        [MessagePack.Key(6)]
+        public bool StickyShell { get; init; }
     }
 }
