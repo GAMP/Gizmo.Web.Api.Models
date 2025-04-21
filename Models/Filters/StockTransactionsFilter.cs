@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for stock transactions.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class StockTransactionsFilter : IModelFilter<StockTransactionModel> , IBranchBasedModelFilter
+    public sealed class StockTransactionsFilter : IModelFilter<StockTransactionModel>
     {
         #region PROPERTIES
 
@@ -37,9 +37,11 @@ namespace Gizmo.Web.Api.Models
         [Key(3)]
         public List<string> Expand { get; set; } = new();
         
-        /// <inheritdoc/>
+        /// <summary>
+        /// Stock id.
+        /// </summary>
         [Key(4)]
-        public int? BranchId { get; set; }
+        public int? StockId { get; set; }
 
         #endregion
     }

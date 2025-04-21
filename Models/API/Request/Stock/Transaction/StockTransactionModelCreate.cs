@@ -30,10 +30,10 @@ namespace Gizmo.Web.Api.Models
         public decimal Amount { get; set; }
 
         /// <summary>
-        /// Branch id.
+        /// Stock id.
         /// </summary>
         [MessagePack.Key(3)]
-        public int BranchId { get; set; }
+        public int StockId { get; set; }
 
         #endregion
     }

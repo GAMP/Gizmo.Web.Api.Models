@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for products stock.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ProductsStockFilter : IModelFilter<ProductStockModel> , IBranchBasedModelFilter
+    public sealed class ProductsStockFilter : IModelFilter<ProductStockModel>
     {
         /// <summary>
         /// Filter for cursor-based pagination.
@@ -23,8 +23,10 @@ namespace Gizmo.Web.Api.Models
         [Key(1)]
         public List<string> Expand { get; set; } = new();
 
-        /// <inheritdoc/>
+        /// <summary>
+        /// Stock id.
+        /// </summary>
         [Key(2)]
-        public int? BranchId { get; set; }
+        public int? StockId { get; set; }
     }
 }

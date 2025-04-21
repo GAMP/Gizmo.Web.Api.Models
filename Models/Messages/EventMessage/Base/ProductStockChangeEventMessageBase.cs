@@ -18,10 +18,10 @@
         }
 
         /// <summary>
-        /// Gets branch id.
+        /// Gets stock id.
         /// </summary>
         [MessagePack.Key(2)]
-        public int BranchId
+        public int StockId
         {
             get; init; 
         }
