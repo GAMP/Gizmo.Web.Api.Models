@@ -12,5 +12,8 @@
 
         /// <inheritdoc/>
         public int? ShiftId { get; init; }
+
+        /// <inheritdoc/>
+        public string? Note { get; init; }
     }
 }

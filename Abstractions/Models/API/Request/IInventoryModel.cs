@@ -14,5 +14,10 @@
         /// Gets or sets the shift id.
         /// </summary>
         public int? ShiftId { get; init; }
+
+        /// <summary>
+        /// Gets or sets note.
+        /// </summary>
+        public string? Note { get; init; }
     }
 }
