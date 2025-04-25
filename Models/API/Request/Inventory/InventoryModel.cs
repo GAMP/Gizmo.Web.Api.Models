@@ -1,4 +1,7 @@
-﻿namespace Gizmo.Web.Api.Models
+﻿using System.Collections.Generic;
+using System.Linq;
+
+namespace Gizmo.Web.Api.Models
 {
     /// <inheritdoc cref="IInventoryModel"/>
     [MessagePack.Union(0, typeof(InventoryInboundModel))]
@@ -8,6 +11,9 @@
     public abstract class InventoryModel : IInventoryModel
     {
         /// <inheritdoc/>
+        public int Id { get; init; }
+
+        /// <inheritdoc/>
         public int StockId { get; init; }
 
         /// <inheritdoc/>
@@ -15,5 +21,8 @@
 
         /// <inheritdoc/>
         public string? Note { get; init; }
+
+        /// <inheritdoc/>
+        public IEnumerable<int> Documents { get; init; } = Enumerable.Empty<int>();
     }
 }

@@ -1,15 +1,14 @@
 ﻿namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Inventory inbound create model.
+    /// Inventory inbound model.
     /// </summary>
-    [MessagePack.MessagePackObject]
-    public sealed class InventoryInboundModelCreate : InventoryModelCreate
+    [MessagePack.MessagePackObject()]
+    public sealed class InventoryInboundModel : InventoryModel
     {
         /// <summary>
         /// Cost.
         /// </summary>
-        [MessagePack.Key(2)]
         public decimal Cost { get; init; }
     }
 }

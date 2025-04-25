@@ -42,9 +42,7 @@ namespace Gizmo.Web.Api
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<UsageSessionUsage>("Type", "Usage"));
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<UsageModel>("Type", "Usage"));
 
-            //add inventory converters
-            options.Converters.Add(new MessagePackUnionMessageJsonConverter<InventoryModelCreate>("Type", "Model"));
-            options.Converters.Add(new MessagePackUnionMessageJsonConverter<InventoryEntryModelCreate>("Type", "Model"));
+            //add inventory converters        
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<InventoryModel>("Type", "Model"));
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<InventoryEntryModel>("Type", "Model"));
 

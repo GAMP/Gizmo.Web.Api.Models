@@ -6,19 +6,7 @@
     [MessagePack.Union(0, typeof(InventoryInboundEntryModel))]
     [MessagePack.Union(1, typeof(InventoryTransferEntryModel))]
     [MessagePack.Union(2, typeof(InventoryAdjustmentEntryModel))]
-    [MessagePack.MessagePackObject]
-    public abstract class InventoryEntryModel : IInventoryEntryModel
+    public abstract class InventoryEntryModel : IWebApiModel
     {
-        /// <inheritdoc/>
-        public int StockId { get; init; }
-
-        /// <inheritdoc/>
-        public int ProductId { get; init; }
-
-        /// <inheritdoc/>
-        public int StockTransactionId { get; init; }
-
-        /// <inheritdoc/>
-        public decimal Quantity { get; init; }
     }
 }
