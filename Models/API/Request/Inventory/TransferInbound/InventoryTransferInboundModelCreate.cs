@@ -6,10 +6,5 @@
     [MessagePack.MessagePackObject()]
     public sealed class InventoryTransferInboundModelCreate
     {
-        /// <summary>
-        /// Inventory transfer id.
-        /// </summary>
-        [MessagePack.Key(0)]
-        public int InventoryTransferId { get; set; }
     }
 }

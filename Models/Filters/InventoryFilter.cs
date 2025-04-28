@@ -20,6 +20,13 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Gets or sets inventory type.
         /// </summary>
+        [MessagePack.Key(2)]
         public InventoryType? Type { get; set; }
+
+        /// <summary>
+        /// Gets or sets stock id.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public int? StockId { get; set; }
     }
 }
