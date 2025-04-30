@@ -20,5 +20,9 @@ namespace Gizmo.Web.Api.Models
         /// Audible.
         /// </summary>
         Audible = 2,
+        /// <summary>
+        /// Visual and Audible.
+        /// </summary>
+        VisualAndAudible = Visual | Audible,
     }
 }
