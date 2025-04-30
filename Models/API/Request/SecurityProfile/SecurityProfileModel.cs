@@ -50,7 +50,7 @@ namespace Gizmo.Web.Api.Models
         /// Disable start.
         /// </summary>
         [MessagePack.Key(5)]
-        public bool DisableStart { get; init; }
+        public bool DisableStartMenu { get; init; }
 
         /// <summary>
         /// Disable desktop switching.
