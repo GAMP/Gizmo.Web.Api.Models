@@ -525,6 +525,18 @@
   <data name="LOG_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Log</value>
   </data>
+  <data name="NOTIFICATION_TYPE_AUDIBLE" xml:space="preserve">
+    <value>Audible</value>
+  </data>
+  <data name="NOTIFICATION_TYPE_NONE" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="NOTIFICATION_TYPE_VISUAL" xml:space="preserve">
+    <value>Visual</value>
+  </data>
+  <data name="NOTIFICATION_TYPE_VISUAL_AND_AUDIBLE" xml:space="preserve">
+    <value>Visual And Audible</value>
+  </data>
   <data name="OPTIONS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Indicates options change</value>
   </data>
@@ -680,6 +692,12 @@
   </data>
   <data name="SHIFT_UNLOCKED_EVENT_NAME" xml:space="preserve">
     <value>Unlocked</value>
+  </data>
+  <data name="STOCK_TYPE_SELLING_POINT" xml:space="preserve">
+    <value>Selling Point</value>
+  </data>
+  <data name="STOCK_TYPE_WAREHOUSE" xml:space="preserve">
+    <value>Warehouse</value>
   </data>
   <data name="USER_ENABLED_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Indicates enablement of an user</value>
