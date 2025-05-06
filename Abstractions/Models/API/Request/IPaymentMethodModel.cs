@@ -1,4 +1,6 @@
-﻿namespace Gizmo.Web.Api.Models.Abstractions
+﻿using System;
+
+namespace Gizmo.Web.Api.Models.Abstractions
 {
     /// <summary>
     /// Payment method.
@@ -34,5 +36,15 @@
         /// The name of the payment method.
         /// </summary>
         string Name { get; set; }
+
+        /// <summary>
+        /// Whether the payment method can be used by portal.
+        /// </summary>
+        bool AvailableInPortal { get; set; }
+
+        /// <summary>
+        /// The payment provider of the payment method.
+        /// </summary>
+        Guid? PaymentProvider { get; set; }
     }
 }

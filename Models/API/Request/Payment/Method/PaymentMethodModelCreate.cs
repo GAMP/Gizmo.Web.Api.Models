@@ -52,6 +52,18 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(5)]
         public bool IsDeleted { get; set; }
 
+        /// <summary>
+        /// Whether the payment method can be used by portal.
+        /// </summary>
+        [MessagePack.Key(6)]
+        public bool AvailableInPortal { get; set; }
+
+        /// <summary>
+        /// The payment provider of the payment method.
+        /// </summary>
+        [MessagePack.Key(7)]
+        public Guid? PaymentProvider { get; set; }
+
         #endregion
     }
 }
