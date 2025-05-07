@@ -64,6 +64,12 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(7)]
         public Guid? PaymentProvider { get; set; }
 
+        /// <summary>
+        /// The options of the payment method.
+        /// </summary>
+        [MessagePack.Key(8)]
+        public PaymentMethodOptionType PaymentMethodOption { get; set; }
+
         #endregion
     }
 }

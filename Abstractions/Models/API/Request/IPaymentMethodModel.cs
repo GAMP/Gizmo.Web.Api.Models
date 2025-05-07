@@ -46,5 +46,10 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// The payment provider of the payment method.
         /// </summary>
         Guid? PaymentProvider { get; set; }
+
+        /// <summary>
+        /// The options of the payment method.
+        /// </summary>
+        PaymentMethodOptionType PaymentMethodOption { get; set; }
     }
 }
