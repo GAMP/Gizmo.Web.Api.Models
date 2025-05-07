@@ -32,6 +32,7 @@ namespace Gizmo.Web.Api.Models
         /// The display order of the payment method.
         /// </summary>
         [MessagePack.Key(2)]
+        [Sortable()]
         public int DisplayOrder { get; set; }
 
         /// <summary>
