@@ -37,5 +37,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(3)]
         public bool IsDeleted { get; set; }
+
+        /// <summary>
+        /// Specifies branch id.
+        /// </summary>
+        [MessagePack.Key(4)]
+        public int? BranchId { get; set; }
     }
 }

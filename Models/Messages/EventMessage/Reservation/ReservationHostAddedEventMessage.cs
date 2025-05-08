@@ -4,7 +4,7 @@
     /// Reservation host added event message.
     /// </summary>
     [System.ComponentModel.DataAnnotations.Name("Added", "RESERVATION_HOST_ADDED_EVENT_NAME")]
-    [System.ComponentModel.DataAnnotations.ExtendedDescription("Host added to an reservation", "RESERVATION_HOST_ADDED_EVENT_DESCRIPTION")]
+    [System.ComponentModel.DataAnnotations.ExtendedDescription("Host added to a reservation", "RESERVATION_HOST_ADDED_EVENT_DESCRIPTION")]
     [MessagePack.MessagePackObject()]
     public sealed class ReservationHostAddedEventMessage : ReservationEventMessageBase
     {

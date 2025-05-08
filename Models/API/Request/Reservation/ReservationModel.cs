@@ -1,7 +1,4 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions;
-
-using MessagePack;
-
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -12,11 +9,9 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Reservation.
     /// </summary>
-    [Serializable, MessagePackObject]
+    [Serializable, MessagePack.MessagePackObject]
     public sealed class ReservationModel : IReservationModel, IModelIntIdentifier
     {
-        #region PROPERTIES
-
         /// <summary>
         /// The Id of the object.
         /// </summary>
@@ -93,6 +88,52 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(11)]
         public int BranchId { get; set; }
 
-        #endregion
+        /// <summary>
+        /// Payment status.
+        /// </summary>
+        [MessagePack.Key(12)]
+        public ReservationPaymentStatus PaymentStatus { get; init; }
+
+        /// <summary>
+        /// Activation time.
+        /// </summary>
+        [MessagePack.Key(13)]
+        public DateTime? ActivationTime { get; init; }
+
+        /// <summary>
+        /// Expire after time.
+        /// </summary>
+        [MessagePack.Key(14)]
+        public int? ExpireAfter { get; init; }
+
+        /// <summary>
+        /// Cancellation grace period.
+        /// </summary>
+        [MessagePack.Key(15)]
+        public int? CancellationGracePeriod { get; init; }
+
+        /// <summary>
+        /// Cancellation refund percentage.
+        /// </summary>
+        [MessagePack.Key(16)]
+        public decimal CancellationRefundPercentage { get; init; }
+
+        /// <summary>
+        /// Login block before time.
+        /// </summary>
+        [MessagePack.Key(17)]
+        public int? LoginBlockBeforeTime { get; init; }
+
+        /// <summary>
+        /// Login block after time.
+        /// </summary>
+        [MessagePack.Key(18)]
+        public int? LoginBlockAfterTime { get; init; }
+
+        /// <summary>
+        /// Finalized by id.
+        /// </summary>
+        [MessagePack.Key(19)]
+        public int? FinalizedById { get; init; }
     }
 }

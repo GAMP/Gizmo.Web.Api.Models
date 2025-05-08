@@ -639,11 +639,23 @@
   <data name="REPORT_PRESET_UPDATED_EVENT_NAME" xml:space="preserve">
     <value>Report preset updated</value>
   </data>
+  <data name="RESERVATION_ACTIVATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Reservation activated</value>
+  </data>
+  <data name="RESERVATION_ACTIVATED_EVENT_NAME" xml:space="preserve">
+    <value>Activated</value>
+  </data>
   <data name="RESERVATION_CANCELLED_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Reservation cancelled</value>
   </data>
   <data name="RESERVATION_CANCELLED_EVENT_NAME" xml:space="preserve">
     <value>Cancelled</value>
+  </data>
+  <data name="RESERVATION_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Reservation completed</value>
+  </data>
+  <data name="RESERVATION_COMPLETED_EVENT_NAME" xml:space="preserve">
+    <value>Completed</value>
   </data>
   <data name="RESERVATION_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Reservation created</value>
@@ -657,11 +669,71 @@
   <data name="RESERVATION_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Reservation</value>
   </data>
+  <data name="RESERVATION_EXPIRED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Reservation expired</value>
+  </data>
+  <data name="RESERVATION_EXPIRED_EVENT_NAME" xml:space="preserve">
+    <value>Expired</value>
+  </data>
+  <data name="RESERVATION_HOST_ACTIVATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Host reservation activated</value>
+  </data>
+  <data name="RESERVATION_HOST_ACTIVATED_EVENT_NAME" xml:space="preserve">
+    <value>Activated</value>
+  </data>
+  <data name="RESERVATION_HOST_ADDED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Host added to a reservation</value>
+  </data>
+  <data name="RESERVATION_HOST_ADDED_EVENT_NAME" xml:space="preserve">
+    <value>Added</value>
+  </data>
+  <data name="RESERVATION_HOST_CANCELLED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Host reservation cancelled</value>
+  </data>
+  <data name="RESERVATION_HOST_CANCELLED_EVENT_NAME" xml:space="preserve">
+    <value>Cancelled</value>
+  </data>
+  <data name="RESERVATION_HOST_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Host reservation completed</value>
+  </data>
+  <data name="RESERVATION_HOST_COMPLETED_EVENT_NAME" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="RESERVATION_HOST_EXPIRED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Host reservation expired</value>
+  </data>
+  <data name="RESERVATION_HOST_EXPIRED_EVENT_NAME" xml:space="preserve">
+    <value>Expired</value>
+  </data>
+  <data name="RESERVATION_HOST_MOVED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Host reservation moved</value>
+  </data>
+  <data name="RESERVATION_HOST_MOVED_EVENT_NAME" xml:space="preserve">
+    <value>Moved</value>
+  </data>
+  <data name="RESERVATION_HOST_UPDATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Host reservation updated</value>
+  </data>
+  <data name="RESERVATION_HOST_UPDATED_EVENT_NAME" xml:space="preserve">
+    <value>Updated</value>
+  </data>
   <data name="RESERVATION_UPDATED_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Reservation updated</value>
   </data>
   <data name="RESERVATION_UPDATED_EVENT_NAME" xml:space="preserve">
     <value>Updated</value>
+  </data>
+  <data name="RESERVATION_USER_ADDED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>User added</value>
+  </data>
+  <data name="RESERVATION_USER_ADDED_EVENT_NAME" xml:space="preserve">
+    <value>Added</value>
+  </data>
+  <data name="RESERVATION_USER_REMOVED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>User removed</value>
+  </data>
+  <data name="RESERVATION_USER_REMOVED_EVENT_NAME" xml:space="preserve">
+    <value>Removed</value>
   </data>
   <data name="SHIFT_ENDED_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Indicates shift end</value>

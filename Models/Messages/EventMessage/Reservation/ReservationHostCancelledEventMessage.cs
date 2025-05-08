@@ -4,7 +4,7 @@
     /// Reservation host added event message.
     /// </summary>
     [System.ComponentModel.DataAnnotations.Name("Cancelled", "RESERVATION_HOST_CANCELLED_EVENT_NAME")]
-    [System.ComponentModel.DataAnnotations.ExtendedDescription("Host added to an reservation", "RESERVATION_HOST_CANCELLED_EVENT_DESCRIPTION")]
+    [System.ComponentModel.DataAnnotations.ExtendedDescription("Host reservation cancelled", "RESERVATION_HOST_CANCELLED_EVENT_DESCRIPTION")]
     [MessagePack.MessagePackObject()]
     public sealed class ReservationHostCancelledEventMessage : ReservationEventMessageBase
     {
