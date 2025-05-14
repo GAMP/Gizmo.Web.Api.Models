@@ -525,6 +525,15 @@
   <data name="LOG_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Log</value>
   </data>
+  <data name="MAPPING_TYPE_NETWORK_DRIVE" xml:space="preserve">
+    <value>Network Drive</value>
+  </data>
+  <data name="MAPPING_TYPE_VIRTUAL_DRIVE" xml:space="preserve">
+    <value>Virtual Drive</value>
+  </data>
+  <data name="MAPPING_TYPE_VIRTUAL_FOLDER" xml:space="preserve">
+    <value>Virtual Folder</value>
+  </data>
   <data name="NOTIFICATION_TYPE_AUDIBLE" xml:space="preserve">
     <value>Audible</value>
   </data>
@@ -734,6 +743,21 @@
   </data>
   <data name="RESERVATION_USER_REMOVED_EVENT_NAME" xml:space="preserve">
     <value>Removed</value>
+  </data>
+  <data name="RESTRICTION_TYPE_CLASS_NAME" xml:space="preserve">
+    <value>Class Name</value>
+  </data>
+  <data name="RESTRICTION_TYPE_FILE_NAME" xml:space="preserve">
+    <value>File Name</value>
+  </data>
+  <data name="RESTRICTION_TYPE_TRAY_ICON" xml:space="preserve">
+    <value>Tray Icon</value>
+  </data>
+  <data name="RESTRICTION_TYPE_UNSET" xml:space="preserve">
+    <value>Unset</value>
+  </data>
+  <data name="RESTRICTION_TYPE_WINDOW_NAME" xml:space="preserve">
+    <value>Window Name</value>
   </data>
   <data name="SHIFT_ENDED_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Indicates shift end</value>
