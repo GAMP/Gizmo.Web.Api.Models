@@ -35,6 +35,12 @@ namespace Gizmo.Web.Api.Models
         [Key(3)]
         public int? BranchId { get; set; }
 
+        /// <summary>
+        /// Return assets of the specified asset type.
+        /// </summary>
+        [Key(4)]
+        public int? AssetTypeId { get; set; }
+
         #endregion
     }
 }
