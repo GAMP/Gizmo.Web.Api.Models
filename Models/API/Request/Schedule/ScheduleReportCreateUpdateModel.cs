@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -6,7 +8,7 @@ namespace Gizmo.Web.Api.Models
     /// Schedule report create model.
     /// </summary>
     [MessagePack.MessagePackObject]
-    public sealed class ScheduleReportModelCreate : IScheduleModel
+    public sealed class ScheduleReportCreateUpdateModel : IScheduleModel
     {
         ///<inheritdoc/>
         [MessagePack.Key(0)]
@@ -27,5 +29,17 @@ namespace Gizmo.Web.Api.Models
         ///<inheritdoc/>
         [MessagePack.Key(4)]
         public bool IsDisabled { get; init; }
+
+        /// <summary>
+        /// Entries.
+        /// </summary>
+        [MessagePack.Key(5)]
+        public IEnumerable<ScheduleReportEntryCreateUpdateModel> Entries { get; init; } = Enumerable.Empty<ScheduleReportEntryCreateUpdateModel>();
+
+        /// <summary>
+        /// Recipients.
+        /// </summary>
+        [MessagePack.Key(6)]
+        public IEnumerable<ScheduleReportRecipientCreateUpdateModel> Recipients { get; init; } = Enumerable.Empty<ScheduleReportRecipientCreateUpdateModel>();
     }
 }

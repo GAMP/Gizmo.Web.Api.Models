@@ -1,47 +1,36 @@
 ﻿using System;
-using Gizmo.Web.Api.Models.Abstractions;
 using Gizmo.Web.Api.Models.Enumerations;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Schedule report entry model.
+    /// Schedule report entry create/update model.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class ScheduleReportEntryModel : IModelIntIdentifier
-    {
-        /// <inheritdoc/>
-        [MessagePack.Key(0)]
-        public int Id { get; init; }
-       
-        /// <summary>
-        /// Schedule report id.
-        /// </summary>
-        [MessagePack.Key(1)]
-        public int ScheduleReportId { get; init; }
-        
+    public sealed class ScheduleReportEntryCreateUpdateModel : IWebApiModel
+    {        
         /// <summary>
         /// Report type.
         /// </summary>
-        [MessagePack.Key(2)]
+        [MessagePack.Key(0)]
         public Guid ReportType { get; init; }
-
+      
         /// <summary>
         /// Range.
         /// </summary>
-        [MessagePack.Key(3)]
+        [MessagePack.Key(1)]
         public ReportPresetRange Range { get; init; }
 
         /// <summary>
         /// Filters.
         /// </summary>
-        [MessagePack.Key(4)]
+        [MessagePack.Key(2)]
         public string? Filters { get; init; }
 
         /// <summary>
         /// Preset id.
         /// </summary>
-        [MessagePack.Key(5)]
+        [MessagePack.Key(3)]
         public int? ReportPresetId { get; init; }
     }
 }

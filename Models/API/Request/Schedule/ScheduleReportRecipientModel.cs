@@ -6,42 +6,36 @@ using System.Linq;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Schedule report recipient user model.
+    /// Schedule report recipient model.
     /// </summary>
-    public sealed class ScheduleReportRecipientUserModel : RecipientModel , IModelIntIdentifier
+    public sealed class ScheduleReportRecipientModel : RecipientModel , IModelIntIdentifier
     {
         /// <inheritdoc/>
         [MessagePack.Key(0)]
         public int Id { get; init; }
 
         /// <summary>
-        /// Recipient id.
-        /// </summary>
-        [MessagePack.Key(1)]
-        public int RecipientId { get; init; }
-
-        /// <summary>
         /// Schedule report id.
         /// </summary>
-        [MessagePack.Key(2)]
+        [MessagePack.Key(1)]
         public int SchedulerReportId { get; init; }
 
         /// <summary>
         /// User id.
         /// </summary>
-        [MessagePack.Key(3)]
+        [MessagePack.Key(2)]
         public int UserId { get; set; }
 
         /// <summary>
         /// Channels.
         /// </summary>
-        [MessagePack.Key(4)]
+        [MessagePack.Key(3)]
         public IEnumerable<Guid> Channels { get; set; } = Enumerable.Empty<Guid>();
 
         /// <summary>
         /// Is disabled.
         /// </summary>
-        [MessagePack.Key(5)]
+        [MessagePack.Key(4)]
         public bool IsDisabled { get; init; }
     }
 }

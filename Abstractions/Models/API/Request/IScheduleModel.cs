@@ -5,7 +5,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Schedule model.
     /// </summary>
-    public interface IScheduleModel
+    public interface IScheduleModel : IWebApiModel
     {
         /// <summary>
         /// Schedule name.
