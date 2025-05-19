@@ -8,6 +8,11 @@
     [MessagePack.MessagePackObject()]
     public sealed class ReportPackModel<TReportModel, TReportAdditionalModel> : IReportPackModel
     {
+        /// <summary>
+        /// Creates new instance.
+        /// </summary>
+        /// <param name="reportModel">Report model.</param>
+        /// <param name="reportModelAdditional">Additional data.</param>
         public ReportPackModel(TReportModel reportModel, TReportAdditionalModel reportModelAdditional) 
         {
             ReportModel = reportModel;
