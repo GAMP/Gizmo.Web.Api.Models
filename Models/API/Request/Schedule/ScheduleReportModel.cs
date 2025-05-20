@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using Gizmo.Web.Api.Models.Abstractions;
 
 namespace Gizmo.Web.Api.Models
@@ -32,5 +34,17 @@ namespace Gizmo.Web.Api.Models
         ///<inheritdoc/>
         [MessagePack.Key(5)]
         public bool IsDisabled { get; init; }
+
+        /// <summary>
+        /// Entries.
+        /// </summary>
+        [MessagePack.Key(6)]
+        public IEnumerable<ScheduleReportEntryModel> Entries { get; init; } = Enumerable.Empty<ScheduleReportEntryModel>();
+
+        /// <summary>
+        /// Recipients.
+        /// </summary>
+        [MessagePack.Key(7)]
+        public IEnumerable<ScheduleReportRecipientModel> Recipients { get; init; } = Enumerable.Empty<ScheduleReportRecipientModel>();
     }
 }
