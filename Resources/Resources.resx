@@ -759,6 +759,21 @@
   <data name="RESTRICTION_TYPE_WINDOW_NAME" xml:space="preserve">
     <value>Window Name</value>
   </data>
+  <data name="SCHEDULE_TYPE_DAILY" xml:space="preserve">
+    <value>Daily</value>
+  </data>
+  <data name="SCHEDULE_TYPE_MONTHLY" xml:space="preserve">
+    <value>Monthly</value>
+  </data>
+  <data name="SCHEDULE_TYPE_ONE_TIME" xml:space="preserve">
+    <value>One Time</value>
+  </data>
+  <data name="SCHEDULE_TYPE_WEEKLY" xml:space="preserve">
+    <value>Weekly</value>
+  </data>
+  <data name="SCHEDULE_TYPE_YEARLY" xml:space="preserve">
+    <value>Yearly</value>
+  </data>
   <data name="SHIFT_ENDED_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Indicates shift end</value>
   </data>
