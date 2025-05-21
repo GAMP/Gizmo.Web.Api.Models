@@ -19,21 +19,40 @@ namespace Gizmo.Web.Api.Models
         public int TaskId { get; init; }
 
         /// <summary>
-        /// Activation.
+        /// Whether the task runs at Startup stage.
         /// </summary>
         [MessagePack.Key(2)]
-        public int Activation {  get; init; }
+        public bool Startup { get; set; }
 
         /// <summary>
-        /// Is enabled.
+        /// Whether the task runs at Login stage.
         /// </summary>
         [MessagePack.Key(3)]
-        public bool IsEnabled { get; init; }
+        public bool Login { get; set; }
+
+        /// <summary>
+        /// Whether the task runs at Logout stage.
+        /// </summary>
+        [MessagePack.Key(4)]
+        public bool Logout { get; set; }
+
+        /// <summary>
+        /// Whether the task runs at Shutdown stage.
+        /// </summary>
+        [MessagePack.Key(5)]
+        public bool Shutdown { get; set; }
 
         /// <summary>
         /// Use order.
         /// </summary>
-        [MessagePack.Key(4)]
-        public int UserOrder {  get; init; }
+        [MessagePack.Key(6)]
+        public int UseOrder {  get; init; }
+
+        /// <summary>
+        /// Is enabled.
+        /// </summary>
+        [MessagePack.Key(7)]
+        public bool IsEnabled { get; init; }
+
     }
 }
