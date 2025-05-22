@@ -13,21 +13,27 @@ namespace Gizmo.Web.Api.Models
         public int Id { get; init; }
 
         /// <summary>
-        /// Client task activation type.
+        /// Task id.
         /// </summary>
         [MessagePack.Key(1)]
+        public int TaskId { get; init; }
+
+        /// <summary>
+        /// Client task activation type.
+        /// </summary>
+        [MessagePack.Key(2)]
         public ClientTaskActivationType Activation { get; set; }
 
         /// <summary>
         /// Use order.
         /// </summary>
-        [MessagePack.Key(2)]
+        [MessagePack.Key(3)]
         public int UseOrder { get; init; }
 
         /// <summary>
         /// Is enabled.
         /// </summary>
-        [MessagePack.Key(3)]
+        [MessagePack.Key(4)]
         public bool IsEnabled { get; init; }
     }
 }
