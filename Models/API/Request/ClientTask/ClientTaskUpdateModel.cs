@@ -1,16 +1,16 @@
-﻿namespace Gizmo.Web.Api.Models
+﻿using Gizmo.Web.Api.Models.Abstractions;
+
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Client task create model.
+    /// Client task update model.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class ClientTaskCreateModel : IWebApiModel
+    public sealed class ClientTaskUpdateModel : IWebApiModel, IModelIntIdentifier
     {
-        /// <summary>
-        /// Task id.
-        /// </summary>
+        /// <inheritdoc/>
         [MessagePack.Key(0)]
-        public int TaskId { get; init; }
+        public int Id { get; init; }
 
         /// <summary>
         /// Client task activation type.
