@@ -5,17 +5,17 @@ using Gizmo.Web.Api.Models.Abstractions;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Discount group model.
+    /// Discount group update model.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class DiscountGroupModel : IWebApiModel, IModelIntIdentifier
+    public sealed class DiscountGroupModelUpdate : IWebApiModel, IModelIntIdentifier
     {
         /// <inheritdoc/>
         [MessagePack.Key(0)]
-        public int Id { get; init; }
+        public int Id {get; init;}
 
         /// <summary>
-        /// Discount group name.
+        /// Name.
         /// </summary>
         [MessagePack.Key(1)]
         public string Name { get; init; } = null!;

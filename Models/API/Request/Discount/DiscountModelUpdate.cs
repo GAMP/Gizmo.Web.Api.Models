@@ -1,53 +1,59 @@
-﻿namespace Gizmo.Web.Api.Models
+﻿using Gizmo.Web.Api.Models.Abstractions;
+
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Discount model create.
+    /// Discount update model.
     /// </summary>
-    [MessagePack.MessagePackObject]
-    public sealed class DiscountModelCreate : IDiscountModel
+    public sealed class DiscountModelUpdate : IDiscountModel, IModelIntIdentifier
     {
-        ///<inheritdoc/>
+        /// <inheritdoc/>
         [MessagePack.Key(0)]
-        public string Name { get; init; } = null!;
+        public int Id { get; init; }
 
         ///<inheritdoc/>
         [MessagePack.Key(1)]
+        public string Name { get; init; } = null!;
+
+        ///<inheritdoc/>
+        [MessagePack.Key(2)]
         public string? Description { get; init; } = null!;
 
         /// <summary>
         /// Apply type.
         /// </summary>
-        [MessagePack.Key(2)]
+        [MessagePack.Key(3)]
         public DiscountApplyType ApplyType { get; init; }
 
         /// <summary>
         /// Gets or sets calculation type.
         /// </summary>
-        [MessagePack.Key(3)]
+        [MessagePack.Key(4)]
         public DiscountCalculationType CalculationType { get; init; }
 
         /// <summary>
         /// Gets or sets discount reward type.
         /// </summary>
-        [MessagePack.Key(4)]
+        [MessagePack.Key(5)]
         public DiscountRewardType RewardType { get; init; }
 
         /// <summary>
         /// Target group requirement.
         /// </summary>
-        [MessagePack.Key(5)]
+        [MessagePack.Key(6)]
         public TargetGroupRequirement Requirement { get; init; }
 
         /// <summary>
         /// Value.
         /// </summary>
-        [MessagePack.Key(6)]
+        [MessagePack.Key(7)]
         public decimal Value { get; set; }
 
         /// <summary>
         /// Discount period.
         /// </summary>
-        [MessagePack.Key(7)]
+        [MessagePack.Key(8)]
         public PeriodModel Period { get; init; } = new PeriodModel();
+
     }
 }

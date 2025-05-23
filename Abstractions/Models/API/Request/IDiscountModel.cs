@@ -3,7 +3,7 @@
     /// <summary>
     /// Discount model.
     /// </summary>
-    public interface IDiscountModel
+    public interface IDiscountModel : IWebApiModel
     {
         /// <summary>
         /// Name.
@@ -14,5 +14,35 @@
         /// Description.
         /// </summary>
         string? Description { get; init; }
+
+        /// <summary>
+        /// Apply type.
+        /// </summary>
+        public DiscountApplyType ApplyType { get; init; }
+
+        /// <summary>
+        /// Gets or sets calculation type.
+        /// </summary>
+        public DiscountCalculationType CalculationType { get; init; }
+
+        /// <summary>
+        /// Gets or sets discount reward type.
+        /// </summary>
+        public DiscountRewardType RewardType { get; init; }
+
+        /// <summary>
+        /// Target group requirement.
+        /// </summary>
+        public TargetGroupRequirement Requirement { get; init; }
+
+        /// <summary>
+        /// Value.
+        /// </summary>
+        public decimal Value { get; set; }
+
+        /// <summary>
+        /// Discount period.
+        /// </summary>
+        public PeriodModel Period { get;}
     }
 }
