@@ -1,8 +1,11 @@
-﻿namespace Gizmo.Web.Api.Models
+﻿using System;
+
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Client task activation types.
     /// </summary>
+    [Flags()]
     public enum ClientTaskActivationType
     {
         /// <summary>
