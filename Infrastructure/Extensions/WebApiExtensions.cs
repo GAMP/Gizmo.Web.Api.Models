@@ -46,10 +46,6 @@ namespace Gizmo.Web.Api
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<InventoryModel>("Type", "Model"));
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<InventoryEntryModel>("Type", "Model"));
 
-            //add discount converters
-            options.Converters.Add(new MessagePackUnionMessageJsonConverter<DiscountModelCreate>("Type", "Model"));
-            options.Converters.Add(new MessagePackUnionMessageJsonConverter<DiscountModel>("Type", "Model"));
-
             //notifications converter
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<NotificationModel>("Type", "Model"));
 

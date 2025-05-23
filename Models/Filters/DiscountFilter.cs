@@ -22,9 +22,21 @@ namespace Gizmo.Web.Api.Models
         public List<string> Expand { get; set; } = new();
 
         /// <summary>
-        /// Discount type.
+        /// Is disabled.
         /// </summary>
         [MessagePack.Key(2)]
-        public DiscountType? Type { get; set; }
+        public bool? IsDisabled { get; init; }
+
+        /// <summary>
+        /// Is deleted.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public bool? IsDeleted { get; init; }
+
+        /// <summary>
+        /// Reward type.
+        /// </summary>
+        [MessagePack.Key(4)]
+        public DiscountRewardType? RewardType { get; init; }
     }
 }
