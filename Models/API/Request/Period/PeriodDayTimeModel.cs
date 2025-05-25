@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -12,6 +13,7 @@ namespace Gizmo.Web.Api.Models
         /// Period day start time second.
         /// </summary>
         [MessagePack.Key(0)]
+        [DefaultValue(0)]
         [Range(0, 86400)]
         public int StartSecond { get; set; }
 
@@ -19,6 +21,7 @@ namespace Gizmo.Web.Api.Models
         /// Period day end time second.
         /// </summary>
         [MessagePack.Key(1)]
+        [DefaultValue(86400)]
         [Range(0, 86400)]
         public int EndSecond { get; set; }
     }

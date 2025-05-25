@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using Gizmo.Web.Api.Models.Abstractions;
 
@@ -18,6 +19,8 @@ namespace Gizmo.Web.Api.Models
         /// Name.
         /// </summary>
         [MessagePack.Key(1)]
+        [Required()]
+        [StringLength(45)]
         public string Name { get; init; } = null!;
 
         /// <summary>
