@@ -47,6 +47,12 @@ namespace Gizmo.Web.Api.Models
         [Key(5)]
         public int? BranchId { get; set; }
 
+        /// <summary>
+        /// Return hosts using all active search fields.
+        /// </summary>
+        [MessagePack.Key(6)]
+        public string? SearchValue { get; set; }
+
         #endregion
     }
 }
