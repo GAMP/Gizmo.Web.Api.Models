@@ -25,7 +25,7 @@ namespace Gizmo.Web.Api.Models
         /// Number of executables that use this task.
         /// </summary>
         [MessagePack.Key(2)]
-        public int UsedByApplications { get; set; }
+        public int UsedByExecutables { get; set; }
 
         /// <summary>
         /// Shell triggers that use this task.
