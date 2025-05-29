@@ -1,10 +1,12 @@
-﻿namespace Gizmo.Web.Api.Models
+﻿using Gizmo.Web.Api.Models.Abstractions;
+
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Virtual user guest search filter model.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class UserGuestVirtualFilter
+    public sealed class UserGuestVirtualFilter : IUriParametersQuery
     {
         /// <summary>
         /// Results limit.
