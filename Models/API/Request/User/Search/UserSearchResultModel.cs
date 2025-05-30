@@ -4,7 +4,7 @@
     /// User search result model.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class UserSearchResult : IWebApiModel
+    public sealed class UserSearchResultModel : IWebApiModel
     {
         /// <summary>
         /// User id.

@@ -7,7 +7,7 @@ namespace Gizmo.Web.Api.Models
      /// User search filter model.
      /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class UserSearchFilter : IModelFilter<UserSearchResult>
+    public sealed class UserSearchFilter : IModelFilter<UserSearchResultModel>
     {
         /// <inheritdoc/>
         [MessagePack.Key(0)]
