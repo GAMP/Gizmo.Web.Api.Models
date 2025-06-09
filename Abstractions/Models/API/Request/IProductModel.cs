@@ -124,5 +124,15 @@
         /// The time product object attached to this product if the product is a time product, otherwise it will be null.
         /// </summary>
         ProductTime? TimeProduct { get; set; }
+
+        /// <summary>
+        /// The product is marked product.
+        /// </summary>
+        bool IsMarkedProduct { get; set; }
+
+        /// <summary>
+        /// The product is excise.
+        /// </summary>
+        bool IsExcise { get; set; }
     }
 }

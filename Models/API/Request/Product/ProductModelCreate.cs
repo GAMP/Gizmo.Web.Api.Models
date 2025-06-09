@@ -170,6 +170,18 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(24)]
         public Bundle? Bundle { get; set; }
 
+        /// <summary>
+        /// The product is marked product.
+        /// </summary>
+        [MessagePack.Key(25)]
+        public bool IsMarkedProduct { get; set; }
+
+        /// <summary>
+        /// The product is excise.
+        /// </summary>
+        [MessagePack.Key(26)]
+        public bool IsExcise { get; set; }
+
         #endregion
     }
 }

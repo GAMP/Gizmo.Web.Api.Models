@@ -214,6 +214,18 @@ namespace Gizmo.Web.Api.Models
         [Sortable()]
         public DateTime CreatedTime { get; set; }
 
+        /// <summary>
+        /// The product is marked product.
+        /// </summary>
+        [MessagePack.Key(31)]
+        public bool IsMarkedProduct { get; set; }
+
+        /// <summary>
+        /// The product is excise.
+        /// </summary>
+        [MessagePack.Key(32)]
+        public bool IsExcise { get; set; }
+
         #endregion
     }
 }
