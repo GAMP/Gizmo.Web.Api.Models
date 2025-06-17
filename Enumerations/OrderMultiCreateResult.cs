@@ -50,5 +50,13 @@
         /// </summary>
         /// <remarks>Indicates that we have specified both payments and preferred payment parameters.</remarks>
         InvalidPaymentsParameters = 4,
+
+        /// <summary>
+        /// Custom price not allowed.
+        /// </summary>
+        /// <remarks>
+        /// Indicates that custom price is not allowed for the order creation.
+        /// </remarks>
+        CustomPriceNotAllowed = 5,
     }
 }
