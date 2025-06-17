@@ -43,6 +43,12 @@ namespace Gizmo.Web.Api.Models
         [Key(4)]
         public int? StockId { get; set; }
 
+        /// <summary>
+        /// Stock id.
+        /// </summary>
+        [Key(5)]
+        public StockTransactionType? Type { get; set; }
+
         #endregion
     }
 }
