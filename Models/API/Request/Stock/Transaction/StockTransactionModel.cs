@@ -70,6 +70,12 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(8)]
         public int? RegisterId { get; set; }
 
+        /// <summary>
+        /// The Id of the stock on which the stock transaction was performed.
+        /// </summary>
+        [MessagePack.Key(9)]
+        public int? StockId { get; set; }
+
         #endregion
     }
 }
