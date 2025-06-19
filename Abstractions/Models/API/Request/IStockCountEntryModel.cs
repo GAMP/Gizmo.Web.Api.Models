@@ -14,5 +14,10 @@
         /// Actual.
         /// </summary>
         decimal Actual { get; init; }
+
+        /// <summary>
+        /// Note.
+        /// </summary>
+        public string? Note { get; init; }
     }
 }

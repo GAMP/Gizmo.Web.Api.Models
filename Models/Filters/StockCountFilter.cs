@@ -18,21 +18,33 @@ namespace Gizmo.Web.Api.Models
         public List<string> Expand { get; set; } = new();
 
         /// <summary>
-        /// Gets or sets the shift id.
+        /// Stock id.
         /// </summary>
         [MessagePack.Key(2)]
+        public int? StockId { get; set; } = null;
+
+        /// <summary>
+        /// Gets or sets the shift id.
+        /// </summary>
+        [MessagePack.Key(3)]
         public int? ShiftId { get; init; }
 
         /// <summary>
         /// Gets or sets the operator id.
         /// </summary>
-        [MessagePack.Key(3)]
+        [MessagePack.Key(4)]
         public int? OperatorId { get; init; }
 
         /// <summary>
         /// Gets or sets whether the stock count has unexpected entries.
         /// </summary>
-        [MessagePack.Key(4)]
+        [MessagePack.Key(5)]
         public bool? HasUnexpected { get; init; }
+
+        /// <summary>
+        /// Count type.
+        /// </summary>
+        [MessagePack.Key(6)]
+        public StockCountType? Type { get; init; } = null;
     }
 }

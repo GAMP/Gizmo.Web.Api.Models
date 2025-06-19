@@ -11,5 +11,8 @@
 
         /// <inheritdoc/>
         public decimal Actual { get; init; }
+
+        /// <inheritdoc/>
+        public string? Note { get; init; }
     }
 }

@@ -14,6 +14,10 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Indicates that invoice should be created.
         /// </summary>
+        /// <remarks>
+        /// This parameter is used to determine if invoice should be created for the order automatically (accepted).<br></br>
+        /// <b>This parameter is only used for order with POS being order source, client orders are invoiced based on physical product contents.</b>
+        /// </remarks>
         [MessagePack.Key(0)]
         public bool CreateInvoice
         {
@@ -66,7 +70,7 @@ namespace Gizmo.Web.Api.Models
         /// Enables auto completion.
         /// </summary>
         /// <remarks>
-        /// This will only have effect if <see cref="CreateInvoice"/> is equal to true.<br></br> 
+        /// This will only have effect if <see cref="CreateInvoice"/> is equal to true and order source being POS.<br></br> 
         /// In case no invoice created for the order the order cannot transition to completed state.
         /// </remarks>
         [MessagePack.Key(6)]
