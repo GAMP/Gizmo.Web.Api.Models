@@ -1,4 +1,5 @@
-﻿using Gizmo.Web.Api.Models.Abstractions;
+﻿using System.ComponentModel.DataAnnotations;
+using Gizmo.Web.Api.Models.Abstractions;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -30,6 +31,7 @@ namespace Gizmo.Web.Api.Models
 
         /// <inheritdoc/>
         [MessagePack.Key(5)]
+        [MaxLength(255)]
         public string? Note { get; init; }
     }
 }
