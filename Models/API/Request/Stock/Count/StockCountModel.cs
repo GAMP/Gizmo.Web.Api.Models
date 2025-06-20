@@ -31,45 +31,51 @@ namespace Gizmo.Web.Api.Models
         public string? Note { get; init; }
 
         /// <summary>
-        /// The number of unexpected entries.
+        /// Entries count.
         /// </summary>
         [MessagePack.Key(4)]
-        public int UnexpectedEntries { get; init; }
+        public int EntriesCount { get; init; }
 
         /// <summary>
-        /// Shift id.
+        /// Surplus count.
         /// </summary>
         [MessagePack.Key(5)]
-        public int? ShiftId { get; init; }
+        public int SurplusCount { get; init; }
 
         /// <summary>
-        /// Register id.
+        /// Shortage count.
         /// </summary>
         [MessagePack.Key(6)]
-        public int? RegisterId { get; init; }
-
-        /// <summary>
-        /// Operator id.
-        /// </summary>
-        [MessagePack.Key(7)]
-        public int? OperatorId { get; init; }
+        public int ShortageCount { get; init; }
 
         /// <summary>
         /// Adjustment id.
         /// </summary>
-        [MessagePack.Key(8)]
+        [MessagePack.Key(7)]
         public int? AdjustmentId { get; init; }
 
         /// <summary>
         /// Inbound id.
         /// </summary>
-        [MessagePack.Key(9)]
+        [MessagePack.Key(8)]
         public int? InboundId { get; init; }
 
         /// <summary>
-        /// Entries count.
+        /// Shift id.
+        /// </summary>
+        [MessagePack.Key(9)]
+        public int? ShiftId { get; init; }
+
+        /// <summary>
+        /// Register id.
         /// </summary>
         [MessagePack.Key(10)]
-        public int EntriesCount { get; init; }
+        public int? RegisterId { get; init; }
+
+        /// <summary>
+        /// Operator id.
+        /// </summary>
+        [MessagePack.Key(11)]
+        public int? OperatorId { get; init; }   
     }
 }
