@@ -28,25 +28,25 @@ namespace Gizmo.Web.Api.Models
         /// Gets or sets the shift id.
         /// </summary>
         [MessagePack.Key(3)]
-        public int? ShiftId { get; init; }
+        public int? ShiftId { get; set; }
 
         /// <summary>
         /// Gets or sets the operator id.
         /// </summary>
         [MessagePack.Key(4)]
-        public int? OperatorId { get; init; }
+        public int? OperatorId { get; set; }
 
         /// <summary>
         /// Gets or sets whether the stock count has unexpected entries.
         /// </summary>
         [MessagePack.Key(5)]
-        public bool? HasUnexpected { get; init; }
+        public bool? HasUnexpected { get; set; }
 
         /// <summary>
         /// Count type.
         /// </summary>
         [MessagePack.Key(6)]
-        public StockCountType? Type { get; init; } = null;
+        public StockCountType? Type { get; set; } = null;
 
         /// <summary>
         /// Return stock counts where the date greater than or equal to the specified date.
