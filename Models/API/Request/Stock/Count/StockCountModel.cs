@@ -1,4 +1,5 @@
-﻿using Gizmo.Web.Api.Models.Abstractions;
+﻿using System;
+using Gizmo.Web.Api.Models.Abstractions;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -76,6 +77,12 @@ namespace Gizmo.Web.Api.Models
         /// Operator id.
         /// </summary>
         [MessagePack.Key(11)]
-        public int? OperatorId { get; init; }   
+        public int? OperatorId { get; init; }
+
+        /// <summary>
+        /// Date.
+        /// </summary>
+        [MessagePack.Key(12)]
+        public DateTime Date { get; init; }
     }
 }
