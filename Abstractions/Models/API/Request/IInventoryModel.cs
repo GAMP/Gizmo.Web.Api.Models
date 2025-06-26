@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Gizmo.Web.Api.Models.Abstractions;
 
 namespace Gizmo.Web.Api.Models
@@ -27,5 +28,15 @@ namespace Gizmo.Web.Api.Models
         /// Gets associated documents.
         /// </summary>
         public IEnumerable<int> Documents { get; }
+
+        /// <summary>
+        /// Gets or sets the date.
+        /// </summary>
+        public DateTime Date { get; }
+
+        /// <summary>
+        /// Gets or sets the operator id.
+        /// </summary>
+        public int? OperatorId { get; init; }
     }
 }

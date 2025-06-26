@@ -17,7 +17,7 @@ namespace Gizmo.Web.Api.Models
 
         /// <inheritdoc/>
         [MessagePack.Key(1)]
-        public DateTime? Date { get; init; }
+        public DateTime Date { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(2)]
