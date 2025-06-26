@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Gizmo.Web.Api.Models
@@ -11,18 +12,31 @@ namespace Gizmo.Web.Api.Models
     public abstract class InventoryModel : IInventoryModel
     {
         /// <inheritdoc/>
+        [MessagePack.Key(0)]
         public int Id { get; init; }
 
         /// <inheritdoc/>
+        [MessagePack.Key(1)]
+        public DateTime? Date { get; init; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(2)]
         public int StockId { get; init; }
 
         /// <inheritdoc/>
+        [MessagePack.Key(3)]
+        public int? OperatorId { get; init; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(4)]
         public int? ShiftId { get; init; }
 
         /// <inheritdoc/>
+        [MessagePack.Key(5)]
         public string? Note { get; init; }
 
         /// <inheritdoc/>
+        [MessagePack.Key(6)]
         public IEnumerable<int> Documents { get; init; } = Enumerable.Empty<int>();
     }
 }
