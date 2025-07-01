@@ -29,5 +29,12 @@
         /// <inheritdoc/>
         [MessagePack.Key(5)]
         public decimal Quantity { get; init; }
+
+        /// <summary>
+        /// Transfer reason id.
+        /// </summary>
+        /// <remarks>Built in types represented by <see cref="InventoryTransferReasons"/>.</remarks>
+        [MessagePack.Key(6)]
+        public int? TransferReasonId { get; init; }
     }
 }

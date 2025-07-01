@@ -57,6 +57,7 @@
         /// <summary>
         /// Adjustment reason id.
         /// </summary>
+        /// <remarks>Built in types represented by <see cref="InventoryAdjustmentReasons"/>.</remarks>
         [MessagePack.Key(10)]
         public int? AdjustmentReasonId { get; init; }
     }
