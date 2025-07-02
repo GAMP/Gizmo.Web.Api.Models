@@ -26,5 +26,9 @@ namespace Gizmo.Web.Api.Models
         /// <inheritdoc/>
         [MessagePack.Key(4)]
         public Guid Guid { get; init; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(5)]
+        public long Size { get; init; }
     }
 }

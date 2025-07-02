@@ -19,5 +19,10 @@
         /// Description.
         /// </summary>
         public string? Description { get; init; }
+
+        /// <summary>
+        /// Document file size.
+        /// </summary>
+        public long Size { get; init; }
     }
 }
