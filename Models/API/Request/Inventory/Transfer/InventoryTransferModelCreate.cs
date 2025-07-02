@@ -43,7 +43,7 @@ namespace Gizmo.Web.Api.Models
         /// Automatic transfer.
         /// </summary>
         [MessagePack.Key(5)]
-        public bool AutoTransfer { get; init; }
+        public bool AutoInbound { get; init; }
 
         /// <inheritdoc/>
         IEnumerable<IInventoryEntryModelCreate> IInventoryModelCreate.Entries => Entries;
