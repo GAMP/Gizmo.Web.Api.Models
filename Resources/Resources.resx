@@ -291,6 +291,27 @@
   <data name="DEVICE_SMART_CARD_READER_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Smartcard reader data event</value>
   </data>
+  <data name="DOCUMENT_TYPES_CONSIGNMENT_NOTE" xml:space="preserve">
+    <value>Consignment note</value>
+  </data>
+  <data name="DOCUMENT_TYPES_DELIVERY_NOTE" xml:space="preserve">
+    <value>Delivery note</value>
+  </data>
+  <data name="DOCUMENT_TYPES_DISPATCH_NOTE" xml:space="preserve">
+    <value>Dispatch note</value>
+  </data>
+  <data name="DOCUMENT_TYPES_INVOICE" xml:space="preserve">
+    <value>Invoice</value>
+  </data>
+  <data name="DOCUMENT_TYPES_STOCK_TAKE_REPORT" xml:space="preserve">
+    <value>Stock take report</value>
+  </data>
+  <data name="DOCUMENT_TYPES_WORK_ORDER" xml:space="preserve">
+    <value>Work order</value>
+  </data>
+  <data name="DOCUMENT_TYPES_WRITE_OFF_REPORT" xml:space="preserve">
+    <value>Write-off report</value>
+  </data>
   <data name="ENTITY_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Indicates an database entity chgange</value>
   </data>
@@ -434,6 +455,33 @@
   </data>
   <data name="INSTANCE_ID_TYPE_INSTANCE_ID_NAME" xml:space="preserve">
     <value>Instance id</value>
+  </data>
+  <data name="INVENTORY_ADJUSTMENT_REASONS_DAMAGED" xml:space="preserve">
+    <value>Damaged packaging</value>
+  </data>
+  <data name="INVENTORY_ADJUSTMENT_REASONS_DAMAGED_ITEM" xml:space="preserve">
+    <value>Damaged item</value>
+  </data>
+  <data name="INVENTORY_ADJUSTMENT_REASONS_EXPIRED" xml:space="preserve">
+    <value>Expired</value>
+  </data>
+  <data name="INVENTORY_ADJUSTMENT_REASONS_FORCE_MAJOR" xml:space="preserve">
+    <value>Force major</value>
+  </data>
+  <data name="INVENTORY_ADJUSTMENT_REASONS_LOST" xml:space="preserve">
+    <value>Lost</value>
+  </data>
+  <data name="INVENTORY_ADJUSTMENT_REASONS_NOT_IN_DEMAND" xml:space="preserve">
+    <value>Not in demand</value>
+  </data>
+  <data name="INVENTORY_TRANSFER_REASONS_FOR_ADJUSTMENT" xml:space="preserve">
+    <value>For adjustment</value>
+  </data>
+  <data name="INVENTORY_TRANSFER_REASONS_IN_DEMAND" xml:space="preserve">
+    <value>In demand</value>
+  </data>
+  <data name="INVENTORY_TRANSFER_REASONS_NOT_IN_DEMAND" xml:space="preserve">
+    <value>Not in demand</value>
   </data>
   <data name="INVOICE_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Indicates creation of an invoice</value>
