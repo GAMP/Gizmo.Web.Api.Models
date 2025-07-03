@@ -1,5 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions;
+﻿using System;
 using System.Collections.Generic;
+using Gizmo.Web.Api.Models.Abstractions;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -28,5 +29,24 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(3)]
         public int? StockId { get; set; }
+
+        /// <summary>
+        /// Return inventories where the date greater than or equal to the specified date.
+        /// </summary>
+        [MessagePack.Key(4)]
+        public DateTime? DateFrom { get; set; }
+
+        /// <summary>
+        /// Return inventories where the date less than or equal to the specified date.
+        /// </summary>
+        [MessagePack.Key(5)]
+        public DateTime? DateTo { get; set; }
+
+        /// <summary>
+        /// Gets or sets the operator id.
+        /// </summary>
+        [MessagePack.Key(6)]
+        public int? OperatorId { get; set; }
+
     }
 }
