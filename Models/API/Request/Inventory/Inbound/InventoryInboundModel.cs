@@ -9,7 +9,7 @@
         /// <summary>
         /// Cost.
         /// </summary>
-        [MessagePack.Key(7)]
+        [MessagePack.Key(9)]
         public decimal Cost { get; init; }
     }
 }

@@ -9,13 +9,13 @@
         /// <summary>
         /// Invoice id.
         /// </summary>
-        [MessagePack.Key(7)]
+        [MessagePack.Key(9)]
         public int? InvoiceId { get; init; }
 
         /// <summary>
         /// Adjustment type.
         /// </summary>
-        [MessagePack.Key(8)]
+        [MessagePack.Key(10)]
         public InventoryAdjustmentType AdjustmentType { get; init; }
     }
 }

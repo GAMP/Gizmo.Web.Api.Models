@@ -9,13 +9,13 @@
         /// <summary>
         /// Transfer stock id.
         /// </summary>
-        [MessagePack.Key(7)]
+        [MessagePack.Key(9)]
         public int TransferStockId { get; init; }
 
         /// <summary>
         /// Inbound inventory id.
         /// </summary>
-        [MessagePack.Key(8)]
+        [MessagePack.Key(10)]
         public int? InventoryInboundId { get; init; }
     }
 }
