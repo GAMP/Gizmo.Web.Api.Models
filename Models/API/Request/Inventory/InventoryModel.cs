@@ -38,5 +38,13 @@ namespace Gizmo.Web.Api.Models
         /// <inheritdoc/>
         [MessagePack.Key(6)]
         public IEnumerable<int> Documents { get; init; } = Enumerable.Empty<int>();
+
+        /// <inheritdoc/>
+        [MessagePack.Key(7)]
+        public int EntriesCount { get; init; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(8)]
+        public decimal ProductsQuantity { get; init; }
     }
 }

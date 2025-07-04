@@ -24,13 +24,19 @@ namespace Gizmo.Web.Api.Models
         public string? Note { get; init; }
 
         /// <summary>
-        /// Documents.
+        /// Inventory transfer Id.
         /// </summary>
         [MessagePack.Key(2)]
+        public int? InventoryTranferId { get; init; }
+
+        /// <summary>
+        /// Documents.
+        /// </summary>
+        [MessagePack.Key(3)]
         public IEnumerable<int> Documents { get; init; } = Enumerable.Empty<int>();
 
         /// <inheritdoc cref="IInventoryModelCreate.Entries"/>
-        [MessagePack.Key(3)]
+        [MessagePack.Key(4)]
         public IEnumerable<InventoryInboundEntryModelCreate> Entries { get; init; } = Enumerable.Empty<InventoryInboundEntryModelCreate>();
 
         /// <inheritdoc/>

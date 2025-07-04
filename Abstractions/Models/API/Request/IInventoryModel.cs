@@ -38,5 +38,15 @@ namespace Gizmo.Web.Api.Models
         /// Gets or sets the operator id.
         /// </summary>
         public int? OperatorId { get; init; }
+
+        /// <summary>
+        /// Gets or sets entries count.
+        /// </summary>
+        public int EntriesCount { get; init; }
+
+        /// <summary>
+        /// Gets or sets products quantity.
+        /// </summary>
+        public decimal ProductsQuantity { get; init; }
     }
 }
