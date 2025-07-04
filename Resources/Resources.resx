@@ -483,6 +483,15 @@
   <data name="INVENTORY_TRANSFER_REASONS_NOT_IN_DEMAND" xml:space="preserve">
     <value>Not in demand</value>
   </data>
+  <data name="INVENTORY_TYPE_ADJUSTMENT" xml:space="preserve">
+    <value>Adjustment</value>
+  </data>
+  <data name="INVENTORY_TYPE_INBOUND" xml:space="preserve">
+    <value>Inbound</value>
+  </data>
+  <data name="INVENTORY_TYPE_TRANSFER" xml:space="preserve">
+    <value>Transfer</value>
+  </data>
   <data name="INVOICE_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Indicates creation of an invoice</value>
   </data>
