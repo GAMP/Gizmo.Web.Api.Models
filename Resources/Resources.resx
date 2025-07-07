@@ -861,6 +861,15 @@
   <data name="SHIFT_UNLOCKED_EVENT_NAME" xml:space="preserve">
     <value>Unlocked</value>
   </data>
+  <data name="STOCK_LEVEL_TYPE_ANY" xml:space="preserve">
+    <value>Any</value>
+  </data>
+  <data name="STOCK_LEVEL_TYPE_LOW" xml:space="preserve">
+    <value>Low</value>
+  </data>
+  <data name="STOCK_LEVEL_TYPE_OUT_OF_STOCK" xml:space="preserve">
+    <value>Out of stock</value>
+  </data>
   <data name="STOCK_TYPE_SELLING_POINT" xml:space="preserve">
     <value>Selling Point</value>
   </data>
