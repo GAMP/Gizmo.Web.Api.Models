@@ -24,33 +24,39 @@ namespace Gizmo.Web.Api.Models
         public int? ProductId { get; init; }
 
         /// <summary>
-        /// Product name.
+        /// Product group id.
         /// </summary>
         [MessagePack.Key(3)]
+        public int? ProductGroupId { get; init; }
+
+        /// <summary>
+        /// Product name.
+        /// </summary>
+        [MessagePack.Key(4)]
         public string? ProductName { get; init; }
 
         /// <summary>
         /// Branch id.
         /// </summary>
-        [MessagePack.Key(4)]
+        [MessagePack.Key(5)]
         public int? BranchId { get; init; }
 
         /// <summary>
         /// Stock id.
         /// </summary>
-        [MessagePack.Key(5)]
+        [MessagePack.Key(6)]
         public int? StockId { get; init; }
 
         /// <summary>
         /// Stock type.
         /// </summary>
-        [MessagePack.Key(6)]
+        [MessagePack.Key(7)]
         public StockType? StockType { get; init; }
 
         /// <summary>
         /// Desired stock level.
         /// </summary>
-        [MessagePack.Key(7)]
+        [MessagePack.Key(8)]
         public StockLevelType Level { get; set; } =  StockLevelType.Any;
     }
 }
