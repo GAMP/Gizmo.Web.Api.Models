@@ -27,7 +27,7 @@ namespace Gizmo.Web.Api.Models
         /// Inventory transfer Id.
         /// </summary>
         [MessagePack.Key(2)]
-        public int? InventoryTranferId { get; init; }
+        public int? InventoryTransferId { get; init; }
 
         /// <summary>
         /// Documents.

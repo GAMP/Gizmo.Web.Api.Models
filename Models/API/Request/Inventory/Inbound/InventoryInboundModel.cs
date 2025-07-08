@@ -11,5 +11,11 @@
         /// </summary>
         [MessagePack.Key(9)]
         public decimal Cost { get; init; }
+
+        /// <summary>
+        /// Inventory transfer id.
+        /// </summary>
+        [MessagePack.Key(10)]
+        public int? InventoryTransferId { get; init; }
     }
 }
