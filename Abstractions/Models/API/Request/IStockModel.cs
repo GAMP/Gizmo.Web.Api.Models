@@ -17,5 +17,10 @@
 
         /// <inheritdoc/>
         public int? BranchId { get; init; }
+
+        /// <summary>
+        /// Gets or sets is deleted.
+        /// </summary>
+        public bool IsDeleted { get; set; }
     }
 }

@@ -23,5 +23,9 @@ namespace Gizmo.Web.Api.Models
         /// <inheritdoc/>
         [MessagePack.Key(3)]
         public int? BranchId { get; init; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(4)]
+        public bool IsDeleted { get; set; }
     }
 }

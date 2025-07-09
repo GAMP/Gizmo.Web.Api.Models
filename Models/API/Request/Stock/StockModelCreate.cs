@@ -17,5 +17,9 @@
         /// <inheritdoc/>
         [MessagePack.Key(2)]
         public int? BranchId { get; init; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(3)]
+        public bool IsDeleted { get; set; }
     }
 }
