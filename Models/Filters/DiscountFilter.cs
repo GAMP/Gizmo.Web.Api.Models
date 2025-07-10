@@ -38,5 +38,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(4)]
         public DiscountRewardType? RewardType { get; init; }
+
+        /// <summary>
+        /// Branch id.
+        /// </summary>
+        [MessagePack.Key(5)]
+        public int? BranchId { get; init; }
     }
 }
