@@ -1,6 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Gizmo.Web.Api.Models.Abstractions;
-using MessagePack.Formatters;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -71,5 +70,35 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(10)]
         public PeriodModel Period { get; init; } = new PeriodModel();
+
+        /// <summary>
+        /// Products that are part of this discount.
+        /// </summary>
+        [MessagePack.Key(11)]
+        public TargetGroupModel? Product { get; init; }
+
+        /// <summary>
+        /// Time products that are part of this discount.
+        /// </summary>
+        [MessagePack.Key(12)]
+        public TargetGroupModel? TimeProduct { get; init; }
+
+        /// <summary>
+        /// Time product groups that are part of this discount.
+        /// </summary>
+        [MessagePack.Key(13)]
+        public TargetGroupModel? ProductGroup { get; init; }
+
+        /// <summary>
+        /// Bill profiles that are part of this discount.
+        /// </summary>
+        [MessagePack.Key(14)]
+        public TargetGroupModel? BillProfile { get; init; }
+
+        /// <summary>
+        /// Payment methods that are part of this discount.
+        /// </summary>
+        [MessagePack.Key(15)]
+        public TargetGroupModel? PaymentMethod { get; init; }
     }
 }
