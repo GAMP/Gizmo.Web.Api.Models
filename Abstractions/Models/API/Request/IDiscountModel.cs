@@ -38,7 +38,12 @@
         /// <summary>
         /// Value.
         /// </summary>
-        public decimal Value { get; set; }
+        public decimal Value { get; init; }
+
+        /// <summary>
+        /// Indicates if the discount is disabled.
+        /// </summary>
+        public bool IsDisabled { get; init; }
 
         /// <summary>
         /// Discount period.

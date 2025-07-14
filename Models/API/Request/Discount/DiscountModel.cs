@@ -51,13 +51,13 @@ namespace Gizmo.Web.Api.Models
         /// Value.
         /// </summary>
         [MessagePack.Key(7)]
-        public decimal Value { get; set; }
+        public decimal Value { get; init; }
 
         /// <summary>
         /// Indicates that discount is disabled.
         /// </summary>
         [MessagePack.Key(8)]
-        public bool IsDisabled { get; set; }
+        public bool IsDisabled { get; init; }
 
         /// <summary>
         /// Indicates that discount is deleted.
