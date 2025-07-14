@@ -89,7 +89,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Payment methods that are part of this discount.
         /// </summary>
-        [MessagePack.Key(13)]
+        [MessagePack.Key(14)]
         public TargetGroupModel? PaymentMethod { get; init; }
 
     }
