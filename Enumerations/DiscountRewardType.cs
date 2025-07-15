@@ -1,4 +1,6 @@
-﻿namespace Gizmo
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Gizmo
 {
     /// <summary>
     /// Discount reward type enumeration.
@@ -8,10 +10,13 @@
         /// <summary>
         /// Discount.
         /// </summary>
+        [Name("Discount", "DISCOUNT_REWARD_TYPE_DISCOUNT")]
         Discount = 0,
+
         /// <summary>
         /// Bonus.
         /// </summary>
+        [Name("Bonus", "DISCOUNT_REWARD_TYPE_BONUS")]
         Bonus = 1,
     }
 }

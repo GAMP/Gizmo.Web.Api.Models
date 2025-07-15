@@ -291,6 +291,24 @@
   <data name="DEVICE_SMART_CARD_READER_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Smartcard reader data event</value>
   </data>
+  <data name="DISCOUNT_APPLY_TYPE_ORDER" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="DISCOUNT_APPLY_TYPE_ORDER_LINE" xml:space="preserve">
+    <value>Order Line</value>
+  </data>
+  <data name="DISCOUNT_CALCULATION_TYPE_FIXED" xml:space="preserve">
+    <value>Fixed</value>
+  </data>
+  <data name="DISCOUNT_CALCULATION_TYPE_PERCENTAGE" xml:space="preserve">
+    <value>Percentage</value>
+  </data>
+  <data name="DISCOUNT_REWARD_TYPE_BONUS" xml:space="preserve">
+    <value>Bonus</value>
+  </data>
+  <data name="DISCOUNT_REWARD_TYPE_DISCOUNT" xml:space="preserve">
+    <value>Discount</value>
+  </data>
   <data name="DOCUMENT_TYPES_CONSIGNMENT_NOTE" xml:space="preserve">
     <value>Consignment note</value>
   </data>
@@ -875,6 +893,24 @@
   </data>
   <data name="STOCK_TYPE_WAREHOUSE" xml:space="preserve">
     <value>Warehouse</value>
+  </data>
+  <data name="TARGET_GROUP_REQUIREMENT_ALL" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="TARGET_GROUP_REQUIREMENT_ANY" xml:space="preserve">
+    <value>Any</value>
+  </data>
+  <data name="TARGET_REQUIREMENT_ALL" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="TARGET_REQUIREMENT_AMOUNT" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="TARGET_REQUIREMENT_ANY" xml:space="preserve">
+    <value>Any</value>
+  </data>
+  <data name="TARGET_REQUIREMENT_COUNT" xml:space="preserve">
+    <value>Count</value>
   </data>
   <data name="USER_ENABLED_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Indicates enablement of an user</value>
