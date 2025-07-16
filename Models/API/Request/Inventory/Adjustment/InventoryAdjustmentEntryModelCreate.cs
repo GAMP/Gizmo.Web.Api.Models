@@ -3,6 +3,7 @@
     /// <summary>
     /// Inventory adjustment entry creation model.
     /// </summary>
+    [MessagePack.MessagePackObject()]
     public sealed class InventoryAdjustmentEntryModelCreate : IInventoryEntryModelCreate
     {
         /// <inheritdoc/>
