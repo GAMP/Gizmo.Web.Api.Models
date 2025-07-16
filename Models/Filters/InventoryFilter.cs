@@ -48,5 +48,13 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(6)]
         public int? OperatorId { get; set; }
 
+        /// <summary>
+        /// Completed inventories.
+        /// </summary>
+        /// <remarks>
+        /// All inventories except transfers are completed by default. Transfers are completed when the inbound transfer is created.
+        /// </remarks>
+        [MessagePack.Key(7)]
+        public bool? IsCompleted { get; set; }
     }
 }

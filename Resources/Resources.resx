@@ -492,6 +492,15 @@
   <data name="INVENTORY_ADJUSTMENT_REASONS_NOT_IN_DEMAND" xml:space="preserve">
     <value>Not in demand</value>
   </data>
+  <data name="INVENTORY_ADJUSTMENT_TYPE_SALE_BY_COST" xml:space="preserve">
+    <value>Sale by cost</value>
+  </data>
+  <data name="INVENTORY_ADJUSTMENT_TYPE_SALE_BY_PRICE" xml:space="preserve">
+    <value>Sale by price</value>
+  </data>
+  <data name="INVENTORY_ADJUSTMENT_TYPE_WRITE_OFF" xml:space="preserve">
+    <value>Write off</value>
+  </data>
   <data name="INVENTORY_TRANSFER_REASONS_FOR_ADJUSTMENT" xml:space="preserve">
     <value>For adjustment</value>
   </data>
