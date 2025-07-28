@@ -185,7 +185,7 @@ namespace Gizmo.Web.Api.Models
         public bool ValidationPasswordNumbersRequired { get; set; }
 
         [MessagePack.Key(42)]
-        public string? IntegrationLocationId { get; set; }
+        public string? IntegrationId { get; set; }
 
         #endregion
 
@@ -204,5 +204,11 @@ namespace Gizmo.Web.Api.Models
         public bool AssistanceRequestDisabled { get; set; }
 
         #endregion
+
+        [MessagePack.Key(45)]
+        public bool HostQRCodeGenerateURL { get; set; }
+
+        [MessagePack.Key(46)]
+        public string? HostQRCodeURL { get; set; }
     }
 }
