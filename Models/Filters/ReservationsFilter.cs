@@ -37,7 +37,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [EnumValueValidation]
         [MessagePack.Key(3)]
-        public ReservationStatus? Status { get; set; }
+        public ReservationStatusFilter? Status { get; set; }
 
         /// <summary>
         /// Return reservations of the specified user.

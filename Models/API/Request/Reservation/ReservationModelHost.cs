@@ -20,7 +20,7 @@ namespace Gizmo.Web.Api.Models
         /// Status.
         /// </summary>
         [Key(1)]
-        public ReservationStatus Status { get; init; }
+        public ReservationHostStatus Status { get; init; }
 
         /// <summary>
         /// Moved host id.

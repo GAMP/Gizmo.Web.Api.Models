@@ -93,6 +93,12 @@ namespace Gizmo.Web.Api.Models
             };
         }
 
+        /// <summary>
+        /// Returns empty paged list.
+        /// </summary>
+        /// <returns></returns>
+        public static PagedList<T> Empty() => new PagedList<T>(Enumerable.Empty<T>());
+
         #endregion
     }
 }
