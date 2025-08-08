@@ -20,16 +20,16 @@ namespace Gizmo.Web.Api.Models
         public Guid OfferId { get; init; }
 
         /// <summary>
-        /// Offer price.
+        /// Reservation start.
         /// </summary>
         [MessagePack.Key(1)]
-        public decimal Price { get; init; }
+        public DateTime Start { get; init; }
 
         /// <summary>
-        /// Reservation fee.
+        /// Reservation duration.
         /// </summary>
         [MessagePack.Key(2)]
-        public decimal? ReservationFee { get; init; }
+        public int Duration { get; init; }
 
         /// <summary>
         /// Total offer discount value.
@@ -44,13 +44,25 @@ namespace Gizmo.Web.Api.Models
         public int Reward { get; init; }
 
         /// <summary>
+        /// Offer price.
+        /// </summary>
+        [MessagePack.Key(5)]
+        public decimal Total { get; init; }
+
+        /// <summary>
+        /// Reservation fee.
+        /// </summary>
+        [MessagePack.Key(6)]
+        public decimal? Fee { get; init; }
+
+        /// <summary>
         /// Offers collection.
         /// </summary>
         /// <remarks>
         /// Hosts contained in <see cref="Hosts"/> will point to the offers contained in this offers collection.<br></br>
         /// This value will be empty in case no order can be generated.
         /// </remarks>
-        [MessagePack.Key(5)]
+        [MessagePack.Key(7)]
         public IEnumerable<ReservationOfferHostGroupModel> Offers
         {
             get; set;
@@ -62,22 +74,10 @@ namespace Gizmo.Web.Api.Models
         /// <remarks>
         /// Will contain a list of host and any available offers.
         /// </remarks>
-        [MessagePack.Key(6)]
+        [MessagePack.Key(8)]
         public IEnumerable<ReservationOfferHostModel> Hosts
         {
             get; set;
         } = Enumerable.Empty<ReservationOfferHostModel>();
-
-        /// <summary>
-        /// Reservation duration.
-        /// </summary>
-        [MessagePack.Key(7)]
-        public int Duration { get; init; }
-
-        /// <summary>
-        /// Reservation start.
-        /// </summary>
-        [MessagePack.Key(8)]
-        public DateTime Start { get; init; }
     }
 }

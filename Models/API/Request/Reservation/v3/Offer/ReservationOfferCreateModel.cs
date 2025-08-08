@@ -63,5 +63,12 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(5)]
         public List<int> Users { get; set; } = [];
+
+        /// <summary>
+        /// Reservation note.
+        /// </summary>
+        [StringLength(255)]
+        [MessagePack.Key(6)]
+        public string? Note { get; set; }
     }
 }
