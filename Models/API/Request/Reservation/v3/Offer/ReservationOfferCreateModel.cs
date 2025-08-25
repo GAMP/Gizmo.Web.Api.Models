@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using Gizmo.Web.Api.Models.Abstractions;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -13,7 +14,7 @@ namespace Gizmo.Web.Api.Models
     /// </remarks>
 
     [MessagePack.MessagePackObject]
-    public sealed class ReservationOfferCreateModel : IWebApiModel
+    public sealed class ReservationOfferCreateModel : IWebApiModel , IUriParametersQuery
     {
         /// <summary>
         /// Reservation start date.
