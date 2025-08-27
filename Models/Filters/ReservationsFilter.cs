@@ -68,6 +68,12 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(8)]
         public int? BranchId { get; set; }
 
+        /// <summary>
+        /// Host group id.
+        /// </summary>
+        [MessagePack.Key(9)]
+        public int? HostGroupId { get; set; }
+
         #endregion
     }
 }
