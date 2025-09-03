@@ -26,43 +26,46 @@ namespace Gizmo.Web.Api
 
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<Models.WebApiErrorBase>("ErrorType", "Error"));
 
-            //add event message converter
+            // add event message converter
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<IAPIEventMessage>("EventId", "Event"));
 
-            //add command message converter
+            // add command message converter
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<IAPICommandMessage>("CommandType", "Command"));
 
-            //add control message converter
+            // add control message converter
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<IAPIControlMessage>("ControlType", "Command"));
 
-            //add order line converter
+            // add order line converter
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<IOrderLineCreateModel>("Type", "Parameters"));
 
-            //add usage converter
+            // add usage converter
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<UsageSessionUsage>("Type", "Usage"));
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<UsageModel>("Type", "Usage"));
 
-            //add inventory converters        
+            // add inventory converters        
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<InventoryModel>("Type", "Model"));
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<InventoryEntryModel>("Type", "Model"));
 
-            //notifications converter
+            // notifications converter
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<NotificationModel>("Type", "Model"));
 
-            //schedules
+            // schedules
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<ScheduleModel>("Type", "Model"));
 
-            //recipient models
+            // recipient models
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<RecipientModel>("Type", "Model"));
 
-            //age restriction model
+            // age restriction model
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<AgeRestrictionModel>("Type", "Model"));
 
-            //task model
+            // task model
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<TaskModel>("Type", "Model"));
 
-            //mappings model
+            // mappings model
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<MappingModel>("Type", "Model"));
+
+            // cart entry models
+            options.Converters.Add(new MessagePackUnionMessageJsonConverter<CartEntryModel>("Type", "Model"));
 
             return options;
         }
