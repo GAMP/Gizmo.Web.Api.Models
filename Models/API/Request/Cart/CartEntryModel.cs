@@ -76,13 +76,13 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Total.
         /// </summary>
-        [MessagePack.Key(7)]
+        [MessagePack.Key(9)]
         public decimal Total { get; init; }
 
         /// <summary>
         /// Points award.
         /// </summary>
-        [MessagePack.Key(9)]
+        [MessagePack.Key(10)]
         public int PointsAward { get; init; }
     }
 
