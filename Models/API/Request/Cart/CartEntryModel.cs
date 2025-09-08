@@ -50,28 +50,40 @@ namespace Gizmo.Web.Api.Models
         public decimal Quantity { get; init; }
 
         /// <summary>
+        /// Total points.
+        /// </summary>
+        [MessagePack.Key(5)]
+        public decimal PointsTotal { get; init; }
+
+        /// <summary>
         /// Subtotal.
         /// </summary>
-        [MessagePack.Key(4)]
+        [MessagePack.Key(6)]
         public decimal SubTotal { get; init; }
 
         /// <summary>
         /// Tax total.
         /// </summary>
-        [MessagePack.Key(5)]
+        [MessagePack.Key(7)]
         public decimal TaxTotal { get; init; }
+
+        /// <summary>
+        /// Discount total.
+        /// </summary>
+        [MessagePack.Key(8)]
+        public decimal Discount { get; init; }
 
         /// <summary>
         /// Total.
         /// </summary>
-        [MessagePack.Key(6)]
+        [MessagePack.Key(7)]
         public decimal Total { get; init; }
 
         /// <summary>
-        /// Total points.
+        /// Points award.
         /// </summary>
-        [MessagePack.Key(7)]
-        public decimal Points { get; init; }
+        [MessagePack.Key(9)]
+        public int PointsAward { get; init; }
     }
 
     /// <summary>

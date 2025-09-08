@@ -23,7 +23,7 @@
         /// Total points amount.
         /// </summary>
         /// <remarks>The total amount of points this order costs (requires).</remarks>
-        public int Points { get; }
+        public int PointsTotal { get; }
 
         /// <summary>
         /// Total discount amount.

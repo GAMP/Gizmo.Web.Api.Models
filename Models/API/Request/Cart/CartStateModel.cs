@@ -18,23 +18,23 @@ namespace Gizmo.Web.Api.Models
 
         /// <inheritdoc/>
         [MessagePack.Key(1)]
-        public decimal SubTotal { get; init; }
+        public int PointsTotal { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(2)]
-        public decimal TaxTotal { get; init; }
+        public decimal SubTotal { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(3)]
-        public decimal Total { get; init; }
+        public decimal TaxTotal { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(4)]
-        public int Points { get; init; }
+        public decimal Discount { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(5)]
-        public decimal Discount { get; init; }
+        public decimal Total { get; init; } 
 
         /// <inheritdoc/>
         [MessagePack.Key(6)]
