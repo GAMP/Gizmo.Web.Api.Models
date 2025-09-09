@@ -74,6 +74,12 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(9)]
         public int? HostGroupId { get; set; }
 
+        /// <summary>
+        /// Return reservations with the specified reservation payment status.
+        /// </summary>
+        [MessagePack.Key(10)]
+        public ReservationPaymentStatusFilter? PaymentStatus { get; set; }
+
         #endregion
     }
 }
