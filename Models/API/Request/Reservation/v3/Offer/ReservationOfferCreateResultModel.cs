@@ -56,13 +56,19 @@ namespace Gizmo.Web.Api.Models
         public decimal? Fee { get; init; }
 
         /// <summary>
+        /// Minimum payment.
+        /// </summary>
+        [MessagePack.Key(7)]
+        public decimal? MinimumPayment { get; init; }
+
+        /// <summary>
         /// Offers collection.
         /// </summary>
         /// <remarks>
         /// Hosts contained in <see cref="Hosts"/> will point to the offers contained in this offers collection.<br></br>
         /// This value will be empty in case no order can be generated.
         /// </remarks>
-        [MessagePack.Key(7)]
+        [MessagePack.Key(8)]
         public IEnumerable<ReservationOfferHostGroupModel> Offers
         {
             get; set;
@@ -74,7 +80,7 @@ namespace Gizmo.Web.Api.Models
         /// <remarks>
         /// Will contain a list of host and any available offers.
         /// </remarks>
-        [MessagePack.Key(8)]
+        [MessagePack.Key(9)]
         public IEnumerable<ReservationOfferHostModel> Hosts
         {
             get; set;
