@@ -1,11 +1,10 @@
 ﻿namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Cart accept result model.
+    /// Cart payment addition result.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class CartAcceptResultModel
+    public sealed class CartPaymentAddResultModel : IWebApiModel
     {
-
     }
 }

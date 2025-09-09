@@ -1,7 +1,6 @@
-﻿using Gizmo.Web.Api.Messaging;
-using MessagePack;
+﻿using MessagePack;
 
-namespace Gizmo.Web.Api.Models.Models.Messages.EventMessage.PaymentIntent
+namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
     /// Payment intent expiration event message.
