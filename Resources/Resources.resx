@@ -993,4 +993,13 @@
   <data name="WAITING_LINE_USER_REMOVED_EVENT_NAME" xml:space="preserve">
     <value>User removed</value>
   </data>
+  <data name="SHIFT_COUNT_TYPE_DEFAULT" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="SHIFT_COUNT_TYPE_SHIFT_CLOSE" xml:space="preserve">
+    <value>Shift Close</value>
+  </data>
+  <data name="SHIFT_COUNT_TYPE_SHIFT_OPEN" xml:space="preserve">
+    <value>Shift Open</value>
+  </data>
 </root>
