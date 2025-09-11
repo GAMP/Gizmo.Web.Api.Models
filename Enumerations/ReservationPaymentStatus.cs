@@ -16,8 +16,13 @@
         NotSatisfied = 1,
 
         /// <summary>
-        /// Pre-payment threshold has been reached or exceeded.
+        /// Threshold reached but the reservation is not fully paid yet.
         /// </summary>
-        Satisfied = 2
+        PartiallySatisfied = 2,
+
+        /// <summary>
+        /// Pre-payment threshold has been reached and reservation is fully paid.
+        /// </summary>
+        Satisfied = 3
     }
 }

@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// Payment transaction model.
     /// </summary>
     /// <remarks>
-    /// Represents payment transaction, includes invoice,depoist pay ins/outs etc.
+    /// Represents payment transaction, includes invoice,deposit pay ins/outs etc.
     /// </remarks>
     [MessagePack.MessagePackObject()]
     public sealed class PaymentTransactionModel : IWebApiModel

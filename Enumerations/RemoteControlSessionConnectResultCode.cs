@@ -1,4 +1,4 @@
-﻿namespace Gizmo.Web.Api.Models.Enumerations
+﻿namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Remote control session connection result code.

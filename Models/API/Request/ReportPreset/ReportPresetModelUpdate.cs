@@ -1,7 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using Gizmo.Web.Api.Models.Abstractions;
-using Gizmo.Web.Api.Models.Enumerations;
 
 namespace Gizmo.Web.Api.Models
 {

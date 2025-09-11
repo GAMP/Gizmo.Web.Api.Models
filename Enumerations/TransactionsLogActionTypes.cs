@@ -1,4 +1,4 @@
-﻿namespace Gizmo.Web.Api.Models.Enumerations
+﻿namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Action types included in transactions log report.

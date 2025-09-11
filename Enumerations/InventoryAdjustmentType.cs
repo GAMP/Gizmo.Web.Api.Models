@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Gizmo.Web.Api
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Inventory adjustment type.

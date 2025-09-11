@@ -1,4 +1,4 @@
-﻿namespace Gizmo.Web.Api.Models.Enumerations
+﻿namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Specifies the void status of the invoices displayed.

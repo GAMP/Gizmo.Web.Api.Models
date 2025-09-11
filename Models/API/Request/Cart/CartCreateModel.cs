@@ -19,5 +19,12 @@ namespace Gizmo.Web.Api.Models
         [DefaultValue(null)]
         [Range(1, int.MaxValue)]
         public int? ExpireAfter { get; init; }
+
+        /// <summary>
+        /// Disable discounts.
+        /// </summary>
+        [MessagePack.Key(1)]
+        [DefaultValue(false)]
+        public bool DisableDiscounts { get; init; }
     }
 }

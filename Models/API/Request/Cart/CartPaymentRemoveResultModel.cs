@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Gizmo.Web.Api.Models.Models.API.Request.Cart
+﻿namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Cart payment remove result.

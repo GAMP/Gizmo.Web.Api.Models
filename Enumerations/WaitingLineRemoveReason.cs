@@ -1,4 +1,4 @@
-﻿namespace Gizmo.Web.Api.Models.Enumerations
+﻿namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Waiting line user removal reason.
@@ -9,10 +9,12 @@
         /// Waiting line was processed.
         /// </summary>
         Processed = 0,
+
         /// <summary>
         /// Cancelled by operator.
         /// </summary>
         Cancelled = 1,
+        
         /// <summary>
         /// Timed out.
         /// </summary>

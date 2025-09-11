@@ -1,6 +1,5 @@
 ﻿using System;
 using Gizmo.Web.Api.Models.Abstractions;
-using Gizmo.Web.Api.Models.Enumerations;
 
 namespace Gizmo.Web.Api.Models
 {

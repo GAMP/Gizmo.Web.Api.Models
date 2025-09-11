@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Gizmo
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Discount target group requirement.

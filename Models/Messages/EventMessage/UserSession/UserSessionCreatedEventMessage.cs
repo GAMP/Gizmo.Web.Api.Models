@@ -1,4 +1,4 @@
-﻿using Gizmo.Web.Api.Models.Enumerations;
+﻿using Gizmo.Web.Api.Models;
 
 namespace Gizmo.Web.Api.Messaging
 {

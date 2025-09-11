@@ -1,4 +1,4 @@
-﻿namespace Gizmo.Web.Api.Models.Enumerations
+﻿namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Waiting line move types.
@@ -9,18 +9,22 @@
         /// Custom.
         /// </summary>
         Custom = 0,
+
         /// <summary>
         /// Up.
         /// </summary>
         Up = 1,
+        
         /// <summary>
         /// Down.
         /// </summary>
         Down = 2,
+        
         /// <summary>
         /// Top.
         /// </summary>
         Top = 3,
+        
         /// <summary>
         /// Bottom.
         /// </summary>

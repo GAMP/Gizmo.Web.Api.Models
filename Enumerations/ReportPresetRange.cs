@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Gizmo.Web.Api.Models.Enumerations
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Report preset range.

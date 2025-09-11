@@ -1,6 +1,4 @@
-﻿using Gizmo.Web.Api.Models.Enumerations;
-
-namespace Gizmo.Web.Api.Models
+﻿namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Remote control session connect result model.

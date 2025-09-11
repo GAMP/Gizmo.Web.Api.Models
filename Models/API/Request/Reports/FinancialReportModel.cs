@@ -1,5 +1,4 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions;
-using Gizmo.Web.Api.Models.Enumerations;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;

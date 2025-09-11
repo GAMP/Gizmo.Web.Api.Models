@@ -1,4 +1,4 @@
-﻿namespace Gizmo.Web.Api.Models.Enumerations
+﻿namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Payment transaction direction.
@@ -9,7 +9,7 @@
         /// In payment direction.
         /// </summary>
         /// <remarks>
-        /// This will indicate payments that we have recieved.
+        /// This will indicate payments that we have received.
         /// </remarks>
         In = 0,
 

@@ -1,5 +1,4 @@
-﻿using Gizmo.Web.Api.Models.Enumerations;
-using System;
+﻿using System;
 
 namespace Gizmo.Web.Api.Models
 {
