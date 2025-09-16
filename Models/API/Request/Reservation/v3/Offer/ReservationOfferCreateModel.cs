@@ -42,12 +42,18 @@ namespace Gizmo.Web.Api.Models
         public List<int> Hosts { get; set; } = [];
 
         /// <summary>
+        /// Reservation users.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public List<int> Users { get; set; } = [];
+
+        /// <summary>
         /// Reserving user group id.
         /// </summary>
         /// <remarks>
         /// Specifies the user group making the reservation.<br></br><b>This value cannot be set and will result in error in case <see cref="UserId"/> is specified</b>.
         /// </remarks>
-        [MessagePack.Key(3)]
+        [MessagePack.Key(4)]
         public int? UserGroupId { get; set; }
 
         /// <summary>
@@ -56,20 +62,30 @@ namespace Gizmo.Web.Api.Models
         /// <remarks>
         /// Specifies the user making the reservation.<br></br><b>This value cannot be set and will result in error in case <see cref="UserGroupId"/> is specified</b>.
         /// </remarks>
-        [MessagePack.Key(4)]
+        [MessagePack.Key(5)]
         public int? UserId { get; set; }
 
         /// <summary>
-        /// Reservation users.
+        /// Contact phone.
         /// </summary>
-        [MessagePack.Key(5)]
-        public List<int> Users { get; set; } = [];
+        [StringLength(20)]
+        [PhoneNullEmptyValidation()]
+        [MessagePack.Key(6)]
+        public string? ContactPhone { get; init; }
+
+        /// <summary>
+        /// Contact email.
+        /// </summary>
+        [StringLength(254)]
+        [EmailNullEmptyValidation]
+        [MessagePack.Key(7)]
+        public string? ContactEmail { get; init; }
 
         /// <summary>
         /// Reservation note.
         /// </summary>
         [StringLength(255)]
-        [MessagePack.Key(6)]
+        [MessagePack.Key(8)]
         public string? Note { get; set; }
     }
 }
