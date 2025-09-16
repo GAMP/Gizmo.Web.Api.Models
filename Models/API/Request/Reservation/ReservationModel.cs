@@ -135,5 +135,17 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(19)]
         public int? FinalizedById { get; init; }
+
+        /// <summary>
+        /// The time the reservation was created.
+        /// </summary>
+        [MessagePack.Key(20)]
+        public DateTime CreatedTime { get; init; }
+
+        /// <summary>
+        /// The Id of the operator that created the reservation.
+        /// </summary>
+        [MessagePack.Key(21)]
+        public int? OperatorId { get; init; }
     }
 }
