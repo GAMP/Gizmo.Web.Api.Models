@@ -44,5 +44,17 @@ namespace Gizmo.Web.Api.Models
         /// <inheritdoc/>
         [MessagePack.Key(7)]
         public int PointsAward { get; init; }
+
+        /// <summary>
+        /// Fee total.
+        /// </summary>
+        [MessagePack.Key(8)]
+        public decimal FeeTotal { get; init; }
+
+        /// <summary>
+        /// Promo code application status.
+        /// </summary>
+        [MessagePack.Key(9)]
+        public PromoCodeApplyStatus PromoCodeStatus { get; set; }
     }
 }

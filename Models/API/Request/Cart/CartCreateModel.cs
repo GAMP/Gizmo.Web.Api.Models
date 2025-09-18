@@ -26,5 +26,16 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(1)]
         [DefaultValue(false)]
         public bool DisableDiscounts { get; init; }
+
+        /// <summary>
+        /// Host id.
+        /// </summary>
+        /// <remarks>
+        /// The value can be used to assign cart to specific host.<br></br>
+        /// When omitted orders will be assigned host id of active user session if any exists.
+        /// </remarks>
+        [MessagePack.Key(2)]
+        [DefaultValue(null)]
+        public int? HostId { get; set; }
     }
 }

@@ -39,5 +39,8 @@ namespace Gizmo.Web.Api.Models
         /// <inheritdoc/>
         [MessagePack.Key(6)]
         public int PointsAward { get; init; }
+
+        [MessagePack.Key(7)]
+        public decimal FeeTotal { get; init; }
     }
 }
