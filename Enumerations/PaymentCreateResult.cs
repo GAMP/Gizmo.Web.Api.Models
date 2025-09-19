@@ -54,5 +54,15 @@
         /// This will indicate that same payment method where specified multiple times.
         /// </remarks>
         NonUniquePaymentMethod = 6,
+
+        /// <summary>
+        /// Multiple payment methods not allowed.
+        /// </summary>
+        MultiPaymentMethodNotAllowed = 7,
+
+        /// <summary>
+        /// Partial payments not allowed.
+        /// </summary>
+        PartialPaymentMethodNotAllowed = 8,
     }
 }
