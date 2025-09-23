@@ -7,6 +7,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Promotion update model.
     /// </summary>
+    [MessagePack.MessagePackObject()]
     public sealed class PromotionUpdateModel : IWebApiModel
     {
         /// <summary>
