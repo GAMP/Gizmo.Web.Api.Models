@@ -1,4 +1,6 @@
-﻿namespace Gizmo.Web.Api.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Promotion limit model.
@@ -16,6 +18,7 @@
         /// Promotion limit.
         /// </summary>
         [MessagePack.Key(1)]
+        [Range(1,int.MaxValue)]
         public int Limit { get; set; }
     }
 }

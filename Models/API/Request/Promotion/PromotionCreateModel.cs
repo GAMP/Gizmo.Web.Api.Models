@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 
@@ -44,6 +45,7 @@ namespace Gizmo.Web.Api.Models
         /// Indicates that promotion is disabled.
         /// </summary>
         [MessagePack.Key(4)]
+        [DefaultValue(false)]
         public bool IsDisabled { get; set; }
 
         /// <summary>
