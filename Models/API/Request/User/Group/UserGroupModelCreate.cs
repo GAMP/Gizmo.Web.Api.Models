@@ -192,6 +192,12 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(28)]
         public CreditLimitOptionType CreditLimitOptions { get; set; }
 
+        /// <summary>
+        /// Discount group id.
+        /// </summary>
+        [MessagePack.Key(29)]
+        public int? DiscountGroupId { get; set; }
+
         #endregion
     }
 }

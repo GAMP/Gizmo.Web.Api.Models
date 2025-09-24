@@ -149,5 +149,10 @@
         /// The credit limit options of the user group.
         /// </summary>
         CreditLimitOptionType CreditLimitOptions { get; set; }
+
+        /// <summary>
+        /// Discount group id.
+        /// </summary>
+        public int? DiscountGroupId { get; set; }
     }
 }
