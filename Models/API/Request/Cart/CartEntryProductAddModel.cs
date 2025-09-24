@@ -12,6 +12,9 @@
         [MessagePack.Key(0)]
         public decimal Quantity { get; init; }
 
+        /// <summary>
+        /// Product id.
+        /// </summary>
         [MessagePack.Key(1)]
         public int ProductId { get; init; }
 
