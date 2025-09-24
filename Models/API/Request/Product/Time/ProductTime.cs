@@ -69,6 +69,12 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(8)]
         public int UseOrder { get; set; }
 
+        /// <summary>
+        /// Whether the time product is available for reservations.
+        /// </summary>
+        [MessagePack.Key(9)]
+        public bool IsAvailableForReservations { get; set; }
+
         #endregion
     }
 }
