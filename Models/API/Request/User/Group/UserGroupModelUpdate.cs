@@ -201,7 +201,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Discount group id.
         /// </summary>
-        [MessagePack.Key(29)]
+        [MessagePack.Key(30)]
         public int? DiscountGroupId { get; set; }
 
         #endregion
