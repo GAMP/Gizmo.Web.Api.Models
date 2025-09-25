@@ -223,6 +223,15 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(29)]
         public int? ReservedSlot { get; set; }
 
+        /// <summary>
+        /// Indicates joined guest.
+        /// </summary>
+        /// <remarks>
+        /// This value will only be <see langword="true"/> if <see cref="IsGuest"/> is equal to <see langword="true"/>.
+        /// </remarks>
+        [MessagePack.Key(30)]
+        public bool IsJoined { get; set; }
+
         #endregion
 
         #endregion
