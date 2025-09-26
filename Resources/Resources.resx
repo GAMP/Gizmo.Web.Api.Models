@@ -1002,4 +1002,10 @@
   <data name="SHIFT_COUNT_TYPE_SHIFT_OPEN" xml:space="preserve">
     <value>Shift Open</value>
   </data>
+  <data name="PROMOTION_CODE_TYPE_PUBLIC_NAME" xml:space="preserve">
+    <value>Public</value>
+  </data>
+  <data name="PROMOTION_CODE_TYPE_RESTRICTED_NAME" xml:space="preserve">
+    <value>Restricted</value>
+  </data>
 </root>
