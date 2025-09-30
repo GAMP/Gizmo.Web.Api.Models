@@ -84,6 +84,18 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(10)]
         public int PointsAward { get; init; }
+
+        /// <summary>
+        /// Indicates marked entry.
+        /// </summary>
+        [MessagePack.Key(11)]
+        public bool IsMarked {  get; init; }
+
+        /// <summary>
+        /// Indicates custom priced entry.
+        /// </summary>
+        [MessagePack.Key(12)]
+        public bool IsCustomPrice { get; init; }
     }
 
     /// <summary>
