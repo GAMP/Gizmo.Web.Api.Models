@@ -92,10 +92,10 @@ namespace Gizmo.Web.Api.Models
         public bool IsMarked {  get; init; }
 
         /// <summary>
-        /// Indicates custom priced entry.
+        /// Unit list price.
         /// </summary>
         [MessagePack.Key(12)]
-        public bool IsCustomPrice { get; init; }
+        public decimal UnitListPrice { get; init; }
     }
 
     /// <summary>
