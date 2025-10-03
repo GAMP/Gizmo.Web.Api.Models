@@ -45,5 +45,24 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(7)]
         public decimal FeeTotal { get; init; }
+
+        /// <summary>
+        /// Promotion state.
+        /// </summary>
+        [MessagePack.Key(8)]
+        public CartPromotionStateModel? PromotionState { get; init; }
+    }
+
+    /// <summary>
+    /// Cart promotion state model.
+    /// </summary>
+    [MessagePack.MessagePackObject()]
+    public sealed class CartPromotionStateModel : IWebApiModel
+    {
+        /// <summary>
+        /// Promo code id.
+        /// </summary>
+        [MessagePack.Key(0)]
+        public int PromoCodeId { get; init; }
     }
 }

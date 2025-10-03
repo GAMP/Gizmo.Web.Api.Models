@@ -13,15 +13,21 @@
         public int Id { get; set; }
 
         /// <summary>
-        /// Promotion code value.
+        /// Promotion id.
         /// </summary>
         [MessagePack.Key(1)]
+        public int PromotionId { get; set; }
+
+        /// <summary>
+        /// Promotion code value.
+        /// </summary>
+        [MessagePack.Key(2)]
         public string Value { get; set; } = null!;
 
         /// <summary>
         /// Promotion code status.
         /// </summary>
-        [MessagePack.Key(2)]
+        [MessagePack.Key(3)]
         public PromotionCodeStatus Status { get; set; }
     }
 }
