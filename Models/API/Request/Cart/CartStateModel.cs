@@ -34,7 +34,7 @@ namespace Gizmo.Web.Api.Models
 
         /// <inheritdoc/>
         [MessagePack.Key(5)]
-        public decimal Total { get; init; } 
+        public decimal Total { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(6)]
@@ -64,5 +64,52 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(0)]
         public int PromoCodeId { get; init; }
+    }
+
+    /// <summary>
+    /// Cart payments state.
+    /// </summary>
+    /// <remarks>
+    /// Provides information about cart payments.
+    /// </remarks>
+    [MessagePack.MessagePackObject()]
+    public sealed class CartPaymentsStateModel : IWebApiModel
+    {
+        /// <summary>
+        /// Allowed payment methods.
+        /// </summary>
+        [MessagePack.Key(0)]
+        public IEnumerable<int> AllowedPaymentMethods { get; init; } = Enumerable.Empty<int>();
+
+        /// <summary>
+        /// Indicates if multi payment methods are allowed.
+        /// </summary>
+        [MessagePack.Key(1)]
+        public bool MultiMethodAllowed { get; init; }
+
+        /// <summary>
+        /// Cart payments made.
+        /// </summary>
+        [MessagePack.Key(2)]
+        public IEnumerable<CartPaymentStateModel> Payments { get; init; } = Enumerable.Empty<CartPaymentStateModel>();
+    }
+
+    /// <summary>
+    /// Cart payment state model.
+    /// </summary>
+    [MessagePack.MessagePackObject()]
+    public sealed class CartPaymentStateModel : IWebApiModel
+    {
+        /// <summary>
+        /// Payment method id.
+        /// </summary>
+        [MessagePack.Key(0)]
+        public int PaymentMethodId { get; init; }
+
+        /// <summary>
+        /// Payment amount.
+        /// </summary>
+        [MessagePack.Key(1)]
+        public decimal Amount { get; init; }
     }
 }
