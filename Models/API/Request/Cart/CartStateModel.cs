@@ -92,6 +92,12 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(2)]
         public IEnumerable<CartPaymentStateModel> Payments { get; init; } = Enumerable.Empty<CartPaymentStateModel>();
+
+        /// <summary>
+        /// Gets minimum payment amount.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public decimal MinimumPayment {  get; init; }
     }
 
     /// <summary>
