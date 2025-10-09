@@ -85,5 +85,11 @@ namespace Gizmo.Web.Api.Models
         {
             get; set;
         } = Enumerable.Empty<ReservationOfferHostModel>();
+
+        /// <summary>
+        /// Cart id.
+        /// </summary>
+        [MessagePack.Key(10)]
+        public Guid CartId { get; init; }
     }
 }
