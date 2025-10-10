@@ -29,8 +29,7 @@ namespace Gizmo.Web.Api
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<IAPIEventMessage>("EventId", "Event"));            
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<IAPICommandMessage>("CommandType", "Command"));
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<IAPIControlMessage>("ControlType", "Command"));
-
-            options.Converters.Add(new MessagePackUnionMessageJsonConverter<IOrderLineCreateModel>("Type", "Parameters"));
+             
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<UsageSessionUsage>("Type", "Usage"));
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<UsageModel>("Type", "Usage"));   
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<InventoryModel>("Type", "Model"));
