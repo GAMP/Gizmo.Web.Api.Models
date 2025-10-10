@@ -91,5 +91,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(10)]
         public Guid CartId { get; init; }
+
+        /// <summary>
+        /// Points.
+        /// </summary>
+        [MessagePack.Key(11)]
+        public int Points { get; set; }
     }
 }
