@@ -14,5 +14,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(0)]
         public IEnumerable<PaymentCreateModel> Payments { get; init; } = Enumerable.Empty<PaymentCreateModel>();
+
+        /// <summary>
+        /// Disables receipt printing.
+        /// </summary>
+        [MessagePack.Key(1)]
+        public bool DisableReceiptPrinting { get; set; }
     }
 }
