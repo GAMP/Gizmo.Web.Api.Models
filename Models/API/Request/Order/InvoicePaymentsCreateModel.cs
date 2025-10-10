@@ -4,18 +4,31 @@ using System.Linq;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Invoice payments creation model.
+    /// Order invoice model.
     /// </summary>
+    /// <remarks>
+    /// Model used to create invoice for existing order.
+    /// </remarks>
     [MessagePack.MessagePackObject()]
-    public sealed class InvoicePaymentsCreateModel
+    public sealed class InvoicePaymentsCreateModel : IWebApiModel
     {
         /// <summary>
         /// Invoice payments.
         /// </summary>
-        /// <remarks>
-        /// Invoice payments to be created on invoice.
-        /// </remarks>
         [MessagePack.Key(0)]
         public IEnumerable<PaymentCreateModel> Payments { get; init; } = Enumerable.Empty<PaymentCreateModel>();
+
+        /// <summary>
+        /// Disable receipt printing.
+        /// </summary>
+        [MessagePack.Key(1)]
+        public bool DisableReceiptPrinting { get; init; }
+
+        /// <summary>
+        /// Enables auto completion.
+        /// </summary>
+        /// <remarks>
+        [MessagePack.Key(2)]
+        public bool AutoComplete { get; init; }
     }
 }
