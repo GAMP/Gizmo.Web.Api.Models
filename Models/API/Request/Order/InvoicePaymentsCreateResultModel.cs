@@ -4,7 +4,7 @@
     /// Invoice payments result model.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class InvoicePaymentsResultModel : IWebApiModel
+    public sealed class InvoicePaymentsCreateResultModel : IWebApiModel
     {
     }
 }
