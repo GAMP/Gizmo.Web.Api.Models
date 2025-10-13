@@ -55,6 +55,12 @@ namespace Gizmo.Web.Api.Models
         [Key(6)]
         public InvoiceStatus? Status { get; set; }
 
+        /// <summary>
+        /// Return invoices of the specified order.
+        /// </summary>
+        [Key(7)]
+        public int? ProductOrderId { get; set; }
+
         #endregion
     }
 }
