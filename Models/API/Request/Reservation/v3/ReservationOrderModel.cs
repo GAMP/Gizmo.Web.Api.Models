@@ -33,41 +33,41 @@ namespace Gizmo.Web.Api.Models
         public decimal Discount { get; init; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(4)]
+        [MessagePack.Key(5)]
         public decimal Total { get; init; }
 
         /// <summary>
         /// Amount paid.
         /// </summary>
-        [MessagePack.Key(5)]
+        [MessagePack.Key(6)]
         public decimal Paid { get; init; }
 
         /// <summary>
         /// Outstanding.
         /// </summary>
-        [MessagePack.Key(6)]
+        [MessagePack.Key(7)]
         public decimal Outstanding { get; init; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(7)]
+        [MessagePack.Key(8)]
         public int PointsAward { get; init; }
 
         /// <summary>
         /// Reservation payment status.
         /// </summary>
-        [MessagePack.Key(8)]
+        [MessagePack.Key(9)]
         public ReservationPaymentStatus PaymentStatus { get; init; }
 
         /// <summary>
         /// Invoice payment status.
         /// </summary>
-        [MessagePack.Key(9)]
+        [MessagePack.Key(10)]
         public InvoiceStatus InvoiceStatus { get; init; }
 
         /// <summary>
         /// Payments.
         /// </summary>
-        [MessagePack.Key(8)]
+        [MessagePack.Key(11)]
         public IEnumerable<ReservationInvoicePaymentModel> Payments { get; init; } = Enumerable.Empty<ReservationInvoicePaymentModel>();
     }
 }
