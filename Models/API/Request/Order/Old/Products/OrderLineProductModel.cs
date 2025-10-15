@@ -13,5 +13,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(0)]
         public int ProductId { get; set; }
+
+        /// <summary>
+        /// The mark of the product.
+        /// </summary>
+        [MessagePack.Key(1)]
+        public string? Mark { get; set; }
     }
 }
