@@ -68,6 +68,6 @@ namespace Gizmo.Web.Api.Models
         /// Payments.
         /// </summary>
         [MessagePack.Key(11)]
-        public IEnumerable<ReservationInvoicePaymentModel> Payments { get; init; } = Enumerable.Empty<ReservationInvoicePaymentModel>();
+        public IEnumerable<InvoicePaymentPaymentModel> Payments { get; init; } = Enumerable.Empty<InvoicePaymentPaymentModel>();
     }
 }

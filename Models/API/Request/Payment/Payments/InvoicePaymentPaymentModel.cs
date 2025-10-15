@@ -3,10 +3,10 @@
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Reservation payment model.
+    /// Invoice payment model.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class ReservationInvoicePaymentModel : ReservationPaymentModel
+    public sealed class InvoicePaymentPaymentModel : PaymentModel
     {
         /// <summary>
         /// Payment method id.
@@ -40,5 +40,17 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(4)]
         public decimal RefundedAmount { get; init; }
+
+        /// <summary>
+        /// Payment id.
+        /// </summary>
+        [MessagePack.Key(5)]
+        public int PaymentId { get; init; }
+
+        /// <summary>
+        /// Id.
+        /// </summary>
+        [MessagePack.Key(6)]
+        public int Id { get; set; }
     }
 }

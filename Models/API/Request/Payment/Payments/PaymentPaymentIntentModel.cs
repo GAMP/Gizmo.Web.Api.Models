@@ -3,10 +3,10 @@
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Reservation payment payment intent model.
+    /// Payment payment intent model.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class ReservationPaymentPaymentIntentModel : ReservationPaymentModel
+    public sealed class PaymentPaymentIntentModel : PaymentModel
     {
         /// <summary>
         /// Payment method id.
@@ -40,5 +40,23 @@ namespace Gizmo.Web.Api.Models
         {
             get; init;
         }
+
+        /// <summary>
+        /// Payment id.
+        /// </summary>
+        /// <remarks>
+        /// This value will only be set when the payment intent has been completed and a payment processed.
+        /// </remarks>
+        [MessagePack.Key(5)]
+        public int? PaymentId
+        {
+            get; init;
+        }
+
+        /// <summary>
+        /// Payment intent guid.
+        /// </summary>
+        [MessagePack.Key(6)]
+        public Guid Guid { get; init; }
     }
 }
