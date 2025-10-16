@@ -69,5 +69,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(11)]
         public IEnumerable<InvoicePaymentPaymentModel> Payments { get; init; } = Enumerable.Empty<InvoicePaymentPaymentModel>();
+
+        /// <summary>
+        /// Minimum payment total.
+        /// </summary>
+        [MessagePack.Key(12)]
+        public decimal MinimumPayment { get; init; }
     }
 }
