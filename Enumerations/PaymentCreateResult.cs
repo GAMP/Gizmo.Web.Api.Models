@@ -63,6 +63,6 @@
         /// <summary>
         /// Partial payments not allowed.
         /// </summary>
-        PartialPaymentMethodNotAllowed = 8,
+        PartialPaymentNotAllowed = 8,
     }
 }

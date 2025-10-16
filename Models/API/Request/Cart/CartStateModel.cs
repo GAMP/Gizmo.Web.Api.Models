@@ -98,6 +98,12 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(3)]
         public decimal MinimumPayment {  get; init; }
+
+        /// <summary>
+        /// Change amount.
+        /// </summary>
+        [MessagePack.Key(4)]
+        public decimal Change { get; init; }
     }
 
     /// <summary>
