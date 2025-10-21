@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for payment intents.
     /// </summary>
     [Serializable, MessagePackObject]
-    public class PaymentIntentsFilter : IModelFilter<PaymentIntentModel>
+    public class PaymentIntentsFilterLegacy : IModelFilter<PaymentIntentModelLegacy>
     {
         #region PROPERTIES
 

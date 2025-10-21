@@ -1,4 +1,5 @@
-﻿using MessagePack;
+﻿using Gizmo.Web.Api.Models;
+using MessagePack;
 using System;
 
 namespace Gizmo.Web.Api.Messaging

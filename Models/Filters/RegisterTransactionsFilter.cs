@@ -37,6 +37,12 @@ namespace Gizmo.Web.Api.Models
         [Key(3)]
         public List<string> Expand { get; set; } = new();
 
+        /// <summary>
+        /// Transaction type.
+        /// </summary>
+        [Key(4)]
+        public RegisterTransactionType? Type { get; init; }
+
         #endregion
     }
 }

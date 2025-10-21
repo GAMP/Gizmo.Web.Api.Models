@@ -1,79 +1,135 @@
-﻿using Gizmo.Web.Api.Models.Abstractions;
-
-using MessagePack;
-
-using System;
+﻿using System;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Payment intent.
+    /// Payment intent model.
     /// </summary>
-    [Serializable, MessagePackObject]
-    public sealed class PaymentIntentModel : IPaymentIntentModel, IModelIntIdentifier
+    [MessagePack.MessagePackObject]
+    public sealed class PaymentIntentModel : IWebApiModel
     {
-        #region PROPERTIES
-
         /// <summary>
-        /// The Id of the object.
+        /// Payment intent id.
         /// </summary>
-        [Key(0)]
+        [MessagePack.Key(0)]
         public int Id { get; init; }
 
         /// <summary>
-        /// The GUID of the payment intent.
+        /// Payment method id.
         /// </summary>
-        [Key(1)]
-        public Guid Guid { get; set; }
+        [MessagePack.Key(1)]
+        public int PaymentMethodId { get; init; }
 
         /// <summary>
-        /// The date that the payment intent was created.
+        /// Amount.
         /// </summary>
-        [Key(2)]
-        public DateTime Date { get; set; }
+        [MessagePack.Key(2)]
+        public decimal Amount { get; init; }
 
         /// <summary>
-        /// The Id of the user this payment intent is associated with.
+        /// Payment intent state.
         /// </summary>
-        [Key(3)]
-        public int UserId { get; set; }
+        [MessagePack.Key(3)]
+        public PaymentIntentState State { get; init; }
 
         /// <summary>
-        /// The Id of the payment method this payment intent is associated with.
-        /// </summary>
-        [Key(4)]
-        public int PaymentMethodId { get; set; }
+        /// Transaction id.
+        /// </summary>  
+        /// <remarks>
+        /// This will only have a value if the payment intent has been completed successfully.
+        /// </remarks>
+        [MessagePack.Key(4)]
+        public string? TransactionId { get; init; }
 
         /// <summary>
-        /// The amount of the payment intent.
+        /// Transaction time.
         /// </summary>
-        [Key(5)]
-        public decimal Amount { get; set; }
+        /// <remarks>
+        /// This will only have a value if the payment intent has been completed successfully.
+        /// </remarks>
+        [MessagePack.Key(5)]
+        public DateTime? TransactionTime { get; init; }
 
         /// <summary>
-        /// The state of the payment intent.
+        /// Payment provider.
         /// </summary>
-        [Key(6)]
-        public PaymentIntentState State { get; set; }
+        [MessagePack.Key(6)]
+        public Guid Provider { get; init; }
 
         /// <summary>
-        /// Provider transaction id.
-        /// </summary>
-        [Key(7)]
-        public string? TransactionId { get; set; }
+        /// Payment intent unique identifier.
+        ///</summary>
+        [MessagePack.Key(7)]
+        public Guid Identifier { get; init; }
 
         /// <summary>
-        /// Provider transaction time.
+        /// Branch id.
         /// </summary>
-        [Key(8)]
-        public DateTime? TransactionTime { get; set; }
+        [MessagePack.Key(8)]
+        public int? BranchId { get; init; }
 
         /// <summary>
-        /// The GUID of the provider this payment intent is associated with.
+        /// Payment url.
         /// </summary>
-        [Key(9)]
-        public Guid Provider { get; set; }
+        [MessagePack.Key(9)]
+        public string? PaymentUrl { get; init; }
 
-        #endregion
+
+        /// <summary>
+        /// Expiration in minutes.
+        /// </summary>
+        [MessagePack.Key(10)]
+        public int? Expiration { get; init; }
+
+        /// <summary>
+        /// Precalculated expiration time.
+        /// </summary>
+        [MessagePack.Key(11)]
+        public DateTime? ExpireAt { get; init; }
+
+        /// <summary>
+        /// Payment id.
+        /// </summary>
+        /// <remarks>
+        /// This will only have a value if the payment intent has been completed successfully.
+        /// </remarks>
+        [MessagePack.Key(12)]
+        public int? PaymentId { get; init; }
+
+        /// <summary>
+        /// Created by user id.
+        /// </summary>
+        /// <remarks>
+        /// This value may be null if created by system and can represent both operators and member users.
+        /// </remarks>
+        [MessagePack.Key(13)]
+        public int? CreatedById { get; init; }
+
+        /// <summary>
+        /// Created time.
+        /// </summary>
+        [MessagePack.Key(14)]
+        public DateTime CreatedTime { get; init; }
+
+        /// <summary>
+        /// Modified by user id.
+        /// </summary>
+        /// <remarks>
+        /// This value may be null if created by system and can represent both operators and member users.
+        /// </remarks>
+        [MessagePack.Key(15)]
+        public int? ModifiedById { get; init; }
+
+        ///<summary>
+        /// Modified time.
+        /// </summary>
+        [MessagePack.Key(16)]
+        public DateTime? ModifiedTime { get; init; }
+
+        /// <summary>
+        /// Payment intent type.
+        /// </summary>
+        [MessagePack.Key(17)]
+        public PaymentIntentType Type { get; init; }
     }
 }
