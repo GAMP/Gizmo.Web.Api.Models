@@ -126,6 +126,18 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(17)]
         public IEnumerable<InvoiceModelRefund> InvoiceRefunds { get; set; } = Enumerable.Empty<InvoiceModelRefund>();
 
+        /// <summary>
+        /// The Id of the branch.
+        /// </summary>
+        [MessagePack.Key(18)]
+        public int? BranchId { get; set; }
+
+        /// <summary>
+        /// The Id of the host.
+        /// </summary>
+        [MessagePack.Key(19)]
+        public int? HostId { get; set; }
+
         #endregion
     }
 }
