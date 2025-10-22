@@ -49,6 +49,24 @@ namespace Gizmo.Web.Api.Models
         [Key(5)]
         public DepositTransactionType? Type { get; set; }
 
+        /// <summary>
+        /// Return deposit transactions of the specified operator.
+        /// </summary>
+        [Key(6)]
+        public int? OperatorId { get; set; }
+
+        /// <summary>
+        /// Return deposit transactions of the specified branch.
+        /// </summary>
+        [Key(7)]
+        public int? BranchId { get; set; }
+
+        /// <summary>
+        /// Return deposit transactions of the specified payment method.
+        /// </summary>
+        [Key(8)]
+        public int? PaymentMethodId { get; set; }
+
         #endregion
     }
 }

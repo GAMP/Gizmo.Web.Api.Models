@@ -100,6 +100,12 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(13)]
         public int? DepositPaymentId { get; set; }
 
+        /// <summary>
+        /// The Id of the branch of this deposit transaction.
+        /// </summary>
+        [MessagePack.Key(14)]
+        public int? BranchId { get; set; }
+
         #endregion
     }
 }

@@ -61,6 +61,18 @@ namespace Gizmo.Web.Api.Models
         [Key(7)]
         public int? ProductOrderId { get; set; }
 
+        /// <summary>
+        /// Return invoices of the specified operator.
+        /// </summary>
+        [Key(8)]
+        public int? OperatorId { get; set; }
+
+        /// <summary>
+        /// Return invoices of the specified branch.
+        /// </summary>
+        [Key(9)]
+        public int? BranchId { get; set; }
+
         #endregion
     }
 }
