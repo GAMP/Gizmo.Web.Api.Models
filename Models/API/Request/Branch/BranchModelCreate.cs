@@ -100,7 +100,7 @@ namespace Gizmo.Web.Api.Models
 
         /// <inheritdoc/>
         [MessagePack.Key(18)]
-        public string? BusinessVATId { get; init; }
+        public string? BusinessVATID { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(19)]
@@ -116,31 +116,48 @@ namespace Gizmo.Web.Api.Models
 
         /// <inheritdoc/>
         [MessagePack.Key(22)]
-        public bool? TreatDepositsAsService { get; init; }
+        public TaxSystems? DepositTaxSystem { get; init; }
 
         /// <inheritdoc/>
-        [StringLength(255)]
         [MessagePack.Key(23)]
-        public string? DepositServiceDescription { get; init; }
+        public VatRates? GoodsVATRate
+        {
+            get; init;
+        }
 
         /// <inheritdoc/>
         [MessagePack.Key(24)]
-        public decimal? TimeBasedServiceVATRate { get; init; }
+        public VatRates? ServicesVATRate
+        {
+            get; init;
+        }
 
         /// <inheritdoc/>
         [MessagePack.Key(25)]
-        public VatRates? DepositVATRate { get; init; }
+        public VatRates? DepositVATRate
+        {
+            get; init;
+        }
 
         /// <inheritdoc/>
         [MessagePack.Key(26)]
-        public AdvancePaymentTypes? DepositAdvancePaymentType { get; init; }
+        public decimal? TimeBasedServiceVATRate { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(27)]
-        public int? CompanionId { get; init; }
+        public bool? TreatDepositsAsService { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(28)]
+        public string? DepositServiceDescription { get; init; }
+
+
+        /// <inheritdoc/>
+        [MessagePack.Key(29)]
+        public int? CompanionId { get; init; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(30)]
         public bool IsDeleted { get; init; }
     }
 }

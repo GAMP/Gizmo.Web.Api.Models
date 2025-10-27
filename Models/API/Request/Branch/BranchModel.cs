@@ -92,7 +92,7 @@ namespace Gizmo.Web.Api.Models
 
         /// <inheritdoc/>
         [MessagePack.Key(19)]
-        public string? BusinessVATId { get; init; }
+        public string? BusinessVATID { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(20)]
@@ -108,15 +108,21 @@ namespace Gizmo.Web.Api.Models
 
         /// <inheritdoc/>
         [MessagePack.Key(23)]
-        public bool? TreatDepositsAsService { get; init; }
+        public TaxSystems? DepositTaxSystem { get;init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(24)]
-        public string? DepositServiceDescription { get; init; }
+        public VatRates? GoodsVATRate
+        {
+            get; init;
+        }
 
         /// <inheritdoc/>
         [MessagePack.Key(25)]
-        public decimal? TimeBasedServiceVATRate { get; init; }
+        public VatRates? ServicesVATRate
+        {
+            get; init;
+        }
 
         /// <inheritdoc/>
         [MessagePack.Key(26)]
@@ -127,29 +133,35 @@ namespace Gizmo.Web.Api.Models
 
         /// <inheritdoc/>
         [MessagePack.Key(27)]
-        public AdvancePaymentTypes? DepositAdvancePaymentType
-        {
-            get; init;
-        }
+        public decimal? TimeBasedServiceVATRate { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(28)]
-        public int? CompanionId { get; set; }
+        public bool? TreatDepositsAsService { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(29)]
-        public Guid Guid { get; set; }
+        public string? DepositServiceDescription { get; init; }
+
 
         /// <inheritdoc/>
         [MessagePack.Key(30)]
-        public bool IsDisabled { get; set; }
+        public int? CompanionId { get; set; }
 
         /// <inheritdoc/>
         [MessagePack.Key(31)]
-        public DateTime? DisableTime { get; set; }
+        public Guid Guid { get; set; }
 
         /// <inheritdoc/>
         [MessagePack.Key(32)]
+        public bool IsDisabled { get; set; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(33)]
+        public DateTime? DisableTime { get; set; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(34)]
         public bool IsDeleted { get; set; }        
     }
 }

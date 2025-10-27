@@ -100,7 +100,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// Gets branch VAT id.
         /// </summary>
-        public string? BusinessVATId { get; }
+        public string? BusinessVATID { get; }
 
         /// <summary>
         /// Gets branch tax system.
@@ -118,6 +118,11 @@ namespace Gizmo.Web.Api.Models.Abstractions
         public TaxSystems? ServicesTaxSystem { get; }
 
         /// <summary>
+        /// Gets branch deposits tax system.
+        /// </summary>
+        public TaxSystems? DepositTaxSystem { get; init; }
+
+        /// <summary>
         /// Gets if deposits should be treated as services.
         /// </summary>
         public bool? TreatDepositsAsService { get; }
@@ -133,20 +138,28 @@ namespace Gizmo.Web.Api.Models.Abstractions
         public decimal? TimeBasedServiceVATRate { get; }
 
         /// <summary>
+        /// Gets goods VAT rate.
+        /// </summary>
+        public VatRates? GoodsVATRate
+        {
+            get; init;
+        }
+
+        /// <summary>
+        /// Gets services VAT rate.
+        /// </summary>
+        public VatRates? ServicesVATRate
+        {
+            get; init;
+        }
+
+        /// <summary>
         /// Gets deposit VAT rate.
         /// </summary>
         public VatRates? DepositVATRate
         {
             get;
-        }
-
-        /// <summary>
-        /// Gets deposit advance payment type.
-        /// </summary>
-        public AdvancePaymentTypes? DepositAdvancePaymentType
-        {
-            get;
-        }
+        }  
 
         /// <summary>
         /// Gets branch companion id.
