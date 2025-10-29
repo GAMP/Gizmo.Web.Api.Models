@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using Gizmo.Web.Api.Models.Abstractions;
 using MessagePack;
 
@@ -35,9 +34,8 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Return orders with the specified order status.
         /// </summary>
-        [EnumValueValidation]
         [MessagePack.Key(3)]
-        public OrderStatus? Status { get; set; }
+        public OrderStatusFilter? Status { get; set; }
 
         /// <summary>
         /// Include specified objects in the result.
@@ -56,6 +54,12 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(6)]
         public int? HostId { get; set; }
+
+        /// <summary>
+        /// Return orders of the specified host.
+        /// </summary>
+        [MessagePack.Key(7)]
+        public InvoiceStatus? InvoiceStatus { get; set; }
 
         #endregion
     }
