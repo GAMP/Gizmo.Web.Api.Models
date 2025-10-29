@@ -45,6 +45,18 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(4)]
         public List<string> Expand { get; set; } = new();
 
+        /// <summary>
+        /// Return orders of the specified user.
+        /// </summary>
+        [MessagePack.Key(5)]
+        public int? UserId { get; set; }
+
+        /// <summary>
+        /// Return orders of the specified host.
+        /// </summary>
+        [MessagePack.Key(6)]
+        public int? HostId { get; set; }
+
         #endregion
     }
 }
