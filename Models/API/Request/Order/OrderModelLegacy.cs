@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
     /// Order.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class OrderModel : IOrderModel, IOrderCalculatedModel, IModelIntIdentifier
+    public sealed class OrderModelLegacy : IOrderModel, IOrderCalculatedModel, IModelIntIdentifier
     {
         #region PROPERTIES
 
@@ -27,7 +27,7 @@ namespace Gizmo.Web.Api.Models
         /// The invoice of the order.
         /// </summary>
         [MessagePack.Key(1)]
-        public IEnumerable<InvoiceModel> Invoices { get; set; } = Enumerable.Empty<InvoiceModel>();
+        public InvoiceModel? Invoice { get; set; }
 
         /// <summary>
         /// The date that the order was created.
