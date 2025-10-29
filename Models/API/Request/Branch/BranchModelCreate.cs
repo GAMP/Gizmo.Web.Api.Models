@@ -151,7 +151,6 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(28)]
         public string? DepositServiceDescription { get; init; }
 
-
         /// <inheritdoc/>
         [MessagePack.Key(29)]
         public int? CompanionId { get; init; }
