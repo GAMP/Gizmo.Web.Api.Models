@@ -88,6 +88,8 @@ namespace Gizmo.Web.Api.Models
             get; init;
         }
 
+        // NOTE : Includes invoice payment / invoice payment refund based on PaymentTransactionDirection
+
         /// <summary>
         /// Include invoice payments.
         /// </summary>
@@ -96,6 +98,8 @@ namespace Gizmo.Web.Api.Models
         {
             get; init;
         }
+
+        // NOTE : Includes deposit payment / deposit refund based on PaymentTransactionDirection
 
         /// <summary>
         /// Include deposit payments.
@@ -109,6 +113,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Include deposit refund payments.
         /// </summary>
+        [Obsolete()]
         [MessagePack.Key(12)]
         public bool? IncludeDepositRefunds
         {
@@ -118,11 +123,14 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Include invoice refund payments.
         /// </summary>
+        [Obsolete()]
         [MessagePack.Key(13)]
         public bool? IncludeInvoiceRefunds
         {
             get; init;
         }
+
+        // NOTE : Includes register transaction of type pay in and pay out based on PaymentTransactionDirection
 
         /// <summary>
         /// Include pay-in payments.
@@ -136,6 +144,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Include pay-out payments.
         /// </summary>
+        [Obsolete()]
         [MessagePack.Key(15)]
         public bool? IncludePayOuts
         {

@@ -36,6 +36,12 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(2)]
         public string? Note { get; set; }
 
+        /// <summary>
+        /// Disable receipt printing for created transaction.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public bool DisableReceiptPrinting { get; set; }
+
         #endregion
     }
 }
