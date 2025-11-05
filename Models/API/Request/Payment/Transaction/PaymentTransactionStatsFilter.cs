@@ -1,4 +1,5 @@
 ﻿using System;
+using Gizmo.Web.Api.Models.Abstractions;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -6,7 +7,7 @@ namespace Gizmo.Web.Api.Models
     /// Payment transaction filter.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class PaymentTransactionStatsFilter : IWebApiModel
+    public sealed class PaymentTransactionStatsFilter : IWebApiModel , IUriParametersQuery
     {
         /// <summary>
         /// Date from.
