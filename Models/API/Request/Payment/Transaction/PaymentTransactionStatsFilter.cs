@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using Gizmo.Web.Api.Models.Abstractions;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -8,36 +6,30 @@ namespace Gizmo.Web.Api.Models
     /// Payment transaction filter.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class PaymentTransactionFilterClassic : IModelFilterClassic<PaymentTransactionModel>
+    public sealed class PaymentTransactionStatsFilter : IWebApiModel
     {
-        /// <summary>
-        /// Filter for cursor-based pagination.
-        /// </summary>
-        [MessagePack.Key(0)]
-        public ModelFilterPaginationClassic Pagination { get; set; } = new();
-
-        /// <summary>
-        /// Include specified objects in the result.
-        /// </summary>
-        [MessagePack.Key(1)]
-        public List<string> Expand { get; set; } = [];
-
         /// <summary>
         /// Date from.
         /// </summary>
-        [MessagePack.Key(2)]
-        public DateTime DateFrom { get; init; }
+        [MessagePack.Key(0)]
+        public DateTime? DateFrom { get; init; }
 
         /// <summary>
         /// Date to.
         /// </summary>
-        [MessagePack.Key(3)]
-        public DateTime DateTo { get; init; }
+        [MessagePack.Key(1)]
+        public DateTime? DateTo { get; init; }
+
+        /// <summary>
+        /// Branch id.
+        /// </summary>
+        [MessagePack.Key(2)]
+        public int? BranchId { get; init; }
 
         /// <summary>
         /// Shift id.
         /// </summary>
-        [MessagePack.Key(4)]
+        [MessagePack.Key(3)]
         public int? ShiftId
         {
             get; init;
@@ -46,7 +38,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Register id.
         /// </summary>
-        [MessagePack.Key(5)]
+        [MessagePack.Key(4)]
         public int? RegisterId
         {
             get; init;
@@ -55,7 +47,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Operator id.
         /// </summary>
-        [MessagePack.Key(6)]
+        [MessagePack.Key(5)]
         public int? OperatorId
         {
             get; init;
@@ -64,7 +56,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Customer id.
         /// </summary>
-        [MessagePack.Key(7)]
+        [MessagePack.Key(6)]
         public int? UserId
         {
             get; init;
@@ -73,7 +65,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Payment method id.
         /// </summary>
-        [MessagePack.Key(8)]
+        [MessagePack.Key(7)]
         public int? PaymentMethodId
         {
             get; init;
@@ -82,7 +74,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Direction type.
         /// </summary>
-        [MessagePack.Key(9)]
+        [MessagePack.Key(8)]
         public PaymentTransactionDirection? PaymentDirection
         {
             get; init;
@@ -91,7 +83,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Include invoice transactions.
         /// </summary>
-        [MessagePack.Key(10)]
+        [MessagePack.Key(9)]
         public bool? InvoiceTransactions
         {
             get; init;
@@ -100,7 +92,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Include deposit transactions.
         /// </summary>
-        [MessagePack.Key(11)]
+        [MessagePack.Key(10)]
         public bool? DepositTransactions
         {
             get; init;
@@ -109,7 +101,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Include register transactions.
         /// </summary>
-        [MessagePack.Key(12)]
+        [MessagePack.Key(11)]
         public bool? RegisterTransactions
         {
             get; init;

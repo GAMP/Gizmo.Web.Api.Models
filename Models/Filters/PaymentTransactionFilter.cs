@@ -8,13 +8,13 @@ namespace Gizmo.Web.Api.Models
     /// Payment transaction filter.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class PaymentTransactionFilter : IModelFilter<PaymentTransactionModel>
+    public sealed class PaymentTransactionFilter : IModelFilterClassic<PaymentTransactionModel>
     {
         /// <summary>
         /// Filter for cursor-based pagination.
         /// </summary>
         [MessagePack.Key(0)]
-        public ModelFilterPagination Pagination { get; set; } = new();
+        public ModelFilterPaginationClassic Pagination { get; set; } = new();
 
         /// <summary>
         /// Include specified objects in the result.
@@ -89,57 +89,56 @@ namespace Gizmo.Web.Api.Models
         }
 
         /// <summary>
-        /// Include invoice payments.
+        /// Include invoice transactions.
         /// </summary>
         [MessagePack.Key(10)]
-        public bool? IncludeInvoicePayments
+        public bool? InvoiceTransactions
         {
             get; init;
         }
 
         /// <summary>
-        /// Include deposit payments.
+        /// Include deposit transactions.
         /// </summary>
         [MessagePack.Key(11)]
-        public bool? IncludeDepositPayments
+        public bool? DepositTransactions
         {
-            get;init;
+            get; init;
         }
 
         /// <summary>
-        /// Include deposit refund payments.
+        /// Include register transactions.
         /// </summary>
         [MessagePack.Key(12)]
-        public bool? IncludeDepositRefunds
+        public bool? RegisterTransactions
         {
             get; init;
         }
 
         /// <summary>
-        /// Include invoice refund payments.
+        /// Branch id.
         /// </summary>
         [MessagePack.Key(13)]
-        public bool? IncludeInvoiceRefunds
-        {
-            get; init;
-        }
+        public int? BranchId { get; init; }
 
         /// <summary>
-        /// Include pay-in payments.
+        /// Implicit conversion to <see cref="PaymentTransactionStatsFilter"/>.
         /// </summary>
-        [MessagePack.Key(14)]
-        public bool? IncludePayIns
+        /// <param name="filter">Payment transactions filter.</param>
+        public static implicit operator PaymentTransactionStatsFilter(PaymentTransactionFilter filter) => new()
         {
-            get; init;
-        }
-
-        /// <summary>
-        /// Include pay-out payments.
-        /// </summary>
-        [MessagePack.Key(15)]
-        public bool? IncludePayOuts
-        {
-            get; init;
-        }    
+            BranchId = filter.BranchId,
+            DateFrom = filter.DateFrom,
+            DateTo = filter.DateTo,
+            DepositTransactions = filter.DepositTransactions,
+            RegisterTransactions = filter.RegisterTransactions,
+            InvoiceTransactions = filter.InvoiceTransactions,
+            OperatorId = filter.OperatorId,
+            PaymentDirection = filter.PaymentDirection,
+            PaymentMethodId = filter.PaymentMethodId,
+            RegisterId = filter.RegisterId,
+            ShiftId = filter.ShiftId,
+            UserId = filter.UserId,
+        };
     }
 }
