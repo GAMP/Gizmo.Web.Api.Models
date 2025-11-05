@@ -88,67 +88,31 @@ namespace Gizmo.Web.Api.Models
             get; init;
         }
 
-        // NOTE : Includes invoice payment / invoice payment refund based on PaymentTransactionDirection
-
         /// <summary>
-        /// Include invoice payments.
+        /// Include invoice transactions.
         /// </summary>
         [MessagePack.Key(10)]
-        public bool? IncludeInvoicePayments
+        public bool? InvoiceTransactions
         {
             get; init;
         }
 
-        // NOTE : Includes deposit payment / deposit refund based on PaymentTransactionDirection
-
         /// <summary>
-        /// Include deposit payments.
+        /// Include deposit transactions.
         /// </summary>
         [MessagePack.Key(11)]
-        public bool? IncludeDepositPayments
+        public bool? DepositTransactions
         {
-            get;init;
+            get; init;
         }
 
         /// <summary>
-        /// Include deposit refund payments.
+        /// Include register transactions.
         /// </summary>
-        [Obsolete()]
         [MessagePack.Key(12)]
-        public bool? IncludeDepositRefunds
+        public bool? RegisterTransactions
         {
             get; init;
         }
-
-        /// <summary>
-        /// Include invoice refund payments.
-        /// </summary>
-        [Obsolete()]
-        [MessagePack.Key(13)]
-        public bool? IncludeInvoiceRefunds
-        {
-            get; init;
-        }
-
-        // NOTE : Includes register transaction of type pay in and pay out based on PaymentTransactionDirection
-
-        /// <summary>
-        /// Include pay-in payments.
-        /// </summary>
-        [MessagePack.Key(14)]
-        public bool? IncludePayIns
-        {
-            get; init;
-        }
-
-        /// <summary>
-        /// Include pay-out payments.
-        /// </summary>
-        [Obsolete()]
-        [MessagePack.Key(15)]
-        public bool? IncludePayOuts
-        {
-            get; init;
-        }    
     }
 }
