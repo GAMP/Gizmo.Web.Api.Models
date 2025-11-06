@@ -26,7 +26,7 @@ namespace Gizmo.Web.Api.Models
         /// Intent state.
         /// </summary>
         [MessagePack.Key(2)]
-        public PaymentIntentState? State { get; init; }
+        public PaymentIntentState? State { get; set; }
 
         /// <summary>
         /// Date from.
@@ -44,18 +44,18 @@ namespace Gizmo.Web.Api.Models
         /// Branch id.
         /// </summary>
         [MessagePack.Key(5)]
-        public int? BranchId { get; init; }
+        public int? BranchId { get; set; }
 
         /// <summary>
         /// Operator id.
         /// </summary>
         [MessagePack.Key(6)]
-        public int? CreatedById { get; init; }
+        public int? CreatedById { get; set; }
 
         /// <summary>
         /// Payment method id.
         /// </summary>
         [MessagePack.Key(7)]
-        public int? PaymentMethodId { get; init; }
+        public int? PaymentMethodId { get; set; }
     }
 }

@@ -1026,4 +1026,19 @@
   <data name="PAYMENT_TRANSACTION_TYPE_PAY_OUT" xml:space="preserve">
     <value>Pay Out</value>
   </data>
+  <data name="PAYMENT_INTENT_STATE_CANCELLED" xml:space="preserve">
+    <value>Cancelled</value>
+  </data>
+  <data name="PAYMENT_INTENT_STATE_COMPLETED" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="PAYMENT_INTENT_STATE_EXPIRED" xml:space="preserve">
+    <value>Expired</value>
+  </data>
+  <data name="PAYMENT_INTENT_STATE_FAILED" xml:space="preserve">
+    <value>Failed</value>
+  </data>
+  <data name="PAYMENT_INTENT_STATE_PENDING" xml:space="preserve">
+    <value>Pending</value>
+  </data>
 </root>
