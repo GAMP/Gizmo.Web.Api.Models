@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Gizmo.Web.Api.Models.Abstractions;
 
 namespace Gizmo.Web.Api.Models
@@ -20,5 +21,41 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(1)]
         public List<string> Expand { get; set; } = new();
+
+        /// <summary>
+        /// Intent state.
+        /// </summary>
+        [MessagePack.Key(2)]
+        public PaymentIntentState? State { get; init; }
+
+        /// <summary>
+        /// Date from.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public DateTime? DateFrom { get; set; }
+
+        /// <summary>
+        /// Date to.
+        /// </summary>
+        [MessagePack.Key(4)]
+        public DateTime? DateTo { get; set; }
+
+        /// <summary>
+        /// Branch id.
+        /// </summary>
+        [MessagePack.Key(5)]
+        public int? BranchId { get; init; }
+
+        /// <summary>
+        /// Operator id.
+        /// </summary>
+        [MessagePack.Key(6)]
+        public int? CreatedById { get; init; }
+
+        /// <summary>
+        /// Payment method id.
+        /// </summary>
+        [MessagePack.Key(7)]
+        public int? PaymentMethodId { get; init; }
     }
 }
