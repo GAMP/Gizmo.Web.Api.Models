@@ -1008,4 +1008,22 @@
   <data name="PROMOTION_CODE_TYPE_RESTRICTED_NAME" xml:space="preserve">
     <value>Restricted</value>
   </data>
+  <data name="PAYMENT_TRANSACTION_TYPE_DEPOSIT_PAYMENT" xml:space="preserve">
+    <value>Deposit Payment</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_TYPE_DEPOSIT_PAYMENT_REFUND" xml:space="preserve">
+    <value>Deposit Payment Refund</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_TYPE_INVOICE_PAYMENT" xml:space="preserve">
+    <value>Invoice Payment</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_TYPE_INVOICE_PAYMENT_REFUND" xml:space="preserve">
+    <value>Invoice Payment Refund</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_TYPE_PAY_IN" xml:space="preserve">
+    <value>Pay In</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_TYPE_PAY_OUT" xml:space="preserve">
+    <value>Pay Out</value>
+  </data>
 </root>
