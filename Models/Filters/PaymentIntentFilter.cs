@@ -57,5 +57,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(7)]
         public int? PaymentMethodId { get; set; }
+
+        /// <summary>
+        /// User id.
+        /// </summary>
+        [MessagePack.Key(8)]
+        public int? UserId { get; set; }
     }
 }
