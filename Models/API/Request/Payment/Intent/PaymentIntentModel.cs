@@ -131,5 +131,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(17)]
         public PaymentIntentType Type { get; init; }
+
+        /// <summary>
+        /// Payment intent user.
+        /// </summary>
+        [MessagePack.Key(18)]
+        public int UserId { get; init; }
     }
 }
