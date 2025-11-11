@@ -1,5 +1,6 @@
 ﻿using Gizmo.Client;
-
+using Gizmo.Client.UI.View.Constants;
+using Gizmo.Shared.Client.Enumerations;
 using MessagePack;
 
 namespace Gizmo.Web.Api.Models
@@ -210,5 +211,42 @@ namespace Gizmo.Web.Api.Models
 
         [MessagePack.Key(46)]
         public string? HostQRCodeURL { get; set; }
+
+        [MessagePack.Key(47)]
+        public string? HostQRCodeTitle { get; set; }
+
+        [MessagePack.Key(48)]
+        public string? HostQRCodeDescription { get; set; }
+
+        #region HostNumberOptions
+
+        [MessagePack.Key(49)]
+        public bool HostNumberPrefixDisabled { get; set; }
+
+        [MessagePack.Key(50)]
+        public string? HostNumberPrefix { get; set; }
+
+        [MessagePack.Key(51)]
+        public bool HostNumberShowOnWallpaper { get; set; }
+
+        [MessagePack.Key(52)]
+        public bool HostNumberShowOnRotator { get; set; }
+
+        [MessagePack.Key(53)]
+        public HostNumberPositioning HostNumberPositioningOnWallpaper { get; set; }
+
+        [MessagePack.Key(54)]
+        public HostNumberPositioning HostNumberPositioningOnRotator { get; set; }
+
+        [MessagePack.Key(55)]
+        public HostNumberFixedPosition HostNumberFixedPosition { get; set; }
+
+        [MessagePack.Key(56)]
+        public int HostNumberTimeoutBetweenPosition { get; set; }
+
+        [MessagePack.Key(57)]
+        public double HostNumberAnimationDuration { get; set; }
+
+        #endregion
     }
 }
