@@ -19,6 +19,7 @@ namespace Gizmo.Web.Api.Messaging
 
     [Union(613, typeof(ReservationUserAddedEventMessage))]
     [Union(614, typeof(ReservationUserRemovedEventMessage))]
+    [Union(615, typeof(ReservationPaymentStatusChangedEvent))]
     public partial interface IAPIEventMessage
     {
     }

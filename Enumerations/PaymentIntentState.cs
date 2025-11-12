@@ -36,5 +36,17 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [Name("Cancelled", "PAYMENT_INTENT_STATE_CANCELLED")]
         Cancelled = 5,
+
+        /// <summary>
+        /// The payment captured.
+        /// </summary>
+        [Name("Captured", "PAYMENT_INTENT_STATE_CAPTURED")]
+        Captured = 5,
+
+        /// <summary>
+        /// Payment declined.
+        /// </summary>
+        [Name("Declined", "PAYMENT_INTENT_STATE_DECLINED")]
+        Declined = 6,
     }
 }

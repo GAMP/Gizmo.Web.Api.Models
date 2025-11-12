@@ -1041,4 +1041,34 @@
   <data name="PAYMENT_INTENT_STATE_PENDING" xml:space="preserve">
     <value>Pending</value>
   </data>
+  <data name="PAYMENT_INTENT_STATE_CAPTURED" xml:space="preserve">
+    <value>Captured</value>
+  </data>
+  <data name="PAYMENT_INTENT_STATE_DECLINED" xml:space="preserve">
+    <value>Declined</value>
+  </data>
+  <data name="RESERVATION_PAYMENT_STATUS_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Reservation payment status changed</value>
+  </data>
+  <data name="RESERVATION_PAYMENT_STATUS_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Payment status changed</value>
+  </data>
+  <data name="PAYMENT_INTENT_CAPTURED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates payment intent capture</value>
+  </data>
+  <data name="PAYMENT_INTENT_CAPTURED_EVENT_NAME" xml:space="preserve">
+    <value>Captured</value>
+  </data>
+  <data name="PAYMENT_INTENT_DECLINED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates payment intent decline</value>
+  </data>
+  <data name="PAYMENT_INTENT_DECLINED_EVENT_NAME" xml:space="preserve">
+    <value>Declined</value>
+  </data>
+  <data name="PAYMENT_INTENT_FAILED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates payment intent failure</value>
+  </data>
+  <data name="PAYMENT_INTENT_FAILED_EVENT_NAME" xml:space="preserve">
+    <value>Failed</value>
+  </data>
 </root>

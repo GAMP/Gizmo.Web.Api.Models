@@ -5,7 +5,7 @@ using System;
 namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
-    /// Payment intent created message.
+    /// Payment intent created event message.
     /// </summary>
     [MessagePackObject()]
     [System.ComponentModel.DataAnnotations.Name("Created", "PAYMENT_INTENT_CREATED_EVENT_NAME")]
