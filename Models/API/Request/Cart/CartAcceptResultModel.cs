@@ -52,10 +52,37 @@ namespace Gizmo.Web.Api.Models
         /// Associated invoices.
         /// </summary>
         /// <remarks>
-        /// Can be empty if no invoices where generated.
+        /// Empty if no invoices where created.
         /// </remarks>
         [MessagePack.Key(1)]
-        public IEnumerable<AcceptedOrderInvoiceModel> Invoices { get; init; } = Enumerable.Empty<AcceptedOrderInvoiceModel>();  
+        public IEnumerable<AcceptedOrderInvoiceModel> Invoices { get; init; } = Enumerable.Empty<AcceptedOrderInvoiceModel>();
+
+        /// <summary>
+        /// Associated reservations.
+        /// </summary>
+        /// <remarks>
+        /// Empty if no reservations where created.
+        /// </remarks>
+        public IEnumerable<AcceptOrderReservationModel> Reservations { get; init; } = Enumerable.Empty<AcceptOrderReservationModel>();
+    }
+
+    /// <summary>
+    /// Accepted reservation model.
+    /// </summary>
+    [MessagePack.MessagePackObject()]
+    public sealed class AcceptOrderReservationModel : IWebApiModel
+    {
+        /// <summary>
+        /// Reservation id.
+        /// </summary>
+        [MessagePack.Key(0)]
+        public int ReservationId { get; init; }
+
+        /// <summary>
+        /// Reservation pin.
+        /// </summary>
+        [MessagePack.Key(1)]
+        public string Pin { get; init; } = null!;
     }
 
     /// <summary>
@@ -84,7 +111,7 @@ namespace Gizmo.Web.Api.Models
         /// Payment id.
         /// </summary>
         [MessagePack.Key(0)]
-        public int PaymentId { get;init; }
+        public int PaymentId { get; init; }
 
         /// <summary>
         /// Payment method id.
@@ -96,7 +123,7 @@ namespace Gizmo.Web.Api.Models
         /// Payment amount.
         /// </summary>
         [MessagePack.Key(2)]
-        public decimal Amount { get;init; }
+        public decimal Amount { get; init; }
     }
 
     /// <summary>
