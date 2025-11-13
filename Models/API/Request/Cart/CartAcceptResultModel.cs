@@ -8,7 +8,7 @@ namespace Gizmo.Web.Api.Models
     /// Cart accept result model.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class CartAcceptResultModel
+    public sealed class CartAcceptResultModel : IWebApiModel
     {
         /// <summary>
         /// Created orders.
@@ -17,19 +17,20 @@ namespace Gizmo.Web.Api.Models
         public IEnumerable<AcceptedOrderModel> Orders { get; init; } = Enumerable.Empty<AcceptedOrderModel>();
 
         /// <summary>
-        /// Associated payments.
+        /// Processed payments.
         /// </summary>
         /// <remarks>
         /// Can be empty if no payments executed.
         /// </remarks>
         [MessagePack.Key(1)]
-        public IEnumerable<AcceptedOrderPayment> Payments { get; init; } = Enumerable.Empty<AcceptedOrderPayment>();
+        public IEnumerable<AcceptedOrderPaymentModel> Payments { get; init; } = Enumerable.Empty<AcceptedOrderPaymentModel>();
 
         /// <summary>
-        /// Associated payment intent.
+        /// Expected payment.
         /// </summary>
         [MessagePack.Key(2)]
-        public AcceptedOrderPayment? PaymentIntent { get; init; }
+        public ExpectedOrderPaymentModel? ExpectedPayment { get; init; }
+
     }
 
     /// <summary>
@@ -77,7 +78,7 @@ namespace Gizmo.Web.Api.Models
     /// Accepted order payment.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class AcceptedOrderPayment
+    public sealed class AcceptedOrderPaymentModel : IWebApiModel
     {
         /// <summary>
         /// Payment id.
@@ -99,21 +100,28 @@ namespace Gizmo.Web.Api.Models
     }
 
     /// <summary>
-    /// Accept order payment intent.
+    /// Expected payment model
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class AcceptOrderPaymentIntent
+    public sealed class ExpectedOrderPaymentModel : IWebApiModel
     {
+        /// <summary>
+        /// Payment amount.
+        /// </summary>
+        [MessagePack.Key(0)]
+        public decimal Amount { get; init; }
+
         /// <summary>
         /// Payment intent id.
         /// </summary>
-        [MessagePack.Key(0)]
-        public int PaymentIntentId { get; set; }
+        [MessagePack.Key(1)]
+        public Guid IntentId { get; init; }
 
         /// <summary>
-        /// Payment intent guid.
+        /// Payment gateway type.
         /// </summary>
-        [MessagePack.Key(1)]
-        public Guid Guid { get; init; }
+        [MessagePack.Key(2)]
+        public PaymentGatewayType PaymentGatewayType { get; init; }
     }
+
 }
