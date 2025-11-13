@@ -63,6 +63,7 @@ namespace Gizmo.Web.Api.Models
         /// <remarks>
         /// Empty if no reservations where created.
         /// </remarks>
+        [MessagePack.Key(2)]
         public IEnumerable<AcceptOrderReservationModel> Reservations { get; init; } = Enumerable.Empty<AcceptOrderReservationModel>();
     }
 
