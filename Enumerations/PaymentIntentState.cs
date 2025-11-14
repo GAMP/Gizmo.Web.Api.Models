@@ -29,24 +29,24 @@ namespace Gizmo.Web.Api.Models
         /// The intent is expired.
         /// </summary>
         [Name("Expired", "PAYMENT_INTENT_STATE_EXPIRED")]
-        Expired = 4,
+        Expired = 3,
 
         /// <summary>
         /// The intent is cancelled.
         /// </summary>
         [Name("Cancelled", "PAYMENT_INTENT_STATE_CANCELLED")]
-        Cancelled = 5,
+        Cancelled = 4,
 
         /// <summary>
         /// The payment captured.
         /// </summary>
         [Name("Captured", "PAYMENT_INTENT_STATE_CAPTURED")]
-        Captured = 6,
+        Captured = 5,
 
         /// <summary>
         /// Payment declined.
         /// </summary>
         [Name("Declined", "PAYMENT_INTENT_STATE_DECLINED")]
-        Declined = 7,
+        Declined = 6,
     }
 }
