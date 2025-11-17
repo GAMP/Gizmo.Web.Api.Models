@@ -151,5 +151,4 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(2)]
         public PaymentGatewayType PaymentGatewayType { get; init; }
     }
-
 }
