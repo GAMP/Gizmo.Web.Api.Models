@@ -1071,4 +1071,10 @@
   <data name="PAYMENT_INTENT_FAILED_EVENT_NAME" xml:space="preserve">
     <value>Failed</value>
   </data>
+  <data name="PAYMENT_INTENT_CANCELLED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates payment intent cancellation</value>
+  </data>
+  <data name="PAYMENT_INTENT_CANCELLED_EVENT_NAME" xml:space="preserve">
+    <value>Cancelled</value>
+  </data>
 </root>
