@@ -61,6 +61,18 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(7)]
         public InvoiceStatus? InvoiceStatus { get; set; }
 
+        /// <summary>
+        /// Register id.
+        /// </summary>
+        [MessagePack.Key(8)]
+        public int? RegisterId { get; set; }
+
+        /// <summary>
+        /// Branch id.
+        /// </summary>
+        [MessagePack.Key(9)]
+        public int? BranchId { get; set; }
+
         #endregion
     }
 }
