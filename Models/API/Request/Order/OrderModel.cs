@@ -138,5 +138,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(19)]
         public OrderSource Source { get; init; }
+
+        /// <summary>
+        /// Indicates that order has note.
+        /// </summary>
+        [MessagePack.Key(20)]
+        public bool HasNote { get; init; }
     }
 }
