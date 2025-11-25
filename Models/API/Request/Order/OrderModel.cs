@@ -1,7 +1,4 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions;
-
-using MessagePack;
-
 using System;
 
 namespace Gizmo.Web.Api.Models
@@ -9,7 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Order.
     /// </summary>
-    [Serializable, MessagePackObject]
+    [MessagePack.MessagePackObject]
     public sealed class OrderModel : IModelIntIdentifier , IWebApiModel
     {
         /// <summary>

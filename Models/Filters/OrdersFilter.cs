@@ -53,7 +53,7 @@ namespace Gizmo.Web.Api.Models
         public int? HostId { get; set; }
 
         /// <summary>
-        /// Return orders of the specified host.
+        /// Return orders of the specified payment status.
         /// </summary>
         [MessagePack.Key(7)]
         public InvoiceStatus? InvoiceStatus { get; set; }
