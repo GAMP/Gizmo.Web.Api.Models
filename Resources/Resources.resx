@@ -1077,4 +1077,16 @@
   <data name="PAYMENT_INTENT_CANCELLED_EVENT_NAME" xml:space="preserve">
     <value>Cancelled</value>
   </data>
+  <data name="DEVICE_FISCAL_PRINTER_ERROR_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Fiscal printer error event</value>
+  </data>
+  <data name="DEVICE_FISCAL_PRINTER_ERROR_EVENT_NAME" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="DEVICE_PAYMENT_TERMINAL_ERROR_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Payment terminal error event</value>
+  </data>
+  <data name="DEVICE_PAYMENT_TERMINAL_ERROR_EVENT_NAME" xml:space="preserve">
+    <value>Error</value>
+  </data>
 </root>
