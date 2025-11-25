@@ -43,6 +43,7 @@ namespace Gizmo.Web.Api
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<CartEntryModel>("Type", "Model"));
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<PaymentModel>("Type", "Model"));
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<PromotionModel>("Type", "Model"));
+            options.Converters.Add(new MessagePackUnionMessageJsonConverter<ProductOrderLineModel>("Type", "Model"));
 
             return options;
         }
