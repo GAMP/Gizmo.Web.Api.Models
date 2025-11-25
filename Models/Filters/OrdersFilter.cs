@@ -1,18 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using Gizmo.Web.Api.Models.Abstractions;
-using MessagePack;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Filters that can be applied when searching for orders.
     /// </summary>
-    [Serializable, MessagePackObject]
+    [MessagePack.MessagePackObject()]
     public sealed class OrdersFilter : IModelFilter<OrderModel>
     {
-        #region PROPERTIES
-
         /// <summary>
         /// Filter for cursor-based pagination.
         /// </summary>
@@ -20,28 +17,28 @@ namespace Gizmo.Web.Api.Models
         public ModelFilterPagination Pagination { get; set; } = new();
 
         /// <summary>
-        /// Return orders where the date greater than or equal to the specified date.
+        /// Include specified objects in the result.
         /// </summary>
         [MessagePack.Key(1)]
+        public List<string> Expand { get; set; } = new();
+
+        /// <summary>
+        /// Return orders where the date greater than or equal to the specified date.
+        /// </summary>
+        [MessagePack.Key(2)]
         public DateTime? DateFrom { get; set; }
 
         /// <summary>
         /// Return orders where the date less than or equal to the specified date.
         /// </summary>
-        [MessagePack.Key(2)]
+        [MessagePack.Key(3)]
         public DateTime? DateTo { get; set; }
 
         /// <summary>
         /// Return orders with the specified order status.
         /// </summary>
-        [MessagePack.Key(3)]
-        public OrderStatusFilter? Status { get; set; }
-
-        /// <summary>
-        /// Include specified objects in the result.
-        /// </summary>
         [MessagePack.Key(4)]
-        public List<string> Expand { get; set; } = new();
+        public OrderStatusFilter? Status { get; set; }
 
         /// <summary>
         /// Return orders of the specified user.
@@ -73,6 +70,16 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(9)]
         public int? BranchId { get; set; }
 
-        #endregion
+        /// <summary>
+        /// Order delivery status.
+        /// </summary>
+        [MessagePack.Key(10)]
+        public bool? IsDelivered { get; set; }
+
+        /// <summary>
+        /// Shift id.
+        /// </summary>
+        [MessagePack.Key(11)]
+        public int? ShiftId { get; set; }
     }
 }

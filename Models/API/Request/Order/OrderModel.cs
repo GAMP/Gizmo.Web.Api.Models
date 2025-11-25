@@ -3,9 +3,6 @@
 using MessagePack;
 
 using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -13,117 +10,133 @@ namespace Gizmo.Web.Api.Models
     /// Order.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class OrderModel : IOrderModel, IOrderCalculatedModel, IModelIntIdentifier
+    public sealed class OrderModel : IModelIntIdentifier , IWebApiModel
     {
-        #region PROPERTIES
-
         /// <summary>
-        /// The Id of the object.
+        /// Product order id.
         /// </summary>
         [MessagePack.Key(0)]
         public int Id { get; init; }
 
         /// <summary>
-        /// The invoice of the order.
+        /// Shift id.
         /// </summary>
         [MessagePack.Key(1)]
-        public IEnumerable<InvoiceModel> Invoices { get; set; } = Enumerable.Empty<InvoiceModel>();
+        public int? ShiftId { get; init; }
 
         /// <summary>
-        /// The date that the order was created.
+        /// Register id.
         /// </summary>
         [MessagePack.Key(2)]
-        [Sortable("CreatedTime")]
-        public DateTime Date { get; set; }
+        public int? RegisterId { get; init; }
 
         /// <summary>
-        /// The Id of the user this order is associated with.
+        /// Branch id.
         /// </summary>
         [MessagePack.Key(3)]
-        [Sortable()]
-        public int UserId { get; set; }
+        public int? BranchId { get; init; }
 
         /// <summary>
-        /// The Id of the host this order is associated with.
+        /// Host id.
         /// </summary>
         [MessagePack.Key(4)]
-        [Sortable()]
-        public int? HostId { get; set; }
+        public int? HostId { get; init; }
 
         /// <summary>
-        /// The status of the order.
+        /// User id.
         /// </summary>
-        [EnumValueValidation]
         [MessagePack.Key(5)]
-        public OrderStatus Status { get; set; }
+        public int UserId { get; init; }
 
         /// <summary>
-        /// The user note of the order.
+        /// Created by id.
         /// </summary>
         [MessagePack.Key(6)]
-        public string? UserNote { get; set; }
+        public int? CreatedById { get; init; }
 
         /// <summary>
-        /// Whether the order is delivered.
+        /// Order sub total.
         /// </summary>
         [MessagePack.Key(7)]
-        [Sortable()]
-        public bool IsDelivered { get; set; }
+        public decimal SubTotal { get; init; }
 
         /// <summary>
-        /// The Id of the operator this order is associated with.
+        /// Order tax total.
         /// </summary>
+
         [MessagePack.Key(8)]
-        public int? OperatorId { get; set; }
+        public decimal TaxTotal { get; init; }
 
         /// <summary>
-        /// The Id of the shift this order is associated with.
+        /// Order total.
         /// </summary>
         [MessagePack.Key(9)]
-        public int? ShiftId { get; set; }
+        public decimal Total { get; init; }
 
         /// <summary>
-        /// The Id of the register this order is associated with.
+        /// Order outstanding amount.
         /// </summary>
         [MessagePack.Key(10)]
-        public int? RegisterId { get; set; }
+        public decimal Outstanding { get; init; }
 
         /// <summary>
-        /// The subtotal of the order.
+        /// Indicates that order is voided.
         /// </summary>
+        /// <remarks>
+        /// This value will be true if all invoices of the order are voided.
+        /// </remarks>
         [MessagePack.Key(11)]
-        public decimal SubTotal { get; set; }
+        public OrderVoidStatus VoidStatus { get; init; }
 
         /// <summary>
-        /// The total tax of the order.
+        /// Invoice payment status.
         /// </summary>
         [MessagePack.Key(12)]
-        public decimal TaxTotal { get; set; }
+        public InvoiceStatus PaymentStatus { get; init; }
 
         /// <summary>
-        /// The total amount of the order.
+        /// Order delivery status.
         /// </summary>
         [MessagePack.Key(13)]
-        public decimal Total { get; set; }
+        public OrderDeliveryStatus DeliveryStatus { get; init; }
 
         /// <summary>
-        /// The total cost in points of the order.
+        /// Refund status.
         /// </summary>
         [MessagePack.Key(14)]
-        public int PointsTotal { get; set; }
+        public RefundStatus RefundStatus { get; init; }
 
         /// <summary>
-        /// The lines of the order.
+        /// Order status.
         /// </summary>
         [MessagePack.Key(15)]
-        public IEnumerable<OrderLineModel> OrderLines { get; set; } = Enumerable.Empty<OrderLineModel>();
+        public OrderStatus Status { get; init; }
 
         /// <summary>
-        /// The preferred payment method id of the order.
+        /// Creation date.
         /// </summary>
         [MessagePack.Key(16)]
-        public int? PreferredPaymentMethodId { get; set; }
+        public DateTime Date { get; init; }
 
-        #endregion
+        /// <summary>
+        /// Payment expected flag.
+        /// </summary>
+        /// <remarks>
+        /// Will be set if there is at least one payment intent pending for the order.
+        /// </remarks>
+        [MessagePack.Key(17)]
+        public bool PaymentExpected { get; init; }
+
+        /// <summary>
+        /// Preferred payment method id.
+        /// </summary>
+        [MessagePack.Key(18)]
+        public int? PreferredPaymentMethodId { get; init; }
+
+        /// <summary>
+        /// Order source.
+        /// </summary>
+        [MessagePack.Key(19)]
+        public OrderSource Source { get; init; }
     }
 }
