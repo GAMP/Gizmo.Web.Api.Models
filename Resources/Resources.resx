@@ -1089,4 +1089,19 @@
   <data name="DEVICE_PAYMENT_TERMINAL_ERROR_EVENT_NAME" xml:space="preserve">
     <value>Error</value>
   </data>
+  <data name="ORDER_STATUS_FILTER_ACCEPTED" xml:space="preserve">
+    <value>Accepted</value>
+  </data>
+  <data name="ORDER_STATUS_FILTER_CANCELED" xml:space="preserve">
+    <value>Canceled</value>
+  </data>
+  <data name="ORDER_STATUS_FILTER_COMPLETED" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="ORDER_STATUS_FILTER_ON_HOLD" xml:space="preserve">
+    <value>OnHold</value>
+  </data>
+  <data name="ORDER_STATUS_FILTER_PROCESSING" xml:space="preserve">
+    <value>Processing</value>
+  </data>
 </root>
