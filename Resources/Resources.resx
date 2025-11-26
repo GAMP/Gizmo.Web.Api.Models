@@ -1099,7 +1099,7 @@
     <value>Completed</value>
   </data>
   <data name="ORDER_STATUS_FILTER_ON_HOLD" xml:space="preserve">
-    <value>OnHold</value>
+    <value>On Hold</value>
   </data>
   <data name="ORDER_STATUS_FILTER_PROCESSING" xml:space="preserve">
     <value>Processing</value>
