@@ -85,5 +85,11 @@
         /// </summary>
         [MessagePack.Key(18)]
         public int? BundleLineId { get; init; }
+
+        /// <summary>
+        /// Product mark.
+        /// </summary>
+        [MessagePack.Key(19)]
+        public string? Mark { get; init; }
     }
 }

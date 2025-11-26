@@ -81,5 +81,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(11)]
         public int? ShiftId { get; set; }
+
+        /// <summary>
+        /// Created by operator id.
+        /// </summary>
+        [MessagePack.Key(12)]
+        public int? OperatorId { get; init; }
     }
 }
