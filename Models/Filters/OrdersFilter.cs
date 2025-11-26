@@ -86,6 +86,6 @@ namespace Gizmo.Web.Api.Models
         /// Created by operator id.
         /// </summary>
         [MessagePack.Key(12)]
-        public int? OperatorId { get; init; }
+        public int? OperatorId { get; set; }
     }
 }
