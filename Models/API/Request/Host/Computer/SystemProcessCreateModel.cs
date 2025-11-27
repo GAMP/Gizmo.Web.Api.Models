@@ -33,8 +33,11 @@
         /// <summary>
         /// Wait timeout.
         /// </summary>
+        /// <remarks>
+        /// This value will only be used if <see cref="WaitForTermination"/> is set to <see langword="true"/>.
+        /// </remarks>
         [MessagePack.Key(4)]
-        public int? WaitTimeout { get; init; }
+        public int WaitTimeout { get; init; }
 
         /// <summary>
         /// Create no window.
