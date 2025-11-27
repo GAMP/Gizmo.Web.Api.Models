@@ -49,5 +49,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(6)]
         public int SessionId { get; init; }
+
+        /// <summary>
+        /// Cpu usage.
+        /// </summary>
+        [MessagePack.Key(7)]
+        public double CpuUsage { get; init; }
     }
 }
