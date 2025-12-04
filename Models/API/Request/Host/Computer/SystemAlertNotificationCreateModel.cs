@@ -11,6 +11,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Alert type.
         /// </summary>
+        [Range(0,4)]
         [MessagePack.Key(0)]
         public Gizmo.UI.AlertTypes Type { get; set; }
 
