@@ -27,5 +27,11 @@ namespace Gizmo.Web.Api.Models
         [Required()]
         [MessagePack.Key(2)]
         public string Message { get; init; } = null!;
+
+        /// <summary>
+        /// Waits for notification to be acknowledged.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public bool WaitForAcknowledged { get; set; }
     }
 }
