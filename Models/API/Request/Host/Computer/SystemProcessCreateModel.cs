@@ -25,16 +25,16 @@
         public string Arguments { get; init; } = null!;
 
         /// <summary>
-        /// Wait for termination.
+        /// Wait for exit.
         /// </summary>        
         [MessagePack.Key(3)]
-        public bool WaitForTermination { get; init; }
+        public bool WaitForExit { get; init; }
 
         /// <summary>
-        /// Wait timeout.
+        /// Wait timeout in seconds.
         /// </summary>
         /// <remarks>
-        /// This value will only be used if <see cref="WaitForTermination"/> is set to <see langword="true"/>.
+        /// This value will only be used if <see cref="WaitForExit"/> is set to <see langword="true"/>.
         /// </remarks>
         [MessagePack.Key(4)]
         public int WaitTimeout { get; init; }
