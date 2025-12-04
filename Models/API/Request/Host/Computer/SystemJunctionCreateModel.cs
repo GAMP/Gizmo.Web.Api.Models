@@ -9,23 +9,27 @@ namespace Gizmo.Web.Api.Models
     public sealed class SystemJunctionCreateModel : IWebApiModel
     {
         /// <summary>
-        /// Source directory.
+        /// Junction link.
         /// </summary>
         [Required()]
         [MessagePack.Key(0)]
-        public string SourceDirectory { get; init; } = null!;
+        public string Link { get; init; } = null!;
 
         /// <summary>
-        /// Destination directory.
+        /// Junction target.
         /// </summary>
         [Required()]
         [MessagePack.Key(1)]
-        public string DestinationDirectory { get; init; } = null!;
+        public string Target { get; init; } = null!;
 
         /// <summary>
-        /// Delete destination.
+        /// Delete existing links.
         /// </summary>
+        /// <remarks>
+        /// Forces deletion of existing links.<br></br>
+        /// This ensures that if link exists already it will point to the new <see cref="Target"/> directory.
+        /// </remarks>
         [MessagePack.Key(2)]
-        public bool DeleteDestination { get; init; }
+        public bool DeleteExistingLinks { get; init; }
     }
 }
