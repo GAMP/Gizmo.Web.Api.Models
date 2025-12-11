@@ -23,6 +23,12 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(1)]
         public IEnumerable<PaymentIntentOrderDepositModel> Deposits { get; init; } = Enumerable.Empty<PaymentIntentOrderDepositModel>();
+
+        /// <summary>
+        /// Invoice intents.
+        /// </summary>
+        [MessagePack.Key(2)]
+        public IEnumerable<PaymentIntentOrderInvoiceModel> Invoices { get; init; } = Enumerable.Empty<PaymentIntentOrderInvoiceModel>();
     }
 
     /// <summary>
