@@ -42,12 +42,6 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(0)]
         public int OrderId { get; init; }
-
-        /// <summary>
-        /// Invoices.
-        /// </summary>
-        [MessagePack.Key(1)]
-        public IEnumerable<PaymentIntentOrderInvoiceModel> Invoices { get; set; } = Enumerable.Empty<PaymentIntentOrderInvoiceModel>();
     }
 
     /// <summary>
@@ -63,9 +57,15 @@ namespace Gizmo.Web.Api.Models
         public int InvoiceId { get; init; }
 
         /// <summary>
-        /// Receipt print status.
+        /// Product order id.
         /// </summary>
         [MessagePack.Key(1)]
+        public int OrderId { get; init; }
+
+        /// <summary>
+        /// Receipt print status.
+        /// </summary>
+        [MessagePack.Key(2)]
         public Gizmo.FiscalReceiptPrintStatus ReceiptPrintStatus { get; init; }
     }
 
