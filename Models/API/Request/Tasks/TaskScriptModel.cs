@@ -7,7 +7,7 @@ namespace Gizmo.Web.Api.Models
     /// Task script model.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class TaskScriptModel : TaskModel , IModelIntIdentifier , ITaskModel
+    public sealed class TaskScriptModel : TaskModel, IModelIntIdentifier, ITaskModel
     {
         /// <inheritdoc/>
         [MessagePack.Key(0)]
@@ -25,7 +25,7 @@ namespace Gizmo.Web.Api.Models
         /// Script type.
         /// </summary>
         [MessagePack.Key(3)]
-        public int Type { get; init; }
+        public ScriptTypes Type { get; init; }
 
         /// <summary>
         /// Script type.
