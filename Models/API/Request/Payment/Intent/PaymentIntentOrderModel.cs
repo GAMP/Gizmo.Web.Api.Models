@@ -67,6 +67,15 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(2)]
         public Gizmo.FiscalReceiptPrintStatus ReceiptPrintStatus { get; init; }
+
+        /// <summary>
+        /// Invoice payment.
+        /// </summary>
+        /// <remarks>
+        /// Will be null if no payment is associated with intent.
+        /// </remarks>
+        [MessagePack.Key(3)]
+        public PaymentIntentOrderInvoicePaymentModel? InvoicePayment { get; init; }
     }
 
     /// <summary>
@@ -105,5 +114,18 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(1)]
         public Gizmo.FiscalReceiptPrintStatus ReceiptPrintStatus { get; init; }
+    }
+
+    /// <summary>
+    /// Payment intent order invoice invoice payment model.
+    /// </summary>
+    [MessagePack.MessagePackObject()]
+    public sealed class PaymentIntentOrderInvoicePaymentModel : IWebApiModel
+    {
+        /// <summary>
+        /// Invoice payment id.
+        /// </summary>
+        [MessagePack.Key(0)]
+        public int InvoicePaymentId { get; init; }
     }
 }
