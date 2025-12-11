@@ -19,9 +19,8 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Script type.
         /// </summary>
-        [StringLength(255)]
         [MessagePack.Key(1)]
-        public TaskType Type { get; set; }
+        public ScriptTypes Type { get; set; }
 
         /// <summary>
         /// Script.
