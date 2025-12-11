@@ -31,6 +31,11 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(2)]
         public ExpectedOrderPaymentModel? ExpectedPayment { get; init; }
 
+        /// <summary>
+        /// Processed deposit payments.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public IEnumerable<AcceptedDepositPaymentModel> DepositPayments { get; init; } = Enumerable.Empty<AcceptedDepositPaymentModel>();
     }
 
     /// <summary>
@@ -100,6 +105,12 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(0)]
         public int InvoiceId { get; init; }
+
+        /// <summary>
+        /// Receipt print status.
+        /// </summary>
+        [MessagePack.Key(1)]
+        public Gizmo.FiscalReceiptPrintStatus ReceiptPrintStatus { get; init; }
     }
 
     /// <summary>
@@ -150,5 +161,24 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(2)]
         public PaymentGatewayType PaymentGatewayType { get; init; }
+    }
+
+    /// <summary>
+    /// Accepted deposit payment model.
+    /// </summary>
+    [MessagePack.MessagePackObject()]
+    public sealed class AcceptedDepositPaymentModel : IWebApiModel
+    {
+        /// <summary>
+        /// Deposit payment id.
+        /// </summary>
+        [MessagePack.Key(0)]
+        public int DepositPaymentId { get; init; }
+
+        /// <summary>
+        /// Receipt print status.
+        /// </summary>
+        [MessagePack.Key(1)]
+        public Gizmo.FiscalReceiptPrintStatus ReceiptPrintStatus { get; init; }
     }
 }

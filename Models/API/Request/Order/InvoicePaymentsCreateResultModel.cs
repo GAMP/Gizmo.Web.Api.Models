@@ -23,5 +23,11 @@ namespace Gizmo.Web.Api.Models
         {
             get; init;
         }
+
+        /// <summary>
+        /// Receipt print status.
+        /// </summary>
+        [MessagePack.Key(2)]
+        public Gizmo.FiscalReceiptPrintStatus ReceiptPrintStatus { get; init; }
     }
 }
