@@ -22,7 +22,7 @@
         /// Arguments.
         /// </summary>
         [MessagePack.Key(2)]
-        public string Arguments { get; init; } = null!;
+        public string? Arguments { get; init; }
 
         /// <summary>
         /// Wait for exit.
