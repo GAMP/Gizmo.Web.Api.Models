@@ -56,5 +56,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(7)]
         public PaymentIntentState IntentState { get; init; }
+
+        /// <summary>
+        /// Intent amount total.
+        /// </summary>
+        [MessagePack.Key(8)]
+        public decimal IntentAmount { get; init; }
     }
 }
