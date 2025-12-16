@@ -34,33 +34,45 @@ namespace Gizmo.Web.Api.Models
         public decimal DiscountTotal { get; init; }
 
         /// <summary>
-        /// Total.
+        /// Points total.
         /// </summary>
         [MessagePack.Key(4)]
+        public int PointsTotal { get; init; }
+
+        /// <summary>
+        /// Total.
+        /// </summary>
+        [MessagePack.Key(5)]
         public decimal Total { get; init; }
 
         /// <summary>
         /// Outstanding amount.
         /// </summary>
-        [MessagePack.Key(5)]
+        [MessagePack.Key(6)]
         public decimal Outstanding { get; init; }
+
+        /// <summary>
+        /// Outstanding points amount.
+        /// </summary>
+        [MessagePack.Key(7)]
+        public int OutstandingPoints { get; init; }
 
         /// <summary>
         /// Users.
         /// </summary>
-        [MessagePack.Key(6)]
+        [MessagePack.Key(8)]
         public IEnumerable<OrderIntentUserModel> Users { get; set; } = Array.Empty<OrderIntentUserModel>();
 
         /// <summary>
         /// Payment intent state.
         /// </summary>
-        [MessagePack.Key(7)]
+        [MessagePack.Key(9)]
         public PaymentIntentState IntentState { get; init; }
 
         /// <summary>
         /// Intent amount total.
         /// </summary>
-        [MessagePack.Key(8)]
+        [MessagePack.Key(10)]
         public decimal IntentAmount { get; init; }
     }
 }

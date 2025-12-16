@@ -23,5 +23,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(1)]
         public bool MultiMethodAllowed { get; init; }
+
+        /// <summary>
+        /// Gets minimum payment amount.
+        /// </summary>
+        [MessagePack.Key(2)]
+        public decimal MinimumPayment { get; init; }
     }
 }
