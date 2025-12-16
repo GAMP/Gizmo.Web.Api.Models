@@ -40,5 +40,10 @@
         /// Internal error.
         /// </summary>
         InternalError = 5,
+
+        /// <summary>
+        /// Intent does not have associated transaction.
+        /// </summary>
+        MissingTransaction = 6
     }
 }
