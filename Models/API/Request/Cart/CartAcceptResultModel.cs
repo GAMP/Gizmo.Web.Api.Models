@@ -161,6 +161,15 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(2)]
         public PaymentGatewayType PaymentGatewayType { get; init; }
+
+        /// <summary>
+        /// Confirmation mode.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public PaymentIntentConfirmationMode ConfirmationMode
+        {
+            get; init;
+        }
     }
 
     /// <summary>
