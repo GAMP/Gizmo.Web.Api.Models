@@ -1,9 +1,7 @@
-﻿using Gizmo.Web.Api.Models.Abstractions;
-
-using MessagePack;
-
-using System;
+﻿using System;
 using System.ComponentModel.DataAnnotations;
+using Gizmo.Web.Api.Models.Abstractions;
+using MessagePack;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -75,6 +73,10 @@ namespace Gizmo.Web.Api.Models
         /// <inheritdoc/>
         [MessagePack.Key(10)]
         public int BranchId { get; set; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(11)]
+        public int? QrDisplayNumber { get; set; }
 
         #endregion
     }

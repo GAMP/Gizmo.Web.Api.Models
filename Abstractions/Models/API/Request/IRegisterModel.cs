@@ -49,5 +49,10 @@
         /// Branch id.
         /// </summary>
         int BranchId { get; }
+
+        /// <summary>
+        /// Qr display number.
+        /// </summary>
+        int? QrDisplayNumber { get; }
     }
 }

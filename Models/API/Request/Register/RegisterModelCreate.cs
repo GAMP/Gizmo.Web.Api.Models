@@ -53,6 +53,10 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(8)]
         public int BranchId { get; init; }
 
+        /// <inheritdoc/>
+        [MessagePack.Key(9)]
+        public int? QrDisplayNumber { get; set; }
+
         #endregion
     }
 }
