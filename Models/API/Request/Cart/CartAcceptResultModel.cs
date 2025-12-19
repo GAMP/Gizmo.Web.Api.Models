@@ -170,6 +170,12 @@ namespace Gizmo.Web.Api.Models
         {
             get; init;
         }
+
+        /// <summary>
+        /// Expiration time.
+        /// </summary>
+        [MessagePack.Key(4)]
+        public DateTime? ExpirationTime { get; init; }
     }
 
     /// <summary>
