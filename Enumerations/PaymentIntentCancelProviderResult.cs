@@ -18,7 +18,7 @@
         /// <summary>
         /// Provider Error.
         /// </summary>
-        ProviderError = 1,
+        ProviderError = 2,
 
         /// <summary>
         /// Not supported.
@@ -26,7 +26,7 @@
         /// <remarks>
         /// Provider does not support canceling payment intents.
         /// </remarks>
-        NotSupported = 2,
+        NotSupported = 3,
 
         /// <summary>
         /// Missing parameters.
@@ -35,6 +35,6 @@
         /// This will be set when required parameters for canceling payment intent are missing.<br></br>
         /// Usually this will be companion id or transaction id not provided in payment intent.
         /// </remarks>
-        MissingParameters = 3
+        MissingParameters = 4
     }
 }
