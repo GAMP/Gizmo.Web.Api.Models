@@ -11,5 +11,11 @@
         /// </summary>
         [MessagePack.Key(0)]
         public PaymentIntentCancelResult Result { get; init; }
+
+        /// <summary>
+        /// Provider result.
+        /// </summary>
+        [MessagePack.Key(1)]
+        public PaymentIntentCancelProviderResult ProviderResult { get; init; }
     }
 }

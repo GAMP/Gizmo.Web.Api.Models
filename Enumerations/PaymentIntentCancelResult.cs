@@ -27,23 +27,8 @@
         InvalidIntentState = 2,
 
         /// <summary>
-        /// Failure to cancel at provider level.
-        /// </summary>
-        ProviderError = 3,
-
-        /// <summary>
-        /// Intent cancellation not supported by provider or other reasons.
-        /// </summary>
-        NotSupported = 4,
-
-        /// <summary>
         /// Internal error.
         /// </summary>
-        InternalError = 5,
-
-        /// <summary>
-        /// Intent does not have associated transaction.
-        /// </summary>
-        MissingTransaction = 6
+        InternalError = 3,
     }
 }

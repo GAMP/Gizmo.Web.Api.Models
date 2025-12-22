@@ -74,5 +74,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(10)]
         public decimal IntentAmount { get; init; }
+
+        /// <summary>
+        /// Intent receipt printing requirement.
+        /// </summary>
+        [MessagePack.Key(11)]
+        public bool DisableReceiptPrinting { get; init; }
     }
 }
