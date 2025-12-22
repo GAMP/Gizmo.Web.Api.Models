@@ -4,7 +4,7 @@
     /// Payment reversal result model.
     /// </summary>
     [MessagePack.MessagePackObject]
-    public sealed class PaymentReversResultModel : IWebApiModel
+    public sealed class PaymentReversalResultModel : IWebApiModel
     {
     }
 }
