@@ -10,6 +10,6 @@
         /// Payment method id.
         /// </summary>
         [MessagePack.Key(0)]
-        public int PaymentMethodId { get; set; }
+        public int? PaymentMethodId { get; set; }
     }
 }
