@@ -53,7 +53,7 @@ namespace Gizmo.Web.Api.Models
         /// Total points.
         /// </summary>
         [MessagePack.Key(5)]
-        public decimal PointsTotal { get; init; }
+        public int PointsTotal { get; init; }
 
         /// <summary>
         /// Subtotal.
