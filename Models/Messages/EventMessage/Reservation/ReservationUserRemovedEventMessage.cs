@@ -11,6 +11,7 @@
         /// <summary>
         /// User id.
         /// </summary>
+        [MessagePack.Key(2)]
         public int UserId { get; init; }
     }
 }

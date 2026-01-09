@@ -3,7 +3,6 @@
     /// <summary>
     /// Http connection info model.
     /// </summary>
-    [MessagePack.MessagePackObject()]
     public abstract class HTTPConnectionInfoModel
     {
         /// <summary>
