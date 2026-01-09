@@ -14,37 +14,37 @@ namespace Gizmo.Web.Api.Models
         public ModelFilterPagination Pagination { get; set; } = new();
 
         /// <inheritdoc/>
-        [MessagePack.Key(2)]
+        [MessagePack.Key(1)]
         public List<string> Expand { get; set; } = [];
 
         /// <summary>
         /// Optional application id.
         /// </summary>
-        [MessagePack.Key(1)]
+        [MessagePack.Key(2)]
         public int? AppId { get; set; }
 
         /// <summary>
         /// Optional application executable id.
         /// </summary>
-        [MessagePack.Key(2)]
+        [MessagePack.Key(3)]
         public int? AppExeId { get; set; }
 
         /// <summary>
         /// Optional host id.
         /// </summary>
-        [MessagePack.Key(3)]
+        [MessagePack.Key(4)]
         public int? HostId { get; set; }
 
         /// <summary>
         /// Optional user id.
         /// </summary>
-        [MessagePack.Key(4)]
+        [MessagePack.Key(5)]
         public int? UserId { get; set; }
 
         /// <summary>
         /// Optional branch id.
         /// </summary>
-        [MessagePack.Key(5)]
+        [MessagePack.Key(6)]
         public int? BranchId { get; set; }
     }
 }

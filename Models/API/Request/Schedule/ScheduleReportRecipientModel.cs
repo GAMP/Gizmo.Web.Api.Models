@@ -8,6 +8,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Schedule report recipient model.
     /// </summary>
+    [MessagePack.MessagePackObject()]
     public sealed class ScheduleReportRecipientModel : RecipientModel , IModelIntIdentifier
     {
         /// <inheritdoc/>
