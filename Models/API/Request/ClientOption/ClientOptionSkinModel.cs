@@ -1,6 +1,5 @@
 ﻿using Gizmo.Client;
 using Gizmo.Client.UI.View.Constants;
-using Gizmo.Shared.Client.Enumerations;
 using MessagePack;
 
 namespace Gizmo.Web.Api.Models
