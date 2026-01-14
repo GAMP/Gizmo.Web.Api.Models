@@ -1104,4 +1104,16 @@
   <data name="ORDER_STATUS_FILTER_PROCESSING" xml:space="preserve">
     <value>Processing</value>
   </data>
+  <data name="PROMOTION_LIMIT_TYPE_TOTAL" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="PROMOTION_LIMIT_TYPE_PER_USER" xml:space="preserve">
+    <value>Per User</value>
+  </data>
+  <data name="PROMOTION_LIMIT_TYPE_DAILY" xml:space="preserve">
+    <value>Daily</value>
+  </data>
+  <data name="PROMOTION_LIMIT_TYPE_WEEKLY" xml:space="preserve">
+    <value>Weekly</value>
+  </data>
 </root>
