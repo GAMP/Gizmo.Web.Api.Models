@@ -5,7 +5,7 @@ using System;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Provider metdata model.
+    /// Provider metadata model.
     /// </summary>
     [Serializable, MessagePackObject]
     public sealed class PaymentProviderMetadataModel
