@@ -1,10 +1,13 @@
-﻿namespace Gizmo.Web.Api.Models
+﻿using System.Collections.Generic;
+using System.Linq;
+
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Metadata describing a single option entry.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class LicensePluginPropertyMetadataModel
+    public sealed class LicensePluginPropertyMetadataModel : IWebApiModel
     {
         /// <summary>
         /// Gets option name.
@@ -33,5 +36,17 @@
         /// </summary>
         [MessagePack.Key(3)]
         public required string ValuePropertyName { get; init; }
-    }
+
+        /// <summary>
+        /// Optional default value.
+        /// </summary>
+        [MessagePack.Key(4)]
+        public string? DefaultValue { get; init; } = null;
+
+        /// <summary>
+        /// Allowed values for the option (if applicable).
+        /// </summary>
+        [MessagePack.Key(5)]
+        public required IEnumerable<LicensePluginPropertyAllowedValueMetadata> AllowedValues { get; init; } = Enumerable.Empty<LicensePluginPropertyAllowedValueMetadata>();
+    } 
 }
