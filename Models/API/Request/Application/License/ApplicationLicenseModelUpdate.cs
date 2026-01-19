@@ -32,6 +32,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The plugin type name of the license.
         /// </summary>
+        [Obsolete("We should not update this property.")]
         [MessagePack.Key(2)]
         [StringLength(255)]
         [Required()]
@@ -40,6 +41,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The plugin assembly of the license.
         /// </summary>
+        [Obsolete("We should not update this property.")]
         [MessagePack.Key(3)]
         [StringLength(255)]
         [Required()]
