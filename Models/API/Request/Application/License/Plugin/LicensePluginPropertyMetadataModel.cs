@@ -23,7 +23,7 @@ namespace Gizmo.Web.Api.Models
         {
             get;
             init;
-        }
+        }     
 
         /// <summary>
         /// Gets option value type full name.
@@ -48,5 +48,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(5)]
         public required IEnumerable<LicensePluginPropertyAllowedValueMetadata> AllowedValues { get; init; } = Enumerable.Empty<LicensePluginPropertyAllowedValueMetadata>();
+
+        /// <summary>
+        /// Display order.
+        /// </summary>
+        [MessagePack.Key(6)]
+        public int? DisplayOrder { get; set; }
     } 
 }
