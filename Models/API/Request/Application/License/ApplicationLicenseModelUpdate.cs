@@ -11,10 +11,8 @@ namespace Gizmo.Web.Api.Models
     /// Application license.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ApplicationLicenseModelUpdate : IApplicationLicenseModel, IModelIntIdentifier
+    public sealed class ApplicationLicenseModelUpdate : IWebApiModel, IModelIntIdentifier
     {
-        #region PROPERTIES
-
         /// <summary>
         /// The Id of the object.
         /// </summary>
@@ -30,23 +28,9 @@ namespace Gizmo.Web.Api.Models
         public string Name { get; set; } = null!;
 
         /// <summary>
-        /// The plugin type name of the license.
+        /// License keys.
         /// </summary>
-        [Obsolete("We should not update this property.")]
         [MessagePack.Key(2)]
-        [StringLength(255)]
-        [Required()]
-        public string Plugin { get; set; } = null!;
-
-        /// <summary>
-        /// The plugin assembly of the license.
-        /// </summary>
-        [Obsolete("We should not update this property.")]
-        [MessagePack.Key(3)]
-        [StringLength(255)]
-        [Required()]
-        public string Assembly { get; set; } = null!;
-
-        #endregion
+        public required ApplicationLicenseKeyCrateUpdateModel Keys { get; init; }
     }
 }

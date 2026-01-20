@@ -1,8 +1,7 @@
-﻿using Gizmo.Web.Api.Models.Abstractions;
-
-using MessagePack;
+﻿using MessagePack;
 
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Web.Api.Models
@@ -11,10 +10,8 @@ namespace Gizmo.Web.Api.Models
     /// Application license.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ApplicationLicenseModelCreate : IApplicationLicenseModel
+    public sealed class ApplicationLicenseModelCreate : IWebApiModel
     {
-        #region PROPERTIES
-
         /// <summary>
         /// The name of the license.
         /// </summary>
@@ -39,6 +36,10 @@ namespace Gizmo.Web.Api.Models
         [Required()]
         public string Assembly { get; set; } = null!;
 
-        #endregion
+        /// <summary>
+        /// License keys.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public required IEnumerable< ApplicationLicenseKeyCrateUpdateModel> Keys { get; init; }
     }
 }
