@@ -25,9 +25,15 @@ namespace Gizmo.Web.Api.Models
         public bool IsEnabled { get; init; }
 
         /// <summary>
-        /// Display value.
+        /// Optional comment.
         /// </summary>
         [MessagePack.Key(3)]
+        public string? Comment { get; init; }
+
+        /// <summary>
+        /// Display value.
+        /// </summary>
+        [MessagePack.Key(4)]
         public required string? DisplayValue { get; init; }
 
         /// <summary>
@@ -36,7 +42,7 @@ namespace Gizmo.Web.Api.Models
         /// <remarks>
         /// The value may be null when the key cant be deserialized.
         /// </remarks>
-        [MessagePack.Key(4)]
+        [MessagePack.Key(5)]
         public required ApplicationLicenseKeyValueModel[] Values { get; init; }
     }
 }
