@@ -1,9 +1,6 @@
-﻿using Gizmo.Web.Api.Models.Abstractions;
-
+﻿using System;
+using Gizmo.Web.Api.Models.Abstractions;
 using MessagePack;
-
-using System;
-using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -19,34 +16,25 @@ namespace Gizmo.Web.Api.Models
         /// The Id of the object.
         /// </summary>
         [MessagePack.Key(0)]
-        public int Id { get; init; }
+        public required int Id { get; init; }
 
         /// <summary>
         /// The GUID of the application license.
         /// </summary>
         [MessagePack.Key(1)]
-        public Guid Guid { get; set; }
+        public required Guid Guid { get; init; }
 
         /// <summary>
         /// The name of the license.
         /// </summary>
         [MessagePack.Key(2)]
-        [StringLength(255)]
-        public string Name { get; set; } = null!;
+        public required string Name { get; set; }
 
         /// <summary>
-        /// The plugin type name of the license.
+        /// Plugin identifier.
         /// </summary>
         [MessagePack.Key(3)]
-        [StringLength(255)]
-        public string Plugin { get; set; } = null!;
-
-        /// <summary>
-        /// The plugin assembly of the license.
-        /// </summary>
-        [MessagePack.Key(4)]
-        [StringLength(255)]
-        public string Assembly { get; set; } = null!;
+        public required Guid Plugin { get; init; }
 
         #endregion
     }
