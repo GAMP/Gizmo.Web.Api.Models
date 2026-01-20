@@ -3,6 +3,7 @@
 using MessagePack;
 
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Web.Api.Models
@@ -31,6 +32,6 @@ namespace Gizmo.Web.Api.Models
         /// License keys.
         /// </summary>
         [MessagePack.Key(2)]
-        public required ApplicationLicenseKeyCrateUpdateModel Keys { get; init; }
+        public required IEnumerable<ApplicationLicenseKeyCrateUpdateModel> Keys { get; init; }
     }
 }
