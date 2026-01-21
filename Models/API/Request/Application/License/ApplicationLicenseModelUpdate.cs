@@ -28,7 +28,7 @@ namespace Gizmo.Web.Api.Models
         /// License options.
         /// </summary>
         [MessagePack.Key(2)]
-        public required IEnumerable<ApplicationLicenseKeyCrateUpdateModel> Options { get; init; }
+        public required IEnumerable<ApplicationLicenseKeyValueModel> Options { get; init; }
 
         /// <summary>
         /// License keys.
