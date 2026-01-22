@@ -9,21 +9,17 @@ namespace Gizmo.Web.Api.Messaging
     [HideMetadata()]
     public sealed class UserRenamedEventMessage : UserEventMessageBase
     {
-        #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
         public UserRenamedEventMessage() : base()
         { }
-        #endregion
-
-        #region PROPERTIES
 
         /// <summary>
         /// Gets new user name.
         /// </summary>
         [Key(2)]
-        public string NewUserName
+        public required string NewUserName
         {
             get;init;
         }
@@ -32,11 +28,9 @@ namespace Gizmo.Web.Api.Messaging
         /// Gets old user name.
         /// </summary>
         [Key(3)]
-        public string OldUserName
+        public required string OldUserName
         {
             get;init;
         }
-
-        #endregion
     }
 }

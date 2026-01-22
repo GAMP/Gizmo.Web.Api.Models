@@ -9,12 +9,10 @@ namespace Gizmo.Web.Api.Messaging
     [HideMetadata()]
     public sealed class UserSmartCardChangeEventMessage : UserEventMessageBase
     {
-        #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
         public UserSmartCardChangeEventMessage() : base()
-        { } 
-        #endregion
+        { }
     }
 }

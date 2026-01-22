@@ -9,12 +9,10 @@ namespace Gizmo.Web.Api.Messaging
     [HideMetadata()]
     public sealed class UserPictureChangedEventMessage : UserEventMessageBase
     {
-        #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
         public UserPictureChangedEventMessage() : base()
-        { } 
-        #endregion
+        { }
     }
 }

@@ -15,7 +15,7 @@ namespace Gizmo.Web.Api
         private static readonly Type StringType = typeof(string);
 
         /// <inheritdoc/>
-        public override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)
+        public override bool CanConvertFrom(ITypeDescriptorContext? context, Type sourceType)
         {
             return sourceType == StringType;
         }

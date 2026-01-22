@@ -9,15 +9,12 @@ namespace Gizmo.Web.Api.Messaging
     [HideMetadata()]
     public sealed class UserEnableNegativeBalanceEventMessage : UserEventMessageBase
     {
-        #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
         public UserEnableNegativeBalanceEventMessage() : base()
         { }
-        #endregion
 
-        #region PROPERTIES
         /// <summary>
         /// Gets if negative balance allowed for user.
         /// </summary>
@@ -26,6 +23,5 @@ namespace Gizmo.Web.Api.Messaging
         {
             get; init;
         }
-        #endregion
     }
 }

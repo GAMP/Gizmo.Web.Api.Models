@@ -1,5 +1,5 @@
-﻿using MessagePack;
-using System;
+﻿using System;
+using MessagePack;
 
 namespace Gizmo.Web.Api.Messaging
 {
@@ -11,15 +11,11 @@ namespace Gizmo.Web.Api.Messaging
     [System.ComponentModel.DataAnnotations.ExtendedDescription("Indicates enablement of an user", "USER_ENABLED_EVENT_DESCRIPTION")]
     public sealed class UserEnabledChangedEventMessage : UserEventMessageBase
     {
-        #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
         public UserEnabledChangedEventMessage() : base()
         { }
-        #endregion
-
-        #region PROPERTIES
 
         /// <summary>
         /// Gets if user is disabled.
@@ -60,7 +56,5 @@ namespace Gizmo.Web.Api.Messaging
             get;
             init;
         }
-
-        #endregion
     }
 }

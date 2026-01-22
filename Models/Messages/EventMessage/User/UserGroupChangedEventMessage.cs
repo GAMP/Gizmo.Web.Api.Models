@@ -9,21 +9,17 @@ namespace Gizmo.Web.Api.Messaging
     [HideMetadata()]
     public sealed class UserGroupChangedEventMessage : UserEventMessageBase
     {
-        #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
         public UserGroupChangedEventMessage() : base()
         { }
-        #endregion
 
-        #region PROPERTIES
-        
         /// <summary>
         /// Gets new user group id.
         /// </summary>
         [Key(2)]
-        public int NewUserGroupId
+        public required int NewUserGroupId
         {
             get; init;
         }
@@ -32,11 +28,9 @@ namespace Gizmo.Web.Api.Messaging
         /// Gets old user group id.
         /// </summary>
         [Key(3)]
-        public int OldUserGroupId
+        public required int OldUserGroupId
         {
             get; init;
-        } 
-
-        #endregion
+        }
     }
 }

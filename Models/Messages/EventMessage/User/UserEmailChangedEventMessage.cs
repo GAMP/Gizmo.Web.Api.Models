@@ -9,21 +9,17 @@ namespace Gizmo.Web.Api.Messaging
     [HideMetadata()]
     public sealed class UserEmailChangedEventMessage : UserEventMessageBase
     {
-        #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
         public UserEmailChangedEventMessage() : base()
         { }
-        #endregion
-
-        #region PROPERTIES
 
         /// <summary>
         /// Gets new email value.
         /// </summary>
         [Key(2)]
-        public string NewEmail
+        public required string? NewEmail
         {
             get;
             init;
@@ -33,12 +29,10 @@ namespace Gizmo.Web.Api.Messaging
         /// Gets old email value.
         /// </summary>
         [Key(3)]
-        public string OldEmail
+        public required string? OldEmail
         {
             get;
             init;
         }
-
-        #endregion
     }
 }
