@@ -1,9 +1,7 @@
-﻿using Gizmo.Web.Api.Models.Abstractions;
-
-using MessagePack;
-
-using System;
+﻿using System;
 using System.ComponentModel.DataAnnotations;
+using Gizmo.Web.Api.Models.Abstractions;
+using MessagePack;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -235,5 +233,14 @@ namespace Gizmo.Web.Api.Models
         #endregion
 
         #endregion
+
+        /// <summary>
+        /// Billing options.
+        /// </summary>
+        [MessagePack.Key(31)]
+        public BillingOption? BillingOptions
+        {
+            get; set;
+        }
     }
 }
