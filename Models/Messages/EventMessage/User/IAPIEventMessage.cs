@@ -3,20 +3,17 @@
 namespace Gizmo.Web.Api.Messaging
 {
     [Union(300, typeof(UserBalanceChangedEventMessage))]
-    [Union(301, typeof(UserSessionChangedEventMessage))]
-    [Union(302, typeof(UserBalanceCloseEventMessage))]
-    [Union(303, typeof(UserEnabledChangedEventMessage))]
-    [Union(304, typeof(UserEmailChangedEventMessage))]
-    [Union(305, typeof(UserEnableNegativeBalanceEventMessage))]
-    [Union(306, typeof(UserUsageSessionUsageChangedEventMessage))]
-    [Union(307, typeof(UserGroupChangedEventMessage))]
-    [Union(308, typeof(UserPictureChangedEventMessage))]
-    [Union(309, typeof(UserLoginStateChangedEventMessage))]
-    [Union(310, typeof(UserSmartCardChangeEventMessage))]
-    [Union(311, typeof(UserRenamedEventMessage))]
-    [Union(312, typeof(UserPasswordChangedEventMessage))]
-    [Union(313, typeof(UserNegativeBalanceEnabledMessage))]
-    [Union(314, typeof(UserBillingOptionsChangedEventMessage))]
+    [Union(301, typeof(UserBalanceCloseEventMessage))]
+    [Union(302, typeof(UserEnabledChangedEventMessage))]
+    [Union(303, typeof(UserEmailChangedEventMessage))]
+    [Union(304, typeof(UserNegativeBalanceEnabledEventMessage))]
+    [Union(305, typeof(UserUsageSessionUsageChangedEventMessage))]
+    [Union(306, typeof(UserGroupChangedEventMessage))]
+    [Union(307, typeof(UserPictureChangedEventMessage))]
+    [Union(308, typeof(UserSmartCardChangeEventMessage))]
+    [Union(309, typeof(UserRenamedEventMessage))]
+    [Union(310, typeof(UserPasswordChangedEventMessage))]
+    [Union(311, typeof(UserBillingOptionsChangedEventMessage))]
     public partial interface IAPIEventMessage
     {
     }
