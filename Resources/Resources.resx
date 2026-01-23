@@ -273,9 +273,6 @@
   <data name="BRANCH_UPDATED_EVENT_NAME" xml:space="preserve">
     <value>Branch updated</value>
   </data>
-  <data name="DEVICE_BARCODE_SCANNED_EVENT_DESCRIPTION" xml:space="preserve">
-    <value>Barcode scanned event</value>
-  </data>
   <data name="DEVICE_BARCODE_SCANNED_EVENT_NAME" xml:space="preserve">
     <value>Barcode scanned</value>
   </data>
@@ -1193,5 +1190,95 @@
   </data>
   <data name="BILLING_OPTION_DISABLE_DEPOSITS_NAME" xml:space="preserve">
     <value>Disable deposits</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_EMAIL" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_FACEBOOK_MESSENGER_NAME" xml:space="preserve">
+    <value>Facebook messenger</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_INSTAGRAM_NAME" xml:space="preserve">
+    <value>Instagram</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_SMS_NAME" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_TELEGRAM_NAME" xml:space="preserve">
+    <value>Telegram</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_TWITTER_DM_NAME" xml:space="preserve">
+    <value>Twitter</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_VIBER_NAME" xml:space="preserve">
+    <value>Viber</value>
+  </data>
+  <data name="DEVICE_BARCODE_SCANNED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Barcode scanned event</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_WHATS_APP_NAME" xml:space="preserve">
+    <value>WhatsApp</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_WE_CHAT_NAME" xml:space="preserve">
+    <value>WeChat</value>
+  </data>
+  <data name="HOST_DELETE_RESULT_HOST_HAS_RESERVED_GUEST_DESCRIPTION" xml:space="preserve">
+    <value>The host has reserved guest</value>
+  </data>
+  <data name="HOST_DELETE_RESULT_HOST_HAS_RESERVED_GUEST_NAME" xml:space="preserve">
+    <value>Host has reserved guest</value>
+  </data>
+  <data name="HOST_DELETE_RESULT_HOST_IN_USE_DESCRIPTION" xml:space="preserve">
+    <value>The host is in use</value>
+  </data>
+  <data name="HOST_DELETE_RESULT_HOST_IN_USE_NAME" xml:space="preserve">
+    <value>Host in use</value>
+  </data>
+  <data name="HOST_DELETE_RESULT_HOST_IS_RESERVED_DESCRIPTION" xml:space="preserve">
+    <value>The host has reservation</value>
+  </data>
+  <data name="HOST_DELETE_RESULT_HOST_IS_RESERVED_NAME" xml:space="preserve">
+    <value>Host is reserved</value>
+  </data>
+  <data name="HOST_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
+    <value>The host deletion was successful</value>
+  </data>
+  <data name="HOST_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve">
+    <value>Host delete success</value>
+  </data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_DESCRIPTION" xml:space="preserve">
+    <value>Failed to delete product group</value>
+  </data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_NAME" xml:space="preserve">
+    <value>Failed to delete product group</value>
+  </data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_DESCRIPTION" xml:space="preserve">
+    <value>Non empty product group cannot be deleted</value>
+  </data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_NAME" xml:space="preserve">
+    <value>Product group is not empty</value>
+  </data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
+    <value>The product group deletion was successful</value>
+  </data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve">
+    <value>Product group delete success</value>
+  </data>
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_DESCRIPTION" xml:space="preserve">
+    <value>Failed to delete application category</value>
+  </data>
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_NAME" xml:space="preserve">
+    <value>Failed to delete application category</value>
+  </data>
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPY_DESCRIPTION" xml:space="preserve">
+    <value>Non empty application category cannot be deleted</value>
+  </data>
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPY_NAME" xml:space="preserve">
+    <value>Application category is not empty</value>
+  </data>
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
+    <value>The application category deletion was successful</value>
+  </data>
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve">
+    <value>Application category delete success</value>
   </data>
 </root>

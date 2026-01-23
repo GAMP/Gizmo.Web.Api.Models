@@ -1,6 +1,4 @@
-﻿using Gizmo.Web.Api.Models;
-
-namespace Gizmo.Web.Api.Model
+﻿namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// User move model.
