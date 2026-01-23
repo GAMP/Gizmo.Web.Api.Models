@@ -1281,4 +1281,28 @@
   <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve">
     <value>Application category delete success</value>
   </data>
+  <data name="WAITING_LINE_SATE_ACTIVE_NAME" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="WAITING_LINE_SATE_PROCESSED_NAME" xml:space="preserve">
+    <value>Processed</value>
+  </data>
+  <data name="WAITING_LINE_SATE_CANCELED_NAME" xml:space="preserve">
+    <value>Cancelled</value>
+  </data>
+  <data name="STOCK_TRANSACTION_TYPE_ADD_NAME" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="STOCK_TRANSACTION_TYPE_REMOVE_NAME" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="STOCK_TRANSACTION_TYPE_RETURN_NAME" xml:space="preserve">
+    <value>Return</value>
+  </data>
+  <data name="STOCK_TRANSACTION_TYPE_SALE_NAME" xml:space="preserve">
+    <value>Sale</value>
+  </data>
+  <data name="STOCK_TRANSACTION_TYPE_SET_NAME" xml:space="preserve">
+    <value>Set</value>
+  </data>
 </root>
