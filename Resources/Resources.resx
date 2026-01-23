@@ -1305,4 +1305,16 @@
   <data name="STOCK_TRANSACTION_TYPE_SET_NAME" xml:space="preserve">
     <value>Set</value>
   </data>
+  <data name="DEPOSIT_TRANSACTION_TYPE_CHARGE_NAME" xml:space="preserve">
+    <value>Charge</value>
+  </data>
+  <data name="DEPOSIT_TRANSACTION_TYPE_CREDIT_NAME" xml:space="preserve">
+    <value>Credit</value>
+  </data>
+  <data name="DEPOSIT_TRANSACTION_TYPE_DEPOSIT_NAME" xml:space="preserve">
+    <value>Deposit</value>
+  </data>
+  <data name="DEPOSIT_TRANSACTION_TYPE_WITHDRAW_NAME" xml:space="preserve">
+    <value>Withdraw</value>
+  </data>
 </root>
