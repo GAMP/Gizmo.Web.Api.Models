@@ -15,6 +15,8 @@ namespace Gizmo.Web.Api.Messaging
     [Union(310, typeof(UserSmartCardChangeEventMessage))]
     [Union(311, typeof(UserRenamedEventMessage))]
     [Union(312, typeof(UserPasswordChangedEventMessage))]
+    [Union(313, typeof(UserNegativeBalanceEnabledMessage))]
+    [Union(314, typeof(UserBillingOptionsChangedEventMessage))]
     public partial interface IAPIEventMessage
     {
     }
