@@ -1317,4 +1317,31 @@
   <data name="DEPOSIT_TRANSACTION_TYPE_WITHDRAW_NAME" xml:space="preserve">
     <value>Withdraw</value>
   </data>
+  <data name="USER_SESSION_STATE_ACTIVE_NAME" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="USER_SESSION_STATE_NONE_NAME" xml:space="preserve">
+    <value>Waiting</value>
+  </data>
+  <data name="USER_SESSION_STATE_ENDED_NAME" xml:space="preserve">
+    <value>Ended</value>
+  </data>
+  <data name="USER_SESSION_STATE_PENDING_NAME" xml:space="preserve">
+    <value>Pending</value>
+  </data>
+  <data name="USER_SESSION_STATE_PAUSED_NAME" xml:space="preserve">
+    <value>Paused</value>
+  </data>
+  <data name="USER_SESSION_STATE_MOVED_NAME" xml:space="preserve">
+    <value>Moved</value>
+  </data>
+  <data name="ENTITY_EVENT_TYPE_ADDED_NAME" xml:space="preserve">
+    <value>Added</value>
+  </data>
+  <data name="ENTITY_EVENT_TYPE_REMOVED_NAME" xml:space="preserve">
+    <value>Removed</value>
+  </data>
+  <data name="ENTITY_EVENT_TYPE_MODIFIED_NAME" xml:space="preserve">
+    <value>Modified</value>
+  </data>
 </root>

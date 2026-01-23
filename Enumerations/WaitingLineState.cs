@@ -16,8 +16,10 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Processed.
         /// </summary>
+       
         [Name("Processed", nameof(Resources.WAITING_LINE_SATE_PROCESSED_NAME))]
         Processed = 2,
+       
         /// <summary>
         /// Cancel.
         /// </summary>
