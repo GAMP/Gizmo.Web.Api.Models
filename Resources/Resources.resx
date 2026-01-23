@@ -1116,4 +1116,82 @@
   <data name="PROMOTION_LIMIT_TYPE_WEEKLY" xml:space="preserve">
     <value>Weekly</value>
   </data>
+  <data name="USER_BALANCE_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Indicates balance change</value>
+  </data>
+  <data name="USER_BALANCE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Balance changed</value>
+  </data>
+  <data name="USER_BALANCE_CLOSE_EVENT_NAME" xml:space="preserve">
+    <value>Indicates balance close</value>
+  </data>
+  <data name="USER_BALANCE_CLOSE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Balance close</value>
+  </data>
+  <data name="USER_BILLING_OPTIONS_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Billing options change</value>
+  </data>
+  <data name="USER_BILLING_OPTIONS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates billing options change</value>
+  </data>
+  <data name="USER_EMAIL_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Email change</value>
+  </data>
+  <data name="USER_EMAIL_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates email change</value>
+  </data>
+  <data name="USER_USER_GROUP_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>User group change</value>
+  </data>
+  <data name="USER_USER_GROUP_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates user group change</value>
+  </data>
+  <data name="USER_NEGATIVE_BALANCE_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Negative balance change</value>
+  </data>
+  <data name="USER_NEGATIVE_BALANCE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates negative balance change</value>
+  </data>
+  <data name="USER_PASSWORD_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Password change</value>
+  </data>
+  <data name="USER_PASSWORD_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates password change</value>
+  </data>
+  <data name="USER_PICTURE_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Picture change</value>
+  </data>
+  <data name="USER_PICTURE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates picture change</value>
+  </data>
+  <data name="USER_RENAME_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Rename</value>
+  </data>
+  <data name="USER_RENAME_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates user rename</value>
+  </data>
+  <data name="USER_SMART_CARD_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Smart card change</value>
+  </data>
+  <data name="USER_SMART_CARD_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates smart card change</value>
+  </data>
+  <data name="USER_USAGE_SESSION_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Usage session change</value>
+  </data>
+  <data name="USER_USAGE_SESSION_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates usage session change</value>
+  </data>
+  <data name="BILLING_OPTION_NONE_NAME" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="BILLING_OPTION_DISABLE_TIME_OFFER_NAME" xml:space="preserve">
+    <value>Disable time offers</value>
+  </data>
+  <data name="BILLING_OPTION_DISABLE_FIXED_TIME_NAME" xml:space="preserve">
+    <value>Disable fixed time</value>
+  </data>
+  <data name="BILLING_OPTION_DISABLE_DEPOSITS_NAME" xml:space="preserve">
+    <value>Disable deposits</value>
+  </data>
 </root>
