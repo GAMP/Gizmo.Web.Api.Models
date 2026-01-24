@@ -1344,4 +1344,16 @@
   <data name="ENTITY_EVENT_TYPE_MODIFIED_NAME" xml:space="preserve">
     <value>Modified</value>
   </data>
+  <data name="TASK_TYPE_JUNCTION_NAME" xml:space="preserve">
+    <value>Junction</value>
+  </data>
+  <data name="TASK_TYPE_NOTIFICATION_NAME" xml:space="preserve">
+    <value>Notification</value>
+  </data>
+  <data name="TASK_TYPE_PROCESS_NAME" xml:space="preserve">
+    <value>Process</value>
+  </data>
+  <data name="TASK_TYPE_SCRIPT_NAME" xml:space="preserve">
+    <value>Script</value>
+  </data>
 </root>

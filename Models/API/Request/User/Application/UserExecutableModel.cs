@@ -68,7 +68,7 @@ namespace Gizmo.Web.Api.Models
         /// The executable modes.
         /// </summary>
         [Key(8)]
-        public Gizmo.ApplicationModes Modes { get; set; }
+        public ApplicationModes Modes { get; set; }
 
         /// <summary>
         /// Indicates if executable is accessible.

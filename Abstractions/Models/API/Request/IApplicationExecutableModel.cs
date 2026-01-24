@@ -18,7 +18,7 @@
         /// <summary>
         /// The application modes object attached to this executable.
         /// </summary>
-        ApplicationModes? ApplicationModes { get; set; }
+        ApplicationModesModel? ApplicationModes { get; set; }
 
         /// <summary>
         /// The arguments of the executable.

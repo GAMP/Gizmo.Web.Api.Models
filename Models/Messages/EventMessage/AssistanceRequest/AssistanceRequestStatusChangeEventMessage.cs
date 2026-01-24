@@ -1,4 +1,6 @@
-﻿namespace Gizmo.Web.Api.Messaging
+﻿using Gizmo.Web.Api.Models;
+
+namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
     /// Assistance request status change event message.

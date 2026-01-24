@@ -45,7 +45,7 @@ namespace Gizmo.Web.Api.Models
         /// The application modes object attached to this executable.
         /// </summary>
         [MessagePack.Key(4)]
-        public ApplicationModes? ApplicationModes { get; set; }
+        public ApplicationModesModel? ApplicationModes { get; set; }
 
         /// <summary>
         /// The path of the executable.

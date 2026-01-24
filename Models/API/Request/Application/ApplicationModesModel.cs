@@ -1,9 +1,5 @@
-﻿#nullable enable
-
-using Gizmo;
-
+﻿
 using MessagePack;
-
 using System;
 
 namespace Gizmo.Web.Api.Models
@@ -12,7 +8,7 @@ namespace Gizmo.Web.Api.Models
     /// Application modes.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class ApplicationModes
+    public sealed class ApplicationModesModel
     {
         /// <summary>
         /// Single player.
@@ -23,14 +19,12 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Online multiplayer.
         /// </summary>
-        //[IsGameModeAttibute()]
         [Key(1)]
         public bool Online { get; set; }
 
         /// <summary>
         /// Lan Multiplayer.
         /// </summary>
-        //[IsGameModeAttibute()]
         [Key(2)]
         public bool Multiplayer { get; set; }
 
@@ -79,21 +73,18 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Split screen.
         /// </summary>
-        //[IsGameModeAttibute()]
         [Key(10)]
         public bool SplitScreenMultiPlayer { get; set; }
 
         /// <summary>
         /// Lan co-op.
         /// </summary>
-        //[IsGameModeAttibute()]
         [Key(11)]
         public bool CoOpLan { get; set; }
 
         /// <summary>
         /// Online co-op.
         /// </summary>
-        //[IsGameModeAttibute()]
         [Key(12)]
         public bool CoOpOnline { get; set; }
 
