@@ -1,23 +1,23 @@
 ﻿namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Refund status.
+    /// Order line payment type.
     /// </summary>
-    public enum RefundStatus
+    public enum OrderLinePayType
     {
         /// <summary>
-        /// None.
+        /// Mixed.
         /// </summary>
-        None,
+        Mixed = 2,
 
         /// <summary>
-        /// Partial.
+        /// Points.
         /// </summary>
-        Partial,
+        Points = 1,
 
         /// <summary>
-        /// Full.
+        /// Cash.
         /// </summary>
-        Full,
+        Cash = 0,
     }
 }

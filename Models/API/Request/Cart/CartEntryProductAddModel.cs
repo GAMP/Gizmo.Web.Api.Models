@@ -28,7 +28,7 @@
         /// Pay type.
         /// </summary>
         [MessagePack.Key(3)]
-        public Gizmo.OrderLinePayType PayType { get; init; }
+        public OrderLinePayType PayType { get; init; }
 
         /// <summary>
         /// Product mark.

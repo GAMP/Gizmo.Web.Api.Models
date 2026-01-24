@@ -19,7 +19,7 @@ namespace Gizmo.Web.Api.Models
 
         /// <inheritdoc/>
         [Key(2)]
-        public string TimePorduct { get; init; }
+        public required string TimeProduct { get; init; }
 
         /// <inheritdoc/>
         [Key(3)]

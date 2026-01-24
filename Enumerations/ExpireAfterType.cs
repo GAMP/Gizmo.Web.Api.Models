@@ -1,23 +1,23 @@
 ﻿namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Refund status.
+    /// Expire after types.
     /// </summary>
-    public enum RefundStatus
+    public enum ExpireAfterType
     {
         /// <summary>
-        /// None.
+        /// Day.
         /// </summary>
-        None,
+        Day = 0,
 
         /// <summary>
-        /// Partial.
+        /// Hour.
         /// </summary>
-        Partial,
+        Hour = 1,
 
         /// <summary>
-        /// Full.
+        /// Minute.
         /// </summary>
-        Full,
+        Minute = 2,
     }
 }
