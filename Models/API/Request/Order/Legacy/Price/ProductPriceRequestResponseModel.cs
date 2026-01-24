@@ -34,7 +34,7 @@
         /// Purchase options.
         /// </summary>
         [MessagePack.Key(4)]
-        public Gizmo.PurchaseOptionType PurchaseOptions
+        public PurchaseOptionType PurchaseOptions
         {
             get; init;
         }
