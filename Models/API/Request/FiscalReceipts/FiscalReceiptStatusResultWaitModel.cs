@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
         /// Result status.
         /// </summary>
         [MessagePack.Key(0)]
-        public Gizmo.FiscalReceiptPrintStatus Status { get; init; }
+        public Gizmo.Web.Api.Models.FiscalReceiptPrintStatus Status { get; init; }
 
         /// <summary>
         /// Created fiscal receipt's id's.
@@ -25,7 +25,7 @@ namespace Gizmo.Web.Api.Models
         /// Optional receipt printing error messages.
         /// </summary>
         /// <remarks>
-        /// This value will only be set if <see cref="Status"/> is equal to <see cref="Gizmo.FiscalReceiptPrintStatus.Failed"/>.<br></br>
+        /// This value will only be set if <see cref="Status"/> is equal to <see cref="Gizmo.Web.Api.Models.FiscalReceiptPrintStatus.Failed"/>.<br></br>
         /// <b>If the receipt is already in failed state when wait is initiated this value will be equal to null.</b>
         /// </remarks>
         [MessagePack.Key(2)]

@@ -1,9 +1,7 @@
-﻿using Gizmo.Web.Api.Models.Abstractions;
-
-using MessagePack;
-
-using System;
+﻿using System;
 using System.Text.Json.Serialization;
+using Gizmo.Web.Api.Models.Abstractions;
+using MessagePack;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -29,11 +27,11 @@ namespace Gizmo.Web.Api.Models
         /// Gets available recovery method.
         /// </summary>
         /// <remarks>
-        /// Default value <see cref="UserRecoveryMethod.None"/>.
+        /// Default value <see cref="Gizmo.Server.UserRecoveryMethod.None"/>.
         /// </remarks>
         [Key(1)]
         [JsonPropertyOrder(1)]
-        public UserRecoveryMethod RecoveryMethod { get; init; } = UserRecoveryMethod.None;
+        public Gizmo.Server.UserRecoveryMethod RecoveryMethod { get; init; } = Gizmo.Server.UserRecoveryMethod.None;
 
         #endregion
     }
