@@ -29,11 +29,11 @@ namespace Gizmo.Web.Api.Models
         /// Gets available recovery method.
         /// </summary>
         /// <remarks>
-        /// Default value <see cref="UserRecoveryMethod.None"/>.
+        /// Default value <see cref="Gizmo.Server.UserRecoveryMethod.None"/>.
         /// </remarks>
         [Key(1)]
         [JsonPropertyOrder(1)]
-        public UserRecoveryMethod RecoveryMethod { get; init; } = UserRecoveryMethod.None;
+        public Server.UserRecoveryMethod RecoveryMethod { get; init; } = Server.UserRecoveryMethod.None;
 
         #endregion
     }
