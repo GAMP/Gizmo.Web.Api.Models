@@ -18,7 +18,7 @@
         /// <summary>
         /// Product name.
         /// </summary>
-        public string TimeProduct { get; init; }
+        public string? TimeProduct { get; init; }
 
         /// <summary>
         /// Current usage type.
