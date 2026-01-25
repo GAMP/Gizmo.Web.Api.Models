@@ -27,7 +27,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Enables auto completion.
         /// </summary>
-        /// <remarks>
+        /// <remarks></remarks>
         [MessagePack.Key(2)]
         public bool AutoComplete { get; init; }
     }
