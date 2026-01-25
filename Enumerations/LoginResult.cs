@@ -55,7 +55,6 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Login was denied.
         /// </summary>
-        [Localized("LOGIN_RESULT_DENIED")]
         [Name("Login denied", nameof(Resources.LOGIN_RESULT_DENIED_NAME))]
         [ExtendedDescription("Login was denied", nameof(Resources.LOGIN_RESULT_DENIED_DESCRIPTION))]
         Denied = 32,
