@@ -9,10 +9,12 @@
         /// Default. (POS)
         /// </summary>
         Default = 0,
+
         /// <summary>
         /// Client machine.
         /// </summary>
         Client = 1,
+
         /// <summary>
         /// Web portal.
         /// </summary>
