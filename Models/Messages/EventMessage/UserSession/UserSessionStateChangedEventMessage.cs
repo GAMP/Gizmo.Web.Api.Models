@@ -14,7 +14,7 @@ namespace Gizmo.Web.Api.Messaging
         /// New session state.
         /// </summary>
         [MessagePack.Key(5)]
-        public SessionState State
+        public UserSessionState State
         {
             get;init;
         }

@@ -132,6 +132,6 @@ namespace Gizmo.Web.Api.Models
         /// The state of the session.
         /// </summary>
         [MessagePack.Key(20)]
-        public SessionState State { get; set; }
+        public UserSessionState State { get; set; }
     }
 }

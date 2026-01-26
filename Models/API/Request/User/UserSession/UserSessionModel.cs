@@ -45,7 +45,7 @@ namespace Gizmo.Web.Api.Models
         /// Gets session state.
         /// </summary>
         [MessagePack.Key(4)]
-        public SessionState State
+        public UserSessionState State
         {
             get;init;
         }

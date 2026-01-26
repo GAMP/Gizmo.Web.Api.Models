@@ -44,6 +44,12 @@ namespace Gizmo.Web.Api.Models
         /// Session is moving.
         /// </summary>
         [Name("Waiting", nameof(Resources.USER_SESSION_STATE_MOVED_NAME))]
-        Moved = 16 | Active
+        Moved = 16 | Active,
+
+        /// <summary>
+        /// Grace period.
+        /// </summary>
+        [Name("Grace", nameof(Resources.USER_SESSION_STATE_GRACE_NAME))]
+        Grace = 32 | Active
     }
 }

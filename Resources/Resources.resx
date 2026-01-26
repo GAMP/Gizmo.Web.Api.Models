@@ -1491,4 +1491,7 @@
   <data name="INVOICE_STATUS_UNPAID_NAME" xml:space="preserve">
     <value>Unpaid</value>
   </data>
+  <data name="USER_SESSION_STATE_GRACE_NAME" xml:space="preserve">
+    <value>Grace</value>
+  </data>
 </root>
