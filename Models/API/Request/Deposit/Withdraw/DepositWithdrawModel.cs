@@ -1,4 +1,6 @@
-﻿namespace Gizmo.Web.Api.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Deposit withdrawal model.
@@ -17,5 +19,12 @@
         /// </summary>
         [MessagePack.Key(1)]
         public required int RefundPaymentMethodId { get; init; }
+
+        /// <summary>
+        /// Optional note.
+        /// </summary>
+        [MaxLength(255)]
+        [MessagePack.Key(2)]
+        public string? Note { get; init; }
     }
 }
