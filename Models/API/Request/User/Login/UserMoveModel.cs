@@ -17,5 +17,11 @@
         /// </summary>
         [MessagePack.Key(1)]
         public int? Slot { get; set; }
+
+        /// <summary>
+        /// Enables existing user swap.
+        /// </summary>
+        [MessagePack.Key(2)]
+        public bool Swap {  get; set; }
     }
 }
