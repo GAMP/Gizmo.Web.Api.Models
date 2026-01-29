@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// Application license key crate update model.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class ApplicationLicenseKeyCrateUpdateModel : IWebApiModel
+    public sealed class ApplicationLicenseKeyCreateUpdateModel : IWebApiModel
     {
         /// <summary>
         /// License key id.
