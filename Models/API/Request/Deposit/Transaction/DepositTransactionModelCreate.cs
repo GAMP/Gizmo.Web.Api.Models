@@ -1,20 +1,14 @@
-﻿using Gizmo.Web.Api.Models.Abstractions;
-
-using MessagePack;
-
-using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using Gizmo.Web.Api.Models.Abstractions;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Deposit transaction.
     /// </summary>
-    [Serializable, MessagePackObject]
+    [MessagePack.MessagePackObject]
     public sealed class DepositTransactionModelCreate : IDepositTransactionModel
     {
-        #region PROPERTIES
-
         /// <summary>
         /// Whether to override the receipt.
         /// </summary>
@@ -45,7 +39,5 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(4)]
         public int? PaymentMethodId { get; set; }
-
-        #endregion
     }
 }

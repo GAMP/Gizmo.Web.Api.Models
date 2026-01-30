@@ -6,29 +6,26 @@ using MessagePack;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Client option.
+    /// Client option create model.
     /// </summary>
     [MessagePackObject]
     public sealed class ClientOptionModelCreate : IClientOptionModel, IUriParametersQuery
     {
-        #region PROPERTIES
-
-        /// <summary>
-        /// The name of the client option.
-        /// </summary>
+        /// <inheritdoc/>
         [StringLength(255)]
         [MessagePack.Key(0)]
-        public string Name { get; set; } = null!;
+        public required string Name { get; set; }
 
+        /// <inheritdoc/>
         [MessagePack.Key(1)]
         public ClientOptionSkinModel? ClientOptionSkin { get; set; }
 
+        /// <inheritdoc/>
         [MessagePack.Key(2)]
         public string? CustomCSS { get; set; }
 
+        /// <inheritdoc/>
         [MessagePack.Key(3)]
         public bool IsDefault { get; set; }
-
-        #endregion
     }
 }

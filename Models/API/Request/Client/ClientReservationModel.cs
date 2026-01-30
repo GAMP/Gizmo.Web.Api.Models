@@ -1,34 +1,33 @@
 ﻿using System;
-using MessagePack;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <inheritdoc/>
-    [Serializable, MessagePackObject]
+    [MessagePack.MessagePackObject]
     public sealed class ClientReservationModel : IClientReservationModel
     {
         /// <inheritdoc/>
-        [Key(0)]
+        [MessagePack.Key(0)]
         public int? NextReservationId { get; init; }
 
         /// <inheritdoc/>
-        [Key(1)]
+        [MessagePack.Key(1)]
         public DateTime? NextReservationTime { get; init; }
 
         /// <inheritdoc/>
-        [Key(2)]
+        [MessagePack.Key(2)]
         public bool EnableLoginBlock { get; init; }
 
         /// <inheritdoc/>
-        [Key(3)]
+        [MessagePack.Key(3)]
         public int LoginBlockTime { get; init; }
 
         /// <inheritdoc/>
-        [Key(4)]
+        [MessagePack.Key(4)]
         public bool EnableLoginUnblock { get; init; }
 
         /// <inheritdoc/>
-        [Key(5)]
+        [MessagePack.Key(5)]
         public int LoginUnblockTime { get; init; }
     }
 }

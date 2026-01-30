@@ -1,20 +1,14 @@
-﻿using Gizmo.Web.Api.Models.Abstractions;
-
-using MessagePack;
-
-using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using Gizmo.Web.Api.Models.Abstractions;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Asset type.
     /// </summary>
-    [Serializable, MessagePackObject]
+    [MessagePack.MessagePackObject]
     public sealed class AssetTypeModelCreate : IAssetTypeModel, IUriParametersQuery
     {
-        #region PROPERTIES
-
         /// <summary>
         /// The name of the asset type.
         /// </summary>
@@ -27,7 +21,5 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(1)]
         public string? Description { get; set; }
-
-        #endregion
     }
 }

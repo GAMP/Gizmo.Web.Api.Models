@@ -1,9 +1,5 @@
-﻿#nullable enable
-
+﻿
 using Gizmo.Web.Api.Models.Abstractions;
-
-using MessagePack;
-
 using System;
 using System.ComponentModel.DataAnnotations;
 
@@ -12,11 +8,9 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Application category.
     /// </summary>
-    [Serializable, MessagePackObject]
+    [Serializable, MessagePack.MessagePackObject]
     public sealed class ApplicationCategoryModel : IApplicationCategoryModel, IModelIntIdentifier
     {
-        #region PROPERTIES
-
         /// <summary>
         /// The Id of the object.
         /// </summary>
@@ -41,7 +35,5 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(3)]
         public int? ParentId { get; set; }
-
-        #endregion
     }
 }

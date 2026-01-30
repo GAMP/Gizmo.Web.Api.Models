@@ -1,8 +1,4 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions;
-
-using MessagePack;
-
-using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Web.Api.Models
@@ -10,11 +6,9 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Asset.
     /// </summary>
-    [Serializable, MessagePackObject]
+    [MessagePack.MessagePackObject]
     public sealed class AssetModelCreate : IAssetModel, IUriParametersQuery
     {
-        #region PROPERTIES
-
         /// <summary>
         /// The Id of the asset type this asset belongs to.
         /// </summary>
@@ -64,7 +58,5 @@ namespace Gizmo.Web.Api.Models
         /// <inheritdoc/>
         [MessagePack.Key(7)]
         public int BranchId { get; set; }
-
-        #endregion
     }
 }

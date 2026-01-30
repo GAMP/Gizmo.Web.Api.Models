@@ -1,8 +1,4 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions;
-
-using MessagePack;
-
-using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Web.Api.Models
@@ -10,11 +6,9 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Monetary unit.
     /// </summary>
-    [Serializable, MessagePackObject]
+    [MessagePack.MessagePackObject]
     public sealed class MonetaryUnitModelUpdate : IMonetaryUnitModel, IModelIntIdentifier, IUriParametersQuery
     {
-        #region PROPERTIES
-
         /// <summary>
         /// The Id of the object.
         /// </summary>
@@ -45,7 +39,5 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(4)]
         public bool IsDeleted { get; set; }
-
-        #endregion
     }
 }

@@ -22,6 +22,6 @@
         /// Receipt print status.
         /// </summary>
         [MessagePack.Key(2)]
-        public Gizmo.Web.Api.Models.FiscalReceiptPrintStatus ReceiptPrintStatus { get; init; }
+        public FiscalReceiptPrintStatus ReceiptPrintStatus { get; init; }
     }
 }

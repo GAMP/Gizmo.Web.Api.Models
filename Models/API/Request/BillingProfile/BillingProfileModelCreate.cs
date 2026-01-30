@@ -1,8 +1,4 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions;
-
-using MessagePack;
-
-using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Web.Api.Models
@@ -10,11 +6,9 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Billing profile.
     /// </summary>
-    [Serializable, MessagePackObject]
+    [MessagePack.MessagePackObject]
     public sealed class BillingProfileModelCreate : IBillingProfileModel, IUriParametersQuery
     {
-        #region PROPERTIES
-
         /// <summary>
         /// The name of the billing profile.
         /// </summary>
@@ -27,7 +21,5 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(1)]
         public BillingProfileRateModel? DefaultRate { get; set; }
-
-        #endregion
     }
 }

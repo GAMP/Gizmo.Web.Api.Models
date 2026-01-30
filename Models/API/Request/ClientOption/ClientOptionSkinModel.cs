@@ -1,13 +1,12 @@
 ﻿using Gizmo.Client;
 using Gizmo.Client.UI.View.Constants;
-using MessagePack;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Client option skin.
     /// </summary>
-    [MessagePackObject]
+    [MessagePack.MessagePackObject]
     public sealed class ClientOptionSkinModel
     {
         #region ClientInterface

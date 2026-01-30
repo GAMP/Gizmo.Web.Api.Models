@@ -10,10 +10,19 @@
         /// </summary>
         string Name { get; set; }
 
+        /// <summary>
+        /// Skin options.
+        /// </summary>
         ClientOptionSkinModel? ClientOptionSkin { get; set; }
 
+        /// <summary>
+        /// Custom css.
+        /// </summary>
         string? CustomCSS { get; set; }
 
+        /// <summary>
+        /// Is default flag.
+        /// </summary>
         bool IsDefault { get; set; }
     }
 }

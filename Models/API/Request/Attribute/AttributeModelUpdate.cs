@@ -1,8 +1,4 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions;
-
-using MessagePack;
-
-using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Web.Api.Models
@@ -10,11 +6,9 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Attribute.
     /// </summary>
-    [Serializable, MessagePackObject]
+    [MessagePack.MessagePackObject]
     public sealed class AttributeModelUpdate : IAttributeModel, IModelIntIdentifier, IUriParametersQuery
     {
-        #region PROPERTIES
-
         /// <summary>
         /// The Id of the object.
         /// </summary>
@@ -33,8 +27,6 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(2)]
         [StringLength(45)]
-        public string? FriendlyName { get; set; }
-
-        #endregion
+        public string? FriendlyName { get; set; }       
     }
 }

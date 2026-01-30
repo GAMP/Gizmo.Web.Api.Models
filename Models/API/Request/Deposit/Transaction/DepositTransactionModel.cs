@@ -1,7 +1,4 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions;
-
-using MessagePack;
-
 using System;
 using System.ComponentModel.DataAnnotations;
 
@@ -10,11 +7,9 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Deposit transaction.
     /// </summary>
-    [Serializable, MessagePackObject]
+    [MessagePack.MessagePackObject]
     public sealed class DepositTransactionModel : IDepositTransactionModel, IModelIntIdentifier
     {
-        #region PROPERTIES
-
         /// <summary>
         /// The Id of the object.
         /// </summary>
@@ -105,7 +100,5 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(14)]
         public int? BranchId { get; set; }
-
-        #endregion
     }
 }

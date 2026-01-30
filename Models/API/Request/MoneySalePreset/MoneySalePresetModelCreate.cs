@@ -1,8 +1,4 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions;
-
-using MessagePack;
-
-using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Web.Api.Models
@@ -10,11 +6,9 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Money sale preset.
     /// </summary>
-    [Serializable, MessagePackObject]
+    [MessagePack.MessagePackObject]
     public sealed class MoneySalePresetModelCreate : IMoneySalePresetModel, IUriParametersQuery
     {
-        #region PROPERTIES
-
         /// <summary>
         /// The value of the money sale preset.
         /// </summary>
@@ -27,7 +21,5 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(1)]
         public int DisplayOrder { get; set; }
-
-        #endregion
     }
 }

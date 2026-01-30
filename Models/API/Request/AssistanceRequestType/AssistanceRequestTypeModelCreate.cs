@@ -4,7 +4,7 @@ using Gizmo.Web.Api.Models.Abstractions;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Assitance request type create model.
+    /// Assistance request type create model.
     /// </summary>
     [MessagePack.MessagePackObject()]
     public sealed class AssistanceRequestTypeModelCreate : IUriParametersQuery
