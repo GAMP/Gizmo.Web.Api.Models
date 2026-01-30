@@ -7,7 +7,7 @@ namespace Gizmo.Web.Api.Models
     /// Close balance model.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class CloseBalanceModel : IWebApiModel
+    public sealed class CloseBalanceCreateModel : IWebApiModel
     {
         /// <summary>
         /// Payments.
@@ -20,5 +20,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(1)]
         public IEnumerable<int> Invoices { get; init; } = Enumerable.Empty<int>();
+
+        /// <summary>
+        /// Disables receipt printing.
+        /// </summary>
+        [MessagePack.Key(2)]
+        public bool DisableReceiptPrinting { get; set; }
     }
 }

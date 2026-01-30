@@ -1,7 +1,4 @@
 ﻿using Gizmo.Web.Api.Models.Abstractions;
-
-using MessagePack;
-
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -12,11 +9,9 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Invoice.
     /// </summary>
-    [Serializable, MessagePackObject]
+    [MessagePack.MessagePackObject]
     public sealed class InvoiceModel : IInvoiceModel, IModelIntIdentifier
     {
-        #region PROPERTIES
-
         /// <summary>
         /// The Id of the object.
         /// </summary>
@@ -137,7 +132,5 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(19)]
         public int? HostId { get; set; }
-
-        #endregion
     }
 }
