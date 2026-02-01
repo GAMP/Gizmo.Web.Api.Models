@@ -13,7 +13,7 @@ namespace Gizmo.Web.Api.Models
         /// File name.
         /// </summary>
         [MessagePack.Key(0)]
-        public string Name { get; init; } = null!;
+        public required string Name { get; init; }
 
         /// <summary>
         /// File attributes.
