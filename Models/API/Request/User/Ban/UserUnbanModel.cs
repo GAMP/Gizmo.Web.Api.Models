@@ -5,6 +5,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// User unban model.
     /// </summary>
+    [MessagePack.MessagePackObject()]
     public sealed class UserUnbanModel : IWebApiModel
     {
         /// <summary>
