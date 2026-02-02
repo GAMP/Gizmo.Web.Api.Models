@@ -1,16 +1,13 @@
-﻿using MessagePack;
-using System;
+﻿using System;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// User ban.
     /// </summary>
-    [MessagePackObject]
-    public sealed class UserBanModel
+    [MessagePack.MessagePackObject]
+    public sealed class UserBanModel : IWebApiModel
     {
-        #region PROPERTIES
-
         /// <summary>
         /// Whether the user is banned.
         /// </summary>
@@ -21,8 +18,18 @@ namespace Gizmo.Web.Api.Models
         /// The date where the ban will be revoked.
         /// </summary>
         [MessagePack.Key(1)]
-        public DateTime? EnableDate { get; set; }
+        public DateTime? RevokeDate { get; set; }
 
-        #endregion
+        /// <summary>
+        /// Optional ban reason id.
+        /// </summary>
+        [MessagePack.Key(2)]
+        public int? BanReasonId { get; set; }
+
+        /// <summary>
+        /// Optional ban note.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public string? Note { get; init; }
     }
 }
