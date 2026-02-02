@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -9,27 +10,22 @@ namespace Gizmo.Web.Api.Models
     public sealed class UserBanModel : IWebApiModel
     {
         /// <summary>
-        /// Whether the user is banned.
-        /// </summary>
-        [MessagePack.Key(0)]
-        public bool IsBanned { get; set; }
-
-        /// <summary>
         /// The date where the ban will be revoked.
         /// </summary>
-        [MessagePack.Key(1)]
+        [MessagePack.Key(0)]
         public DateTime? RevokeDate { get; set; }
 
         /// <summary>
         /// Optional ban reason id.
         /// </summary>
-        [MessagePack.Key(2)]
+        [MessagePack.Key(1)]
         public int? BanReasonId { get; set; }
 
         /// <summary>
         /// Optional ban note.
         /// </summary>
-        [MessagePack.Key(3)]
+        [StringLength(255)]
+        [MessagePack.Key(2)]
         public string? Note { get; init; }
     }
 }
