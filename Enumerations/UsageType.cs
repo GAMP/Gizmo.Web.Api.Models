@@ -8,21 +8,21 @@
         /// <summary>
         /// None.
         /// </summary>
-        None,
+        None = 0,
 
         /// <summary>
         /// Billing profile rate.
         /// </summary>
-        Rate,
-        
+        Rate = 1,
+
         /// <summary>
         /// Fixed time.
         /// </summary>
-        TimeFixed,
-        
+        TimeFixed = 2,
+
         /// <summary>
         /// Time offer.
         /// </summary>
-        TimeOffer,
+        TimeOffer = 3,
     }
 }

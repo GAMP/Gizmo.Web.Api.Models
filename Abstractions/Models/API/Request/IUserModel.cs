@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace Gizmo.Web.Api.Models.Abstractions
 {

@@ -12,10 +12,12 @@ namespace Gizmo.Web.Api.Models
         /// None.
         /// </summary>
         None = 0,
+
         /// <summary>
         /// Has day time range.
         /// </summary>
         HasDayTimeRange = 1,
+        
         /// <summary>
         /// Has date range.
         /// </summary>

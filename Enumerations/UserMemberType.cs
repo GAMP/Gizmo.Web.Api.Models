@@ -1,21 +1,21 @@
 ﻿namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Host types.
+    /// User member type.
     /// </summary>
     /// <remarks>
     /// Used for polymorphic union.
     /// </remarks>
-    public enum HostType
+    public enum UserMemberType
     {
         /// <summary>
-        /// Computer.
+        /// Member user.
         /// </summary>
-        Computer = 0,
+        Member = 0,
 
         /// <summary>
-        /// Endpoint.
+        /// Guest user.
         /// </summary>
-        Endpoint = 1,
+        Guest = 1,
     }
 }
