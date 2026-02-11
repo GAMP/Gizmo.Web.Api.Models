@@ -11,20 +11,16 @@ namespace Gizmo.Web.Api.Messaging
     [MessagePackObject()]
     public sealed class OrderStatusChangeEventMessage : OrderEventMessageBase
     {
-        #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
         public OrderStatusChangeEventMessage() : base()
         { }
-        #endregion
-
-        #region PROPERTIES
 
         /// <summary>
         /// Gets new status.
         /// </summary>
-        [Key(2)]
+        [Key(3)]
         public OrderStatus Status
         {
             get; init;
@@ -33,12 +29,10 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets previous status.
         /// </summary>
-        [Key(3)]
+        [Key(4)]
         public OrderStatus? PreviousStatus
         {
             get; init;
         }
-
-        #endregion
     }
 }
