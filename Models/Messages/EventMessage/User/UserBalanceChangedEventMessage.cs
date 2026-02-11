@@ -48,5 +48,11 @@ namespace Gizmo.Web.Api.Messaging
         /// </summary>
         [MessagePack.Key(6)]
         public int Points { get; init;}
+
+        /// <summary>
+        /// Current outstanding amount.
+        /// </summary>
+        [MessagePack.Key(7)]
+        public decimal Outstanding {  get; init; }
     }
 }
