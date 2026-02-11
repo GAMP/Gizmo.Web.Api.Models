@@ -20,7 +20,7 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Indicates if order is delivered.
         /// </summary>
-        [Key(2)]
+        [Key(3)]
         public bool IsDelivered
         {
             get; init;

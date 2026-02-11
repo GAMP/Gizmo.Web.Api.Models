@@ -17,7 +17,7 @@
         /// <summary>
         /// Order line id.
         /// </summary>
-        [MessagePack.Key(2)]
+        [MessagePack.Key(3)]
         public int OrderLineId
         {
             get; init;
@@ -26,7 +26,7 @@
         /// <summary>
         /// Indicates if order line is delivered.
         /// </summary>
-        [MessagePack.Key(3)]
+        [MessagePack.Key(4)]
         public bool IsDelivered
         {
             get; init;
@@ -35,7 +35,7 @@
         /// <summary>
         /// Currently delivered quantity.
         /// </summary>
-        [MessagePack.Key(4)]
+        [MessagePack.Key(5)]
         public decimal DeliveredQuantity
         {
             get; init;

@@ -11,22 +11,22 @@ namespace Gizmo.Web.Api.Messaging
     [EventGroup(2)]
     public abstract class OrderEventMessageBase : APIEventMessage
     {
-        #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
         public OrderEventMessageBase() : base()
-        { } 
-        #endregion
-
-        #region PROPERTIES
+        { }
 
         /// <summary>
         /// Gets order id.
         /// </summary>
         [Key(1)]
-        public int OrderId { get; set; } 
+        public required int OrderId { get; set; }
 
-        #endregion
+        /// <summary>
+        /// User id.
+        /// </summary>
+        [Key(2)]
+        public required int UserId { get; init; }
     }
 }
