@@ -10,7 +10,7 @@ namespace Gizmo.Web.Api.Models
     /// Filters that can be applied when searching for users.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class UsersFilter : IModelFilter<UserModel>
+    public sealed class UsersFilter : IModelFilter<UserModelLegacy>, IModelFilter<UserModel>
     {
         #region PROPERTIES
 

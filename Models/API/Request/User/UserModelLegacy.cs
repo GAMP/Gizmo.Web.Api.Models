@@ -1,23 +1,18 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using Gizmo.Web.Api.Models.Abstractions;
+using MessagePack;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Base user model used for polymorphism.
+    /// User.
     /// </summary>
-    [MessagePack.Union((int)UserMemberType.Member, typeof(UserMemberModel))]
-    [MessagePack.Union((int)UserMemberType.Guest, typeof(UserGuestModel))]
-    public abstract class UserModel : IWebApiModel
+    [Serializable, MessagePackObject]
+    public sealed class UserModelLegacy : IUserModel, IModelIntIdentifier
     {
-    }
+        #region PROPERTIES
 
-    /// <summary>
-    /// User member model.
-    /// </summary>
-    [MessagePack.MessagePackObject()]
-    public sealed class UserMemberModel : UserModel, IWebApiModel
-    {
         /// <summary>
         /// The Id of the object.
         /// </summary>
@@ -31,248 +26,218 @@ namespace Gizmo.Web.Api.Models
         public Guid Guid { get; set; }
 
         /// <summary>
-        /// The username of the user.
+        /// Whether the user is guest.
         /// </summary>
         [MessagePack.Key(2)]
+        public bool IsGuest { get; set; }
+
+        #region UserMember
+
+        /// <summary>
+        /// The username of the user.
+        /// </summary>
+        [StringLength(30)]
+        [MessagePack.Key(3)]
         [Sortable()]
-        public required string Username { get; set; }
+        public string Username { get; set; } = null!;
 
         /// <summary>
         /// The email of the user.
         /// </summary>
-        [MessagePack.Key(3)]
+        [StringLength(254)]
+        [EmailNullEmptyValidation]
+        [MessagePack.Key(4)]
         public string? Email { get; set; }
 
         /// <summary>
         /// The Id of the users group id this user belongs to.
         /// </summary>
-        [MessagePack.Key(4)]
+        [MessagePack.Key(5)]
         public int UserGroupId { get; set; }
 
         /// <summary>
         /// Whether the user is allowed to have negative balance.
         /// </summary>
-        [MessagePack.Key(5)]
+        [MessagePack.Key(6)]
         public bool? IsNegativeBalanceAllowed { get; set; }
 
         /// <summary>
         /// Whether the personal info has been requested from the user.
         /// </summary>
-        [MessagePack.Key(6)]
+        [MessagePack.Key(7)]
         public bool IsPersonalInfoRequested { get; set; }
 
         /// <summary>
         /// The date the user will be enabled again.
         /// </summary>
-        [MessagePack.Key(7)]
+        [MessagePack.Key(8)]
         public DateTime? EnableDate { get; set; }
 
         /// <summary>
         /// The date the user has been disabled.
         /// </summary>
-        [MessagePack.Key(8)]
+        [MessagePack.Key(9)]
         public DateTime? DisabledDate { get; set; }
+
+        #endregion
+
+        #region User
 
         /// <summary>
         /// The first name of the user.
         /// </summary>
-        [MessagePack.Key(9)]
+        [StringLength(45)]
+        [MessagePack.Key(10)]
         [Sortable()]
         public string? FirstName { get; set; }
 
         /// <summary>
         /// The last name of the user.
         /// </summary>
-        [MessagePack.Key(10)]
+        [StringLength(45)]
+        [MessagePack.Key(11)]
         [Sortable()]
         public string? LastName { get; set; }
 
         /// <summary>
         /// The birth date of the user.
         /// </summary>
-        [MessagePack.Key(11)]
+        [MessagePack.Key(12)]
         [Sortable()]
         public DateTime? BirthDate { get; set; }
 
         /// <summary>
         /// The address of the user.
         /// </summary>
-        [MessagePack.Key(12)]
+        [StringLength(255)]
+        [MessagePack.Key(13)]
         public string? Address { get; set; }
 
         /// <summary>
         /// The city of the user.
         /// </summary>
-        [MessagePack.Key(13)]
+        [StringLength(45)]
+        [MessagePack.Key(14)]
         public string? City { get; set; }
 
         /// <summary>
         /// The country of the user.
         /// </summary>
-        [MessagePack.Key(14)]
+        [StringLength(45)]
+        [MessagePack.Key(15)]
         public string? Country { get; set; }
 
         /// <summary>
         /// The post code of the user.
         /// </summary>
-        [MessagePack.Key(15)]
+        [StringLength(20)]
+        [MessagePack.Key(16)]
         public string? PostCode { get; set; }
 
         /// <summary>
         /// The phone number of the user.
         /// </summary>
-        [MessagePack.Key(16)]
+        [StringLength(20)]
+        [MessagePack.Key(17)]
         public string? Phone { get; set; }
 
         /// <summary>
         /// The mobile phone number of the user.
         /// </summary>
-        [MessagePack.Key(17)]
+        [StringLength(20)]
+        [MessagePack.Key(18)]
         public string? MobilePhone { get; set; }
 
         /// <summary>
         /// The sex of the user.
         /// </summary>
-        [MessagePack.Key(18)]
+        [EnumValueValidation]
+        [MessagePack.Key(19)]
         public Sex Sex { get; set; }
 
         /// <summary>
         /// Whether the user is deleted.
         /// </summary>
-        [MessagePack.Key(19)]
+        [MessagePack.Key(20)]
         public bool IsDeleted { get; set; }
 
         /// <summary>
         /// Whether the user is disabled.
         /// </summary>
-        [MessagePack.Key(20)]
+        [MessagePack.Key(21)]
         public bool IsDisabled { get; set; }
 
         /// <summary>
         /// The SmartCard UID of the user.
         /// </summary>
         [StringLength(255)]
-        [MessagePack.Key(21)]
+        [MessagePack.Key(22)]
         public string? SmartCardUid { get; set; }
 
         /// <summary>
         /// The identification number of the user.
         /// </summary>
         [StringLength(255)]
-        [MessagePack.Key(22)]
+        [MessagePack.Key(23)]
         public string? Identification { get; set; }
 
         /// <summary>
         /// The registration date of the user.
         /// </summary>
-        [MessagePack.Key(23)]
+        [MessagePack.Key(24)]
         public DateTime RegistrationDate { get; set; }
 
         /// <summary>
         /// Whether the user is verified.
         /// </summary>
-        [MessagePack.Key(24)]
+        [MessagePack.Key(25)]
         public bool IsVerified { get; set; }
 
         /// <summary>
         /// Whether the user has notes.
         /// </summary>
-        [MessagePack.Key(25)]
+        [MessagePack.Key(26)]
         public bool HasNotes { get; set; }
 
         /// <summary>
         /// Whether the user has checked out assets.
-        /// </summary>
-        [MessagePack.Key(26)]
-        public bool HasCheckedOutAssets { get; set; }
-
-        /// <summary>
-        /// Billing options.
         /// </summary>
         [MessagePack.Key(27)]
-        public BillingOption? BillingOptions
-        {
-            get; set;
-        }
-    }
-
-    /// <summary>
-    /// User guest model.
-    /// </summary>
-    [MessagePack.MessagePackObject()]
-    public sealed class UserGuestModel : UserModel, IWebApiModel 
-    {
-        /// <summary>
-        /// The Id of the object.
-        /// </summary>
-        [MessagePack.Key(0)]
-        public int Id { get; init; }
-
-        /// <summary>
-        /// The GUID of the user.
-        /// </summary>
-        [MessagePack.Key(1)]
-        public Guid Guid { get; set; }
-
-        /// <summary>
-        /// The username of the user.
-        /// </summary>
-        [MessagePack.Key(2)]
-        [Sortable()]
-        public required string Username { get; set; }
-
-        /// <summary>
-        /// The Id of the users group id this user belongs to.
-        /// </summary>
-        [MessagePack.Key(3)]
-        public int UserGroupId { get; set; }
-
-        /// <summary>
-        /// Whether the user is allowed to have negative balance.
-        /// </summary>
-        [MessagePack.Key(4)]
-        public bool? IsNegativeBalanceAllowed { get; set; } 
-
-        /// <summary>
-        /// Whether the user is deleted.
-        /// </summary>
-        [MessagePack.Key(5)]
-        public bool IsDeleted { get; set; }
-
-        /// <summary>
-        /// Whether the user has notes.
-        /// </summary>
-        [MessagePack.Key(6)]
-        public bool HasNotes { get; set; }
-
-        /// <summary>
-        /// Whether the user has checked out assets.
-        /// </summary>
-        [MessagePack.Key(7)]
         public bool HasCheckedOutAssets { get; set; }
+
+        #endregion
+
+        #region Guest
 
         /// <summary>
         /// Reserved host id if the user is guest.
         /// </summary>
-        [MessagePack.Key(8)]
+        [MessagePack.Key(28)]
         public int? ReservedHostId { get; set; }
 
         /// <summary>
         /// Reserved slot if the user is guest.
         /// </summary>
-        [MessagePack.Key(9)]
+        [MessagePack.Key(29)]
         public int? ReservedSlot { get; set; }
 
         /// <summary>
         /// Indicates joined guest.
         /// </summary>
-        [MessagePack.Key(10)]
+        /// <remarks>
+        /// This value will only be <see langword="true"/> if <see cref="IsGuest"/> is equal to <see langword="true"/>.
+        /// </remarks>
+        [MessagePack.Key(30)]
         public bool IsJoined { get; set; }
+
+        #endregion
+
+        #endregion
 
         /// <summary>
         /// Billing options.
         /// </summary>
-        [MessagePack.Key(11)]
+        [MessagePack.Key(31)]
         public BillingOption? BillingOptions
         {
             get; set;

@@ -45,8 +45,8 @@ namespace Gizmo.Web.Api
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<PromotionModel>("Type", "Model"));
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<ProductOrderLineModel>("Type", "Model"));
 
-            options.Converters.Add(new MessagePackUnionMessageJsonConverter<HostModelV3>("Type", "Model"));
-            options.Converters.Add(new MessagePackUnionMessageJsonConverter<UserMemberModelV3>("Type", "Model"));
+            options.Converters.Add(new MessagePackUnionMessageJsonConverter<HostModel>("Type", "Model"));
+            options.Converters.Add(new MessagePackUnionMessageJsonConverter<UserModel>("Type", "Model"));
 
             return options;
         }
