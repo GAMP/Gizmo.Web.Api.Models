@@ -28,10 +28,13 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets current usage.
         /// </summary>
+        /// <remarks>
+        /// This value can be null in case no current usage associated with usage session.
+        /// </remarks>
         [MessagePack.Key(3)]
-        public UsageSessionUsage CurrentUsage
+        public UsageSessionUsage? CurrentUsage
         {
             get; init;
-        } = null!;
+        }
     }
 }

@@ -23,5 +23,12 @@
         {
             get;init;
         }
+
+
+        /// <summary>
+        /// Product time name.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public required string ProductName { get; init;  }
     }
 }
