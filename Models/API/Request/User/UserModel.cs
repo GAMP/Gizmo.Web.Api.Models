@@ -357,81 +357,81 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// The post code of the user.
         /// </summary>
-        [MessagePack.Key(16)]
+        [MessagePack.Key(15)]
         public string? PostCode { get; set; }
 
         /// <summary>
         /// The phone number of the user.
         /// </summary>
-        [MessagePack.Key(15)]
+        [MessagePack.Key(16)]
         public string? Phone { get; set; }
 
         /// <summary>
         /// The mobile phone number of the user.
         /// </summary>
-        [MessagePack.Key(16)]
+        [MessagePack.Key(17)]
         public string? MobilePhone { get; set; }
 
         /// <summary>
         /// The sex of the user.
         /// </summary>
-        [MessagePack.Key(17)]
+        [MessagePack.Key(18)]
         public Sex Sex { get; set; }
 
         /// <summary>
         /// Whether the user is deleted.
         /// </summary>
-        [MessagePack.Key(18)]
+        [MessagePack.Key(19)]
         public bool IsDeleted { get; set; }
 
         /// <summary>
         /// Whether the user is disabled.
         /// </summary>
-        [MessagePack.Key(19)]
+        [MessagePack.Key(20)]
         public bool IsDisabled { get; set; }
 
         /// <summary>
         /// The SmartCard UID of the user.
         /// </summary>
         [StringLength(255)]
-        [MessagePack.Key(20)]
+        [MessagePack.Key(21)]
         public string? SmartCardUid { get; set; }
 
         /// <summary>
         /// The identification number of the user.
         /// </summary>
         [StringLength(255)]
-        [MessagePack.Key(21)]
+        [MessagePack.Key(22)]
         public string? Identification { get; set; }
 
         /// <summary>
         /// The registration date of the user.
         /// </summary>
-        [MessagePack.Key(22)]
+        [MessagePack.Key(23)]
         public DateTime RegistrationDate { get; set; }
 
         /// <summary>
         /// Whether the user is verified.
         /// </summary>
-        [MessagePack.Key(23)]
+        [MessagePack.Key(24)]
         public bool IsVerified { get; set; }
 
         /// <summary>
         /// Whether the user has notes.
         /// </summary>
-        [MessagePack.Key(24)]
+        [MessagePack.Key(25)]
         public bool HasNotes { get; set; }
 
         /// <summary>
         /// Whether the user has checked out assets.
         /// </summary>
-        [MessagePack.Key(25)]
+        [MessagePack.Key(26)]
         public bool HasCheckedOutAssets { get; set; }
 
         /// <summary>
         /// Billing options.
         /// </summary>
-        [MessagePack.Key(26)]
+        [MessagePack.Key(27)]
         public BillingOption? BillingOptions
         {
             get; set;
