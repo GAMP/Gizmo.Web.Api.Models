@@ -10,6 +10,33 @@ namespace Gizmo.Web.Api.Models
     [MessagePack.Union((int)UserMemberType.Guest, typeof(UserGuestModel))]
     public abstract class UserModel : IWebApiModel
     {
+        /// <summary>
+        /// The username of the user.
+        /// </summary>
+        [MessagePack.IgnoreMember]
+        [Sortable()]
+        public abstract string Username { get; set; }
+
+        /// <summary>
+        /// The first name of the user.
+        /// </summary>
+        [MessagePack.IgnoreMember]
+        [Sortable()]
+        public abstract string? FirstName { get; set; }
+
+        /// <summary>
+        /// The last name of the user.
+        /// </summary>
+        [MessagePack.IgnoreMember]
+        [Sortable()]
+        public abstract string? LastName { get; set; }
+
+        /// <summary>
+        /// The birth date of the user.
+        /// </summary>
+        [MessagePack.IgnoreMember]
+        [Sortable()]
+        public abstract DateTime? BirthDate { get; set; }
     }
 
     /// <summary>
@@ -30,12 +57,10 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(1)]
         public Guid Guid { get; set; }
 
-        /// <summary>
-        /// The username of the user.
-        /// </summary>
+        /// <inheritdoc/>
         [MessagePack.Key(2)]
         [Sortable()]
-        public required string Username { get; set; }
+        public override required string Username { get; set; }
 
         /// <summary>
         /// The email of the user.
@@ -73,26 +98,20 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(8)]
         public DateTime? DisabledDate { get; set; }
 
-        /// <summary>
-        /// The first name of the user.
-        /// </summary>
+        /// <inheritdoc/>
         [MessagePack.Key(9)]
         [Sortable()]
-        public string? FirstName { get; set; }
+        public override string? FirstName { get; set; }
 
-        /// <summary>
-        /// The last name of the user.
-        /// </summary>
+        /// <inheritdoc/>
         [MessagePack.Key(10)]
         [Sortable()]
-        public string? LastName { get; set; }
+        public override string? LastName { get; set; }
 
-        /// <summary>
-        /// The birth date of the user.
-        /// </summary>
+        /// <inheritdoc/>
         [MessagePack.Key(11)]
         [Sortable()]
-        public DateTime? BirthDate { get; set; }
+        public override DateTime? BirthDate { get; set; }
 
         /// <summary>
         /// The address of the user.
@@ -219,7 +238,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(2)]
         [Sortable()]
-        public required string Username { get; set; }
+        public override required string Username { get; set; }
 
         /// <summary>
         /// The Id of the users group id this user belongs to.
@@ -277,5 +296,20 @@ namespace Gizmo.Web.Api.Models
         {
             get; set;
         }
+
+        /// <inheritdoc/>
+        [System.Text.Json.Serialization.JsonIgnore()]
+        [MessagePack.IgnoreMember]
+        public override string? FirstName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        /// <inheritdoc/>
+        [System.Text.Json.Serialization.JsonIgnore()]
+        [MessagePack.IgnoreMember]
+        public override string? LastName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        /// <inheritdoc/>
+        [System.Text.Json.Serialization.JsonIgnore()]
+        [MessagePack.IgnoreMember]
+        public override DateTime? BirthDate { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
     }
 }
