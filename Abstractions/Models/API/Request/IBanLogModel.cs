@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Ban log model.
     /// </summary>
-    public interface IBanLogModel : IWebApiModel , IModelIntIdentifier
+    public interface IBanLogModel : IWebApiModel, IModelIntIdentifier
     {
         /// <summary>
         /// User id.
@@ -32,5 +32,15 @@ namespace Gizmo.Web.Api.Models
         /// Time.
         /// </summary>
         public DateTime Time { get; init; }
+
+        /// <summary>
+        /// Enabled time.
+        /// </summary>
+        public DateTime? EnableDate { get; init; }
+
+        /// <summary>
+        /// Operator id.
+        /// </summary>
+        public int? OperatorId { get; init; }
     }
 }

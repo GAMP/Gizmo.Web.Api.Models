@@ -43,5 +43,17 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(5)]
         public DateTime Time { get;init; }
+
+        /// <summary>
+        /// <inheritdoc/>
+        /// </summary>
+        [MessagePack.Key(6)]
+        public DateTime? EnableDate { get; init; }
+
+        /// <summary>
+        /// <inheritdoc/>
+        /// </summary>
+        [MessagePack.Key(7)]
+        public int? OperatorId { get; init; }
     }
 }
