@@ -13,11 +13,11 @@
         /// <summary>
         /// The description of the ban reason.
         /// </summary>
-        string Description { get; set; }
+        string? Description { get; set; }
 
         /// <summary>
         /// Use order of the ban reason.
         /// </summary>
-        int UseOrder { get; set; }
+        int DisplayOrder { get; set; }
     }
 }

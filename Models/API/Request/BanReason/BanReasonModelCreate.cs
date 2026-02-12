@@ -25,13 +25,13 @@ namespace Gizmo.Web.Api.Models
         /// The description of the ban reason.
         /// </summary>
         [MessagePack.Key(1)]
-        public string Description { get; set; } = null!;
+        public string? Description { get; set; }
 
         /// <summary>
         /// Use order of the ban reason.
         /// </summary>
-        [MessagePack.Key(5)]
-        public int UseOrder { get; set; }
+        [MessagePack.Key(2)]
+        public int DisplayOrder { get; set; }
 
         #endregion
     }
