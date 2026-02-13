@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?> 
+﻿<?xml version="1.0" encoding="utf-8"?> 
 <root> 
   <!--
   Loco xml export: ResX - .NET resources
   Project: Gizmo.Web.Api.Models
   Locale: tr, Turkish
   Exported by: Oleg Savelos
-  Exported at: Wed, 04 Feb 2026 18:14:57 +0200 
+  Exported at: Fri, 13 Feb 2026 17:36:45 +0200 
   --> 
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
@@ -1070,382 +1070,130 @@
   <data name="PROMOTION_LIMIT_TYPE_WEEKLY" xml:space="preserve"> 
     <value>Haftalık</value> 
   </data> 
-  <data name="USER_BALANCE_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_BALANCE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_BALANCE_CLOSE_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_BALANCE_CLOSE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_BILLING_OPTIONS_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_BILLING_OPTIONS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_EMAIL_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_EMAIL_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_USER_GROUP_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_USER_GROUP_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_NEGATIVE_BALANCE_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_NEGATIVE_BALANCE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_PASSWORD_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_PASSWORD_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_PICTURE_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_PICTURE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_RENAME_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_RENAME_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_SMART_CARD_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_SMART_CARD_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_USAGE_SESSION_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_USAGE_SESSION_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="BILLING_OPTION_NONE_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="BILLING_OPTION_DISABLE_TIME_OFFER_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="BILLING_OPTION_DISABLE_FIXED_TIME_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="BILLING_OPTION_DISABLE_DEPOSITS_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_EMAIL" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_FACEBOOK_MESSENGER_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_INSTAGRAM_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_SMS_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_TELEGRAM_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_TWITTER_DM_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_VIBER_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_WHATS_APP_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_WE_CHAT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_HOST_HAS_RESERVED_GUEST_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_HOST_HAS_RESERVED_GUEST_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_HOST_IN_USE_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_HOST_IN_USE_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_HOST_IS_RESERVED_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_HOST_IS_RESERVED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPY_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPY_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="WAITING_LINE_SATE_ACTIVE_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="WAITING_LINE_SATE_PROCESSED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="WAITING_LINE_SATE_CANCELED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="STOCK_TRANSACTION_TYPE_ADD_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="STOCK_TRANSACTION_TYPE_REMOVE_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="STOCK_TRANSACTION_TYPE_RETURN_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="STOCK_TRANSACTION_TYPE_SALE_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="STOCK_TRANSACTION_TYPE_SET_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="DEPOSIT_TRANSACTION_TYPE_CHARGE_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="DEPOSIT_TRANSACTION_TYPE_CREDIT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="DEPOSIT_TRANSACTION_TYPE_DEPOSIT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="DEPOSIT_TRANSACTION_TYPE_WITHDRAW_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_SESSION_STATE_ACTIVE_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_SESSION_STATE_NONE_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_SESSION_STATE_ENDED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_SESSION_STATE_PENDING_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_SESSION_STATE_PAUSED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_SESSION_STATE_MOVED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="ENTITY_EVENT_TYPE_ADDED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="ENTITY_EVENT_TYPE_REMOVED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="ENTITY_EVENT_TYPE_MODIFIED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="TASK_TYPE_JUNCTION_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="TASK_TYPE_NOTIFICATION_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="TASK_TYPE_PROCESS_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="TASK_TYPE_SCRIPT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_ACCOUNT_DISABLED_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_ACCOUNT_DISABLED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_ALREADY_LOGGED_IN_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_ALREADY_LOGGED_IN_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_DENIED_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_DENIED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_FAILED_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_FAILED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INSUFFICIENT_BALANCE_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INSUFFICIENT_BALANCE_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_CREDENTIALS_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_CREDENTIALS_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_HOST_ID_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_HOST_ID_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_PARAMETERS_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_PARAMETERS_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_PASSWORD_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_PASSWORD_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_SLOT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_SLOT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_USERNAME_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_USERNAME_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_USER_GROUP_ID_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_USER_GROUP_ID_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_USER_ID_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_USER_ID_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_LOGIN_IN_PROGRESS_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_LOGIN_IN_PROGRESS_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_LOGOUT_IN_PROGRESS_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_LOGOUT_IN_PROGRESS_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_MAXIMUM_SESSIONS_REACHED_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_MAXIMUM_SESSIONS_REACHED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_NOT_IN_WAITING_LINE_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_NOT_IN_WAITING_LINE_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_OPERATOR_USER_GROUP_DENIED_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_OPERATOR_USER_GROUP_DENIED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_RESTRICTED_BY_AGE_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_RESTRICTED_BY_AGE_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_SLOT_IN_USE_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_SLOT_IN_USE_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_SUCCESS_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INVOICE_STATUS_PAID_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INVOICE_STATUS_PARTIALLY_PAID_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INVOICE_STATUS_UNPAID_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_SESSION_STATE_GRACE_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
 </root>

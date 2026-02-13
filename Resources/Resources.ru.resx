@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?> 
+﻿<?xml version="1.0" encoding="utf-8"?> 
 <root> 
   <!--
   Loco xml export: ResX - .NET resources
   Project: Gizmo.Web.Api.Models
   Locale: ru-RU, Russian (Russia)
   Exported by: Oleg Savelos
-  Exported at: Wed, 04 Feb 2026 18:14:57 +0200 
+  Exported at: Fri, 13 Feb 2026 17:36:45 +0200 
   --> 
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
@@ -71,777 +71,263 @@
   <metadata name="locoLocaleName" xml:space="preserve">
     <value>Russian (Russia)</value>
   </metadata> 
-  <data name="ASSISTANCE_REQUEST_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="ASSISTANCE_REQUEST_CHANGE_EVENT_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="ASSISTANCE_REQUEST_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="ASSISTANCE_REQUEST_CREATED_EVENT_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="ASSISTANCE_REQUEST_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="ASSISTANCE_REQUEST_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_ERROR_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_ERROR_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_INVALID_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_INVALID_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_NETWORK_ERROR_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_NETWORK_ERROR_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_NO_TOKEN_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_NO_TOKEN_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_UNAUTHORIZED_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_UNAUTHORIZED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_VALID_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_VALID_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="AUTHORIZATION_RESULT_ERROR_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="AUTHORIZATION_RESULT_ERROR_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="AUTHORIZATION_RESULT_INVALID_ID_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="AUTHORIZATION_RESULT_INVALID_ID_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="AUTHORIZATION_RESULT_NETWORK_ERROR_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="AUTHORIZATION_RESULT_NETWORK_ERROR_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="AUTHORIZATION_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="AUTHORIZATION_RESULT_SUCCESS_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="AUTHORIZATION_RESULT_TOKEN_EXPIRED_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="AUTHORIZATION_RESULT_TOKEN_EXPIRED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="AUTHORIZATION_RESULT_UNAUTHORIZED_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="AUTHORIZATION_RESULT_UNAUTHORIZED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="AUTHORIZATION_WARNINGS_FUTURE_PAYMENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="AUTHORIZATION_WARNINGS_FUTURE_PAYMENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="AUTHORIZATION_WARNINGS_NONE_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="AUTHORIZATION_WARNINGS_NONE_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="AUTHORIZATION_WARNINGS_PAYMENT_FAILURE_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="AUTHORIZATION_WARNINGS_PAYMENT_FAILURE_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="BRANCH_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="BRANCH_CREATED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="BRANCH_DELETED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="BRANCH_DELETED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="BRANCH_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="BRANCH_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="BRANCH_OPERATOR_ADDED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="BRANCH_OPERATOR_ADDED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="BRANCH_OPERATOR_DEFAULT_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="BRANCH_OPERATOR_DEFAULT_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="BRANCH_OPERATOR_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="BRANCH_OPERATOR_REMOVED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="BRANCH_UNDELETED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="BRANCH_UNDELETED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="BRANCH_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="BRANCH_UPDATED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="DEVICE_BARCODE_SCANNED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="DEVICE_BARCODE_SCANNED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="DEVICE_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="DEVICE_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="DEVICE_SMART_CARD_READER_DATA_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="DEVICE_SMART_CARD_READER_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="DISCOUNT_APPLY_TYPE_ORDER" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="DISCOUNT_APPLY_TYPE_ORDER_LINE" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="DISCOUNT_CALCULATION_TYPE_FIXED" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="DISCOUNT_CALCULATION_TYPE_PERCENTAGE" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="DISCOUNT_REWARD_TYPE_BONUS" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="DISCOUNT_REWARD_TYPE_DISCOUNT" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="DOCUMENT_TYPES_CONSIGNMENT_NOTE" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="DOCUMENT_TYPES_DELIVERY_NOTE" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="DOCUMENT_TYPES_DISPATCH_NOTE" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="DOCUMENT_TYPES_INVOICE" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="DOCUMENT_TYPES_STOCK_TAKE_REPORT" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="DOCUMENT_TYPES_WORK_ORDER" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="DOCUMENT_TYPES_WRITE_OFF_REPORT" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="ENTITY_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="ENTITY_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="ENTITY_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="ENTITY_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_COMPUTER_CLIENT_MODULE_VERSION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_COMPUTER_CLIENT_MODULE_VERSION_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_COMPUTER_CONNECTION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_COMPUTER_CONNECTION_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_COMPUTER_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_COMPUTER_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_COMPUTER_INPUT_LOCK_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_COMPUTER_INPUT_LOCK_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_COMPUTER_MAINTENANCE_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_COMPUTER_MAINTENANCE_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_COMPUTER_SECURITY_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_COMPUTER_SECURITY_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_IN_ORDER_STATE_CHANED_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_IN_ORDER_STATE_CHANED_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_LAYOUT_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_LAYOUT_CREATED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_LAYOUT_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_LAYOUT_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_LAYOUT_GROUP_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_LAYOUT_GROUP_CREATED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_LAYOUT_GROUP_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_LAYOUT_GROUP_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_LAYOUT_GROUP_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_LAYOUT_GROUP_REMOVED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_LAYOUT_GROUP_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_LAYOUT_GROUP_UPDATED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_LAYOUT_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_LAYOUT_REMOVED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_LAYOUT_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_LAYOUT_UPDATED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_LOCK_STATE_CHANED_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_LOCK_STATE_CHANED_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INSTANCE_AUTHENTICATION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INSTANCE_AUTHENTICATION_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INSTANCE_AUTHORIZATION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INSTANCE_AUTHORIZATION_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INSTANCE_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INSTANCE_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INSTANCE_ID_TYPE_HARDWARE_ID_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INSTANCE_ID_TYPE_HARDWARE_ID_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INSTANCE_ID_TYPE_INSTANCE_ID_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INSTANCE_ID_TYPE_INSTANCE_ID_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INVENTORY_ADJUSTMENT_REASONS_DAMAGED" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INVENTORY_ADJUSTMENT_REASONS_DAMAGED_ITEM" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INVENTORY_ADJUSTMENT_REASONS_EXPIRED" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INVENTORY_ADJUSTMENT_REASONS_FORCE_MAJOR" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INVENTORY_ADJUSTMENT_REASONS_LOST" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INVENTORY_ADJUSTMENT_REASONS_NOT_IN_DEMAND" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INVENTORY_ADJUSTMENT_TYPE_SALE_BY_COST" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INVENTORY_ADJUSTMENT_TYPE_SALE_BY_PRICE" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INVENTORY_ADJUSTMENT_TYPE_WRITE_OFF" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INVENTORY_TRANSFER_REASONS_FOR_ADJUSTMENT" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INVENTORY_TRANSFER_REASONS_IN_DEMAND" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INVENTORY_TRANSFER_REASONS_NOT_IN_DEMAND" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INVENTORY_TYPE_ADJUSTMENT" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INVENTORY_TYPE_INBOUND" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INVENTORY_TYPE_TRANSFER" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INVOICE_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INVOICE_CREATED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INVOICE_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INVOICE_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INVOICE_PAYMENT_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INVOICE_PAYMENT_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LICENSE_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LICENSE_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LICENSE_STATE_DISABLED_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LICENSE_STATE_DISABLED_INSTANCE_ID_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LICENSE_STATE_DISABLED_INSTANCE_ID_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LICENSE_STATE_DISABLED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LICENSE_STATE_EXPIRED_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LICENSE_STATE_EXPIRED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LICENSE_STATE_INVALID_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LICENSE_STATE_INVALID_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LICENSE_STATE_UNAUTHORIZED_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LICENSE_STATE_UNAUTHORIZED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LICENSE_STATE_VALID_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LICENSE_STATE_VALID_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LICENSE_TYPE_NORMAL_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LICENSE_TYPE_NORMAL_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LICENSE_TYPE_TRIAL_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LICENSE_TYPE_TRIAL_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LICENSE_TYPE_UNDETERMINED_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LICENSE_TYPE_UNDETERMINED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOG_CLEARED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOG_CLEARED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOG_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOG_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="MAPPING_TYPE_NETWORK_DRIVE" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="MAPPING_TYPE_VIRTUAL_DRIVE" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="MAPPING_TYPE_VIRTUAL_FOLDER" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="NOTIFICATION_TYPE_AUDIBLE" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="NOTIFICATION_TYPE_NONE" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="NOTIFICATION_TYPE_VISUAL" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="NOTIFICATION_TYPE_VISUAL_AND_AUDIBLE" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="OPTIONS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="OPTIONS_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="OPTIONS_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="OPTIONS_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="ORDER_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="ORDER_CREATED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="ORDER_DELIVERY_STATUS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="ORDER_DELIVERY_STATUS_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="ORDER_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="ORDER_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="ORDER_LINE_DELIVERY_STATUS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="ORDER_LINE_DELIVERY_STATUS_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="ORDER_STATUS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="ORDER_STATUS_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PAYMENT_INTENT_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PAYMENT_INTENT_COMPLETED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PAYMENT_INTENT_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PAYMENT_INTENT_CREATED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PAYMENT_INTENT_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PAYMENT_INTENT_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PRODUCT_STOCK_CHANGE_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PRODUCT_STOCK_CHANGE_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PRODUCT_STOCK_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PRODUCT_STOCK_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="REPORT_PRESET_ADDED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="REPORT_PRESET_ADDED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="REPORT_PRESET_RANGE_DAY_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="REPORT_PRESET_RANGE_MONTH_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="REPORT_PRESET_RANGE_WEEK_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="REPORT_PRESET_RANGE_YEAR_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="REPORT_PRESET_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="REPORT_PRESET_REMOVED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="REPORT_PRESET_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="REPORT_PRESET_UPDATED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_ACTIVATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_ACTIVATED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_CANCELLED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_CANCELLED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_COMPLETED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_CREATED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_EXPIRED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_EXPIRED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_HOST_ACTIVATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_HOST_ACTIVATED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_HOST_ADDED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_HOST_ADDED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_HOST_CANCELLED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_HOST_CANCELLED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_HOST_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_HOST_COMPLETED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_HOST_EXPIRED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_HOST_EXPIRED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_HOST_MOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_HOST_MOVED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_HOST_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_HOST_UPDATED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_UPDATED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_USER_ADDED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_USER_ADDED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_USER_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_USER_REMOVED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESTRICTION_TYPE_CLASS_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESTRICTION_TYPE_FILE_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESTRICTION_TYPE_TRAY_ICON" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESTRICTION_TYPE_UNSET" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESTRICTION_TYPE_WINDOW_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="SCHEDULE_TYPE_DAILY" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="SCHEDULE_TYPE_MONTHLY" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="SCHEDULE_TYPE_ONE_TIME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="SCHEDULE_TYPE_WEEKLY" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="SCHEDULE_TYPE_YEARLY" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="SHIFT_ENDED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="SHIFT_ENDED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="SHIFT_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="SHIFT_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="SHIFT_LOCKED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="SHIFT_LOCKED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="SHIFT_STARTED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="SHIFT_STARTED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="SHIFT_UNLOCKED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="SHIFT_UNLOCKED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
   <data name="STOCK_LEVEL_TYPE_ANY" xml:space="preserve"> 
     <value>Любой</value> 
   </data> 
@@ -857,159 +343,57 @@
   <data name="STOCK_TYPE_WAREHOUSE" xml:space="preserve"> 
     <value>Склад</value> 
   </data> 
-  <data name="TARGET_GROUP_REQUIREMENT_ALL" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="TARGET_GROUP_REQUIREMENT_ANY" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="TARGET_REQUIREMENT_ALL" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="TARGET_REQUIREMENT_AMOUNT" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="TARGET_REQUIREMENT_ANY" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="TARGET_REQUIREMENT_COUNT" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_ENABLED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_ENABLED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_SESSION_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_SESSION_CREATED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_SESSION_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_SESSION_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_SESSION_MOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_SESSION_MOVED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_SESSION_STATE_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_SESSION_STATE_CHANGED_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="WAITING_LINE_ESTIMATION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="WAITING_LINE_ESTIMATION_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="WAITING_LINE_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="WAITING_LINE_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="WAITING_LINE_TIMED_OUT_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="WAITING_LINE_TIMED_OUT_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="WAITING_LINE_USER_ADDED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="WAITING_LINE_USER_ADDED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="WAITING_LINE_USER_MOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="WAITING_LINE_USER_MOVED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="WAITING_LINE_USER_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="WAITING_LINE_USER_REMOVED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="SHIFT_COUNT_TYPE_DEFAULT" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="SHIFT_COUNT_TYPE_SHIFT_CLOSE" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="SHIFT_COUNT_TYPE_SHIFT_OPEN" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PROMOTION_CODE_TYPE_PUBLIC_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PROMOTION_CODE_TYPE_RESTRICTED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PAYMENT_TRANSACTION_TYPE_DEPOSIT_PAYMENT" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PAYMENT_TRANSACTION_TYPE_DEPOSIT_PAYMENT_REFUND" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PAYMENT_TRANSACTION_TYPE_INVOICE_PAYMENT" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PAYMENT_TRANSACTION_TYPE_INVOICE_PAYMENT_REFUND" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PAYMENT_TRANSACTION_TYPE_PAY_IN" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PAYMENT_TRANSACTION_TYPE_PAY_OUT" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PAYMENT_INTENT_STATE_CANCELLED" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PAYMENT_INTENT_STATE_COMPLETED" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PAYMENT_INTENT_STATE_EXPIRED" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PAYMENT_INTENT_STATE_FAILED" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PAYMENT_INTENT_STATE_PENDING" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PAYMENT_INTENT_STATE_CAPTURED" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PAYMENT_INTENT_STATE_DECLINED" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_PAYMENT_STATUS_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="RESERVATION_PAYMENT_STATUS_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PAYMENT_INTENT_CAPTURED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
   <data name="PAYMENT_INTENT_CAPTURED_EVENT_NAME" xml:space="preserve"> 
     <value>Захваченный</value> 
   </data> 
@@ -1070,382 +454,130 @@
   <data name="PROMOTION_LIMIT_TYPE_WEEKLY" xml:space="preserve"> 
     <value>Еженедельно</value> 
   </data> 
-  <data name="USER_BALANCE_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_BALANCE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_BALANCE_CLOSE_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_BALANCE_CLOSE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_BILLING_OPTIONS_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_BILLING_OPTIONS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_EMAIL_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_EMAIL_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_USER_GROUP_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_USER_GROUP_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_NEGATIVE_BALANCE_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_NEGATIVE_BALANCE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_PASSWORD_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_PASSWORD_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_PICTURE_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_PICTURE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_RENAME_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_RENAME_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_SMART_CARD_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_SMART_CARD_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_USAGE_SESSION_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_USAGE_SESSION_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="BILLING_OPTION_NONE_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="BILLING_OPTION_DISABLE_TIME_OFFER_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="BILLING_OPTION_DISABLE_FIXED_TIME_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="BILLING_OPTION_DISABLE_DEPOSITS_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_EMAIL" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_FACEBOOK_MESSENGER_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_INSTAGRAM_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_SMS_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_TELEGRAM_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_TWITTER_DM_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_VIBER_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_WHATS_APP_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_WE_CHAT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_HOST_HAS_RESERVED_GUEST_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_HOST_HAS_RESERVED_GUEST_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_HOST_IN_USE_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_HOST_IN_USE_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_HOST_IS_RESERVED_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_HOST_IS_RESERVED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPY_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPY_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="WAITING_LINE_SATE_ACTIVE_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="WAITING_LINE_SATE_PROCESSED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="WAITING_LINE_SATE_CANCELED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="STOCK_TRANSACTION_TYPE_ADD_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="STOCK_TRANSACTION_TYPE_REMOVE_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="STOCK_TRANSACTION_TYPE_RETURN_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="STOCK_TRANSACTION_TYPE_SALE_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="STOCK_TRANSACTION_TYPE_SET_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="DEPOSIT_TRANSACTION_TYPE_CHARGE_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="DEPOSIT_TRANSACTION_TYPE_CREDIT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="DEPOSIT_TRANSACTION_TYPE_DEPOSIT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="DEPOSIT_TRANSACTION_TYPE_WITHDRAW_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_SESSION_STATE_ACTIVE_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_SESSION_STATE_NONE_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_SESSION_STATE_ENDED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_SESSION_STATE_PENDING_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_SESSION_STATE_PAUSED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_SESSION_STATE_MOVED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="ENTITY_EVENT_TYPE_ADDED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="ENTITY_EVENT_TYPE_REMOVED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="ENTITY_EVENT_TYPE_MODIFIED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="TASK_TYPE_JUNCTION_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="TASK_TYPE_NOTIFICATION_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="TASK_TYPE_PROCESS_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="TASK_TYPE_SCRIPT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_ACCOUNT_DISABLED_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_ACCOUNT_DISABLED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_ALREADY_LOGGED_IN_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_ALREADY_LOGGED_IN_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_DENIED_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_DENIED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_FAILED_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_FAILED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INSUFFICIENT_BALANCE_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INSUFFICIENT_BALANCE_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_CREDENTIALS_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_CREDENTIALS_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_HOST_ID_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_HOST_ID_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_PARAMETERS_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_PARAMETERS_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_PASSWORD_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_PASSWORD_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_SLOT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_SLOT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_USERNAME_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_USERNAME_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_USER_GROUP_ID_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_USER_GROUP_ID_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_USER_ID_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_USER_ID_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_LOGIN_IN_PROGRESS_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_LOGIN_IN_PROGRESS_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_LOGOUT_IN_PROGRESS_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_LOGOUT_IN_PROGRESS_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_MAXIMUM_SESSIONS_REACHED_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_MAXIMUM_SESSIONS_REACHED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_NOT_IN_WAITING_LINE_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_NOT_IN_WAITING_LINE_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_OPERATOR_USER_GROUP_DENIED_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_OPERATOR_USER_GROUP_DENIED_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_RESTRICTED_BY_AGE_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_RESTRICTED_BY_AGE_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_SLOT_IN_USE_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_SLOT_IN_USE_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="LOGIN_RESULT_SUCCESS_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INVOICE_STATUS_PAID_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INVOICE_STATUS_PARTIALLY_PAID_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="INVOICE_STATUS_UNPAID_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="USER_SESSION_STATE_GRACE_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
 </root>
