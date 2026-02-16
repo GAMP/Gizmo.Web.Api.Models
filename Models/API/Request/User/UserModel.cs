@@ -194,10 +194,10 @@ namespace Gizmo.Web.Api.Models
         public bool IsVerified { get; set; }
 
         /// <summary>
-        /// Whether the user has notes.
+        /// Current note severity.
         /// </summary>
         [MessagePack.Key(25)]
-        public bool HasNotes { get; set; }
+        public UserNoteSeverityState NoteSeverity { get; set; }
 
         /// <summary>
         /// Whether the user has checked out assets.
@@ -259,10 +259,10 @@ namespace Gizmo.Web.Api.Models
         public bool IsDeleted { get; set; }
 
         /// <summary>
-        /// Whether the user has notes.
+        /// Current note severity.
         /// </summary>
         [MessagePack.Key(6)]
-        public bool HasNotes { get; set; }
+        public UserNoteSeverityState NoteSeverity { get; set; }
 
         /// <summary>
         /// Whether the user has checked out assets.

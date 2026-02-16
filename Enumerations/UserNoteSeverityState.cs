@@ -1,23 +1,28 @@
 ﻿namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Note severity.
+    /// User note state enumeration.
     /// </summary>
-    public enum NoteSeverity
+    public enum UserNoteSeverityState
     {
+        /// <summary>
+        /// User does not have any notes.
+        /// </summary>
+        None = 0,
+
         /// <summary>
         /// Blue.
         /// </summary>
-        Blue = 0,
+        Blue = 1,
 
         /// <summary>
         /// Orange.
         /// </summary>
-        Orange = 1,
+        Orange = 2,
 
         /// <summary>
         /// Purple.
         /// </summary>
-        Purple = 2,
+        Purple = 3,
     }
 }
