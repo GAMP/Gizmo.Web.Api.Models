@@ -11,8 +11,6 @@ namespace Gizmo.Web.Api.Models
     [MessagePackObject]
     public sealed class UserOrderInvoiceModel : IUserOrderInvoiceModel, IModelIntIdentifier
     {
-        #region PROPERTIES
-
         /// <summary>
         /// The Id of the object.
         /// </summary>
@@ -36,7 +34,5 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [Key(3)]
         public bool IsVoided { get; set; }
-
-        #endregion
     }
 }

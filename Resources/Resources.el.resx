@@ -1,12 +1,64 @@
-﻿<?xml version="1.0" encoding="utf-8"?> 
-<root> 
-  <!--
-  Loco xml export: ResX - .NET resources
-  Project: Gizmo.Web.Api.Models
-  Locale: el-GR, Greek (Greece)
-  Exported by: Oleg Savelos
-  Exported at: Fri, 13 Feb 2026 17:36:44 +0200 
-  --> 
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
@@ -60,578 +112,171 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="locoLocaleCode">
+  <data name="ASSISTANCE_REQUEST_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει αλλαγή κατάστασης αιτήματος βοήθειας</value>
+  </data>
+  <data name="ASSISTANCE_REQUEST_CHANGE_EVENT_EVENT_NAME" xml:space="preserve">
+    <value>Αλλαγή</value>
+  </data>
+  <data name="ASSISTANCE_REQUEST_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει τη δημιουργία αιτήματος βοήθειας</value>
+  </data>
+  <data name="ASSISTANCE_REQUEST_CREATED_EVENT_EVENT_NAME" xml:space="preserve">
+    <value>Δημιουργήθηκε</value>
+  </data>
+  <data name="ASSISTANCE_REQUEST_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάντα που σχετίζονται με το αίτημα βοήθειας</value>
+  </data>
+  <data name="ASSISTANCE_REQUEST_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Αίτημα βοήθειας</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>Ο έλεγχος ταυτότητας απέτυχε λόγω σφάλματος</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_ERROR_NAME" xml:space="preserve">
+    <value>Σφάλμα</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_INVALID_DESCRIPTION" xml:space="preserve">
+    <value>Η κατάσταση ελέγχου ταυτότητας δεν είναι έγκυρη</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_INVALID_NAME" xml:space="preserve">
+    <value>Μη έγκυρο</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_NETWORK_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>Ο έλεγχος ταυτότητας απέτυχε λόγω σφάλματος δικτύου</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_NETWORK_ERROR_NAME" xml:space="preserve">
+    <value>Σφάλμα δικτύου</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_NO_TOKEN_DESCRIPTION" xml:space="preserve">
+    <value>Δεν υπάρχει διακριτικό για έλεγχο ταυτότητας</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_NO_TOKEN_NAME" xml:space="preserve">
+    <value>Χωρίς διακριτικό</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_UNAUTHORIZED_DESCRIPTION" xml:space="preserve">
+    <value>Μη εξουσιοδοτημένος</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_UNAUTHORIZED_NAME" xml:space="preserve">
+    <value>Μη εξουσιοδοτημένος</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_VALID_DESCRIPTION" xml:space="preserve">
+    <value>Η πιστοποίηση είναι έγκυρη</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_VALID_NAME" xml:space="preserve">
+    <value>Έγκυρο</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>Απέτυχε λόγω σφάλματος</value>
+  </data>
+  <data name="RESERVATION_USER_REMOVED_EVENT_NAME" xml:space="preserve">
+    <value>Διαγράφηκε</value>
+  </data>
+  <data name="RESTRICTION_TYPE_CLASS_NAME" xml:space="preserve">
+    <value>Όνομα Κλάσης</value>
+  </data>
+  <data name="RESTRICTION_TYPE_FILE_NAME" xml:space="preserve">
+    <value>Όνομα αρχείου</value>
+  </data>
+  <data name="RESTRICTION_TYPE_UNSET" xml:space="preserve">
+    <value>Μη ορισμένο</value>
+  </data>
+  <data name="RESTRICTION_TYPE_WINDOW_NAME" xml:space="preserve">
+    <value>Όνομα παραθύρου</value>
+  </data>
+  <data name="SCHEDULE_TYPE_DAILY" xml:space="preserve">
+    <value>Ημερήσια</value>
+  </data>
+  <data name="SCHEDULE_TYPE_MONTHLY" xml:space="preserve">
+    <value>Μηνιαία</value>
+  </data>
+  <data name="SCHEDULE_TYPE_ONE_TIME" xml:space="preserve">
+    <value>Μια φορά</value>
+  </data>
+  <data name="SCHEDULE_TYPE_WEEKLY" xml:space="preserve">
+    <value>Εβδομαδιαία</value>
+  </data>
+  <data name="SCHEDULE_TYPE_YEARLY" xml:space="preserve">
+    <value>Ετήσια</value>
+  </data>
+  <data name="TARGET_REQUIREMENT_ALL" xml:space="preserve">
+    <value>Όλα</value>
+  </data>
+  <data name="TARGET_REQUIREMENT_AMOUNT" xml:space="preserve">
+    <value>Ποσό</value>
+  </data>
+  <data name="TARGET_REQUIREMENT_ANY" xml:space="preserve">
+    <value>Οποιοδήποτε</value>
+  </data>
+  <data name="TARGET_REQUIREMENT_COUNT" xml:space="preserve">
+    <value>Πλήθος</value>
+  </data>
+  <data name="USER_ENABLED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει την ενεργοποίηση ενός χρήστη</value>
+  </data>
+  <data name="DEVICE_FISCAL_PRINTER_ERROR_EVENT_NAME" xml:space="preserve">
+    <value>Σφάλμα</value>
+  </data>
+  <data name="DEVICE_PAYMENT_TERMINAL_ERROR_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Σφάλμα τερματικού πληρωμής</value>
+  </data>
+  <data name="DEVICE_PAYMENT_TERMINAL_ERROR_EVENT_NAME" xml:space="preserve">
+    <value>Σφάλμα</value>
+  </data>
+  <data name="ORDER_STATUS_FILTER_CANCELED" xml:space="preserve">
+    <value>Ακυρώθηκε</value>
+  </data>
+  <data name="ORDER_STATUS_FILTER_COMPLETED" xml:space="preserve">
+    <value>Ολοκληρώθηκε</value>
+  </data>
+  <data name="ORDER_STATUS_FILTER_ON_HOLD" xml:space="preserve">
+    <value>Σε αναμονή</value>
+  </data>
+  <data name="ORDER_STATUS_FILTER_PROCESSING" xml:space="preserve">
+    <value>Επεξεργασία</value>
+  </data>
+  <data name="PROMOTION_LIMIT_TYPE_TOTAL" xml:space="preserve">
+    <value>Σύνολο</value>
+  </data>
+  <data name="PROMOTION_LIMIT_TYPE_PER_USER" xml:space="preserve">
+    <value>Ανά χρήστη</value>
+  </data>
+  <data name="PROMOTION_LIMIT_TYPE_DAILY" xml:space="preserve">
+    <value>Ημερήσια</value>
+  </data>
+  <data name="PROMOTION_LIMIT_TYPE_WEEKLY" xml:space="preserve">
+    <value>Εβδομαδιαία</value>
+  </data>
+  <data name="ENTITY_EVENT_TYPE_ADDED_NAME" xml:space="preserve">
+    <value>Προστέθηκε</value>
+  </data>
+  <data name="ENTITY_EVENT_TYPE_REMOVED_NAME" xml:space="preserve">
+    <value>Αφαιρέθηκε</value>
+  </data>
+  <data name="ENTITY_EVENT_TYPE_MODIFIED_NAME" xml:space="preserve">
+    <value>Τροποποιήθηκε</value>
+  </data>
+  <data name="TASK_TYPE_JUNCTION_NAME" xml:space="preserve">
+    <value>Σύνδεση φακέλων</value>
+  </data>
+  <data name="TASK_TYPE_NOTIFICATION_NAME" xml:space="preserve">
+    <value>Ειδοποίηση</value>
+  </data>
+  <data name="TASK_TYPE_PROCESS_NAME" xml:space="preserve">
+    <value>Διεργασία</value>
+  </data>
+  <data name="TASK_TYPE_SCRIPT_NAME" xml:space="preserve">
+    <value>Δέσμη Ενεργειών</value>
+  </data>
+  <data name="locoLocaleCode" xml:space="preserve">
     <value>el-GR</value>
-  </metadata>
-  <metadata name="locoLocaleName" xml:space="preserve">
+  </data>
+  <data name="locoLocaleName" xml:space="preserve">
     <value>Greek (Greece)</value>
-  </metadata> 
-  <data name="ASSISTANCE_REQUEST_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Υποδεικνύει αλλαγή κατάστασης αιτήματος βοήθειας</value> 
-  </data> 
-  <data name="ASSISTANCE_REQUEST_CHANGE_EVENT_EVENT_NAME" xml:space="preserve"> 
-    <value>Αλλαγή</value> 
-  </data> 
-  <data name="ASSISTANCE_REQUEST_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Υποδεικνύει τη δημιουργία αιτήματος βοήθειας</value> 
-  </data> 
-  <data name="ASSISTANCE_REQUEST_CREATED_EVENT_EVENT_NAME" xml:space="preserve"> 
-    <value>Δημιουργήθηκε</value> 
-  </data> 
-  <data name="ASSISTANCE_REQUEST_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Συμβάντα που σχετίζονται με το αίτημα βοήθειας</value> 
-  </data> 
-  <data name="ASSISTANCE_REQUEST_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Αίτημα βοήθειας</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_ERROR_DESCRIPTION" xml:space="preserve"> 
-    <value>Ο έλεγχος ταυτότητας απέτυχε λόγω σφάλματος</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_ERROR_NAME" xml:space="preserve"> 
-    <value>Σφάλμα</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_INVALID_DESCRIPTION" xml:space="preserve"> 
-    <value>Η κατάσταση ελέγχου ταυτότητας δεν είναι έγκυρη</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_INVALID_NAME" xml:space="preserve"> 
-    <value>Μη έγκυρο</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_NETWORK_ERROR_DESCRIPTION" xml:space="preserve"> 
-    <value>Ο έλεγχος ταυτότητας απέτυχε λόγω σφάλματος δικτύου</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_NETWORK_ERROR_NAME" xml:space="preserve"> 
-    <value>Σφάλμα δικτύου</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_NO_TOKEN_DESCRIPTION" xml:space="preserve"> 
-    <value>Δεν υπάρχει διακριτικό για έλεγχο ταυτότητας</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_NO_TOKEN_NAME" xml:space="preserve"> 
-    <value>Χωρίς διακριτικό</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_UNAUTHORIZED_DESCRIPTION" xml:space="preserve"> 
-    <value>Μη εξουσιοδοτημένος</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_UNAUTHORIZED_NAME" xml:space="preserve"> 
-    <value>Μη εξουσιοδοτημένος</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_VALID_DESCRIPTION" xml:space="preserve"> 
-    <value>Η πιστοποίηση είναι έγκυρη</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_VALID_NAME" xml:space="preserve"> 
-    <value>Έγκυρο</value> 
-  </data> 
-  <data name="AUTHORIZATION_RESULT_ERROR_DESCRIPTION" xml:space="preserve"> 
-    <value>Απέτυχε λόγω σφάλματος</value> 
-  </data> 
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-  <data name="RESERVATION_USER_REMOVED_EVENT_NAME" xml:space="preserve"> 
-    <value>Διαγράφηκε</value> 
-  </data> 
-  <data name="RESTRICTION_TYPE_CLASS_NAME" xml:space="preserve"> 
-    <value>Όνομα Κλάσης</value> 
-  </data> 
-  <data name="RESTRICTION_TYPE_FILE_NAME" xml:space="preserve"> 
-    <value>Όνομα αρχείου</value> 
-  </data> 
-   
-  <data name="RESTRICTION_TYPE_UNSET" xml:space="preserve"> 
-    <value>Μη ορισμένο</value> 
-  </data> 
-  <data name="RESTRICTION_TYPE_WINDOW_NAME" xml:space="preserve"> 
-    <value>Όνομα παραθύρου</value> 
-  </data> 
-  <data name="SCHEDULE_TYPE_DAILY" xml:space="preserve"> 
-    <value>Ημερήσια</value> 
-  </data> 
-  <data name="SCHEDULE_TYPE_MONTHLY" xml:space="preserve"> 
-    <value>Μηνιαία</value> 
-  </data> 
-  <data name="SCHEDULE_TYPE_ONE_TIME" xml:space="preserve"> 
-    <value>Μια φορά</value> 
-  </data> 
-  <data name="SCHEDULE_TYPE_WEEKLY" xml:space="preserve"> 
-    <value>Εβδομαδιαία</value> 
-  </data> 
-  <data name="SCHEDULE_TYPE_YEARLY" xml:space="preserve"> 
-    <value>Ετήσια</value> 
-  </data> 
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-  <data name="TARGET_REQUIREMENT_ALL" xml:space="preserve"> 
-    <value>Όλα</value> 
-  </data> 
-  <data name="TARGET_REQUIREMENT_AMOUNT" xml:space="preserve"> 
-    <value>Ποσό</value> 
-  </data> 
-  <data name="TARGET_REQUIREMENT_ANY" xml:space="preserve"> 
-    <value>Οποιοδήποτε</value> 
-  </data> 
-  <data name="TARGET_REQUIREMENT_COUNT" xml:space="preserve"> 
-    <value>Πλήθος</value> 
-  </data> 
-  <data name="USER_ENABLED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Υποδεικνύει την ενεργοποίηση ενός χρήστη</value> 
-  </data> 
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-  <data name="DEVICE_FISCAL_PRINTER_ERROR_EVENT_NAME" xml:space="preserve"> 
-    <value>Σφάλμα</value> 
-  </data> 
-  <data name="DEVICE_PAYMENT_TERMINAL_ERROR_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Σφάλμα τερματικού πληρωμής</value> 
-  </data> 
-  <data name="DEVICE_PAYMENT_TERMINAL_ERROR_EVENT_NAME" xml:space="preserve"> 
-    <value>Σφάλμα</value> 
-  </data> 
-   
-  <data name="ORDER_STATUS_FILTER_CANCELED" xml:space="preserve"> 
-    <value>Ακυρώθηκε</value> 
-  </data> 
-  <data name="ORDER_STATUS_FILTER_COMPLETED" xml:space="preserve"> 
-    <value>Ολοκληρώθηκε</value> 
-  </data> 
-  <data name="ORDER_STATUS_FILTER_ON_HOLD" xml:space="preserve"> 
-    <value>Σε αναμονή</value> 
-  </data> 
-  <data name="ORDER_STATUS_FILTER_PROCESSING" xml:space="preserve"> 
-    <value>Επεξεργασία</value> 
-  </data> 
-  <data name="PROMOTION_LIMIT_TYPE_TOTAL" xml:space="preserve"> 
-    <value>Σύνολο</value> 
-  </data> 
-  <data name="PROMOTION_LIMIT_TYPE_PER_USER" xml:space="preserve"> 
-    <value>Ανά χρήστη</value> 
-  </data> 
-  <data name="PROMOTION_LIMIT_TYPE_DAILY" xml:space="preserve"> 
-    <value>Ημερήσια</value> 
-  </data> 
-  <data name="PROMOTION_LIMIT_TYPE_WEEKLY" xml:space="preserve"> 
-    <value>Εβδομαδιαία</value> 
-  </data> 
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-  <data name="ENTITY_EVENT_TYPE_ADDED_NAME" xml:space="preserve"> 
-    <value>Προστέθηκε</value> 
-  </data> 
-  <data name="ENTITY_EVENT_TYPE_REMOVED_NAME" xml:space="preserve"> 
-    <value>Αφαιρέθηκε</value> 
-  </data> 
-  <data name="ENTITY_EVENT_TYPE_MODIFIED_NAME" xml:space="preserve"> 
-    <value>Τροποποιήθηκε</value> 
-  </data> 
-  <data name="TASK_TYPE_JUNCTION_NAME" xml:space="preserve"> 
-    <value>Σύνδεση φακέλων</value> 
-  </data> 
-  <data name="TASK_TYPE_NOTIFICATION_NAME" xml:space="preserve"> 
-    <value>Ειδοποίηση</value> 
-  </data> 
-  <data name="TASK_TYPE_PROCESS_NAME" xml:space="preserve"> 
-    <value>Διεργασία</value> 
-  </data> 
-  <data name="TASK_TYPE_SCRIPT_NAME" xml:space="preserve"> 
-    <value>Δέσμη Ενεργειών</value> 
-  </data> 
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
+  </data>
 </root>

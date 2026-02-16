@@ -1,12 +1,64 @@
-﻿<?xml version="1.0" encoding="utf-8"?> 
-<root> 
-  <!--
-  Loco xml export: ResX - .NET resources
-  Project: Gizmo.Web.Api.Models
-  Locale: pt-BR, Brazilian Portuguese
-  Exported by: Oleg Savelos
-  Exported at: Fri, 13 Feb 2026 17:36:45 +0200 
-  --> 
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
@@ -60,1392 +112,1392 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="locoLocaleCode">
+  <data name="ASSISTANCE_REQUEST_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica mudança no status da solicitação de assistência</value>
+  </data>
+  <data name="ASSISTANCE_REQUEST_CHANGE_EVENT_EVENT_NAME" xml:space="preserve">
+    <value>Alterar</value>
+  </data>
+  <data name="ASSISTANCE_REQUEST_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica a criação de um pedido de assistência</value>
+  </data>
+  <data name="ASSISTANCE_REQUEST_CREATED_EVENT_EVENT_NAME" xml:space="preserve">
+    <value>Criado</value>
+  </data>
+  <data name="ASSISTANCE_REQUEST_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Eventos relacionados a solicitações de assistência</value>
+  </data>
+  <data name="ASSISTANCE_REQUEST_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Solicitação de assistência</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>A autenticação falhou devido a um erro</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_ERROR_NAME" xml:space="preserve">
+    <value>Erro</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_INVALID_DESCRIPTION" xml:space="preserve">
+    <value>O estado de autenticação é inválido</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_INVALID_NAME" xml:space="preserve">
+    <value>Inválido</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_NETWORK_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>A autenticação falhou devido a um erro de rede</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_NETWORK_ERROR_NAME" xml:space="preserve">
+    <value>Erro de rede</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_NO_TOKEN_DESCRIPTION" xml:space="preserve">
+    <value>Não há token presente para autenticação</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_NO_TOKEN_NAME" xml:space="preserve">
+    <value>Sem token</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_UNAUTHORIZED_DESCRIPTION" xml:space="preserve">
+    <value>Não autorizado</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_UNAUTHORIZED_NAME" xml:space="preserve">
+    <value>Não autorizado</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_VALID_DESCRIPTION" xml:space="preserve">
+    <value>Autenticação válida</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_VALID_NAME" xml:space="preserve">
+    <value>Válida</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>Falhou devido a um erro</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_ERROR_NAME" xml:space="preserve">
+    <value>Erro</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_INVALID_ID_DESCRIPTION" xml:space="preserve">
+    <value>Falhou devido a um Id de instância inválido</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_INVALID_ID_NAME" xml:space="preserve">
+    <value>Id inválido</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_NETWORK_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>Falhou devido a um erro de rede</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_NETWORK_ERROR_NAME" xml:space="preserve">
+    <value>Erro de rede</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
+    <value>Autorização bem-sucedida</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_SUCCESS_NAME" xml:space="preserve">
+    <value>Sucesso</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_TOKEN_EXPIRED_DESCRIPTION" xml:space="preserve">
+    <value>Falhou devido a um token expirado</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_TOKEN_EXPIRED_NAME" xml:space="preserve">
+    <value>Token expirou</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_UNAUTHORIZED_DESCRIPTION" xml:space="preserve">
+    <value>Não autorizado</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_UNAUTHORIZED_NAME" xml:space="preserve">
+    <value>Não autorizado</value>
+  </data>
+  <data name="AUTHORIZATION_WARNINGS_FUTURE_PAYMENT_DESCRIPTION" xml:space="preserve">
+    <value>Os pagamentos futuros podem falhar devido ao vencimento do cartão.</value>
+  </data>
+  <data name="AUTHORIZATION_WARNINGS_FUTURE_PAYMENT_NAME" xml:space="preserve">
+    <value>Aviso de pagamento futuro</value>
+  </data>
+  <data name="AUTHORIZATION_WARNINGS_NONE_DESCRIPTION" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="AUTHORIZATION_WARNINGS_NONE_NAME" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="AUTHORIZATION_WARNINGS_PAYMENT_FAILURE_DESCRIPTION" xml:space="preserve">
+    <value>A tentativa de pagamento não foi bem-sucedida</value>
+  </data>
+  <data name="AUTHORIZATION_WARNINGS_PAYMENT_FAILURE_NAME" xml:space="preserve">
+    <value>Falha no pagamento de pagamentos</value>
+  </data>
+  <data name="BRANCH_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Evento criado pela filial</value>
+  </data>
+  <data name="BRANCH_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>Ramo criado</value>
+  </data>
+  <data name="BRANCH_DELETED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Evento de ramificação apagado</value>
+  </data>
+  <data name="BRANCH_DELETED_EVENT_NAME" xml:space="preserve">
+    <value>Apagado</value>
+  </data>
+  <data name="BRANCH_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Eventos relacionados com a filial</value>
+  </data>
+  <data name="BRANCH_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Filial</value>
+  </data>
+  <data name="BRANCH_OPERATOR_ADDED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Operador adicionou evento</value>
+  </data>
+  <data name="BRANCH_OPERATOR_ADDED_EVENT_NAME" xml:space="preserve">
+    <value>Operador adicionado</value>
+  </data>
+  <data name="BRANCH_OPERATOR_DEFAULT_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Evento de alteração do ramo predefinido dos operadores</value>
+  </data>
+  <data name="BRANCH_OPERATOR_DEFAULT_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Alteração da ramificação predefinida dos operadores</value>
+  </data>
+  <data name="BRANCH_OPERATOR_REMOVED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Operador removeu evento</value>
+  </data>
+  <data name="BRANCH_OPERATOR_REMOVED_EVENT_NAME" xml:space="preserve">
+    <value>Operador removido</value>
+  </data>
+  <data name="BRANCH_UNDELETED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Ramo evento anulado</value>
+  </data>
+  <data name="BRANCH_UNDELETED_EVENT_NAME" xml:space="preserve">
+    <value>Anular eliminação</value>
+  </data>
+  <data name="BRANCH_UPDATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Evento atualizado pela filial</value>
+  </data>
+  <data name="BRANCH_UPDATED_EVENT_NAME" xml:space="preserve">
+    <value>Filial actualizada</value>
+  </data>
+  <data name="DEVICE_BARCODE_SCANNED_EVENT_NAME" xml:space="preserve">
+    <value>Codigo de barras escaneado</value>
+  </data>
+  <data name="DEVICE_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Eventos relacionados ao dispositivo</value>
+  </data>
+  <data name="DEVICE_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Dispositivo</value>
+  </data>
+  <data name="DEVICE_SMART_CARD_READER_DATA_EVENT_NAME" xml:space="preserve">
+    <value>Evento de dados do leitor de cartão inteligente</value>
+  </data>
+  <data name="DEVICE_SMART_CARD_READER_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Evento de dados do leitor de cartão inteligente</value>
+  </data>
+  <data name="DISCOUNT_APPLY_TYPE_ORDER" xml:space="preserve">
+    <value>Pedido</value>
+  </data>
+  <data name="DISCOUNT_APPLY_TYPE_ORDER_LINE" xml:space="preserve">
+    <value>Linha de pedidos</value>
+  </data>
+  <data name="DISCOUNT_CALCULATION_TYPE_FIXED" xml:space="preserve">
+    <value>Corrigido</value>
+  </data>
+  <data name="DISCOUNT_CALCULATION_TYPE_PERCENTAGE" xml:space="preserve">
+    <value>Percentagem</value>
+  </data>
+  <data name="DISCOUNT_REWARD_TYPE_BONUS" xml:space="preserve">
+    <value>Bônus</value>
+  </data>
+  <data name="DISCOUNT_REWARD_TYPE_DISCOUNT" xml:space="preserve">
+    <value>Desconto</value>
+  </data>
+  <data name="DOCUMENT_TYPES_CONSIGNMENT_NOTE" xml:space="preserve">
+    <value>Carta de porte</value>
+  </data>
+  <data name="DOCUMENT_TYPES_DELIVERY_NOTE" xml:space="preserve">
+    <value>Nota de entrega</value>
+  </data>
+  <data name="DOCUMENT_TYPES_DISPATCH_NOTE" xml:space="preserve">
+    <value>Nota de despacho</value>
+  </data>
+  <data name="DOCUMENT_TYPES_INVOICE" xml:space="preserve">
+    <value>Factura</value>
+  </data>
+  <data name="DOCUMENT_TYPES_STOCK_TAKE_REPORT" xml:space="preserve">
+    <value>Relatório de inventário</value>
+  </data>
+  <data name="DOCUMENT_TYPES_WORK_ORDER" xml:space="preserve">
+    <value>Ordem de serviço</value>
+  </data>
+  <data name="DOCUMENT_TYPES_WRITE_OFF_REPORT" xml:space="preserve">
+    <value>Relatório de baixa contábil</value>
+  </data>
+  <data name="ENTITY_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica uma alteração na entidade da Base de dados</value>
+  </data>
+  <data name="ENTITY_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Alteração da entidade da base de dados</value>
+  </data>
+  <data name="ENTITY_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Eventos relacionados à entidade da base de dados</value>
+  </data>
+  <data name="ENTITY_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Entidade da base de dados</value>
+  </data>
+  <data name="HOST_COMPUTER_CLIENT_MODULE_VERSION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Evento de alteração da versão do cliente</value>
+  </data>
+  <data name="HOST_COMPUTER_CLIENT_MODULE_VERSION_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Versão do cliente alterada</value>
+  </data>
+  <data name="HOST_COMPUTER_CONNECTION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Evento de alteração de conexão</value>
+  </data>
+  <data name="HOST_COMPUTER_CONNECTION_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Conexão alterada</value>
+  </data>
+  <data name="HOST_COMPUTER_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Organizar eventos relacionados com informática</value>
+  </data>
+  <data name="HOST_COMPUTER_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Computador terminal</value>
+  </data>
+  <data name="HOST_COMPUTER_INPUT_LOCK_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Evento de alteração do bloqueio de entrada</value>
+  </data>
+  <data name="HOST_COMPUTER_INPUT_LOCK_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Bloqueio de entrada alterado</value>
+  </data>
+  <data name="HOST_COMPUTER_MAINTENANCE_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Evento de alteração de manutenção</value>
+  </data>
+  <data name="HOST_COMPUTER_MAINTENANCE_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Manutenção alterada</value>
+  </data>
+  <data name="HOST_COMPUTER_SECURITY_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Evento de alteração de segurança</value>
+  </data>
+  <data name="HOST_COMPUTER_SECURITY_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Segurança alterada</value>
+  </data>
+  <data name="HOST_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Organizar eventos relacionados</value>
+  </data>
+  <data name="HOST_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Terminal</value>
+  </data>
+  <data name="HOST_IN_ORDER_STATE_CHANED_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Estado do pedido do terminal alterado</value>
+  </data>
+  <data name="HOST_IN_ORDER_STATE_CHANED_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Estado para disponivel alterado</value>
+  </data>
+  <data name="HOST_LAYOUT_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Layout do terminal criado evento</value>
+  </data>
+  <data name="HOST_LAYOUT_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>Layout do terminal criado</value>
+  </data>
+  <data name="HOST_LAYOUT_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Organizar eventos relacionados ao layout</value>
+  </data>
+  <data name="HOST_LAYOUT_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Layout do terminal</value>
+  </data>
+  <data name="HOST_LAYOUT_GROUP_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Grupo de layout do terminal criou evento</value>
+  </data>
+  <data name="HOST_LAYOUT_GROUP_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>Grupo de layout do terminal criado</value>
+  </data>
+  <data name="HOST_LAYOUT_GROUP_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Organizar eventos relacionados ao grupo de layout</value>
+  </data>
+  <data name="HOST_LAYOUT_GROUP_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Grupo de layout de terminal</value>
+  </data>
+  <data name="HOST_LAYOUT_GROUP_REMOVED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Grupo de layout do terminal removeu evento</value>
+  </data>
+  <data name="HOST_LAYOUT_GROUP_REMOVED_EVENT_NAME" xml:space="preserve">
+    <value>Grupo de layout do terminal removido</value>
+  </data>
+  <data name="HOST_LAYOUT_GROUP_UPDATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Evento de atualização do grupo de layout do terminal</value>
+  </data>
+  <data name="HOST_LAYOUT_GROUP_UPDATED_EVENT_NAME" xml:space="preserve">
+    <value>Grupo de layout do anfitrião atualizado</value>
+  </data>
+  <data name="HOST_LAYOUT_REMOVED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Layout do anfitrião removido do evento</value>
+  </data>
+  <data name="HOST_LAYOUT_REMOVED_EVENT_NAME" xml:space="preserve">
+    <value>Layout do host removido</value>
+  </data>
+  <data name="HOST_LAYOUT_UPDATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Evento de atualização do layout do anfitrião</value>
+  </data>
+  <data name="HOST_LAYOUT_UPDATED_EVENT_NAME" xml:space="preserve">
+    <value>Layout do anfitrião atualizado</value>
+  </data>
+  <data name="HOST_LOCK_STATE_CHANED_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Estado de bloqueio do host alterado</value>
+  </data>
+  <data name="HOST_LOCK_STATE_CHANED_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Estado do bloqueio alterado</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Evento de alteração da autenticação da instância</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>A autenticação da instância foi trocada</value>
+  </data>
+  <data name="INSTANCE_AUTHORIZATION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Evento de alteração da autorização da instância</value>
+  </data>
+  <data name="INSTANCE_AUTHORIZATION_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Autorização da instância alterada</value>
+  </data>
+  <data name="INSTANCE_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Eventos relacionados à instância</value>
+  </data>
+  <data name="INSTANCE_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Instância</value>
+  </data>
+  <data name="INSTANCE_ID_TYPE_HARDWARE_ID_DESCRIPTION" xml:space="preserve">
+    <value>Identificação do hardware</value>
+  </data>
+  <data name="INSTANCE_ID_TYPE_HARDWARE_ID_NAME" xml:space="preserve">
+    <value>Identificação do hardware</value>
+  </data>
+  <data name="INSTANCE_ID_TYPE_INSTANCE_ID_DESCRIPTION" xml:space="preserve">
+    <value>ID da instância</value>
+  </data>
+  <data name="INSTANCE_ID_TYPE_INSTANCE_ID_NAME" xml:space="preserve">
+    <value>ID da instância</value>
+  </data>
+  <data name="INVENTORY_ADJUSTMENT_REASONS_DAMAGED" xml:space="preserve">
+    <value>Embalagem danificada</value>
+  </data>
+  <data name="INVENTORY_ADJUSTMENT_REASONS_DAMAGED_ITEM" xml:space="preserve">
+    <value>Item danificado</value>
+  </data>
+  <data name="INVENTORY_ADJUSTMENT_REASONS_EXPIRED" xml:space="preserve">
+    <value>Expirado</value>
+  </data>
+  <data name="INVENTORY_ADJUSTMENT_REASONS_FORCE_MAJOR" xml:space="preserve">
+    <value>Força maior</value>
+  </data>
+  <data name="INVENTORY_ADJUSTMENT_REASONS_LOST" xml:space="preserve">
+    <value>Perdido</value>
+  </data>
+  <data name="INVENTORY_ADJUSTMENT_REASONS_NOT_IN_DEMAND" xml:space="preserve">
+    <value>Sem demanda</value>
+  </data>
+  <data name="INVENTORY_ADJUSTMENT_TYPE_SALE_BY_COST" xml:space="preserve">
+    <value>Venda pelo custo</value>
+  </data>
+  <data name="INVENTORY_ADJUSTMENT_TYPE_SALE_BY_PRICE" xml:space="preserve">
+    <value>Venda por preço</value>
+  </data>
+  <data name="INVENTORY_ADJUSTMENT_TYPE_WRITE_OFF" xml:space="preserve">
+    <value>Baixar</value>
+  </data>
+  <data name="INVENTORY_TRANSFER_REASONS_FOR_ADJUSTMENT" xml:space="preserve">
+    <value>Para ajuste</value>
+  </data>
+  <data name="INVENTORY_TRANSFER_REASONS_IN_DEMAND" xml:space="preserve">
+    <value>Em demanda</value>
+  </data>
+  <data name="INVENTORY_TRANSFER_REASONS_NOT_IN_DEMAND" xml:space="preserve">
+    <value>Sem demanda</value>
+  </data>
+  <data name="INVENTORY_TYPE_ADJUSTMENT" xml:space="preserve">
+    <value>Ajuste</value>
+  </data>
+  <data name="INVENTORY_TYPE_INBOUND" xml:space="preserve">
+    <value>Entrada</value>
+  </data>
+  <data name="INVENTORY_TYPE_TRANSFER" xml:space="preserve">
+    <value>Transferência</value>
+  </data>
+  <data name="INVOICE_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica a criação de uma factura</value>
+  </data>
+  <data name="INVOICE_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>Criado</value>
+  </data>
+  <data name="INVOICE_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Eventos relacionados con facturas</value>
+  </data>
+  <data name="INVOICE_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Factura</value>
+  </data>
+  <data name="INVOICE_PAYMENT_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica a criação de um pagamento de factura</value>
+  </data>
+  <data name="INVOICE_PAYMENT_EVENT_NAME" xml:space="preserve">
+    <value>Pagamento</value>
+  </data>
+  <data name="LICENSE_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Eventos relacionados com licenças</value>
+  </data>
+  <data name="LICENSE_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Licença</value>
+  </data>
+  <data name="LICENSE_STATE_DISABLED_DESCRIPTION" xml:space="preserve">
+    <value>A licença está desabilitada</value>
+  </data>
+  <data name="LICENSE_STATE_DISABLED_INSTANCE_ID_DESCRIPTION" xml:space="preserve">
+    <value>A identificação da instância está desabilitada/bloqueada</value>
+  </data>
+  <data name="LICENSE_STATE_DISABLED_INSTANCE_ID_NAME" xml:space="preserve">
+    <value>Id da instância desabilitada</value>
+  </data>
+  <data name="LICENSE_STATE_DISABLED_NAME" xml:space="preserve">
+    <value>Desabilitado</value>
+  </data>
+  <data name="LICENSE_STATE_EXPIRED_DESCRIPTION" xml:space="preserve">
+    <value>A licença expirou</value>
+  </data>
+  <data name="LICENSE_STATE_EXPIRED_NAME" xml:space="preserve">
+    <value>Expirado</value>
+  </data>
+  <data name="LICENSE_STATE_INVALID_DESCRIPTION" xml:space="preserve">
+    <value>A licença local não é válida</value>
+  </data>
+  <data name="LICENSE_STATE_INVALID_NAME" xml:space="preserve">
+    <value>Inválido</value>
+  </data>
+  <data name="LICENSE_STATE_UNAUTHORIZED_DESCRIPTION" xml:space="preserve">
+    <value>Não autorizado</value>
+  </data>
+  <data name="LICENSE_STATE_UNAUTHORIZED_NAME" xml:space="preserve">
+    <value>Não autorizado</value>
+  </data>
+  <data name="LICENSE_STATE_VALID_DESCRIPTION" xml:space="preserve">
+    <value>Válido</value>
+  </data>
+  <data name="LICENSE_STATE_VALID_NAME" xml:space="preserve">
+    <value>Válido</value>
+  </data>
+  <data name="LICENSE_TYPE_NORMAL_DESCRIPTION" xml:space="preserve">
+    <value>Licença normal</value>
+  </data>
+  <data name="LICENSE_TYPE_NORMAL_NAME" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="LICENSE_TYPE_TRIAL_DESCRIPTION" xml:space="preserve">
+    <value>Licença de avaliação</value>
+  </data>
+  <data name="LICENSE_TYPE_TRIAL_NAME" xml:space="preserve">
+    <value>Julgamento</value>
+  </data>
+  <data name="LICENSE_TYPE_UNDETERMINED_DESCRIPTION" xml:space="preserve">
+    <value>O tipo de licença é indeterminado</value>
+  </data>
+  <data name="LICENSE_TYPE_UNDETERMINED_NAME" xml:space="preserve">
+    <value>Indeterminado</value>
+  </data>
+  <data name="LOG_CLEARED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica que o registro está sendo limpo</value>
+  </data>
+  <data name="LOG_CLEARED_EVENT_NAME" xml:space="preserve">
+    <value>Liberado</value>
+  </data>
+  <data name="LOG_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Registre eventos relacionados</value>
+  </data>
+  <data name="LOG_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Log</value>
+  </data>
+  <data name="MAPPING_TYPE_NETWORK_DRIVE" xml:space="preserve">
+    <value>Unidade de rede da rede</value>
+  </data>
+  <data name="MAPPING_TYPE_VIRTUAL_DRIVE" xml:space="preserve">
+    <value>Unidade virtual</value>
+  </data>
+  <data name="MAPPING_TYPE_VIRTUAL_FOLDER" xml:space="preserve">
+    <value>Pasta virtual</value>
+  </data>
+  <data name="NOTIFICATION_TYPE_AUDIBLE" xml:space="preserve">
+    <value>Audível</value>
+  </data>
+  <data name="NOTIFICATION_TYPE_NONE" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="NOTIFICATION_TYPE_VISUAL" xml:space="preserve">
+    <value>Visual</value>
+  </data>
+  <data name="NOTIFICATION_TYPE_VISUAL_AND_AUDIBLE" xml:space="preserve">
+    <value>Visual e Audível</value>
+  </data>
+  <data name="OPTIONS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica alteração de opções</value>
+  </data>
+  <data name="OPTIONS_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Troco</value>
+  </data>
+  <data name="OPTIONS_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Eventos relacionados às opções</value>
+  </data>
+  <data name="OPTIONS_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Opções</value>
+  </data>
+  <data name="ORDER_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica a criação de um pedido</value>
+  </data>
+  <data name="ORDER_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>Criado</value>
+  </data>
+  <data name="ORDER_DELIVERY_STATUS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica alteração no status de entrega do pedido</value>
+  </data>
+  <data name="ORDER_DELIVERY_STATUS_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Troco</value>
+  </data>
+  <data name="ORDER_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Eventos relacionados com pedidos</value>
+  </data>
+  <data name="ORDER_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Pedido</value>
+  </data>
+  <data name="ORDER_LINE_DELIVERY_STATUS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica a alteração do status de entrega da linha do pedido</value>
+  </data>
+  <data name="ORDER_LINE_DELIVERY_STATUS_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Troco</value>
+  </data>
+  <data name="ORDER_STATUS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica alteração no status do pedido</value>
+  </data>
+  <data name="ORDER_STATUS_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Troco</value>
+  </data>
+  <data name="PAYMENT_INTENT_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica a conclusão da intenção de pagamento</value>
+  </data>
+  <data name="PAYMENT_INTENT_COMPLETED_EVENT_NAME" xml:space="preserve">
+    <value>Completo</value>
+  </data>
+  <data name="PAYMENT_INTENT_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica a criação de uma intenção de pagamento</value>
+  </data>
+  <data name="PAYMENT_INTENT_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>Criado</value>
+  </data>
+  <data name="PAYMENT_INTENT_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Eventos relacionados à intenção de pagamento</value>
+  </data>
+  <data name="PAYMENT_INTENT_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Intenção de pagamento</value>
+  </data>
+  <data name="PRODUCT_STOCK_CHANGE_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Indica alteração no nível de estoque do produto</value>
+  </data>
+  <data name="PRODUCT_STOCK_CHANGE_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Troco</value>
+  </data>
+  <data name="PRODUCT_STOCK_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Eventos relacionados ao stock de produtos</value>
+  </data>
+  <data name="PRODUCT_STOCK_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Estoque de produtos</value>
+  </data>
+  <data name="REPORT_PRESET_ADDED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Relatório predefinido de evento adicionado</value>
+  </data>
+  <data name="REPORT_PRESET_ADDED_EVENT_NAME" xml:space="preserve">
+    <value>Predefinição de relatório adicionada</value>
+  </data>
+  <data name="REPORT_PRESET_RANGE_DAY_NAME" xml:space="preserve">
+    <value>Dia</value>
+  </data>
+  <data name="REPORT_PRESET_RANGE_MONTH_NAME" xml:space="preserve">
+    <value>Mês</value>
+  </data>
+  <data name="REPORT_PRESET_RANGE_WEEK_NAME" xml:space="preserve">
+    <value>Semana</value>
+  </data>
+  <data name="REPORT_PRESET_RANGE_YEAR_NAME" xml:space="preserve">
+    <value>Ano</value>
+  </data>
+  <data name="REPORT_PRESET_REMOVED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Relatório de evento de remoção de predefinição</value>
+  </data>
+  <data name="REPORT_PRESET_REMOVED_EVENT_NAME" xml:space="preserve">
+    <value>Predefinição do relatório removida</value>
+  </data>
+  <data name="REPORT_PRESET_UPDATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Relatório de evento atualizado de predefinição</value>
+  </data>
+  <data name="REPORT_PRESET_UPDATED_EVENT_NAME" xml:space="preserve">
+    <value>Relatório de predefinição atualizado</value>
+  </data>
+  <data name="RESERVATION_ACTIVATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Reserva activada</value>
+  </data>
+  <data name="RESERVATION_ACTIVATED_EVENT_NAME" xml:space="preserve">
+    <value>Ativado</value>
+  </data>
+  <data name="RESERVATION_CANCELLED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Reserva cancelada</value>
+  </data>
+  <data name="RESERVATION_CANCELLED_EVENT_NAME" xml:space="preserve">
+    <value>Cancelado</value>
+  </data>
+  <data name="RESERVATION_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Reserva concluída</value>
+  </data>
+  <data name="RESERVATION_COMPLETED_EVENT_NAME" xml:space="preserve">
+    <value>Completo</value>
+  </data>
+  <data name="RESERVATION_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Reserva criada</value>
+  </data>
+  <data name="RESERVATION_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>Criado</value>
+  </data>
+  <data name="RESERVATION_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Eventos relacionados com reservas</value>
+  </data>
+  <data name="RESERVATION_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Reserva</value>
+  </data>
+  <data name="RESERVATION_EXPIRED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>A reserva expirou</value>
+  </data>
+  <data name="RESERVATION_EXPIRED_EVENT_NAME" xml:space="preserve">
+    <value>Expirado</value>
+  </data>
+  <data name="RESERVATION_HOST_ACTIVATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Reserva de anfitrião ativada</value>
+  </data>
+  <data name="RESERVATION_HOST_ACTIVATED_EVENT_NAME" xml:space="preserve">
+    <value>Ativado</value>
+  </data>
+  <data name="RESERVATION_HOST_ADDED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Anfitrião adicionado a uma reserva</value>
+  </data>
+  <data name="RESERVATION_HOST_ADDED_EVENT_NAME" xml:space="preserve">
+    <value>Adicionado</value>
+  </data>
+  <data name="RESERVATION_HOST_CANCELLED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Reserva do anfitrião cancelada</value>
+  </data>
+  <data name="RESERVATION_HOST_CANCELLED_EVENT_NAME" xml:space="preserve">
+    <value>Cancelado</value>
+  </data>
+  <data name="RESERVATION_HOST_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Reserva do anfitrião concluída</value>
+  </data>
+  <data name="RESERVATION_HOST_COMPLETED_EVENT_NAME" xml:space="preserve">
+    <value>Completo</value>
+  </data>
+  <data name="RESERVATION_HOST_EXPIRED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>A reserva do anfitrião expirou</value>
+  </data>
+  <data name="RESERVATION_HOST_EXPIRED_EVENT_NAME" xml:space="preserve">
+    <value>Expirado</value>
+  </data>
+  <data name="RESERVATION_HOST_MOVED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Reserva do anfitrião movida</value>
+  </data>
+  <data name="RESERVATION_HOST_MOVED_EVENT_NAME" xml:space="preserve">
+    <value>Movido</value>
+  </data>
+  <data name="RESERVATION_HOST_UPDATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Reserva do anfitrião atualizada</value>
+  </data>
+  <data name="RESERVATION_HOST_UPDATED_EVENT_NAME" xml:space="preserve">
+    <value>Actualizado</value>
+  </data>
+  <data name="RESERVATION_UPDATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Reserva atualizada</value>
+  </data>
+  <data name="RESERVATION_UPDATED_EVENT_NAME" xml:space="preserve">
+    <value>Actualizado</value>
+  </data>
+  <data name="RESERVATION_USER_ADDED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Adicionado pelo utilizador</value>
+  </data>
+  <data name="RESERVATION_USER_ADDED_EVENT_NAME" xml:space="preserve">
+    <value>Adicionado</value>
+  </data>
+  <data name="RESERVATION_USER_REMOVED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Utilizador removido</value>
+  </data>
+  <data name="RESERVATION_USER_REMOVED_EVENT_NAME" xml:space="preserve">
+    <value>Removido</value>
+  </data>
+  <data name="RESTRICTION_TYPE_CLASS_NAME" xml:space="preserve">
+    <value>Nome da aula</value>
+  </data>
+  <data name="RESTRICTION_TYPE_FILE_NAME" xml:space="preserve">
+    <value>Nome de ficheiro</value>
+  </data>
+  <data name="RESTRICTION_TYPE_TRAY_ICON" xml:space="preserve">
+    <value>Ícone da bandeja</value>
+  </data>
+  <data name="RESTRICTION_TYPE_UNSET" xml:space="preserve">
+    <value>Desabilitar</value>
+  </data>
+  <data name="RESTRICTION_TYPE_WINDOW_NAME" xml:space="preserve">
+    <value>Nome da janela</value>
+  </data>
+  <data name="SCHEDULE_TYPE_DAILY" xml:space="preserve">
+    <value>Diário</value>
+  </data>
+  <data name="SCHEDULE_TYPE_MONTHLY" xml:space="preserve">
+    <value>Mensal</value>
+  </data>
+  <data name="SCHEDULE_TYPE_ONE_TIME" xml:space="preserve">
+    <value>Uma vez</value>
+  </data>
+  <data name="SCHEDULE_TYPE_WEEKLY" xml:space="preserve">
+    <value>Semanal</value>
+  </data>
+  <data name="SCHEDULE_TYPE_YEARLY" xml:space="preserve">
+    <value>Anual</value>
+  </data>
+  <data name="SHIFT_ENDED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica o fim do turno</value>
+  </data>
+  <data name="SHIFT_ENDED_EVENT_NAME" xml:space="preserve">
+    <value>Finalizado</value>
+  </data>
+  <data name="SHIFT_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Eventos relacionados com turnos</value>
+  </data>
+  <data name="SHIFT_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Turno</value>
+  </data>
+  <data name="SHIFT_LOCKED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica bloqueio de mudança</value>
+  </data>
+  <data name="SHIFT_LOCKED_EVENT_NAME" xml:space="preserve">
+    <value>Trancado</value>
+  </data>
+  <data name="SHIFT_STARTED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica o início do turno</value>
+  </data>
+  <data name="SHIFT_STARTED_EVENT_NAME" xml:space="preserve">
+    <value>Iniciado</value>
+  </data>
+  <data name="SHIFT_UNLOCKED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica o desbloqueio da mudança do turno</value>
+  </data>
+  <data name="SHIFT_UNLOCKED_EVENT_NAME" xml:space="preserve">
+    <value>Destrancado</value>
+  </data>
+  <data name="STOCK_LEVEL_TYPE_ANY" xml:space="preserve">
+    <value>Qualquer</value>
+  </data>
+  <data name="STOCK_LEVEL_TYPE_LOW" xml:space="preserve">
+    <value>Baixo</value>
+  </data>
+  <data name="STOCK_LEVEL_TYPE_OUT_OF_STOCK" xml:space="preserve">
+    <value>Esgotado</value>
+  </data>
+  <data name="STOCK_TYPE_SELLING_POINT" xml:space="preserve">
+    <value>Argumento de venda</value>
+  </data>
+  <data name="STOCK_TYPE_WAREHOUSE" xml:space="preserve">
+    <value>Armazém</value>
+  </data>
+  <data name="TARGET_GROUP_REQUIREMENT_ALL" xml:space="preserve">
+    <value>Todos</value>
+  </data>
+  <data name="TARGET_GROUP_REQUIREMENT_ANY" xml:space="preserve">
+    <value>Qualquer</value>
+  </data>
+  <data name="TARGET_REQUIREMENT_ALL" xml:space="preserve">
+    <value>Todos</value>
+  </data>
+  <data name="TARGET_REQUIREMENT_AMOUNT" xml:space="preserve">
+    <value>Montante</value>
+  </data>
+  <data name="TARGET_REQUIREMENT_ANY" xml:space="preserve">
+    <value>Qualquer</value>
+  </data>
+  <data name="TARGET_REQUIREMENT_COUNT" xml:space="preserve">
+    <value>Contagem</value>
+  </data>
+  <data name="USER_ENABLED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica a habilitação de um utilizador</value>
+  </data>
+  <data name="USER_ENABLED_EVENT_NAME" xml:space="preserve">
+    <value>Habilitado</value>
+  </data>
+  <data name="USER_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Eventos relacionados aos utilizadores</value>
+  </data>
+  <data name="USER_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Utilizador</value>
+  </data>
+  <data name="USER_SESSION_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Sessão do utilizador criada</value>
+  </data>
+  <data name="USER_SESSION_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>Criado</value>
+  </data>
+  <data name="USER_SESSION_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Eventos relacionados à sessão do utilizador</value>
+  </data>
+  <data name="USER_SESSION_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Sessão do utilizador</value>
+  </data>
+  <data name="USER_SESSION_MOVED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Sessão do utilizador movida</value>
+  </data>
+  <data name="USER_SESSION_MOVED_EVENT_NAME" xml:space="preserve">
+    <value>Movido</value>
+  </data>
+  <data name="USER_SESSION_STATE_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Estado trocado</value>
+  </data>
+  <data name="USER_SESSION_STATE_CHANGED_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Estado de sessão do utilizador alterado</value>
+  </data>
+  <data name="WAITING_LINE_ESTIMATION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Estimativa alterada evento</value>
+  </data>
+  <data name="WAITING_LINE_ESTIMATION_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Estimativa trocada</value>
+  </data>
+  <data name="WAITING_LINE_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Fila de espera</value>
+  </data>
+  <data name="WAITING_LINE_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Eventos relacionados com filas de espera</value>
+  </data>
+  <data name="WAITING_LINE_TIMED_OUT_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Evento de tempo expirou da fila de espera</value>
+  </data>
+  <data name="WAITING_LINE_TIMED_OUT_EVENT_NAME" xml:space="preserve">
+    <value>Tempo expirou</value>
+  </data>
+  <data name="WAITING_LINE_USER_ADDED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Evento adicionado pelo utilizador</value>
+  </data>
+  <data name="WAITING_LINE_USER_ADDED_EVENT_NAME" xml:space="preserve">
+    <value>Adicionado pelo utilizador</value>
+  </data>
+  <data name="WAITING_LINE_USER_MOVED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Evento movido pelo utilizador</value>
+  </data>
+  <data name="WAITING_LINE_USER_MOVED_EVENT_NAME" xml:space="preserve">
+    <value>Utilizador movido</value>
+  </data>
+  <data name="WAITING_LINE_USER_REMOVED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Evento removido pelo utilizador</value>
+  </data>
+  <data name="WAITING_LINE_USER_REMOVED_EVENT_NAME" xml:space="preserve">
+    <value>Utilizador removido</value>
+  </data>
+  <data name="SHIFT_COUNT_TYPE_DEFAULT" xml:space="preserve">
+    <value>Predefinido</value>
+  </data>
+  <data name="SHIFT_COUNT_TYPE_SHIFT_CLOSE" xml:space="preserve">
+    <value>Fecho de turno</value>
+  </data>
+  <data name="SHIFT_COUNT_TYPE_SHIFT_OPEN" xml:space="preserve">
+    <value>Turno aberto</value>
+  </data>
+  <data name="PROMOTION_CODE_TYPE_PUBLIC_NAME" xml:space="preserve">
+    <value>Público</value>
+  </data>
+  <data name="PROMOTION_CODE_TYPE_RESTRICTED_NAME" xml:space="preserve">
+    <value>Restrito</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_TYPE_DEPOSIT_PAYMENT" xml:space="preserve">
+    <value>Pagamento do depósito</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_TYPE_DEPOSIT_PAYMENT_REFUND" xml:space="preserve">
+    <value>Reembolso do pagamento do depósito</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_TYPE_INVOICE_PAYMENT" xml:space="preserve">
+    <value>Pagamento de Facturas</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_TYPE_INVOICE_PAYMENT_REFUND" xml:space="preserve">
+    <value>Reembolso de pagamento de factura</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_TYPE_PAY_IN" xml:space="preserve">
+    <value>Pague</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_TYPE_PAY_OUT" xml:space="preserve">
+    <value>Pagamento</value>
+  </data>
+  <data name="PAYMENT_INTENT_STATE_CANCELLED" xml:space="preserve">
+    <value>Cancelado</value>
+  </data>
+  <data name="PAYMENT_INTENT_STATE_COMPLETED" xml:space="preserve">
+    <value>Completo</value>
+  </data>
+  <data name="PAYMENT_INTENT_STATE_EXPIRED" xml:space="preserve">
+    <value>Expirado</value>
+  </data>
+  <data name="PAYMENT_INTENT_STATE_FAILED" xml:space="preserve">
+    <value>Falhou</value>
+  </data>
+  <data name="PAYMENT_INTENT_STATE_PENDING" xml:space="preserve">
+    <value>Pendente</value>
+  </data>
+  <data name="PAYMENT_INTENT_STATE_CAPTURED" xml:space="preserve">
+    <value>Capturado</value>
+  </data>
+  <data name="PAYMENT_INTENT_STATE_DECLINED" xml:space="preserve">
+    <value>Recusado</value>
+  </data>
+  <data name="RESERVATION_PAYMENT_STATUS_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Status do pagamento da reserva alterado</value>
+  </data>
+  <data name="RESERVATION_PAYMENT_STATUS_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Status do pagamento alterado</value>
+  </data>
+  <data name="PAYMENT_INTENT_CAPTURED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica a captura da intenção de pagamento</value>
+  </data>
+  <data name="PAYMENT_INTENT_CAPTURED_EVENT_NAME" xml:space="preserve">
+    <value>Capturado</value>
+  </data>
+  <data name="PAYMENT_INTENT_DECLINED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica recusa de intenção de pagamento</value>
+  </data>
+  <data name="PAYMENT_INTENT_DECLINED_EVENT_NAME" xml:space="preserve">
+    <value>Recusado</value>
+  </data>
+  <data name="PAYMENT_INTENT_FAILED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica falha na intenção de pagamento</value>
+  </data>
+  <data name="PAYMENT_INTENT_FAILED_EVENT_NAME" xml:space="preserve">
+    <value>Falhou</value>
+  </data>
+  <data name="PAYMENT_INTENT_CANCELLED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica o cancelamento da intenção de pagamento</value>
+  </data>
+  <data name="PAYMENT_INTENT_CANCELLED_EVENT_NAME" xml:space="preserve">
+    <value>Cancelado</value>
+  </data>
+  <data name="DEVICE_FISCAL_PRINTER_ERROR_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Evento de erro da impressora fiscal</value>
+  </data>
+  <data name="DEVICE_FISCAL_PRINTER_ERROR_EVENT_NAME" xml:space="preserve">
+    <value>Erro</value>
+  </data>
+  <data name="DEVICE_PAYMENT_TERMINAL_ERROR_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Evento de erro no terminal de pagamento</value>
+  </data>
+  <data name="DEVICE_PAYMENT_TERMINAL_ERROR_EVENT_NAME" xml:space="preserve">
+    <value>Erro</value>
+  </data>
+  <data name="ORDER_STATUS_FILTER_ACCEPTED" xml:space="preserve">
+    <value>Aceite</value>
+  </data>
+  <data name="ORDER_STATUS_FILTER_CANCELED" xml:space="preserve">
+    <value>Cancelado</value>
+  </data>
+  <data name="ORDER_STATUS_FILTER_COMPLETED" xml:space="preserve">
+    <value>Completo</value>
+  </data>
+  <data name="ORDER_STATUS_FILTER_ON_HOLD" xml:space="preserve">
+    <value>Em espera</value>
+  </data>
+  <data name="ORDER_STATUS_FILTER_PROCESSING" xml:space="preserve">
+    <value>Processamento</value>
+  </data>
+  <data name="PROMOTION_LIMIT_TYPE_TOTAL" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="PROMOTION_LIMIT_TYPE_PER_USER" xml:space="preserve">
+    <value>Por utilizador</value>
+  </data>
+  <data name="PROMOTION_LIMIT_TYPE_DAILY" xml:space="preserve">
+    <value>Diário</value>
+  </data>
+  <data name="PROMOTION_LIMIT_TYPE_WEEKLY" xml:space="preserve">
+    <value>Semanal</value>
+  </data>
+  <data name="USER_BALANCE_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Indica alteração no saldo</value>
+  </data>
+  <data name="USER_BALANCE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Saldo alterado</value>
+  </data>
+  <data name="USER_BALANCE_CLOSE_EVENT_NAME" xml:space="preserve">
+    <value>Indica saldo de fechamento</value>
+  </data>
+  <data name="USER_BALANCE_CLOSE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Fechar Saldo</value>
+  </data>
+  <data name="USER_BILLING_OPTIONS_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Alteração das opções de faturamento</value>
+  </data>
+  <data name="USER_BILLING_OPTIONS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica alteração nas opções de faturamento</value>
+  </data>
+  <data name="USER_EMAIL_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Alteração de Email</value>
+  </data>
+  <data name="USER_EMAIL_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica troca de e-mail</value>
+  </data>
+  <data name="USER_USER_GROUP_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Alteração do grupo de usuário</value>
+  </data>
+  <data name="USER_USER_GROUP_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica alteração do grupo de usuário</value>
+  </data>
+  <data name="USER_NEGATIVE_BALANCE_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Alteração negativa no saldo</value>
+  </data>
+  <data name="USER_NEGATIVE_BALANCE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica variação negativa no saldo</value>
+  </data>
+  <data name="USER_PASSWORD_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Alteração da senha</value>
+  </data>
+  <data name="USER_PASSWORD_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica alteração de senha</value>
+  </data>
+  <data name="USER_PICTURE_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Mudança de imagem</value>
+  </data>
+  <data name="USER_PICTURE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica mudança de imagem</value>
+  </data>
+  <data name="USER_RENAME_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Renomear</value>
+  </data>
+  <data name="USER_RENAME_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica renomeação do usuário</value>
+  </data>
+  <data name="USER_SMART_CARD_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Troca de cartão inteligente</value>
+  </data>
+  <data name="USER_SMART_CARD_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica troca de cartão inteligente</value>
+  </data>
+  <data name="USER_USAGE_SESSION_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Alteração da sessão de utilização</value>
+  </data>
+  <data name="USER_USAGE_SESSION_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica alteração na sessão de utilização</value>
+  </data>
+  <data name="BILLING_OPTION_NONE_NAME" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="BILLING_OPTION_DISABLE_TIME_OFFER_NAME" xml:space="preserve">
+    <value>Desabilitar ofertas de tempo</value>
+  </data>
+  <data name="BILLING_OPTION_DISABLE_FIXED_TIME_NAME" xml:space="preserve">
+    <value>Desabilitar tempo fixo</value>
+  </data>
+  <data name="BILLING_OPTION_DISABLE_DEPOSITS_NAME" xml:space="preserve">
+    <value>Desabilitar depósitos</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_EMAIL" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_FACEBOOK_MESSENGER_NAME" xml:space="preserve">
+    <value>Facebook Messenger</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_INSTAGRAM_NAME" xml:space="preserve">
+    <value>Instagram</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_SMS_NAME" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_TELEGRAM_NAME" xml:space="preserve">
+    <value>Telegram</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_TWITTER_DM_NAME" xml:space="preserve">
+    <value>X / Twitter</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_VIBER_NAME" xml:space="preserve">
+    <value>Viber</value>
+  </data>
+  <data name="DEVICE_BARCODE_SCANNED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Evento de leitura de código de barras</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_WHATS_APP_NAME" xml:space="preserve">
+    <value>WhatsApp</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_WE_CHAT_NAME" xml:space="preserve">
+    <value>WeChat</value>
+  </data>
+  <data name="HOST_DELETE_RESULT_HOST_HAS_RESERVED_GUEST_DESCRIPTION" xml:space="preserve">
+    <value>O terminal reservado para convidados</value>
+  </data>
+  <data name="HOST_DELETE_RESULT_HOST_HAS_RESERVED_GUEST_NAME" xml:space="preserve">
+    <value>O terminal reservado para um convidado</value>
+  </data>
+  <data name="HOST_DELETE_RESULT_HOST_IN_USE_DESCRIPTION" xml:space="preserve">
+    <value>O terminal está em uso</value>
+  </data>
+  <data name="HOST_DELETE_RESULT_HOST_IN_USE_NAME" xml:space="preserve">
+    <value>Terminal em uso</value>
+  </data>
+  <data name="HOST_DELETE_RESULT_HOST_IS_RESERVED_DESCRIPTION" xml:space="preserve">
+    <value>O terminal tem reserva</value>
+  </data>
+  <data name="HOST_DELETE_RESULT_HOST_IS_RESERVED_NAME" xml:space="preserve">
+    <value>O terminal  está reservado</value>
+  </data>
+  <data name="HOST_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
+    <value>A exclusão do terminal foi bem-sucedida.</value>
+  </data>
+  <data name="HOST_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve">
+    <value>Apagar o terminal bem-sucedido</value>
+  </data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_DESCRIPTION" xml:space="preserve">
+    <value>Falhou ao excluir grupo de produtos</value>
+  </data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_NAME" xml:space="preserve">
+    <value>Falhou ao excluir grupo de produtos</value>
+  </data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_DESCRIPTION" xml:space="preserve">
+    <value>Grupos de produtos não vazios não podem ser excluídos</value>
+  </data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_NAME" xml:space="preserve">
+    <value>O Grupo de produtos não está vazio</value>
+  </data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
+    <value>A exclusão do grupo de produtos foi bem-sucedida.</value>
+  </data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve">
+    <value>Apagar o grupo de produtos bem-sucedido</value>
+  </data>
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_DESCRIPTION" xml:space="preserve">
+    <value>Falhou ao apagar a categoria do aplicativo</value>
+  </data>
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_NAME" xml:space="preserve">
+    <value>Falhou ao excluir a categoria do aplicativo</value>
+  </data>
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPY_DESCRIPTION" xml:space="preserve">
+    <value>Categoria de aplicativo não vazia não pode ser apagada</value>
+  </data>
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPY_NAME" xml:space="preserve">
+    <value>A categoria da aplicação não está vazia</value>
+  </data>
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
+    <value>A exclusão da categoria do aplicativo foi bem-sucedida.</value>
+  </data>
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve">
+    <value>Exclusão bem-sucedida da categoria da aplicação</value>
+  </data>
+  <data name="WAITING_LINE_SATE_ACTIVE_NAME" xml:space="preserve">
+    <value>Activo</value>
+  </data>
+  <data name="WAITING_LINE_SATE_PROCESSED_NAME" xml:space="preserve">
+    <value>Processado</value>
+  </data>
+  <data name="WAITING_LINE_SATE_CANCELED_NAME" xml:space="preserve">
+    <value>Cancelado</value>
+  </data>
+  <data name="STOCK_TRANSACTION_TYPE_ADD_NAME" xml:space="preserve">
+    <value>Adicionar</value>
+  </data>
+  <data name="STOCK_TRANSACTION_TYPE_REMOVE_NAME" xml:space="preserve">
+    <value>Remover</value>
+  </data>
+  <data name="STOCK_TRANSACTION_TYPE_RETURN_NAME" xml:space="preserve">
+    <value>Retorno</value>
+  </data>
+  <data name="STOCK_TRANSACTION_TYPE_SALE_NAME" xml:space="preserve">
+    <value>Venda</value>
+  </data>
+  <data name="STOCK_TRANSACTION_TYPE_SET_NAME" xml:space="preserve">
+    <value>Definir</value>
+  </data>
+  <data name="DEPOSIT_TRANSACTION_TYPE_CHARGE_NAME" xml:space="preserve">
+    <value>Cobrar</value>
+  </data>
+  <data name="DEPOSIT_TRANSACTION_TYPE_CREDIT_NAME" xml:space="preserve">
+    <value>Crédito</value>
+  </data>
+  <data name="DEPOSIT_TRANSACTION_TYPE_DEPOSIT_NAME" xml:space="preserve">
+    <value>Depósito</value>
+  </data>
+  <data name="DEPOSIT_TRANSACTION_TYPE_WITHDRAW_NAME" xml:space="preserve">
+    <value>Levantamento</value>
+  </data>
+  <data name="USER_SESSION_STATE_ACTIVE_NAME" xml:space="preserve">
+    <value>Activo</value>
+  </data>
+  <data name="USER_SESSION_STATE_NONE_NAME" xml:space="preserve">
+    <value>Esperando</value>
+  </data>
+  <data name="USER_SESSION_STATE_ENDED_NAME" xml:space="preserve">
+    <value>Finalizado</value>
+  </data>
+  <data name="USER_SESSION_STATE_PENDING_NAME" xml:space="preserve">
+    <value>Pendente</value>
+  </data>
+  <data name="USER_SESSION_STATE_PAUSED_NAME" xml:space="preserve">
+    <value>Em pausa</value>
+  </data>
+  <data name="USER_SESSION_STATE_MOVED_NAME" xml:space="preserve">
+    <value>Movido</value>
+  </data>
+  <data name="ENTITY_EVENT_TYPE_ADDED_NAME" xml:space="preserve">
+    <value>Adicionado</value>
+  </data>
+  <data name="ENTITY_EVENT_TYPE_REMOVED_NAME" xml:space="preserve">
+    <value>Removido</value>
+  </data>
+  <data name="ENTITY_EVENT_TYPE_MODIFIED_NAME" xml:space="preserve">
+    <value>Modificado</value>
+  </data>
+  <data name="TASK_TYPE_JUNCTION_NAME" xml:space="preserve">
+    <value>Junção</value>
+  </data>
+  <data name="TASK_TYPE_NOTIFICATION_NAME" xml:space="preserve">
+    <value>Notificação</value>
+  </data>
+  <data name="TASK_TYPE_PROCESS_NAME" xml:space="preserve">
+    <value>Processo</value>
+  </data>
+  <data name="TASK_TYPE_SCRIPT_NAME" xml:space="preserve">
+    <value>Script</value>
+  </data>
+  <data name="LOGIN_RESULT_ACCOUNT_DISABLED_DESCRIPTION" xml:space="preserve">
+    <value>A conta de usuário especificada está desativada.</value>
+  </data>
+  <data name="LOGIN_RESULT_ACCOUNT_DISABLED_NAME" xml:space="preserve">
+    <value>Conta desabilitada</value>
+  </data>
+  <data name="LOGIN_RESULT_ALREADY_LOGGED_IN_DESCRIPTION" xml:space="preserve">
+    <value>Utilizador já tem sessão iniciada</value>
+  </data>
+  <data name="LOGIN_RESULT_ALREADY_LOGGED_IN_NAME" xml:space="preserve">
+    <value>Já tem sessão</value>
+  </data>
+  <data name="LOGIN_RESULT_DENIED_DESCRIPTION" xml:space="preserve">
+    <value>O início de sessão foi negado</value>
+  </data>
+  <data name="LOGIN_RESULT_DENIED_NAME" xml:space="preserve">
+    <value>Iniciar sessão negada</value>
+  </data>
+  <data name="LOGIN_RESULT_FAILED_DESCRIPTION" xml:space="preserve">
+    <value>Erro de iniciação de sessão não especificado</value>
+  </data>
+  <data name="LOGIN_RESULT_FAILED_NAME" xml:space="preserve">
+    <value>Falha na iniciação da sessão</value>
+  </data>
+  <data name="LOGIN_RESULT_INSUFFICIENT_BALANCE_DESCRIPTION" xml:space="preserve">
+    <value>O utilizador especificado não possui saldo insuficiente.</value>
+  </data>
+  <data name="LOGIN_RESULT_INSUFFICIENT_BALANCE_NAME" xml:space="preserve">
+    <value>Saldo insuficiente</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_CREDENTIALS_DESCRIPTION" xml:space="preserve">
+    <value>O nome de utilizador ou senha especificado é inválido</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_CREDENTIALS_NAME" xml:space="preserve">
+    <value>Senha ou utilizador inválidos</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_HOST_ID_DESCRIPTION" xml:space="preserve">
+    <value>O Id do terminal especificado é inválido</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_HOST_ID_NAME" xml:space="preserve">
+    <value>Terminal inválido</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_PARAMETERS_DESCRIPTION" xml:space="preserve">
+    <value>Os parâmetros especificados são inválidos.</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_PARAMETERS_NAME" xml:space="preserve">
+    <value>Parâmetros inválidos</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_PASSWORD_DESCRIPTION" xml:space="preserve">
+    <value>A senha especificada é inválida</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_PASSWORD_NAME" xml:space="preserve">
+    <value>Senha inválida</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_SLOT_DESCRIPTION" xml:space="preserve">
+    <value>O lugar especificado é inválido</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_SLOT_NAME" xml:space="preserve">
+    <value>Lugar inválido</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_USERNAME_DESCRIPTION" xml:space="preserve">
+    <value>O nome de utilizador especificado é inválido</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_USERNAME_NAME" xml:space="preserve">
+    <value>Utilizador inválido</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_USER_GROUP_ID_DESCRIPTION" xml:space="preserve">
+    <value>O ID do grupo de utilizadores especificado é inválido.</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_USER_GROUP_ID_NAME" xml:space="preserve">
+    <value>Grupo de utilizador inválido</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_USER_ID_DESCRIPTION" xml:space="preserve">
+    <value>A Id de utilizador especificada é inválida.</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_USER_ID_NAME" xml:space="preserve">
+    <value>Utilizador inválido</value>
+  </data>
+  <data name="LOGIN_RESULT_LOGIN_IN_PROGRESS_DESCRIPTION" xml:space="preserve">
+    <value>Iniciar sessão em progresso</value>
+  </data>
+  <data name="LOGIN_RESULT_LOGIN_IN_PROGRESS_NAME" xml:space="preserve">
+    <value>Em progresso</value>
+  </data>
+  <data name="LOGIN_RESULT_LOGOUT_IN_PROGRESS_DESCRIPTION" xml:space="preserve">
+    <value>Sua sessão está em progresso</value>
+  </data>
+  <data name="LOGIN_RESULT_LOGOUT_IN_PROGRESS_NAME" xml:space="preserve">
+    <value>Em progresso</value>
+  </data>
+  <data name="LOGIN_RESULT_MAXIMUM_SESSIONS_REACHED_DESCRIPTION" xml:space="preserve">
+    <value>Falha no início de sessão devido às sessões máximas atingidas</value>
+  </data>
+  <data name="LOGIN_RESULT_MAXIMUM_SESSIONS_REACHED_NAME" xml:space="preserve">
+    <value>Sessões máximas atingidas</value>
+  </data>
+  <data name="LOGIN_RESULT_NOT_IN_WAITING_LINE_DESCRIPTION" xml:space="preserve">
+    <value>O utilizador especificado não está na fila de espera</value>
+  </data>
+  <data name="LOGIN_RESULT_NOT_IN_WAITING_LINE_NAME" xml:space="preserve">
+    <value>Não está na fila de espera</value>
+  </data>
+  <data name="LOGIN_RESULT_OPERATOR_USER_GROUP_DENIED_DESCRIPTION" xml:space="preserve">
+    <value>Grupo de usuários não autorizado a iniciar sessão a partir do Gestor</value>
+  </data>
+  <data name="LOGIN_RESULT_OPERATOR_USER_GROUP_DENIED_NAME" xml:space="preserve">
+    <value>Iniciar sessão do grupo de usuários negada para o operador</value>
+  </data>
+  <data name="LOGIN_RESULT_RESTRICTED_BY_AGE_DESCRIPTION" xml:space="preserve">
+    <value>O início de sessão não é permitido neste momento devido à configuração de restrições de idade.</value>
+  </data>
+  <data name="LOGIN_RESULT_RESTRICTED_BY_AGE_NAME" xml:space="preserve">
+    <value>Restrições de idade para iniciar sessão</value>
+  </data>
+  <data name="LOGIN_RESULT_SLOT_IN_USE_DESCRIPTION" xml:space="preserve">
+    <value>O lugar especificado já está em uso.</value>
+  </data>
+  <data name="LOGIN_RESULT_SLOT_IN_USE_NAME" xml:space="preserve">
+    <value>Lugar já em uso</value>
+  </data>
+  <data name="LOGIN_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
+    <value>O início de sessão do utilizador foi bem-sucedido</value>
+  </data>
+  <data name="LOGIN_RESULT_SUCCESS_NAME" xml:space="preserve">
+    <value>Iniciar sessão bem-sucedida</value>
+  </data>
+  <data name="INVOICE_STATUS_PAID_NAME" xml:space="preserve">
+    <value>Pago</value>
+  </data>
+  <data name="INVOICE_STATUS_PARTIALLY_PAID_NAME" xml:space="preserve">
+    <value>Pago parcialmente</value>
+  </data>
+  <data name="INVOICE_STATUS_UNPAID_NAME" xml:space="preserve">
+    <value>Não pago</value>
+  </data>
+  <data name="USER_SESSION_STATE_GRACE_NAME" xml:space="preserve">
+    <value>Graça</value>
+  </data>
+  <data name="locoLocaleCode" xml:space="preserve">
     <value>pt-BR</value>
-  </metadata>
-  <metadata name="locoLocaleName" xml:space="preserve">
+  </data>
+  <data name="locoLocaleName" xml:space="preserve">
     <value>Brazilian Portuguese</value>
-  </metadata> 
-  <data name="ASSISTANCE_REQUEST_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Indica mudança no status da solicitação de assistência</value> 
-  </data> 
-  <data name="ASSISTANCE_REQUEST_CHANGE_EVENT_EVENT_NAME" xml:space="preserve"> 
-    <value>Alterar</value> 
-  </data> 
-  <data name="ASSISTANCE_REQUEST_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Indica a criação de um pedido de assistência</value> 
-  </data> 
-  <data name="ASSISTANCE_REQUEST_CREATED_EVENT_EVENT_NAME" xml:space="preserve"> 
-    <value>Criado</value> 
-  </data> 
-  <data name="ASSISTANCE_REQUEST_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Eventos relacionados a solicitações de assistência</value> 
-  </data> 
-  <data name="ASSISTANCE_REQUEST_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Solicitação de assistência</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_ERROR_DESCRIPTION" xml:space="preserve"> 
-    <value>A autenticação falhou devido a um erro</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_ERROR_NAME" xml:space="preserve"> 
-    <value>Erro</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_INVALID_DESCRIPTION" xml:space="preserve"> 
-    <value>O estado de autenticação é inválido</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_INVALID_NAME" xml:space="preserve"> 
-    <value>Inválido</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_NETWORK_ERROR_DESCRIPTION" xml:space="preserve"> 
-    <value>A autenticação falhou devido a um erro de rede</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_NETWORK_ERROR_NAME" xml:space="preserve"> 
-    <value>Erro de rede</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_NO_TOKEN_DESCRIPTION" xml:space="preserve"> 
-    <value>Não há token presente para autenticação</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_NO_TOKEN_NAME" xml:space="preserve"> 
-    <value>Sem token</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_UNAUTHORIZED_DESCRIPTION" xml:space="preserve"> 
-    <value>Não autorizado</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_UNAUTHORIZED_NAME" xml:space="preserve"> 
-    <value>Não autorizado</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_VALID_DESCRIPTION" xml:space="preserve"> 
-    <value>Autenticação válida</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_VALID_NAME" xml:space="preserve"> 
-    <value>Válida</value> 
-  </data> 
-  <data name="AUTHORIZATION_RESULT_ERROR_DESCRIPTION" xml:space="preserve"> 
-    <value>Falhou devido a um erro</value> 
-  </data> 
-  <data name="AUTHORIZATION_RESULT_ERROR_NAME" xml:space="preserve"> 
-    <value>Erro</value> 
-  </data> 
-  <data name="AUTHORIZATION_RESULT_INVALID_ID_DESCRIPTION" xml:space="preserve"> 
-    <value>Falhou devido a um Id de instância inválido</value> 
-  </data> 
-  <data name="AUTHORIZATION_RESULT_INVALID_ID_NAME" xml:space="preserve"> 
-    <value>Id inválido</value> 
-  </data> 
-  <data name="AUTHORIZATION_RESULT_NETWORK_ERROR_DESCRIPTION" xml:space="preserve"> 
-    <value>Falhou devido a um erro de rede</value> 
-  </data> 
-  <data name="AUTHORIZATION_RESULT_NETWORK_ERROR_NAME" xml:space="preserve"> 
-    <value>Erro de rede</value> 
-  </data> 
-  <data name="AUTHORIZATION_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
-    <value>Autorização bem-sucedida</value> 
-  </data> 
-  <data name="AUTHORIZATION_RESULT_SUCCESS_NAME" xml:space="preserve"> 
-    <value>Sucesso</value> 
-  </data> 
-  <data name="AUTHORIZATION_RESULT_TOKEN_EXPIRED_DESCRIPTION" xml:space="preserve"> 
-    <value>Falhou devido a um token expirado</value> 
-  </data> 
-  <data name="AUTHORIZATION_RESULT_TOKEN_EXPIRED_NAME" xml:space="preserve"> 
-    <value>Token expirou</value> 
-  </data> 
-  <data name="AUTHORIZATION_RESULT_UNAUTHORIZED_DESCRIPTION" xml:space="preserve"> 
-    <value>Não autorizado</value> 
-  </data> 
-  <data name="AUTHORIZATION_RESULT_UNAUTHORIZED_NAME" xml:space="preserve"> 
-    <value>Não autorizado</value> 
-  </data> 
-  <data name="AUTHORIZATION_WARNINGS_FUTURE_PAYMENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Os pagamentos futuros podem falhar devido ao vencimento do cartão.</value> 
-  </data> 
-  <data name="AUTHORIZATION_WARNINGS_FUTURE_PAYMENT_NAME" xml:space="preserve"> 
-    <value>Aviso de pagamento futuro</value> 
-  </data> 
-  <data name="AUTHORIZATION_WARNINGS_NONE_DESCRIPTION" xml:space="preserve"> 
-    <value>Nenhum</value> 
-  </data> 
-  <data name="AUTHORIZATION_WARNINGS_NONE_NAME" xml:space="preserve"> 
-    <value>Nenhum</value> 
-  </data> 
-  <data name="AUTHORIZATION_WARNINGS_PAYMENT_FAILURE_DESCRIPTION" xml:space="preserve"> 
-    <value>A tentativa de pagamento não foi bem-sucedida</value> 
-  </data> 
-  <data name="AUTHORIZATION_WARNINGS_PAYMENT_FAILURE_NAME" xml:space="preserve"> 
-    <value>Falha no pagamento de pagamentos</value> 
-  </data> 
-  <data name="BRANCH_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Evento criado pela filial</value> 
-  </data> 
-  <data name="BRANCH_CREATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Ramo criado</value> 
-  </data> 
-  <data name="BRANCH_DELETED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Evento de ramificação apagado</value> 
-  </data> 
-  <data name="BRANCH_DELETED_EVENT_NAME" xml:space="preserve"> 
-    <value>Apagado</value> 
-  </data> 
-  <data name="BRANCH_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Eventos relacionados com a filial</value> 
-  </data> 
-  <data name="BRANCH_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Filial</value> 
-  </data> 
-  <data name="BRANCH_OPERATOR_ADDED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Operador adicionou evento</value> 
-  </data> 
-  <data name="BRANCH_OPERATOR_ADDED_EVENT_NAME" xml:space="preserve"> 
-    <value>Operador adicionado</value> 
-  </data> 
-  <data name="BRANCH_OPERATOR_DEFAULT_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Evento de alteração do ramo predefinido dos operadores</value> 
-  </data> 
-  <data name="BRANCH_OPERATOR_DEFAULT_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value>Alteração da ramificação predefinida dos operadores</value> 
-  </data> 
-  <data name="BRANCH_OPERATOR_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Operador removeu evento</value> 
-  </data> 
-  <data name="BRANCH_OPERATOR_REMOVED_EVENT_NAME" xml:space="preserve"> 
-    <value>Operador removido</value> 
-  </data> 
-  <data name="BRANCH_UNDELETED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Ramo evento anulado</value> 
-  </data> 
-  <data name="BRANCH_UNDELETED_EVENT_NAME" xml:space="preserve"> 
-    <value>Anular eliminação</value> 
-  </data> 
-  <data name="BRANCH_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Evento atualizado pela filial</value> 
-  </data> 
-  <data name="BRANCH_UPDATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Filial actualizada</value> 
-  </data> 
-  <data name="DEVICE_BARCODE_SCANNED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Evento de leitura de código de barras</value> 
-  </data> 
-  <data name="DEVICE_BARCODE_SCANNED_EVENT_NAME" xml:space="preserve"> 
-    <value>Codigo de barras escaneado</value> 
-  </data> 
-  <data name="DEVICE_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Eventos relacionados ao dispositivo</value> 
-  </data> 
-  <data name="DEVICE_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Dispositivo</value> 
-  </data> 
-  <data name="DEVICE_SMART_CARD_READER_DATA_EVENT_NAME" xml:space="preserve"> 
-    <value>Evento de dados do leitor de cartão inteligente</value> 
-  </data> 
-  <data name="DEVICE_SMART_CARD_READER_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Evento de dados do leitor de cartão inteligente</value> 
-  </data> 
-  <data name="DISCOUNT_APPLY_TYPE_ORDER" xml:space="preserve"> 
-    <value>Pedido</value> 
-  </data> 
-  <data name="DISCOUNT_APPLY_TYPE_ORDER_LINE" xml:space="preserve"> 
-    <value>Linha de pedidos</value> 
-  </data> 
-  <data name="DISCOUNT_CALCULATION_TYPE_FIXED" xml:space="preserve"> 
-    <value>Corrigido</value> 
-  </data> 
-  <data name="DISCOUNT_CALCULATION_TYPE_PERCENTAGE" xml:space="preserve"> 
-    <value>Percentagem</value> 
-  </data> 
-  <data name="DISCOUNT_REWARD_TYPE_BONUS" xml:space="preserve"> 
-    <value>Bônus</value> 
-  </data> 
-  <data name="DISCOUNT_REWARD_TYPE_DISCOUNT" xml:space="preserve"> 
-    <value>Desconto</value> 
-  </data> 
-  <data name="DOCUMENT_TYPES_CONSIGNMENT_NOTE" xml:space="preserve"> 
-    <value>Carta de porte</value> 
-  </data> 
-  <data name="DOCUMENT_TYPES_DELIVERY_NOTE" xml:space="preserve"> 
-    <value>Nota de entrega</value> 
-  </data> 
-  <data name="DOCUMENT_TYPES_DISPATCH_NOTE" xml:space="preserve"> 
-    <value>Nota de despacho</value> 
-  </data> 
-  <data name="DOCUMENT_TYPES_INVOICE" xml:space="preserve"> 
-    <value>Factura</value> 
-  </data> 
-  <data name="DOCUMENT_TYPES_STOCK_TAKE_REPORT" xml:space="preserve"> 
-    <value>Relatório de inventário</value> 
-  </data> 
-  <data name="DOCUMENT_TYPES_WORK_ORDER" xml:space="preserve"> 
-    <value>Ordem de serviço</value> 
-  </data> 
-  <data name="DOCUMENT_TYPES_WRITE_OFF_REPORT" xml:space="preserve"> 
-    <value>Relatório de baixa contábil</value> 
-  </data> 
-  <data name="ENTITY_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Indica uma alteração na entidade da Base de dados</value> 
-  </data> 
-  <data name="ENTITY_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Alteração da entidade da base de dados</value> 
-  </data> 
-  <data name="ENTITY_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Eventos relacionados à entidade da base de dados</value> 
-  </data> 
-  <data name="ENTITY_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Entidade da base de dados</value> 
-  </data> 
-  <data name="HOST_COMPUTER_CLIENT_MODULE_VERSION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Evento de alteração da versão do cliente</value> 
-  </data> 
-  <data name="HOST_COMPUTER_CLIENT_MODULE_VERSION_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value>Versão do cliente alterada</value> 
-  </data> 
-  <data name="HOST_COMPUTER_CONNECTION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Evento de alteração de conexão</value> 
-  </data> 
-  <data name="HOST_COMPUTER_CONNECTION_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value>Conexão alterada</value> 
-  </data> 
-  <data name="HOST_COMPUTER_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Organizar eventos relacionados com informática</value> 
-  </data> 
-  <data name="HOST_COMPUTER_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Computador terminal</value> 
-  </data> 
-  <data name="HOST_COMPUTER_INPUT_LOCK_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Evento de alteração do bloqueio de entrada</value> 
-  </data> 
-  <data name="HOST_COMPUTER_INPUT_LOCK_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value>Bloqueio de entrada alterado</value> 
-  </data> 
-  <data name="HOST_COMPUTER_MAINTENANCE_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Evento de alteração de manutenção</value> 
-  </data> 
-  <data name="HOST_COMPUTER_MAINTENANCE_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value>Manutenção alterada</value> 
-  </data> 
-  <data name="HOST_COMPUTER_SECURITY_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Evento de alteração de segurança</value> 
-  </data> 
-  <data name="HOST_COMPUTER_SECURITY_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value>Segurança alterada</value> 
-  </data> 
-  <data name="HOST_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Organizar eventos relacionados</value> 
-  </data> 
-  <data name="HOST_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Terminal</value> 
-  </data> 
-  <data name="HOST_IN_ORDER_STATE_CHANED_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Estado do pedido do terminal alterado</value> 
-  </data> 
-  <data name="HOST_IN_ORDER_STATE_CHANED_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Estado para disponivel alterado</value> 
-  </data> 
-  <data name="HOST_LAYOUT_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Layout do terminal criado evento</value> 
-  </data> 
-  <data name="HOST_LAYOUT_CREATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Layout do terminal criado</value> 
-  </data> 
-  <data name="HOST_LAYOUT_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Organizar eventos relacionados ao layout</value> 
-  </data> 
-  <data name="HOST_LAYOUT_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Layout do terminal</value> 
-  </data> 
-  <data name="HOST_LAYOUT_GROUP_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Grupo de layout do terminal criou evento</value> 
-  </data> 
-  <data name="HOST_LAYOUT_GROUP_CREATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Grupo de layout do terminal criado</value> 
-  </data> 
-  <data name="HOST_LAYOUT_GROUP_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Organizar eventos relacionados ao grupo de layout</value> 
-  </data> 
-  <data name="HOST_LAYOUT_GROUP_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Grupo de layout de terminal</value> 
-  </data> 
-  <data name="HOST_LAYOUT_GROUP_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Grupo de layout do terminal removeu evento</value> 
-  </data> 
-  <data name="HOST_LAYOUT_GROUP_REMOVED_EVENT_NAME" xml:space="preserve"> 
-    <value>Grupo de layout do terminal removido</value> 
-  </data> 
-  <data name="HOST_LAYOUT_GROUP_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Evento de atualização do grupo de layout do terminal</value> 
-  </data> 
-  <data name="HOST_LAYOUT_GROUP_UPDATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Grupo de layout do anfitrião atualizado</value> 
-  </data> 
-  <data name="HOST_LAYOUT_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Layout do anfitrião removido do evento</value> 
-  </data> 
-  <data name="HOST_LAYOUT_REMOVED_EVENT_NAME" xml:space="preserve"> 
-    <value>Layout do host removido</value> 
-  </data> 
-  <data name="HOST_LAYOUT_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Evento de atualização do layout do anfitrião</value> 
-  </data> 
-  <data name="HOST_LAYOUT_UPDATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Layout do anfitrião atualizado</value> 
-  </data> 
-  <data name="HOST_LOCK_STATE_CHANED_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Estado de bloqueio do host alterado</value> 
-  </data> 
-  <data name="HOST_LOCK_STATE_CHANED_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Estado do bloqueio alterado</value> 
-  </data> 
-  <data name="INSTANCE_AUTHENTICATION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Evento de alteração da autenticação da instância</value> 
-  </data> 
-  <data name="INSTANCE_AUTHENTICATION_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value>A autenticação da instância foi trocada</value> 
-  </data> 
-  <data name="INSTANCE_AUTHORIZATION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Evento de alteração da autorização da instância</value> 
-  </data> 
-  <data name="INSTANCE_AUTHORIZATION_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value>Autorização da instância alterada</value> 
-  </data> 
-  <data name="INSTANCE_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Eventos relacionados à instância</value> 
-  </data> 
-  <data name="INSTANCE_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Instância</value> 
-  </data> 
-  <data name="INSTANCE_ID_TYPE_HARDWARE_ID_DESCRIPTION" xml:space="preserve"> 
-    <value>Identificação do hardware</value> 
-  </data> 
-  <data name="INSTANCE_ID_TYPE_HARDWARE_ID_NAME" xml:space="preserve"> 
-    <value>Identificação do hardware</value> 
-  </data> 
-  <data name="INSTANCE_ID_TYPE_INSTANCE_ID_DESCRIPTION" xml:space="preserve"> 
-    <value>ID da instância</value> 
-  </data> 
-  <data name="INSTANCE_ID_TYPE_INSTANCE_ID_NAME" xml:space="preserve"> 
-    <value>ID da instância</value> 
-  </data> 
-  <data name="INVENTORY_ADJUSTMENT_REASONS_DAMAGED" xml:space="preserve"> 
-    <value>Embalagem danificada</value> 
-  </data> 
-  <data name="INVENTORY_ADJUSTMENT_REASONS_DAMAGED_ITEM" xml:space="preserve"> 
-    <value>Item danificado</value> 
-  </data> 
-  <data name="INVENTORY_ADJUSTMENT_REASONS_EXPIRED" xml:space="preserve"> 
-    <value>Expirado</value> 
-  </data> 
-  <data name="INVENTORY_ADJUSTMENT_REASONS_FORCE_MAJOR" xml:space="preserve"> 
-    <value>Força maior</value> 
-  </data> 
-  <data name="INVENTORY_ADJUSTMENT_REASONS_LOST" xml:space="preserve"> 
-    <value>Perdido</value> 
-  </data> 
-  <data name="INVENTORY_ADJUSTMENT_REASONS_NOT_IN_DEMAND" xml:space="preserve"> 
-    <value>Sem demanda</value> 
-  </data> 
-  <data name="INVENTORY_ADJUSTMENT_TYPE_SALE_BY_COST" xml:space="preserve"> 
-    <value>Venda pelo custo</value> 
-  </data> 
-  <data name="INVENTORY_ADJUSTMENT_TYPE_SALE_BY_PRICE" xml:space="preserve"> 
-    <value>Venda por preço</value> 
-  </data> 
-  <data name="INVENTORY_ADJUSTMENT_TYPE_WRITE_OFF" xml:space="preserve"> 
-    <value>Baixar</value> 
-  </data> 
-  <data name="INVENTORY_TRANSFER_REASONS_FOR_ADJUSTMENT" xml:space="preserve"> 
-    <value>Para ajuste</value> 
-  </data> 
-  <data name="INVENTORY_TRANSFER_REASONS_IN_DEMAND" xml:space="preserve"> 
-    <value>Em demanda</value> 
-  </data> 
-  <data name="INVENTORY_TRANSFER_REASONS_NOT_IN_DEMAND" xml:space="preserve"> 
-    <value>Sem demanda</value> 
-  </data> 
-  <data name="INVENTORY_TYPE_ADJUSTMENT" xml:space="preserve"> 
-    <value>Ajuste</value> 
-  </data> 
-  <data name="INVENTORY_TYPE_INBOUND" xml:space="preserve"> 
-    <value>Entrada</value> 
-  </data> 
-  <data name="INVENTORY_TYPE_TRANSFER" xml:space="preserve"> 
-    <value>Transferência</value> 
-  </data> 
-  <data name="INVOICE_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Indica a criação de uma factura</value> 
-  </data> 
-  <data name="INVOICE_CREATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Criado</value> 
-  </data> 
-  <data name="INVOICE_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Eventos relacionados con facturas</value> 
-  </data> 
-  <data name="INVOICE_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Factura</value> 
-  </data> 
-  <data name="INVOICE_PAYMENT_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Indica a criação de um pagamento de factura</value> 
-  </data> 
-  <data name="INVOICE_PAYMENT_EVENT_NAME" xml:space="preserve"> 
-    <value>Pagamento</value> 
-  </data> 
-  <data name="LICENSE_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Eventos relacionados com licenças</value> 
-  </data> 
-  <data name="LICENSE_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Licença</value> 
-  </data> 
-  <data name="LICENSE_STATE_DISABLED_DESCRIPTION" xml:space="preserve"> 
-    <value>A licença está desabilitada</value> 
-  </data> 
-  <data name="LICENSE_STATE_DISABLED_INSTANCE_ID_DESCRIPTION" xml:space="preserve"> 
-    <value>A identificação da instância está desabilitada/bloqueada</value> 
-  </data> 
-  <data name="LICENSE_STATE_DISABLED_INSTANCE_ID_NAME" xml:space="preserve"> 
-    <value>Id da instância desabilitada</value> 
-  </data> 
-  <data name="LICENSE_STATE_DISABLED_NAME" xml:space="preserve"> 
-    <value>Desabilitado</value> 
-  </data> 
-  <data name="LICENSE_STATE_EXPIRED_DESCRIPTION" xml:space="preserve"> 
-    <value>A licença expirou</value> 
-  </data> 
-  <data name="LICENSE_STATE_EXPIRED_NAME" xml:space="preserve"> 
-    <value>Expirado</value> 
-  </data> 
-  <data name="LICENSE_STATE_INVALID_DESCRIPTION" xml:space="preserve"> 
-    <value>A licença local não é válida</value> 
-  </data> 
-  <data name="LICENSE_STATE_INVALID_NAME" xml:space="preserve"> 
-    <value>Inválido</value> 
-  </data> 
-  <data name="LICENSE_STATE_UNAUTHORIZED_DESCRIPTION" xml:space="preserve"> 
-    <value>Não autorizado</value> 
-  </data> 
-  <data name="LICENSE_STATE_UNAUTHORIZED_NAME" xml:space="preserve"> 
-    <value>Não autorizado</value> 
-  </data> 
-  <data name="LICENSE_STATE_VALID_DESCRIPTION" xml:space="preserve"> 
-    <value>Válido</value> 
-  </data> 
-  <data name="LICENSE_STATE_VALID_NAME" xml:space="preserve"> 
-    <value>Válido</value> 
-  </data> 
-  <data name="LICENSE_TYPE_NORMAL_DESCRIPTION" xml:space="preserve"> 
-    <value>Licença normal</value> 
-  </data> 
-  <data name="LICENSE_TYPE_NORMAL_NAME" xml:space="preserve"> 
-    <value>Normal</value> 
-  </data> 
-  <data name="LICENSE_TYPE_TRIAL_DESCRIPTION" xml:space="preserve"> 
-    <value>Licença de avaliação</value> 
-  </data> 
-  <data name="LICENSE_TYPE_TRIAL_NAME" xml:space="preserve"> 
-    <value>Julgamento</value> 
-  </data> 
-  <data name="LICENSE_TYPE_UNDETERMINED_DESCRIPTION" xml:space="preserve"> 
-    <value>O tipo de licença é indeterminado</value> 
-  </data> 
-  <data name="LICENSE_TYPE_UNDETERMINED_NAME" xml:space="preserve"> 
-    <value>Indeterminado</value> 
-  </data> 
-  <data name="LOG_CLEARED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Indica que o registro está sendo limpo</value> 
-  </data> 
-  <data name="LOG_CLEARED_EVENT_NAME" xml:space="preserve"> 
-    <value>Liberado</value> 
-  </data> 
-  <data name="LOG_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Registre eventos relacionados</value> 
-  </data> 
-  <data name="LOG_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Log</value> 
-  </data> 
-  <data name="MAPPING_TYPE_NETWORK_DRIVE" xml:space="preserve"> 
-    <value>Unidade de rede da rede</value> 
-  </data> 
-  <data name="MAPPING_TYPE_VIRTUAL_DRIVE" xml:space="preserve"> 
-    <value>Unidade virtual</value> 
-  </data> 
-  <data name="MAPPING_TYPE_VIRTUAL_FOLDER" xml:space="preserve"> 
-    <value>Pasta virtual</value> 
-  </data> 
-  <data name="NOTIFICATION_TYPE_AUDIBLE" xml:space="preserve"> 
-    <value>Audível</value> 
-  </data> 
-  <data name="NOTIFICATION_TYPE_NONE" xml:space="preserve"> 
-    <value>Nenhum</value> 
-  </data> 
-  <data name="NOTIFICATION_TYPE_VISUAL" xml:space="preserve"> 
-    <value>Visual</value> 
-  </data> 
-  <data name="NOTIFICATION_TYPE_VISUAL_AND_AUDIBLE" xml:space="preserve"> 
-    <value>Visual e Audível</value> 
-  </data> 
-  <data name="OPTIONS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Indica alteração de opções</value> 
-  </data> 
-  <data name="OPTIONS_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Troco</value> 
-  </data> 
-  <data name="OPTIONS_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Eventos relacionados às opções</value> 
-  </data> 
-  <data name="OPTIONS_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Opções</value> 
-  </data> 
-  <data name="ORDER_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Indica a criação de um pedido</value> 
-  </data> 
-  <data name="ORDER_CREATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Criado</value> 
-  </data> 
-  <data name="ORDER_DELIVERY_STATUS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Indica alteração no status de entrega do pedido</value> 
-  </data> 
-  <data name="ORDER_DELIVERY_STATUS_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Troco</value> 
-  </data> 
-  <data name="ORDER_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Eventos relacionados com pedidos</value> 
-  </data> 
-  <data name="ORDER_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Pedido</value> 
-  </data> 
-  <data name="ORDER_LINE_DELIVERY_STATUS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Indica a alteração do status de entrega da linha do pedido</value> 
-  </data> 
-  <data name="ORDER_LINE_DELIVERY_STATUS_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Troco</value> 
-  </data> 
-  <data name="ORDER_STATUS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Indica alteração no status do pedido</value> 
-  </data> 
-  <data name="ORDER_STATUS_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Troco</value> 
-  </data> 
-  <data name="PAYMENT_INTENT_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Indica a conclusão da intenção de pagamento</value> 
-  </data> 
-  <data name="PAYMENT_INTENT_COMPLETED_EVENT_NAME" xml:space="preserve"> 
-    <value>Completo</value> 
-  </data> 
-  <data name="PAYMENT_INTENT_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Indica a criação de uma intenção de pagamento</value> 
-  </data> 
-  <data name="PAYMENT_INTENT_CREATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Criado</value> 
-  </data> 
-  <data name="PAYMENT_INTENT_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Eventos relacionados à intenção de pagamento</value> 
-  </data> 
-  <data name="PAYMENT_INTENT_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Intenção de pagamento</value> 
-  </data> 
-  <data name="PRODUCT_STOCK_CHANGE_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Indica alteração no nível de estoque do produto</value> 
-  </data> 
-  <data name="PRODUCT_STOCK_CHANGE_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Troco</value> 
-  </data> 
-  <data name="PRODUCT_STOCK_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Eventos relacionados ao stock de produtos</value> 
-  </data> 
-  <data name="PRODUCT_STOCK_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Estoque de produtos</value> 
-  </data> 
-  <data name="REPORT_PRESET_ADDED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Relatório predefinido de evento adicionado</value> 
-  </data> 
-  <data name="REPORT_PRESET_ADDED_EVENT_NAME" xml:space="preserve"> 
-    <value>Predefinição de relatório adicionada</value> 
-  </data> 
-  <data name="REPORT_PRESET_RANGE_DAY_NAME" xml:space="preserve"> 
-    <value>Dia</value> 
-  </data> 
-  <data name="REPORT_PRESET_RANGE_MONTH_NAME" xml:space="preserve"> 
-    <value>Mês</value> 
-  </data> 
-  <data name="REPORT_PRESET_RANGE_WEEK_NAME" xml:space="preserve"> 
-    <value>Semana</value> 
-  </data> 
-  <data name="REPORT_PRESET_RANGE_YEAR_NAME" xml:space="preserve"> 
-    <value>Ano</value> 
-  </data> 
-  <data name="REPORT_PRESET_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Relatório de evento de remoção de predefinição</value> 
-  </data> 
-  <data name="REPORT_PRESET_REMOVED_EVENT_NAME" xml:space="preserve"> 
-    <value>Predefinição do relatório removida</value> 
-  </data> 
-  <data name="REPORT_PRESET_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Relatório de evento atualizado de predefinição</value> 
-  </data> 
-  <data name="REPORT_PRESET_UPDATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Relatório de predefinição atualizado</value> 
-  </data> 
-  <data name="RESERVATION_ACTIVATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Reserva activada</value> 
-  </data> 
-  <data name="RESERVATION_ACTIVATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Ativado</value> 
-  </data> 
-  <data name="RESERVATION_CANCELLED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Reserva cancelada</value> 
-  </data> 
-  <data name="RESERVATION_CANCELLED_EVENT_NAME" xml:space="preserve"> 
-    <value>Cancelado</value> 
-  </data> 
-  <data name="RESERVATION_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Reserva concluída</value> 
-  </data> 
-  <data name="RESERVATION_COMPLETED_EVENT_NAME" xml:space="preserve"> 
-    <value>Completo</value> 
-  </data> 
-  <data name="RESERVATION_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Reserva criada</value> 
-  </data> 
-  <data name="RESERVATION_CREATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Criado</value> 
-  </data> 
-  <data name="RESERVATION_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Eventos relacionados com reservas</value> 
-  </data> 
-  <data name="RESERVATION_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Reserva</value> 
-  </data> 
-  <data name="RESERVATION_EXPIRED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>A reserva expirou</value> 
-  </data> 
-  <data name="RESERVATION_EXPIRED_EVENT_NAME" xml:space="preserve"> 
-    <value>Expirado</value> 
-  </data> 
-  <data name="RESERVATION_HOST_ACTIVATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Reserva de anfitrião ativada</value> 
-  </data> 
-  <data name="RESERVATION_HOST_ACTIVATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Ativado</value> 
-  </data> 
-  <data name="RESERVATION_HOST_ADDED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Anfitrião adicionado a uma reserva</value> 
-  </data> 
-  <data name="RESERVATION_HOST_ADDED_EVENT_NAME" xml:space="preserve"> 
-    <value>Adicionado</value> 
-  </data> 
-  <data name="RESERVATION_HOST_CANCELLED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Reserva do anfitrião cancelada</value> 
-  </data> 
-  <data name="RESERVATION_HOST_CANCELLED_EVENT_NAME" xml:space="preserve"> 
-    <value>Cancelado</value> 
-  </data> 
-  <data name="RESERVATION_HOST_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Reserva do anfitrião concluída</value> 
-  </data> 
-  <data name="RESERVATION_HOST_COMPLETED_EVENT_NAME" xml:space="preserve"> 
-    <value>Completo</value> 
-  </data> 
-  <data name="RESERVATION_HOST_EXPIRED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>A reserva do anfitrião expirou</value> 
-  </data> 
-  <data name="RESERVATION_HOST_EXPIRED_EVENT_NAME" xml:space="preserve"> 
-    <value>Expirado</value> 
-  </data> 
-  <data name="RESERVATION_HOST_MOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Reserva do anfitrião movida</value> 
-  </data> 
-  <data name="RESERVATION_HOST_MOVED_EVENT_NAME" xml:space="preserve"> 
-    <value>Movido</value> 
-  </data> 
-  <data name="RESERVATION_HOST_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Reserva do anfitrião atualizada</value> 
-  </data> 
-  <data name="RESERVATION_HOST_UPDATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Actualizado</value> 
-  </data> 
-  <data name="RESERVATION_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Reserva atualizada</value> 
-  </data> 
-  <data name="RESERVATION_UPDATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Actualizado</value> 
-  </data> 
-  <data name="RESERVATION_USER_ADDED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Adicionado pelo utilizador</value> 
-  </data> 
-  <data name="RESERVATION_USER_ADDED_EVENT_NAME" xml:space="preserve"> 
-    <value>Adicionado</value> 
-  </data> 
-  <data name="RESERVATION_USER_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Utilizador removido</value> 
-  </data> 
-  <data name="RESERVATION_USER_REMOVED_EVENT_NAME" xml:space="preserve"> 
-    <value>Removido</value> 
-  </data> 
-  <data name="RESTRICTION_TYPE_CLASS_NAME" xml:space="preserve"> 
-    <value>Nome da aula</value> 
-  </data> 
-  <data name="RESTRICTION_TYPE_FILE_NAME" xml:space="preserve"> 
-    <value>Nome de ficheiro</value> 
-  </data> 
-  <data name="RESTRICTION_TYPE_TRAY_ICON" xml:space="preserve"> 
-    <value>Ícone da bandeja</value> 
-  </data> 
-  <data name="RESTRICTION_TYPE_UNSET" xml:space="preserve"> 
-    <value>Desabilitar</value> 
-  </data> 
-  <data name="RESTRICTION_TYPE_WINDOW_NAME" xml:space="preserve"> 
-    <value>Nome da janela</value> 
-  </data> 
-  <data name="SCHEDULE_TYPE_DAILY" xml:space="preserve"> 
-    <value>Diário</value> 
-  </data> 
-  <data name="SCHEDULE_TYPE_MONTHLY" xml:space="preserve"> 
-    <value>Mensal</value> 
-  </data> 
-  <data name="SCHEDULE_TYPE_ONE_TIME" xml:space="preserve"> 
-    <value>Uma vez</value> 
-  </data> 
-  <data name="SCHEDULE_TYPE_WEEKLY" xml:space="preserve"> 
-    <value>Semanal</value> 
-  </data> 
-  <data name="SCHEDULE_TYPE_YEARLY" xml:space="preserve"> 
-    <value>Anual</value> 
-  </data> 
-  <data name="SHIFT_ENDED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Indica o fim do turno</value> 
-  </data> 
-  <data name="SHIFT_ENDED_EVENT_NAME" xml:space="preserve"> 
-    <value>Finalizado</value> 
-  </data> 
-  <data name="SHIFT_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Eventos relacionados com turnos</value> 
-  </data> 
-  <data name="SHIFT_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Turno</value> 
-  </data> 
-  <data name="SHIFT_LOCKED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Indica bloqueio de mudança</value> 
-  </data> 
-  <data name="SHIFT_LOCKED_EVENT_NAME" xml:space="preserve"> 
-    <value>Trancado</value> 
-  </data> 
-  <data name="SHIFT_STARTED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Indica o início do turno</value> 
-  </data> 
-  <data name="SHIFT_STARTED_EVENT_NAME" xml:space="preserve"> 
-    <value>Iniciado</value> 
-  </data> 
-  <data name="SHIFT_UNLOCKED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Indica o desbloqueio da mudança do turno</value> 
-  </data> 
-  <data name="SHIFT_UNLOCKED_EVENT_NAME" xml:space="preserve"> 
-    <value>Destrancado</value> 
-  </data> 
-  <data name="STOCK_LEVEL_TYPE_ANY" xml:space="preserve"> 
-    <value>Qualquer</value> 
-  </data> 
-  <data name="STOCK_LEVEL_TYPE_LOW" xml:space="preserve"> 
-    <value>Baixo</value> 
-  </data> 
-  <data name="STOCK_LEVEL_TYPE_OUT_OF_STOCK" xml:space="preserve"> 
-    <value>Esgotado</value> 
-  </data> 
-  <data name="STOCK_TYPE_SELLING_POINT" xml:space="preserve"> 
-    <value>Argumento de venda</value> 
-  </data> 
-  <data name="STOCK_TYPE_WAREHOUSE" xml:space="preserve"> 
-    <value>Armazém</value> 
-  </data> 
-  <data name="TARGET_GROUP_REQUIREMENT_ALL" xml:space="preserve"> 
-    <value>Todos</value> 
-  </data> 
-  <data name="TARGET_GROUP_REQUIREMENT_ANY" xml:space="preserve"> 
-    <value>Qualquer</value> 
-  </data> 
-  <data name="TARGET_REQUIREMENT_ALL" xml:space="preserve"> 
-    <value>Todos</value> 
-  </data> 
-  <data name="TARGET_REQUIREMENT_AMOUNT" xml:space="preserve"> 
-    <value>Montante</value> 
-  </data> 
-  <data name="TARGET_REQUIREMENT_ANY" xml:space="preserve"> 
-    <value>Qualquer</value> 
-  </data> 
-  <data name="TARGET_REQUIREMENT_COUNT" xml:space="preserve"> 
-    <value>Contagem</value> 
-  </data> 
-  <data name="USER_ENABLED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Indica a habilitação de um utilizador</value> 
-  </data> 
-  <data name="USER_ENABLED_EVENT_NAME" xml:space="preserve"> 
-    <value>Habilitado</value> 
-  </data> 
-  <data name="USER_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Eventos relacionados aos utilizadores</value> 
-  </data> 
-  <data name="USER_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Utilizador</value> 
-  </data> 
-  <data name="USER_SESSION_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Sessão do utilizador criada</value> 
-  </data> 
-  <data name="USER_SESSION_CREATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Criado</value> 
-  </data> 
-  <data name="USER_SESSION_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Eventos relacionados à sessão do utilizador</value> 
-  </data> 
-  <data name="USER_SESSION_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Sessão do utilizador</value> 
-  </data> 
-  <data name="USER_SESSION_MOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Sessão do utilizador movida</value> 
-  </data> 
-  <data name="USER_SESSION_MOVED_EVENT_NAME" xml:space="preserve"> 
-    <value>Movido</value> 
-  </data> 
-  <data name="USER_SESSION_STATE_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value>Estado trocado</value> 
-  </data> 
-  <data name="USER_SESSION_STATE_CHANGED_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Estado de sessão do utilizador alterado</value> 
-  </data> 
-  <data name="WAITING_LINE_ESTIMATION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Estimativa alterada evento</value> 
-  </data> 
-  <data name="WAITING_LINE_ESTIMATION_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value>Estimativa trocada</value> 
-  </data> 
-  <data name="WAITING_LINE_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Fila de espera</value> 
-  </data> 
-  <data name="WAITING_LINE_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Eventos relacionados com filas de espera</value> 
-  </data> 
-  <data name="WAITING_LINE_TIMED_OUT_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Evento de tempo expirou da fila de espera</value> 
-  </data> 
-  <data name="WAITING_LINE_TIMED_OUT_EVENT_NAME" xml:space="preserve"> 
-    <value>Tempo expirou</value> 
-  </data> 
-  <data name="WAITING_LINE_USER_ADDED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Evento adicionado pelo utilizador</value> 
-  </data> 
-  <data name="WAITING_LINE_USER_ADDED_EVENT_NAME" xml:space="preserve"> 
-    <value>Adicionado pelo utilizador</value> 
-  </data> 
-  <data name="WAITING_LINE_USER_MOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Evento movido pelo utilizador</value> 
-  </data> 
-  <data name="WAITING_LINE_USER_MOVED_EVENT_NAME" xml:space="preserve"> 
-    <value>Utilizador movido</value> 
-  </data> 
-  <data name="WAITING_LINE_USER_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Evento removido pelo utilizador</value> 
-  </data> 
-  <data name="WAITING_LINE_USER_REMOVED_EVENT_NAME" xml:space="preserve"> 
-    <value>Utilizador removido</value> 
-  </data> 
-  <data name="SHIFT_COUNT_TYPE_DEFAULT" xml:space="preserve"> 
-    <value>Predefinido</value> 
-  </data> 
-  <data name="SHIFT_COUNT_TYPE_SHIFT_CLOSE" xml:space="preserve"> 
-    <value>Fecho de turno</value> 
-  </data> 
-  <data name="SHIFT_COUNT_TYPE_SHIFT_OPEN" xml:space="preserve"> 
-    <value>Turno aberto</value> 
-  </data> 
-  <data name="PROMOTION_CODE_TYPE_PUBLIC_NAME" xml:space="preserve"> 
-    <value>Público</value> 
-  </data> 
-  <data name="PROMOTION_CODE_TYPE_RESTRICTED_NAME" xml:space="preserve"> 
-    <value>Restrito</value> 
-  </data> 
-  <data name="PAYMENT_TRANSACTION_TYPE_DEPOSIT_PAYMENT" xml:space="preserve"> 
-    <value>Pagamento do depósito</value> 
-  </data> 
-  <data name="PAYMENT_TRANSACTION_TYPE_DEPOSIT_PAYMENT_REFUND" xml:space="preserve"> 
-    <value>Reembolso do pagamento do depósito</value> 
-  </data> 
-  <data name="PAYMENT_TRANSACTION_TYPE_INVOICE_PAYMENT" xml:space="preserve"> 
-    <value>Pagamento de Facturas</value> 
-  </data> 
-  <data name="PAYMENT_TRANSACTION_TYPE_INVOICE_PAYMENT_REFUND" xml:space="preserve"> 
-    <value>Reembolso de pagamento de factura</value> 
-  </data> 
-  <data name="PAYMENT_TRANSACTION_TYPE_PAY_IN" xml:space="preserve"> 
-    <value>Pague</value> 
-  </data> 
-  <data name="PAYMENT_TRANSACTION_TYPE_PAY_OUT" xml:space="preserve"> 
-    <value>Pagamento</value> 
-  </data> 
-  <data name="PAYMENT_INTENT_STATE_CANCELLED" xml:space="preserve"> 
-    <value>Cancelado</value> 
-  </data> 
-  <data name="PAYMENT_INTENT_STATE_COMPLETED" xml:space="preserve"> 
-    <value>Completo</value> 
-  </data> 
-  <data name="PAYMENT_INTENT_STATE_EXPIRED" xml:space="preserve"> 
-    <value>Expirado</value> 
-  </data> 
-  <data name="PAYMENT_INTENT_STATE_FAILED" xml:space="preserve"> 
-    <value>Falhou</value> 
-  </data> 
-  <data name="PAYMENT_INTENT_STATE_PENDING" xml:space="preserve"> 
-    <value>Pendente</value> 
-  </data> 
-  <data name="PAYMENT_INTENT_STATE_CAPTURED" xml:space="preserve"> 
-    <value>Capturado</value> 
-  </data> 
-  <data name="PAYMENT_INTENT_STATE_DECLINED" xml:space="preserve"> 
-    <value>Recusado</value> 
-  </data> 
-  <data name="RESERVATION_PAYMENT_STATUS_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Status do pagamento da reserva alterado</value> 
-  </data> 
-  <data name="RESERVATION_PAYMENT_STATUS_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value>Status do pagamento alterado</value> 
-  </data> 
-  <data name="PAYMENT_INTENT_CAPTURED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Indica a captura da intenção de pagamento</value> 
-  </data> 
-  <data name="PAYMENT_INTENT_CAPTURED_EVENT_NAME" xml:space="preserve"> 
-    <value>Capturado</value> 
-  </data> 
-  <data name="PAYMENT_INTENT_DECLINED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Indica recusa de intenção de pagamento</value> 
-  </data> 
-  <data name="PAYMENT_INTENT_DECLINED_EVENT_NAME" xml:space="preserve"> 
-    <value>Recusado</value> 
-  </data> 
-  <data name="PAYMENT_INTENT_FAILED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Indica falha na intenção de pagamento</value> 
-  </data> 
-  <data name="PAYMENT_INTENT_FAILED_EVENT_NAME" xml:space="preserve"> 
-    <value>Falhou</value> 
-  </data> 
-  <data name="PAYMENT_INTENT_CANCELLED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Indica o cancelamento da intenção de pagamento</value> 
-  </data> 
-  <data name="PAYMENT_INTENT_CANCELLED_EVENT_NAME" xml:space="preserve"> 
-    <value>Cancelado</value> 
-  </data> 
-  <data name="DEVICE_FISCAL_PRINTER_ERROR_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Evento de erro da impressora fiscal</value> 
-  </data> 
-  <data name="DEVICE_FISCAL_PRINTER_ERROR_EVENT_NAME" xml:space="preserve"> 
-    <value>Erro</value> 
-  </data> 
-  <data name="DEVICE_PAYMENT_TERMINAL_ERROR_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Evento de erro no terminal de pagamento</value> 
-  </data> 
-  <data name="DEVICE_PAYMENT_TERMINAL_ERROR_EVENT_NAME" xml:space="preserve"> 
-    <value>Erro</value> 
-  </data> 
-  <data name="ORDER_STATUS_FILTER_ACCEPTED" xml:space="preserve"> 
-    <value>Aceite</value> 
-  </data> 
-  <data name="ORDER_STATUS_FILTER_CANCELED" xml:space="preserve"> 
-    <value>Cancelado</value> 
-  </data> 
-  <data name="ORDER_STATUS_FILTER_COMPLETED" xml:space="preserve"> 
-    <value>Completo</value> 
-  </data> 
-  <data name="ORDER_STATUS_FILTER_ON_HOLD" xml:space="preserve"> 
-    <value>Em espera</value> 
-  </data> 
-  <data name="ORDER_STATUS_FILTER_PROCESSING" xml:space="preserve"> 
-    <value>Processamento</value> 
-  </data> 
-  <data name="PROMOTION_LIMIT_TYPE_TOTAL" xml:space="preserve"> 
-    <value>Total</value> 
-  </data> 
-  <data name="PROMOTION_LIMIT_TYPE_PER_USER" xml:space="preserve"> 
-    <value>Por utilizador</value> 
-  </data> 
-  <data name="PROMOTION_LIMIT_TYPE_DAILY" xml:space="preserve"> 
-    <value>Diário</value> 
-  </data> 
-  <data name="PROMOTION_LIMIT_TYPE_WEEKLY" xml:space="preserve"> 
-    <value>Semanal</value> 
-  </data> 
-  <data name="USER_BALANCE_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Indica alteração no saldo</value> 
-  </data> 
-  <data name="USER_BALANCE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Saldo alterado</value> 
-  </data> 
-  <data name="USER_BALANCE_CLOSE_EVENT_NAME" xml:space="preserve"> 
-    <value>Indica saldo de fechamento</value> 
-  </data> 
-  <data name="USER_BALANCE_CLOSE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Fechar Saldo</value> 
-  </data> 
-  <data name="USER_BILLING_OPTIONS_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Alteração das opções de faturamento</value> 
-  </data> 
-  <data name="USER_BILLING_OPTIONS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Indica alteração nas opções de faturamento</value> 
-  </data> 
-  <data name="USER_EMAIL_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Alteração de Email</value> 
-  </data> 
-  <data name="USER_EMAIL_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Indica troca de e-mail</value> 
-  </data> 
-  <data name="USER_USER_GROUP_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Alteração do grupo de usuário</value> 
-  </data> 
-  <data name="USER_USER_GROUP_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Indica alteração do grupo de usuário</value> 
-  </data> 
-  <data name="USER_NEGATIVE_BALANCE_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Alteração negativa no saldo</value> 
-  </data> 
-  <data name="USER_NEGATIVE_BALANCE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Indica variação negativa no saldo</value> 
-  </data> 
-  <data name="USER_PASSWORD_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Alteração da senha</value> 
-  </data> 
-  <data name="USER_PASSWORD_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Indica alteração de senha</value> 
-  </data> 
-  <data name="USER_PICTURE_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Mudança de imagem</value> 
-  </data> 
-  <data name="USER_PICTURE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Indica mudança de imagem</value> 
-  </data> 
-  <data name="USER_RENAME_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Renomear</value> 
-  </data> 
-  <data name="USER_RENAME_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Indica renomeação do usuário</value> 
-  </data> 
-  <data name="USER_SMART_CARD_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Troca de cartão inteligente</value> 
-  </data> 
-  <data name="USER_SMART_CARD_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Indica troca de cartão inteligente</value> 
-  </data> 
-  <data name="USER_USAGE_SESSION_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Alteração da sessão de utilização</value> 
-  </data> 
-  <data name="USER_USAGE_SESSION_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Indica alteração na sessão de utilização</value> 
-  </data> 
-  <data name="BILLING_OPTION_NONE_NAME" xml:space="preserve"> 
-    <value>Nenhum</value> 
-  </data> 
-  <data name="BILLING_OPTION_DISABLE_TIME_OFFER_NAME" xml:space="preserve"> 
-    <value>Desabilitar ofertas de tempo</value> 
-  </data> 
-  <data name="BILLING_OPTION_DISABLE_FIXED_TIME_NAME" xml:space="preserve"> 
-    <value>Desabilitar tempo fixo</value> 
-  </data> 
-  <data name="BILLING_OPTION_DISABLE_DEPOSITS_NAME" xml:space="preserve"> 
-    <value>Desabilitar depósitos</value> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_EMAIL" xml:space="preserve"> 
-    <value>Email</value> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_FACEBOOK_MESSENGER_NAME" xml:space="preserve"> 
-    <value>Facebook Messenger</value> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_INSTAGRAM_NAME" xml:space="preserve"> 
-    <value>Instagram</value> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_SMS_NAME" xml:space="preserve"> 
-    <value>SMS</value> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_TELEGRAM_NAME" xml:space="preserve"> 
-    <value>Telegram</value> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_TWITTER_DM_NAME" xml:space="preserve"> 
-    <value>X / Twitter</value> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_VIBER_NAME" xml:space="preserve"> 
-    <value>Viber</value> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_WHATS_APP_NAME" xml:space="preserve"> 
-    <value>WhatsApp</value> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_WE_CHAT_NAME" xml:space="preserve"> 
-    <value>WeChat</value> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_HOST_HAS_RESERVED_GUEST_DESCRIPTION" xml:space="preserve"> 
-    <value>O terminal reservado para convidados</value> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_HOST_HAS_RESERVED_GUEST_NAME" xml:space="preserve"> 
-    <value>O terminal reservado para um convidado</value> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_HOST_IN_USE_DESCRIPTION" xml:space="preserve"> 
-    <value>O terminal está em uso</value> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_HOST_IN_USE_NAME" xml:space="preserve"> 
-    <value>Terminal em uso</value> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_HOST_IS_RESERVED_DESCRIPTION" xml:space="preserve"> 
-    <value>O terminal tem reserva</value> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_HOST_IS_RESERVED_NAME" xml:space="preserve"> 
-    <value>O terminal  está reservado</value> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
-    <value>A exclusão do terminal foi bem-sucedida.</value> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve"> 
-    <value>Apagar o terminal bem-sucedido</value> 
-  </data> 
-  <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_DESCRIPTION" xml:space="preserve"> 
-    <value>Falhou ao excluir grupo de produtos</value> 
-  </data> 
-  <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_NAME" xml:space="preserve"> 
-    <value>Falhou ao excluir grupo de produtos</value> 
-  </data> 
-  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_DESCRIPTION" xml:space="preserve"> 
-    <value>Grupos de produtos não vazios não podem ser excluídos</value> 
-  </data> 
-  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_NAME" xml:space="preserve"> 
-    <value>O Grupo de produtos não está vazio</value> 
-  </data> 
-  <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
-    <value>A exclusão do grupo de produtos foi bem-sucedida.</value> 
-  </data> 
-  <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve"> 
-    <value>Apagar o grupo de produtos bem-sucedido</value> 
-  </data> 
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_DESCRIPTION" xml:space="preserve"> 
-    <value>Falhou ao apagar a categoria do aplicativo</value> 
-  </data> 
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_NAME" xml:space="preserve"> 
-    <value>Falhou ao excluir a categoria do aplicativo</value> 
-  </data> 
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPY_DESCRIPTION" xml:space="preserve"> 
-    <value>Categoria de aplicativo não vazia não pode ser apagada</value> 
-  </data> 
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPY_NAME" xml:space="preserve"> 
-    <value>A categoria da aplicação não está vazia</value> 
-  </data> 
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
-    <value>A exclusão da categoria do aplicativo foi bem-sucedida.</value> 
-  </data> 
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve"> 
-    <value>Exclusão bem-sucedida da categoria da aplicação</value> 
-  </data> 
-  <data name="WAITING_LINE_SATE_ACTIVE_NAME" xml:space="preserve"> 
-    <value>Activo</value> 
-  </data> 
-  <data name="WAITING_LINE_SATE_PROCESSED_NAME" xml:space="preserve"> 
-    <value>Processado</value> 
-  </data> 
-  <data name="WAITING_LINE_SATE_CANCELED_NAME" xml:space="preserve"> 
-    <value>Cancelado</value> 
-  </data> 
-  <data name="STOCK_TRANSACTION_TYPE_ADD_NAME" xml:space="preserve"> 
-    <value>Adicionar</value> 
-  </data> 
-  <data name="STOCK_TRANSACTION_TYPE_REMOVE_NAME" xml:space="preserve"> 
-    <value>Remover</value> 
-  </data> 
-  <data name="STOCK_TRANSACTION_TYPE_RETURN_NAME" xml:space="preserve"> 
-    <value>Retorno</value> 
-  </data> 
-  <data name="STOCK_TRANSACTION_TYPE_SALE_NAME" xml:space="preserve"> 
-    <value>Venda</value> 
-  </data> 
-  <data name="STOCK_TRANSACTION_TYPE_SET_NAME" xml:space="preserve"> 
-    <value>Definir</value> 
-  </data> 
-  <data name="DEPOSIT_TRANSACTION_TYPE_CHARGE_NAME" xml:space="preserve"> 
-    <value>Cobrar</value> 
-  </data> 
-  <data name="DEPOSIT_TRANSACTION_TYPE_CREDIT_NAME" xml:space="preserve"> 
-    <value>Crédito</value> 
-  </data> 
-  <data name="DEPOSIT_TRANSACTION_TYPE_DEPOSIT_NAME" xml:space="preserve"> 
-    <value>Depósito</value> 
-  </data> 
-  <data name="DEPOSIT_TRANSACTION_TYPE_WITHDRAW_NAME" xml:space="preserve"> 
-    <value>Levantamento</value> 
-  </data> 
-  <data name="USER_SESSION_STATE_ACTIVE_NAME" xml:space="preserve"> 
-    <value>Activo</value> 
-  </data> 
-  <data name="USER_SESSION_STATE_NONE_NAME" xml:space="preserve"> 
-    <value>Esperando</value> 
-  </data> 
-  <data name="USER_SESSION_STATE_ENDED_NAME" xml:space="preserve"> 
-    <value>Finalizado</value> 
-  </data> 
-  <data name="USER_SESSION_STATE_PENDING_NAME" xml:space="preserve"> 
-    <value>Pendente</value> 
-  </data> 
-  <data name="USER_SESSION_STATE_PAUSED_NAME" xml:space="preserve"> 
-    <value>Em pausa</value> 
-  </data> 
-  <data name="USER_SESSION_STATE_MOVED_NAME" xml:space="preserve"> 
-    <value>Movido</value> 
-  </data> 
-  <data name="ENTITY_EVENT_TYPE_ADDED_NAME" xml:space="preserve"> 
-    <value>Adicionado</value> 
-  </data> 
-  <data name="ENTITY_EVENT_TYPE_REMOVED_NAME" xml:space="preserve"> 
-    <value>Removido</value> 
-  </data> 
-  <data name="ENTITY_EVENT_TYPE_MODIFIED_NAME" xml:space="preserve"> 
-    <value>Modificado</value> 
-  </data> 
-  <data name="TASK_TYPE_JUNCTION_NAME" xml:space="preserve"> 
-    <value>Junção</value> 
-  </data> 
-  <data name="TASK_TYPE_NOTIFICATION_NAME" xml:space="preserve"> 
-    <value>Notificação</value> 
-  </data> 
-  <data name="TASK_TYPE_PROCESS_NAME" xml:space="preserve"> 
-    <value>Processo</value> 
-  </data> 
-  <data name="TASK_TYPE_SCRIPT_NAME" xml:space="preserve"> 
-    <value>Script</value> 
-  </data> 
-  <data name="LOGIN_RESULT_ACCOUNT_DISABLED_DESCRIPTION" xml:space="preserve"> 
-    <value>A conta de usuário especificada está desativada.</value> 
-  </data> 
-  <data name="LOGIN_RESULT_ACCOUNT_DISABLED_NAME" xml:space="preserve"> 
-    <value>Conta desabilitada</value> 
-  </data> 
-  <data name="LOGIN_RESULT_ALREADY_LOGGED_IN_DESCRIPTION" xml:space="preserve"> 
-    <value>Utilizador já tem sessão iniciada</value> 
-  </data> 
-  <data name="LOGIN_RESULT_ALREADY_LOGGED_IN_NAME" xml:space="preserve"> 
-    <value>Já tem sessão</value> 
-  </data> 
-  <data name="LOGIN_RESULT_DENIED_DESCRIPTION" xml:space="preserve"> 
-    <value>O início de sessão foi negado</value> 
-  </data> 
-  <data name="LOGIN_RESULT_DENIED_NAME" xml:space="preserve"> 
-    <value>Iniciar sessão negada</value> 
-  </data> 
-  <data name="LOGIN_RESULT_FAILED_DESCRIPTION" xml:space="preserve"> 
-    <value>Erro de iniciação de sessão não especificado</value> 
-  </data> 
-  <data name="LOGIN_RESULT_FAILED_NAME" xml:space="preserve"> 
-    <value>Falha na iniciação da sessão</value> 
-  </data> 
-  <data name="LOGIN_RESULT_INSUFFICIENT_BALANCE_DESCRIPTION" xml:space="preserve"> 
-    <value>O utilizador especificado não possui saldo insuficiente.</value> 
-  </data> 
-  <data name="LOGIN_RESULT_INSUFFICIENT_BALANCE_NAME" xml:space="preserve"> 
-    <value>Saldo insuficiente</value> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_CREDENTIALS_DESCRIPTION" xml:space="preserve"> 
-    <value>O nome de utilizador ou senha especificado é inválido</value> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_CREDENTIALS_NAME" xml:space="preserve"> 
-    <value>Senha ou utilizador inválidos</value> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_HOST_ID_DESCRIPTION" xml:space="preserve"> 
-    <value>O Id do terminal especificado é inválido</value> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_HOST_ID_NAME" xml:space="preserve"> 
-    <value>Terminal inválido</value> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_PARAMETERS_DESCRIPTION" xml:space="preserve"> 
-    <value>Os parâmetros especificados são inválidos.</value> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_PARAMETERS_NAME" xml:space="preserve"> 
-    <value>Parâmetros inválidos</value> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_PASSWORD_DESCRIPTION" xml:space="preserve"> 
-    <value>A senha especificada é inválida</value> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_PASSWORD_NAME" xml:space="preserve"> 
-    <value>Senha inválida</value> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_SLOT_DESCRIPTION" xml:space="preserve"> 
-    <value>O lugar especificado é inválido</value> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_SLOT_NAME" xml:space="preserve"> 
-    <value>Lugar inválido</value> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_USERNAME_DESCRIPTION" xml:space="preserve"> 
-    <value>O nome de utilizador especificado é inválido</value> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_USERNAME_NAME" xml:space="preserve"> 
-    <value>Utilizador inválido</value> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_USER_GROUP_ID_DESCRIPTION" xml:space="preserve"> 
-    <value>O ID do grupo de utilizadores especificado é inválido.</value> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_USER_GROUP_ID_NAME" xml:space="preserve"> 
-    <value>Grupo de utilizador inválido</value> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_USER_ID_DESCRIPTION" xml:space="preserve"> 
-    <value>A Id de utilizador especificada é inválida.</value> 
-  </data> 
-  <data name="LOGIN_RESULT_INVALID_USER_ID_NAME" xml:space="preserve"> 
-    <value>Utilizador inválido</value> 
-  </data> 
-  <data name="LOGIN_RESULT_LOGIN_IN_PROGRESS_DESCRIPTION" xml:space="preserve"> 
-    <value>Iniciar sessão em progresso</value> 
-  </data> 
-  <data name="LOGIN_RESULT_LOGIN_IN_PROGRESS_NAME" xml:space="preserve"> 
-    <value>Em progresso</value> 
-  </data> 
-  <data name="LOGIN_RESULT_LOGOUT_IN_PROGRESS_DESCRIPTION" xml:space="preserve"> 
-    <value>Sua sessão está em progresso</value> 
-  </data> 
-  <data name="LOGIN_RESULT_LOGOUT_IN_PROGRESS_NAME" xml:space="preserve"> 
-    <value>Em progresso</value> 
-  </data> 
-  <data name="LOGIN_RESULT_MAXIMUM_SESSIONS_REACHED_DESCRIPTION" xml:space="preserve"> 
-    <value>Falha no início de sessão devido às sessões máximas atingidas</value> 
-  </data> 
-  <data name="LOGIN_RESULT_MAXIMUM_SESSIONS_REACHED_NAME" xml:space="preserve"> 
-    <value>Sessões máximas atingidas</value> 
-  </data> 
-  <data name="LOGIN_RESULT_NOT_IN_WAITING_LINE_DESCRIPTION" xml:space="preserve"> 
-    <value>O utilizador especificado não está na fila de espera</value> 
-  </data> 
-  <data name="LOGIN_RESULT_NOT_IN_WAITING_LINE_NAME" xml:space="preserve"> 
-    <value>Não está na fila de espera</value> 
-  </data> 
-  <data name="LOGIN_RESULT_OPERATOR_USER_GROUP_DENIED_DESCRIPTION" xml:space="preserve"> 
-    <value>Grupo de usuários não autorizado a iniciar sessão a partir do Gestor</value> 
-  </data> 
-  <data name="LOGIN_RESULT_OPERATOR_USER_GROUP_DENIED_NAME" xml:space="preserve"> 
-    <value>Iniciar sessão do grupo de usuários negada para o operador</value> 
-  </data> 
-  <data name="LOGIN_RESULT_RESTRICTED_BY_AGE_DESCRIPTION" xml:space="preserve"> 
-    <value>O início de sessão não é permitido neste momento devido à configuração de restrições de idade.</value> 
-  </data> 
-  <data name="LOGIN_RESULT_RESTRICTED_BY_AGE_NAME" xml:space="preserve"> 
-    <value>Restrições de idade para iniciar sessão</value> 
-  </data> 
-  <data name="LOGIN_RESULT_SLOT_IN_USE_DESCRIPTION" xml:space="preserve"> 
-    <value>O lugar especificado já está em uso.</value> 
-  </data> 
-  <data name="LOGIN_RESULT_SLOT_IN_USE_NAME" xml:space="preserve"> 
-    <value>Lugar já em uso</value> 
-  </data> 
-  <data name="LOGIN_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
-    <value>O início de sessão do utilizador foi bem-sucedido</value> 
-  </data> 
-  <data name="LOGIN_RESULT_SUCCESS_NAME" xml:space="preserve"> 
-    <value>Iniciar sessão bem-sucedida</value> 
-  </data> 
-  <data name="INVOICE_STATUS_PAID_NAME" xml:space="preserve"> 
-    <value>Pago</value> 
-  </data> 
-  <data name="INVOICE_STATUS_PARTIALLY_PAID_NAME" xml:space="preserve"> 
-    <value>Pago parcialmente</value> 
-  </data> 
-  <data name="INVOICE_STATUS_UNPAID_NAME" xml:space="preserve"> 
-    <value>Não pago</value> 
-  </data> 
-  <data name="USER_SESSION_STATE_GRACE_NAME" xml:space="preserve"> 
-    <value>Graça</value> 
-  </data> 
+  </data>
 </root>

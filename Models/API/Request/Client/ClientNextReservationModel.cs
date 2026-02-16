@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -11,18 +12,22 @@ namespace Gizmo.Web.Api.Models
         public int? NextReservationId { get; init; }
 
         /// <inheritdoc/>
+        [NotNullIfNotNull(nameof(NextReservationId))]
         [MessagePack.Key(1)]
         public DateTime? NextReservationTime { get; init; }
 
         /// <inheritdoc/>
+        [NotNullIfNotNull(nameof(NextReservationId))]
         [MessagePack.Key(2)]
         public int? Duration { get; init; }
 
         /// <inheritdoc/>
+        [NotNullIfNotNull(nameof(NextReservationId))]
         [MessagePack.Key(4)]
         public int? LoginBlockBeforeTime { get; init; }
 
         /// <inheritdoc/>
+        [NotNullIfNotNull(nameof(NextReservationId))]
         [MessagePack.Key(6)]
         public int? LoginBlockAfterTime { get; init; }
     }
