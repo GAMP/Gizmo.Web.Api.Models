@@ -2,9 +2,9 @@
 
 namespace Gizmo.Web.Api.Models
 {
-    /// <inheritdoc/>
+    /// <inheritdoc cref="IClientNextReservationModel"/>
     [MessagePack.MessagePackObject]
-    public sealed class ClientReservationModel : IClientReservationModel
+    public sealed class ClientNextReservationModel : IClientNextReservationModel
     {
         /// <inheritdoc/>
         [MessagePack.Key(0)]
@@ -16,18 +16,14 @@ namespace Gizmo.Web.Api.Models
 
         /// <inheritdoc/>
         [MessagePack.Key(2)]
-        public bool EnableLoginBlock { get; init; }
-
-        /// <inheritdoc/>
-        [MessagePack.Key(3)]
-        public int LoginBlockTime { get; init; }
+        public int? Duration { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(4)]
-        public bool EnableLoginUnblock { get; init; }
+        public int? LoginBlockBeforeTime { get; init; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(5)]
-        public int LoginUnblockTime { get; init; }
+        [MessagePack.Key(6)]
+        public int? LoginBlockAfterTime { get; init; }
     }
 }
