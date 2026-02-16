@@ -1494,4 +1494,22 @@
   <data name="USER_SESSION_STATE_GRACE_NAME" xml:space="preserve">
     <value>Grace</value>
   </data>
+  <data name="USER_NOTE_ADDED_EVENT_NAME" xml:space="preserve">
+    <value>Note added</value>
+  </data>
+  <data name="USER_NOTE_ADDED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates that user note has been added</value>
+  </data>
+  <data name="USER_NOTE_DELETED_EVENT_NAME" xml:space="preserve">
+    <value>Note deleted</value>
+  </data>
+  <data name="USER_NOTE_DELETED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates that user note has been deleted</value>
+  </data>
+  <data name="USER_NOTE_UPDATED_EVENT_NAME" xml:space="preserve">
+    <value>Note updated</value>
+  </data>
+  <data name="USER_NOTE_UPDATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates that user note has been updated</value>
+  </data>
 </root>
