@@ -1,10 +1,10 @@
 ﻿namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Reserved guest release model.
+    /// Host reserved guest release model.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    public sealed class ReservedGuestReleaseModel : IWebApiModel
+    public sealed class HostReleaseGuestResultModel : IWebApiModel
     {
         /// <summary>
         /// User id.
