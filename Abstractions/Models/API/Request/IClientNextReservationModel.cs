@@ -24,21 +24,19 @@ namespace Gizmo.Web.Api.Models
         public DateTime? NextReservationTime { get; init; }
 
         /// <summary>
-        /// Time in minutes before upcoming reservation to block login.
-        /// </summary>
-        public int? LoginBlockBeforeTime { get; init; }
-
-        /// <summary>
-        /// Time in minutes before unblocking login for active reservation.
-        /// </summary>
-        public int? LoginBlockAfterTime { get; init; }
-
-        /// <summary>
         /// Reservation duration in minutes.
         /// </summary>
         /// <remarks>
         /// This can be used to determine how long the reservation is scheduled to last. The value will be null if there are no upcoming reservations or if the duration is not specified for the reservation.
         /// </remarks>
         public int? Duration { get; init; }
+
+        /// <summary>
+        /// Time in minutes before upcoming reservation to block login.
+        /// </summary>
+        /// <remarks>
+        /// This can be used to determine when we will start blocking non-reservation users from logging in. The value will be null if there are no upcoming reservations or login blocking is disabled.
+        /// </remarks>
+        public int? LoginBlockBeforeTime { get; init; }
     }
 }

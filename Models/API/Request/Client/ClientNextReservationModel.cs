@@ -25,10 +25,5 @@ namespace Gizmo.Web.Api.Models
         [NotNullIfNotNull(nameof(NextReservationId))]
         [MessagePack.Key(4)]
         public int? LoginBlockBeforeTime { get; init; }
-
-        /// <inheritdoc/>
-        [NotNullIfNotNull(nameof(NextReservationId))]
-        [MessagePack.Key(6)]
-        public int? LoginBlockAfterTime { get; init; }
     }
 }
