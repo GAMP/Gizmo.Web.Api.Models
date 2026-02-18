@@ -38,5 +38,10 @@ namespace Gizmo.Web.Api.Models
         /// This can be used to determine when we will start blocking non-reservation users from logging in. The value will be null if there are no upcoming reservations or login blocking is disabled.
         /// </remarks>
         public int? LoginBlockBeforeTime { get; init; }
+
+        /// <summary>
+        /// Reservation payment status.
+        /// </summary>
+        public ReservationPaymentStatus? PaymentStatus { get; init; }
     }
 }
