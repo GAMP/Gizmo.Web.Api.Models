@@ -1512,4 +1512,25 @@
   <data name="USER_NOTE_UPDATED_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Indicates that user note has been updated</value>
   </data>
+  <data name="RESERVATION_CURRENT_CONFIRM_RESULT_SUCCESS_NAME" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="RESERVATION_CURRENT_CONFIRM_RESULT_INVALID_PIN_NAME" xml:space="preserve">
+    <value>Invalid pin</value>
+  </data>
+  <data name="RESERVATION_CURRENT_CONFIRM_RESULT_ERROR_NAME" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="RESERVATION_CURRENT_CONFIRMED_RESULT_CONFIRMED_NAME" xml:space="preserve">
+    <value>Confirmed</value>
+  </data>
+  <data name="RESERVATION_CURRENT_CONFIRMED_RESULT_NO_RESERVATION_NAME" xml:space="preserve">
+    <value>No reservation</value>
+  </data>
+  <data name="RESERVATION_CURRENT_CONFIRMED_RESULT_UNCONFIRMED_NAME" xml:space="preserve">
+    <value>Unconfirmed</value>
+  </data>
+  <data name="RESERVATION_CURRENT_CONFIRM_RESULT_NO_RESERVATION_NAME" xml:space="preserve">
+    <value>No reservation</value>
+  </data>
 </root>
