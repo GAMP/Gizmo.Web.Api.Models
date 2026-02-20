@@ -11,13 +11,13 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/GAMP/Gizmo.Web.Api.Models</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <Copyright>NETProjects</Copyright>
+    <Copyright>NETProjects LP</Copyright>
     <Product>Gizmo</Product>
-    <Authors>NETProjects</Authors>
-    <Company>NETProjects</Company>
+    <Authors>NETProjects LP</Authors>
+    <Company>NETProjects LP</Company>
     <PackageIcon>package_icon.png</PackageIcon>
     <Platforms>AnyCPU;x64</Platforms>
-    <Version>1.0.4.0</Version>
+    <Version>1.0.5.0</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
