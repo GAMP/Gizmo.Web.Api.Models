@@ -17,9 +17,7 @@
     <Company>NETProjects LP</Company>
     <PackageIcon>package_icon.png</PackageIcon>
     <Platforms>AnyCPU;x64</Platforms>
-    <Version>1.0.8</Version>
-    <IncludeSymbols>true</IncludeSymbols>
-    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <Version>1.0.7.0</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -61,7 +59,7 @@
   </ItemGroup>
 
   <ItemGroup Condition="!Exists('..\Gizmo.Shared\Gizmo.Shared.csproj')">
-    <PackageReference Include="Gizmo.Shared" Version="1.0.8" />
+    <PackageReference Include="Gizmo.Shared" Version="1.0.7" />
   </ItemGroup>
 
 </Project>
