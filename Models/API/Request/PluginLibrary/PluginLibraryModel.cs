@@ -41,11 +41,5 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(5)]
         public bool AvailableInManager { get; init; }
-
-        /// <summary>
-        /// Indicates if the plugin assembly is currently loaded in the process.
-        /// </summary>
-        [MessagePack.Key(6)]
-        public bool IsLoaded { get; init; }
     }
 }
