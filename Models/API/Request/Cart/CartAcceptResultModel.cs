@@ -176,6 +176,15 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(4)]
         public DateTime? ExpirationTime { get; init; }
+
+        /// <summary>
+        /// Optional payment URL.
+        /// </summary>
+        /// <remarks>
+        /// This value will only be populated in case of <see cref="PaymentGatewayType"/> being <see cref="PaymentGatewayType.PaymentProvider"/> where payment url's are being generated.
+        /// </remarks>
+        [MessagePack.Key(5)]
+        public string? PaymentUrl { get; init; }
     }
 
     /// <summary>

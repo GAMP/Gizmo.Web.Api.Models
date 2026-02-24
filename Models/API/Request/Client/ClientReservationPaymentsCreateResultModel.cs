@@ -10,11 +10,44 @@ namespace Gizmo.Web.Api.Models
     [MessagePack.MessagePackObject()]
     public sealed class ClientReservationPaymentsCreateResultModel : IWebApiModel
     {
-        public static readonly ClientReservationPaymentsCreateResultModel InvalidParameters = new ClientReservationPaymentsCreateResultModel()
+        /// <summary>
+        /// Invalid parameters result.
+        /// </summary>
+        public static readonly ClientReservationPaymentsCreateResultModel InvalidParameters = new()
         {
             Payments = Enumerable.Empty<AcceptedOrderPaymentModel>(),
             ExpectedPayment = null,
             Result = ClientReservationCreateResult.InvalidParameters
+        };
+
+        /// <summary>
+        /// Internal error result.
+        /// </summary>
+        public static readonly ClientReservationPaymentsCreateResultModel Error = new()
+        {
+            Payments = Enumerable.Empty<AcceptedOrderPaymentModel>(),
+            ExpectedPayment = null,
+            Result = ClientReservationCreateResult.Error
+        };
+
+        /// <summary>
+        /// Empty success result.
+        /// </summary>
+        public static readonly ClientReservationPaymentsCreateResultModel Success = new()
+        {
+            Payments = Enumerable.Empty<AcceptedOrderPaymentModel>(),
+            ExpectedPayment = null,
+            Result = ClientReservationCreateResult.Success
+        };
+
+        /// <summary>
+        /// Payment intent already in progress with a different payment method.
+        /// </summary>
+        public static readonly ClientReservationPaymentsCreateResultModel PaymentIntentInProgress = new()
+        {
+            Payments = Enumerable.Empty<AcceptedOrderPaymentModel>(),
+            ExpectedPayment = null,
+            Result = ClientReservationCreateResult.PaymentIntentInProgress
         };
 
         /// <summary>
@@ -65,20 +98,11 @@ namespace Gizmo.Web.Api.Models
         public DateTime? ExpirationTime { get; init; }
 
         /// <summary>
-        /// QR code for payment.
+        /// Payment url.
         /// </summary>
         [MessagePack.Key(3)]
-        public required string QrCode { get; init; }
+        public required string PaymentUrl { get; init; }
     }
 
-    public enum ClientReservationCreateResult
-    {
-        /// <summary>
-        /// Success.
-        /// </summary>
-        Success = 0,
-        
-        InvalidParameters = 1,
-
-    }
+   
 }
