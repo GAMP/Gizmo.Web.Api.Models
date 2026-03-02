@@ -1,8 +1,8 @@
-﻿using Gizmo.Web.Api.Models.Abstractions;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using Gizmo.Web.Api.Models.Abstractions;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -147,5 +147,12 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(21)]
         public int? OperatorId { get; init; }
+
+        /// <summary>
+        /// Effective order id.
+        /// </summary>
+        /// <remarks>Will only have value for orders expecting payments.</remarks>
+        [MessagePack.Key(22)]
+        public int? OrderId { get; init; }
     }
 }
