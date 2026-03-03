@@ -28,5 +28,14 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(2)]
         public IReadOnlyList<ModuleConfigSectionMetadata> ConfigSections { get; init; } = [];
+
+        /// <summary>
+        /// Well-known capability GUIDs indicating what functionality this integration supports
+        /// (e.g. user authentication, balance handling, session billing).
+        /// Used by the Manager UI to filter integrations at configuration points that require
+        /// specific capabilities.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public IReadOnlyList<Guid> Capabilities { get; init; } = [];
     }
 }
