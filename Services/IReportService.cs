@@ -198,5 +198,13 @@ namespace Gizmo.Web.Api.Services
         /// <param name="cancellationToken">Cancellation token.</param>
         /// <returns>Report.</returns>
         public Task<OrdersStatisticsReportModel> OrdersStatisticsAsync(OrdersStatisticsReportParametersModel parameters, CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Generates user registration report.
+        /// </summary>
+        /// <param name="parameters">Parameters.</param>
+        /// <param name="cancellationToken">Cancellation token.</param>
+        /// <returns>Report.</returns>
+        public Task<UserRegistrationReportModel> UserRegistrationAsync(UserRegistrationReportParametersModel parameters, CancellationToken cancellationToken = default);
     }
 }
