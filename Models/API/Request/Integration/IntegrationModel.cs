@@ -52,5 +52,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(6)]
         public bool IsDisabled { get; init; }
+
+        /// <summary>
+        /// Optional integration type metadata. Populated when <c>Expand</c> includes <c>"Type"</c>.
+        /// </summary>
+        [MessagePack.Key(7)]
+        public IntegrationTypeModel? Type { get; set; }
     }
 }
