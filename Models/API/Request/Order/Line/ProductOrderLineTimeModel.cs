@@ -85,5 +85,9 @@
         /// </summary>
         [MessagePack.Key(18)]
         public int? BundleLineId { get; init; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(19)]
+        public override decimal Discount { get; init; }
     }
 }

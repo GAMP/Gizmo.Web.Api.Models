@@ -91,5 +91,11 @@
         /// </summary>
         [MessagePack.Key(19)]
         public string? Mark { get; init; }
+
+        /// <summary>
+        /// Total discount.
+        /// </summary>
+        [MessagePack.Key(20)]
+        public override decimal Discount { get; init; }
     }
 }
