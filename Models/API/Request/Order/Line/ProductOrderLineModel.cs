@@ -112,5 +112,11 @@
         [MessagePack.IgnoreMember()]
         public abstract decimal DeliveredQuantity { get; init; }
 
+        /// <summary>
+        /// Total discount.
+        /// </summary>
+        [MessagePack.IgnoreMember()]
+        public abstract decimal Discount { get; init; }
+
     }
 }

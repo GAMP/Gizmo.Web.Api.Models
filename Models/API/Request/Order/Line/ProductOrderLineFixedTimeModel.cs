@@ -73,5 +73,9 @@
         /// <inheritdoc/>
         [MessagePack.Key(16)]
         public override decimal DeliveredQuantity { get; init; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(17)]
+        public override decimal Discount { get; init; }
     }
 }

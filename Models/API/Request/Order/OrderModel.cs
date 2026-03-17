@@ -141,5 +141,17 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(20)]
         public bool HasNote { get; init; }
+
+        /// <summary>
+        /// Total discount.
+        /// </summary>
+        [MessagePack.Key(21)]
+        public decimal Discount { get; init; }
+
+        /// <summary>
+        /// Points total.
+        /// </summary>
+        [MessagePack.Key(22)]
+        public int PointsTotal { get; init; }
     }
 }
