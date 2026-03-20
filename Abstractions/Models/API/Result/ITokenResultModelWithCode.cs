@@ -14,7 +14,7 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// <summary>
         /// Token value.
         /// </summary>
-        string Token { get; set; }
+        string? Token { get; set; }
 
         /// <summary>
         /// Gets confirmation code length.

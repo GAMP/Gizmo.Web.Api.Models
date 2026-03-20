@@ -27,7 +27,7 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [Key(1)]
         [JsonPropertyOrder(1)]
-        public string Token { get; set; } = null!;
+        public string? Token { get; set; } = null!;
 
         /// <summary>
         /// Gets confirmation code length.

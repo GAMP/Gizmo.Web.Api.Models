@@ -1,6 +1,4 @@
-﻿using Gizmo.Web.Api.Models.Abstractions;
-
-using MessagePack;
+﻿using MessagePack;
 
 using System;
 using System.Text.Json.Serialization;
@@ -8,10 +6,10 @@ using System.Text.Json.Serialization;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Email verification start result model.
+    /// Messenger verification start result model.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class VerificationStartResultModelEmail : ITokenResultModelWithEmailCode<VerificationStartResultCode>
+    public sealed class VerificationStartResultModelMessenger
     {
         #region PROPERTIES
 
@@ -30,18 +28,11 @@ namespace Gizmo.Web.Api.Models
         public string? Token { get; set; } = null!;
 
         /// <summary>
-        /// Gets confirmation code length.
+        /// Gets the messenger start link URL.
         /// </summary>
         [Key(2)]
         [JsonPropertyOrder(2)]
-        public int CodeLength { get; init; }
-
-        /// <summary>
-        /// Gets or sets email address being verified.
-        /// </summary>
-        [Key(3)]
-        [JsonPropertyOrder(3)]
-        public string Email { get; set; } = null!;
+        public string? StartLink { get; set; } = null!;
 
         #endregion
     }
