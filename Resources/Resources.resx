@@ -135,6 +135,30 @@
   <data name="ASSISTANCE_REQUEST_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Assistance request</value>
   </data>
+  <data name="AUTHENTICATION_RESULT_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>Failed due to an error</value>
+  </data>
+  <data name="AUTHENTICATION_RESULT_ERROR_NAME" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="AUTHENTICATION_RESULT_NETWORK_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>Failed due to a network error</value>
+  </data>
+  <data name="AUTHENTICATION_RESULT_NETWORK_ERROR_NAME" xml:space="preserve">
+    <value>Network error</value>
+  </data>
+  <data name="AUTHENTICATION_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
+    <value>Authentication successful</value>
+  </data>
+  <data name="AUTHENTICATION_RESULT_SUCCESS_NAME" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="AUTHENTICATION_RESULT_UNAUTHORIZED_DESCRIPTION" xml:space="preserve">
+    <value>Unauthorized</value>
+  </data>
+  <data name="AUTHENTICATION_RESULT_UNAUTHORIZED_NAME" xml:space="preserve">
+    <value>Unauthorized</value>
+  </data>
   <data name="AUTHENTICATION_STATE_ERROR_DESCRIPTION" xml:space="preserve">
     <value>Authentication failed due to an error</value>
   </data>
