@@ -5,7 +5,7 @@
   Project: Gizmo.Web.Api.Models
   Locale: ru-RU, Russian (Russia)
   Exported by: Oleg Savelos
-  Exported at: Tue, 17 Mar 2026 17:55:08 +0200 
+  Exported at: Tue, 24 Mar 2026 17:48:44 +0200 
   --> 
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
@@ -454,6 +454,18 @@
   <data name="PROMOTION_LIMIT_TYPE_WEEKLY" xml:space="preserve"> 
     <value>Еженедельно</value> 
   </data> 
+  <data name="USER_BALANCE_CHANGE_EVENT_NAME" xml:space="preserve"> 
+    <value>Указывает на изменение баланса</value> 
+  </data> 
+  <data name="USER_BALANCE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>Баланс изменен</value> 
+  </data> 
+  <data name="USER_BALANCE_CLOSE_EVENT_NAME" xml:space="preserve"> 
+    <value>Указывает на закрытие баланса</value> 
+  </data> 
+  <data name="USER_BALANCE_CLOSE_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>Закрытие баланса</value> 
+  </data> 
    
    
    
@@ -576,8 +588,43 @@
    
    
    
-   
-   
-   
-   
+  <data name="USER_NOTE_ADDED_EVENT_NAME" xml:space="preserve"> 
+    <value>Добавлено примечание</value> 
+  </data> 
+  <data name="USER_NOTE_ADDED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>Указывает, что заметка пользователя была добавлена</value> 
+  </data> 
+  <data name="USER_NOTE_DELETED_EVENT_NAME" xml:space="preserve"> 
+    <value>Примечание удалено</value> 
+  </data> 
+  <data name="USER_NOTE_DELETED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>Обозначает, что пользовательская заметка была удалена</value> 
+  </data> 
+  <data name="USER_NOTE_UPDATED_EVENT_NAME" xml:space="preserve"> 
+    <value>Примечание обновлено</value> 
+  </data> 
+  <data name="USER_NOTE_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>Указывает, что примечание пользователя было обновлено</value> 
+  </data> 
+  <data name="RESERVATION_CURRENT_CONFIRM_RESULT_SUCCESS_NAME" xml:space="preserve"> 
+    <value>Успех</value> 
+  </data> 
+  <data name="RESERVATION_CURRENT_CONFIRM_RESULT_INVALID_PIN_NAME" xml:space="preserve"> 
+    <value>Неверный ПИН-код</value> 
+  </data> 
+  <data name="RESERVATION_CURRENT_CONFIRM_RESULT_ERROR_NAME" xml:space="preserve"> 
+    <value>Ошибка</value> 
+  </data> 
+  <data name="RESERVATION_CURRENT_CONFIRMED_RESULT_CONFIRMED_NAME" xml:space="preserve"> 
+    <value>Подтверждено</value> 
+  </data> 
+  <data name="RESERVATION_CURRENT_CONFIRMED_RESULT_NO_RESERVATION_NAME" xml:space="preserve"> 
+    <value>Нет бронирования</value> 
+  </data> 
+  <data name="RESERVATION_CURRENT_CONFIRMED_RESULT_UNCONFIRMED_NAME" xml:space="preserve"> 
+    <value>Не подтверждено</value> 
+  </data> 
+  <data name="RESERVATION_CURRENT_CONFIRM_RESULT_NO_RESERVATION_NAME" xml:space="preserve"> 
+    <value>Нет бронирования</value> 
+  </data> 
 </root>
