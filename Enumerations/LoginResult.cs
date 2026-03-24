@@ -28,7 +28,7 @@ namespace Gizmo.Web.Api.Models
         /// Account is disabled.
         /// </summary>
         [Name("Account disabled", nameof(Resources.LOGIN_RESULT_ACCOUNT_DISABLED_NAME))]
-        [ExtendedDescription("The specified user account is disabled", nameof(Resources.LOGIN_RESULT_ACCOUNT_DISABLED_DESCRIPTION))]
+        [ExtendedDescription("The specified user account is banned", nameof(Resources.LOGIN_RESULT_ACCOUNT_DISABLED_DESCRIPTION))]
         AccountDisabled = 2,
 
         /// <summary>

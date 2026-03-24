@@ -1357,7 +1357,7 @@
     <value>Script</value>
   </data>
   <data name="LOGIN_RESULT_ACCOUNT_DISABLED_DESCRIPTION" xml:space="preserve">
-    <value>The specified user account is disabled</value>
+    <value>The specified user account is banned</value>
   </data>
   <data name="LOGIN_RESULT_ACCOUNT_DISABLED_NAME" xml:space="preserve">
     <value>Account disabled</value>
