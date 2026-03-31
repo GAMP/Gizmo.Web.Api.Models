@@ -43,6 +43,12 @@ namespace Gizmo.Web.Api.Models
         [Key(4)]
         public RegisterTransactionType? Type { get; init; }
 
+        /// <summary>
+        /// Shift id.
+        /// </summary>
+        [Key(5)]
+        public int? ShiftId { get; init; }
+        
         #endregion
     }
 }
