@@ -5,7 +5,7 @@
   Project: Gizmo.Web.Api.Models
   Locale: pt-BR, Brazilian Portuguese
   Exported by: Oleg Savelos
-  Exported at: Tue, 24 Mar 2026 17:48:44 +0200 
+  Exported at: Tue, 31 Mar 2026 14:32:47 +0300 
   --> 
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
@@ -1448,11 +1448,45 @@
   <data name="USER_SESSION_STATE_GRACE_NAME" xml:space="preserve"> 
     <value>Graça</value> 
   </data> 
-   
-   
-   
-   
-   
+  <data name="USER_NOTE_ADDED_EVENT_NAME" xml:space="preserve"> 
+    <value>Nota adicionada</value> 
+  </data> 
+  <data name="USER_NOTE_ADDED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>Indica que a foi adicionada uma nota para esse usuário</value> 
+  </data> 
+  <data name="USER_NOTE_DELETED_EVENT_NAME" xml:space="preserve"> 
+    <value>Nota deletada</value> 
+  </data> 
+  <data name="USER_NOTE_DELETED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>Indica que a nota desse usuário foi deletada</value> 
+  </data> 
+  <data name="USER_NOTE_UPDATED_EVENT_NAME" xml:space="preserve"> 
+    <value>Nota atualizada</value> 
+  </data> 
+  <data name="USER_NOTE_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>Indica que a nota desse usuário foi atualizada</value> 
+  </data> 
+  <data name="RESERVATION_CURRENT_CONFIRM_RESULT_SUCCESS_NAME" xml:space="preserve"> 
+    <value>Sucesso</value> 
+  </data> 
+  <data name="RESERVATION_CURRENT_CONFIRM_RESULT_INVALID_PIN_NAME" xml:space="preserve"> 
+    <value>PIN inválido</value> 
+  </data> 
+  <data name="RESERVATION_CURRENT_CONFIRM_RESULT_ERROR_NAME" xml:space="preserve"> 
+    <value>Erro</value> 
+  </data> 
+  <data name="RESERVATION_CURRENT_CONFIRMED_RESULT_CONFIRMED_NAME" xml:space="preserve"> 
+    <value>Confirmado</value> 
+  </data> 
+  <data name="RESERVATION_CURRENT_CONFIRMED_RESULT_NO_RESERVATION_NAME" xml:space="preserve"> 
+    <value>Sem reserva</value> 
+  </data> 
+  <data name="RESERVATION_CURRENT_CONFIRMED_RESULT_UNCONFIRMED_NAME" xml:space="preserve"> 
+    <value>Não confirmado</value> 
+  </data> 
+  <data name="RESERVATION_CURRENT_CONFIRM_RESULT_NO_RESERVATION_NAME" xml:space="preserve"> 
+    <value>Sem reserva</value> 
+  </data> 
    
    
    
