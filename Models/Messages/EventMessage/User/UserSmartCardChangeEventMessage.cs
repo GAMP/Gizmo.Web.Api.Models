@@ -16,5 +16,11 @@ namespace Gizmo.Web.Api.Messaging
         /// </summary>
         public UserSmartCardChangeEventMessage() : base()
         { }
+
+        /// <summary>
+        /// Smart card uid.
+        /// </summary>
+        [MessagePack.Key(2)]
+        public string? SmartCardUid { get; init; }
     }
 }
