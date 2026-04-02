@@ -7,8 +7,8 @@ namespace Gizmo.Web.Api.Messaging
     /// User balance close event message.
     /// </summary>
     [MessagePackObject()]
-    [System.ComponentModel.DataAnnotations.Name("Balance close", nameof(Resources.USER_BALANCE_CHANGE_EVENT_NAME))]
-    [System.ComponentModel.DataAnnotations.ExtendedDescription("Indicates balance close", nameof(Resources.USER_BALANCE_CHANGE_EVENT_DESCRIPTION))]
+    [System.ComponentModel.DataAnnotations.Name("Balance close", nameof(Resources.USER_BALANCE_CLOSE_EVENT_NAME))]
+    [System.ComponentModel.DataAnnotations.ExtendedDescription("Indicates balance close", nameof(Resources.USER_BALANCE_CLOSE_EVENT_DESCRIPTION))]
     public sealed class UserBalanceCloseEventMessage : UserEventMessageBase
     {
         /// <summary>

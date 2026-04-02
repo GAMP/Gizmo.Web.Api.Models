@@ -7,8 +7,8 @@ namespace Gizmo.Web.Api.Messaging
     /// User billing options change event.
     /// </summary>
     [MessagePack.MessagePackObject()]
-    [System.ComponentModel.DataAnnotations.Name("Billing options change", nameof(Resources.USER_BALANCE_CHANGE_EVENT_NAME))]
-    [System.ComponentModel.DataAnnotations.ExtendedDescription("Indicates billing options change", nameof(Resources.USER_BALANCE_CHANGE_EVENT_DESCRIPTION))]
+    [System.ComponentModel.DataAnnotations.Name("Billing options change", nameof(Resources.USER_BILLING_OPTIONS_CHANGE_EVENT_NAME))]
+    [System.ComponentModel.DataAnnotations.ExtendedDescription("Indicates billing options change", nameof(Resources.USER_BILLING_OPTIONS_CHANGE_EVENT_DESCRIPTION))]
     public sealed class UserBillingOptionsChangedEventMessage : UserEventMessageBase
     {
         /// <summary>

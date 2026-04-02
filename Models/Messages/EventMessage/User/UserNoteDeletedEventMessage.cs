@@ -8,7 +8,7 @@ namespace Gizmo.Web.Api.Messaging
     /// </summary>
     [MessagePack.MessagePackObject()]
     [System.ComponentModel.DataAnnotations.Name("Note deleted", nameof(Resources.USER_NOTE_DELETED_EVENT_NAME))]
-    [System.ComponentModel.DataAnnotations.ExtendedDescription("Indicates that user note has been deleted", nameof(Resources.USER_NOTE_UPDATED_EVENT_DESCRIPTION))]
+    [System.ComponentModel.DataAnnotations.ExtendedDescription("Indicates that user note has been deleted", nameof(Resources.USER_NOTE_DELETED_EVENT_DESCRIPTION))]
     public sealed class UserNoteDeletedEventMessage : UserEventMessageBase
     {
         /// <summary>

@@ -1557,4 +1557,46 @@
   <data name="RESERVATION_CURRENT_CONFIRM_RESULT_NO_RESERVATION_NAME" xml:space="preserve">
     <value>No reservation</value>
   </data>
+  <data name="USER_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>User created</value>
+  </data>
+  <data name="USER_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates user account creation</value>
+  </data>
+  <data name="ASSET_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Asset</value>
+  </data>
+  <data name="ASSET_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Asset related events</value>
+  </data>
+  <data name="ASSET_CHECKED_IN_EVENT_EVENT_NAME" xml:space="preserve">
+    <value>Checked in</value>
+  </data>
+  <data name="ASSET_CHECKED_IN_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates asset checked in</value>
+  </data>
+  <data name="ASSET_CHECKED_OUT_EVENT_EVENT_NAME" xml:space="preserve">
+    <value>Checked out</value>
+  </data>
+  <data name="ASSET_CHECKED_OUT_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates asset checked out</value>
+  </data>
+  <data name="PAYMENT_INTENT_EXPIRED_EVENT_NAME" xml:space="preserve">
+    <value>Expired</value>
+  </data>
+  <data name="PAYMENT_INTENT_EXPIRED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indicates payment intent expired</value>
+  </data>
+  <data name="REPORT_PRESET_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Report preset</value>
+  </data>
+  <data name="REPORT_PRESET_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Report preset related events</value>
+  </data>
+  <data name="USER_GUEST_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>User guest</value>
+  </data>
+  <data name="USER_GUEST_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>User guest related events</value>
+  </data>
 </root>

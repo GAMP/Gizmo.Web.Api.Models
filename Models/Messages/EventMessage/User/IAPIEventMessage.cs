@@ -17,6 +17,7 @@ namespace Gizmo.Web.Api.Messaging
     [Union(312, typeof(UserNoteAddedEventMessage))]
     [Union(313, typeof(UserNoteUpdatedEventMessage))]
     [Union(314, typeof(UserNoteDeletedEventMessage))]
+    [Union(315, typeof(UserCreatedEventMessage))]
     public partial interface IAPIEventMessage
     {
     }

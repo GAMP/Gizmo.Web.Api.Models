@@ -7,8 +7,8 @@ namespace Gizmo.Web.Api.Messaging
     /// User group changed event message.
     /// </summary>
     [MessagePackObject()]
-    [System.ComponentModel.DataAnnotations.Name("User group change", nameof(Resources.USER_ENABLED_EVENT_NAME))]
-    [System.ComponentModel.DataAnnotations.ExtendedDescription("Indicates user group change", nameof(Resources.USER_ENABLED_EVENT_DESCRIPTION))]
+    [System.ComponentModel.DataAnnotations.Name("User group change", nameof(Resources.USER_USER_GROUP_CHANGE_EVENT_NAME))]
+    [System.ComponentModel.DataAnnotations.ExtendedDescription("Indicates user group change", nameof(Resources.USER_USER_GROUP_CHANGE_EVENT_DESCRIPTION))]
     public sealed class UserGroupChangedEventMessage : UserEventMessageBase
     {
         /// <summary>
