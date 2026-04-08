@@ -1,13 +1,13 @@
-using MessagePack;
+﻿using MessagePack;
 
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Password recovery completion model.
-    /// Token must be confirmed (via redirect callback or TokenConfirm) before calling complete.
+    /// Token confirmation model.
+    /// Validates the confirmation code and marks the token as confirmed.
     /// </summary>
     [MessagePackObject]
-    public sealed class PasswordRecoveryCompleteModel
+    public sealed class TokenConfirmModel : IWebApiModel
     {
         /// <summary>
         /// Token value.
@@ -16,9 +16,9 @@ namespace Gizmo.Web.Api.Models
         public string Token { get; set; } = null!;
 
         /// <summary>
-        /// New password.
+        /// Confirmation code.
         /// </summary>
         [Key(1)]
-        public string NewPassword { get; set; } = null!;
+        public string ConfirmationCode { get; set; } = null!;
     }
 }
