@@ -18,6 +18,12 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(0)]
         public int HostLayoutGroupId { get; init; }
 
+        /// <summary>
+        /// The host is hidden from this layout.
+        /// </summary>
+        [MessagePack.Key(1)]
+        public bool IsHidden { get; init; }
+
         #endregion
     }
 }
