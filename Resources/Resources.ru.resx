@@ -71,12 +71,30 @@
   <metadata name="locoLocaleName" xml:space="preserve">
     <value>Russian (Russia)</value>
   </metadata> 
-  <data name="ASSISTANCE_REQUEST_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Указывает на изменение статуса запроса о помощи</value> 
-  </data> 
-  <data name="ASSISTANCE_REQUEST_CHANGE_EVENT_EVENT_NAME" xml:space="preserve"> 
-    <value>Сдача</value> 
-  </data> 
+  <data name="ASSET_CHECKED_IN_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Указывает на регистрацию оборудования</value>
+  </data>
+  <data name="ASSET_CHECKED_IN_EVENT_EVENT_NAME" xml:space="preserve">
+    <value>Зарегистрировано</value>
+  </data>
+  <data name="ASSET_CHECKED_OUT_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Указывает на снятие оборудования с регистрации</value>
+  </data>
+  <data name="ASSET_CHECKED_OUT_EVENT_EVENT_NAME" xml:space="preserve">
+    <value>Снято с регистрации</value>
+  </data>
+  <data name="ASSET_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>События, связанные с оборудованием</value>
+  </data>
+  <data name="ASSET_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Оборудование</value>
+  </data>
+  <data name="ASSISTANCE_REQUEST_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Указывает на изменение статуса запроса о помощи</value>
+  </data>
+  <data name="ASSISTANCE_REQUEST_CHANGE_EVENT_EVENT_NAME" xml:space="preserve">
+    <value>Изменение</value>
+  </data>
   <data name="ASSISTANCE_REQUEST_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
     <value>Обозначает создание запроса о помощи</value> 
   </data> 
@@ -110,8 +128,8 @@
   <data name="AUTHENTICATION_STATE_NO_TOKEN_DESCRIPTION" xml:space="preserve"> 
     <value>No токена для аутентификации</value> 
   </data> 
-  <data name="AUTHENTICATION_STATE_NO_TOKEN_NAME" xml:space="preserve"> 
-    <value>No token</value> 
+  <data name="AUTHENTICATION_STATE_NO_TOKEN_NAME" xml:space="preserve">
+    <value>Нет токена</value> 
   </data> 
   <data name="AUTHENTICATION_STATE_UNAUTHORIZED_DESCRIPTION" xml:space="preserve"> 
     <value>Несанкционированный</value> 
@@ -141,13 +159,13 @@
     <value>Неудачный результат из-за сбоя в сети</value> 
   </data> 
   <data name="AUTHORIZATION_RESULT_NETWORK_ERROR_NAME" xml:space="preserve"> 
-    <value>Ошибка в сети</value> 
+    <value>Сетевая ошибка</value>
   </data> 
   <data name="AUTHORIZATION_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
     <value>Авторизация прошла успешно</value> 
   </data> 
   <data name="AUTHORIZATION_RESULT_SUCCESS_NAME" xml:space="preserve"> 
-    <value>Удачно</value> 
+    <value>Успех</value>
   </data> 
   <data name="AUTHORIZATION_RESULT_TOKEN_EXPIRED_DESCRIPTION" xml:space="preserve"> 
     <value>Неудачный результат из-за просроченного токена</value> 
@@ -180,13 +198,13 @@
     <value>Ошибка при оплате</value> 
   </data> 
   <data name="BRANCH_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие, созданное филиалом</value> 
+    <value>Событие создания филиала</value>
   </data> 
   <data name="BRANCH_CREATED_EVENT_NAME" xml:space="preserve"> 
     <value>Создан филиал</value> 
   </data> 
   <data name="BRANCH_DELETED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие удаления ветки</value> 
+    <value>Событие удаления филиала</value>
   </data> 
   <data name="BRANCH_DELETED_EVENT_NAME" xml:space="preserve"> 
     <value>Удаленные</value> 
@@ -198,25 +216,25 @@
     <value>Филиал</value> 
   </data> 
   <data name="BRANCH_OPERATOR_ADDED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Оператор добавил событие</value> 
+    <value>Событие добавления оператора</value>
   </data> 
   <data name="BRANCH_OPERATOR_ADDED_EVENT_NAME" xml:space="preserve"> 
-    <value>Добавлено оператора</value> 
+    <value>Оператор добавлен</value>
   </data> 
   <data name="BRANCH_OPERATOR_DEFAULT_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие смены ветки по умолчанию оператора</value> 
+    <value>Событие смены филиала по умолчанию оператора</value>
   </data> 
   <data name="BRANCH_OPERATOR_DEFAULT_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value>Изменение ветки по умолчанию операторами</value> 
+    <value>Смена филиала по умолчанию у операторов</value>
   </data> 
   <data name="BRANCH_OPERATOR_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Оператор удалил событие</value> 
+    <value>Событие удаления оператора</value>
   </data> 
   <data name="BRANCH_OPERATOR_REMOVED_EVENT_NAME" xml:space="preserve"> 
     <value>Оператор удален</value> 
   </data> 
   <data name="BRANCH_UNDELETED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие восстановления ветки, которое отменяет удаление ветки</value> 
+    <value>Событие восстановления филиала</value>
   </data> 
   <data name="BRANCH_UNDELETED_EVENT_NAME" xml:space="preserve"> 
     <value>Отменить удаление</value> 
@@ -273,7 +291,7 @@
     <value>Примечание к накладной</value> 
   </data> 
   <data name="DOCUMENT_TYPES_INVOICE" xml:space="preserve"> 
-    <value>Счет</value> 
+    <value>Счёт</value>
   </data> 
   <data name="DOCUMENT_TYPES_STOCK_TAKE_REPORT" xml:space="preserve"> 
     <value>Отчет о проведении инвентаризации</value> 
@@ -332,9 +350,9 @@
   <data name="HOST_COMPUTER_SECURITY_CHANGED_EVENT_NAME" xml:space="preserve"> 
     <value>Изменения в системе безопасности</value> 
   </data> 
-  <data name="HOST_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Проводить события</value> 
-  </data> 
+  <data name="HOST_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>События, связанные с хостом</value>
+  </data>
   <data name="HOST_EVENT_GROUP_NAME" xml:space="preserve"> 
     <value>Хост</value> 
   </data> 
@@ -345,52 +363,52 @@
     <value>По изменению статуса</value> 
   </data> 
   <data name="HOST_LAYOUT_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие, созданное макетом хоста</value> 
+    <value>Событие создания схемы размещения хостов</value>
   </data> 
   <data name="HOST_LAYOUT_CREATED_EVENT_NAME" xml:space="preserve"> 
     <value>Создана схема размещения хостов</value> 
   </data> 
   <data name="HOST_LAYOUT_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Организация событий, связанных с оформлением помещения</value> 
+    <value>События, связанные со схемой размещения хостов</value>
   </data> 
   <data name="HOST_LAYOUT_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Схема размещения Хостов</value> 
+    <value>Схема размещения хостов</value>
   </data> 
   <data name="HOST_LAYOUT_GROUP_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие, созданное группой расположения хостов</value> 
+    <value>Событие создания группы схемы размещения хостов</value>
   </data> 
   <data name="HOST_LAYOUT_GROUP_CREATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Создана группа расположения хостов</value> 
+    <value>Создана группа схемы размещения хостов</value>
   </data> 
   <data name="HOST_LAYOUT_GROUP_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Проводить события, связанные с группами расположения хостов</value> 
+    <value>События, связанные с группой схемы размещения хостов</value>
   </data> 
   <data name="HOST_LAYOUT_GROUP_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Группы расположения хостов</value> 
+    <value>Группа схемы размещения хостов</value>
   </data> 
   <data name="HOST_LAYOUT_GROUP_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Группы расположения хостов удалили событие</value> 
+    <value>Событие удаления группы схемы размещения хостов</value>
   </data> 
   <data name="HOST_LAYOUT_GROUP_REMOVED_EVENT_NAME" xml:space="preserve"> 
-    <value>Группы расположения хостов удалены</value> 
+    <value>Группа схемы размещения хостов удалена</value>
   </data> 
   <data name="HOST_LAYOUT_GROUP_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие обновления групп расположения хостов</value> 
+    <value>Событие обновления группы схемы размещения хостов</value>
   </data> 
   <data name="HOST_LAYOUT_GROUP_UPDATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Обновлена группа расположения хостов</value> 
+    <value>Группа схемы размещения хостов обновлена</value>
   </data> 
   <data name="HOST_LAYOUT_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие удаления макета хоста</value> 
+    <value>Событие удаления схемы размещения хостов</value>
   </data> 
   <data name="HOST_LAYOUT_REMOVED_EVENT_NAME" xml:space="preserve"> 
-    <value>Схема размещения хостов удалена</value> 
+    <value>Схема размещения хостов удалена</value>
   </data> 
   <data name="HOST_LAYOUT_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие обновления макета хоста</value> 
+    <value>Событие обновления схемы размещения хостов</value>
   </data> 
   <data name="HOST_LAYOUT_UPDATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Обновлена структура сайта</value> 
+    <value>Схема размещения хостов обновлена</value>
   </data> 
   <data name="HOST_LOCK_STATE_CHANED_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
     <value>Изменился статус блокировки хоста</value> 
@@ -474,19 +492,19 @@
     <value>Перевод</value> 
   </data> 
   <data name="INVOICE_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Обозначает создание счета</value> 
+    <value>Обозначает создание счёта</value> 
   </data> 
   <data name="INVOICE_CREATED_EVENT_NAME" xml:space="preserve"> 
     <value>Создан</value> 
   </data> 
   <data name="INVOICE_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>События, связанные со счетами-фактурами</value> 
+    <value>События, связанные со счетами</value>
   </data> 
   <data name="INVOICE_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Счет</value> 
+    <value>Счёт</value>
   </data> 
   <data name="INVOICE_PAYMENT_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Обозначает создание платежа по счету</value> 
+    <value>Обозначает создание платежа по счёту</value> 
   </data> 
   <data name="INVOICE_PAYMENT_EVENT_NAME" xml:space="preserve"> 
     <value>Платежи</value> 
@@ -558,7 +576,7 @@
     <value>Очищено</value> 
   </data> 
   <data name="LOG_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Регистрировать связанные события</value> 
+    <value>События, связанные с журналом</value>
   </data> 
   <data name="LOG_EVENT_GROUP_NAME" xml:space="preserve"> 
     <value>ЖУРНАЛ</value> 
@@ -588,7 +606,7 @@
     <value>Указывает на изменение параметров</value> 
   </data> 
   <data name="OPTIONS_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Сдача</value> 
+    <value>Изменение</value>
   </data> 
   <data name="OPTIONS_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
     <value>События, связанные с опциями</value> 
@@ -606,7 +624,7 @@
     <value>Указывает на изменение статуса доставки заказа</value> 
   </data> 
   <data name="ORDER_DELIVERY_STATUS_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Сдача</value> 
+    <value>Изменение</value>
   </data> 
   <data name="ORDER_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
     <value>События, связанные с заказом</value> 
@@ -618,13 +636,13 @@
     <value>Указывает на изменение статуса доставки позиции заказа</value> 
   </data> 
   <data name="ORDER_LINE_DELIVERY_STATUS_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Сдача</value> 
+    <value>Изменение</value>
   </data> 
   <data name="ORDER_STATUS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
     <value>Указывает на изменение статуса заказа</value> 
   </data> 
   <data name="ORDER_STATUS_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Сдача</value> 
+    <value>Изменение</value>
   </data> 
   <data name="PAYMENT_INTENT_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve"> 
     <value>Обозначает завершение намерения об оплате</value> 
@@ -638,17 +656,23 @@
   <data name="PAYMENT_INTENT_CREATED_EVENT_NAME" xml:space="preserve"> 
     <value>Создан</value> 
   </data> 
-  <data name="PAYMENT_INTENT_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>События, связанные с намерением осуществить платеж</value> 
-  </data> 
+  <data name="PAYMENT_INTENT_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>События, связанные с намерением осуществить платёж</value>
+  </data>
+  <data name="PAYMENT_INTENT_EXPIRED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Указывает на истечение срока намерения платежа</value>
+  </data>
+  <data name="PAYMENT_INTENT_EXPIRED_EVENT_NAME" xml:space="preserve">
+    <value>Истекло</value>
+  </data>
   <data name="PAYMENT_INTENT_EVENT_GROUP_NAME" xml:space="preserve"> 
     <value>Намерение произвести оплату</value> 
   </data> 
   <data name="PRODUCT_STOCK_CHANGE_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
     <value>Указывает на изменение уровня остатков товара</value> 
   </data> 
-  <data name="PRODUCT_STOCK_CHANGE_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Сдача</value> 
+  <data name="PRODUCT_STOCK_CHANGE_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Изменение</value>
   </data> 
   <data name="PRODUCT_STOCK_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
     <value>События, связанные с наличием товара на складе</value> 
@@ -656,11 +680,17 @@
   <data name="PRODUCT_STOCK_EVENT_GROUP_NAME" xml:space="preserve"> 
     <value>Наличие товара</value> 
   </data> 
-  <data name="REPORT_PRESET_ADDED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Отчет о добавленном событии</value> 
-  </data> 
+  <data name="REPORT_PRESET_ADDED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Событие добавления шаблона отчёта</value>
+  </data>
+  <data name="REPORT_PRESET_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>События, связанные с шаблонами отчётов</value>
+  </data>
+  <data name="REPORT_PRESET_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Шаблон отчёта</value>
+  </data>
   <data name="REPORT_PRESET_ADDED_EVENT_NAME" xml:space="preserve"> 
-    <value>Добавлен шаблон отчета</value> 
+    <value>Добавлен шаблон отчёта</value>
   </data> 
   <data name="REPORT_PRESET_RANGE_DAY_NAME" xml:space="preserve"> 
     <value>День</value> 
@@ -675,16 +705,16 @@
     <value>Год</value> 
   </data> 
   <data name="REPORT_PRESET_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Сообщение об удалении предварительно заданного события</value> 
+    <value>Событие удаления шаблона отчёта</value>
   </data> 
   <data name="REPORT_PRESET_REMOVED_EVENT_NAME" xml:space="preserve"> 
-    <value>Удалена предустановка отчета</value> 
+    <value>Удалён шаблон отчёта</value>
   </data> 
   <data name="REPORT_PRESET_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Сообщение о событии, связанном с обновлением предустановки</value> 
+    <value>Событие обновления шаблона отчёта</value>
   </data> 
   <data name="REPORT_PRESET_UPDATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Обновлены настройки отчета</value> 
+    <value>Обновлён шаблон отчёта</value>
   </data> 
   <data name="RESERVATION_ACTIVATED_EVENT_DESCRIPTION" xml:space="preserve"> 
     <value>Бронирование подтверждено</value> 
@@ -723,19 +753,19 @@
     <value>Просроченные</value> 
   </data> 
   <data name="RESERVATION_HOST_ACTIVATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Активирована бронирование хоста</value> 
+    <value>Бронирование хоста активировано</value>
   </data> 
   <data name="RESERVATION_HOST_ACTIVATED_EVENT_NAME" xml:space="preserve"> 
     <value>Активировано</value> 
   </data> 
   <data name="RESERVATION_HOST_ADDED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>К бронированию добавлен Хост</value> 
+    <value>К бронированию добавлен хост</value>
   </data> 
   <data name="RESERVATION_HOST_ADDED_EVENT_NAME" xml:space="preserve"> 
     <value>Добавлено</value> 
   </data> 
   <data name="RESERVATION_HOST_CANCELLED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Бронирование номера отменено</value> 
+    <value>Бронирование хоста отменено</value>
   </data> 
   <data name="RESERVATION_HOST_CANCELLED_EVENT_NAME" xml:space="preserve"> 
     <value>Отменен</value> 
@@ -753,13 +783,13 @@
     <value>Просроченные</value> 
   </data> 
   <data name="RESERVATION_HOST_MOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Запись о хосте перенесена</value> 
+    <value>Бронирование хоста перенесено</value>
   </data> 
   <data name="RESERVATION_HOST_MOVED_EVENT_NAME" xml:space="preserve"> 
     <value>Перемещено</value> 
   </data> 
   <data name="RESERVATION_HOST_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Обновлена резервация хоста</value> 
+    <value>Бронирование хоста обновлено</value>
   </data> 
   <data name="RESERVATION_HOST_UPDATED_EVENT_NAME" xml:space="preserve"> 
     <value>Обновить</value> 
@@ -798,7 +828,7 @@
     <value>Название окна</value> 
   </data> 
   <data name="SCHEDULE_TYPE_DAILY" xml:space="preserve"> 
-    <value>За день</value> 
+    <value>Ежедневно</value>
   </data> 
   <data name="SCHEDULE_TYPE_MONTHLY" xml:space="preserve"> 
     <value>За месяц</value> 
@@ -807,7 +837,7 @@
     <value>Один раз</value> 
   </data> 
   <data name="SCHEDULE_TYPE_WEEKLY" xml:space="preserve"> 
-    <value>За неделю</value> 
+    <value>Еженедельно</value>
   </data> 
   <data name="SCHEDULE_TYPE_YEARLY" xml:space="preserve"> 
     <value>За год</value> 
@@ -875,18 +905,30 @@
   <data name="TARGET_REQUIREMENT_COUNT" xml:space="preserve"> 
     <value>рассчитывать</value> 
   </data> 
-  <data name="USER_ENABLED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Обозначает, что пользователь имеет соответствующие права</value> 
-  </data> 
+  <data name="USER_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Указывает на создание учётной записи пользователя</value>
+  </data>
+  <data name="USER_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>Пользователь создан</value>
+  </data>
+  <data name="USER_ENABLED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Обозначает, что пользователь имеет соответствующие права</value>
+  </data>
   <data name="USER_ENABLED_EVENT_NAME" xml:space="preserve"> 
     <value>Включён</value> 
   </data> 
   <data name="USER_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
     <value>События, связанные с пользователями</value> 
   </data> 
-  <data name="USER_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Пользователь</value> 
-  </data> 
+  <data name="USER_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Пользователь</value>
+  </data>
+  <data name="USER_GUEST_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>События, связанные с гостевыми пользователями</value>
+  </data>
+  <data name="USER_GUEST_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Гостевой пользователь</value>
+  </data>
   <data name="USER_SESSION_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
     <value>Создан сеанс пользователя</value> 
   </data> 
@@ -918,31 +960,31 @@
     <value>Оценка изменилась</value> 
   </data> 
   <data name="WAITING_LINE_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Очередь ожидания</value> 
+    <value>Очередь</value>
   </data> 
   <data name="WAITING_LINE_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>События, связанные с очередью ожидания</value> 
+    <value>События, связанные с очередью</value> 
   </data> 
   <data name="WAITING_LINE_TIMED_OUT_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие «Время вышло в очереди ожидания»</value> 
+    <value>Событие истечения времени ожидания в очереди</value>
   </data> 
   <data name="WAITING_LINE_TIMED_OUT_EVENT_NAME" xml:space="preserve"> 
     <value>Время вышло</value> 
   </data> 
   <data name="WAITING_LINE_USER_ADDED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие, добавленное пользователем</value> 
+    <value>Событие добавления пользователя</value>
   </data> 
   <data name="WAITING_LINE_USER_ADDED_EVENT_NAME" xml:space="preserve"> 
     <value>Добавлено пользователем</value> 
   </data> 
   <data name="WAITING_LINE_USER_MOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Пользователь переместил событие</value> 
+    <value>Событие перемещения пользователя</value>
   </data> 
   <data name="WAITING_LINE_USER_MOVED_EVENT_NAME" xml:space="preserve"> 
-    <value>Пользователь переместился</value> 
+    <value>Пользователь перемещён</value>
   </data> 
   <data name="WAITING_LINE_USER_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Пользователь удалил событие</value> 
+    <value>Событие удаления пользователя</value>
   </data> 
   <data name="WAITING_LINE_USER_REMOVED_EVENT_NAME" xml:space="preserve"> 
     <value>Пользователь удален</value> 
@@ -962,24 +1004,33 @@
   <data name="PROMOTION_CODE_TYPE_RESTRICTED_NAME" xml:space="preserve"> 
     <value>Ограниченный доступ</value> 
   </data> 
-  <data name="PAYMENT_TRANSACTION_TYPE_DEPOSIT_PAYMENT" xml:space="preserve"> 
-    <value>Оплата депозита</value> 
-  </data> 
+  <data name="PAYMENT_TRANSACTION_DIRECTION_IN" xml:space="preserve">
+    <value>Входящие</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_DIRECTION_OUT" xml:space="preserve">
+    <value>Исходящие</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_TYPE_DEPOSIT_PAYMENT" xml:space="preserve">
+    <value>Оплата депозита</value>
+  </data>
   <data name="PAYMENT_TRANSACTION_TYPE_DEPOSIT_PAYMENT_REFUND" xml:space="preserve"> 
-    <value>Возврат залога</value> 
+    <value>Возврат депозитного платежа</value>
   </data> 
   <data name="PAYMENT_TRANSACTION_TYPE_INVOICE_PAYMENT" xml:space="preserve"> 
-    <value>Платеж за счет</value> 
+    <value>Платёж по счёту</value>
   </data> 
   <data name="PAYMENT_TRANSACTION_TYPE_INVOICE_PAYMENT_REFUND" xml:space="preserve"> 
-    <value>Возврат средств за оплаченный счет</value> 
+    <value>Возврат платежа по счёту</value>
   </data> 
   <data name="PAYMENT_TRANSACTION_TYPE_PAY_IN" xml:space="preserve"> 
     <value>Внесение</value> 
   </data> 
-  <data name="PAYMENT_TRANSACTION_TYPE_PAY_OUT" xml:space="preserve"> 
-    <value>Изъятие</value> 
-  </data> 
+  <data name="PAYMENT_TRANSACTION_TYPE_PAY_OUT" xml:space="preserve">
+    <value>Изъятие</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_TYPE_WITHDRAW" xml:space="preserve">
+    <value>Снятие средств</value>
+  </data>
   <data name="PAYMENT_INTENT_STATE_CANCELLED" xml:space="preserve"> 
     <value>Отменен</value> 
   </data> 
@@ -990,7 +1041,7 @@
     <value>Просроченные</value> 
   </data> 
   <data name="PAYMENT_INTENT_STATE_FAILED" xml:space="preserve"> 
-    <value>Неудачный</value> 
+    <value>Не удалось</value>
   </data> 
   <data name="PAYMENT_INTENT_STATE_PENDING" xml:space="preserve"> 
     <value>Ждёт печати</value> 
@@ -1038,7 +1089,7 @@
     <value>Ошибка</value> 
   </data> 
   <data name="DEVICE_PAYMENT_TERMINAL_ERROR_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Ошибка терминала оплаты</value> 
+    <value>Событие ошибки терминала оплаты</value>
   </data> 
   <data name="DEVICE_PAYMENT_TERMINAL_ERROR_EVENT_NAME" xml:space="preserve"> 
     <value>Ошибка</value> 
@@ -1092,7 +1143,7 @@
     <value>Изменение адреса Email</value> 
   </data> 
   <data name="USER_EMAIL_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Указывает на смену адреса Email</value> 
+    <value>Указывает на смену адреса электронной почты</value>
   </data> 
   <data name="USER_USER_GROUP_CHANGE_EVENT_NAME" xml:space="preserve"> 
     <value>Смена группы пользователей</value> 
@@ -1176,10 +1227,10 @@
     <value>WeChat</value> 
   </data> 
   <data name="HOST_DELETE_RESULT_HOST_HAS_RESERVED_GUEST_DESCRIPTION" xml:space="preserve"> 
-    <value>Хозяин забронировал гостя</value> 
+    <value>У хоста есть бронирование с гостем</value> 
   </data> 
   <data name="HOST_DELETE_RESULT_HOST_HAS_RESERVED_GUEST_NAME" xml:space="preserve"> 
-    <value>Хозяин забронировал гостя</value> 
+    <value>У хоста есть бронирование с гостем</value> 
   </data> 
   <data name="HOST_DELETE_RESULT_HOST_IN_USE_DESCRIPTION" xml:space="preserve"> 
     <value>Хост в использовании</value> 
@@ -1188,10 +1239,10 @@
     <value>Хост в использовании</value> 
   </data> 
   <data name="HOST_DELETE_RESULT_HOST_IS_RESERVED_DESCRIPTION" xml:space="preserve"> 
-    <value>У хозяина есть бронирование</value> 
+    <value>У хоста есть бронирование</value>
   </data> 
   <data name="HOST_DELETE_RESULT_HOST_IS_RESERVED_NAME" xml:space="preserve"> 
-    <value>Место для хоста зарезервировано</value> 
+    <value>Хост зарезервирован</value>
   </data> 
   <data name="HOST_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
     <value>Удаление хоста прошло успешно</value> 
@@ -1235,13 +1286,13 @@
   <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve"> 
     <value>Успешное удаление категории приложения</value> 
   </data> 
-  <data name="WAITING_LINE_SATE_ACTIVE_NAME" xml:space="preserve"> 
+  <data name="WAITING_LINE_STATE_ACTIVE_NAME" xml:space="preserve"> 
     <value>Активные</value> 
   </data> 
-  <data name="WAITING_LINE_SATE_PROCESSED_NAME" xml:space="preserve"> 
+  <data name="WAITING_LINE_STATE_PROCESSED_NAME" xml:space="preserve"> 
     <value>Обработанный</value> 
   </data> 
-  <data name="WAITING_LINE_SATE_CANCELED_NAME" xml:space="preserve"> 
+  <data name="WAITING_LINE_STATE_CANCELED_NAME" xml:space="preserve"> 
     <value>Отменен</value> 
   </data> 
   <data name="STOCK_TRANSACTION_TYPE_ADD_NAME" xml:space="preserve"> 
@@ -1269,7 +1320,7 @@
     <value>Депозит</value> 
   </data> 
   <data name="DEPOSIT_TRANSACTION_TYPE_WITHDRAW_NAME" xml:space="preserve"> 
-    <value>Возврат с депозита</value> 
+    <value>Снятие с депозита</value>
   </data> 
   <data name="USER_SESSION_STATE_ACTIVE_NAME" xml:space="preserve"> 
     <value>Активные</value> 
@@ -1298,8 +1349,8 @@
   <data name="ENTITY_EVENT_TYPE_MODIFIED_NAME" xml:space="preserve"> 
     <value>Измененный</value> 
   </data> 
-  <data name="TASK_TYPE_JUNCTION_NAME" xml:space="preserve"> 
-    <value>Junction соединение</value> 
+  <data name="TASK_TYPE_JUNCTION_NAME" xml:space="preserve">
+    <value>Перенаправление папки</value>
   </data> 
   <data name="TASK_TYPE_NOTIFICATION_NAME" xml:space="preserve"> 
     <value>Уведомлениe</value> 
@@ -1335,10 +1386,10 @@
     <value>Не удалось войти</value> 
   </data> 
   <data name="LOGIN_RESULT_INSUFFICIENT_BALANCE_DESCRIPTION" xml:space="preserve"> 
-    <value>У указанного пользователя недостаточный баланс или пакет не может быть использован на этой группе компьютеров</value> 
+    <value>У указанного пользователя недостаточный баланс</value>
   </data> 
   <data name="LOGIN_RESULT_INSUFFICIENT_BALANCE_NAME" xml:space="preserve"> 
-    <value>Недостаточный баланс или пакет не может быть использован на этой группе компьютеров</value> 
+    <value>Недостаточный баланс</value>
   </data> 
   <data name="LOGIN_RESULT_INVALID_CREDENTIALS_DESCRIPTION" xml:space="preserve"> 
     <value>Указанное имя пользователя или пароль неверны</value> 
@@ -1350,7 +1401,7 @@
     <value>Указанный идентификатор хоста неверный</value> 
   </data> 
   <data name="LOGIN_RESULT_INVALID_HOST_ID_NAME" xml:space="preserve"> 
-    <value>Недопустимый хост</value> 
+    <value>Неверный хост</value>
   </data> 
   <data name="LOGIN_RESULT_INVALID_PARAMETERS_DESCRIPTION" xml:space="preserve"> 
     <value>Указанные параметры недопустимы</value> 
@@ -1407,16 +1458,16 @@
     <value>Максимальное количество сеансов</value> 
   </data> 
   <data name="LOGIN_RESULT_NOT_IN_WAITING_LINE_DESCRIPTION" xml:space="preserve"> 
-    <value>Указанный пользователь не в очереди ожидания</value> 
+    <value>Указанный пользователь не в очереди</value> 
   </data> 
   <data name="LOGIN_RESULT_NOT_IN_WAITING_LINE_NAME" xml:space="preserve"> 
-    <value>Не в очереди ожидания</value> 
+    <value>Не в очереди</value> 
   </data> 
   <data name="LOGIN_RESULT_OPERATOR_USER_GROUP_DENIED_DESCRIPTION" xml:space="preserve"> 
-    <value>Этой группе запрещена авторизация на хостах из менеджера</value> 
+    <value>Группе пользователей запрещён вход из менеджера</value>
   </data> 
   <data name="LOGIN_RESULT_OPERATOR_USER_GROUP_DENIED_NAME" xml:space="preserve"> 
-    <value>Оператору отказано в входе в группу пользователей</value> 
+    <value>Группе пользователей запрещён вход для оператора</value>
   </data> 
   <data name="LOGIN_RESULT_RESTRICTED_BY_AGE_DESCRIPTION" xml:space="preserve"> 
     <value>Вход в систему в данный момент невозможен из-за возрастных ограничений.</value> 
@@ -1497,13 +1548,13 @@
     <value>Неудачный результат из-за сбоя в сети</value> 
   </data> 
   <data name="AUTHENTICATION_RESULT_NETWORK_ERROR_NAME" xml:space="preserve"> 
-    <value>Ошибка в сети</value> 
+    <value>Сетевая ошибка</value>
   </data> 
   <data name="AUTHENTICATION_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
     <value>Аутентификация прошла успешно</value> 
   </data> 
   <data name="AUTHENTICATION_RESULT_SUCCESS_NAME" xml:space="preserve"> 
-    <value>Удачно</value> 
+    <value>Успех</value>
   </data> 
   <data name="AUTHENTICATION_RESULT_UNAUTHORIZED_DESCRIPTION" xml:space="preserve"> 
     <value>Несанкционированный</value> 
