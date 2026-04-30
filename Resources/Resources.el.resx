@@ -1,12 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8"?> 
-<root> 
+<?xml version="1.0" encoding="utf-8"?>
+<root>
   <!--
   Loco xml export: ResX - .NET resources
   Project: Gizmo.Web.Api.Models
   Locale: el-GR, Greek (Greece)
   Exported by: Oleg Savelos
-  Exported at: Tue, 31 Mar 2026 14:32:46 +0300 
-  --> 
+  Exported at: Wed, 29 Apr 2026 16:00:00 +0300
+  -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
@@ -70,777 +70,1496 @@
   </metadata>
   <metadata name="locoLocaleName" xml:space="preserve">
     <value>Greek (Greece)</value>
-  </metadata> 
-  <data name="ASSISTANCE_REQUEST_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Υποδεικνύει αλλαγή κατάστασης αιτήματος βοήθειας</value> 
-  </data> 
-  <data name="ASSISTANCE_REQUEST_CHANGE_EVENT_EVENT_NAME" xml:space="preserve"> 
-    <value>Αλλαγή</value> 
-  </data> 
-  <data name="ASSISTANCE_REQUEST_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Υποδεικνύει τη δημιουργία αιτήματος βοήθειας</value> 
-  </data> 
-  <data name="ASSISTANCE_REQUEST_CREATED_EVENT_EVENT_NAME" xml:space="preserve"> 
-    <value>Δημιουργήθηκε</value> 
-  </data> 
-  <data name="ASSISTANCE_REQUEST_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Συμβάντα που σχετίζονται με το αίτημα βοήθειας</value> 
-  </data> 
-  <data name="ASSISTANCE_REQUEST_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Αίτημα βοήθειας</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_ERROR_DESCRIPTION" xml:space="preserve"> 
-    <value>Ο έλεγχος ταυτότητας απέτυχε λόγω σφάλματος</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_ERROR_NAME" xml:space="preserve"> 
-    <value>Σφάλμα</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_INVALID_DESCRIPTION" xml:space="preserve"> 
-    <value>Η κατάσταση ελέγχου ταυτότητας δεν είναι έγκυρη</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_INVALID_NAME" xml:space="preserve"> 
-    <value>Μη έγκυρο</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_NETWORK_ERROR_DESCRIPTION" xml:space="preserve"> 
-    <value>Ο έλεγχος ταυτότητας απέτυχε λόγω σφάλματος δικτύου</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_NETWORK_ERROR_NAME" xml:space="preserve"> 
-    <value>Σφάλμα δικτύου</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_NO_TOKEN_DESCRIPTION" xml:space="preserve"> 
-    <value>Δεν υπάρχει διακριτικό για έλεγχο ταυτότητας</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_NO_TOKEN_NAME" xml:space="preserve"> 
-    <value>Χωρίς διακριτικό</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_UNAUTHORIZED_DESCRIPTION" xml:space="preserve"> 
-    <value>Μη εξουσιοδοτημένος</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_UNAUTHORIZED_NAME" xml:space="preserve"> 
-    <value>Μη εξουσιοδοτημένος</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_VALID_DESCRIPTION" xml:space="preserve"> 
-    <value>Η πιστοποίηση είναι έγκυρη</value> 
-  </data> 
-  <data name="AUTHENTICATION_STATE_VALID_NAME" xml:space="preserve"> 
-    <value>Έγκυρο</value> 
-  </data> 
-  <data name="AUTHORIZATION_RESULT_ERROR_DESCRIPTION" xml:space="preserve"> 
-    <value>Απέτυχε λόγω σφάλματος</value> 
-  </data> 
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-  <data name="RESERVATION_USER_REMOVED_EVENT_NAME" xml:space="preserve"> 
-    <value>Διαγράφηκε</value> 
-  </data> 
-  <data name="RESTRICTION_TYPE_CLASS_NAME" xml:space="preserve"> 
-    <value>Όνομα Κλάσης</value> 
-  </data> 
-  <data name="RESTRICTION_TYPE_FILE_NAME" xml:space="preserve"> 
-    <value>Όνομα αρχείου</value> 
-  </data> 
-   
-  <data name="RESTRICTION_TYPE_UNSET" xml:space="preserve"> 
-    <value>Μη ορισμένο</value> 
-  </data> 
-  <data name="RESTRICTION_TYPE_WINDOW_NAME" xml:space="preserve"> 
-    <value>Όνομα παραθύρου</value> 
-  </data> 
-  <data name="SCHEDULE_TYPE_DAILY" xml:space="preserve"> 
-    <value>Ημερήσια</value> 
-  </data> 
-  <data name="SCHEDULE_TYPE_MONTHLY" xml:space="preserve"> 
-    <value>Μηνιαία</value> 
-  </data> 
-  <data name="SCHEDULE_TYPE_ONE_TIME" xml:space="preserve"> 
-    <value>Μια φορά</value> 
-  </data> 
-  <data name="SCHEDULE_TYPE_WEEKLY" xml:space="preserve"> 
-    <value>Εβδομαδιαία</value> 
-  </data> 
-  <data name="SCHEDULE_TYPE_YEARLY" xml:space="preserve"> 
-    <value>Ετήσια</value> 
-  </data> 
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-  <data name="TARGET_REQUIREMENT_ALL" xml:space="preserve"> 
-    <value>Όλα</value> 
-  </data> 
-  <data name="TARGET_REQUIREMENT_AMOUNT" xml:space="preserve"> 
-    <value>Ποσό</value> 
-  </data> 
-  <data name="TARGET_REQUIREMENT_ANY" xml:space="preserve"> 
-    <value>Οποιοδήποτε</value> 
-  </data> 
-  <data name="TARGET_REQUIREMENT_COUNT" xml:space="preserve"> 
-    <value>Πλήθος</value> 
-  </data> 
-  <data name="USER_ENABLED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Υποδεικνύει την ενεργοποίηση ενός χρήστη</value> 
-  </data> 
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-  <data name="DEVICE_FISCAL_PRINTER_ERROR_EVENT_NAME" xml:space="preserve"> 
-    <value>Σφάλμα</value> 
-  </data> 
-  <data name="DEVICE_PAYMENT_TERMINAL_ERROR_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Σφάλμα τερματικού πληρωμής</value> 
-  </data> 
-  <data name="DEVICE_PAYMENT_TERMINAL_ERROR_EVENT_NAME" xml:space="preserve"> 
-    <value>Σφάλμα</value> 
-  </data> 
-   
-  <data name="ORDER_STATUS_FILTER_CANCELED" xml:space="preserve"> 
-    <value>Ακυρώθηκε</value> 
-  </data> 
-  <data name="ORDER_STATUS_FILTER_COMPLETED" xml:space="preserve"> 
-    <value>Ολοκληρώθηκε</value> 
-  </data> 
-  <data name="ORDER_STATUS_FILTER_ON_HOLD" xml:space="preserve"> 
-    <value>Σε αναμονή</value> 
-  </data> 
-  <data name="ORDER_STATUS_FILTER_PROCESSING" xml:space="preserve"> 
-    <value>Επεξεργασία</value> 
-  </data> 
-  <data name="PROMOTION_LIMIT_TYPE_TOTAL" xml:space="preserve"> 
-    <value>Σύνολο</value> 
-  </data> 
-  <data name="PROMOTION_LIMIT_TYPE_PER_USER" xml:space="preserve"> 
-    <value>Ανά χρήστη</value> 
-  </data> 
-  <data name="PROMOTION_LIMIT_TYPE_DAILY" xml:space="preserve"> 
-    <value>Ημερήσια</value> 
-  </data> 
-  <data name="PROMOTION_LIMIT_TYPE_WEEKLY" xml:space="preserve"> 
-    <value>Εβδομαδιαία</value> 
-  </data> 
-  <data name="USER_BALANCE_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Υποδηλώνει μεταβολή στο ισοζύγιο</value> 
-  </data> 
-  <data name="USER_BALANCE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Το ισοζύγιο άλλαξε</value> 
-  </data> 
-  <data name="USER_BALANCE_CLOSE_EVENT_NAME" xml:space="preserve"> 
-    <value>Υποδεικνύει το κλείσιμο υπολοίπου</value> 
-  </data> 
-  <data name="USER_BALANCE_CLOSE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Κλείσιμο υπολοίπου</value> 
-  </data> 
-  <data name="USER_BILLING_OPTIONS_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Οι επιλογές χρέωσης αλλάζουν</value> 
-  </data> 
-  <data name="USER_BILLING_OPTIONS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Υποδεικνύει αλλαγή στις επιλογές χρέωσης</value> 
-  </data> 
-  <data name="USER_EMAIL_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Αλλαγή email</value> 
-  </data> 
-  <data name="USER_EMAIL_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Υποδεικνύει αλλαγή email</value> 
-  </data> 
-  <data name="USER_USER_GROUP_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Αλλαγή ομάδας χρηστών</value> 
-  </data> 
-  <data name="USER_USER_GROUP_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Υποδεικνύει αλλαγή ομάδας χρηστών</value> 
-  </data> 
-  <data name="USER_NEGATIVE_BALANCE_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Αλλαγή αρνητικού υπολοίπου</value> 
-  </data> 
-  <data name="USER_NEGATIVE_BALANCE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Υποδεικνύει αρνητική μεταβολή υπολοίπου</value> 
-  </data> 
-  <data name="USER_PASSWORD_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Αλλαγή κωδικού πρόσβασης</value> 
-  </data> 
-  <data name="USER_PASSWORD_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Υποδεικνύει αλλαγή κωδικού πρόσβασης</value> 
-  </data> 
-  <data name="USER_PICTURE_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Αλλαγή εικόνας</value> 
-  </data> 
-  <data name="USER_PICTURE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Υποδεικνύει αλλαγή εικόνας</value> 
-  </data> 
-  <data name="USER_RENAME_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Μετονομασία</value> 
-  </data> 
-  <data name="USER_RENAME_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Υποδεικνύει μετονομασία χρήστη</value> 
-  </data> 
-  <data name="USER_SMART_CARD_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Αλλαγή έξυπνης κάρτας</value> 
-  </data> 
-  <data name="USER_SMART_CARD_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Υποδεικνύει αλλαγή έξυπνης κάρτας</value> 
-  </data> 
-  <data name="USER_USAGE_SESSION_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Αλλαγή συνεδρίας χρήσης</value> 
-  </data> 
-  <data name="USER_USAGE_SESSION_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Υποδεικνύει αλλαγή της περιόδου χρήσης</value> 
-  </data> 
-  <data name="BILLING_OPTION_NONE_NAME" xml:space="preserve"> 
-    <value>Κανένα</value> 
-  </data> 
-  <data name="BILLING_OPTION_DISABLE_TIME_OFFER_NAME" xml:space="preserve"> 
-    <value>Απενεργοποίηση προσφορών χρόνου</value> 
-  </data> 
-  <data name="BILLING_OPTION_DISABLE_FIXED_TIME_NAME" xml:space="preserve"> 
-    <value>Απενεργοποίηση προπληρωμένου χρόνου</value> 
-  </data> 
-  <data name="BILLING_OPTION_DISABLE_DEPOSITS_NAME" xml:space="preserve"> 
-    <value>Απενεργοποίηση καταθέσεων</value> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_EMAIL" xml:space="preserve"> 
-    <value>Ηλεκτρονικό ταχυδρομείο</value> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_FACEBOOK_MESSENGER_NAME" xml:space="preserve"> 
-    <value>Facebook Messenger</value> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_INSTAGRAM_NAME" xml:space="preserve"> 
-    <value>Instagram</value> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_SMS_NAME" xml:space="preserve"> 
-    <value>SMS</value> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_TELEGRAM_NAME" xml:space="preserve"> 
-    <value>Telegram</value> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_TWITTER_DM_NAME" xml:space="preserve"> 
-    <value>Twitter</value> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_VIBER_NAME" xml:space="preserve"> 
-    <value>Viber</value> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_WHATS_APP_NAME" xml:space="preserve"> 
-    <value>WhatsApp</value> 
-  </data> 
-  <data name="COMMUNICATION_CHANNEL_TYPES_WE_CHAT_NAME" xml:space="preserve"> 
-    <value>WeChat</value> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_HOST_HAS_RESERVED_GUEST_DESCRIPTION" xml:space="preserve"> 
-    <value>Ο οικοδεσπότης έχει κάνει κράτηση επισκέπτη</value> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_HOST_HAS_RESERVED_GUEST_NAME" xml:space="preserve"> 
-    <value>Ο οικοδεσπότης έχει κάνει κράτηση για τον επισκέπτη</value> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_HOST_IN_USE_DESCRIPTION" xml:space="preserve"> 
-    <value>Ο κεντρικός υπολογιστής είναι σε χρήση</value> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_HOST_IN_USE_NAME" xml:space="preserve"> 
-    <value>Κεντρικός υπολογιστής σε χρήση</value> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_HOST_IS_RESERVED_DESCRIPTION" xml:space="preserve"> 
-    <value>Ο οικοδεσπότης έχει κάνει κράτηση</value> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_HOST_IS_RESERVED_NAME" xml:space="preserve"> 
-    <value>Ο οικοδεσπότης είναι δεσμευμένος</value> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
-    <value>Η διαγραφή του κεντρικού υπολογιστή ήταν επιτυχής</value> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve"> 
-    <value>Η διαγραφή του κεντρικού τερματικού ολοκληρώθηκε με επιτυχία</value> 
-  </data> 
-  <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_DESCRIPTION" xml:space="preserve"> 
-    <value>Αποτυχία διαγραφής ομάδας προϊόντων</value> 
-  </data> 
-  <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_NAME" xml:space="preserve"> 
-    <value>Αποτυχία διαγραφής ομάδας προϊόντων</value> 
-  </data> 
-  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_DESCRIPTION" xml:space="preserve"> 
-    <value>Δεν είναι δυνατή η διαγραφή μη κενής ομάδας προϊόντων</value> 
-  </data> 
-  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_NAME" xml:space="preserve"> 
-    <value>Η ομάδα προϊόντων δεν είναι κενή</value> 
-  </data> 
-  <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
-    <value>Η διαγραφή της κατηγορίας προϊόντων ήταν επιτυχής</value> 
-  </data> 
-  <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve"> 
-    <value>Επιτυχία διαγραφής ομάδας προϊόντων</value> 
-  </data> 
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_DESCRIPTION" xml:space="preserve"> 
-    <value>Αποτυχία διαγραφής κατηγορίας εφαρμογής</value> 
-  </data> 
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_NAME" xml:space="preserve"> 
-    <value>Αποτυχία διαγραφής κατηγορίας εφαρμογής</value> 
-  </data> 
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPY_DESCRIPTION" xml:space="preserve"> 
-    <value>Δεν είναι δυνατή η διαγραφή μη κενής κατηγορίας εφαρμογών</value> 
-  </data> 
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPY_NAME" xml:space="preserve"> 
-    <value>Η κατηγορία εφαρμογής δεν είναι κενή</value> 
-  </data> 
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
-    <value>Η διαγραφή της κατηγορίας εφαρμογής ήταν επιτυχής</value> 
-  </data> 
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve"> 
-    <value>Επιτυχία διαγραφής κατηγορίας εφαρμογής</value> 
-  </data> 
-  <data name="WAITING_LINE_SATE_ACTIVE_NAME" xml:space="preserve"> 
-    <value>Ενεργός</value> 
-  </data> 
-  <data name="WAITING_LINE_SATE_PROCESSED_NAME" xml:space="preserve"> 
-    <value>Επεξεργασμένο</value> 
-  </data> 
-  <data name="WAITING_LINE_SATE_CANCELED_NAME" xml:space="preserve"> 
-    <value>Ακυρωμένη</value> 
-  </data> 
-  <data name="STOCK_TRANSACTION_TYPE_ADD_NAME" xml:space="preserve"> 
-    <value>Προσθήκη</value> 
-  </data> 
-  <data name="STOCK_TRANSACTION_TYPE_REMOVE_NAME" xml:space="preserve"> 
-    <value>Αφαίρεση</value> 
-  </data> 
-  <data name="STOCK_TRANSACTION_TYPE_RETURN_NAME" xml:space="preserve"> 
-    <value>Επιστροφή</value> 
-  </data> 
-  <data name="STOCK_TRANSACTION_TYPE_SALE_NAME" xml:space="preserve"> 
-    <value>Πώληση</value> 
-  </data> 
-  <data name="STOCK_TRANSACTION_TYPE_SET_NAME" xml:space="preserve"> 
-    <value>Ορισμός</value> 
-  </data> 
-  <data name="DEPOSIT_TRANSACTION_TYPE_CHARGE_NAME" xml:space="preserve"> 
-    <value>Χρέωση</value> 
-  </data> 
-  <data name="DEPOSIT_TRANSACTION_TYPE_CREDIT_NAME" xml:space="preserve"> 
-    <value>Πίστωση</value> 
-  </data> 
-  <data name="DEPOSIT_TRANSACTION_TYPE_DEPOSIT_NAME" xml:space="preserve"> 
-    <value>Κατάθεση</value> 
-  </data> 
-  <data name="DEPOSIT_TRANSACTION_TYPE_WITHDRAW_NAME" xml:space="preserve"> 
-    <value>Ανάληψη</value> 
-  </data> 
-  <data name="USER_SESSION_STATE_ACTIVE_NAME" xml:space="preserve"> 
-    <value>Ενεργό</value> 
-  </data> 
-  <data name="USER_SESSION_STATE_NONE_NAME" xml:space="preserve"> 
-    <value>Αναμονή</value> 
-  </data> 
-  <data name="USER_SESSION_STATE_ENDED_NAME" xml:space="preserve"> 
-    <value>Τέλος</value> 
-  </data> 
-  <data name="USER_SESSION_STATE_PENDING_NAME" xml:space="preserve"> 
-    <value>Σε αναμονή</value> 
-  </data> 
-  <data name="USER_SESSION_STATE_PAUSED_NAME" xml:space="preserve"> 
-    <value>Παύση</value> 
-  </data> 
-  <data name="USER_SESSION_STATE_MOVED_NAME" xml:space="preserve"> 
-    <value>Μετακινήθηκε</value> 
-  </data> 
-  <data name="ENTITY_EVENT_TYPE_ADDED_NAME" xml:space="preserve"> 
-    <value>Προστέθηκε</value> 
-  </data> 
-  <data name="ENTITY_EVENT_TYPE_REMOVED_NAME" xml:space="preserve"> 
-    <value>Αφαιρέθηκε</value> 
-  </data> 
-  <data name="ENTITY_EVENT_TYPE_MODIFIED_NAME" xml:space="preserve"> 
-    <value>Τροποποιήθηκε</value> 
-  </data> 
-  <data name="TASK_TYPE_JUNCTION_NAME" xml:space="preserve"> 
-    <value>Σύνδεση φακέλων</value> 
-  </data> 
-  <data name="TASK_TYPE_NOTIFICATION_NAME" xml:space="preserve"> 
-    <value>Ειδοποίηση</value> 
-  </data> 
-  <data name="TASK_TYPE_PROCESS_NAME" xml:space="preserve"> 
-    <value>Διεργασία</value> 
-  </data> 
-  <data name="TASK_TYPE_SCRIPT_NAME" xml:space="preserve"> 
-    <value>Δέσμη Ενεργειών</value> 
-  </data> 
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-  <data name="USER_NOTE_ADDED_EVENT_NAME" xml:space="preserve"> 
-    <value>Σημείωση προστέθηκε</value> 
-  </data> 
-  <data name="USER_NOTE_ADDED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Υποδεικνύει ότι έχει προστεθεί σημείωση χρήστη</value> 
-  </data> 
-  <data name="USER_NOTE_DELETED_EVENT_NAME" xml:space="preserve"> 
-    <value>Η σημείωση διαγράφηκε</value> 
-  </data> 
-  <data name="USER_NOTE_DELETED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Υποδεικνύει ότι η σημείωση χρήστη έχει διαγραφεί</value> 
-  </data> 
-  <data name="USER_NOTE_UPDATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Η σημείωση ενημερώθηκε</value> 
-  </data> 
-  <data name="USER_NOTE_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Υποδεικνύει ότι η σημείωση χρήστη έχει ενημερωθεί</value> 
-  </data> 
-  <data name="RESERVATION_CURRENT_CONFIRM_RESULT_SUCCESS_NAME" xml:space="preserve"> 
-    <value>Επιτυχία</value> 
-  </data> 
-  <data name="RESERVATION_CURRENT_CONFIRM_RESULT_INVALID_PIN_NAME" xml:space="preserve"> 
-    <value>Λανθασμένος κωδικός Pin</value> 
-  </data> 
-  <data name="RESERVATION_CURRENT_CONFIRM_RESULT_ERROR_NAME" xml:space="preserve"> 
-    <value>Σφάλμα</value> 
-  </data> 
-  <data name="RESERVATION_CURRENT_CONFIRMED_RESULT_CONFIRMED_NAME" xml:space="preserve"> 
-    <value>Επιβεβαιώθηκε</value> 
-  </data> 
-  <data name="RESERVATION_CURRENT_CONFIRMED_RESULT_NO_RESERVATION_NAME" xml:space="preserve"> 
-    <value>Χωρίς κράτηση</value> 
-  </data> 
-  <data name="RESERVATION_CURRENT_CONFIRMED_RESULT_UNCONFIRMED_NAME" xml:space="preserve"> 
-    <value>Μη επιβεβαιωμένο</value> 
-  </data> 
-  <data name="RESERVATION_CURRENT_CONFIRM_RESULT_NO_RESERVATION_NAME" xml:space="preserve"> 
-    <value>Χωρίς κράτηση</value> 
-  </data> 
-  <data name="AUTHENTICATION_RESULT_ERROR_DESCRIPTION" xml:space="preserve"> 
-    <value>Απέτυχε λόγω σφάλματος</value> 
-  </data> 
-  <data name="AUTHENTICATION_RESULT_ERROR_NAME" xml:space="preserve"> 
-    <value>Σφάλμα</value> 
-  </data> 
-  <data name="AUTHENTICATION_RESULT_NETWORK_ERROR_DESCRIPTION" xml:space="preserve"> 
-    <value>Απέτυχε λόγω σφάλματος δικτύου</value> 
-  </data> 
-  <data name="AUTHENTICATION_RESULT_NETWORK_ERROR_NAME" xml:space="preserve"> 
-    <value>Σφάλμα δικτύου</value> 
-  </data> 
-  <data name="AUTHENTICATION_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
-    <value>Η ταυτοποίηση ήταν επιτυχής</value> 
-  </data> 
-  <data name="AUTHENTICATION_RESULT_SUCCESS_NAME" xml:space="preserve"> 
-    <value>Επιτυχία</value> 
-  </data> 
-  <data name="AUTHENTICATION_RESULT_UNAUTHORIZED_DESCRIPTION" xml:space="preserve"> 
-    <value>Μη εξουσιοδοτημένο</value> 
-  </data> 
-  <data name="AUTHENTICATION_RESULT_UNAUTHORIZED_NAME" xml:space="preserve"> 
-    <value>Μη εξουσιοδοτημένο</value> 
-  </data> 
+  </metadata>
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_DESCRIPTION" xml:space="preserve">
+    <value>Αποτυχία διαγραφής κατηγορίας εφαρμογής</value>
+  </data>
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_NAME" xml:space="preserve">
+    <value>Αποτυχία διαγραφής κατηγορίας εφαρμογής</value>
+  </data>
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPY_DESCRIPTION" xml:space="preserve">
+    <value>Δεν είναι δυνατή η διαγραφή μη κενής κατηγορίας εφαρμογής</value>
+  </data>
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPY_NAME" xml:space="preserve">
+    <value>Η κατηγορία εφαρμογής δεν είναι κενή</value>
+  </data>
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
+    <value>Η διαγραφή της κατηγορίας εφαρμογής ολοκληρώθηκε επιτυχώς</value>
+  </data>
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve">
+    <value>Επιτυχής διαγραφή κατηγορίας εφαρμογής</value>
+  </data>
+  <data name="ASSET_CHECKED_IN_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει επιστροφή εξοπλισμού</value>
+  </data>
+  <data name="ASSET_CHECKED_IN_EVENT_EVENT_NAME" xml:space="preserve">
+    <value>Επιστράφηκε</value>
+  </data>
+  <data name="ASSET_CHECKED_OUT_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει παράδοση εξοπλισμού</value>
+  </data>
+  <data name="ASSET_CHECKED_OUT_EVENT_EVENT_NAME" xml:space="preserve">
+    <value>Δανείστηκε</value>
+  </data>
+  <data name="ASSET_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάντα που σχετίζονται με τον εξοπλισμό</value>
+  </data>
+  <data name="ASSET_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Εξοπλισμός</value>
+  </data>
+  <data name="ASSISTANCE_REQUEST_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει αλλαγή κατάστασης αιτήματος βοήθειας</value>
+  </data>
+  <data name="ASSISTANCE_REQUEST_CHANGE_EVENT_EVENT_NAME" xml:space="preserve">
+    <value>Αλλαγή</value>
+  </data>
+  <data name="ASSISTANCE_REQUEST_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει τη δημιουργία αιτήματος βοήθειας</value>
+  </data>
+  <data name="ASSISTANCE_REQUEST_CREATED_EVENT_EVENT_NAME" xml:space="preserve">
+    <value>Δημιουργήθηκε</value>
+  </data>
+  <data name="ASSISTANCE_REQUEST_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάντα που σχετίζονται με αιτήματα βοήθειας</value>
+  </data>
+  <data name="ASSISTANCE_REQUEST_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Αίτημα βοήθειας</value>
+  </data>
+  <data name="AUTHENTICATION_RESULT_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>Απέτυχε λόγω σφάλματος</value>
+  </data>
+  <data name="AUTHENTICATION_RESULT_ERROR_NAME" xml:space="preserve">
+    <value>Σφάλμα</value>
+  </data>
+  <data name="AUTHENTICATION_RESULT_NETWORK_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>Απέτυχε λόγω σφάλματος δικτύου</value>
+  </data>
+  <data name="AUTHENTICATION_RESULT_NETWORK_ERROR_NAME" xml:space="preserve">
+    <value>Σφάλμα δικτύου</value>
+  </data>
+  <data name="AUTHENTICATION_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
+    <value>Επιτυχής ταυτοποίηση</value>
+  </data>
+  <data name="AUTHENTICATION_RESULT_SUCCESS_NAME" xml:space="preserve">
+    <value>Επιτυχία</value>
+  </data>
+  <data name="AUTHENTICATION_RESULT_UNAUTHORIZED_DESCRIPTION" xml:space="preserve">
+    <value>Μη εξουσιοδοτημένος</value>
+  </data>
+  <data name="AUTHENTICATION_RESULT_UNAUTHORIZED_NAME" xml:space="preserve">
+    <value>Μη εξουσιοδοτημένος</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>Η ταυτοποίηση απέτυχε λόγω σφάλματος</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_ERROR_NAME" xml:space="preserve">
+    <value>Σφάλμα</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_INVALID_DESCRIPTION" xml:space="preserve">
+    <value>Η κατάσταση ταυτοποίησης είναι άκυρη</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_INVALID_NAME" xml:space="preserve">
+    <value>Άκυρη</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_NETWORK_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>Η ταυτοποίηση απέτυχε λόγω σφάλματος δικτύου</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_NETWORK_ERROR_NAME" xml:space="preserve">
+    <value>Σφάλμα δικτύου</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_NO_TOKEN_DESCRIPTION" xml:space="preserve">
+    <value>Δεν υπάρχει διακριτικό για ταυτοποίηση</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_NO_TOKEN_NAME" xml:space="preserve">
+    <value>Δεν υπάρχει διακριτικό</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_UNAUTHORIZED_DESCRIPTION" xml:space="preserve">
+    <value>Μη εξουσιοδοτημένος</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_UNAUTHORIZED_NAME" xml:space="preserve">
+    <value>Μη εξουσιοδοτημένος</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_VALID_DESCRIPTION" xml:space="preserve">
+    <value>Έγκυρη ταυτοποίηση</value>
+  </data>
+  <data name="AUTHENTICATION_STATE_VALID_NAME" xml:space="preserve">
+    <value>Έγκυρη</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>Απέτυχε λόγω σφάλματος</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_ERROR_NAME" xml:space="preserve">
+    <value>Σφάλμα</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_INVALID_ID_DESCRIPTION" xml:space="preserve">
+    <value>Απέτυχε λόγω άκυρου αναγνωριστικού εγκατάστασης</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_INVALID_ID_NAME" xml:space="preserve">
+    <value>Άκυρο αναγνωριστικό</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_NETWORK_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>Απέτυχε λόγω σφάλματος δικτύου</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_NETWORK_ERROR_NAME" xml:space="preserve">
+    <value>Σφάλμα δικτύου</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
+    <value>Επιτυχής εξουσιοδότηση</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_SUCCESS_NAME" xml:space="preserve">
+    <value>Επιτυχία</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_TOKEN_EXPIRED_DESCRIPTION" xml:space="preserve">
+    <value>Απέτυχε λόγω ληγμένου διακριτικού</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_TOKEN_EXPIRED_NAME" xml:space="preserve">
+    <value>Ληγμένο διακριτικό</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_UNAUTHORIZED_DESCRIPTION" xml:space="preserve">
+    <value>Μη εξουσιοδοτημένος</value>
+  </data>
+  <data name="AUTHORIZATION_RESULT_UNAUTHORIZED_NAME" xml:space="preserve">
+    <value>Μη εξουσιοδοτημένος</value>
+  </data>
+  <data name="AUTHORIZATION_WARNINGS_FUTURE_PAYMENT_DESCRIPTION" xml:space="preserve">
+    <value>Μελλοντικές πληρωμές ενδέχεται να αποτύχουν λόγω λήξης κάρτας</value>
+  </data>
+  <data name="AUTHORIZATION_WARNINGS_FUTURE_PAYMENT_NAME" xml:space="preserve">
+    <value>Προειδοποίηση μελλοντικής πληρωμής</value>
+  </data>
+  <data name="AUTHORIZATION_WARNINGS_NONE_DESCRIPTION" xml:space="preserve">
+    <value>Καμία</value>
+  </data>
+  <data name="AUTHORIZATION_WARNINGS_NONE_NAME" xml:space="preserve">
+    <value>Καμία</value>
+  </data>
+  <data name="AUTHORIZATION_WARNINGS_PAYMENT_FAILURE_DESCRIPTION" xml:space="preserve">
+    <value>Η απόπειρα πληρωμής απέτυχε</value>
+  </data>
+  <data name="AUTHORIZATION_WARNINGS_PAYMENT_FAILURE_NAME" xml:space="preserve">
+    <value>Αποτυχία πληρωμής</value>
+  </data>
+  <data name="BILLING_OPTION_DISABLE_DEPOSITS_NAME" xml:space="preserve">
+    <value>Απενεργοποίηση καταθέσεων</value>
+  </data>
+  <data name="BILLING_OPTION_DISABLE_FIXED_TIME_NAME" xml:space="preserve">
+    <value>Απενεργοποίηση σταθερού χρόνου</value>
+  </data>
+  <data name="BILLING_OPTION_DISABLE_TIME_OFFER_NAME" xml:space="preserve">
+    <value>Απενεργοποίηση προσφορών χρόνου</value>
+  </data>
+  <data name="BILLING_OPTION_NONE_NAME" xml:space="preserve">
+    <value>Καμία</value>
+  </data>
+  <data name="BRANCH_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάν δημιουργίας υποκαταστήματος</value>
+  </data>
+  <data name="BRANCH_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>Υποκατάστημα δημιουργήθηκε</value>
+  </data>
+  <data name="BRANCH_DELETED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάν διαγραφής υποκαταστήματος</value>
+  </data>
+  <data name="BRANCH_DELETED_EVENT_NAME" xml:space="preserve">
+    <value>Διαγράφηκε</value>
+  </data>
+  <data name="BRANCH_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάντα που σχετίζονται με υποκατάστημα</value>
+  </data>
+  <data name="BRANCH_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Υποκατάστημα</value>
+  </data>
+  <data name="BRANCH_OPERATOR_ADDED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάν προσθήκης χειριστή</value>
+  </data>
+  <data name="BRANCH_OPERATOR_ADDED_EVENT_NAME" xml:space="preserve">
+    <value>Προστέθηκε χειριστής</value>
+  </data>
+  <data name="BRANCH_OPERATOR_DEFAULT_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάν αλλαγής προεπιλεγμένου υποκαταστήματος χειριστών</value>
+  </data>
+  <data name="BRANCH_OPERATOR_DEFAULT_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Αλλαγή προεπιλεγμένου υποκαταστήματος χειριστών</value>
+  </data>
+  <data name="BRANCH_OPERATOR_REMOVED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάν αφαίρεσης χειριστή</value>
+  </data>
+  <data name="BRANCH_OPERATOR_REMOVED_EVENT_NAME" xml:space="preserve">
+    <value>Αφαιρέθηκε χειριστής</value>
+  </data>
+  <data name="BRANCH_UNDELETED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάν επαναφοράς υποκαταστήματος</value>
+  </data>
+  <data name="BRANCH_UNDELETED_EVENT_NAME" xml:space="preserve">
+    <value>Επαναφέρθηκε</value>
+  </data>
+  <data name="BRANCH_UPDATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάν ενημέρωσης υποκαταστήματος</value>
+  </data>
+  <data name="BRANCH_UPDATED_EVENT_NAME" xml:space="preserve">
+    <value>Υποκατάστημα ενημερώθηκε</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_EMAIL" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_FACEBOOK_MESSENGER_NAME" xml:space="preserve">
+    <value>Facebook Messenger</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_INSTAGRAM_NAME" xml:space="preserve">
+    <value>Instagram</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_SMS_NAME" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_TELEGRAM_NAME" xml:space="preserve">
+    <value>Telegram</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_TWITTER_DM_NAME" xml:space="preserve">
+    <value>Twitter</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_VIBER_NAME" xml:space="preserve">
+    <value>Viber</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_WE_CHAT_NAME" xml:space="preserve">
+    <value>WeChat</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_WHATS_APP_NAME" xml:space="preserve">
+    <value>WhatsApp</value>
+  </data>
+  <data name="DEPOSIT_TRANSACTION_TYPE_CHARGE_NAME" xml:space="preserve">
+    <value>Χρέωση</value>
+  </data>
+  <data name="DEPOSIT_TRANSACTION_TYPE_CREDIT_NAME" xml:space="preserve">
+    <value>Πίστωση</value>
+  </data>
+  <data name="DEPOSIT_TRANSACTION_TYPE_DEPOSIT_NAME" xml:space="preserve">
+    <value>Κατάθεση</value>
+  </data>
+  <data name="DEPOSIT_TRANSACTION_TYPE_WITHDRAW_NAME" xml:space="preserve">
+    <value>Ανάληψη</value>
+  </data>
+  <data name="DEVICE_BARCODE_SCANNED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάν σάρωσης γραμμωτού κώδικα</value>
+  </data>
+  <data name="DEVICE_BARCODE_SCANNED_EVENT_NAME" xml:space="preserve">
+    <value>Σαρώθηκε γραμμωτός κώδικας</value>
+  </data>
+  <data name="DEVICE_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάντα που σχετίζονται με συσκευή</value>
+  </data>
+  <data name="DEVICE_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Συσκευή</value>
+  </data>
+  <data name="DEVICE_FISCAL_PRINTER_ERROR_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάν σφάλματος φορολογικού εκτυπωτή</value>
+  </data>
+  <data name="DEVICE_FISCAL_PRINTER_ERROR_EVENT_NAME" xml:space="preserve">
+    <value>Σφάλμα</value>
+  </data>
+  <data name="DEVICE_PAYMENT_TERMINAL_ERROR_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάν σφάλματος τερματικού πληρωμών</value>
+  </data>
+  <data name="DEVICE_PAYMENT_TERMINAL_ERROR_EVENT_NAME" xml:space="preserve">
+    <value>Σφάλμα</value>
+  </data>
+  <data name="DEVICE_SMART_CARD_READER_DATA_EVENT_NAME" xml:space="preserve">
+    <value>Συμβάν δεδομένων αναγνώστη έξυπνων καρτών</value>
+  </data>
+  <data name="DEVICE_SMART_CARD_READER_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάν δεδομένων αναγνώστη έξυπνων καρτών</value>
+  </data>
+  <data name="DISCOUNT_APPLY_TYPE_ORDER" xml:space="preserve">
+    <value>Παραγγελία</value>
+  </data>
+  <data name="DISCOUNT_APPLY_TYPE_ORDER_LINE" xml:space="preserve">
+    <value>Γραμμή παραγγελίας</value>
+  </data>
+  <data name="DISCOUNT_CALCULATION_TYPE_FIXED" xml:space="preserve">
+    <value>Σταθερό ποσό</value>
+  </data>
+  <data name="DISCOUNT_CALCULATION_TYPE_PERCENTAGE" xml:space="preserve">
+    <value>Ποσοστό</value>
+  </data>
+  <data name="DISCOUNT_REWARD_TYPE_BONUS" xml:space="preserve">
+    <value>Επιβράβευση</value>
+  </data>
+  <data name="DISCOUNT_REWARD_TYPE_DISCOUNT" xml:space="preserve">
+    <value>Έκπτωση</value>
+  </data>
+  <data name="DOCUMENT_TYPES_CONSIGNMENT_NOTE" xml:space="preserve">
+    <value>Δελτίο παρακαταθήκης</value>
+  </data>
+  <data name="DOCUMENT_TYPES_DELIVERY_NOTE" xml:space="preserve">
+    <value>Δελτίο παράδοσης</value>
+  </data>
+  <data name="DOCUMENT_TYPES_DISPATCH_NOTE" xml:space="preserve">
+    <value>Δελτίο αποστολής</value>
+  </data>
+  <data name="DOCUMENT_TYPES_INVOICE" xml:space="preserve">
+    <value>Τιμολόγιο</value>
+  </data>
+  <data name="DOCUMENT_TYPES_STOCK_TAKE_REPORT" xml:space="preserve">
+    <value>Έκθεση απογραφής</value>
+  </data>
+  <data name="DOCUMENT_TYPES_WORK_ORDER" xml:space="preserve">
+    <value>Εντολή εργασίας</value>
+  </data>
+  <data name="DOCUMENT_TYPES_WRITE_OFF_REPORT" xml:space="preserve">
+    <value>Έκθεση διαγραφής αποθέματος</value>
+  </data>
+  <data name="ENTITY_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει αλλαγή οντότητας βάσης δεδομένων</value>
+  </data>
+  <data name="ENTITY_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Αλλαγή οντότητας βάσης δεδομένων</value>
+  </data>
+  <data name="ENTITY_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάντα που σχετίζονται με οντότητες βάσης δεδομένων</value>
+  </data>
+  <data name="ENTITY_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Οντότητα βάσης δεδομένων</value>
+  </data>
+  <data name="ENTITY_EVENT_TYPE_ADDED_NAME" xml:space="preserve">
+    <value>Προστέθηκε</value>
+  </data>
+  <data name="ENTITY_EVENT_TYPE_MODIFIED_NAME" xml:space="preserve">
+    <value>Τροποποιήθηκε</value>
+  </data>
+  <data name="ENTITY_EVENT_TYPE_REMOVED_NAME" xml:space="preserve">
+    <value>Αφαιρέθηκε</value>
+  </data>
+  <data name="HOST_COMPUTER_CLIENT_MODULE_VERSION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάν αλλαγής έκδοσης Client</value>
+  </data>
+  <data name="HOST_COMPUTER_CLIENT_MODULE_VERSION_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Άλλαξε η έκδοση Client</value>
+  </data>
+  <data name="HOST_COMPUTER_CONNECTION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάν αλλαγής σύνδεσης</value>
+  </data>
+  <data name="HOST_COMPUTER_CONNECTION_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Άλλαξε η σύνδεση</value>
+  </data>
+  <data name="HOST_COMPUTER_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάντα που σχετίζονται με σταθμό</value>
+  </data>
+  <data name="HOST_COMPUTER_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Σταθμός</value>
+  </data>
+  <data name="HOST_COMPUTER_INPUT_LOCK_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάν αλλαγής κλειδώματος πληκτρολογίου και ποντικιού</value>
+  </data>
+  <data name="HOST_COMPUTER_INPUT_LOCK_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Άλλαξε το κλείδωμα πληκτρολογίου και ποντικιού</value>
+  </data>
+  <data name="HOST_COMPUTER_MAINTENANCE_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάν αλλαγής συντήρησης</value>
+  </data>
+  <data name="HOST_COMPUTER_MAINTENANCE_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Άλλαξε η συντήρηση</value>
+  </data>
+  <data name="HOST_COMPUTER_SECURITY_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάν αλλαγής ασφάλειας</value>
+  </data>
+  <data name="HOST_COMPUTER_SECURITY_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Άλλαξε η ασφάλεια</value>
+  </data>
+  <data name="HOST_DELETE_RESULT_HOST_HAS_RESERVED_GUEST_DESCRIPTION" xml:space="preserve">
+    <value>Ο σταθμός έχει επισκέπτη με κράτηση</value>
+  </data>
+  <data name="HOST_DELETE_RESULT_HOST_HAS_RESERVED_GUEST_NAME" xml:space="preserve">
+    <value>Ο σταθμός έχει επισκέπτη με κράτηση</value>
+  </data>
+  <data name="HOST_DELETE_RESULT_HOST_IN_USE_DESCRIPTION" xml:space="preserve">
+    <value>Ο σταθμός χρησιμοποιείται</value>
+  </data>
+  <data name="HOST_DELETE_RESULT_HOST_IN_USE_NAME" xml:space="preserve">
+    <value>Ο σταθμός χρησιμοποιείται</value>
+  </data>
+  <data name="HOST_DELETE_RESULT_HOST_IS_RESERVED_DESCRIPTION" xml:space="preserve">
+    <value>Ο σταθμός έχει κράτηση</value>
+  </data>
+  <data name="HOST_DELETE_RESULT_HOST_IS_RESERVED_NAME" xml:space="preserve">
+    <value>Ο σταθμός είναι κρατημένος</value>
+  </data>
+  <data name="HOST_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
+    <value>Η διαγραφή του σταθμού ολοκληρώθηκε επιτυχώς</value>
+  </data>
+  <data name="HOST_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve">
+    <value>Επιτυχής διαγραφή σταθμού</value>
+  </data>
+  <data name="HOST_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάντα που σχετίζονται με σταθμό</value>
+  </data>
+  <data name="HOST_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Σταθμός</value>
+  </data>
+  <data name="HOST_IN_ORDER_STATE_CHANED_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Άλλαξε η κατάσταση εντολής σταθμού</value>
+  </data>
+  <data name="HOST_IN_ORDER_STATE_CHANED_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Άλλαξε η κατάσταση εντολής</value>
+  </data>
+  <data name="HOST_LAYOUT_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάν δημιουργίας διάταξης σταθμών</value>
+  </data>
+  <data name="HOST_LAYOUT_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>Δημιουργήθηκε διάταξη σταθμών</value>
+  </data>
+  <data name="HOST_LAYOUT_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάντα που σχετίζονται με διάταξη σταθμών</value>
+  </data>
+  <data name="HOST_LAYOUT_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Διάταξη σταθμών</value>
+  </data>
+  <data name="HOST_LAYOUT_GROUP_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάν δημιουργίας ομάδας διάταξης σταθμών</value>
+  </data>
+  <data name="HOST_LAYOUT_GROUP_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>Δημιουργήθηκε ομάδα διάταξης σταθμών</value>
+  </data>
+  <data name="HOST_LAYOUT_GROUP_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάντα που σχετίζονται με ομάδα διάταξης σταθμών</value>
+  </data>
+  <data name="HOST_LAYOUT_GROUP_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Ομάδα διάταξης σταθμών</value>
+  </data>
+  <data name="HOST_LAYOUT_GROUP_REMOVED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάν αφαίρεσης ομάδας διάταξης σταθμών</value>
+  </data>
+  <data name="HOST_LAYOUT_GROUP_REMOVED_EVENT_NAME" xml:space="preserve">
+    <value>Αφαιρέθηκε ομάδα διάταξης σταθμών</value>
+  </data>
+  <data name="HOST_LAYOUT_GROUP_UPDATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάν ενημέρωσης ομάδας διάταξης σταθμών</value>
+  </data>
+  <data name="HOST_LAYOUT_GROUP_UPDATED_EVENT_NAME" xml:space="preserve">
+    <value>Ενημερώθηκε ομάδα διάταξης σταθμών</value>
+  </data>
+  <data name="HOST_LAYOUT_REMOVED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάν αφαίρεσης διάταξης σταθμών</value>
+  </data>
+  <data name="HOST_LAYOUT_REMOVED_EVENT_NAME" xml:space="preserve">
+    <value>Αφαιρέθηκε διάταξη σταθμών</value>
+  </data>
+  <data name="HOST_LAYOUT_UPDATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάν ενημέρωσης διάταξης σταθμών</value>
+  </data>
+  <data name="HOST_LAYOUT_UPDATED_EVENT_NAME" xml:space="preserve">
+    <value>Ενημερώθηκε διάταξη σταθμών</value>
+  </data>
+  <data name="HOST_LOCK_STATE_CHANED_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Άλλαξε η κατάσταση κλειδώματος σταθμού</value>
+  </data>
+  <data name="HOST_LOCK_STATE_CHANED_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Άλλαξε η κατάσταση κλειδώματος</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάν αλλαγής ταυτοποίησης εγκατάστασης</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Άλλαξε η ταυτοποίηση εγκατάστασης</value>
+  </data>
+  <data name="INSTANCE_AUTHORIZATION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάν αλλαγής εξουσιοδότησης εγκατάστασης</value>
+  </data>
+  <data name="INSTANCE_AUTHORIZATION_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Άλλαξε η εξουσιοδότηση εγκατάστασης</value>
+  </data>
+  <data name="INSTANCE_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάντα που σχετίζονται με εγκατάσταση</value>
+  </data>
+  <data name="INSTANCE_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Εγκατάσταση</value>
+  </data>
+  <data name="INSTANCE_ID_TYPE_HARDWARE_ID_DESCRIPTION" xml:space="preserve">
+    <value>Hardware id</value>
+  </data>
+  <data name="INSTANCE_ID_TYPE_HARDWARE_ID_NAME" xml:space="preserve">
+    <value>Hardware id</value>
+  </data>
+  <data name="INSTANCE_ID_TYPE_INSTANCE_ID_DESCRIPTION" xml:space="preserve">
+    <value>Αναγνωριστικό εγκατάστασης</value>
+  </data>
+  <data name="INSTANCE_ID_TYPE_INSTANCE_ID_NAME" xml:space="preserve">
+    <value>Αναγνωριστικό εγκατάστασης</value>
+  </data>
+  <data name="INVENTORY_ADJUSTMENT_REASONS_DAMAGED" xml:space="preserve">
+    <value>Κατεστραμμένη συσκευασία</value>
+  </data>
+  <data name="INVENTORY_ADJUSTMENT_REASONS_DAMAGED_ITEM" xml:space="preserve">
+    <value>Κατεστραμμένο τεμάχιο</value>
+  </data>
+  <data name="INVENTORY_ADJUSTMENT_REASONS_EXPIRED" xml:space="preserve">
+    <value>Έληξε</value>
+  </data>
+  <data name="INVENTORY_ADJUSTMENT_REASONS_FORCE_MAJOR" xml:space="preserve">
+    <value>Ανωτέρα βία</value>
+  </data>
+  <data name="INVENTORY_ADJUSTMENT_REASONS_LOST" xml:space="preserve">
+    <value>Απώλεια</value>
+  </data>
+  <data name="INVENTORY_ADJUSTMENT_REASONS_NOT_IN_DEMAND" xml:space="preserve">
+    <value>Έλλειψη ζήτησης</value>
+  </data>
+  <data name="INVENTORY_ADJUSTMENT_TYPE_SALE_BY_COST" xml:space="preserve">
+    <value>Πώληση σε κόστος</value>
+  </data>
+  <data name="INVENTORY_ADJUSTMENT_TYPE_SALE_BY_PRICE" xml:space="preserve">
+    <value>Πώληση σε τιμή</value>
+  </data>
+  <data name="INVENTORY_ADJUSTMENT_TYPE_WRITE_OFF" xml:space="preserve">
+    <value>Διαγραφή αποθέματος</value>
+  </data>
+  <data name="INVENTORY_TRANSFER_REASONS_FOR_ADJUSTMENT" xml:space="preserve">
+    <value>Για προσαρμογή</value>
+  </data>
+  <data name="INVENTORY_TRANSFER_REASONS_IN_DEMAND" xml:space="preserve">
+    <value>Σε ζήτηση</value>
+  </data>
+  <data name="INVENTORY_TRANSFER_REASONS_NOT_IN_DEMAND" xml:space="preserve">
+    <value>Έλλειψη ζήτησης</value>
+  </data>
+  <data name="INVENTORY_TYPE_ADJUSTMENT" xml:space="preserve">
+    <value>Προσαρμογή</value>
+  </data>
+  <data name="INVENTORY_TYPE_INBOUND" xml:space="preserve">
+    <value>Παραλαβή</value>
+  </data>
+  <data name="INVENTORY_TYPE_TRANSFER" xml:space="preserve">
+    <value>Μεταφορά</value>
+  </data>
+  <data name="INVOICE_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει τη δημιουργία τιμολογίου</value>
+  </data>
+  <data name="INVOICE_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>Δημιουργήθηκε</value>
+  </data>
+  <data name="INVOICE_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάντα που σχετίζονται με τιμολόγιο</value>
+  </data>
+  <data name="INVOICE_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Τιμολόγιο</value>
+  </data>
+  <data name="INVOICE_PAYMENT_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει τη δημιουργία πληρωμής τιμολογίου</value>
+  </data>
+  <data name="INVOICE_PAYMENT_EVENT_NAME" xml:space="preserve">
+    <value>Πληρωμή</value>
+  </data>
+  <data name="INVOICE_STATUS_PAID_NAME" xml:space="preserve">
+    <value>Εξοφλημένο</value>
+  </data>
+  <data name="INVOICE_STATUS_PARTIALLY_PAID_NAME" xml:space="preserve">
+    <value>Μερικώς εξοφλημένο</value>
+  </data>
+  <data name="INVOICE_STATUS_UNPAID_NAME" xml:space="preserve">
+    <value>Ανεξόφλητο</value>
+  </data>
+  <data name="LICENSE_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάντα που σχετίζονται με άδεια</value>
+  </data>
+  <data name="LICENSE_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Άδεια</value>
+  </data>
+  <data name="LICENSE_STATE_DISABLED_DESCRIPTION" xml:space="preserve">
+    <value>Η άδεια είναι απενεργοποιημένη</value>
+  </data>
+  <data name="LICENSE_STATE_DISABLED_INSTANCE_ID_DESCRIPTION" xml:space="preserve">
+    <value>Το αναγνωριστικό εγκατάστασης είναι απενεργοποιημένο/μπλοκαρισμένο</value>
+  </data>
+  <data name="LICENSE_STATE_DISABLED_INSTANCE_ID_NAME" xml:space="preserve">
+    <value>Απενεργοποιημένο αναγνωριστικό εγκατάστασης</value>
+  </data>
+  <data name="LICENSE_STATE_DISABLED_NAME" xml:space="preserve">
+    <value>Απενεργοποιημένη</value>
+  </data>
+  <data name="LICENSE_STATE_EXPIRED_DESCRIPTION" xml:space="preserve">
+    <value>Η άδεια έχει λήξει</value>
+  </data>
+  <data name="LICENSE_STATE_EXPIRED_NAME" xml:space="preserve">
+    <value>Ληγμένη</value>
+  </data>
+  <data name="LICENSE_STATE_INVALID_DESCRIPTION" xml:space="preserve">
+    <value>Η τοπική άδεια είναι άκυρη</value>
+  </data>
+  <data name="LICENSE_STATE_INVALID_NAME" xml:space="preserve">
+    <value>Άκυρη</value>
+  </data>
+  <data name="LICENSE_STATE_UNAUTHORIZED_DESCRIPTION" xml:space="preserve">
+    <value>Μη εξουσιοδοτημένος</value>
+  </data>
+  <data name="LICENSE_STATE_UNAUTHORIZED_NAME" xml:space="preserve">
+    <value>Μη εξουσιοδοτημένος</value>
+  </data>
+  <data name="LICENSE_STATE_VALID_DESCRIPTION" xml:space="preserve">
+    <value>Έγκυρη</value>
+  </data>
+  <data name="LICENSE_STATE_VALID_NAME" xml:space="preserve">
+    <value>Έγκυρη</value>
+  </data>
+  <data name="LICENSE_TYPE_NORMAL_DESCRIPTION" xml:space="preserve">
+    <value>Κανονική άδεια</value>
+  </data>
+  <data name="LICENSE_TYPE_NORMAL_NAME" xml:space="preserve">
+    <value>Κανονική</value>
+  </data>
+  <data name="LICENSE_TYPE_TRIAL_DESCRIPTION" xml:space="preserve">
+    <value>Δοκιμαστική άδεια</value>
+  </data>
+  <data name="LICENSE_TYPE_TRIAL_NAME" xml:space="preserve">
+    <value>Δοκιμαστική</value>
+  </data>
+  <data name="LICENSE_TYPE_UNDETERMINED_DESCRIPTION" xml:space="preserve">
+    <value>Το είδος άδειας είναι απροσδιόριστο</value>
+  </data>
+  <data name="LICENSE_TYPE_UNDETERMINED_NAME" xml:space="preserve">
+    <value>Απροσδιόριστο</value>
+  </data>
+  <data name="LOGIN_RESULT_ACCOUNT_DISABLED_DESCRIPTION" xml:space="preserve">
+    <value>Ο καθορισμένος λογαριασμός χρήστη έχει απενεργοποιηθεί</value>
+  </data>
+  <data name="LOGIN_RESULT_ACCOUNT_DISABLED_NAME" xml:space="preserve">
+    <value>Ο λογαριασμός είναι απενεργοποιημένος</value>
+  </data>
+  <data name="LOGIN_RESULT_ALREADY_LOGGED_IN_DESCRIPTION" xml:space="preserve">
+    <value>Ο χρήστης είναι ήδη συνδεδεμένος</value>
+  </data>
+  <data name="LOGIN_RESULT_ALREADY_LOGGED_IN_NAME" xml:space="preserve">
+    <value>Ήδη συνδεδεμένος</value>
+  </data>
+  <data name="LOGIN_RESULT_DENIED_DESCRIPTION" xml:space="preserve">
+    <value>Η είσοδος απορρίφθηκε</value>
+  </data>
+  <data name="LOGIN_RESULT_DENIED_NAME" xml:space="preserve">
+    <value>Άρνηση εισόδου</value>
+  </data>
+  <data name="LOGIN_RESULT_FAILED_DESCRIPTION" xml:space="preserve">
+    <value>Μη καθορισμένο σφάλμα εισόδου</value>
+  </data>
+  <data name="LOGIN_RESULT_FAILED_NAME" xml:space="preserve">
+    <value>Αποτυχία εισόδου</value>
+  </data>
+  <data name="LOGIN_RESULT_INSUFFICIENT_BALANCE_DESCRIPTION" xml:space="preserve">
+    <value>Ο καθορισμένος χρήστης έχει ανεπαρκές υπόλοιπο</value>
+  </data>
+  <data name="LOGIN_RESULT_INSUFFICIENT_BALANCE_NAME" xml:space="preserve">
+    <value>Ανεπαρκές υπόλοιπο</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_CREDENTIALS_DESCRIPTION" xml:space="preserve">
+    <value>Το καθορισμένο όνομα χρήστη ή ο κωδικός πρόσβασης είναι άκυρος</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_CREDENTIALS_NAME" xml:space="preserve">
+    <value>Άκυρο όνομα χρήστη ή κωδικός πρόσβασης</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_HOST_ID_DESCRIPTION" xml:space="preserve">
+    <value>Το καθορισμένο αναγνωριστικό σταθμού είναι άκυρο</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_HOST_ID_NAME" xml:space="preserve">
+    <value>Άκυρος σταθμός</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_PARAMETERS_DESCRIPTION" xml:space="preserve">
+    <value>Οι καθορισμένες παράμετροι είναι άκυρες</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_PARAMETERS_NAME" xml:space="preserve">
+    <value>Άκυρες παράμετροι</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_PASSWORD_DESCRIPTION" xml:space="preserve">
+    <value>Ο καθορισμένος κωδικός πρόσβασης είναι άκυρος</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_PASSWORD_NAME" xml:space="preserve">
+    <value>Άκυρος κωδικός πρόσβασης</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_SLOT_DESCRIPTION" xml:space="preserve">
+    <value>Η καθορισμένη θέση είναι άκυρη</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_SLOT_NAME" xml:space="preserve">
+    <value>Άκυρη θέση</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_USERNAME_DESCRIPTION" xml:space="preserve">
+    <value>Το καθορισμένο όνομα χρήστη είναι άκυρο</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_USERNAME_NAME" xml:space="preserve">
+    <value>Άκυρο όνομα χρήστη</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_USER_GROUP_ID_DESCRIPTION" xml:space="preserve">
+    <value>Το καθορισμένο αναγνωριστικό ομάδας χρηστών είναι άκυρο</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_USER_GROUP_ID_NAME" xml:space="preserve">
+    <value>Άκυρη ομάδα χρηστών</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_USER_ID_DESCRIPTION" xml:space="preserve">
+    <value>Το καθορισμένο αναγνωριστικό χρήστη είναι άκυρο</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_USER_ID_NAME" xml:space="preserve">
+    <value>Άκυρος χρήστης</value>
+  </data>
+  <data name="LOGIN_RESULT_LOGIN_IN_PROGRESS_DESCRIPTION" xml:space="preserve">
+    <value>Είσοδος σε εξέλιξη</value>
+  </data>
+  <data name="LOGIN_RESULT_LOGIN_IN_PROGRESS_NAME" xml:space="preserve">
+    <value>Σε εξέλιξη</value>
+  </data>
+  <data name="LOGIN_RESULT_LOGOUT_IN_PROGRESS_DESCRIPTION" xml:space="preserve">
+    <value>Αποσύνδεση σε εξέλιξη</value>
+  </data>
+  <data name="LOGIN_RESULT_LOGOUT_IN_PROGRESS_NAME" xml:space="preserve">
+    <value>Σε εξέλιξη</value>
+  </data>
+  <data name="LOGIN_RESULT_MAXIMUM_SESSIONS_REACHED_DESCRIPTION" xml:space="preserve">
+    <value>Η είσοδος απέτυχε λόγω υπέρβασης μέγιστου πλήθους συνεδριών</value>
+  </data>
+  <data name="LOGIN_RESULT_MAXIMUM_SESSIONS_REACHED_NAME" xml:space="preserve">
+    <value>Επιτεύχθηκε το μέγιστο πλήθος συνεδριών</value>
+  </data>
+  <data name="LOGIN_RESULT_NOT_IN_WAITING_LINE_DESCRIPTION" xml:space="preserve">
+    <value>Ο καθορισμένος χρήστης δεν είναι στην ουρά</value>
+  </data>
+  <data name="LOGIN_RESULT_NOT_IN_WAITING_LINE_NAME" xml:space="preserve">
+    <value>Δεν είναι στην ουρά</value>
+  </data>
+  <data name="LOGIN_RESULT_OPERATOR_USER_GROUP_DENIED_DESCRIPTION" xml:space="preserve">
+    <value>Η ομάδα χρηστών δεν επιτρέπεται να εισέρχεται από τον Manager</value>
+  </data>
+  <data name="LOGIN_RESULT_OPERATOR_USER_GROUP_DENIED_NAME" xml:space="preserve">
+    <value>Η είσοδος ομάδας χρηστών απορρίφθηκε για τον χειριστή</value>
+  </data>
+  <data name="LOGIN_RESULT_RESTRICTED_BY_AGE_DESCRIPTION" xml:space="preserve">
+    <value>Η είσοδος δεν επιτρέπεται αυτή τη στιγμή λόγω ρυθμίσεων περιορισμού ηλικίας</value>
+  </data>
+  <data name="LOGIN_RESULT_RESTRICTED_BY_AGE_NAME" xml:space="preserve">
+    <value>Περιορισμοί ηλικίας εισόδου</value>
+  </data>
+  <data name="LOGIN_RESULT_SLOT_IN_USE_DESCRIPTION" xml:space="preserve">
+    <value>Η καθορισμένη θέση χρησιμοποιείται ήδη</value>
+  </data>
+  <data name="LOGIN_RESULT_SLOT_IN_USE_NAME" xml:space="preserve">
+    <value>Η θέση χρησιμοποιείται ήδη</value>
+  </data>
+  <data name="LOGIN_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
+    <value>Η είσοδος του χρήστη ολοκληρώθηκε επιτυχώς</value>
+  </data>
+  <data name="LOGIN_RESULT_SUCCESS_NAME" xml:space="preserve">
+    <value>Επιτυχής είσοδος</value>
+  </data>
+  <data name="LOG_CLEARED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει εκκαθάριση καταγραφών</value>
+  </data>
+  <data name="LOG_CLEARED_EVENT_NAME" xml:space="preserve">
+    <value>Εκκαθαρίστηκε</value>
+  </data>
+  <data name="LOG_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάντα που σχετίζονται με καταγραφές</value>
+  </data>
+  <data name="LOG_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Καταγραφή</value>
+  </data>
+  <data name="MAPPING_TYPE_NETWORK_DRIVE" xml:space="preserve">
+    <value>Δικτυακή μονάδα</value>
+  </data>
+  <data name="MAPPING_TYPE_VIRTUAL_DRIVE" xml:space="preserve">
+    <value>Εικονική μονάδα</value>
+  </data>
+  <data name="MAPPING_TYPE_VIRTUAL_FOLDER" xml:space="preserve">
+    <value>Εικονικός φάκελος</value>
+  </data>
+  <data name="NOTIFICATION_TYPE_AUDIBLE" xml:space="preserve">
+    <value>Ακουστική</value>
+  </data>
+  <data name="NOTIFICATION_TYPE_NONE" xml:space="preserve">
+    <value>Καμία</value>
+  </data>
+  <data name="NOTIFICATION_TYPE_VISUAL" xml:space="preserve">
+    <value>Οπτική</value>
+  </data>
+  <data name="NOTIFICATION_TYPE_VISUAL_AND_AUDIBLE" xml:space="preserve">
+    <value>Οπτική και ακουστική</value>
+  </data>
+  <data name="OPTIONS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει αλλαγή επιλογών</value>
+  </data>
+  <data name="OPTIONS_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Αλλαγή</value>
+  </data>
+  <data name="OPTIONS_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάντα που σχετίζονται με επιλογές</value>
+  </data>
+  <data name="OPTIONS_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Επιλογές</value>
+  </data>
+  <data name="ORDER_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει τη δημιουργία παραγγελίας</value>
+  </data>
+  <data name="ORDER_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>Δημιουργήθηκε</value>
+  </data>
+  <data name="ORDER_DELIVERY_STATUS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει αλλαγή κατάστασης παράδοσης παραγγελίας</value>
+  </data>
+  <data name="ORDER_DELIVERY_STATUS_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Αλλαγή</value>
+  </data>
+  <data name="ORDER_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάντα που σχετίζονται με παραγγελία</value>
+  </data>
+  <data name="ORDER_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Παραγγελία</value>
+  </data>
+  <data name="ORDER_LINE_DELIVERY_STATUS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει αλλαγή κατάστασης παράδοσης γραμμής παραγγελίας</value>
+  </data>
+  <data name="ORDER_LINE_DELIVERY_STATUS_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Αλλαγή</value>
+  </data>
+  <data name="ORDER_STATUS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει αλλαγή κατάστασης παραγγελίας</value>
+  </data>
+  <data name="ORDER_STATUS_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Αλλαγή</value>
+  </data>
+  <data name="ORDER_STATUS_FILTER_ACCEPTED" xml:space="preserve">
+    <value>Αποδεκτή</value>
+  </data>
+  <data name="ORDER_STATUS_FILTER_CANCELED" xml:space="preserve">
+    <value>Ακυρωμένη</value>
+  </data>
+  <data name="ORDER_STATUS_FILTER_COMPLETED" xml:space="preserve">
+    <value>Ολοκληρωμένη</value>
+  </data>
+  <data name="ORDER_STATUS_FILTER_ON_HOLD" xml:space="preserve">
+    <value>Σε αναμονή</value>
+  </data>
+  <data name="ORDER_STATUS_FILTER_PROCESSING" xml:space="preserve">
+    <value>Σε εξέλιξη</value>
+  </data>
+  <data name="PAYMENT_INTENT_CANCELLED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει ακύρωση πρόθεσης πληρωμής</value>
+  </data>
+  <data name="PAYMENT_INTENT_CANCELLED_EVENT_NAME" xml:space="preserve">
+    <value>Ακυρώθηκε</value>
+  </data>
+  <data name="PAYMENT_INTENT_CAPTURED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει επιβεβαίωση πρόθεσης πληρωμής</value>
+  </data>
+  <data name="PAYMENT_INTENT_CAPTURED_EVENT_NAME" xml:space="preserve">
+    <value>Επιβεβαιώθηκε</value>
+  </data>
+  <data name="PAYMENT_INTENT_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει ολοκλήρωση πρόθεσης πληρωμής</value>
+  </data>
+  <data name="PAYMENT_INTENT_COMPLETED_EVENT_NAME" xml:space="preserve">
+    <value>Ολοκληρώθηκε</value>
+  </data>
+  <data name="PAYMENT_INTENT_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει δημιουργία πρόθεσης πληρωμής</value>
+  </data>
+  <data name="PAYMENT_INTENT_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>Δημιουργήθηκε</value>
+  </data>
+  <data name="PAYMENT_INTENT_DECLINED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει απόρριψη πρόθεσης πληρωμής</value>
+  </data>
+  <data name="PAYMENT_INTENT_DECLINED_EVENT_NAME" xml:space="preserve">
+    <value>Απορρίφθηκε</value>
+  </data>
+  <data name="PAYMENT_INTENT_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάντα που σχετίζονται με πρόθεση πληρωμής</value>
+  </data>
+  <data name="PAYMENT_INTENT_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Πρόθεση πληρωμής</value>
+  </data>
+  <data name="PAYMENT_INTENT_EXPIRED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει λήξη πρόθεσης πληρωμής</value>
+  </data>
+  <data name="PAYMENT_INTENT_EXPIRED_EVENT_NAME" xml:space="preserve">
+    <value>Έληξε</value>
+  </data>
+  <data name="PAYMENT_INTENT_FAILED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει αποτυχία πρόθεσης πληρωμής</value>
+  </data>
+  <data name="PAYMENT_INTENT_FAILED_EVENT_NAME" xml:space="preserve">
+    <value>Απέτυχε</value>
+  </data>
+  <data name="PAYMENT_INTENT_STATE_CANCELLED" xml:space="preserve">
+    <value>Ακυρωμένη</value>
+  </data>
+  <data name="PAYMENT_INTENT_STATE_CAPTURED" xml:space="preserve">
+    <value>Επιβεβαιωμένη</value>
+  </data>
+  <data name="PAYMENT_INTENT_STATE_COMPLETED" xml:space="preserve">
+    <value>Ολοκληρωμένη</value>
+  </data>
+  <data name="PAYMENT_INTENT_STATE_DECLINED" xml:space="preserve">
+    <value>Απορριφθείσα</value>
+  </data>
+  <data name="PAYMENT_INTENT_STATE_EXPIRED" xml:space="preserve">
+    <value>Ληγμένη</value>
+  </data>
+  <data name="PAYMENT_INTENT_STATE_FAILED" xml:space="preserve">
+    <value>Αποτυχημένη</value>
+  </data>
+  <data name="PAYMENT_INTENT_STATE_PENDING" xml:space="preserve">
+    <value>Σε εκκρεμότητα</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_DIRECTION_IN" xml:space="preserve">
+    <value>Εισερχόμενη</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_DIRECTION_OUT" xml:space="preserve">
+    <value>Εξερχόμενη</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_TYPE_DEPOSIT_PAYMENT" xml:space="preserve">
+    <value>Πληρωμή κατάθεσης</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_TYPE_DEPOSIT_PAYMENT_REFUND" xml:space="preserve">
+    <value>Επιστροφή πληρωμής κατάθεσης</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_TYPE_INVOICE_PAYMENT" xml:space="preserve">
+    <value>Εξόφληση τιμολογίου</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_TYPE_INVOICE_PAYMENT_REFUND" xml:space="preserve">
+    <value>Επιστροφή εξόφλησης τιμολογίου</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_TYPE_PAY_IN" xml:space="preserve">
+    <value>Είσπραξη</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_TYPE_PAY_OUT" xml:space="preserve">
+    <value>Πληρωμή</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_TYPE_WITHDRAW" xml:space="preserve">
+    <value>Ανάληψη</value>
+  </data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_DESCRIPTION" xml:space="preserve">
+    <value>Αποτυχία διαγραφής ομάδας προϊόντων</value>
+  </data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_NAME" xml:space="preserve">
+    <value>Αποτυχία διαγραφής ομάδας προϊόντων</value>
+  </data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_DESCRIPTION" xml:space="preserve">
+    <value>Δεν είναι δυνατή η διαγραφή μη κενής ομάδας προϊόντων</value>
+  </data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_NAME" xml:space="preserve">
+    <value>Η ομάδα προϊόντων δεν είναι κενή</value>
+  </data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
+    <value>Η διαγραφή της ομάδας προϊόντων ολοκληρώθηκε επιτυχώς</value>
+  </data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve">
+    <value>Επιτυχής διαγραφή ομάδας προϊόντων</value>
+  </data>
+  <data name="PRODUCT_STOCK_CHANGE_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει αλλαγή επιπέδου αποθέματος προϊόντος</value>
+  </data>
+  <data name="PRODUCT_STOCK_CHANGE_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Αλλαγή</value>
+  </data>
+  <data name="PRODUCT_STOCK_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάντα που σχετίζονται με απόθεμα προϊόντος</value>
+  </data>
+  <data name="PRODUCT_STOCK_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Απόθεμα προϊόντος</value>
+  </data>
+  <data name="PROMOTION_CODE_TYPE_PUBLIC_NAME" xml:space="preserve">
+    <value>Δημόσιος</value>
+  </data>
+  <data name="PROMOTION_CODE_TYPE_RESTRICTED_NAME" xml:space="preserve">
+    <value>Περιορισμένος</value>
+  </data>
+  <data name="PROMOTION_LIMIT_TYPE_DAILY" xml:space="preserve">
+    <value>Ημερήσιο</value>
+  </data>
+  <data name="PROMOTION_LIMIT_TYPE_PER_USER" xml:space="preserve">
+    <value>Ανά χρήστη</value>
+  </data>
+  <data name="PROMOTION_LIMIT_TYPE_TOTAL" xml:space="preserve">
+    <value>Συνολικό</value>
+  </data>
+  <data name="PROMOTION_LIMIT_TYPE_WEEKLY" xml:space="preserve">
+    <value>Εβδομαδιαίο</value>
+  </data>
+  <data name="REPORT_PRESET_ADDED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάν προσθήκης προκαθορισμένης αναφοράς</value>
+  </data>
+  <data name="REPORT_PRESET_ADDED_EVENT_NAME" xml:space="preserve">
+    <value>Προστέθηκε προκαθορισμένη αναφορά</value>
+  </data>
+  <data name="REPORT_PRESET_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάντα που σχετίζονται με προκαθορισμένη αναφορά</value>
+  </data>
+  <data name="REPORT_PRESET_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Προκαθορισμένη αναφορά</value>
+  </data>
+  <data name="REPORT_PRESET_RANGE_DAY_NAME" xml:space="preserve">
+    <value>Ημέρα</value>
+  </data>
+  <data name="REPORT_PRESET_RANGE_MONTH_NAME" xml:space="preserve">
+    <value>Μήνας</value>
+  </data>
+  <data name="REPORT_PRESET_RANGE_WEEK_NAME" xml:space="preserve">
+    <value>Εβδομάδα</value>
+  </data>
+  <data name="REPORT_PRESET_RANGE_YEAR_NAME" xml:space="preserve">
+    <value>Έτος</value>
+  </data>
+  <data name="REPORT_PRESET_REMOVED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάν αφαίρεσης προκαθορισμένης αναφοράς</value>
+  </data>
+  <data name="REPORT_PRESET_REMOVED_EVENT_NAME" xml:space="preserve">
+    <value>Αφαιρέθηκε προκαθορισμένη αναφορά</value>
+  </data>
+  <data name="REPORT_PRESET_UPDATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάν ενημέρωσης προκαθορισμένης αναφοράς</value>
+  </data>
+  <data name="REPORT_PRESET_UPDATED_EVENT_NAME" xml:space="preserve">
+    <value>Ενημερώθηκε προκαθορισμένη αναφορά</value>
+  </data>
+  <data name="RESERVATION_ACTIVATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Ενεργοποιήθηκε κράτηση</value>
+  </data>
+  <data name="RESERVATION_ACTIVATED_EVENT_NAME" xml:space="preserve">
+    <value>Ενεργοποιήθηκε</value>
+  </data>
+  <data name="RESERVATION_CANCELLED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Ακυρώθηκε κράτηση</value>
+  </data>
+  <data name="RESERVATION_CANCELLED_EVENT_NAME" xml:space="preserve">
+    <value>Ακυρώθηκε</value>
+  </data>
+  <data name="RESERVATION_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Ολοκληρώθηκε κράτηση</value>
+  </data>
+  <data name="RESERVATION_COMPLETED_EVENT_NAME" xml:space="preserve">
+    <value>Ολοκληρώθηκε</value>
+  </data>
+  <data name="RESERVATION_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Δημιουργήθηκε κράτηση</value>
+  </data>
+  <data name="RESERVATION_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>Δημιουργήθηκε</value>
+  </data>
+  <data name="RESERVATION_CURRENT_CONFIRMED_RESULT_CONFIRMED_NAME" xml:space="preserve">
+    <value>Επιβεβαιωμένη</value>
+  </data>
+  <data name="RESERVATION_CURRENT_CONFIRMED_RESULT_NO_RESERVATION_NAME" xml:space="preserve">
+    <value>Δεν υπάρχει κράτηση</value>
+  </data>
+  <data name="RESERVATION_CURRENT_CONFIRMED_RESULT_UNCONFIRMED_NAME" xml:space="preserve">
+    <value>Μη επιβεβαιωμένη</value>
+  </data>
+  <data name="RESERVATION_CURRENT_CONFIRM_RESULT_ERROR_NAME" xml:space="preserve">
+    <value>Σφάλμα</value>
+  </data>
+  <data name="RESERVATION_CURRENT_CONFIRM_RESULT_INVALID_PIN_NAME" xml:space="preserve">
+    <value>Άκυρος κωδικός</value>
+  </data>
+  <data name="RESERVATION_CURRENT_CONFIRM_RESULT_NO_RESERVATION_NAME" xml:space="preserve">
+    <value>Δεν υπάρχει κράτηση</value>
+  </data>
+  <data name="RESERVATION_CURRENT_CONFIRM_RESULT_SUCCESS_NAME" xml:space="preserve">
+    <value>Επιτυχία</value>
+  </data>
+  <data name="RESERVATION_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάντα που σχετίζονται με κράτηση</value>
+  </data>
+  <data name="RESERVATION_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Κράτηση</value>
+  </data>
+  <data name="RESERVATION_EXPIRED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Έληξε κράτηση</value>
+  </data>
+  <data name="RESERVATION_EXPIRED_EVENT_NAME" xml:space="preserve">
+    <value>Έληξε</value>
+  </data>
+  <data name="RESERVATION_HOST_ACTIVATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Ενεργοποιήθηκε κράτηση σταθμού</value>
+  </data>
+  <data name="RESERVATION_HOST_ACTIVATED_EVENT_NAME" xml:space="preserve">
+    <value>Ενεργοποιήθηκε</value>
+  </data>
+  <data name="RESERVATION_HOST_ADDED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Προστέθηκε σταθμός σε κράτηση</value>
+  </data>
+  <data name="RESERVATION_HOST_ADDED_EVENT_NAME" xml:space="preserve">
+    <value>Προστέθηκε</value>
+  </data>
+  <data name="RESERVATION_HOST_CANCELLED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Ακυρώθηκε κράτηση σταθμού</value>
+  </data>
+  <data name="RESERVATION_HOST_CANCELLED_EVENT_NAME" xml:space="preserve">
+    <value>Ακυρώθηκε</value>
+  </data>
+  <data name="RESERVATION_HOST_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Ολοκληρώθηκε κράτηση σταθμού</value>
+  </data>
+  <data name="RESERVATION_HOST_COMPLETED_EVENT_NAME" xml:space="preserve">
+    <value>Ολοκληρώθηκε</value>
+  </data>
+  <data name="RESERVATION_HOST_EXPIRED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Έληξε κράτηση σταθμού</value>
+  </data>
+  <data name="RESERVATION_HOST_EXPIRED_EVENT_NAME" xml:space="preserve">
+    <value>Έληξε</value>
+  </data>
+  <data name="RESERVATION_HOST_MOVED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Μετακινήθηκε κράτηση σταθμού</value>
+  </data>
+  <data name="RESERVATION_HOST_MOVED_EVENT_NAME" xml:space="preserve">
+    <value>Μετακινήθηκε</value>
+  </data>
+  <data name="RESERVATION_HOST_UPDATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Ενημερώθηκε κράτηση σταθμού</value>
+  </data>
+  <data name="RESERVATION_HOST_UPDATED_EVENT_NAME" xml:space="preserve">
+    <value>Ενημερώθηκε</value>
+  </data>
+  <data name="RESERVATION_PAYMENT_STATUS_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Άλλαξε η κατάσταση πληρωμής κράτησης</value>
+  </data>
+  <data name="RESERVATION_PAYMENT_STATUS_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Άλλαξε η κατάσταση πληρωμής</value>
+  </data>
+  <data name="RESERVATION_UPDATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Ενημερώθηκε κράτηση</value>
+  </data>
+  <data name="RESERVATION_UPDATED_EVENT_NAME" xml:space="preserve">
+    <value>Ενημερώθηκε</value>
+  </data>
+  <data name="RESERVATION_USER_ADDED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Προστέθηκε χρήστης</value>
+  </data>
+  <data name="RESERVATION_USER_ADDED_EVENT_NAME" xml:space="preserve">
+    <value>Προστέθηκε</value>
+  </data>
+  <data name="RESERVATION_USER_REMOVED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Αφαιρέθηκε χρήστης</value>
+  </data>
+  <data name="RESERVATION_USER_REMOVED_EVENT_NAME" xml:space="preserve">
+    <value>Αφαιρέθηκε</value>
+  </data>
+  <data name="RESTRICTION_TYPE_CLASS_NAME" xml:space="preserve">
+    <value>Class Name</value>
+  </data>
+  <data name="RESTRICTION_TYPE_FILE_NAME" xml:space="preserve">
+    <value>Όνομα αρχείου</value>
+  </data>
+  <data name="RESTRICTION_TYPE_TRAY_ICON" xml:space="preserve">
+    <value>Εικονίδιο γραμμής εργασιών</value>
+  </data>
+  <data name="RESTRICTION_TYPE_UNSET" xml:space="preserve">
+    <value>Μη ορισμένο</value>
+  </data>
+  <data name="RESTRICTION_TYPE_WINDOW_NAME" xml:space="preserve">
+    <value>Όνομα παραθύρου</value>
+  </data>
+  <data name="SCHEDULE_TYPE_DAILY" xml:space="preserve">
+    <value>Ημερήσιο</value>
+  </data>
+  <data name="SCHEDULE_TYPE_MONTHLY" xml:space="preserve">
+    <value>Μηνιαίο</value>
+  </data>
+  <data name="SCHEDULE_TYPE_ONE_TIME" xml:space="preserve">
+    <value>Μία φορά</value>
+  </data>
+  <data name="SCHEDULE_TYPE_WEEKLY" xml:space="preserve">
+    <value>Εβδομαδιαίο</value>
+  </data>
+  <data name="SCHEDULE_TYPE_YEARLY" xml:space="preserve">
+    <value>Ετήσιο</value>
+  </data>
+  <data name="SHIFT_COUNT_TYPE_DEFAULT" xml:space="preserve">
+    <value>Προεπιλογή</value>
+  </data>
+  <data name="SHIFT_COUNT_TYPE_SHIFT_CLOSE" xml:space="preserve">
+    <value>Κλείσιμο βάρδιας</value>
+  </data>
+  <data name="SHIFT_COUNT_TYPE_SHIFT_OPEN" xml:space="preserve">
+    <value>Άνοιγμα βάρδιας</value>
+  </data>
+  <data name="SHIFT_ENDED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει λήξη βάρδιας</value>
+  </data>
+  <data name="SHIFT_ENDED_EVENT_NAME" xml:space="preserve">
+    <value>Τερματίστηκε</value>
+  </data>
+  <data name="SHIFT_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάντα που σχετίζονται με βάρδια</value>
+  </data>
+  <data name="SHIFT_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Βάρδια</value>
+  </data>
+  <data name="SHIFT_LOCKED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει κλείδωμα βάρδιας</value>
+  </data>
+  <data name="SHIFT_LOCKED_EVENT_NAME" xml:space="preserve">
+    <value>Κλειδώθηκε</value>
+  </data>
+  <data name="SHIFT_STARTED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει έναρξη βάρδιας</value>
+  </data>
+  <data name="SHIFT_STARTED_EVENT_NAME" xml:space="preserve">
+    <value>Ξεκίνησε</value>
+  </data>
+  <data name="SHIFT_UNLOCKED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει ξεκλείδωμα βάρδιας</value>
+  </data>
+  <data name="SHIFT_UNLOCKED_EVENT_NAME" xml:space="preserve">
+    <value>Ξεκλειδώθηκε</value>
+  </data>
+  <data name="STOCK_LEVEL_TYPE_ANY" xml:space="preserve">
+    <value>Οποιοδήποτε</value>
+  </data>
+  <data name="STOCK_LEVEL_TYPE_LOW" xml:space="preserve">
+    <value>Χαμηλό</value>
+  </data>
+  <data name="STOCK_LEVEL_TYPE_OUT_OF_STOCK" xml:space="preserve">
+    <value>Εξαντλημένο</value>
+  </data>
+  <data name="STOCK_TRANSACTION_TYPE_ADD_NAME" xml:space="preserve">
+    <value>Προσθήκη</value>
+  </data>
+  <data name="STOCK_TRANSACTION_TYPE_REMOVE_NAME" xml:space="preserve">
+    <value>Αφαίρεση</value>
+  </data>
+  <data name="STOCK_TRANSACTION_TYPE_RETURN_NAME" xml:space="preserve">
+    <value>Επιστροφή</value>
+  </data>
+  <data name="STOCK_TRANSACTION_TYPE_SALE_NAME" xml:space="preserve">
+    <value>Πώληση</value>
+  </data>
+  <data name="STOCK_TRANSACTION_TYPE_SET_NAME" xml:space="preserve">
+    <value>Καθορισμός</value>
+  </data>
+  <data name="STOCK_TYPE_SELLING_POINT" xml:space="preserve">
+    <value>Σημείο πώλησης</value>
+  </data>
+  <data name="STOCK_TYPE_WAREHOUSE" xml:space="preserve">
+    <value>Αποθήκη</value>
+  </data>
+  <data name="TARGET_GROUP_REQUIREMENT_ALL" xml:space="preserve">
+    <value>Όλα</value>
+  </data>
+  <data name="TARGET_GROUP_REQUIREMENT_ANY" xml:space="preserve">
+    <value>Οποιοδήποτε</value>
+  </data>
+  <data name="TARGET_REQUIREMENT_ALL" xml:space="preserve">
+    <value>Όλα</value>
+  </data>
+  <data name="TARGET_REQUIREMENT_AMOUNT" xml:space="preserve">
+    <value>Ποσό</value>
+  </data>
+  <data name="TARGET_REQUIREMENT_ANY" xml:space="preserve">
+    <value>Οποιοδήποτε</value>
+  </data>
+  <data name="TARGET_REQUIREMENT_COUNT" xml:space="preserve">
+    <value>Πλήθος</value>
+  </data>
+  <data name="TASK_TYPE_JUNCTION_NAME" xml:space="preserve">
+    <value>Junction</value>
+  </data>
+  <data name="TASK_TYPE_NOTIFICATION_NAME" xml:space="preserve">
+    <value>Ειδοποίηση</value>
+  </data>
+  <data name="TASK_TYPE_PROCESS_NAME" xml:space="preserve">
+    <value>Διεργασία</value>
+  </data>
+  <data name="TASK_TYPE_SCRIPT_NAME" xml:space="preserve">
+    <value>Σενάριο</value>
+  </data>
+  <data name="USER_BALANCE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Άλλαξε το υπόλοιπο</value>
+  </data>
+  <data name="USER_BALANCE_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Υποδεικνύει αλλαγή υπολοίπου</value>
+  </data>
+  <data name="USER_BALANCE_CLOSE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Κλείσιμο υπολοίπου</value>
+  </data>
+  <data name="USER_BALANCE_CLOSE_EVENT_NAME" xml:space="preserve">
+    <value>Υποδεικνύει κλείσιμο υπολοίπου</value>
+  </data>
+  <data name="USER_BILLING_OPTIONS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει αλλαγή επιλογών χρέωσης</value>
+  </data>
+  <data name="USER_BILLING_OPTIONS_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Αλλαγή επιλογών χρέωσης</value>
+  </data>
+  <data name="USER_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει τη δημιουργία λογαριασμού χρήστη</value>
+  </data>
+  <data name="USER_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>Δημιουργήθηκε χρήστης</value>
+  </data>
+  <data name="USER_EMAIL_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει αλλαγή Email</value>
+  </data>
+  <data name="USER_EMAIL_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Αλλαγή Email</value>
+  </data>
+  <data name="USER_ENABLED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει ενεργοποίηση χρήστη</value>
+  </data>
+  <data name="USER_ENABLED_EVENT_NAME" xml:space="preserve">
+    <value>Ενεργοποιήθηκε</value>
+  </data>
+  <data name="USER_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάντα που σχετίζονται με χρήστη</value>
+  </data>
+  <data name="USER_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Χρήστης</value>
+  </data>
+  <data name="USER_GUEST_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάντα που σχετίζονται με επισκέπτη χρήστη</value>
+  </data>
+  <data name="USER_GUEST_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Επισκέπτης</value>
+  </data>
+  <data name="USER_NEGATIVE_BALANCE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει αλλαγή αρνητικού υπολοίπου</value>
+  </data>
+  <data name="USER_NEGATIVE_BALANCE_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Αλλαγή αρνητικού υπολοίπου</value>
+  </data>
+  <data name="USER_NOTE_ADDED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει ότι έχει προστεθεί σημείωση χρήστη</value>
+  </data>
+  <data name="USER_NOTE_ADDED_EVENT_NAME" xml:space="preserve">
+    <value>Προστέθηκε σημείωση</value>
+  </data>
+  <data name="USER_NOTE_DELETED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει ότι έχει διαγραφεί σημείωση χρήστη</value>
+  </data>
+  <data name="USER_NOTE_DELETED_EVENT_NAME" xml:space="preserve">
+    <value>Διαγράφηκε σημείωση</value>
+  </data>
+  <data name="USER_NOTE_UPDATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει ότι έχει ενημερωθεί σημείωση χρήστη</value>
+  </data>
+  <data name="USER_NOTE_UPDATED_EVENT_NAME" xml:space="preserve">
+    <value>Ενημερώθηκε σημείωση</value>
+  </data>
+  <data name="USER_PASSWORD_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει αλλαγή κωδικού πρόσβασης</value>
+  </data>
+  <data name="USER_PASSWORD_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Αλλαγή κωδικού πρόσβασης</value>
+  </data>
+  <data name="USER_PICTURE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει αλλαγή φωτογραφίας</value>
+  </data>
+  <data name="USER_PICTURE_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Αλλαγή φωτογραφίας</value>
+  </data>
+  <data name="USER_RENAME_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει μετονομασία χρήστη</value>
+  </data>
+  <data name="USER_RENAME_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Μετονομασία</value>
+  </data>
+  <data name="USER_SESSION_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Δημιουργήθηκε συνεδρία χρήστη</value>
+  </data>
+  <data name="USER_SESSION_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>Δημιουργήθηκε</value>
+  </data>
+  <data name="USER_SESSION_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάντα που σχετίζονται με συνεδρία χρήστη</value>
+  </data>
+  <data name="USER_SESSION_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Συνεδρία χρήστη</value>
+  </data>
+  <data name="USER_SESSION_MOVED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Μετακινήθηκε συνεδρία χρήστη</value>
+  </data>
+  <data name="USER_SESSION_MOVED_EVENT_NAME" xml:space="preserve">
+    <value>Μετακινήθηκε</value>
+  </data>
+  <data name="USER_SESSION_STATE_ACTIVE_NAME" xml:space="preserve">
+    <value>Ενεργή</value>
+  </data>
+  <data name="USER_SESSION_STATE_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Άλλαξε η κατάσταση</value>
+  </data>
+  <data name="USER_SESSION_STATE_CHANGED_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Άλλαξε η κατάσταση συνεδρίας χρήστη</value>
+  </data>
+  <data name="USER_SESSION_STATE_ENDED_NAME" xml:space="preserve">
+    <value>Τερματίστηκε</value>
+  </data>
+  <data name="USER_SESSION_STATE_GRACE_NAME" xml:space="preserve">
+    <value>Περίοδος χάριτος</value>
+  </data>
+  <data name="USER_SESSION_STATE_MOVED_NAME" xml:space="preserve">
+    <value>Μετακινήθηκε</value>
+  </data>
+  <data name="USER_SESSION_STATE_NONE_NAME" xml:space="preserve">
+    <value>Σε αναμονή</value>
+  </data>
+  <data name="USER_SESSION_STATE_PAUSED_NAME" xml:space="preserve">
+    <value>Σε παύση</value>
+  </data>
+  <data name="USER_SESSION_STATE_PENDING_NAME" xml:space="preserve">
+    <value>Σε εκκρεμότητα</value>
+  </data>
+  <data name="USER_SMART_CARD_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει αλλαγή έξυπνης κάρτας</value>
+  </data>
+  <data name="USER_SMART_CARD_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Αλλαγή έξυπνης κάρτας</value>
+  </data>
+  <data name="USER_USAGE_SESSION_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει αλλαγή συνεδρίας χρήσης</value>
+  </data>
+  <data name="USER_USAGE_SESSION_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Αλλαγή συνεδρίας χρήσης</value>
+  </data>
+  <data name="USER_USER_GROUP_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει αλλαγή ομάδας χρηστών</value>
+  </data>
+  <data name="USER_USER_GROUP_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Αλλαγή ομάδας χρηστών</value>
+  </data>
+  <data name="WAITING_LINE_ESTIMATION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάν αλλαγής εκτίμησης</value>
+  </data>
+  <data name="WAITING_LINE_ESTIMATION_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Άλλαξε η εκτίμηση</value>
+  </data>
+  <data name="WAITING_LINE_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Ουρά</value>
+  </data>
+  <data name="WAITING_LINE_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Συμβάντα που σχετίζονται με ουρά</value>
+  </data>
+  <data name="WAITING_LINE_STATE_ACTIVE_NAME" xml:space="preserve">
+    <value>Ενεργή</value>
+  </data>
+  <data name="WAITING_LINE_STATE_CANCELED_NAME" xml:space="preserve">
+    <value>Ακυρωμένη</value>
+  </data>
+  <data name="WAITING_LINE_STATE_PROCESSED_NAME" xml:space="preserve">
+    <value>Ολοκληρώθηκε</value>
+  </data>
+  <data name="WAITING_LINE_TIMED_OUT_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάν λήξης χρόνου ουράς</value>
+  </data>
+  <data name="WAITING_LINE_TIMED_OUT_EVENT_NAME" xml:space="preserve">
+    <value>Έληξε ο χρόνος</value>
+  </data>
+  <data name="WAITING_LINE_USER_ADDED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάν προσθήκης χρήστη</value>
+  </data>
+  <data name="WAITING_LINE_USER_ADDED_EVENT_NAME" xml:space="preserve">
+    <value>Προστέθηκε χρήστης</value>
+  </data>
+  <data name="WAITING_LINE_USER_MOVED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάν μετακίνησης χρήστη</value>
+  </data>
+  <data name="WAITING_LINE_USER_MOVED_EVENT_NAME" xml:space="preserve">
+    <value>Μετακινήθηκε χρήστης</value>
+  </data>
+  <data name="WAITING_LINE_USER_REMOVED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάν αφαίρεσης χρήστη</value>
+  </data>
+  <data name="WAITING_LINE_USER_REMOVED_EVENT_NAME" xml:space="preserve">
+    <value>Αφαιρέθηκε χρήστης</value>
+  </data>
 </root>
