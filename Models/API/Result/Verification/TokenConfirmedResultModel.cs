@@ -19,5 +19,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [Key(1)]
         public string? Phone { get; set; }
+
+        /// <summary>
+        /// Indicates that a user with the confirmed phone number already exists.
+        /// </summary>
+        [Key(2)]
+        public bool UserAlreadyExists { get; set; }
     }
 }
