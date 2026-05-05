@@ -1222,15 +1222,6 @@
   <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve"> 
     <value>Exclusão bem-sucedida da categoria da aplicação</value> 
   </data> 
-  <data name="WAITING_LINE_SATE_ACTIVE_NAME" xml:space="preserve"> 
-    <value>Activo</value> 
-  </data> 
-  <data name="WAITING_LINE_SATE_PROCESSED_NAME" xml:space="preserve"> 
-    <value>Processado</value> 
-  </data> 
-  <data name="WAITING_LINE_SATE_CANCELED_NAME" xml:space="preserve"> 
-    <value>Cancelado</value> 
-  </data> 
   <data name="STOCK_TRANSACTION_TYPE_ADD_NAME" xml:space="preserve"> 
     <value>Adicionar</value> 
   </data> 
@@ -1512,4 +1503,65 @@
    
    
    
+
+  <data name="ASSET_CHECKED_IN_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica entrada de equipamento</value>
+  </data>
+  <data name="ASSET_CHECKED_IN_EVENT_EVENT_NAME" xml:space="preserve">
+    <value>Entrada registrada</value>
+  </data>
+  <data name="ASSET_CHECKED_OUT_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica saída de equipamento</value>
+  </data>
+  <data name="ASSET_CHECKED_OUT_EVENT_EVENT_NAME" xml:space="preserve">
+    <value>Saída registrada</value>
+  </data>
+  <data name="ASSET_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Eventos relacionados com equipamentos</value>
+  </data>
+  <data name="ASSET_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Equipamento</value>
+  </data>
+  <data name="PAYMENT_INTENT_EXPIRED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica que a intenção de pagamento expirou</value>
+  </data>
+  <data name="PAYMENT_INTENT_EXPIRED_EVENT_NAME" xml:space="preserve">
+    <value>Expirado</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_DIRECTION_IN" xml:space="preserve">
+    <value>Entrada</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_DIRECTION_OUT" xml:space="preserve">
+    <value>Saída</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_TYPE_WITHDRAW" xml:space="preserve">
+    <value>Saque</value>
+  </data>
+  <data name="REPORT_PRESET_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Eventos relacionados com modelos de relatório</value>
+  </data>
+  <data name="REPORT_PRESET_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Modelo de relatório</value>
+  </data>
+  <data name="USER_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica criação de conta de usuário</value>
+  </data>
+  <data name="USER_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>Usuário criado</value>
+  </data>
+  <data name="USER_GUEST_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Eventos relacionados com usuário convidado</value>
+  </data>
+  <data name="USER_GUEST_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Usuário convidado</value>
+  </data>
+  <data name="WAITING_LINE_STATE_ACTIVE_NAME" xml:space="preserve">
+    <value>Ativo</value>
+  </data>
+  <data name="WAITING_LINE_STATE_CANCELED_NAME" xml:space="preserve">
+    <value>Cancelado</value>
+  </data>
+  <data name="WAITING_LINE_STATE_PROCESSED_NAME" xml:space="preserve">
+    <value>Processado</value>
+  </data>
 </root>
