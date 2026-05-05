@@ -407,10 +407,10 @@
   <data name="HOST_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Host</value>
   </data>
-  <data name="HOST_IN_ORDER_STATE_CHANED_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+  <data name="HOST_IN_ORDER_STATE_CHANGED_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
     <value>Host in order state changed</value>
   </data>
-  <data name="HOST_IN_ORDER_STATE_CHANED_EVENT_GROUP_NAME" xml:space="preserve">
+  <data name="HOST_IN_ORDER_STATE_CHANGED_EVENT_GROUP_NAME" xml:space="preserve">
     <value>In order state changed</value>
   </data>
   <data name="HOST_LAYOUT_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
@@ -461,10 +461,10 @@
   <data name="HOST_LAYOUT_UPDATED_EVENT_NAME" xml:space="preserve">
     <value>Host layout updated</value>
   </data>
-  <data name="HOST_LOCK_STATE_CHANED_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+  <data name="HOST_LOCK_STATE_CHANGED_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
     <value>Host lock state changed</value>
   </data>
-  <data name="HOST_LOCK_STATE_CHANED_EVENT_GROUP_NAME" xml:space="preserve">
+  <data name="HOST_LOCK_STATE_CHANGED_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Lock state changed</value>
   </data>
   <data name="INSTANCE_AUTHENTICATION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
@@ -1299,10 +1299,10 @@
   <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_NAME" xml:space="preserve">
     <value>Failed to delete product group</value>
   </data>
-  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_DESCRIPTION" xml:space="preserve">
+  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPTY_DESCRIPTION" xml:space="preserve">
     <value>Non empty product group cannot be deleted</value>
   </data>
-  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_NAME" xml:space="preserve">
+  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPTY_NAME" xml:space="preserve">
     <value>Product group is not empty</value>
   </data>
   <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
@@ -1317,10 +1317,10 @@
   <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_NAME" xml:space="preserve">
     <value>Failed to delete application category</value>
   </data>
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPY_DESCRIPTION" xml:space="preserve">
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPTY_DESCRIPTION" xml:space="preserve">
     <value>Non empty application category cannot be deleted</value>
   </data>
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPY_NAME" xml:space="preserve">
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPTY_NAME" xml:space="preserve">
     <value>Application category is not empty</value>
   </data>
   <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">

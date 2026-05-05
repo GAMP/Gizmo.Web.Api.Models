@@ -24,8 +24,8 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Failed to delete product group.
         /// </summary>
-        [Name("Failed to delete product group", nameof(Resources.PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_NAME))]
-        [ExtendedDescription("Failed to delete product group", nameof(Resources.PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_DESCRIPTION))]
+        [Name("Failed to delete product group", nameof(Resources.PRODUCT_GROUP_DELETE_RESULT_NON_EMPTY_NAME))]
+        [ExtendedDescription("Failed to delete product group", nameof(Resources.PRODUCT_GROUP_DELETE_RESULT_NON_EMPTY_DESCRIPTION))]
         NonEmpty = 2,
 
     }

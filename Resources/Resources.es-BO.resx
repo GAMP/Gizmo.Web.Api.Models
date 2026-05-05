@@ -65,10 +65,10 @@
   <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_NAME" xml:space="preserve">
     <value>No se pudo eliminar la categoría</value>
   </data>
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPY_DESCRIPTION" xml:space="preserve">
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPTY_DESCRIPTION" xml:space="preserve">
     <value>No se puede eliminar una categoría de aplicación que no está vacía</value>
   </data>
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPY_NAME" xml:space="preserve">
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPTY_NAME" xml:space="preserve">
     <value>La categoría de aplicación no está vacía</value>
   </data>
   <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
@@ -413,7 +413,7 @@
   <data name="HOST_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Estación</value>
   </data>
-  <data name="HOST_IN_ORDER_STATE_CHANED_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+  <data name="HOST_IN_ORDER_STATE_CHANGED_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
     <value>Estado de orden de estación cambiado</value>
   </data>
   <data name="HOST_LAYOUT_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
@@ -464,7 +464,7 @@
   <data name="HOST_LAYOUT_UPDATED_EVENT_NAME" xml:space="preserve">
     <value>Esquema actualizado</value>
   </data>
-  <data name="HOST_LOCK_STATE_CHANED_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+  <data name="HOST_LOCK_STATE_CHANGED_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
     <value>Estado de bloqueo de estación cambiado</value>
   </data>
   <data name="INSTANCE_AUTHENTICATION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
@@ -779,10 +779,10 @@
   <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_NAME" xml:space="preserve">
     <value>No se pudo eliminar el grupo</value>
   </data>
-  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_DESCRIPTION" xml:space="preserve">
+  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPTY_DESCRIPTION" xml:space="preserve">
     <value>No se puede eliminar un grupo de productos que no está vacío</value>
   </data>
-  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_NAME" xml:space="preserve">
+  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPTY_NAME" xml:space="preserve">
     <value>El grupo de productos no está vacío</value>
   </data>
   <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
@@ -1215,10 +1215,10 @@
   <data name="DOCUMENT_TYPES_WRITE_OFF_REPORT" xml:space="preserve">
     <value>Reporte de baja</value>
   </data>
-  <data name="HOST_IN_ORDER_STATE_CHANED_EVENT_GROUP_NAME" xml:space="preserve">
+  <data name="HOST_IN_ORDER_STATE_CHANGED_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Estado de orden cambiado</value>
   </data>
-  <data name="HOST_LOCK_STATE_CHANED_EVENT_GROUP_NAME" xml:space="preserve">
+  <data name="HOST_LOCK_STATE_CHANGED_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Estado de bloqueo cambiado</value>
   </data>
   <data name="INSTANCE_ID_TYPE_INSTANCE_ID_DESCRIPTION" xml:space="preserve">

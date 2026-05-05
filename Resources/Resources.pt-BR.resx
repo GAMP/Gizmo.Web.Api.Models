@@ -325,10 +325,10 @@
   <data name="HOST_EVENT_GROUP_NAME" xml:space="preserve"> 
     <value>Terminal</value> 
   </data> 
-  <data name="HOST_IN_ORDER_STATE_CHANED_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
+  <data name="HOST_IN_ORDER_STATE_CHANGED_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
     <value>Estado do pedido do terminal alterado</value> 
   </data> 
-  <data name="HOST_IN_ORDER_STATE_CHANED_EVENT_GROUP_NAME" xml:space="preserve"> 
+  <data name="HOST_IN_ORDER_STATE_CHANGED_EVENT_GROUP_NAME" xml:space="preserve"> 
     <value>Estado para disponivel alterado</value> 
   </data> 
   <data name="HOST_LAYOUT_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
@@ -379,10 +379,10 @@
   <data name="HOST_LAYOUT_UPDATED_EVENT_NAME" xml:space="preserve"> 
     <value>Layout do anfitrião atualizado</value> 
   </data> 
-  <data name="HOST_LOCK_STATE_CHANED_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
+  <data name="HOST_LOCK_STATE_CHANGED_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
     <value>Estado de bloqueio do host alterado</value> 
   </data> 
-  <data name="HOST_LOCK_STATE_CHANED_EVENT_GROUP_NAME" xml:space="preserve"> 
+  <data name="HOST_LOCK_STATE_CHANGED_EVENT_GROUP_NAME" xml:space="preserve"> 
     <value>Estado do bloqueio alterado</value> 
   </data> 
   <data name="INSTANCE_AUTHENTICATION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
@@ -1192,10 +1192,10 @@
   <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_NAME" xml:space="preserve"> 
     <value>Falhou ao excluir grupo de produtos</value> 
   </data> 
-  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_DESCRIPTION" xml:space="preserve"> 
+  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPTY_DESCRIPTION" xml:space="preserve"> 
     <value>Grupos de produtos não vazios não podem ser excluídos</value> 
   </data> 
-  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_NAME" xml:space="preserve"> 
+  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPTY_NAME" xml:space="preserve"> 
     <value>O Grupo de produtos não está vazio</value> 
   </data> 
   <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
@@ -1210,10 +1210,10 @@
   <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_NAME" xml:space="preserve"> 
     <value>Falhou ao excluir a categoria do aplicativo</value> 
   </data> 
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPY_DESCRIPTION" xml:space="preserve"> 
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPTY_DESCRIPTION" xml:space="preserve"> 
     <value>Categoria de aplicativo não vazia não pode ser apagada</value> 
   </data> 
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPY_NAME" xml:space="preserve"> 
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPTY_NAME" xml:space="preserve"> 
     <value>A categoria da aplicação não está vazia</value> 
   </data> 
   <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
