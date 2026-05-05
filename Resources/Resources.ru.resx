@@ -257,10 +257,10 @@
     <value>Строка заказа</value> 
   </data> 
   <data name="DISCOUNT_CALCULATION_TYPE_FIXED" xml:space="preserve"> 
-    <value>Исправлено</value> 
+    <value>Фиксированный</value> 
   </data> 
   <data name="DISCOUNT_CALCULATION_TYPE_PERCENTAGE" xml:space="preserve"> 
-    <value>процент</value> 
+    <value>Процент</value> 
   </data> 
   <data name="DISCOUNT_REWARD_TYPE_BONUS" xml:space="preserve"> 
     <value>Бонус</value> 
@@ -875,22 +875,22 @@
     <value>Склад</value> 
   </data> 
   <data name="TARGET_GROUP_REQUIREMENT_ALL" xml:space="preserve"> 
-    <value>Отметить всё</value> 
+    <value>Все</value> 
   </data> 
   <data name="TARGET_GROUP_REQUIREMENT_ANY" xml:space="preserve"> 
     <value>Любой</value> 
   </data> 
-  <data name="TARGET_REQUIREMENT_ALL" xml:space="preserve"> 
-    <value>Отметить всё</value> 
+  <data name="TARGET_REQUIREMENT_ALL" xml:space="preserve">
+    <value>Все</value>
   </data> 
   <data name="TARGET_REQUIREMENT_AMOUNT" xml:space="preserve"> 
-    <value>Cуммы</value> 
+    <value>Сумма</value> 
   </data> 
   <data name="TARGET_REQUIREMENT_ANY" xml:space="preserve"> 
     <value>Любой</value> 
   </data> 
   <data name="TARGET_REQUIREMENT_COUNT" xml:space="preserve"> 
-    <value>рассчитывать</value> 
+    <value>Количество</value> 
   </data> 
   <data name="USER_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Указывает на создание учётной записи пользователя</value>

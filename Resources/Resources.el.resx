@@ -362,7 +362,7 @@
     <value>Γραμμή παραγγελίας</value>
   </data>
   <data name="DISCOUNT_CALCULATION_TYPE_FIXED" xml:space="preserve">
-    <value>Σταθερό ποσό</value>
+    <value>Σταθερό</value>
   </data>
   <data name="DISCOUNT_CALCULATION_TYPE_PERCENTAGE" xml:space="preserve">
     <value>Ποσοστό</value>

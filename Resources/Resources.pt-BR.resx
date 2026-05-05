@@ -239,10 +239,10 @@
     <value>Linha de pedidos</value> 
   </data> 
   <data name="DISCOUNT_CALCULATION_TYPE_FIXED" xml:space="preserve"> 
-    <value>Corrigido</value> 
+    <value>Fixo</value> 
   </data> 
   <data name="DISCOUNT_CALCULATION_TYPE_PERCENTAGE" xml:space="preserve"> 
-    <value>Percentagem</value> 
+    <value>Porcentagem</value> 
   </data> 
   <data name="DISCOUNT_REWARD_TYPE_BONUS" xml:space="preserve"> 
     <value>Bônus</value> 
