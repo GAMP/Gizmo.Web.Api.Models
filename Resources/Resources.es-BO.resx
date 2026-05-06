@@ -1381,7 +1381,7 @@
     <value>Fallido</value>
   </data>
   <data name="PAYMENT_INTENT_STATE_CAPTURED" xml:space="preserve">
-    <value>Capturado</value>
+    <value>Confirmado</value>
   </data>
   <data name="PAYMENT_INTENT_STATE_DECLINED" xml:space="preserve">
     <value>Rechazado</value>

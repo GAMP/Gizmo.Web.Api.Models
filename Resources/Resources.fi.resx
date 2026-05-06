@@ -343,13 +343,13 @@
   <data name="PAYMENT_TRANSACTION_TYPE_PAY_IN" xml:space="preserve"><value>Sisäänmaksu</value></data>
   <data name="PAYMENT_TRANSACTION_TYPE_PAY_OUT" xml:space="preserve"><value>Ulostamaksu</value></data>
   <data name="PAYMENT_TRANSACTION_TYPE_WITHDRAW" xml:space="preserve"><value>Nosto</value></data>
-  <data name="PAYMENT_INTENT_STATE_CANCELLED" xml:space="preserve"><value>Peruutettu</value></data>
-  <data name="PAYMENT_INTENT_STATE_COMPLETED" xml:space="preserve"><value>Valmis</value></data>
-  <data name="PAYMENT_INTENT_STATE_EXPIRED" xml:space="preserve"><value>Vanhentunut</value></data>
+  <data name="PAYMENT_INTENT_STATE_CANCELLED" xml:space="preserve"><value>Peruutettiin</value></data>
+  <data name="PAYMENT_INTENT_STATE_COMPLETED" xml:space="preserve"><value>Valmistui</value></data>
+  <data name="PAYMENT_INTENT_STATE_EXPIRED" xml:space="preserve"><value>Vanhentui</value></data>
   <data name="PAYMENT_INTENT_STATE_FAILED" xml:space="preserve"><value>Epäonnistui</value></data>
   <data name="PAYMENT_INTENT_STATE_PENDING" xml:space="preserve"><value>Odottaa</value></data>
-  <data name="PAYMENT_INTENT_STATE_CAPTURED" xml:space="preserve"><value>Kaapattu</value></data>
-  <data name="PAYMENT_INTENT_STATE_DECLINED" xml:space="preserve"><value>Hylätty</value></data>
+  <data name="PAYMENT_INTENT_STATE_CAPTURED" xml:space="preserve"><value>Vahvistettiin</value></data>
+  <data name="PAYMENT_INTENT_STATE_DECLINED" xml:space="preserve"><value>Hylättiin</value></data>
   <data name="RESERVATION_PAYMENT_STATUS_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"><value>Varauksen maksutila muuttui</value></data>
   <data name="RESERVATION_PAYMENT_STATUS_CHANGED_EVENT_NAME" xml:space="preserve"><value>Maksutila muuttui</value></data>
   <data name="PAYMENT_INTENT_CAPTURED_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee maksutarkoituksen kaappauksen</value></data>

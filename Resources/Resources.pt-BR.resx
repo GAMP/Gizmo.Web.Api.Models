@@ -971,10 +971,10 @@
     <value>Cancelado</value> 
   </data> 
   <data name="PAYMENT_INTENT_STATE_COMPLETED" xml:space="preserve"> 
-    <value>Completo</value> 
+    <value>Concluído</value> 
   </data> 
   <data name="PAYMENT_INTENT_STATE_EXPIRED" xml:space="preserve"> 
-    <value>Expirado</value> 
+    <value>Expirou</value> 
   </data> 
   <data name="PAYMENT_INTENT_STATE_FAILED" xml:space="preserve"> 
     <value>Falhou</value> 
