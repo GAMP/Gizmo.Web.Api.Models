@@ -1,31 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?>
-<root>
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
+<?xml version='1.0' encoding='utf-8'?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" />
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
   <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
   <resheader name="version"><value>2.0</value></resheader>
   <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
@@ -251,7 +251,7 @@
   <data name="RESERVATION_CREATED_EVENT_DESCRIPTION" xml:space="preserve"><value>Reservation oprettet</value></data>
   <data name="RESERVATION_CREATED_EVENT_NAME" xml:space="preserve"><value>Oprettet</value></data>
   <data name="RESERVATION_EVENT_GROUP_DESCRIPTION" xml:space="preserve"><value>Hændelser relateret til reservationer</value></data>
-  <data name="RESERVATION_EVENT_GROUP_NAME" xml:space="preserve"><value>Reservation</value></data>
+  <data name="RESERVATION_EVENT_GROUP_NAME" xml:space="preserve"><value>Reservering</value></data>
   <data name="RESERVATION_EXPIRED_EVENT_DESCRIPTION" xml:space="preserve"><value>Reservation udløbet</value></data>
   <data name="RESERVATION_EXPIRED_EVENT_NAME" xml:space="preserve"><value>Udløbet</value></data>
   <data name="RESERVATION_HOST_ACTIVATED_EVENT_DESCRIPTION" xml:space="preserve"><value>Stationsreservation aktiveret</value></data>
@@ -369,7 +369,7 @@
   <data name="ORDER_STATUS_FILTER_COMPLETED" xml:space="preserve"><value>Afsluttet</value></data>
   <data name="ORDER_STATUS_FILTER_ON_HOLD" xml:space="preserve"><value>På vent</value></data>
   <data name="ORDER_STATUS_FILTER_PROCESSING" xml:space="preserve"><value>Behandles</value></data>
-  <data name="PROMOTION_LIMIT_TYPE_TOTAL" xml:space="preserve"><value>Total</value></data>
+  <data name="PROMOTION_LIMIT_TYPE_TOTAL" xml:space="preserve"><value>I alt</value></data>
   <data name="PROMOTION_LIMIT_TYPE_PER_USER" xml:space="preserve"><value>Per bruger</value></data>
   <data name="PROMOTION_LIMIT_TYPE_DAILY" xml:space="preserve"><value>Dagligt</value></data>
   <data name="PROMOTION_LIMIT_TYPE_WEEKLY" xml:space="preserve"><value>Ugentligt</value></data>
@@ -450,7 +450,7 @@
   <data name="ENTITY_EVENT_TYPE_ADDED_NAME" xml:space="preserve"><value>Tilføjet</value></data>
   <data name="ENTITY_EVENT_TYPE_REMOVED_NAME" xml:space="preserve"><value>Fjernet</value></data>
   <data name="ENTITY_EVENT_TYPE_MODIFIED_NAME" xml:space="preserve"><value>Ændret</value></data>
-  <data name="TASK_TYPE_JUNCTION_NAME" xml:space="preserve"><value>Junction</value></data>
+  <data name="TASK_TYPE_JUNCTION_NAME" xml:space="preserve"><value>Forbindelsespunkt</value></data>
   <data name="TASK_TYPE_NOTIFICATION_NAME" xml:space="preserve"><value>Notifikation</value></data>
   <data name="TASK_TYPE_PROCESS_NAME" xml:space="preserve"><value>Proces</value></data>
   <data name="TASK_TYPE_SCRIPT_NAME" xml:space="preserve"><value>Script</value></data>
