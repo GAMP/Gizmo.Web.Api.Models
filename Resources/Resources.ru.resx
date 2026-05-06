@@ -1298,16 +1298,16 @@
     <value>Приход</value> 
   </data> 
   <data name="DEPOSIT_TRANSACTION_TYPE_CHARGE_NAME" xml:space="preserve"> 
-    <value>Начислять</value> 
+    <value>Списание</value> 
   </data> 
   <data name="DEPOSIT_TRANSACTION_TYPE_CREDIT_NAME" xml:space="preserve"> 
-    <value>Кредит</value> 
+    <value>Начисление</value> 
   </data> 
   <data name="DEPOSIT_TRANSACTION_TYPE_DEPOSIT_NAME" xml:space="preserve"> 
-    <value>Депозит</value> 
+    <value>Пополнение</value> 
   </data> 
   <data name="DEPOSIT_TRANSACTION_TYPE_WITHDRAW_NAME" xml:space="preserve"> 
-    <value>Снятие с депозита</value>
+    <value>Снятие</value>
   </data> 
   <data name="USER_SESSION_STATE_ACTIVE_NAME" xml:space="preserve"> 
     <value>Активные</value> 

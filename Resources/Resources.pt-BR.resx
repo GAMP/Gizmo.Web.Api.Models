@@ -1238,7 +1238,7 @@
     <value>Definir</value> 
   </data> 
   <data name="DEPOSIT_TRANSACTION_TYPE_CHARGE_NAME" xml:space="preserve"> 
-    <value>Cobrar</value> 
+    <value>Cobrança</value> 
   </data> 
   <data name="DEPOSIT_TRANSACTION_TYPE_CREDIT_NAME" xml:space="preserve"> 
     <value>Crédito</value> 
