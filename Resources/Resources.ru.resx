@@ -1025,19 +1025,19 @@
     <value>Завершен</value> 
   </data> 
   <data name="PAYMENT_INTENT_STATE_EXPIRED" xml:space="preserve"> 
-    <value>Просроченные</value> 
+    <value>Истёк</value> 
   </data> 
   <data name="PAYMENT_INTENT_STATE_FAILED" xml:space="preserve"> 
     <value>Не удалось</value>
   </data> 
   <data name="PAYMENT_INTENT_STATE_PENDING" xml:space="preserve"> 
-    <value>Ждёт печати</value> 
+    <value>Ожидает</value> 
   </data> 
   <data name="PAYMENT_INTENT_STATE_CAPTURED" xml:space="preserve"> 
-    <value>Захваченный</value> 
+    <value>Выполнен</value> 
   </data> 
   <data name="PAYMENT_INTENT_STATE_DECLINED" xml:space="preserve"> 
-    <value>Отклонено</value> 
+    <value>Отклонён</value> 
   </data> 
   <data name="RESERVATION_PAYMENT_STATUS_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
     <value>Статус оплаты бронирования изменился</value> 
