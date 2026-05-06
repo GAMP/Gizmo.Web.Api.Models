@@ -577,17 +577,17 @@
   <data name="MAPPING_TYPE_VIRTUAL_FOLDER" xml:space="preserve"> 
     <value>Виртуальная папка</value> 
   </data> 
-  <data name="NOTIFICATION_TYPE_AUDIBLE" xml:space="preserve"> 
-    <value>Слышно</value> 
-  </data> 
-  <data name="NOTIFICATION_TYPE_NONE" xml:space="preserve"> 
-    <value>Неа</value> 
-  </data> 
-  <data name="NOTIFICATION_TYPE_VISUAL" xml:space="preserve"> 
-    <value>Видно</value> 
-  </data> 
-  <data name="NOTIFICATION_TYPE_VISUAL_AND_AUDIBLE" xml:space="preserve"> 
-    <value>Видно и слышно</value> 
+  <data name="NOTIFICATION_TYPE_AUDIBLE" xml:space="preserve">
+    <value>Звуковое</value>
+  </data>
+  <data name="NOTIFICATION_TYPE_NONE" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="NOTIFICATION_TYPE_VISUAL" xml:space="preserve">
+    <value>Визуальное</value>
+  </data>
+  <data name="NOTIFICATION_TYPE_VISUAL_AND_AUDIBLE" xml:space="preserve">
+    <value>Визуальное и звуковое</value>
   </data> 
   <data name="OPTIONS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
     <value>Указывает на изменение параметров</value> 
