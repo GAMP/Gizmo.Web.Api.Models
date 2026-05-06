@@ -1,0 +1,530 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" />
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="ASSISTANCE_REQUEST_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee avustuspyyntöjen tilamuutoksen</value></data>
+  <data name="ASSISTANCE_REQUEST_CHANGE_EVENT_EVENT_NAME" xml:space="preserve"><value>Muutos</value></data>
+  <data name="ASSISTANCE_REQUEST_CREATED_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee avustuspyynnön luomisen</value></data>
+  <data name="ASSISTANCE_REQUEST_CREATED_EVENT_EVENT_NAME" xml:space="preserve"><value>Luotu</value></data>
+  <data name="ASSISTANCE_REQUEST_EVENT_GROUP_DESCRIPTION" xml:space="preserve"><value>Avustuspyyntöihin liittyvät tapahtumat</value></data>
+  <data name="ASSISTANCE_REQUEST_EVENT_GROUP_NAME" xml:space="preserve"><value>Avustuspyyntö</value></data>
+  <data name="AUTHENTICATION_RESULT_ERROR_DESCRIPTION" xml:space="preserve"><value>Epäonnistui virheen vuoksi</value></data>
+  <data name="AUTHENTICATION_RESULT_ERROR_NAME" xml:space="preserve"><value>Virhe</value></data>
+  <data name="AUTHENTICATION_RESULT_NETWORK_ERROR_DESCRIPTION" xml:space="preserve"><value>Epäonnistui verkkovirheen vuoksi</value></data>
+  <data name="AUTHENTICATION_RESULT_NETWORK_ERROR_NAME" xml:space="preserve"><value>Verkkovirhe</value></data>
+  <data name="AUTHENTICATION_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"><value>Todennus onnistui</value></data>
+  <data name="AUTHENTICATION_RESULT_SUCCESS_NAME" xml:space="preserve"><value>Onnistui</value></data>
+  <data name="AUTHENTICATION_RESULT_UNAUTHORIZED_DESCRIPTION" xml:space="preserve"><value>Ei valtuutettu</value></data>
+  <data name="AUTHENTICATION_RESULT_UNAUTHORIZED_NAME" xml:space="preserve"><value>Ei valtuutettu</value></data>
+  <data name="AUTHENTICATION_STATE_ERROR_DESCRIPTION" xml:space="preserve"><value>Todennus epäonnistui virheen vuoksi</value></data>
+  <data name="AUTHENTICATION_STATE_ERROR_NAME" xml:space="preserve"><value>Virhe</value></data>
+  <data name="AUTHENTICATION_STATE_INVALID_DESCRIPTION" xml:space="preserve"><value>Todennustila on virheellinen</value></data>
+  <data name="AUTHENTICATION_STATE_INVALID_NAME" xml:space="preserve"><value>Virheellinen</value></data>
+  <data name="AUTHENTICATION_STATE_NETWORK_ERROR_DESCRIPTION" xml:space="preserve"><value>Todennus epäonnistui verkkovirheen vuoksi</value></data>
+  <data name="AUTHENTICATION_STATE_NETWORK_ERROR_NAME" xml:space="preserve"><value>Verkkovirhe</value></data>
+  <data name="AUTHENTICATION_STATE_NO_TOKEN_DESCRIPTION" xml:space="preserve"><value>Ei tokenia todennusta varten</value></data>
+  <data name="AUTHENTICATION_STATE_NO_TOKEN_NAME" xml:space="preserve"><value>Ei tokenia</value></data>
+  <data name="AUTHENTICATION_STATE_UNAUTHORIZED_DESCRIPTION" xml:space="preserve"><value>Ei valtuutettu</value></data>
+  <data name="AUTHENTICATION_STATE_UNAUTHORIZED_NAME" xml:space="preserve"><value>Ei valtuutettu</value></data>
+  <data name="AUTHENTICATION_STATE_VALID_DESCRIPTION" xml:space="preserve"><value>Todennus voimassa</value></data>
+  <data name="AUTHENTICATION_STATE_VALID_NAME" xml:space="preserve"><value>Voimassa</value></data>
+  <data name="AUTHORIZATION_RESULT_ERROR_DESCRIPTION" xml:space="preserve"><value>Epäonnistui virheen vuoksi</value></data>
+  <data name="AUTHORIZATION_RESULT_ERROR_NAME" xml:space="preserve"><value>Virhe</value></data>
+  <data name="AUTHORIZATION_RESULT_INVALID_ID_DESCRIPTION" xml:space="preserve"><value>Epäonnistui virheellisen instanssitunnuksen vuoksi</value></data>
+  <data name="AUTHORIZATION_RESULT_INVALID_ID_NAME" xml:space="preserve"><value>Virheellinen tunnus</value></data>
+  <data name="AUTHORIZATION_RESULT_NETWORK_ERROR_DESCRIPTION" xml:space="preserve"><value>Epäonnistui verkkovirheen vuoksi</value></data>
+  <data name="AUTHORIZATION_RESULT_NETWORK_ERROR_NAME" xml:space="preserve"><value>Verkkovirhe</value></data>
+  <data name="AUTHORIZATION_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"><value>Valtuutus onnistui</value></data>
+  <data name="AUTHORIZATION_RESULT_SUCCESS_NAME" xml:space="preserve"><value>Onnistui</value></data>
+  <data name="AUTHORIZATION_RESULT_TOKEN_EXPIRED_DESCRIPTION" xml:space="preserve"><value>Epäonnistui vanhentuneen tokenin vuoksi</value></data>
+  <data name="AUTHORIZATION_RESULT_TOKEN_EXPIRED_NAME" xml:space="preserve"><value>Token vanhentunut</value></data>
+  <data name="AUTHORIZATION_RESULT_UNAUTHORIZED_DESCRIPTION" xml:space="preserve"><value>Ei valtuutettu</value></data>
+  <data name="AUTHORIZATION_RESULT_UNAUTHORIZED_NAME" xml:space="preserve"><value>Ei valtuutettu</value></data>
+  <data name="AUTHORIZATION_WARNINGS_FUTURE_PAYMENT_DESCRIPTION" xml:space="preserve"><value>Tulevat maksut voivat epäonnistua kortin vanhentumisen vuoksi</value></data>
+  <data name="AUTHORIZATION_WARNINGS_FUTURE_PAYMENT_NAME" xml:space="preserve"><value>Varoitus tulevasta maksusta</value></data>
+  <data name="AUTHORIZATION_WARNINGS_NONE_DESCRIPTION" xml:space="preserve"><value>Ei mitään</value></data>
+  <data name="AUTHORIZATION_WARNINGS_NONE_NAME" xml:space="preserve"><value>Ei mitään</value></data>
+  <data name="AUTHORIZATION_WARNINGS_PAYMENT_FAILURE_DESCRIPTION" xml:space="preserve"><value>Maksuyrityksessä ei onnistuttu</value></data>
+  <data name="AUTHORIZATION_WARNINGS_PAYMENT_FAILURE_NAME" xml:space="preserve"><value>Maksun epäonnistuminen</value></data>
+  <data name="BRANCH_CREATED_EVENT_DESCRIPTION" xml:space="preserve"><value>Toimipisteen luontitapahtuma</value></data>
+  <data name="BRANCH_CREATED_EVENT_NAME" xml:space="preserve"><value>Toimipiste luotu</value></data>
+  <data name="BRANCH_DELETED_EVENT_DESCRIPTION" xml:space="preserve"><value>Toimipisteen poistotapahtuma</value></data>
+  <data name="BRANCH_DELETED_EVENT_NAME" xml:space="preserve"><value>Poistettu</value></data>
+  <data name="BRANCH_EVENT_GROUP_DESCRIPTION" xml:space="preserve"><value>Toimipisteisiin liittyvät tapahtumat</value></data>
+  <data name="BRANCH_EVENT_GROUP_NAME" xml:space="preserve"><value>Toimipiste</value></data>
+  <data name="BRANCH_OPERATOR_ADDED_EVENT_DESCRIPTION" xml:space="preserve"><value>Operaattorin lisäystapahtuma</value></data>
+  <data name="BRANCH_OPERATOR_ADDED_EVENT_NAME" xml:space="preserve"><value>Operaattori lisätty</value></data>
+  <data name="BRANCH_OPERATOR_DEFAULT_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"><value>Operaattorin oletusvaihtotoimipisteen muutostapahtuma</value></data>
+  <data name="BRANCH_OPERATOR_DEFAULT_CHANGED_EVENT_NAME" xml:space="preserve"><value>Operaattorin oletusvaihtotoimipiste muuttunut</value></data>
+  <data name="BRANCH_OPERATOR_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"><value>Operaattorin poistotapahtuma</value></data>
+  <data name="BRANCH_OPERATOR_REMOVED_EVENT_NAME" xml:space="preserve"><value>Operaattori poistettu</value></data>
+  <data name="BRANCH_UNDELETED_EVENT_DESCRIPTION" xml:space="preserve"><value>Toimipisteen palautustapahtuuma</value></data>
+  <data name="BRANCH_UNDELETED_EVENT_NAME" xml:space="preserve"><value>Palautettu</value></data>
+  <data name="BRANCH_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"><value>Toimipisteen päivitystapahtuma</value></data>
+  <data name="BRANCH_UPDATED_EVENT_NAME" xml:space="preserve"><value>Toimipiste päivitetty</value></data>
+  <data name="DEVICE_BARCODE_SCANNED_EVENT_NAME" xml:space="preserve"><value>Viivakoodi skannattu</value></data>
+  <data name="DEVICE_EVENT_GROUP_DESCRIPTION" xml:space="preserve"><value>Laitteisiin liittyvät tapahtumat</value></data>
+  <data name="DEVICE_EVENT_GROUP_NAME" xml:space="preserve"><value>Laite</value></data>
+  <data name="DEVICE_SMART_CARD_READER_DATA_EVENT_NAME" xml:space="preserve"><value>Sirukortin lukija datatapahtuma</value></data>
+  <data name="DEVICE_SMART_CARD_READER_EVENT_DESCRIPTION" xml:space="preserve"><value>Sirukortin lukija datatapahtuma</value></data>
+  <data name="DISCOUNT_APPLY_TYPE_ORDER" xml:space="preserve"><value>Tilaus</value></data>
+  <data name="DISCOUNT_APPLY_TYPE_ORDER_LINE" xml:space="preserve"><value>Tilausrivi</value></data>
+  <data name="DISCOUNT_CALCULATION_TYPE_FIXED" xml:space="preserve"><value>Kiinteä</value></data>
+  <data name="DISCOUNT_CALCULATION_TYPE_PERCENTAGE" xml:space="preserve"><value>Prosentti</value></data>
+  <data name="DISCOUNT_REWARD_TYPE_BONUS" xml:space="preserve"><value>Bonus</value></data>
+  <data name="DISCOUNT_REWARD_TYPE_DISCOUNT" xml:space="preserve"><value>Alennus</value></data>
+  <data name="DOCUMENT_TYPES_CONSIGNMENT_NOTE" xml:space="preserve"><value>Lähetyskirja</value></data>
+  <data name="DOCUMENT_TYPES_DELIVERY_NOTE" xml:space="preserve"><value>Lähete</value></data>
+  <data name="DOCUMENT_TYPES_DISPATCH_NOTE" xml:space="preserve"><value>Toimituskirja</value></data>
+  <data name="DOCUMENT_TYPES_INVOICE" xml:space="preserve"><value>Lasku</value></data>
+  <data name="DOCUMENT_TYPES_STOCK_TAKE_REPORT" xml:space="preserve"><value>Inventaarioraportti</value></data>
+  <data name="DOCUMENT_TYPES_WORK_ORDER" xml:space="preserve"><value>Työmääräys</value></data>
+  <data name="DOCUMENT_TYPES_WRITE_OFF_REPORT" xml:space="preserve"><value>Poistokirausraportti</value></data>
+  <data name="ENTITY_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee tietokantaentiteetin muutoksen</value></data>
+  <data name="ENTITY_CHANGE_EVENT_NAME" xml:space="preserve"><value>Tietokantaentiteetin muutos</value></data>
+  <data name="ENTITY_EVENT_GROUP_DESCRIPTION" xml:space="preserve"><value>Tietokantaentiteetteihin liittyvät tapahtumat</value></data>
+  <data name="ENTITY_EVENT_GROUP_NAME" xml:space="preserve"><value>Tietokantaentiteetti</value></data>
+  <data name="HOST_COMPUTER_CLIENT_MODULE_VERSION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"><value>Asiakasversio muuttui -tapahtuma</value></data>
+  <data name="HOST_COMPUTER_CLIENT_MODULE_VERSION_CHANGED_EVENT_NAME" xml:space="preserve"><value>Asiakasversio muuttui</value></data>
+  <data name="HOST_COMPUTER_CONNECTION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"><value>Yhteys muuttui -tapahtuma</value></data>
+  <data name="HOST_COMPUTER_CONNECTION_CHANGED_EVENT_NAME" xml:space="preserve"><value>Yhteys muuttui</value></data>
+  <data name="HOST_COMPUTER_EVENT_GROUP_DESCRIPTION" xml:space="preserve"><value>Asematietokoneisiin liittyvät tapahtumat</value></data>
+  <data name="HOST_COMPUTER_EVENT_GROUP_NAME" xml:space="preserve"><value>Asematietokone</value></data>
+  <data name="HOST_COMPUTER_INPUT_LOCK_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"><value>Syötteen lukitus muuttui -tapahtuma</value></data>
+  <data name="HOST_COMPUTER_INPUT_LOCK_CHANGED_EVENT_NAME" xml:space="preserve"><value>Syötteen lukitus muuttui</value></data>
+  <data name="HOST_COMPUTER_MAINTENANCE_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"><value>Huolto muuttui -tapahtuma</value></data>
+  <data name="HOST_COMPUTER_MAINTENANCE_CHANGED_EVENT_NAME" xml:space="preserve"><value>Huolto muuttui</value></data>
+  <data name="HOST_COMPUTER_SECURITY_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"><value>Tietoturva muuttui -tapahtuma</value></data>
+  <data name="HOST_COMPUTER_SECURITY_CHANGED_EVENT_NAME" xml:space="preserve"><value>Tietoturva muuttui</value></data>
+  <data name="HOST_EVENT_GROUP_DESCRIPTION" xml:space="preserve"><value>Asemiin liittyvät tapahtumat</value></data>
+  <data name="HOST_EVENT_GROUP_NAME" xml:space="preserve"><value>Asema</value></data>
+  <data name="HOST_IN_ORDER_STATE_CHANGED_EVENT_GROUP_DESCRIPTION" xml:space="preserve"><value>Aseman toimintatila muuttui</value></data>
+  <data name="HOST_IN_ORDER_STATE_CHANGED_EVENT_GROUP_NAME" xml:space="preserve"><value>Toimintatila muuttui</value></data>
+  <data name="HOST_LAYOUT_CREATED_EVENT_DESCRIPTION" xml:space="preserve"><value>Asema-asettelu luotu -tapahtuma</value></data>
+  <data name="HOST_LAYOUT_CREATED_EVENT_NAME" xml:space="preserve"><value>Asema-asettelu luotu</value></data>
+  <data name="HOST_LAYOUT_EVENT_GROUP_DESCRIPTION" xml:space="preserve"><value>Asema-asetteluihin liittyvät tapahtumat</value></data>
+  <data name="HOST_LAYOUT_EVENT_GROUP_NAME" xml:space="preserve"><value>Asema-asettelu</value></data>
+  <data name="HOST_LAYOUT_GROUP_CREATED_EVENT_DESCRIPTION" xml:space="preserve"><value>Asema-asetteluryhmä luotu -tapahtuma</value></data>
+  <data name="HOST_LAYOUT_GROUP_CREATED_EVENT_NAME" xml:space="preserve"><value>Asema-asetteluryhmä luotu</value></data>
+  <data name="HOST_LAYOUT_GROUP_EVENT_GROUP_DESCRIPTION" xml:space="preserve"><value>Asema-asetteluryhmiin liittyvät tapahtumat</value></data>
+  <data name="HOST_LAYOUT_GROUP_EVENT_GROUP_NAME" xml:space="preserve"><value>Asema-asetteluryhmä</value></data>
+  <data name="HOST_LAYOUT_GROUP_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"><value>Asema-asetteluryhmä poistettu -tapahtuma</value></data>
+  <data name="HOST_LAYOUT_GROUP_REMOVED_EVENT_NAME" xml:space="preserve"><value>Asema-asetteluryhmä poistettu</value></data>
+  <data name="HOST_LAYOUT_GROUP_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"><value>Asema-asetteluryhmä päivitetty -tapahtuma</value></data>
+  <data name="HOST_LAYOUT_GROUP_UPDATED_EVENT_NAME" xml:space="preserve"><value>Asema-asetteluryhmä päivitetty</value></data>
+  <data name="HOST_LAYOUT_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"><value>Asema-asettelu poistettu -tapahtuma</value></data>
+  <data name="HOST_LAYOUT_REMOVED_EVENT_NAME" xml:space="preserve"><value>Asema-asettelu poistettu</value></data>
+  <data name="HOST_LAYOUT_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"><value>Asema-asettelu päivitetty -tapahtuma</value></data>
+  <data name="HOST_LAYOUT_UPDATED_EVENT_NAME" xml:space="preserve"><value>Asema-asettelu päivitetty</value></data>
+  <data name="HOST_LOCK_STATE_CHANGED_EVENT_GROUP_DESCRIPTION" xml:space="preserve"><value>Aseman lukitustila muuttui</value></data>
+  <data name="HOST_LOCK_STATE_CHANGED_EVENT_GROUP_NAME" xml:space="preserve"><value>Lukitustila muuttui</value></data>
+  <data name="INSTANCE_AUTHENTICATION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"><value>Instanssien todennus muuttui -tapahtuma</value></data>
+  <data name="INSTANCE_AUTHENTICATION_CHANGED_EVENT_NAME" xml:space="preserve"><value>Instanssin todennus muuttui</value></data>
+  <data name="INSTANCE_AUTHORIZATION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"><value>Instanssin valtuutus muuttui -tapahtuma</value></data>
+  <data name="INSTANCE_AUTHORIZATION_CHANGED_EVENT_NAME" xml:space="preserve"><value>Instanssin valtuutus muuttui</value></data>
+  <data name="INSTANCE_EVENT_GROUP_DESCRIPTION" xml:space="preserve"><value>Instansseihin liittyvät tapahtumat</value></data>
+  <data name="INSTANCE_EVENT_GROUP_NAME" xml:space="preserve"><value>Instanssi</value></data>
+  <data name="INSTANCE_ID_TYPE_HARDWARE_ID_DESCRIPTION" xml:space="preserve"><value>Laitteistotunnus</value></data>
+  <data name="INSTANCE_ID_TYPE_HARDWARE_ID_NAME" xml:space="preserve"><value>Laitteistotunnus</value></data>
+  <data name="INSTANCE_ID_TYPE_INSTANCE_ID_DESCRIPTION" xml:space="preserve"><value>Instanssitunnus</value></data>
+  <data name="INSTANCE_ID_TYPE_INSTANCE_ID_NAME" xml:space="preserve"><value>Instanssitunnus</value></data>
+  <data name="INVENTORY_ADJUSTMENT_REASONS_DAMAGED" xml:space="preserve"><value>Vaurioitunut pakkaus</value></data>
+  <data name="INVENTORY_ADJUSTMENT_REASONS_DAMAGED_ITEM" xml:space="preserve"><value>Vaurioitunut tuote</value></data>
+  <data name="INVENTORY_ADJUSTMENT_REASONS_EXPIRED" xml:space="preserve"><value>Vanhentunut</value></data>
+  <data name="INVENTORY_ADJUSTMENT_REASONS_FORCE_MAJOR" xml:space="preserve"><value>Force majeure</value></data>
+  <data name="INVENTORY_ADJUSTMENT_REASONS_LOST" xml:space="preserve"><value>Kadonnut</value></data>
+  <data name="INVENTORY_ADJUSTMENT_REASONS_NOT_IN_DEMAND" xml:space="preserve"><value>Ei kysyntää</value></data>
+  <data name="INVENTORY_ADJUSTMENT_TYPE_SALE_BY_COST" xml:space="preserve"><value>Myynti hankintahintaan</value></data>
+  <data name="INVENTORY_ADJUSTMENT_TYPE_SALE_BY_PRICE" xml:space="preserve"><value>Myynti vähittäishintaan</value></data>
+  <data name="INVENTORY_ADJUSTMENT_TYPE_WRITE_OFF" xml:space="preserve"><value>Poisto</value></data>
+  <data name="INVENTORY_TRANSFER_REASONS_FOR_ADJUSTMENT" xml:space="preserve"><value>Oikaistua varten</value></data>
+  <data name="INVENTORY_TRANSFER_REASONS_IN_DEMAND" xml:space="preserve"><value>Kysytty</value></data>
+  <data name="INVENTORY_TRANSFER_REASONS_NOT_IN_DEMAND" xml:space="preserve"><value>Ei kysyntää</value></data>
+  <data name="INVENTORY_TYPE_ADJUSTMENT" xml:space="preserve"><value>Oikaisu</value></data>
+  <data name="INVENTORY_TYPE_INBOUND" xml:space="preserve"><value>Saapuva</value></data>
+  <data name="INVENTORY_TYPE_TRANSFER" xml:space="preserve"><value>Siirto</value></data>
+  <data name="INVOICE_CREATED_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee laskun luomisen</value></data>
+  <data name="INVOICE_CREATED_EVENT_NAME" xml:space="preserve"><value>Luotu</value></data>
+  <data name="INVOICE_EVENT_GROUP_DESCRIPTION" xml:space="preserve"><value>Laskuihin liittyvät tapahtumat</value></data>
+  <data name="INVOICE_EVENT_GROUP_NAME" xml:space="preserve"><value>Lasku</value></data>
+  <data name="INVOICE_PAYMENT_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee laskumaksun luomisen</value></data>
+  <data name="INVOICE_PAYMENT_EVENT_NAME" xml:space="preserve"><value>Maksu</value></data>
+  <data name="LICENSE_EVENT_GROUP_DESCRIPTION" xml:space="preserve"><value>Lisensseihin liittyvät tapahtumat</value></data>
+  <data name="LICENSE_EVENT_GROUP_NAME" xml:space="preserve"><value>Lisenssi</value></data>
+  <data name="LICENSE_STATE_DISABLED_DESCRIPTION" xml:space="preserve"><value>Lisenssi on poistettu käytöstä</value></data>
+  <data name="LICENSE_STATE_DISABLED_INSTANCE_ID_DESCRIPTION" xml:space="preserve"><value>Instanssitunnus on poistettu käytöstä/estetty</value></data>
+  <data name="LICENSE_STATE_DISABLED_INSTANCE_ID_NAME" xml:space="preserve"><value>Poistettu käytöstä instanssitunnus</value></data>
+  <data name="LICENSE_STATE_DISABLED_NAME" xml:space="preserve"><value>Poistettu käytöstä</value></data>
+  <data name="LICENSE_STATE_EXPIRED_DESCRIPTION" xml:space="preserve"><value>Lisenssi on vanhentunut</value></data>
+  <data name="LICENSE_STATE_EXPIRED_NAME" xml:space="preserve"><value>Vanhentunut</value></data>
+  <data name="LICENSE_STATE_INVALID_DESCRIPTION" xml:space="preserve"><value>Paikallinen lisenssi on virheellinen</value></data>
+  <data name="LICENSE_STATE_INVALID_NAME" xml:space="preserve"><value>Virheellinen</value></data>
+  <data name="LICENSE_STATE_UNAUTHORIZED_DESCRIPTION" xml:space="preserve"><value>Ei valtuutettu</value></data>
+  <data name="LICENSE_STATE_UNAUTHORIZED_NAME" xml:space="preserve"><value>Ei valtuutettu</value></data>
+  <data name="LICENSE_STATE_VALID_DESCRIPTION" xml:space="preserve"><value>Voimassa</value></data>
+  <data name="LICENSE_STATE_VALID_NAME" xml:space="preserve"><value>Voimassa</value></data>
+  <data name="LICENSE_TYPE_NORMAL_DESCRIPTION" xml:space="preserve"><value>Normaali lisenssi</value></data>
+  <data name="LICENSE_TYPE_NORMAL_NAME" xml:space="preserve"><value>Normaali</value></data>
+  <data name="LICENSE_TYPE_TRIAL_DESCRIPTION" xml:space="preserve"><value>Kokeilulisenssi</value></data>
+  <data name="LICENSE_TYPE_TRIAL_NAME" xml:space="preserve"><value>Kokeilu</value></data>
+  <data name="LICENSE_TYPE_UNDETERMINED_DESCRIPTION" xml:space="preserve"><value>Lisenssin tyyppi on määrittelemätön</value></data>
+  <data name="LICENSE_TYPE_UNDETERMINED_NAME" xml:space="preserve"><value>Määrittelemätön</value></data>
+  <data name="LOG_CLEARED_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee lokin tyhjentämisen</value></data>
+  <data name="LOG_CLEARED_EVENT_NAME" xml:space="preserve"><value>Tyhjennetty</value></data>
+  <data name="LOG_EVENT_GROUP_DESCRIPTION" xml:space="preserve"><value>Lokiin liittyvät tapahtumat</value></data>
+  <data name="LOG_EVENT_GROUP_NAME" xml:space="preserve"><value>Log</value></data>
+  <data name="MAPPING_TYPE_NETWORK_DRIVE" xml:space="preserve"><value>Verkkoasema</value></data>
+  <data name="MAPPING_TYPE_VIRTUAL_DRIVE" xml:space="preserve"><value>Virtuaaliasema</value></data>
+  <data name="MAPPING_TYPE_VIRTUAL_FOLDER" xml:space="preserve"><value>Virtuaalikansio</value></data>
+  <data name="NOTIFICATION_TYPE_AUDIBLE" xml:space="preserve"><value>Äänimerkki</value></data>
+  <data name="NOTIFICATION_TYPE_NONE" xml:space="preserve"><value>Ei mitään</value></data>
+  <data name="NOTIFICATION_TYPE_VISUAL" xml:space="preserve"><value>Visuaalinen</value></data>
+  <data name="NOTIFICATION_TYPE_VISUAL_AND_AUDIBLE" xml:space="preserve"><value>Visuaalinen ja äänimerkki</value></data>
+  <data name="OPTIONS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee asetusten muutoksen</value></data>
+  <data name="OPTIONS_CHANGE_EVENT_NAME" xml:space="preserve"><value>Muutos</value></data>
+  <data name="OPTIONS_EVENT_GROUP_DESCRIPTION" xml:space="preserve"><value>Asetuksiin liittyvät tapahtumat</value></data>
+  <data name="OPTIONS_EVENT_GROUP_NAME" xml:space="preserve"><value>Asetukset</value></data>
+  <data name="ORDER_CREATED_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee tilauksen luomisen</value></data>
+  <data name="ORDER_CREATED_EVENT_NAME" xml:space="preserve"><value>Luotu</value></data>
+  <data name="ORDER_DELIVERY_STATUS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee tilauksen toimitustilan muutoksen</value></data>
+  <data name="ORDER_DELIVERY_STATUS_CHANGE_EVENT_NAME" xml:space="preserve"><value>Muutos</value></data>
+  <data name="ORDER_EVENT_GROUP_DESCRIPTION" xml:space="preserve"><value>Tilauksiin liittyvät tapahtumat</value></data>
+  <data name="ORDER_EVENT_GROUP_NAME" xml:space="preserve"><value>Tilaus</value></data>
+  <data name="ORDER_LINE_DELIVERY_STATUS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee tilausrivin toimitustilan muutoksen</value></data>
+  <data name="ORDER_LINE_DELIVERY_STATUS_CHANGE_EVENT_NAME" xml:space="preserve"><value>Muutos</value></data>
+  <data name="ORDER_STATUS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee tilauksen tilamuutoksen</value></data>
+  <data name="ORDER_STATUS_CHANGE_EVENT_NAME" xml:space="preserve"><value>Muutos</value></data>
+  <data name="PAYMENT_INTENT_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee maksutarkoituksen valmistumisen</value></data>
+  <data name="PAYMENT_INTENT_COMPLETED_EVENT_NAME" xml:space="preserve"><value>Valmis</value></data>
+  <data name="PAYMENT_INTENT_CREATED_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee maksutarkoituksen luomisen</value></data>
+  <data name="PAYMENT_INTENT_CREATED_EVENT_NAME" xml:space="preserve"><value>Luotu</value></data>
+  <data name="PAYMENT_INTENT_EVENT_GROUP_DESCRIPTION" xml:space="preserve"><value>Maksutarkoituksiin liittyvät tapahtumat</value></data>
+  <data name="PAYMENT_INTENT_EVENT_GROUP_NAME" xml:space="preserve"><value>Maksutarkoitus</value></data>
+  <data name="PRODUCT_STOCK_CHANGE_EVENT_GROUP_DESCRIPTION" xml:space="preserve"><value>Ilmaisee tuotevaraston tason muutoksen</value></data>
+  <data name="PRODUCT_STOCK_CHANGE_EVENT_GROUP_NAME" xml:space="preserve"><value>Muutos</value></data>
+  <data name="PRODUCT_STOCK_EVENT_GROUP_DESCRIPTION" xml:space="preserve"><value>Tuotevarastoon liittyvät tapahtumat</value></data>
+  <data name="PRODUCT_STOCK_EVENT_GROUP_NAME" xml:space="preserve"><value>Tuotevarasto</value></data>
+  <data name="REPORT_PRESET_ADDED_EVENT_DESCRIPTION" xml:space="preserve"><value>Raporttimalli lisätty -tapahtuma</value></data>
+  <data name="REPORT_PRESET_ADDED_EVENT_NAME" xml:space="preserve"><value>Raporttimalli lisätty</value></data>
+  <data name="REPORT_PRESET_RANGE_DAY_NAME" xml:space="preserve"><value>Päivä</value></data>
+  <data name="REPORT_PRESET_RANGE_MONTH_NAME" xml:space="preserve"><value>Kuukausi</value></data>
+  <data name="REPORT_PRESET_RANGE_WEEK_NAME" xml:space="preserve"><value>Viikko</value></data>
+  <data name="REPORT_PRESET_RANGE_YEAR_NAME" xml:space="preserve"><value>Vuosi</value></data>
+  <data name="REPORT_PRESET_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"><value>Raporttimalli poistettu -tapahtuma</value></data>
+  <data name="REPORT_PRESET_REMOVED_EVENT_NAME" xml:space="preserve"><value>Raporttimalli poistettu</value></data>
+  <data name="REPORT_PRESET_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"><value>Raporttimalli päivitetty -tapahtuma</value></data>
+  <data name="REPORT_PRESET_UPDATED_EVENT_NAME" xml:space="preserve"><value>Raporttimalli päivitetty</value></data>
+  <data name="RESERVATION_ACTIVATED_EVENT_DESCRIPTION" xml:space="preserve"><value>Varaus aktivoitu</value></data>
+  <data name="RESERVATION_ACTIVATED_EVENT_NAME" xml:space="preserve"><value>Aktivoitu</value></data>
+  <data name="RESERVATION_CANCELLED_EVENT_DESCRIPTION" xml:space="preserve"><value>Varaus peruutettu</value></data>
+  <data name="RESERVATION_CANCELLED_EVENT_NAME" xml:space="preserve"><value>Peruutettu</value></data>
+  <data name="RESERVATION_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve"><value>Varaus valmis</value></data>
+  <data name="RESERVATION_COMPLETED_EVENT_NAME" xml:space="preserve"><value>Valmis</value></data>
+  <data name="RESERVATION_CREATED_EVENT_DESCRIPTION" xml:space="preserve"><value>Varaus luotu</value></data>
+  <data name="RESERVATION_CREATED_EVENT_NAME" xml:space="preserve"><value>Luotu</value></data>
+  <data name="RESERVATION_EVENT_GROUP_DESCRIPTION" xml:space="preserve"><value>Varauksiin liittyvät tapahtumat</value></data>
+  <data name="RESERVATION_EVENT_GROUP_NAME" xml:space="preserve"><value>Varaus</value></data>
+  <data name="RESERVATION_EXPIRED_EVENT_DESCRIPTION" xml:space="preserve"><value>Varaus vanhentunut</value></data>
+  <data name="RESERVATION_EXPIRED_EVENT_NAME" xml:space="preserve"><value>Vanhentunut</value></data>
+  <data name="RESERVATION_HOST_ACTIVATED_EVENT_DESCRIPTION" xml:space="preserve"><value>Asemavaraus aktivoitu</value></data>
+  <data name="RESERVATION_HOST_ACTIVATED_EVENT_NAME" xml:space="preserve"><value>Aktivoitu</value></data>
+  <data name="RESERVATION_HOST_ADDED_EVENT_DESCRIPTION" xml:space="preserve"><value>Asema lisätty varaukseen</value></data>
+  <data name="RESERVATION_HOST_ADDED_EVENT_NAME" xml:space="preserve"><value>Lisätty</value></data>
+  <data name="RESERVATION_HOST_CANCELLED_EVENT_DESCRIPTION" xml:space="preserve"><value>Asemavaraus peruutettu</value></data>
+  <data name="RESERVATION_HOST_CANCELLED_EVENT_NAME" xml:space="preserve"><value>Peruutettu</value></data>
+  <data name="RESERVATION_HOST_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve"><value>Asemavaraus valmis</value></data>
+  <data name="RESERVATION_HOST_COMPLETED_EVENT_NAME" xml:space="preserve"><value>Valmis</value></data>
+  <data name="RESERVATION_HOST_EXPIRED_EVENT_DESCRIPTION" xml:space="preserve"><value>Asemavaraus vanhentunut</value></data>
+  <data name="RESERVATION_HOST_EXPIRED_EVENT_NAME" xml:space="preserve"><value>Vanhentunut</value></data>
+  <data name="RESERVATION_HOST_MOVED_EVENT_DESCRIPTION" xml:space="preserve"><value>Asemavaraus siirretty</value></data>
+  <data name="RESERVATION_HOST_MOVED_EVENT_NAME" xml:space="preserve"><value>Siirretty</value></data>
+  <data name="RESERVATION_HOST_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"><value>Asemavaraus päivitetty</value></data>
+  <data name="RESERVATION_HOST_UPDATED_EVENT_NAME" xml:space="preserve"><value>Päivitetty</value></data>
+  <data name="RESERVATION_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"><value>Varaus päivitetty</value></data>
+  <data name="RESERVATION_UPDATED_EVENT_NAME" xml:space="preserve"><value>Päivitetty</value></data>
+  <data name="RESERVATION_USER_ADDED_EVENT_DESCRIPTION" xml:space="preserve"><value>Käyttäjä lisätty</value></data>
+  <data name="RESERVATION_USER_ADDED_EVENT_NAME" xml:space="preserve"><value>Lisätty</value></data>
+  <data name="RESERVATION_USER_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"><value>Käyttäjä poistettu</value></data>
+  <data name="RESERVATION_USER_REMOVED_EVENT_NAME" xml:space="preserve"><value>Poistettu</value></data>
+  <data name="RESTRICTION_TYPE_CLASS_NAME" xml:space="preserve"><value>Luokkanimi</value></data>
+  <data name="RESTRICTION_TYPE_FILE_NAME" xml:space="preserve"><value>Tiedostonimi</value></data>
+  <data name="RESTRICTION_TYPE_TRAY_ICON" xml:space="preserve"><value>Ilmaisinalueen kuvake</value></data>
+  <data name="RESTRICTION_TYPE_UNSET" xml:space="preserve"><value>Ei asetettu</value></data>
+  <data name="RESTRICTION_TYPE_WINDOW_NAME" xml:space="preserve"><value>Ikkunan nimi</value></data>
+  <data name="SCHEDULE_TYPE_DAILY" xml:space="preserve"><value>Päivittäin</value></data>
+  <data name="SCHEDULE_TYPE_MONTHLY" xml:space="preserve"><value>Kuukausittain</value></data>
+  <data name="SCHEDULE_TYPE_ONE_TIME" xml:space="preserve"><value>Kerran</value></data>
+  <data name="SCHEDULE_TYPE_WEEKLY" xml:space="preserve"><value>Viikoittain</value></data>
+  <data name="SCHEDULE_TYPE_YEARLY" xml:space="preserve"><value>Vuosittain</value></data>
+  <data name="SHIFT_ENDED_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee vuoron päättymisen</value></data>
+  <data name="SHIFT_ENDED_EVENT_NAME" xml:space="preserve"><value>Päättynyt</value></data>
+  <data name="SHIFT_EVENT_GROUP_DESCRIPTION" xml:space="preserve"><value>Vuoroihin liittyvät tapahtumat</value></data>
+  <data name="SHIFT_EVENT_GROUP_NAME" xml:space="preserve"><value>Vuoro</value></data>
+  <data name="SHIFT_LOCKED_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee vuoron lukitsemisen</value></data>
+  <data name="SHIFT_LOCKED_EVENT_NAME" xml:space="preserve"><value>Lukittu</value></data>
+  <data name="SHIFT_STARTED_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee vuoron alkamisen</value></data>
+  <data name="SHIFT_STARTED_EVENT_NAME" xml:space="preserve"><value>Aloitettu</value></data>
+  <data name="SHIFT_UNLOCKED_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee vuoron avaamisen</value></data>
+  <data name="SHIFT_UNLOCKED_EVENT_NAME" xml:space="preserve"><value>Avattu</value></data>
+  <data name="STOCK_LEVEL_TYPE_ANY" xml:space="preserve"><value>Kaikki</value></data>
+  <data name="STOCK_LEVEL_TYPE_LOW" xml:space="preserve"><value>Matala</value></data>
+  <data name="STOCK_LEVEL_TYPE_OUT_OF_STOCK" xml:space="preserve"><value>Loppu varastosta</value></data>
+  <data name="STOCK_TYPE_SELLING_POINT" xml:space="preserve"><value>Myyntipiste</value></data>
+  <data name="STOCK_TYPE_WAREHOUSE" xml:space="preserve"><value>Varasto</value></data>
+  <data name="TARGET_GROUP_REQUIREMENT_ALL" xml:space="preserve"><value>Kaikki</value></data>
+  <data name="TARGET_GROUP_REQUIREMENT_ANY" xml:space="preserve"><value>Jokin</value></data>
+  <data name="TARGET_REQUIREMENT_ALL" xml:space="preserve"><value>Kaikki</value></data>
+  <data name="TARGET_REQUIREMENT_AMOUNT" xml:space="preserve"><value>Summa</value></data>
+  <data name="TARGET_REQUIREMENT_ANY" xml:space="preserve"><value>Jokin</value></data>
+  <data name="TARGET_REQUIREMENT_COUNT" xml:space="preserve"><value>Määrä</value></data>
+  <data name="USER_ENABLED_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee käyttäjän aktivoinnin</value></data>
+  <data name="USER_ENABLED_EVENT_NAME" xml:space="preserve"><value>Aktivoitu</value></data>
+  <data name="USER_EVENT_GROUP_DESCRIPTION" xml:space="preserve"><value>Käyttäjiin liittyvät tapahtumat</value></data>
+  <data name="USER_EVENT_GROUP_NAME" xml:space="preserve"><value>Käyttäjä</value></data>
+  <data name="USER_SESSION_CREATED_EVENT_DESCRIPTION" xml:space="preserve"><value>Käyttäjäsessio luotu</value></data>
+  <data name="USER_SESSION_CREATED_EVENT_NAME" xml:space="preserve"><value>Luotu</value></data>
+  <data name="USER_SESSION_EVENT_GROUP_DESCRIPTION" xml:space="preserve"><value>Käyttäjäsessioihin liittyvät tapahtumat</value></data>
+  <data name="USER_SESSION_EVENT_GROUP_NAME" xml:space="preserve"><value>Käyttäjäsessio</value></data>
+  <data name="USER_SESSION_MOVED_EVENT_DESCRIPTION" xml:space="preserve"><value>Käyttäjäsessio siirretty</value></data>
+  <data name="USER_SESSION_MOVED_EVENT_NAME" xml:space="preserve"><value>Siirretty</value></data>
+  <data name="USER_SESSION_STATE_CHANGED_EVENT_NAME" xml:space="preserve"><value>Tila muuttui</value></data>
+  <data name="USER_SESSION_STATE_CHANGED_GROUP_DESCRIPTION" xml:space="preserve"><value>Käyttäjäsession tila muuttui</value></data>
+  <data name="WAITING_LINE_ESTIMATION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"><value>Arvio muuttui -tapahtuma</value></data>
+  <data name="WAITING_LINE_ESTIMATION_CHANGED_EVENT_NAME" xml:space="preserve"><value>Arvio muuttui</value></data>
+  <data name="WAITING_LINE_EVENT_GROUP_DESCRIPTION" xml:space="preserve"><value>Jono</value></data>
+  <data name="WAITING_LINE_EVENT_GROUP_NAME" xml:space="preserve"><value>Jonoon liittyvät tapahtumat</value></data>
+  <data name="WAITING_LINE_TIMED_OUT_EVENT_DESCRIPTION" xml:space="preserve"><value>Jonon aikakatkaisu -tapahtuma</value></data>
+  <data name="WAITING_LINE_TIMED_OUT_EVENT_NAME" xml:space="preserve"><value>Aikakatkaisu</value></data>
+  <data name="WAITING_LINE_USER_ADDED_EVENT_DESCRIPTION" xml:space="preserve"><value>Käyttäjä lisätty -tapahtuma</value></data>
+  <data name="WAITING_LINE_USER_ADDED_EVENT_NAME" xml:space="preserve"><value>Käyttäjä lisätty</value></data>
+  <data name="WAITING_LINE_USER_MOVED_EVENT_DESCRIPTION" xml:space="preserve"><value>Käyttäjä siirretty -tapahtuma</value></data>
+  <data name="WAITING_LINE_USER_MOVED_EVENT_NAME" xml:space="preserve"><value>Käyttäjä siirretty</value></data>
+  <data name="WAITING_LINE_USER_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"><value>Käyttäjä poistettu -tapahtuma</value></data>
+  <data name="WAITING_LINE_USER_REMOVED_EVENT_NAME" xml:space="preserve"><value>Käyttäjä poistettu</value></data>
+  <data name="SHIFT_COUNT_TYPE_DEFAULT" xml:space="preserve"><value>Oletus</value></data>
+  <data name="SHIFT_COUNT_TYPE_SHIFT_CLOSE" xml:space="preserve"><value>Vuoron sulkeminen</value></data>
+  <data name="SHIFT_COUNT_TYPE_SHIFT_OPEN" xml:space="preserve"><value>Vuoron avaaminen</value></data>
+  <data name="PROMOTION_CODE_TYPE_PUBLIC_NAME" xml:space="preserve"><value>Julkinen</value></data>
+  <data name="PROMOTION_CODE_TYPE_RESTRICTED_NAME" xml:space="preserve"><value>Rajoitettu</value></data>
+  <data name="PAYMENT_TRANSACTION_DIRECTION_IN" xml:space="preserve"><value>Saapuva</value></data>
+  <data name="PAYMENT_TRANSACTION_DIRECTION_OUT" xml:space="preserve"><value>Lähtevä</value></data>
+  <data name="PAYMENT_TRANSACTION_TYPE_DEPOSIT_PAYMENT" xml:space="preserve"><value>Talletuksen maksu</value></data>
+  <data name="PAYMENT_TRANSACTION_TYPE_DEPOSIT_PAYMENT_REFUND" xml:space="preserve"><value>Talletuksen palautus</value></data>
+  <data name="PAYMENT_TRANSACTION_TYPE_INVOICE_PAYMENT" xml:space="preserve"><value>Laskumaksu</value></data>
+  <data name="PAYMENT_TRANSACTION_TYPE_INVOICE_PAYMENT_REFUND" xml:space="preserve"><value>Laskumaksun palautus</value></data>
+  <data name="PAYMENT_TRANSACTION_TYPE_PAY_IN" xml:space="preserve"><value>Sisäänmaksu</value></data>
+  <data name="PAYMENT_TRANSACTION_TYPE_PAY_OUT" xml:space="preserve"><value>Ulostamaksu</value></data>
+  <data name="PAYMENT_TRANSACTION_TYPE_WITHDRAW" xml:space="preserve"><value>Nosto</value></data>
+  <data name="PAYMENT_INTENT_STATE_CANCELLED" xml:space="preserve"><value>Peruutettu</value></data>
+  <data name="PAYMENT_INTENT_STATE_COMPLETED" xml:space="preserve"><value>Valmis</value></data>
+  <data name="PAYMENT_INTENT_STATE_EXPIRED" xml:space="preserve"><value>Vanhentunut</value></data>
+  <data name="PAYMENT_INTENT_STATE_FAILED" xml:space="preserve"><value>Epäonnistui</value></data>
+  <data name="PAYMENT_INTENT_STATE_PENDING" xml:space="preserve"><value>Odottaa</value></data>
+  <data name="PAYMENT_INTENT_STATE_CAPTURED" xml:space="preserve"><value>Kaapattu</value></data>
+  <data name="PAYMENT_INTENT_STATE_DECLINED" xml:space="preserve"><value>Hylätty</value></data>
+  <data name="RESERVATION_PAYMENT_STATUS_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"><value>Varauksen maksutila muuttui</value></data>
+  <data name="RESERVATION_PAYMENT_STATUS_CHANGED_EVENT_NAME" xml:space="preserve"><value>Maksutila muuttui</value></data>
+  <data name="PAYMENT_INTENT_CAPTURED_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee maksutarkoituksen kaappauksen</value></data>
+  <data name="PAYMENT_INTENT_CAPTURED_EVENT_NAME" xml:space="preserve"><value>Kaapattu</value></data>
+  <data name="PAYMENT_INTENT_DECLINED_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee maksutarkoituksen hylkäämisen</value></data>
+  <data name="PAYMENT_INTENT_DECLINED_EVENT_NAME" xml:space="preserve"><value>Hylätty</value></data>
+  <data name="PAYMENT_INTENT_FAILED_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee maksutarkoituksen epäonnistumisen</value></data>
+  <data name="PAYMENT_INTENT_FAILED_EVENT_NAME" xml:space="preserve"><value>Epäonnistui</value></data>
+  <data name="PAYMENT_INTENT_CANCELLED_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee maksutarkoituksen peruuttamisen</value></data>
+  <data name="PAYMENT_INTENT_CANCELLED_EVENT_NAME" xml:space="preserve"><value>Peruutettu</value></data>
+  <data name="DEVICE_FISCAL_PRINTER_ERROR_EVENT_DESCRIPTION" xml:space="preserve"><value>Verotulostin virhe -tapahtuma</value></data>
+  <data name="DEVICE_FISCAL_PRINTER_ERROR_EVENT_NAME" xml:space="preserve"><value>Virhe</value></data>
+  <data name="DEVICE_PAYMENT_TERMINAL_ERROR_EVENT_DESCRIPTION" xml:space="preserve"><value>Maksupääte virhe -tapahtuma</value></data>
+  <data name="DEVICE_PAYMENT_TERMINAL_ERROR_EVENT_NAME" xml:space="preserve"><value>Virhe</value></data>
+  <data name="ORDER_STATUS_FILTER_ACCEPTED" xml:space="preserve"><value>Hyväksytty</value></data>
+  <data name="ORDER_STATUS_FILTER_CANCELED" xml:space="preserve"><value>Peruutettu</value></data>
+  <data name="ORDER_STATUS_FILTER_COMPLETED" xml:space="preserve"><value>Valmis</value></data>
+  <data name="ORDER_STATUS_FILTER_ON_HOLD" xml:space="preserve"><value>Odottaa</value></data>
+  <data name="ORDER_STATUS_FILTER_PROCESSING" xml:space="preserve"><value>Käsitellään</value></data>
+  <data name="PROMOTION_LIMIT_TYPE_TOTAL" xml:space="preserve"><value>Yhteensä</value></data>
+  <data name="PROMOTION_LIMIT_TYPE_PER_USER" xml:space="preserve"><value>Per käyttäjä</value></data>
+  <data name="PROMOTION_LIMIT_TYPE_DAILY" xml:space="preserve"><value>Päivittäin</value></data>
+  <data name="PROMOTION_LIMIT_TYPE_WEEKLY" xml:space="preserve"><value>Viikoittain</value></data>
+  <data name="USER_BALANCE_CHANGE_EVENT_NAME" xml:space="preserve"><value>Ilmaisee saldon muutoksen</value></data>
+  <data name="USER_BALANCE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"><value>Saldo muuttui</value></data>
+  <data name="USER_BALANCE_CLOSE_EVENT_NAME" xml:space="preserve"><value>Ilmaisee saldon sulkemisen</value></data>
+  <data name="USER_BALANCE_CLOSE_EVENT_DESCRIPTION" xml:space="preserve"><value>Saldon sulkeminen</value></data>
+  <data name="USER_BILLING_OPTIONS_CHANGE_EVENT_NAME" xml:space="preserve"><value>Laskutusasetusten muutos</value></data>
+  <data name="USER_BILLING_OPTIONS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee laskutusasetusten muutoksen</value></data>
+  <data name="USER_EMAIL_CHANGE_EVENT_NAME" xml:space="preserve"><value>Sähköpostin muutos</value></data>
+  <data name="USER_EMAIL_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee sähköpostin muutoksen</value></data>
+  <data name="USER_USER_GROUP_CHANGE_EVENT_NAME" xml:space="preserve"><value>Käyttäjäryhmän muutos</value></data>
+  <data name="USER_USER_GROUP_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee käyttäjäryhmän muutoksen</value></data>
+  <data name="USER_NEGATIVE_BALANCE_CHANGE_EVENT_NAME" xml:space="preserve"><value>Negatiivisen saldon muutos</value></data>
+  <data name="USER_NEGATIVE_BALANCE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee negatiivisen saldon muutoksen</value></data>
+  <data name="USER_PASSWORD_CHANGE_EVENT_NAME" xml:space="preserve"><value>Salasanan muutos</value></data>
+  <data name="USER_PASSWORD_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee salasanan muutoksen</value></data>
+  <data name="USER_PICTURE_CHANGE_EVENT_NAME" xml:space="preserve"><value>Kuvan muutos</value></data>
+  <data name="USER_PICTURE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee kuvan muutoksen</value></data>
+  <data name="USER_RENAME_CHANGE_EVENT_NAME" xml:space="preserve"><value>Nimeä uudelleen</value></data>
+  <data name="USER_RENAME_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee käyttäjän uudelleennimeämisen</value></data>
+  <data name="USER_SMART_CARD_CHANGE_EVENT_NAME" xml:space="preserve"><value>Sirukortin muutos</value></data>
+  <data name="USER_SMART_CARD_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee sirukortin muutoksen</value></data>
+  <data name="USER_USAGE_SESSION_CHANGE_EVENT_NAME" xml:space="preserve"><value>Käyttösession muutos</value></data>
+  <data name="USER_USAGE_SESSION_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee käyttösession muutoksen</value></data>
+  <data name="BILLING_OPTION_NONE_NAME" xml:space="preserve"><value>Ei mitään</value></data>
+  <data name="BILLING_OPTION_DISABLE_TIME_OFFER_NAME" xml:space="preserve"><value>Poista aikapaketit käytöstä</value></data>
+  <data name="BILLING_OPTION_DISABLE_FIXED_TIME_NAME" xml:space="preserve"><value>Poista kiinteä aika käytöstä</value></data>
+  <data name="BILLING_OPTION_DISABLE_DEPOSITS_NAME" xml:space="preserve"><value>Poista talletukset käytöstä</value></data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_EMAIL" xml:space="preserve"><value>Sähköposti</value></data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_FACEBOOK_MESSENGER_NAME" xml:space="preserve"><value>Facebook Messenger</value></data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_INSTAGRAM_NAME" xml:space="preserve"><value>Instagram</value></data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_SMS_NAME" xml:space="preserve"><value>SMS</value></data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_TELEGRAM_NAME" xml:space="preserve"><value>Telegram</value></data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_TWITTER_DM_NAME" xml:space="preserve"><value>Twitter</value></data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_VIBER_NAME" xml:space="preserve"><value>Viber</value></data>
+  <data name="DEVICE_BARCODE_SCANNED_EVENT_DESCRIPTION" xml:space="preserve"><value>Viivakoodi skannattu -tapahtuma</value></data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_WHATS_APP_NAME" xml:space="preserve"><value>WhatsApp</value></data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_WE_CHAT_NAME" xml:space="preserve"><value>WeChat</value></data>
+  <data name="HOST_DELETE_RESULT_HOST_HAS_RESERVED_GUEST_DESCRIPTION" xml:space="preserve"><value>Asemalla on varattuja vieraita</value></data>
+  <data name="HOST_DELETE_RESULT_HOST_HAS_RESERVED_GUEST_NAME" xml:space="preserve"><value>Asemalla varattu vieras</value></data>
+  <data name="HOST_DELETE_RESULT_HOST_IN_USE_DESCRIPTION" xml:space="preserve"><value>Asema on käytössä</value></data>
+  <data name="HOST_DELETE_RESULT_HOST_IN_USE_NAME" xml:space="preserve"><value>Asema käytössä</value></data>
+  <data name="HOST_DELETE_RESULT_HOST_IS_RESERVED_DESCRIPTION" xml:space="preserve"><value>Asemalla on varaus</value></data>
+  <data name="HOST_DELETE_RESULT_HOST_IS_RESERVED_NAME" xml:space="preserve"><value>Asema on varattu</value></data>
+  <data name="HOST_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"><value>Aseman poistaminen onnistui</value></data>
+  <data name="HOST_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve"><value>Asema poistettu</value></data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_DESCRIPTION" xml:space="preserve"><value>Tuoteryhmän poistaminen epäonnistui</value></data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_NAME" xml:space="preserve"><value>Tuoteryhmän poistaminen epäonnistui</value></data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPTY_DESCRIPTION" xml:space="preserve"><value>Ei-tyhjää tuoteryhmää ei voi poistaa</value></data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPTY_NAME" xml:space="preserve"><value>Tuoteryhmä ei ole tyhjä</value></data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"><value>Tuoteryhmän poistaminen onnistui</value></data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve"><value>Tuoteryhmä poistettu</value></data>
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_DESCRIPTION" xml:space="preserve"><value>Sovellusluokan poistaminen epäonnistui</value></data>
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_NAME" xml:space="preserve"><value>Sovellusluokan poistaminen epäonnistui</value></data>
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPTY_DESCRIPTION" xml:space="preserve"><value>Ei-tyhjää sovellusluokkaa ei voi poistaa</value></data>
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPTY_NAME" xml:space="preserve"><value>Sovellusluokka ei ole tyhjä</value></data>
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"><value>Sovellusluokan poistaminen onnistui</value></data>
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve"><value>Sovellusluokka poistettu</value></data>
+  <data name="WAITING_LINE_STATE_ACTIVE_NAME" xml:space="preserve"><value>Aktiivinen</value></data>
+  <data name="WAITING_LINE_STATE_PROCESSED_NAME" xml:space="preserve"><value>Käsitelty</value></data>
+  <data name="WAITING_LINE_STATE_CANCELED_NAME" xml:space="preserve"><value>Peruutettu</value></data>
+  <data name="STOCK_TRANSACTION_TYPE_ADD_NAME" xml:space="preserve"><value>Lisää</value></data>
+  <data name="STOCK_TRANSACTION_TYPE_REMOVE_NAME" xml:space="preserve"><value>Poista</value></data>
+  <data name="STOCK_TRANSACTION_TYPE_RETURN_NAME" xml:space="preserve"><value>Palauta</value></data>
+  <data name="STOCK_TRANSACTION_TYPE_SALE_NAME" xml:space="preserve"><value>Myynti</value></data>
+  <data name="STOCK_TRANSACTION_TYPE_SET_NAME" xml:space="preserve"><value>Aseta</value></data>
+  <data name="DEPOSIT_TRANSACTION_TYPE_CHARGE_NAME" xml:space="preserve"><value>Veloitus</value></data>
+  <data name="DEPOSIT_TRANSACTION_TYPE_CREDIT_NAME" xml:space="preserve"><value>Luotto</value></data>
+  <data name="DEPOSIT_TRANSACTION_TYPE_DEPOSIT_NAME" xml:space="preserve"><value>Talletus</value></data>
+  <data name="DEPOSIT_TRANSACTION_TYPE_WITHDRAW_NAME" xml:space="preserve"><value>Nosto</value></data>
+  <data name="USER_SESSION_STATE_ACTIVE_NAME" xml:space="preserve"><value>Aktiivinen</value></data>
+  <data name="USER_SESSION_STATE_NONE_NAME" xml:space="preserve"><value>Odottaa</value></data>
+  <data name="USER_SESSION_STATE_ENDED_NAME" xml:space="preserve"><value>Päättynyt</value></data>
+  <data name="USER_SESSION_STATE_PENDING_NAME" xml:space="preserve"><value>Odottaa</value></data>
+  <data name="USER_SESSION_STATE_PAUSED_NAME" xml:space="preserve"><value>Pysäytetty</value></data>
+  <data name="USER_SESSION_STATE_MOVED_NAME" xml:space="preserve"><value>Siirretty</value></data>
+  <data name="ENTITY_EVENT_TYPE_ADDED_NAME" xml:space="preserve"><value>Lisätty</value></data>
+  <data name="ENTITY_EVENT_TYPE_REMOVED_NAME" xml:space="preserve"><value>Poistettu</value></data>
+  <data name="ENTITY_EVENT_TYPE_MODIFIED_NAME" xml:space="preserve"><value>Muutettu</value></data>
+  <data name="TASK_TYPE_JUNCTION_NAME" xml:space="preserve"><value>Liitoskohta</value></data>
+  <data name="TASK_TYPE_NOTIFICATION_NAME" xml:space="preserve"><value>Ilmoitus</value></data>
+  <data name="TASK_TYPE_PROCESS_NAME" xml:space="preserve"><value>Prosessi</value></data>
+  <data name="TASK_TYPE_SCRIPT_NAME" xml:space="preserve"><value>Script</value></data>
+  <data name="LOGIN_RESULT_ACCOUNT_DISABLED_DESCRIPTION" xml:space="preserve"><value>Määritetty käyttäjätili on poistettu käytöstä</value></data>
+  <data name="LOGIN_RESULT_ACCOUNT_DISABLED_NAME" xml:space="preserve"><value>Tili poistettu käytöstä</value></data>
+  <data name="LOGIN_RESULT_ALREADY_LOGGED_IN_DESCRIPTION" xml:space="preserve"><value>Käyttäjä on jo kirjautunut sisään</value></data>
+  <data name="LOGIN_RESULT_ALREADY_LOGGED_IN_NAME" xml:space="preserve"><value>Jo kirjautunut</value></data>
+  <data name="LOGIN_RESULT_DENIED_DESCRIPTION" xml:space="preserve"><value>Kirjautuminen evättiin</value></data>
+  <data name="LOGIN_RESULT_DENIED_NAME" xml:space="preserve"><value>Kirjautuminen evätty</value></data>
+  <data name="LOGIN_RESULT_FAILED_DESCRIPTION" xml:space="preserve"><value>Määrittelemätön kirjautumisvirhe</value></data>
+  <data name="LOGIN_RESULT_FAILED_NAME" xml:space="preserve"><value>Kirjautuminen epäonnistui</value></data>
+  <data name="LOGIN_RESULT_INSUFFICIENT_BALANCE_DESCRIPTION" xml:space="preserve"><value>Määritetyllä käyttäjällä on riittämätön saldo</value></data>
+  <data name="LOGIN_RESULT_INSUFFICIENT_BALANCE_NAME" xml:space="preserve"><value>Riittämätön saldo</value></data>
+  <data name="LOGIN_RESULT_INVALID_CREDENTIALS_DESCRIPTION" xml:space="preserve"><value>Määritetty käyttäjänimi tai salasana on virheellinen</value></data>
+  <data name="LOGIN_RESULT_INVALID_CREDENTIALS_NAME" xml:space="preserve"><value>Virheellinen käyttäjänimi tai salasana</value></data>
+  <data name="LOGIN_RESULT_INVALID_HOST_ID_DESCRIPTION" xml:space="preserve"><value>Määritetty asematunnus on virheellinen</value></data>
+  <data name="LOGIN_RESULT_INVALID_HOST_ID_NAME" xml:space="preserve"><value>Virheellinen asema</value></data>
+  <data name="LOGIN_RESULT_INVALID_PARAMETERS_DESCRIPTION" xml:space="preserve"><value>Määritetyt parametrit ovat virheellisiä</value></data>
+  <data name="LOGIN_RESULT_INVALID_PARAMETERS_NAME" xml:space="preserve"><value>Virheelliset parametrit</value></data>
+  <data name="LOGIN_RESULT_INVALID_PASSWORD_DESCRIPTION" xml:space="preserve"><value>Määritetty salasana on virheellinen</value></data>
+  <data name="LOGIN_RESULT_INVALID_PASSWORD_NAME" xml:space="preserve"><value>Virheellinen salasana</value></data>
+  <data name="LOGIN_RESULT_INVALID_SLOT_DESCRIPTION" xml:space="preserve"><value>Määritetty paikka on virheellinen</value></data>
+  <data name="LOGIN_RESULT_INVALID_SLOT_NAME" xml:space="preserve"><value>Virheellinen paikka</value></data>
+  <data name="LOGIN_RESULT_INVALID_USERNAME_DESCRIPTION" xml:space="preserve"><value>Määritetty käyttäjänimi on virheellinen</value></data>
+  <data name="LOGIN_RESULT_INVALID_USERNAME_NAME" xml:space="preserve"><value>Virheellinen käyttäjänimi</value></data>
+  <data name="LOGIN_RESULT_INVALID_USER_GROUP_ID_DESCRIPTION" xml:space="preserve"><value>Määritetty käyttäjäryhmätunnus on virheellinen</value></data>
+  <data name="LOGIN_RESULT_INVALID_USER_GROUP_ID_NAME" xml:space="preserve"><value>Virheellinen käyttäjäryhmä</value></data>
+  <data name="LOGIN_RESULT_INVALID_USER_ID_DESCRIPTION" xml:space="preserve"><value>Määritetty käyttäjätunnus on virheellinen</value></data>
+  <data name="LOGIN_RESULT_INVALID_USER_ID_NAME" xml:space="preserve"><value>Virheellinen käyttäjä</value></data>
+  <data name="LOGIN_RESULT_LOGIN_IN_PROGRESS_DESCRIPTION" xml:space="preserve"><value>Kirjautuminen käynnissä</value></data>
+  <data name="LOGIN_RESULT_LOGIN_IN_PROGRESS_NAME" xml:space="preserve"><value>Käynnissä</value></data>
+  <data name="LOGIN_RESULT_LOGOUT_IN_PROGRESS_DESCRIPTION" xml:space="preserve"><value>Uloskirjautuminen käynnissä</value></data>
+  <data name="LOGIN_RESULT_LOGOUT_IN_PROGRESS_NAME" xml:space="preserve"><value>Käynnissä</value></data>
+  <data name="LOGIN_RESULT_MAXIMUM_SESSIONS_REACHED_DESCRIPTION" xml:space="preserve"><value>Kirjautuminen epäonnistui enimmäissessiomäärän vuoksi</value></data>
+  <data name="LOGIN_RESULT_MAXIMUM_SESSIONS_REACHED_NAME" xml:space="preserve"><value>Enimmäissessiomäärä saavutettu</value></data>
+  <data name="LOGIN_RESULT_NOT_IN_WAITING_LINE_DESCRIPTION" xml:space="preserve"><value>Määritetty käyttäjä ei ole jonossa</value></data>
+  <data name="LOGIN_RESULT_NOT_IN_WAITING_LINE_NAME" xml:space="preserve"><value>Ei jonossa</value></data>
+  <data name="LOGIN_RESULT_OPERATOR_USER_GROUP_DENIED_DESCRIPTION" xml:space="preserve"><value>Käyttäjäryhmällä ei ole lupaa kirjautua managerin kautta</value></data>
+  <data name="LOGIN_RESULT_OPERATOR_USER_GROUP_DENIED_NAME" xml:space="preserve"><value>Käyttäjäryhmän kirjautuminen evätty operaattorille</value></data>
+  <data name="LOGIN_RESULT_RESTRICTED_BY_AGE_DESCRIPTION" xml:space="preserve"><value>Kirjautuminen ei sallittu tällä hetkellä ikärajoitusten vuoksi</value></data>
+  <data name="LOGIN_RESULT_RESTRICTED_BY_AGE_NAME" xml:space="preserve"><value>Kirjautumisen ikärajoitukset</value></data>
+  <data name="LOGIN_RESULT_SLOT_IN_USE_DESCRIPTION" xml:space="preserve"><value>Määritetty paikka on jo käytössä</value></data>
+  <data name="LOGIN_RESULT_SLOT_IN_USE_NAME" xml:space="preserve"><value>Paikka on jo käytössä</value></data>
+  <data name="LOGIN_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"><value>Käyttäjän kirjautuminen onnistui</value></data>
+  <data name="LOGIN_RESULT_SUCCESS_NAME" xml:space="preserve"><value>Kirjautuminen onnistui</value></data>
+  <data name="INVOICE_STATUS_PAID_NAME" xml:space="preserve"><value>Maksettu</value></data>
+  <data name="INVOICE_STATUS_PARTIALLY_PAID_NAME" xml:space="preserve"><value>Osittain maksettu</value></data>
+  <data name="INVOICE_STATUS_UNPAID_NAME" xml:space="preserve"><value>Maksamatta</value></data>
+  <data name="USER_SESSION_STATE_GRACE_NAME" xml:space="preserve"><value>Karenssi</value></data>
+  <data name="USER_NOTE_ADDED_EVENT_NAME" xml:space="preserve"><value>Huomio lisätty</value></data>
+  <data name="USER_NOTE_ADDED_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee käyttäjän huomion lisäämisen</value></data>
+  <data name="USER_NOTE_DELETED_EVENT_NAME" xml:space="preserve"><value>Huomio poistettu</value></data>
+  <data name="USER_NOTE_DELETED_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee käyttäjän huomion poistamisen</value></data>
+  <data name="USER_NOTE_UPDATED_EVENT_NAME" xml:space="preserve"><value>Huomio päivitetty</value></data>
+  <data name="USER_NOTE_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee käyttäjän huomion päivittämisen</value></data>
+  <data name="RESERVATION_CURRENT_CONFIRM_RESULT_SUCCESS_NAME" xml:space="preserve"><value>Onnistui</value></data>
+  <data name="RESERVATION_CURRENT_CONFIRM_RESULT_INVALID_PIN_NAME" xml:space="preserve"><value>Virheellinen PIN</value></data>
+  <data name="RESERVATION_CURRENT_CONFIRM_RESULT_ERROR_NAME" xml:space="preserve"><value>Virhe</value></data>
+  <data name="RESERVATION_CURRENT_CONFIRMED_RESULT_CONFIRMED_NAME" xml:space="preserve"><value>Vahvistettu</value></data>
+  <data name="RESERVATION_CURRENT_CONFIRMED_RESULT_NO_RESERVATION_NAME" xml:space="preserve"><value>Ei varausta</value></data>
+  <data name="RESERVATION_CURRENT_CONFIRMED_RESULT_UNCONFIRMED_NAME" xml:space="preserve"><value>Vahvistamaton</value></data>
+  <data name="RESERVATION_CURRENT_CONFIRM_RESULT_NO_RESERVATION_NAME" xml:space="preserve"><value>Ei varausta</value></data>
+  <data name="USER_CREATED_EVENT_NAME" xml:space="preserve"><value>Käyttäjä luotu</value></data>
+  <data name="USER_CREATED_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee käyttäjätilin luomisen</value></data>
+  <data name="ASSET_EVENT_GROUP_NAME" xml:space="preserve"><value>Laite</value></data>
+  <data name="ASSET_EVENT_GROUP_DESCRIPTION" xml:space="preserve"><value>Laitteisiin liittyvät tapahtumat</value></data>
+  <data name="ASSET_CHECKED_IN_EVENT_EVENT_NAME" xml:space="preserve"><value>Kirjattu sisään</value></data>
+  <data name="ASSET_CHECKED_IN_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee laitteen sisäänkirjauksen</value></data>
+  <data name="ASSET_CHECKED_OUT_EVENT_EVENT_NAME" xml:space="preserve"><value>Kirjattu ulos</value></data>
+  <data name="ASSET_CHECKED_OUT_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee laitteen uloskirjauksen</value></data>
+  <data name="PAYMENT_INTENT_EXPIRED_EVENT_NAME" xml:space="preserve"><value>Vanhentunut</value></data>
+  <data name="PAYMENT_INTENT_EXPIRED_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee maksutarkoituksen vanhentumisen</value></data>
+  <data name="REPORT_PRESET_EVENT_GROUP_NAME" xml:space="preserve"><value>Raporttimalli</value></data>
+  <data name="REPORT_PRESET_EVENT_GROUP_DESCRIPTION" xml:space="preserve"><value>Raporttimalleihin liittyvät tapahtumat</value></data>
+  <data name="USER_GUEST_EVENT_GROUP_NAME" xml:space="preserve"><value>Vieraskäyttäjä</value></data>
+  <data name="USER_GUEST_EVENT_GROUP_DESCRIPTION" xml:space="preserve"><value>Vieraskäyttäjiin liittyvät tapahtumat</value></data>
+</root>
