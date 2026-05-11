@@ -78,9 +78,15 @@ namespace Gizmo.Web.Api.Models
         public bool IsConnected { get; init; }
 
         /// <summary>
-        /// Active sessions on this host. Empty indicates no users logged in.
+        /// The layout group id this host belongs to in the resolved layout.
         /// </summary>
         [Key(11)]
+        public int LayoutGroupId { get; init; }
+
+        /// <summary>
+        /// Active sessions on this host. Empty indicates no users logged in.
+        /// </summary>
+        [Key(12)]
         public IEnumerable<HostStatusSessionModel> Sessions { get; init; } = [];
     }
 }
