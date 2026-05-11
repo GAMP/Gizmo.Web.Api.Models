@@ -1,0 +1,1566 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema"> 
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" />
+              </xs:sequence>
+              <xs:attribute name="name" use="required" type="xsd:string" />
+              <xs:attribute name="type" type="xsd:string" />
+              <xs:attribute name="mimetype" type="xsd:string" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xsd:string" />
+              <xs:attribute name="name" type="xsd:string" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3" />
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" />
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ASSET_CHECKED_IN_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>يشير إلى إعادة المعدات</value>
+  </data>
+  <data name="ASSET_CHECKED_IN_EVENT_EVENT_NAME" xml:space="preserve">
+    <value>تمت الإعادة</value>
+  </data>
+  <data name="ASSET_CHECKED_OUT_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>يشير إلى إخراج المعدات</value>
+  </data>
+  <data name="ASSET_CHECKED_OUT_EVENT_EVENT_NAME" xml:space="preserve">
+    <value>تم الإخراج</value>
+  </data>
+  <data name="ASSET_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>الأحداث المتعلقة بالمعدات</value>
+  </data>
+  <data name="ASSET_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>المعدات</value>
+  </data>
+  <data name="ASSISTANCE_REQUEST_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>يشير إلى تغيير حالة طلب المساعدة</value>
+  </data>
+  <data name="ASSISTANCE_REQUEST_CHANGE_EVENT_EVENT_NAME" xml:space="preserve">
+    <value>تغيير</value>
+  </data>
+  <data name="ASSISTANCE_REQUEST_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يشير إلى إنشاء طلب مساعدة</value> 
+  </data> 
+  <data name="ASSISTANCE_REQUEST_CREATED_EVENT_EVENT_NAME" xml:space="preserve"> 
+    <value>تم الإنشاء</value> 
+  </data> 
+  <data name="ASSISTANCE_REQUEST_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
+    <value>الأحداث المتعلقة بطلبات المساعدة</value> 
+  </data> 
+  <data name="ASSISTANCE_REQUEST_EVENT_GROUP_NAME" xml:space="preserve"> 
+    <value>طلب المساعدة</value> 
+  </data> 
+  <data name="AUTHENTICATION_STATE_ERROR_DESCRIPTION" xml:space="preserve"> 
+    <value>فشلت المصادقة بسبب خطأ</value> 
+  </data> 
+  <data name="AUTHENTICATION_STATE_ERROR_NAME" xml:space="preserve"> 
+    <value>خطأ</value> 
+  </data> 
+  <data name="AUTHENTICATION_STATE_INVALID_DESCRIPTION" xml:space="preserve"> 
+    <value>حالة المصادقة غير صالحة</value> 
+  </data> 
+  <data name="AUTHENTICATION_STATE_INVALID_NAME" xml:space="preserve"> 
+    <value>غير صالح</value> 
+  </data> 
+  <data name="AUTHENTICATION_STATE_NETWORK_ERROR_DESCRIPTION" xml:space="preserve"> 
+    <value>فشلت المصادقة بسبب خطأ في الشبكة</value> 
+  </data> 
+  <data name="AUTHENTICATION_STATE_NETWORK_ERROR_NAME" xml:space="preserve"> 
+    <value>خطأ في الشبكة</value> 
+  </data> 
+  <data name="AUTHENTICATION_STATE_NO_TOKEN_DESCRIPTION" xml:space="preserve"> 
+    <value>لا يوجد رمز مميز للمصادقة</value> 
+  </data> 
+  <data name="AUTHENTICATION_STATE_NO_TOKEN_NAME" xml:space="preserve">
+    <value>لا يوجد رمز</value> 
+  </data> 
+  <data name="AUTHENTICATION_STATE_UNAUTHORIZED_DESCRIPTION" xml:space="preserve"> 
+    <value>غير مصرح</value> 
+  </data> 
+  <data name="AUTHENTICATION_STATE_UNAUTHORIZED_NAME" xml:space="preserve"> 
+    <value>غير مصرح</value> 
+  </data> 
+  <data name="AUTHENTICATION_STATE_VALID_DESCRIPTION" xml:space="preserve"> 
+    <value>المصادقة صالحة</value> 
+  </data> 
+  <data name="AUTHENTICATION_STATE_VALID_NAME" xml:space="preserve"> 
+    <value>صالح</value> 
+  </data> 
+  <data name="AUTHORIZATION_RESULT_ERROR_DESCRIPTION" xml:space="preserve"> 
+    <value>فشل بسبب خطأ</value> 
+  </data> 
+  <data name="AUTHORIZATION_RESULT_ERROR_NAME" xml:space="preserve"> 
+    <value>خطأ</value> 
+  </data> 
+  <data name="AUTHORIZATION_RESULT_INVALID_ID_DESCRIPTION" xml:space="preserve"> 
+    <value>فشل بسبب معرّف نسخة غير صالح</value> 
+  </data> 
+  <data name="AUTHORIZATION_RESULT_INVALID_ID_NAME" xml:space="preserve"> 
+    <value>معرّف غير صالح</value> 
+  </data> 
+  <data name="AUTHORIZATION_RESULT_NETWORK_ERROR_DESCRIPTION" xml:space="preserve"> 
+    <value>فشل بسبب خطأ في الشبكة</value> 
+  </data> 
+  <data name="AUTHORIZATION_RESULT_NETWORK_ERROR_NAME" xml:space="preserve"> 
+    <value>خطأ في الشبكة</value>
+  </data> 
+  <data name="AUTHORIZATION_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
+    <value>نجح التفويض</value> 
+  </data> 
+  <data name="AUTHORIZATION_RESULT_SUCCESS_NAME" xml:space="preserve"> 
+    <value>نجاح</value>
+  </data> 
+  <data name="AUTHORIZATION_RESULT_TOKEN_EXPIRED_DESCRIPTION" xml:space="preserve"> 
+    <value>فشل بسبب انتهاء صلاحية الرمز المميز</value> 
+  </data> 
+  <data name="AUTHORIZATION_RESULT_TOKEN_EXPIRED_NAME" xml:space="preserve"> 
+    <value>انتهى الرمز</value> 
+  </data> 
+  <data name="AUTHORIZATION_RESULT_UNAUTHORIZED_DESCRIPTION" xml:space="preserve"> 
+    <value>غير مصرح</value> 
+  </data> 
+  <data name="AUTHORIZATION_RESULT_UNAUTHORIZED_NAME" xml:space="preserve"> 
+    <value>غير مصرح</value> 
+  </data> 
+  <data name="AUTHORIZATION_WARNINGS_FUTURE_PAYMENT_DESCRIPTION" xml:space="preserve"> 
+    <value>قد تفشل المدفوعات المستقبلية بسبب انتهاء صلاحية البطاقة</value> 
+  </data> 
+  <data name="AUTHORIZATION_WARNINGS_FUTURE_PAYMENT_NAME" xml:space="preserve"> 
+    <value>تحذير دفع مستقبلي</value> 
+  </data> 
+  <data name="AUTHORIZATION_WARNINGS_NONE_DESCRIPTION" xml:space="preserve"> 
+    <value>لا شيء</value> 
+  </data> 
+  <data name="AUTHORIZATION_WARNINGS_NONE_NAME" xml:space="preserve"> 
+    <value>لا شيء</value> 
+  </data> 
+  <data name="AUTHORIZATION_WARNINGS_PAYMENT_FAILURE_DESCRIPTION" xml:space="preserve"> 
+    <value>لم تنجح محاولة الدفع</value> 
+  </data> 
+  <data name="AUTHORIZATION_WARNINGS_PAYMENT_FAILURE_NAME" xml:space="preserve"> 
+    <value>فشل الدفع</value> 
+  </data> 
+  <data name="BRANCH_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>حدث إنشاء الفرع</value>
+  </data> 
+  <data name="BRANCH_CREATED_EVENT_NAME" xml:space="preserve"> 
+    <value>تم إنشاء الفرع</value> 
+  </data> 
+  <data name="BRANCH_DELETED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>حدث حذف الفرع</value>
+  </data> 
+  <data name="BRANCH_DELETED_EVENT_NAME" xml:space="preserve"> 
+    <value>تم الحذف</value> 
+  </data> 
+  <data name="BRANCH_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
+    <value>الأحداث المتعلقة بالفروع</value> 
+  </data> 
+  <data name="BRANCH_EVENT_GROUP_NAME" xml:space="preserve"> 
+    <value>الفرع</value> 
+  </data> 
+  <data name="BRANCH_OPERATOR_ADDED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>حدث إضافة المشغّل</value>
+  </data> 
+  <data name="BRANCH_OPERATOR_ADDED_EVENT_NAME" xml:space="preserve"> 
+    <value>تمت إضافة المشغّل</value>
+  </data> 
+  <data name="BRANCH_OPERATOR_DEFAULT_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>حدث تغيير الفرع الافتراضي للمشغّل</value>
+  </data> 
+  <data name="BRANCH_OPERATOR_DEFAULT_CHANGED_EVENT_NAME" xml:space="preserve"> 
+    <value>تغيير الفرع الافتراضي للمشغّل</value>
+  </data> 
+  <data name="BRANCH_OPERATOR_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>حدث إزالة المشغّل</value>
+  </data> 
+  <data name="BRANCH_OPERATOR_REMOVED_EVENT_NAME" xml:space="preserve"> 
+    <value>تمت إزالة المشغّل</value> 
+  </data> 
+  <data name="BRANCH_UNDELETED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>حدث استعادة الفرع</value>
+  </data> 
+  <data name="BRANCH_UNDELETED_EVENT_NAME" xml:space="preserve"> 
+    <value>تمت الاستعادة</value> 
+  </data> 
+  <data name="BRANCH_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>حدث تحديث الفرع</value> 
+  </data> 
+  <data name="BRANCH_UPDATED_EVENT_NAME" xml:space="preserve"> 
+    <value>تم تحديث الفرع</value> 
+  </data> 
+  <data name="DEVICE_BARCODE_SCANNED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>حدث مسح الباركود</value> 
+  </data> 
+  <data name="DEVICE_BARCODE_SCANNED_EVENT_NAME" xml:space="preserve"> 
+    <value>تم مسح الباركود</value> 
+  </data> 
+  <data name="DEVICE_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
+    <value>الأحداث المتعلقة بالجهاز</value> 
+  </data> 
+  <data name="DEVICE_EVENT_GROUP_NAME" xml:space="preserve"> 
+    <value>الجهاز</value> 
+  </data> 
+  <data name="DEVICE_SMART_CARD_READER_DATA_EVENT_NAME" xml:space="preserve"> 
+    <value>حدث بيانات قارئ البطاقة الذكية</value> 
+  </data> 
+  <data name="DEVICE_SMART_CARD_READER_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>حدث بيانات قارئ البطاقة الذكية</value> 
+  </data> 
+  <data name="DISCOUNT_APPLY_TYPE_ORDER" xml:space="preserve"> 
+    <value>الطلب</value> 
+  </data> 
+  <data name="DISCOUNT_APPLY_TYPE_ORDER_LINE" xml:space="preserve"> 
+    <value>بند الطلب</value> 
+  </data> 
+  <data name="DISCOUNT_CALCULATION_TYPE_FIXED" xml:space="preserve"> 
+    <value>ثابت</value> 
+  </data> 
+  <data name="DISCOUNT_CALCULATION_TYPE_PERCENTAGE" xml:space="preserve"> 
+    <value>نسبة مئوية</value> 
+  </data> 
+  <data name="DISCOUNT_REWARD_TYPE_BONUS" xml:space="preserve"> 
+    <value>مكافأة</value> 
+  </data> 
+  <data name="DISCOUNT_REWARD_TYPE_DISCOUNT" xml:space="preserve"> 
+    <value>خصم</value> 
+  </data> 
+  <data name="DOCUMENT_TYPES_CONSIGNMENT_NOTE" xml:space="preserve"> 
+    <value>مذكرة شحن</value> 
+  </data> 
+  <data name="DOCUMENT_TYPES_DELIVERY_NOTE" xml:space="preserve"> 
+    <value>مذكرة تسليم</value> 
+  </data> 
+  <data name="DOCUMENT_TYPES_DISPATCH_NOTE" xml:space="preserve"> 
+    <value>مذكرة إرسال</value> 
+  </data> 
+  <data name="DOCUMENT_TYPES_INVOICE" xml:space="preserve"> 
+    <value>فاتورة</value>
+  </data> 
+  <data name="DOCUMENT_TYPES_STOCK_TAKE_REPORT" xml:space="preserve"> 
+    <value>تقرير جرد المخزون</value> 
+  </data> 
+  <data name="DOCUMENT_TYPES_WORK_ORDER" xml:space="preserve"> 
+    <value>أمر عمل</value> 
+  </data> 
+  <data name="DOCUMENT_TYPES_WRITE_OFF_REPORT" xml:space="preserve"> 
+    <value>تقرير الشطب</value> 
+  </data> 
+  <data name="ENTITY_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يشير إلى تغيير كيان في قاعدة البيانات</value> 
+  </data> 
+  <data name="ENTITY_CHANGE_EVENT_NAME" xml:space="preserve"> 
+    <value>تغيير كيان قاعدة البيانات</value> 
+  </data> 
+  <data name="ENTITY_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
+    <value>الأحداث المتعلقة بكيانات قاعدة البيانات</value> 
+  </data> 
+  <data name="ENTITY_EVENT_GROUP_NAME" xml:space="preserve"> 
+    <value>كيان قاعدة البيانات</value> 
+  </data> 
+  <data name="HOST_COMPUTER_CLIENT_MODULE_VERSION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>حدث تغيير إصدار العميل</value> 
+  </data> 
+  <data name="HOST_COMPUTER_CLIENT_MODULE_VERSION_CHANGED_EVENT_NAME" xml:space="preserve"> 
+    <value>تغيير إصدار العميل</value> 
+  </data> 
+  <data name="HOST_COMPUTER_CONNECTION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>حدث تغيير الاتصال</value> 
+  </data> 
+  <data name="HOST_COMPUTER_CONNECTION_CHANGED_EVENT_NAME" xml:space="preserve"> 
+    <value>تغيير الاتصال</value> 
+  </data> 
+  <data name="HOST_COMPUTER_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
+    <value>الأحداث المتعلقة بالحاسوب المضيف</value> 
+  </data> 
+  <data name="HOST_COMPUTER_EVENT_GROUP_NAME" xml:space="preserve"> 
+    <value>الحاسوب المضيف</value> 
+  </data> 
+  <data name="HOST_COMPUTER_INPUT_LOCK_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>حدث تغيير قفل الإدخال</value> 
+  </data> 
+  <data name="HOST_COMPUTER_INPUT_LOCK_CHANGED_EVENT_NAME" xml:space="preserve"> 
+    <value>تغيير قفل الإدخال</value> 
+  </data> 
+  <data name="HOST_COMPUTER_MAINTENANCE_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>حدث تغيير وضع الصيانة</value> 
+  </data> 
+  <data name="HOST_COMPUTER_MAINTENANCE_CHANGED_EVENT_NAME" xml:space="preserve"> 
+    <value>تغيير وضع الصيانة</value> 
+  </data> 
+  <data name="HOST_COMPUTER_SECURITY_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>حدث تغيير الحماية</value> 
+  </data> 
+  <data name="HOST_COMPUTER_SECURITY_CHANGED_EVENT_NAME" xml:space="preserve"> 
+    <value>تغيير الحماية</value> 
+  </data> 
+  <data name="HOST_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>الأحداث المتعلقة بالمحطة</value>
+  </data>
+  <data name="HOST_EVENT_GROUP_NAME" xml:space="preserve"> 
+    <value>المحطة</value> 
+  </data> 
+  <data name="HOST_IN_ORDER_STATE_CHANGED_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
+    <value>تغيرت حالة الطلب للمحطة</value> 
+  </data> 
+  <data name="HOST_IN_ORDER_STATE_CHANGED_EVENT_GROUP_NAME" xml:space="preserve"> 
+    <value>تغيير حالة الطلب</value> 
+  </data> 
+  <data name="HOST_LAYOUT_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>حدث إنشاء تخطيط المحطة</value>
+  </data> 
+  <data name="HOST_LAYOUT_CREATED_EVENT_NAME" xml:space="preserve"> 
+    <value>تم إنشاء تخطيط المحطة</value> 
+  </data> 
+  <data name="HOST_LAYOUT_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
+    <value>الأحداث المتعلقة بتخطيط المحطة</value>
+  </data> 
+  <data name="HOST_LAYOUT_EVENT_GROUP_NAME" xml:space="preserve"> 
+    <value>تخطيط المحطة</value>
+  </data> 
+  <data name="HOST_LAYOUT_GROUP_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>حدث إنشاء مجموعة تخطيط المحطة</value>
+  </data> 
+  <data name="HOST_LAYOUT_GROUP_CREATED_EVENT_NAME" xml:space="preserve"> 
+    <value>تم إنشاء مجموعة تخطيط المحطة</value>
+  </data> 
+  <data name="HOST_LAYOUT_GROUP_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
+    <value>الأحداث المتعلقة بمجموعة تخطيط المحطة</value>
+  </data> 
+  <data name="HOST_LAYOUT_GROUP_EVENT_GROUP_NAME" xml:space="preserve"> 
+    <value>مجموعة تخطيط المحطة</value>
+  </data> 
+  <data name="HOST_LAYOUT_GROUP_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>حدث إزالة مجموعة تخطيط المحطة</value>
+  </data> 
+  <data name="HOST_LAYOUT_GROUP_REMOVED_EVENT_NAME" xml:space="preserve"> 
+    <value>تمت إزالة مجموعة تخطيط المحطة</value>
+  </data> 
+  <data name="HOST_LAYOUT_GROUP_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>حدث تحديث مجموعة تخطيط المحطة</value>
+  </data> 
+  <data name="HOST_LAYOUT_GROUP_UPDATED_EVENT_NAME" xml:space="preserve"> 
+    <value>تم تحديث مجموعة تخطيط المحطة</value>
+  </data> 
+  <data name="HOST_LAYOUT_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>حدث إزالة تخطيط المحطة</value>
+  </data> 
+  <data name="HOST_LAYOUT_REMOVED_EVENT_NAME" xml:space="preserve"> 
+    <value>تمت إزالة تخطيط المحطة</value>
+  </data> 
+  <data name="HOST_LAYOUT_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>حدث تحديث تخطيط المحطة</value>
+  </data> 
+  <data name="HOST_LAYOUT_UPDATED_EVENT_NAME" xml:space="preserve"> 
+    <value>تم تحديث تخطيط المحطة</value>
+  </data> 
+  <data name="HOST_LOCK_STATE_CHANGED_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
+    <value>تغيرت حالة قفل المحطة</value> 
+  </data> 
+  <data name="HOST_LOCK_STATE_CHANGED_EVENT_GROUP_NAME" xml:space="preserve"> 
+    <value>تغيير حالة القفل</value> 
+  </data> 
+  <data name="INSTANCE_AUTHENTICATION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>حدث تغيير مصادقة النسخة</value> 
+  </data> 
+  <data name="INSTANCE_AUTHENTICATION_CHANGED_EVENT_NAME" xml:space="preserve"> 
+    <value>تغيير مصادقة النسخة</value> 
+  </data> 
+  <data name="INSTANCE_AUTHORIZATION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>حدث تغيير تفويض النسخة</value> 
+  </data> 
+  <data name="INSTANCE_AUTHORIZATION_CHANGED_EVENT_NAME" xml:space="preserve"> 
+    <value>تغيير تفويض النسخة</value> 
+  </data> 
+  <data name="INSTANCE_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
+    <value>الأحداث المتعلقة بالنسخة</value> 
+  </data> 
+  <data name="INSTANCE_EVENT_GROUP_NAME" xml:space="preserve"> 
+    <value>النسخة</value> 
+  </data> 
+  <data name="INSTANCE_ID_TYPE_HARDWARE_ID_DESCRIPTION" xml:space="preserve"> 
+    <value>معرّف الجهاز</value> 
+  </data> 
+  <data name="INSTANCE_ID_TYPE_HARDWARE_ID_NAME" xml:space="preserve"> 
+    <value>معرّف الجهاز</value> 
+  </data> 
+  <data name="INSTANCE_ID_TYPE_INSTANCE_ID_DESCRIPTION" xml:space="preserve"> 
+    <value>معرّف النسخة</value> 
+  </data> 
+  <data name="INSTANCE_ID_TYPE_INSTANCE_ID_NAME" xml:space="preserve"> 
+    <value>معرّف النسخة</value> 
+  </data> 
+  <data name="INVENTORY_ADJUSTMENT_REASONS_DAMAGED" xml:space="preserve"> 
+    <value>تلف في التغليف</value> 
+  </data> 
+  <data name="INVENTORY_ADJUSTMENT_REASONS_DAMAGED_ITEM" xml:space="preserve"> 
+    <value>عنصر تالف</value> 
+  </data> 
+  <data name="INVENTORY_ADJUSTMENT_REASONS_EXPIRED" xml:space="preserve"> 
+    <value>منتهي الصلاحية</value> 
+  </data> 
+  <data name="INVENTORY_ADJUSTMENT_REASONS_FORCE_MAJOR" xml:space="preserve"> 
+    <value>قوة قاهرة</value> 
+  </data> 
+  <data name="INVENTORY_ADJUSTMENT_REASONS_LOST" xml:space="preserve"> 
+    <value>مفقود</value> 
+  </data> 
+  <data name="INVENTORY_ADJUSTMENT_REASONS_NOT_IN_DEMAND" xml:space="preserve"> 
+    <value>لا يوجد طلب عليه</value> 
+  </data> 
+  <data name="INVENTORY_ADJUSTMENT_TYPE_SALE_BY_COST" xml:space="preserve"> 
+    <value>بيع بالتكلفة</value> 
+  </data> 
+  <data name="INVENTORY_ADJUSTMENT_TYPE_SALE_BY_PRICE" xml:space="preserve"> 
+    <value>بيع بالسعر</value> 
+  </data> 
+  <data name="INVENTORY_ADJUSTMENT_TYPE_WRITE_OFF" xml:space="preserve"> 
+    <value>شطب</value> 
+  </data> 
+  <data name="INVENTORY_TRANSFER_REASONS_FOR_ADJUSTMENT" xml:space="preserve"> 
+    <value>للتسوية</value> 
+  </data> 
+  <data name="INVENTORY_TRANSFER_REASONS_IN_DEMAND" xml:space="preserve"> 
+    <value>مطلوب</value> 
+  </data> 
+  <data name="INVENTORY_TRANSFER_REASONS_NOT_IN_DEMAND" xml:space="preserve"> 
+    <value>غير مطلوب</value> 
+  </data> 
+  <data name="INVENTORY_TYPE_ADJUSTMENT" xml:space="preserve"> 
+    <value>تسوية</value> 
+  </data> 
+  <data name="INVENTORY_TYPE_INBOUND" xml:space="preserve"> 
+    <value>وارد</value> 
+  </data> 
+  <data name="INVENTORY_TYPE_TRANSFER" xml:space="preserve"> 
+    <value>تحويل</value> 
+  </data> 
+  <data name="INVOICE_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يشير إلى إنشاء فاتورة</value> 
+  </data> 
+  <data name="INVOICE_CREATED_EVENT_NAME" xml:space="preserve"> 
+    <value>تم الإنشاء</value> 
+  </data> 
+  <data name="INVOICE_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
+    <value>الأحداث المتعلقة بالفاتورة</value>
+  </data> 
+  <data name="INVOICE_EVENT_GROUP_NAME" xml:space="preserve"> 
+    <value>الفاتورة</value>
+  </data> 
+  <data name="INVOICE_PAYMENT_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يشير إلى إنشاء دفعة فاتورة</value> 
+  </data> 
+  <data name="INVOICE_PAYMENT_EVENT_NAME" xml:space="preserve"> 
+    <value>دفعة</value> 
+  </data> 
+  <data name="LICENSE_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
+    <value>الأحداث المتعلقة بالترخيص</value> 
+  </data> 
+  <data name="LICENSE_EVENT_GROUP_NAME" xml:space="preserve"> 
+    <value>الترخيص</value> 
+  </data> 
+  <data name="LICENSE_STATE_DISABLED_DESCRIPTION" xml:space="preserve"> 
+    <value>الترخيص معطّل</value> 
+  </data> 
+  <data name="LICENSE_STATE_DISABLED_INSTANCE_ID_DESCRIPTION" xml:space="preserve"> 
+    <value>معرّف النسخة معطّل/محظور</value> 
+  </data> 
+  <data name="LICENSE_STATE_DISABLED_INSTANCE_ID_NAME" xml:space="preserve"> 
+    <value>معرّف النسخة معطّل</value> 
+  </data> 
+  <data name="LICENSE_STATE_DISABLED_NAME" xml:space="preserve"> 
+    <value>معطّل</value> 
+  </data> 
+  <data name="LICENSE_STATE_EXPIRED_DESCRIPTION" xml:space="preserve"> 
+    <value>الترخيص منتهي الصلاحية</value> 
+  </data> 
+  <data name="LICENSE_STATE_EXPIRED_NAME" xml:space="preserve"> 
+    <value>منتهي الصلاحية</value> 
+  </data> 
+  <data name="LICENSE_STATE_INVALID_DESCRIPTION" xml:space="preserve"> 
+    <value>الترخيص المحلي غير صالح</value> 
+  </data> 
+  <data name="LICENSE_STATE_INVALID_NAME" xml:space="preserve"> 
+    <value>غير صالح</value> 
+  </data> 
+  <data name="LICENSE_STATE_UNAUTHORIZED_DESCRIPTION" xml:space="preserve"> 
+    <value>غير مصرح</value> 
+  </data> 
+  <data name="LICENSE_STATE_UNAUTHORIZED_NAME" xml:space="preserve"> 
+    <value>غير مصرح</value> 
+  </data> 
+  <data name="LICENSE_STATE_VALID_DESCRIPTION" xml:space="preserve"> 
+    <value>صالح</value> 
+  </data> 
+  <data name="LICENSE_STATE_VALID_NAME" xml:space="preserve"> 
+    <value>صالح</value> 
+  </data> 
+  <data name="LICENSE_TYPE_NORMAL_DESCRIPTION" xml:space="preserve"> 
+    <value>ترخيص عادي</value> 
+  </data> 
+  <data name="LICENSE_TYPE_NORMAL_NAME" xml:space="preserve"> 
+    <value>عادي</value> 
+  </data> 
+  <data name="LICENSE_TYPE_TRIAL_DESCRIPTION" xml:space="preserve"> 
+    <value>ترخيص تجريبي</value> 
+  </data> 
+  <data name="LICENSE_TYPE_TRIAL_NAME" xml:space="preserve"> 
+    <value>تجريبي</value> 
+  </data> 
+  <data name="LICENSE_TYPE_UNDETERMINED_DESCRIPTION" xml:space="preserve"> 
+    <value>نوع الترخيص غير محدد</value> 
+  </data> 
+  <data name="LICENSE_TYPE_UNDETERMINED_NAME" xml:space="preserve"> 
+    <value>غير محدد</value> 
+  </data> 
+  <data name="LOG_CLEARED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يشير إلى مسح السجل</value> 
+  </data> 
+  <data name="LOG_CLEARED_EVENT_NAME" xml:space="preserve"> 
+    <value>تم المسح</value> 
+  </data> 
+  <data name="LOG_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
+    <value>الأحداث المتعلقة بالسجل</value>
+  </data> 
+  <data name="LOG_EVENT_GROUP_NAME" xml:space="preserve"> 
+    <value>السجل</value> 
+  </data> 
+  <data name="MAPPING_TYPE_NETWORK_DRIVE" xml:space="preserve"> 
+    <value>محرك أقراص شبكي</value> 
+  </data> 
+  <data name="MAPPING_TYPE_VIRTUAL_DRIVE" xml:space="preserve"> 
+    <value>محرك أقراص افتراضي</value> 
+  </data> 
+  <data name="MAPPING_TYPE_VIRTUAL_FOLDER" xml:space="preserve"> 
+    <value>مجلد افتراضي</value> 
+  </data> 
+  <data name="NOTIFICATION_TYPE_AUDIBLE" xml:space="preserve">
+    <value>صوتي</value>
+  </data>
+  <data name="NOTIFICATION_TYPE_NONE" xml:space="preserve">
+    <value>لا شيء</value>
+  </data>
+  <data name="NOTIFICATION_TYPE_VISUAL" xml:space="preserve">
+    <value>مرئي</value>
+  </data>
+  <data name="NOTIFICATION_TYPE_VISUAL_AND_AUDIBLE" xml:space="preserve">
+    <value>مرئي وصوتي</value>
+  </data> 
+  <data name="OPTIONS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يشير إلى تغيير الخيارات</value> 
+  </data> 
+  <data name="OPTIONS_CHANGE_EVENT_NAME" xml:space="preserve"> 
+    <value>تغيير</value>
+  </data> 
+  <data name="OPTIONS_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
+    <value>الأحداث المتعلقة بالخيارات</value> 
+  </data> 
+  <data name="OPTIONS_EVENT_GROUP_NAME" xml:space="preserve"> 
+    <value>الخيارات</value> 
+  </data> 
+  <data name="ORDER_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يشير إلى إنشاء طلب</value> 
+  </data> 
+  <data name="ORDER_CREATED_EVENT_NAME" xml:space="preserve"> 
+    <value>تم الإنشاء</value> 
+  </data> 
+  <data name="ORDER_DELIVERY_STATUS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يشير إلى تغيير حالة تسليم الطلب</value> 
+  </data> 
+  <data name="ORDER_DELIVERY_STATUS_CHANGE_EVENT_NAME" xml:space="preserve"> 
+    <value>تغيير</value>
+  </data> 
+  <data name="ORDER_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
+    <value>الأحداث المتعلقة بالطلب</value> 
+  </data> 
+  <data name="ORDER_EVENT_GROUP_NAME" xml:space="preserve"> 
+    <value>الطلب</value> 
+  </data> 
+  <data name="ORDER_LINE_DELIVERY_STATUS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يشير إلى تغيير حالة تسليم بند الطلب</value> 
+  </data> 
+  <data name="ORDER_LINE_DELIVERY_STATUS_CHANGE_EVENT_NAME" xml:space="preserve"> 
+    <value>تغيير</value>
+  </data> 
+  <data name="ORDER_STATUS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يشير إلى تغيير حالة الطلب</value> 
+  </data> 
+  <data name="ORDER_STATUS_CHANGE_EVENT_NAME" xml:space="preserve"> 
+    <value>تغيير</value>
+  </data> 
+  <data name="PAYMENT_INTENT_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يشير إلى اكتمال نية الدفع</value> 
+  </data> 
+  <data name="PAYMENT_INTENT_COMPLETED_EVENT_NAME" xml:space="preserve"> 
+    <value>مكتمل</value> 
+  </data> 
+  <data name="PAYMENT_INTENT_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يشير إلى إنشاء نية الدفع</value> 
+  </data> 
+  <data name="PAYMENT_INTENT_CREATED_EVENT_NAME" xml:space="preserve"> 
+    <value>تم الإنشاء</value> 
+  </data> 
+  <data name="PAYMENT_INTENT_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>الأحداث المتعلقة بنية الدفع</value>
+  </data>
+  <data name="PAYMENT_INTENT_EXPIRED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>يشير إلى انتهاء صلاحية نية الدفع</value>
+  </data>
+  <data name="PAYMENT_INTENT_EXPIRED_EVENT_NAME" xml:space="preserve">
+    <value>منتهي الصلاحية</value>
+  </data>
+  <data name="PAYMENT_INTENT_EVENT_GROUP_NAME" xml:space="preserve"> 
+    <value>نية الدفع</value> 
+  </data> 
+  <data name="PRODUCT_STOCK_CHANGE_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
+    <value>يشير إلى تغيير مستوى مخزون المنتج</value> 
+  </data> 
+  <data name="PRODUCT_STOCK_CHANGE_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>تغيير</value>
+  </data> 
+  <data name="PRODUCT_STOCK_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
+    <value>الأحداث المتعلقة بمخزون المنتج</value> 
+  </data> 
+  <data name="PRODUCT_STOCK_EVENT_GROUP_NAME" xml:space="preserve"> 
+    <value>مخزون المنتج</value> 
+  </data> 
+  <data name="REPORT_PRESET_ADDED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>حدث إضافة إعداد التقرير</value>
+  </data>
+  <data name="REPORT_PRESET_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>الأحداث المتعلقة بإعداد التقرير</value>
+  </data>
+  <data name="REPORT_PRESET_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>إعداد التقرير</value>
+  </data>
+  <data name="REPORT_PRESET_ADDED_EVENT_NAME" xml:space="preserve"> 
+    <value>تمت إضافة إعداد التقرير</value>
+  </data> 
+  <data name="REPORT_PRESET_RANGE_DAY_NAME" xml:space="preserve"> 
+    <value>يوم</value> 
+  </data> 
+  <data name="REPORT_PRESET_RANGE_MONTH_NAME" xml:space="preserve"> 
+    <value>شهر</value> 
+  </data> 
+  <data name="REPORT_PRESET_RANGE_WEEK_NAME" xml:space="preserve"> 
+    <value>أسبوع</value> 
+  </data> 
+  <data name="REPORT_PRESET_RANGE_YEAR_NAME" xml:space="preserve"> 
+    <value>سنة</value> 
+  </data> 
+  <data name="REPORT_PRESET_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>حدث إزالة إعداد التقرير</value>
+  </data> 
+  <data name="REPORT_PRESET_REMOVED_EVENT_NAME" xml:space="preserve"> 
+    <value>تمت إزالة إعداد التقرير</value>
+  </data> 
+  <data name="REPORT_PRESET_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>حدث تحديث إعداد التقرير</value>
+  </data> 
+  <data name="REPORT_PRESET_UPDATED_EVENT_NAME" xml:space="preserve"> 
+    <value>تم تحديث إعداد التقرير</value>
+  </data> 
+  <data name="RESERVATION_ACTIVATED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>تم تنشيط الحجز</value> 
+  </data> 
+  <data name="RESERVATION_ACTIVATED_EVENT_NAME" xml:space="preserve"> 
+    <value>تم التنشيط</value> 
+  </data> 
+  <data name="RESERVATION_CANCELLED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>تم إلغاء الحجز</value> 
+  </data> 
+  <data name="RESERVATION_CANCELLED_EVENT_NAME" xml:space="preserve"> 
+    <value>تم الإلغاء</value> 
+  </data> 
+  <data name="RESERVATION_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>اكتمل الحجز</value> 
+  </data> 
+  <data name="RESERVATION_COMPLETED_EVENT_NAME" xml:space="preserve"> 
+    <value>مكتمل</value> 
+  </data> 
+  <data name="RESERVATION_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>تم إنشاء الحجز</value> 
+  </data> 
+  <data name="RESERVATION_CREATED_EVENT_NAME" xml:space="preserve"> 
+    <value>تم الإنشاء</value> 
+  </data> 
+  <data name="RESERVATION_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
+    <value>الأحداث المتعلقة بالحجز</value> 
+  </data> 
+  <data name="RESERVATION_EVENT_GROUP_NAME" xml:space="preserve"> 
+    <value>الحجز</value> 
+  </data> 
+  <data name="RESERVATION_EXPIRED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>انتهى الحجز</value> 
+  </data> 
+  <data name="RESERVATION_EXPIRED_EVENT_NAME" xml:space="preserve"> 
+    <value>منتهي الصلاحية</value> 
+  </data> 
+  <data name="RESERVATION_HOST_ACTIVATED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>تم تنشيط حجز المحطة</value>
+  </data> 
+  <data name="RESERVATION_HOST_ACTIVATED_EVENT_NAME" xml:space="preserve"> 
+    <value>تم التنشيط</value> 
+  </data> 
+  <data name="RESERVATION_HOST_ADDED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>تمت إضافة محطة إلى الحجز</value>
+  </data> 
+  <data name="RESERVATION_HOST_ADDED_EVENT_NAME" xml:space="preserve"> 
+    <value>تمت الإضافة</value> 
+  </data> 
+  <data name="RESERVATION_HOST_CANCELLED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>تم إلغاء حجز المحطة</value>
+  </data> 
+  <data name="RESERVATION_HOST_CANCELLED_EVENT_NAME" xml:space="preserve"> 
+    <value>تم الإلغاء</value> 
+  </data> 
+  <data name="RESERVATION_HOST_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>اكتمل حجز المحطة</value> 
+  </data> 
+  <data name="RESERVATION_HOST_COMPLETED_EVENT_NAME" xml:space="preserve"> 
+    <value>مكتمل</value> 
+  </data> 
+  <data name="RESERVATION_HOST_EXPIRED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>انتهى حجز المحطة</value> 
+  </data> 
+  <data name="RESERVATION_HOST_EXPIRED_EVENT_NAME" xml:space="preserve"> 
+    <value>منتهي الصلاحية</value> 
+  </data> 
+  <data name="RESERVATION_HOST_MOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>تم نقل حجز المحطة</value>
+  </data> 
+  <data name="RESERVATION_HOST_MOVED_EVENT_NAME" xml:space="preserve"> 
+    <value>تم النقل</value> 
+  </data> 
+  <data name="RESERVATION_HOST_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>تم تحديث حجز المحطة</value>
+  </data> 
+  <data name="RESERVATION_HOST_UPDATED_EVENT_NAME" xml:space="preserve"> 
+    <value>تم التحديث</value> 
+  </data> 
+  <data name="RESERVATION_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>تم تحديث الحجز</value> 
+  </data> 
+  <data name="RESERVATION_UPDATED_EVENT_NAME" xml:space="preserve"> 
+    <value>تم التحديث</value> 
+  </data> 
+  <data name="RESERVATION_USER_ADDED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>تمت إضافة مستخدم</value> 
+  </data> 
+  <data name="RESERVATION_USER_ADDED_EVENT_NAME" xml:space="preserve"> 
+    <value>تمت الإضافة</value> 
+  </data> 
+  <data name="RESERVATION_USER_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>تمت إزالة مستخدم</value> 
+  </data> 
+  <data name="RESERVATION_USER_REMOVED_EVENT_NAME" xml:space="preserve"> 
+    <value>تمت الإزالة</value> 
+  </data> 
+  <data name="RESTRICTION_TYPE_CLASS_NAME" xml:space="preserve"> 
+    <value>اسم الفئة</value> 
+  </data> 
+  <data name="RESTRICTION_TYPE_FILE_NAME" xml:space="preserve"> 
+    <value>اسم الملف</value> 
+  </data> 
+  <data name="RESTRICTION_TYPE_TRAY_ICON" xml:space="preserve"> 
+    <value>أيقونة شريط المهام</value> 
+  </data> 
+  <data name="RESTRICTION_TYPE_UNSET" xml:space="preserve"> 
+    <value>غير محدد</value> 
+  </data> 
+  <data name="RESTRICTION_TYPE_WINDOW_NAME" xml:space="preserve"> 
+    <value>اسم النافذة</value> 
+  </data> 
+  <data name="SCHEDULE_TYPE_DAILY" xml:space="preserve"> 
+    <value>يومي</value>
+  </data> 
+  <data name="SCHEDULE_TYPE_MONTHLY" xml:space="preserve"> 
+    <value>شهري</value> 
+  </data> 
+  <data name="SCHEDULE_TYPE_ONE_TIME" xml:space="preserve"> 
+    <value>مرة واحدة</value> 
+  </data> 
+  <data name="SCHEDULE_TYPE_WEEKLY" xml:space="preserve"> 
+    <value>أسبوعي</value>
+  </data> 
+  <data name="SCHEDULE_TYPE_YEARLY" xml:space="preserve"> 
+    <value>سنوي</value> 
+  </data> 
+  <data name="SHIFT_ENDED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يشير إلى انتهاء الوردية</value> 
+  </data> 
+  <data name="SHIFT_ENDED_EVENT_NAME" xml:space="preserve"> 
+    <value>انتهت</value> 
+  </data> 
+  <data name="SHIFT_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
+    <value>الأحداث المتعلقة بالوردية</value> 
+  </data> 
+  <data name="SHIFT_EVENT_GROUP_NAME" xml:space="preserve"> 
+    <value>الوردية</value> 
+  </data> 
+  <data name="SHIFT_LOCKED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يشير إلى قفل الوردية</value> 
+  </data> 
+  <data name="SHIFT_LOCKED_EVENT_NAME" xml:space="preserve"> 
+    <value>مقفلة</value> 
+  </data> 
+  <data name="SHIFT_STARTED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يشير إلى بداية الوردية</value> 
+  </data> 
+  <data name="SHIFT_STARTED_EVENT_NAME" xml:space="preserve"> 
+    <value>بدأت</value> 
+  </data> 
+  <data name="SHIFT_UNLOCKED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يشير إلى فتح قفل الوردية</value> 
+  </data> 
+  <data name="SHIFT_UNLOCKED_EVENT_NAME" xml:space="preserve"> 
+    <value>مفتوحة</value> 
+  </data> 
+  <data name="STOCK_LEVEL_TYPE_ANY" xml:space="preserve"> 
+    <value>أي</value> 
+  </data> 
+  <data name="STOCK_LEVEL_TYPE_LOW" xml:space="preserve"> 
+    <value>منخفض</value> 
+  </data> 
+  <data name="STOCK_LEVEL_TYPE_OUT_OF_STOCK" xml:space="preserve"> 
+    <value>نفد المخزون</value> 
+  </data> 
+  <data name="STOCK_TYPE_SELLING_POINT" xml:space="preserve"> 
+    <value>نقطة البيع</value> 
+  </data> 
+  <data name="STOCK_TYPE_WAREHOUSE" xml:space="preserve"> 
+    <value>المستودع</value> 
+  </data> 
+  <data name="TARGET_GROUP_REQUIREMENT_ALL" xml:space="preserve"> 
+    <value>الكل</value> 
+  </data> 
+  <data name="TARGET_GROUP_REQUIREMENT_ANY" xml:space="preserve"> 
+    <value>أي</value> 
+  </data> 
+  <data name="TARGET_REQUIREMENT_ALL" xml:space="preserve">
+    <value>الكل</value>
+  </data> 
+  <data name="TARGET_REQUIREMENT_AMOUNT" xml:space="preserve"> 
+    <value>المبلغ</value> 
+  </data> 
+  <data name="TARGET_REQUIREMENT_ANY" xml:space="preserve"> 
+    <value>أي</value> 
+  </data> 
+  <data name="TARGET_REQUIREMENT_COUNT" xml:space="preserve"> 
+    <value>العدد</value> 
+  </data> 
+  <data name="USER_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>يشير إلى إنشاء حساب مستخدم</value>
+  </data>
+  <data name="USER_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>تم إنشاء المستخدم</value>
+  </data>
+  <data name="USER_ENABLED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>يشير إلى تمكين مستخدم</value>
+  </data>
+  <data name="USER_ENABLED_EVENT_NAME" xml:space="preserve"> 
+    <value>تم التمكين</value> 
+  </data> 
+  <data name="USER_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
+    <value>الأحداث المتعلقة بالمستخدم</value> 
+  </data> 
+  <data name="USER_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>المستخدم</value>
+  </data>
+  <data name="USER_GUEST_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>الأحداث المتعلقة بالمستخدم الضيف</value>
+  </data>
+  <data name="USER_GUEST_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>المستخدم الضيف</value>
+  </data>
+  <data name="USER_SESSION_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>تم إنشاء جلسة المستخدم</value> 
+  </data> 
+  <data name="USER_SESSION_CREATED_EVENT_NAME" xml:space="preserve"> 
+    <value>تم الإنشاء</value> 
+  </data> 
+  <data name="USER_SESSION_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
+    <value>الأحداث المتعلقة بجلسة المستخدم</value> 
+  </data> 
+  <data name="USER_SESSION_EVENT_GROUP_NAME" xml:space="preserve"> 
+    <value>جلسة المستخدم</value> 
+  </data> 
+  <data name="USER_SESSION_MOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>تم نقل جلسة المستخدم</value> 
+  </data> 
+  <data name="USER_SESSION_MOVED_EVENT_NAME" xml:space="preserve"> 
+    <value>تم النقل</value> 
+  </data> 
+  <data name="USER_SESSION_STATE_CHANGED_EVENT_NAME" xml:space="preserve"> 
+    <value>تغيير الحالة</value> 
+  </data> 
+  <data name="USER_SESSION_STATE_CHANGED_GROUP_DESCRIPTION" xml:space="preserve"> 
+    <value>تغيرت حالة جلسة المستخدم</value> 
+  </data> 
+  <data name="WAITING_LINE_ESTIMATION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>حدث تغيير التقدير</value> 
+  </data> 
+  <data name="WAITING_LINE_ESTIMATION_CHANGED_EVENT_NAME" xml:space="preserve"> 
+    <value>تغيير التقدير</value> 
+  </data> 
+  <data name="WAITING_LINE_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
+    <value>قائمة الانتظار</value>
+  </data> 
+  <data name="WAITING_LINE_EVENT_GROUP_NAME" xml:space="preserve"> 
+    <value>الأحداث المتعلقة بقائمة الانتظار</value> 
+  </data> 
+  <data name="WAITING_LINE_TIMED_OUT_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>حدث انتهاء مهلة قائمة الانتظار</value>
+  </data> 
+  <data name="WAITING_LINE_TIMED_OUT_EVENT_NAME" xml:space="preserve"> 
+    <value>انتهت المهلة</value> 
+  </data> 
+  <data name="WAITING_LINE_USER_ADDED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>حدث إضافة مستخدم</value>
+  </data> 
+  <data name="WAITING_LINE_USER_ADDED_EVENT_NAME" xml:space="preserve"> 
+    <value>تمت إضافة مستخدم</value> 
+  </data> 
+  <data name="WAITING_LINE_USER_MOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>حدث نقل مستخدم</value>
+  </data> 
+  <data name="WAITING_LINE_USER_MOVED_EVENT_NAME" xml:space="preserve"> 
+    <value>تم نقل مستخدم</value>
+  </data> 
+  <data name="WAITING_LINE_USER_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>حدث إزالة مستخدم</value>
+  </data> 
+  <data name="WAITING_LINE_USER_REMOVED_EVENT_NAME" xml:space="preserve"> 
+    <value>تمت إزالة مستخدم</value> 
+  </data> 
+  <data name="SHIFT_COUNT_TYPE_DEFAULT" xml:space="preserve"> 
+    <value>افتراضي</value> 
+  </data> 
+  <data name="SHIFT_COUNT_TYPE_SHIFT_CLOSE" xml:space="preserve"> 
+    <value>إغلاق الوردية</value> 
+  </data> 
+  <data name="SHIFT_COUNT_TYPE_SHIFT_OPEN" xml:space="preserve"> 
+    <value>فتح الوردية</value> 
+  </data> 
+  <data name="PROMOTION_CODE_TYPE_PUBLIC_NAME" xml:space="preserve"> 
+    <value>عام</value> 
+  </data> 
+  <data name="PROMOTION_CODE_TYPE_RESTRICTED_NAME" xml:space="preserve"> 
+    <value>مقيّد</value> 
+  </data> 
+  <data name="PAYMENT_TRANSACTION_DIRECTION_IN" xml:space="preserve">
+    <value>وارد</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_DIRECTION_OUT" xml:space="preserve">
+    <value>صادر</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_TYPE_DEPOSIT_PAYMENT" xml:space="preserve">
+    <value>دفع إيداع</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_TYPE_DEPOSIT_PAYMENT_REFUND" xml:space="preserve"> 
+    <value>استرداد دفع الإيداع</value>
+  </data> 
+  <data name="PAYMENT_TRANSACTION_TYPE_INVOICE_PAYMENT" xml:space="preserve"> 
+    <value>دفع فاتورة</value>
+  </data> 
+  <data name="PAYMENT_TRANSACTION_TYPE_INVOICE_PAYMENT_REFUND" xml:space="preserve"> 
+    <value>استرداد دفع الفاتورة</value>
+  </data> 
+  <data name="PAYMENT_TRANSACTION_TYPE_PAY_IN" xml:space="preserve"> 
+    <value>إيداع</value> 
+  </data> 
+  <data name="PAYMENT_TRANSACTION_TYPE_PAY_OUT" xml:space="preserve">
+    <value>سحب</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_TYPE_WITHDRAW" xml:space="preserve">
+    <value>سحب</value>
+  </data>
+  <data name="PAYMENT_INTENT_STATE_CANCELLED" xml:space="preserve"> 
+    <value>ملغى</value> 
+  </data> 
+  <data name="PAYMENT_INTENT_STATE_COMPLETED" xml:space="preserve"> 
+    <value>مكتمل</value> 
+  </data> 
+  <data name="PAYMENT_INTENT_STATE_EXPIRED" xml:space="preserve"> 
+    <value>منتهي الصلاحية</value> 
+  </data> 
+  <data name="PAYMENT_INTENT_STATE_FAILED" xml:space="preserve"> 
+    <value>فاشل</value>
+  </data> 
+  <data name="PAYMENT_INTENT_STATE_PENDING" xml:space="preserve"> 
+    <value>معلّق</value> 
+  </data> 
+  <data name="PAYMENT_INTENT_STATE_CAPTURED" xml:space="preserve"> 
+    <value>تم التحصيل</value> 
+  </data> 
+  <data name="PAYMENT_INTENT_STATE_DECLINED" xml:space="preserve"> 
+    <value>مرفوض</value> 
+  </data> 
+  <data name="RESERVATION_PAYMENT_STATUS_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>تغيرت حالة دفع الحجز</value> 
+  </data> 
+  <data name="RESERVATION_PAYMENT_STATUS_CHANGED_EVENT_NAME" xml:space="preserve"> 
+    <value>تغيير حالة الدفع</value> 
+  </data> 
+  <data name="PAYMENT_INTENT_CAPTURED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يشير إلى تحصيل نية الدفع</value> 
+  </data> 
+  <data name="PAYMENT_INTENT_CAPTURED_EVENT_NAME" xml:space="preserve"> 
+    <value>تم التحصيل</value> 
+  </data> 
+  <data name="PAYMENT_INTENT_DECLINED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يشير إلى رفض نية الدفع</value> 
+  </data> 
+  <data name="PAYMENT_INTENT_DECLINED_EVENT_NAME" xml:space="preserve"> 
+    <value>مرفوض</value> 
+  </data> 
+  <data name="PAYMENT_INTENT_FAILED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يشير إلى فشل نية الدفع</value> 
+  </data> 
+  <data name="PAYMENT_INTENT_FAILED_EVENT_NAME" xml:space="preserve"> 
+    <value>فاشل</value> 
+  </data> 
+  <data name="PAYMENT_INTENT_CANCELLED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يشير إلى إلغاء نية الدفع</value> 
+  </data> 
+  <data name="PAYMENT_INTENT_CANCELLED_EVENT_NAME" xml:space="preserve"> 
+    <value>ملغى</value> 
+  </data> 
+  <data name="DEVICE_FISCAL_PRINTER_ERROR_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>حدث خطأ في الطابعة المالية</value> 
+  </data> 
+  <data name="DEVICE_FISCAL_PRINTER_ERROR_EVENT_NAME" xml:space="preserve"> 
+    <value>خطأ</value> 
+  </data> 
+  <data name="DEVICE_PAYMENT_TERMINAL_ERROR_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>حدث خطأ في طرفية الدفع</value>
+  </data> 
+  <data name="DEVICE_PAYMENT_TERMINAL_ERROR_EVENT_NAME" xml:space="preserve"> 
+    <value>خطأ</value> 
+  </data> 
+  <data name="ORDER_STATUS_FILTER_ACCEPTED" xml:space="preserve"> 
+    <value>مقبول</value> 
+  </data> 
+  <data name="ORDER_STATUS_FILTER_CANCELED" xml:space="preserve"> 
+    <value>ملغى</value> 
+  </data> 
+  <data name="ORDER_STATUS_FILTER_COMPLETED" xml:space="preserve"> 
+    <value>مكتمل</value> 
+  </data> 
+  <data name="ORDER_STATUS_FILTER_ON_HOLD" xml:space="preserve"> 
+    <value>معلّق</value> 
+  </data> 
+  <data name="ORDER_STATUS_FILTER_PROCESSING" xml:space="preserve"> 
+    <value>قيد المعالجة</value> 
+  </data> 
+  <data name="PROMOTION_LIMIT_TYPE_TOTAL" xml:space="preserve"> 
+    <value>إجمالي</value> 
+  </data> 
+  <data name="PROMOTION_LIMIT_TYPE_PER_USER" xml:space="preserve"> 
+    <value>لكل مستخدم</value> 
+  </data> 
+  <data name="PROMOTION_LIMIT_TYPE_DAILY" xml:space="preserve"> 
+    <value>يومي</value> 
+  </data> 
+  <data name="PROMOTION_LIMIT_TYPE_WEEKLY" xml:space="preserve"> 
+    <value>أسبوعي</value> 
+  </data> 
+  <data name="USER_BALANCE_CHANGE_EVENT_NAME" xml:space="preserve"> 
+    <value>يشير إلى تغيير الرصيد</value> 
+  </data> 
+  <data name="USER_BALANCE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>تغيّر الرصيد</value> 
+  </data> 
+  <data name="USER_BALANCE_CLOSE_EVENT_NAME" xml:space="preserve"> 
+    <value>يشير إلى إغلاق الرصيد</value> 
+  </data> 
+  <data name="USER_BALANCE_CLOSE_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>إغلاق الرصيد</value> 
+  </data> 
+  <data name="USER_BILLING_OPTIONS_CHANGE_EVENT_NAME" xml:space="preserve"> 
+    <value>تغيير خيارات الفوترة</value> 
+  </data> 
+  <data name="USER_BILLING_OPTIONS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يشير إلى تغيير خيارات الفوترة</value> 
+  </data> 
+  <data name="USER_EMAIL_CHANGE_EVENT_NAME" xml:space="preserve"> 
+    <value>تغيير البريد الإلكتروني</value> 
+  </data> 
+  <data name="USER_EMAIL_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يشير إلى تغيير البريد الإلكتروني</value>
+  </data> 
+  <data name="USER_USER_GROUP_CHANGE_EVENT_NAME" xml:space="preserve"> 
+    <value>تغيير مجموعة المستخدمين</value> 
+  </data> 
+  <data name="USER_USER_GROUP_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يشير إلى تغيير مجموعة المستخدمين</value> 
+  </data> 
+  <data name="USER_NEGATIVE_BALANCE_CHANGE_EVENT_NAME" xml:space="preserve"> 
+    <value>تغيير الرصيد السالب</value> 
+  </data> 
+  <data name="USER_NEGATIVE_BALANCE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يشير إلى تغيير الرصيد السالب</value> 
+  </data> 
+  <data name="USER_PASSWORD_CHANGE_EVENT_NAME" xml:space="preserve"> 
+    <value>تغيير كلمة المرور</value> 
+  </data> 
+  <data name="USER_PASSWORD_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يشير إلى تغيير كلمة المرور</value> 
+  </data> 
+  <data name="USER_PICTURE_CHANGE_EVENT_NAME" xml:space="preserve"> 
+    <value>تغيير الصورة</value> 
+  </data> 
+  <data name="USER_PICTURE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يشير إلى تغيير الصورة</value> 
+  </data> 
+  <data name="USER_RENAME_CHANGE_EVENT_NAME" xml:space="preserve"> 
+    <value>إعادة التسمية</value> 
+  </data> 
+  <data name="USER_RENAME_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يشير إلى إعادة تسمية المستخدم</value> 
+  </data> 
+  <data name="USER_SMART_CARD_CHANGE_EVENT_NAME" xml:space="preserve"> 
+    <value>تغيير البطاقة الذكية</value> 
+  </data> 
+  <data name="USER_SMART_CARD_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يشير إلى تغيير البطاقة الذكية</value> 
+  </data> 
+  <data name="USER_USAGE_SESSION_CHANGE_EVENT_NAME" xml:space="preserve"> 
+    <value>تغيير جلسة الاستخدام</value> 
+  </data> 
+  <data name="USER_USAGE_SESSION_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يشير إلى تغيير جلسة الاستخدام</value> 
+  </data> 
+  <data name="BILLING_OPTION_NONE_NAME" xml:space="preserve"> 
+    <value>لا شيء</value> 
+  </data> 
+  <data name="BILLING_OPTION_DISABLE_TIME_OFFER_NAME" xml:space="preserve"> 
+    <value>تعطيل عروض الوقت</value> 
+  </data> 
+  <data name="BILLING_OPTION_DISABLE_FIXED_TIME_NAME" xml:space="preserve"> 
+    <value>تعطيل الوقت الثابت</value> 
+  </data> 
+  <data name="BILLING_OPTION_DISABLE_DEPOSITS_NAME" xml:space="preserve"> 
+    <value>تعطيل الإيداعات</value> 
+  </data> 
+  <data name="COMMUNICATION_CHANNEL_TYPES_EMAIL" xml:space="preserve"> 
+    <value>البريد الإلكتروني</value> 
+  </data> 
+  <data name="COMMUNICATION_CHANNEL_TYPES_FACEBOOK_MESSENGER_NAME" xml:space="preserve"> 
+    <value>Facebook Messenger</value> 
+  </data> 
+  <data name="COMMUNICATION_CHANNEL_TYPES_INSTAGRAM_NAME" xml:space="preserve"> 
+    <value>Instagram</value> 
+  </data> 
+  <data name="COMMUNICATION_CHANNEL_TYPES_SMS_NAME" xml:space="preserve"> 
+    <value>SMS</value> 
+  </data> 
+  <data name="COMMUNICATION_CHANNEL_TYPES_TELEGRAM_NAME" xml:space="preserve"> 
+    <value>Telegram</value> 
+  </data> 
+  <data name="COMMUNICATION_CHANNEL_TYPES_TWITTER_DM_NAME" xml:space="preserve"> 
+    <value>Twitter</value> 
+  </data> 
+  <data name="COMMUNICATION_CHANNEL_TYPES_VIBER_NAME" xml:space="preserve"> 
+    <value>Viber</value> 
+  </data> 
+  <data name="COMMUNICATION_CHANNEL_TYPES_WHATS_APP_NAME" xml:space="preserve"> 
+    <value>WhatsApp</value> 
+  </data> 
+  <data name="COMMUNICATION_CHANNEL_TYPES_WE_CHAT_NAME" xml:space="preserve"> 
+    <value>WeChat</value> 
+  </data> 
+  <data name="HOST_DELETE_RESULT_HOST_HAS_RESERVED_GUEST_DESCRIPTION" xml:space="preserve"> 
+    <value>المحطة لديها ضيف محجوز</value> 
+  </data> 
+  <data name="HOST_DELETE_RESULT_HOST_HAS_RESERVED_GUEST_NAME" xml:space="preserve"> 
+    <value>المحطة لديها ضيف محجوز</value> 
+  </data> 
+  <data name="HOST_DELETE_RESULT_HOST_IN_USE_DESCRIPTION" xml:space="preserve"> 
+    <value>المحطة قيد الاستخدام</value> 
+  </data> 
+  <data name="HOST_DELETE_RESULT_HOST_IN_USE_NAME" xml:space="preserve"> 
+    <value>المحطة قيد الاستخدام</value> 
+  </data> 
+  <data name="HOST_DELETE_RESULT_HOST_IS_RESERVED_DESCRIPTION" xml:space="preserve"> 
+    <value>المحطة محجوزة</value>
+  </data> 
+  <data name="HOST_DELETE_RESULT_HOST_IS_RESERVED_NAME" xml:space="preserve"> 
+    <value>المحطة محجوزة</value>
+  </data> 
+  <data name="HOST_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
+    <value>تم حذف المحطة بنجاح</value> 
+  </data> 
+  <data name="HOST_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve"> 
+    <value>نجاح حذف المحطة</value> 
+  </data> 
+  <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_DESCRIPTION" xml:space="preserve"> 
+    <value>فشل حذف مجموعة المنتجات</value> 
+  </data> 
+  <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_NAME" xml:space="preserve"> 
+    <value>فشل حذف مجموعة المنتجات</value> 
+  </data> 
+  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPTY_DESCRIPTION" xml:space="preserve"> 
+    <value>تعذّر حذف مجموعة المنتجات غير الفارغة</value> 
+  </data> 
+  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPTY_NAME" xml:space="preserve"> 
+    <value>مجموعة المنتجات غير فارغة</value> 
+  </data> 
+  <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
+    <value>تم حذف مجموعة المنتجات بنجاح</value> 
+  </data> 
+  <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve"> 
+    <value>نجاح حذف مجموعة المنتجات</value> 
+  </data> 
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_DESCRIPTION" xml:space="preserve"> 
+    <value>فشل حذف فئة التطبيق</value> 
+  </data> 
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_NAME" xml:space="preserve"> 
+    <value>فشل حذف فئة التطبيق</value> 
+  </data> 
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPTY_DESCRIPTION" xml:space="preserve"> 
+    <value>تعذّر حذف فئة التطبيق غير الفارغة</value> 
+  </data> 
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPTY_NAME" xml:space="preserve"> 
+    <value>فئة التطبيق غير فارغة</value> 
+  </data> 
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
+    <value>تم حذف فئة التطبيق بنجاح</value> 
+  </data> 
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve"> 
+    <value>نجاح حذف فئة التطبيق</value> 
+  </data> 
+  <data name="WAITING_LINE_STATE_ACTIVE_NAME" xml:space="preserve"> 
+    <value>نشط</value> 
+  </data> 
+  <data name="WAITING_LINE_STATE_PROCESSED_NAME" xml:space="preserve"> 
+    <value>تمت المعالجة</value> 
+  </data> 
+  <data name="WAITING_LINE_STATE_CANCELED_NAME" xml:space="preserve"> 
+    <value>ملغى</value> 
+  </data> 
+  <data name="STOCK_TRANSACTION_TYPE_ADD_NAME" xml:space="preserve"> 
+    <value>إضافة</value> 
+  </data> 
+  <data name="STOCK_TRANSACTION_TYPE_REMOVE_NAME" xml:space="preserve"> 
+    <value>إزالة</value> 
+  </data> 
+  <data name="STOCK_TRANSACTION_TYPE_RETURN_NAME" xml:space="preserve"> 
+    <value>إرجاع</value> 
+  </data> 
+  <data name="STOCK_TRANSACTION_TYPE_SALE_NAME" xml:space="preserve"> 
+    <value>بيع</value> 
+  </data> 
+  <data name="STOCK_TRANSACTION_TYPE_SET_NAME" xml:space="preserve"> 
+    <value>تعيين</value> 
+  </data> 
+  <data name="DEPOSIT_TRANSACTION_TYPE_CHARGE_NAME" xml:space="preserve"> 
+    <value>رسوم</value> 
+  </data> 
+  <data name="DEPOSIT_TRANSACTION_TYPE_CREDIT_NAME" xml:space="preserve"> 
+    <value>رصيد</value> 
+  </data> 
+  <data name="DEPOSIT_TRANSACTION_TYPE_DEPOSIT_NAME" xml:space="preserve"> 
+    <value>إيداع</value> 
+  </data> 
+  <data name="DEPOSIT_TRANSACTION_TYPE_WITHDRAW_NAME" xml:space="preserve"> 
+    <value>سحب</value>
+  </data> 
+  <data name="USER_SESSION_STATE_ACTIVE_NAME" xml:space="preserve"> 
+    <value>نشط</value> 
+  </data> 
+  <data name="USER_SESSION_STATE_NONE_NAME" xml:space="preserve"> 
+    <value>انتظار</value> 
+  </data> 
+  <data name="USER_SESSION_STATE_ENDED_NAME" xml:space="preserve"> 
+    <value>منتهية</value> 
+  </data> 
+  <data name="USER_SESSION_STATE_PENDING_NAME" xml:space="preserve"> 
+    <value>معلّقة</value> 
+  </data> 
+  <data name="USER_SESSION_STATE_PAUSED_NAME" xml:space="preserve"> 
+    <value>متوقفة مؤقتاً</value> 
+  </data> 
+  <data name="USER_SESSION_STATE_MOVED_NAME" xml:space="preserve"> 
+    <value>منقولة</value> 
+  </data> 
+  <data name="ENTITY_EVENT_TYPE_ADDED_NAME" xml:space="preserve"> 
+    <value>تمت الإضافة</value> 
+  </data> 
+  <data name="ENTITY_EVENT_TYPE_REMOVED_NAME" xml:space="preserve"> 
+    <value>تمت الإزالة</value> 
+  </data> 
+  <data name="ENTITY_EVENT_TYPE_MODIFIED_NAME" xml:space="preserve"> 
+    <value>تم التعديل</value> 
+  </data> 
+  <data name="TASK_TYPE_JUNCTION_NAME" xml:space="preserve">
+    <value>تقاطع</value>
+  </data> 
+  <data name="TASK_TYPE_NOTIFICATION_NAME" xml:space="preserve"> 
+    <value>إشعار</value> 
+  </data> 
+  <data name="TASK_TYPE_PROCESS_NAME" xml:space="preserve"> 
+    <value>عملية</value> 
+  </data> 
+  <data name="TASK_TYPE_SCRIPT_NAME" xml:space="preserve"> 
+    <value>نص برمجي</value> 
+  </data> 
+  <data name="LOGIN_RESULT_ACCOUNT_DISABLED_DESCRIPTION" xml:space="preserve"> 
+    <value>حساب المستخدم المحدد معطّل</value> 
+  </data> 
+  <data name="LOGIN_RESULT_ACCOUNT_DISABLED_NAME" xml:space="preserve"> 
+    <value>الحساب معطّل</value> 
+  </data> 
+  <data name="LOGIN_RESULT_ALREADY_LOGGED_IN_DESCRIPTION" xml:space="preserve"> 
+    <value>المستخدم مسجّل الدخول بالفعل</value> 
+  </data> 
+  <data name="LOGIN_RESULT_ALREADY_LOGGED_IN_NAME" xml:space="preserve"> 
+    <value>مسجّل الدخول بالفعل</value> 
+  </data> 
+  <data name="LOGIN_RESULT_DENIED_DESCRIPTION" xml:space="preserve"> 
+    <value>تم رفض تسجيل الدخول</value> 
+  </data> 
+  <data name="LOGIN_RESULT_DENIED_NAME" xml:space="preserve"> 
+    <value>تم رفض تسجيل الدخول</value> 
+  </data> 
+  <data name="LOGIN_RESULT_FAILED_DESCRIPTION" xml:space="preserve"> 
+    <value>خطأ غير محدد في تسجيل الدخول</value> 
+  </data> 
+  <data name="LOGIN_RESULT_FAILED_NAME" xml:space="preserve"> 
+    <value>فشل تسجيل الدخول</value> 
+  </data> 
+  <data name="LOGIN_RESULT_INSUFFICIENT_BALANCE_DESCRIPTION" xml:space="preserve"> 
+    <value>رصيد المستخدم المحدد غير كافٍ</value>
+  </data> 
+  <data name="LOGIN_RESULT_INSUFFICIENT_BALANCE_NAME" xml:space="preserve"> 
+    <value>رصيد غير كافٍ</value>
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_CREDENTIALS_DESCRIPTION" xml:space="preserve"> 
+    <value>اسم المستخدم أو كلمة المرور المحددة غير صالح</value> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_CREDENTIALS_NAME" xml:space="preserve"> 
+    <value>اسم المستخدم أو كلمة المرور غير صالح</value> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_HOST_ID_DESCRIPTION" xml:space="preserve"> 
+    <value>معرّف المحطة المحدد غير صالح</value> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_HOST_ID_NAME" xml:space="preserve"> 
+    <value>محطة غير صالحة</value>
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_PARAMETERS_DESCRIPTION" xml:space="preserve"> 
+    <value>المعاملات المحددة غير صالحة</value> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_PARAMETERS_NAME" xml:space="preserve"> 
+    <value>معاملات غير صالحة</value> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_PASSWORD_DESCRIPTION" xml:space="preserve"> 
+    <value>كلمة المرور المحددة غير صالحة</value> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_PASSWORD_NAME" xml:space="preserve"> 
+    <value>كلمة مرور غير صالحة</value> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_SLOT_DESCRIPTION" xml:space="preserve"> 
+    <value>الفتحة المحددة غير صالحة</value> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_SLOT_NAME" xml:space="preserve"> 
+    <value>فتحة غير صالحة</value> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_USERNAME_DESCRIPTION" xml:space="preserve"> 
+    <value>اسم المستخدم المحدد غير صالح</value> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_USERNAME_NAME" xml:space="preserve"> 
+    <value>اسم مستخدم غير صالح</value> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_USER_GROUP_ID_DESCRIPTION" xml:space="preserve"> 
+    <value>معرّف مجموعة المستخدمين المحدد غير صالح</value> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_USER_GROUP_ID_NAME" xml:space="preserve"> 
+    <value>مجموعة مستخدمين غير صالحة</value> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_USER_ID_DESCRIPTION" xml:space="preserve"> 
+    <value>معرّف المستخدم المحدد غير صالح</value> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_USER_ID_NAME" xml:space="preserve"> 
+    <value>مستخدم غير صالح</value> 
+  </data> 
+  <data name="LOGIN_RESULT_LOGIN_IN_PROGRESS_DESCRIPTION" xml:space="preserve"> 
+    <value>تسجيل الدخول قيد التنفيذ</value> 
+  </data> 
+  <data name="LOGIN_RESULT_LOGIN_IN_PROGRESS_NAME" xml:space="preserve"> 
+    <value>قيد التنفيذ</value> 
+  </data> 
+  <data name="LOGIN_RESULT_LOGOUT_IN_PROGRESS_DESCRIPTION" xml:space="preserve"> 
+    <value>تسجيل الخروج قيد التنفيذ</value> 
+  </data> 
+  <data name="LOGIN_RESULT_LOGOUT_IN_PROGRESS_NAME" xml:space="preserve"> 
+    <value>قيد التنفيذ</value> 
+  </data> 
+  <data name="LOGIN_RESULT_MAXIMUM_SESSIONS_REACHED_DESCRIPTION" xml:space="preserve"> 
+    <value>فشل تسجيل الدخول لبلوغ الحد الأقصى للجلسات</value> 
+  </data> 
+  <data name="LOGIN_RESULT_MAXIMUM_SESSIONS_REACHED_NAME" xml:space="preserve"> 
+    <value>تم بلوغ الحد الأقصى للجلسات</value> 
+  </data> 
+  <data name="LOGIN_RESULT_NOT_IN_WAITING_LINE_DESCRIPTION" xml:space="preserve"> 
+    <value>المستخدم المحدد ليس في قائمة الانتظار</value> 
+  </data> 
+  <data name="LOGIN_RESULT_NOT_IN_WAITING_LINE_NAME" xml:space="preserve"> 
+    <value>ليس في قائمة الانتظار</value> 
+  </data> 
+  <data name="LOGIN_RESULT_OPERATOR_USER_GROUP_DENIED_DESCRIPTION" xml:space="preserve"> 
+    <value>مجموعة المستخدمين غير مسموح لها بتسجيل الدخول من المدير</value>
+  </data> 
+  <data name="LOGIN_RESULT_OPERATOR_USER_GROUP_DENIED_NAME" xml:space="preserve"> 
+    <value>تسجيل دخول المجموعة مرفوض للمشغّل</value>
+  </data> 
+  <data name="LOGIN_RESULT_RESTRICTED_BY_AGE_DESCRIPTION" xml:space="preserve"> 
+    <value>تسجيل الدخول غير مسموح به في هذا الوقت بسبب قيود العمر</value> 
+  </data> 
+  <data name="LOGIN_RESULT_RESTRICTED_BY_AGE_NAME" xml:space="preserve"> 
+    <value>قيود عمرية لتسجيل الدخول</value> 
+  </data> 
+  <data name="LOGIN_RESULT_SLOT_IN_USE_DESCRIPTION" xml:space="preserve"> 
+    <value>الفتحة المحددة مستخدمة بالفعل</value> 
+  </data> 
+  <data name="LOGIN_RESULT_SLOT_IN_USE_NAME" xml:space="preserve"> 
+    <value>الفتحة مستخدمة بالفعل</value> 
+  </data> 
+  <data name="LOGIN_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
+    <value>نجح تسجيل دخول المستخدم</value> 
+  </data> 
+  <data name="LOGIN_RESULT_SUCCESS_NAME" xml:space="preserve"> 
+    <value>نجاح تسجيل الدخول</value> 
+  </data> 
+  <data name="INVOICE_STATUS_PAID_NAME" xml:space="preserve"> 
+    <value>مدفوعة</value> 
+  </data> 
+  <data name="INVOICE_STATUS_PARTIALLY_PAID_NAME" xml:space="preserve"> 
+    <value>مدفوعة جزئياً</value> 
+  </data> 
+  <data name="INVOICE_STATUS_UNPAID_NAME" xml:space="preserve"> 
+    <value>غير مدفوعة</value> 
+  </data> 
+  <data name="USER_SESSION_STATE_GRACE_NAME" xml:space="preserve"> 
+    <value>مهلة</value> 
+  </data> 
+  <data name="USER_NOTE_ADDED_EVENT_NAME" xml:space="preserve"> 
+    <value>تمت إضافة ملاحظة</value> 
+  </data> 
+  <data name="USER_NOTE_ADDED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يشير إلى إضافة ملاحظة للمستخدم</value> 
+  </data> 
+  <data name="USER_NOTE_DELETED_EVENT_NAME" xml:space="preserve"> 
+    <value>تم حذف الملاحظة</value> 
+  </data> 
+  <data name="USER_NOTE_DELETED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يشير إلى حذف ملاحظة المستخدم</value> 
+  </data> 
+  <data name="USER_NOTE_UPDATED_EVENT_NAME" xml:space="preserve"> 
+    <value>تم تحديث الملاحظة</value> 
+  </data> 
+  <data name="USER_NOTE_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يشير إلى تحديث ملاحظة المستخدم</value> 
+  </data> 
+  <data name="RESERVATION_CURRENT_CONFIRM_RESULT_SUCCESS_NAME" xml:space="preserve"> 
+    <value>نجاح</value> 
+  </data> 
+  <data name="RESERVATION_CURRENT_CONFIRM_RESULT_INVALID_PIN_NAME" xml:space="preserve"> 
+    <value>رمز PIN غير صالح</value> 
+  </data> 
+  <data name="RESERVATION_CURRENT_CONFIRM_RESULT_ERROR_NAME" xml:space="preserve"> 
+    <value>خطأ</value> 
+  </data> 
+  <data name="RESERVATION_CURRENT_CONFIRMED_RESULT_CONFIRMED_NAME" xml:space="preserve"> 
+    <value>مؤكد</value> 
+  </data> 
+  <data name="RESERVATION_CURRENT_CONFIRMED_RESULT_NO_RESERVATION_NAME" xml:space="preserve"> 
+    <value>لا يوجد حجز</value> 
+  </data> 
+  <data name="RESERVATION_CURRENT_CONFIRMED_RESULT_UNCONFIRMED_NAME" xml:space="preserve"> 
+    <value>غير مؤكد</value> 
+  </data> 
+  <data name="RESERVATION_CURRENT_CONFIRM_RESULT_NO_RESERVATION_NAME" xml:space="preserve"> 
+    <value>لا يوجد حجز</value> 
+  </data> 
+  <data name="AUTHENTICATION_RESULT_ERROR_DESCRIPTION" xml:space="preserve"> 
+    <value>فشل بسبب خطأ</value> 
+  </data> 
+  <data name="AUTHENTICATION_RESULT_ERROR_NAME" xml:space="preserve"> 
+    <value>خطأ</value> 
+  </data> 
+  <data name="AUTHENTICATION_RESULT_NETWORK_ERROR_DESCRIPTION" xml:space="preserve"> 
+    <value>فشل بسبب خطأ في الشبكة</value> 
+  </data> 
+  <data name="AUTHENTICATION_RESULT_NETWORK_ERROR_NAME" xml:space="preserve"> 
+    <value>خطأ في الشبكة</value>
+  </data> 
+  <data name="AUTHENTICATION_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
+    <value>نجحت المصادقة</value> 
+  </data> 
+  <data name="AUTHENTICATION_RESULT_SUCCESS_NAME" xml:space="preserve"> 
+    <value>نجاح</value>
+  </data> 
+  <data name="AUTHENTICATION_RESULT_UNAUTHORIZED_DESCRIPTION" xml:space="preserve"> 
+    <value>غير مصرح</value> 
+  </data> 
+  <data name="AUTHENTICATION_RESULT_UNAUTHORIZED_NAME" xml:space="preserve"> 
+    <value>غير مصرح</value> 
+  </data> 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+</root>
