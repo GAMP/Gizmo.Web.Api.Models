@@ -1,4 +1,6 @@
-﻿namespace Gizmo.Web.Api.Models
+﻿using System;
+
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Inventory inbound entry model.
@@ -38,8 +40,14 @@
 
         /// <summary>
         /// Total cost.
-        /// </summary>       
+        /// </summary>
         [MessagePack.Key(7)]
         public decimal TotalCost { get; init; }
+
+        /// <summary>
+        /// Expiration date (UTC).
+        /// </summary>
+        [MessagePack.Key(8)]
+        public DateTime? ExpirationDate { get; init; }
     }
 }

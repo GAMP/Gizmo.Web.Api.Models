@@ -1,4 +1,6 @@
-﻿namespace Gizmo.Web.Api.Models
+﻿using System;
+
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Inventory inbound entry create model.
@@ -23,5 +25,11 @@
         /// </summary>
         [MessagePack.Key(3)]
         public decimal UnitCost { get; init; }
+
+        /// <summary>
+        /// Expiration date (UTC).
+        /// </summary>
+        [MessagePack.Key(4)]
+        public DateTime? ExpirationDate { get; init; }
     }
 }
