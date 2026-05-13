@@ -447,6 +447,10 @@
   <data name="USER_SESSION_STATE_PENDING_NAME" xml:space="preserve"><value>Afventer</value></data>
   <data name="USER_SESSION_STATE_PAUSED_NAME" xml:space="preserve"><value>Sat på pause</value></data>
   <data name="USER_SESSION_STATE_MOVED_NAME" xml:space="preserve"><value>Flyttet</value></data>
+  <data name="USAGE_TYPE_NONE_NAME" xml:space="preserve"><value>Tid</value></data>
+  <data name="USAGE_TYPE_RATE_NAME" xml:space="preserve"><value>Sats</value></data>
+  <data name="USAGE_TYPE_TIME_FIXED_NAME" xml:space="preserve"><value>Fast tid</value></data>
+  <data name="USAGE_TYPE_TIME_OFFER_NAME" xml:space="preserve"><value>Tidspakke</value></data>
   <data name="ENTITY_EVENT_TYPE_ADDED_NAME" xml:space="preserve"><value>Tilføjet</value></data>
   <data name="ENTITY_EVENT_TYPE_REMOVED_NAME" xml:space="preserve"><value>Fjernet</value></data>
   <data name="ENTITY_EVENT_TYPE_MODIFIED_NAME" xml:space="preserve"><value>Ændret</value></data>

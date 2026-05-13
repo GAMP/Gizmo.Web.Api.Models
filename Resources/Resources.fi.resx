@@ -447,6 +447,10 @@
   <data name="USER_SESSION_STATE_PENDING_NAME" xml:space="preserve"><value>Odottaa</value></data>
   <data name="USER_SESSION_STATE_PAUSED_NAME" xml:space="preserve"><value>Pysäytetty</value></data>
   <data name="USER_SESSION_STATE_MOVED_NAME" xml:space="preserve"><value>Siirretty</value></data>
+  <data name="USAGE_TYPE_NONE_NAME" xml:space="preserve"><value>Aika</value></data>
+  <data name="USAGE_TYPE_RATE_NAME" xml:space="preserve"><value>Hinta</value></data>
+  <data name="USAGE_TYPE_TIME_FIXED_NAME" xml:space="preserve"><value>Kiinteä aika</value></data>
+  <data name="USAGE_TYPE_TIME_OFFER_NAME" xml:space="preserve"><value>Aikapaketti</value></data>
   <data name="ENTITY_EVENT_TYPE_ADDED_NAME" xml:space="preserve"><value>Lisätty</value></data>
   <data name="ENTITY_EVENT_TYPE_REMOVED_NAME" xml:space="preserve"><value>Poistettu</value></data>
   <data name="ENTITY_EVENT_TYPE_MODIFIED_NAME" xml:space="preserve"><value>Muutettu</value></data>

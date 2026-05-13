@@ -1477,6 +1477,18 @@
   <data name="USER_SESSION_STATE_MOVED_NAME" xml:space="preserve">
     <value>Μετακινήθηκε</value>
   </data>
+  <data name="USAGE_TYPE_NONE_NAME" xml:space="preserve">
+    <value>Ώρα</value>
+  </data>
+  <data name="USAGE_TYPE_RATE_NAME" xml:space="preserve">
+    <value>Προφίλ χρέωσης</value>
+  </data>
+  <data name="USAGE_TYPE_TIME_FIXED_NAME" xml:space="preserve">
+    <value>Σταθερός χρόνος</value>
+  </data>
+  <data name="USAGE_TYPE_TIME_OFFER_NAME" xml:space="preserve">
+    <value>Προσφορά χρόνου</value>
+  </data>
   <data name="USER_SESSION_STATE_NONE_NAME" xml:space="preserve">
     <value>Σε αναμονή</value>
   </data>

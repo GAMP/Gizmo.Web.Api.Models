@@ -1384,6 +1384,19 @@
   <data name="USER_SESSION_STATE_MOVED_NAME" xml:space="preserve">
     <value>Moved</value>
   </data>
+  <data name="USAGE_TYPE_NONE_NAME" xml:space="preserve">
+    <value>Time</value>
+    <comment>None represents an unknown usage type, usually only possible with external plugin modules.</comment>
+  </data>
+  <data name="USAGE_TYPE_RATE_NAME" xml:space="preserve">
+    <value>Rate</value>
+  </data>
+  <data name="USAGE_TYPE_TIME_FIXED_NAME" xml:space="preserve">
+    <value>Fixed time</value>
+  </data>
+  <data name="USAGE_TYPE_TIME_OFFER_NAME" xml:space="preserve">
+    <value>Time offer</value>
+  </data>
   <data name="ENTITY_EVENT_TYPE_ADDED_NAME" xml:space="preserve">
     <value>Added</value>
   </data>

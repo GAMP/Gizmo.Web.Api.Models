@@ -1324,12 +1324,24 @@
   <data name="USER_SESSION_STATE_PAUSED_NAME" xml:space="preserve"> 
     <value>Приостановлено</value> 
   </data> 
-  <data name="USER_SESSION_STATE_MOVED_NAME" xml:space="preserve"> 
-    <value>Перемещено</value> 
-  </data> 
-  <data name="ENTITY_EVENT_TYPE_ADDED_NAME" xml:space="preserve"> 
-    <value>Добавлено</value> 
-  </data> 
+  <data name="USER_SESSION_STATE_MOVED_NAME" xml:space="preserve">
+    <value>Перемещено</value>
+  </data>
+  <data name="USAGE_TYPE_NONE_NAME" xml:space="preserve">
+    <value>Время</value>
+  </data>
+  <data name="USAGE_TYPE_RATE_NAME" xml:space="preserve">
+    <value>Тариф</value>
+  </data>
+  <data name="USAGE_TYPE_TIME_FIXED_NAME" xml:space="preserve">
+    <value>Фиксированное время</value>
+  </data>
+  <data name="USAGE_TYPE_TIME_OFFER_NAME" xml:space="preserve">
+    <value>Пакет</value>
+  </data>
+  <data name="ENTITY_EVENT_TYPE_ADDED_NAME" xml:space="preserve">
+    <value>Добавлено</value>
+  </data>
   <data name="ENTITY_EVENT_TYPE_REMOVED_NAME" xml:space="preserve"> 
     <value>Удалено</value> 
   </data> 

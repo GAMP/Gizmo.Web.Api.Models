@@ -1675,6 +1675,18 @@
   <data name="USER_SESSION_STATE_MOVED_NAME" xml:space="preserve">
     <value>Taşındı</value>
   </data>
+  <data name="USAGE_TYPE_NONE_NAME" xml:space="preserve">
+    <value>Süre</value>
+  </data>
+  <data name="USAGE_TYPE_RATE_NAME" xml:space="preserve">
+    <value>Fiyat</value>
+  </data>
+  <data name="USAGE_TYPE_TIME_FIXED_NAME" xml:space="preserve">
+    <value>Sabit süre</value>
+  </data>
+  <data name="USAGE_TYPE_TIME_OFFER_NAME" xml:space="preserve">
+    <value>Zaman paketi</value>
+  </data>
   <data name="USER_SESSION_STATE_NONE_NAME" xml:space="preserve">
     <value>Bekliyor</value>
   </data>

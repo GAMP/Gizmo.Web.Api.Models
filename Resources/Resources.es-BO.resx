@@ -1073,6 +1073,18 @@
   <data name="USER_SESSION_STATE_MOVED_NAME" xml:space="preserve">
     <value>Trasladado</value>
   </data>
+  <data name="USAGE_TYPE_NONE_NAME" xml:space="preserve">
+    <value>Tiempo</value>
+  </data>
+  <data name="USAGE_TYPE_RATE_NAME" xml:space="preserve">
+    <value>Calificación</value>
+  </data>
+  <data name="USAGE_TYPE_TIME_FIXED_NAME" xml:space="preserve">
+    <value>Tiempo fijo</value>
+  </data>
+  <data name="USAGE_TYPE_TIME_OFFER_NAME" xml:space="preserve">
+    <value>Oferta de tiempo</value>
+  </data>
   <data name="USER_SESSION_STATE_NONE_NAME" xml:space="preserve">
     <value>Esperando</value>
   </data>

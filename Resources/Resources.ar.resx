@@ -1324,12 +1324,24 @@
   <data name="USER_SESSION_STATE_PAUSED_NAME" xml:space="preserve"> 
     <value>متوقفة مؤقتاً</value> 
   </data> 
-  <data name="USER_SESSION_STATE_MOVED_NAME" xml:space="preserve"> 
-    <value>منقولة</value> 
-  </data> 
-  <data name="ENTITY_EVENT_TYPE_ADDED_NAME" xml:space="preserve"> 
-    <value>تمت الإضافة</value> 
-  </data> 
+  <data name="USER_SESSION_STATE_MOVED_NAME" xml:space="preserve">
+    <value>منقولة</value>
+  </data>
+  <data name="USAGE_TYPE_NONE_NAME" xml:space="preserve">
+    <value>وقت</value>
+  </data>
+  <data name="USAGE_TYPE_RATE_NAME" xml:space="preserve">
+    <value>معدل</value>
+  </data>
+  <data name="USAGE_TYPE_TIME_FIXED_NAME" xml:space="preserve">
+    <value>وقت ثابت</value>
+  </data>
+  <data name="USAGE_TYPE_TIME_OFFER_NAME" xml:space="preserve">
+    <value>عرض وقت</value>
+  </data>
+  <data name="ENTITY_EVENT_TYPE_ADDED_NAME" xml:space="preserve">
+    <value>تمت الإضافة</value>
+  </data>
   <data name="ENTITY_EVENT_TYPE_REMOVED_NAME" xml:space="preserve"> 
     <value>تمت الإزالة</value> 
   </data> 

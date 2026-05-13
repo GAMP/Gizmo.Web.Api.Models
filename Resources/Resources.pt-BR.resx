@@ -1264,12 +1264,24 @@
   <data name="USER_SESSION_STATE_PAUSED_NAME" xml:space="preserve"> 
     <value>Em pausa</value> 
   </data> 
-  <data name="USER_SESSION_STATE_MOVED_NAME" xml:space="preserve"> 
-    <value>Movido</value> 
-  </data> 
-  <data name="ENTITY_EVENT_TYPE_ADDED_NAME" xml:space="preserve"> 
-    <value>Adicionado</value> 
-  </data> 
+  <data name="USER_SESSION_STATE_MOVED_NAME" xml:space="preserve">
+    <value>Movido</value>
+  </data>
+  <data name="USAGE_TYPE_NONE_NAME" xml:space="preserve">
+    <value>Tempo</value>
+  </data>
+  <data name="USAGE_TYPE_RATE_NAME" xml:space="preserve">
+    <value>Tarifa</value>
+  </data>
+  <data name="USAGE_TYPE_TIME_FIXED_NAME" xml:space="preserve">
+    <value>Tempo fixo</value>
+  </data>
+  <data name="USAGE_TYPE_TIME_OFFER_NAME" xml:space="preserve">
+    <value>Oferta de tempo</value>
+  </data>
+  <data name="ENTITY_EVENT_TYPE_ADDED_NAME" xml:space="preserve">
+    <value>Adicionado</value>
+  </data>
   <data name="ENTITY_EVENT_TYPE_REMOVED_NAME" xml:space="preserve"> 
     <value>Removido</value> 
   </data> 
