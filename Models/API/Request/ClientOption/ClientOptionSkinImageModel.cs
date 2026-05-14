@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Gizmo.Web.Api.Models
+﻿namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Client option skin image.
@@ -18,12 +16,12 @@ namespace Gizmo.Web.Api.Models
         /// Image name.
         /// </summary>
         [MessagePack.Key(1)]
-        public string ImageName { get; set; } = string.Empty;
+        public string? ImageName { get; set; } 
 
         /// <summary>
         /// Image.
         /// </summary>
         [MessagePack.Key(2)]
-        public byte[] Image { get; set; } = Array.Empty<byte>();
+        public byte[]? Image { get; set; }
     }
 }
