@@ -4,7 +4,7 @@ namespace Gizmo.Web.Api.Messaging
 {
     [Union(2500, typeof(UserMaintenceErrorEventMessage))]
     [Union(2501, typeof(UserFixDuplicatesResultEventMessage))]
-    [Union(2502, typeof(UserImportUsersResultEventMessage))]
+    [Union(2502, typeof(ImportUsersResultEventMessage))]
     public partial interface IAPIEventMessage
     {
     }
