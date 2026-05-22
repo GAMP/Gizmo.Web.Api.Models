@@ -5,8 +5,8 @@ namespace Gizmo.Web.Api.Messaging
     /// <summary>
     /// Host locked state changed message.
     /// </summary>
-    [System.ComponentModel.DataAnnotations.Name("Lock state changed", nameof(Resources.HOST_LOCK_STATE_CHANED_EVENT_GROUP_NAME))]
-    [System.ComponentModel.DataAnnotations.ExtendedDescription("Host lock state changed", nameof(Resources.HOST_LOCK_STATE_CHANED_EVENT_GROUP_DESCRIPTION))]
+    [System.ComponentModel.DataAnnotations.Name("Lock state changed", nameof(Resources.HOST_LOCK_STATE_CHANGED_EVENT_GROUP_NAME))]
+    [System.ComponentModel.DataAnnotations.ExtendedDescription("Host lock state changed", nameof(Resources.HOST_LOCK_STATE_CHANGED_EVENT_GROUP_DESCRIPTION))]
     [MessagePack.MessagePackObject()]
     public sealed class HostLockStateChanged : HostEventMessageBase
     {

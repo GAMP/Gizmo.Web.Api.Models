@@ -1,58 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?>
-<root>
-  <!--
-  Loco xml export: ResX - .NET resources
-  Project: Gizmo.Web.Api.Models
-  Locale: el-GR, Greek (Greece)
-  Exported by: Oleg Savelos
-  Exported at: Wed, 29 Apr 2026 16:00:00 +0300
-  -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
+<?xml version='1.0' encoding='utf-8'?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" />
+              </xs:sequence>
+              <xs:attribute name="name" use="required" type="xsd:string" />
+              <xs:attribute name="type" type="xsd:string" />
+              <xs:attribute name="mimetype" type="xsd:string" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xsd:string" />
+              <xs:attribute name="name" type="xsd:string" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3" />
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" />
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
   <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
@@ -65,22 +58,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="locoLocaleCode">
-    <value>el-GR</value>
-  </metadata>
-  <metadata name="locoLocaleName" xml:space="preserve">
-    <value>Greek (Greece)</value>
-  </metadata>
   <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_DESCRIPTION" xml:space="preserve">
     <value>Αποτυχία διαγραφής κατηγορίας εφαρμογής</value>
   </data>
   <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_NAME" xml:space="preserve">
     <value>Αποτυχία διαγραφής κατηγορίας εφαρμογής</value>
   </data>
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPY_DESCRIPTION" xml:space="preserve">
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPTY_DESCRIPTION" xml:space="preserve">
     <value>Δεν είναι δυνατή η διαγραφή μη κενής κατηγορίας εφαρμογής</value>
   </data>
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPY_NAME" xml:space="preserve">
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPTY_NAME" xml:space="preserve">
     <value>Η κατηγορία εφαρμογής δεν είναι κενή</value>
   </data>
   <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
@@ -375,7 +362,7 @@
     <value>Γραμμή παραγγελίας</value>
   </data>
   <data name="DISCOUNT_CALCULATION_TYPE_FIXED" xml:space="preserve">
-    <value>Σταθερό ποσό</value>
+    <value>Σταθερό</value>
   </data>
   <data name="DISCOUNT_CALCULATION_TYPE_PERCENTAGE" xml:space="preserve">
     <value>Ποσοστό</value>
@@ -494,10 +481,10 @@
   <data name="HOST_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Σταθμός</value>
   </data>
-  <data name="HOST_IN_ORDER_STATE_CHANED_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+  <data name="HOST_IN_ORDER_STATE_CHANGED_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
     <value>Άλλαξε η κατάσταση εντολής σταθμού</value>
   </data>
-  <data name="HOST_IN_ORDER_STATE_CHANED_EVENT_GROUP_NAME" xml:space="preserve">
+  <data name="HOST_IN_ORDER_STATE_CHANGED_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Άλλαξε η κατάσταση εντολής</value>
   </data>
   <data name="HOST_LAYOUT_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
@@ -548,10 +535,10 @@
   <data name="HOST_LAYOUT_UPDATED_EVENT_NAME" xml:space="preserve">
     <value>Ενημερώθηκε διάταξη σταθμών</value>
   </data>
-  <data name="HOST_LOCK_STATE_CHANED_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+  <data name="HOST_LOCK_STATE_CHANGED_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
     <value>Άλλαξε η κατάσταση κλειδώματος σταθμού</value>
   </data>
-  <data name="HOST_LOCK_STATE_CHANED_EVENT_GROUP_NAME" xml:space="preserve">
+  <data name="HOST_LOCK_STATE_CHANGED_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Άλλαξε η κατάσταση κλειδώματος</value>
   </data>
   <data name="INSTANCE_AUTHENTICATION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
@@ -573,10 +560,10 @@
     <value>Εγκατάσταση</value>
   </data>
   <data name="INSTANCE_ID_TYPE_HARDWARE_ID_DESCRIPTION" xml:space="preserve">
-    <value>Hardware id</value>
+    <value>Αναγνωριστικό υλικού</value>
   </data>
   <data name="INSTANCE_ID_TYPE_HARDWARE_ID_NAME" xml:space="preserve">
-    <value>Hardware id</value>
+    <value>Αναγνωριστικό υλικού</value>
   </data>
   <data name="INSTANCE_ID_TYPE_INSTANCE_ID_DESCRIPTION" xml:space="preserve">
     <value>Αναγνωριστικό εγκατάστασης</value>
@@ -981,25 +968,25 @@
     <value>Απέτυχε</value>
   </data>
   <data name="PAYMENT_INTENT_STATE_CANCELLED" xml:space="preserve">
-    <value>Ακυρωμένη</value>
+    <value>Ακυρώθηκε</value>
   </data>
   <data name="PAYMENT_INTENT_STATE_CAPTURED" xml:space="preserve">
-    <value>Επιβεβαιωμένη</value>
+    <value>Επιβεβαιώθηκε</value>
   </data>
   <data name="PAYMENT_INTENT_STATE_COMPLETED" xml:space="preserve">
-    <value>Ολοκληρωμένη</value>
+    <value>Ολοκληρώθηκε</value>
   </data>
   <data name="PAYMENT_INTENT_STATE_DECLINED" xml:space="preserve">
-    <value>Απορριφθείσα</value>
+    <value>Απορρίφθηκε</value>
   </data>
   <data name="PAYMENT_INTENT_STATE_EXPIRED" xml:space="preserve">
-    <value>Ληγμένη</value>
+    <value>Έληξε</value>
   </data>
   <data name="PAYMENT_INTENT_STATE_FAILED" xml:space="preserve">
-    <value>Αποτυχημένη</value>
+    <value>Απέτυχε</value>
   </data>
   <data name="PAYMENT_INTENT_STATE_PENDING" xml:space="preserve">
-    <value>Σε εκκρεμότητα</value>
+    <value>Εκκρεμεί</value>
   </data>
   <data name="PAYMENT_TRANSACTION_DIRECTION_IN" xml:space="preserve">
     <value>Εισερχόμενη</value>
@@ -1034,10 +1021,10 @@
   <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_NAME" xml:space="preserve">
     <value>Αποτυχία διαγραφής ομάδας προϊόντων</value>
   </data>
-  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_DESCRIPTION" xml:space="preserve">
+  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPTY_DESCRIPTION" xml:space="preserve">
     <value>Δεν είναι δυνατή η διαγραφή μη κενής ομάδας προϊόντων</value>
   </data>
-  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_NAME" xml:space="preserve">
+  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPTY_NAME" xml:space="preserve">
     <value>Η ομάδα προϊόντων δεν είναι κενή</value>
   </data>
   <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
@@ -1236,7 +1223,7 @@
     <value>Αφαιρέθηκε</value>
   </data>
   <data name="RESTRICTION_TYPE_CLASS_NAME" xml:space="preserve">
-    <value>Class Name</value>
+    <value>Όνομα κλάσης</value>
   </data>
   <data name="RESTRICTION_TYPE_FILE_NAME" xml:space="preserve">
     <value>Όνομα αρχείου</value>
@@ -1353,7 +1340,7 @@
     <value>Πλήθος</value>
   </data>
   <data name="TASK_TYPE_JUNCTION_NAME" xml:space="preserve">
-    <value>Junction</value>
+    <value>Σύνδεσμος</value>
   </data>
   <data name="TASK_TYPE_NOTIFICATION_NAME" xml:space="preserve">
     <value>Ειδοποίηση</value>
@@ -1489,6 +1476,18 @@
   </data>
   <data name="USER_SESSION_STATE_MOVED_NAME" xml:space="preserve">
     <value>Μετακινήθηκε</value>
+  </data>
+  <data name="USAGE_TYPE_NONE_NAME" xml:space="preserve">
+    <value>Ώρα</value>
+  </data>
+  <data name="USAGE_TYPE_RATE_NAME" xml:space="preserve">
+    <value>Προφίλ χρέωσης</value>
+  </data>
+  <data name="USAGE_TYPE_TIME_FIXED_NAME" xml:space="preserve">
+    <value>Σταθερός χρόνος</value>
+  </data>
+  <data name="USAGE_TYPE_TIME_OFFER_NAME" xml:space="preserve">
+    <value>Προσφορά χρόνου</value>
   </data>
   <data name="USER_SESSION_STATE_NONE_NAME" xml:space="preserve">
     <value>Σε αναμονή</value>

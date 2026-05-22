@@ -59,1138 +59,1138 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ASSET_CHECKED_IN_EVENT_DESCRIPTION" xml:space="preserve">
-    <value>Указывает на регистрацию оборудования</value>
+    <value>يشير إلى إعادة المعدات</value>
   </data>
   <data name="ASSET_CHECKED_IN_EVENT_EVENT_NAME" xml:space="preserve">
-    <value>Зарегистрировано</value>
+    <value>تمت الإعادة</value>
   </data>
   <data name="ASSET_CHECKED_OUT_EVENT_DESCRIPTION" xml:space="preserve">
-    <value>Указывает на снятие оборудования с регистрации</value>
+    <value>يشير إلى إخراج المعدات</value>
   </data>
   <data name="ASSET_CHECKED_OUT_EVENT_EVENT_NAME" xml:space="preserve">
-    <value>Снято с регистрации</value>
+    <value>تم الإخراج</value>
   </data>
   <data name="ASSET_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
-    <value>События, связанные с оборудованием</value>
+    <value>الأحداث المتعلقة بالمعدات</value>
   </data>
   <data name="ASSET_EVENT_GROUP_NAME" xml:space="preserve">
-    <value>Оборудование</value>
+    <value>المعدات</value>
   </data>
   <data name="ASSISTANCE_REQUEST_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
-    <value>Указывает на изменение статуса запроса о помощи</value>
+    <value>يشير إلى تغيير حالة طلب المساعدة</value>
   </data>
   <data name="ASSISTANCE_REQUEST_CHANGE_EVENT_EVENT_NAME" xml:space="preserve">
-    <value>Изменение</value>
+    <value>تغيير</value>
   </data>
   <data name="ASSISTANCE_REQUEST_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Обозначает создание запроса о помощи</value> 
+    <value>يشير إلى إنشاء طلب مساعدة</value> 
   </data> 
   <data name="ASSISTANCE_REQUEST_CREATED_EVENT_EVENT_NAME" xml:space="preserve"> 
-    <value>Создан</value> 
+    <value>تم الإنشاء</value> 
   </data> 
   <data name="ASSISTANCE_REQUEST_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>События, связанные с запросами о помощи</value> 
+    <value>الأحداث المتعلقة بطلبات المساعدة</value> 
   </data> 
   <data name="ASSISTANCE_REQUEST_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Запрос о помощи</value> 
+    <value>طلب المساعدة</value> 
   </data> 
   <data name="AUTHENTICATION_STATE_ERROR_DESCRIPTION" xml:space="preserve"> 
-    <value>Аутентификация не удалась из-за ошибки</value> 
+    <value>فشلت المصادقة بسبب خطأ</value> 
   </data> 
   <data name="AUTHENTICATION_STATE_ERROR_NAME" xml:space="preserve"> 
-    <value>Ошибка</value> 
+    <value>خطأ</value> 
   </data> 
   <data name="AUTHENTICATION_STATE_INVALID_DESCRIPTION" xml:space="preserve"> 
-    <value>Статус аутентификации неверно</value> 
+    <value>حالة المصادقة غير صالحة</value> 
   </data> 
   <data name="AUTHENTICATION_STATE_INVALID_NAME" xml:space="preserve"> 
-    <value>Недопустимо</value> 
+    <value>غير صالح</value> 
   </data> 
   <data name="AUTHENTICATION_STATE_NETWORK_ERROR_DESCRIPTION" xml:space="preserve"> 
-    <value>Аутентификация не удалась из-за ошибки в сети</value> 
+    <value>فشلت المصادقة بسبب خطأ في الشبكة</value> 
   </data> 
   <data name="AUTHENTICATION_STATE_NETWORK_ERROR_NAME" xml:space="preserve"> 
-    <value>Сетевая ошибка</value> 
+    <value>خطأ في الشبكة</value> 
   </data> 
   <data name="AUTHENTICATION_STATE_NO_TOKEN_DESCRIPTION" xml:space="preserve"> 
-    <value>No токена для аутентификации</value> 
+    <value>لا يوجد رمز مميز للمصادقة</value> 
   </data> 
   <data name="AUTHENTICATION_STATE_NO_TOKEN_NAME" xml:space="preserve">
-    <value>Нет токена</value> 
+    <value>لا يوجد رمز</value> 
   </data> 
   <data name="AUTHENTICATION_STATE_UNAUTHORIZED_DESCRIPTION" xml:space="preserve"> 
-    <value>Несанкционированный</value> 
+    <value>غير مصرح</value> 
   </data> 
   <data name="AUTHENTICATION_STATE_UNAUTHORIZED_NAME" xml:space="preserve"> 
-    <value>Несанкционированный</value> 
+    <value>غير مصرح</value> 
   </data> 
   <data name="AUTHENTICATION_STATE_VALID_DESCRIPTION" xml:space="preserve"> 
-    <value>Аутентификация пройдена</value> 
+    <value>المصادقة صالحة</value> 
   </data> 
   <data name="AUTHENTICATION_STATE_VALID_NAME" xml:space="preserve"> 
-    <value>Действительно</value> 
+    <value>صالح</value> 
   </data> 
   <data name="AUTHORIZATION_RESULT_ERROR_DESCRIPTION" xml:space="preserve"> 
-    <value>Неудачный результат из-за ошибки</value> 
+    <value>فشل بسبب خطأ</value> 
   </data> 
   <data name="AUTHORIZATION_RESULT_ERROR_NAME" xml:space="preserve"> 
-    <value>Ошибка</value> 
+    <value>خطأ</value> 
   </data> 
   <data name="AUTHORIZATION_RESULT_INVALID_ID_DESCRIPTION" xml:space="preserve"> 
-    <value>Неудачный запрос из-за недопустимого Id экземпляра</value> 
+    <value>فشل بسبب معرّف نسخة غير صالح</value> 
   </data> 
   <data name="AUTHORIZATION_RESULT_INVALID_ID_NAME" xml:space="preserve"> 
-    <value>Неверный Id</value> 
+    <value>معرّف غير صالح</value> 
   </data> 
   <data name="AUTHORIZATION_RESULT_NETWORK_ERROR_DESCRIPTION" xml:space="preserve"> 
-    <value>Неудачный результат из-за сбоя в сети</value> 
+    <value>فشل بسبب خطأ في الشبكة</value> 
   </data> 
   <data name="AUTHORIZATION_RESULT_NETWORK_ERROR_NAME" xml:space="preserve"> 
-    <value>Сетевая ошибка</value>
+    <value>خطأ في الشبكة</value>
   </data> 
   <data name="AUTHORIZATION_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
-    <value>Авторизация прошла успешно</value> 
+    <value>نجح التفويض</value> 
   </data> 
   <data name="AUTHORIZATION_RESULT_SUCCESS_NAME" xml:space="preserve"> 
-    <value>Успех</value>
+    <value>نجاح</value>
   </data> 
   <data name="AUTHORIZATION_RESULT_TOKEN_EXPIRED_DESCRIPTION" xml:space="preserve"> 
-    <value>Неудачный результат из-за просроченного токена</value> 
+    <value>فشل بسبب انتهاء صلاحية الرمز المميز</value> 
   </data> 
   <data name="AUTHORIZATION_RESULT_TOKEN_EXPIRED_NAME" xml:space="preserve"> 
-    <value>Срок действия токена просрочен</value> 
+    <value>انتهى الرمز</value> 
   </data> 
   <data name="AUTHORIZATION_RESULT_UNAUTHORIZED_DESCRIPTION" xml:space="preserve"> 
-    <value>Несанкционированный</value> 
+    <value>غير مصرح</value> 
   </data> 
   <data name="AUTHORIZATION_RESULT_UNAUTHORIZED_NAME" xml:space="preserve"> 
-    <value>Несанкционированный</value> 
+    <value>غير مصرح</value> 
   </data> 
   <data name="AUTHORIZATION_WARNINGS_FUTURE_PAYMENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Будущие платежи могут не пройти из-за истечения срока действия карты</value> 
+    <value>قد تفشل المدفوعات المستقبلية بسبب انتهاء صلاحية البطاقة</value> 
   </data> 
   <data name="AUTHORIZATION_WARNINGS_FUTURE_PAYMENT_NAME" xml:space="preserve"> 
-    <value>Предупреждение о предстоящем платеже</value> 
+    <value>تحذير دفع مستقبلي</value> 
   </data> 
   <data name="AUTHORIZATION_WARNINGS_NONE_DESCRIPTION" xml:space="preserve"> 
-    <value>Неа</value> 
+    <value>لا شيء</value> 
   </data> 
   <data name="AUTHORIZATION_WARNINGS_NONE_NAME" xml:space="preserve"> 
-    <value>Неа</value> 
+    <value>لا شيء</value> 
   </data> 
   <data name="AUTHORIZATION_WARNINGS_PAYMENT_FAILURE_DESCRIPTION" xml:space="preserve"> 
-    <value>Попытка оплаты не удалась</value> 
+    <value>لم تنجح محاولة الدفع</value> 
   </data> 
   <data name="AUTHORIZATION_WARNINGS_PAYMENT_FAILURE_NAME" xml:space="preserve"> 
-    <value>Ошибка при оплате</value> 
+    <value>فشل الدفع</value> 
   </data> 
   <data name="BRANCH_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие создания филиала</value>
+    <value>حدث إنشاء الفرع</value>
   </data> 
   <data name="BRANCH_CREATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Создан филиал</value> 
+    <value>تم إنشاء الفرع</value> 
   </data> 
   <data name="BRANCH_DELETED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие удаления филиала</value>
+    <value>حدث حذف الفرع</value>
   </data> 
   <data name="BRANCH_DELETED_EVENT_NAME" xml:space="preserve"> 
-    <value>Удаленные</value> 
+    <value>تم الحذف</value> 
   </data> 
   <data name="BRANCH_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>События, связанные с филиалом</value> 
+    <value>الأحداث المتعلقة بالفروع</value> 
   </data> 
   <data name="BRANCH_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Филиал</value> 
+    <value>الفرع</value> 
   </data> 
   <data name="BRANCH_OPERATOR_ADDED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие добавления оператора</value>
+    <value>حدث إضافة المشغّل</value>
   </data> 
   <data name="BRANCH_OPERATOR_ADDED_EVENT_NAME" xml:space="preserve"> 
-    <value>Оператор добавлен</value>
+    <value>تمت إضافة المشغّل</value>
   </data> 
   <data name="BRANCH_OPERATOR_DEFAULT_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие смены филиала по умолчанию оператора</value>
+    <value>حدث تغيير الفرع الافتراضي للمشغّل</value>
   </data> 
   <data name="BRANCH_OPERATOR_DEFAULT_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value>Смена филиала по умолчанию у операторов</value>
+    <value>تغيير الفرع الافتراضي للمشغّل</value>
   </data> 
   <data name="BRANCH_OPERATOR_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие удаления оператора</value>
+    <value>حدث إزالة المشغّل</value>
   </data> 
   <data name="BRANCH_OPERATOR_REMOVED_EVENT_NAME" xml:space="preserve"> 
-    <value>Оператор удален</value> 
+    <value>تمت إزالة المشغّل</value> 
   </data> 
   <data name="BRANCH_UNDELETED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие восстановления филиала</value>
+    <value>حدث استعادة الفرع</value>
   </data> 
   <data name="BRANCH_UNDELETED_EVENT_NAME" xml:space="preserve"> 
-    <value>Отменить удаление</value> 
+    <value>تمت الاستعادة</value> 
   </data> 
   <data name="BRANCH_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие обновления филиала</value> 
+    <value>حدث تحديث الفرع</value> 
   </data> 
   <data name="BRANCH_UPDATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Филиал обновлен</value> 
+    <value>تم تحديث الفرع</value> 
   </data> 
   <data name="DEVICE_BARCODE_SCANNED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие сканирования штрихкода</value> 
+    <value>حدث مسح الباركود</value> 
   </data> 
   <data name="DEVICE_BARCODE_SCANNED_EVENT_NAME" xml:space="preserve"> 
-    <value>Штрихкод отсканирован</value> 
+    <value>تم مسح الباركود</value> 
   </data> 
   <data name="DEVICE_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>События, связанные с устройствами</value> 
+    <value>الأحداث المتعلقة بالجهاز</value> 
   </data> 
   <data name="DEVICE_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Устройство</value> 
+    <value>الجهاز</value> 
   </data> 
   <data name="DEVICE_SMART_CARD_READER_DATA_EVENT_NAME" xml:space="preserve"> 
-    <value>Событие, связанное с данными считывателя смарт-карт</value> 
+    <value>حدث بيانات قارئ البطاقة الذكية</value> 
   </data> 
   <data name="DEVICE_SMART_CARD_READER_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие, связанное с данными считывателя смарт-карт</value> 
+    <value>حدث بيانات قارئ البطاقة الذكية</value> 
   </data> 
   <data name="DISCOUNT_APPLY_TYPE_ORDER" xml:space="preserve"> 
-    <value>Заказ</value> 
+    <value>الطلب</value> 
   </data> 
   <data name="DISCOUNT_APPLY_TYPE_ORDER_LINE" xml:space="preserve"> 
-    <value>Строка заказа</value> 
+    <value>بند الطلب</value> 
   </data> 
   <data name="DISCOUNT_CALCULATION_TYPE_FIXED" xml:space="preserve"> 
-    <value>Фиксированный</value> 
+    <value>ثابت</value> 
   </data> 
   <data name="DISCOUNT_CALCULATION_TYPE_PERCENTAGE" xml:space="preserve"> 
-    <value>Процент</value> 
+    <value>نسبة مئوية</value> 
   </data> 
   <data name="DISCOUNT_REWARD_TYPE_BONUS" xml:space="preserve"> 
-    <value>Бонус</value> 
+    <value>مكافأة</value> 
   </data> 
   <data name="DISCOUNT_REWARD_TYPE_DISCOUNT" xml:space="preserve"> 
-    <value>Скидка</value> 
+    <value>خصم</value> 
   </data> 
   <data name="DOCUMENT_TYPES_CONSIGNMENT_NOTE" xml:space="preserve"> 
-    <value>Накладная</value> 
+    <value>مذكرة شحن</value> 
   </data> 
   <data name="DOCUMENT_TYPES_DELIVERY_NOTE" xml:space="preserve"> 
-    <value>Накладная</value> 
+    <value>مذكرة تسليم</value> 
   </data> 
   <data name="DOCUMENT_TYPES_DISPATCH_NOTE" xml:space="preserve"> 
-    <value>Примечание к накладной</value> 
+    <value>مذكرة إرسال</value> 
   </data> 
   <data name="DOCUMENT_TYPES_INVOICE" xml:space="preserve"> 
-    <value>Счёт</value>
+    <value>فاتورة</value>
   </data> 
   <data name="DOCUMENT_TYPES_STOCK_TAKE_REPORT" xml:space="preserve"> 
-    <value>Отчет о проведении инвентаризации</value> 
+    <value>تقرير جرد المخزون</value> 
   </data> 
   <data name="DOCUMENT_TYPES_WORK_ORDER" xml:space="preserve"> 
-    <value>Заказ на выполнение работ</value> 
+    <value>أمر عمل</value> 
   </data> 
   <data name="DOCUMENT_TYPES_WRITE_OFF_REPORT" xml:space="preserve"> 
-    <value>Отчет о списании</value> 
+    <value>تقرير الشطب</value> 
   </data> 
   <data name="ENTITY_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Указывает на изменение сущности БД</value> 
+    <value>يشير إلى تغيير كيان في قاعدة البيانات</value> 
   </data> 
   <data name="ENTITY_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Изменение сущности БД</value> 
+    <value>تغيير كيان قاعدة البيانات</value> 
   </data> 
   <data name="ENTITY_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>События, связанные с сущностями БД</value> 
+    <value>الأحداث المتعلقة بكيانات قاعدة البيانات</value> 
   </data> 
   <data name="ENTITY_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Сущность БД</value> 
+    <value>كيان قاعدة البيانات</value> 
   </data> 
   <data name="HOST_COMPUTER_CLIENT_MODULE_VERSION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие «Изменение версии клиента»</value> 
+    <value>حدث تغيير إصدار العميل</value> 
   </data> 
   <data name="HOST_COMPUTER_CLIENT_MODULE_VERSION_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value>Изменена версия клиента</value> 
+    <value>تغيير إصدار العميل</value> 
   </data> 
   <data name="HOST_COMPUTER_CONNECTION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие «Изменение подключения»</value> 
+    <value>حدث تغيير الاتصال</value> 
   </data> 
   <data name="HOST_COMPUTER_CONNECTION_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value>Соединение изменилось</value> 
+    <value>تغيير الاتصال</value> 
   </data> 
   <data name="HOST_COMPUTER_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>События, связанные с хостом</value> 
+    <value>الأحداث المتعلقة بالحاسوب المضيف</value> 
   </data> 
   <data name="HOST_COMPUTER_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Хост-компьютер</value> 
+    <value>الحاسوب المضيف</value> 
   </data> 
   <data name="HOST_COMPUTER_INPUT_LOCK_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие изменения блокировки ввода</value> 
+    <value>حدث تغيير قفل الإدخال</value> 
   </data> 
   <data name="HOST_COMPUTER_INPUT_LOCK_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value>Изменена блокировка ввода</value> 
+    <value>تغيير قفل الإدخال</value> 
   </data> 
   <data name="HOST_COMPUTER_MAINTENANCE_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие изменения обслуживания</value> 
+    <value>حدث تغيير وضع الصيانة</value> 
   </data> 
   <data name="HOST_COMPUTER_MAINTENANCE_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value>Изменения в обслуживании</value> 
+    <value>تغيير وضع الصيانة</value> 
   </data> 
   <data name="HOST_COMPUTER_SECURITY_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие, связанное с изменением настроек безопасности</value> 
+    <value>حدث تغيير الحماية</value> 
   </data> 
   <data name="HOST_COMPUTER_SECURITY_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value>Изменения в системе безопасности</value> 
+    <value>تغيير الحماية</value> 
   </data> 
   <data name="HOST_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
-    <value>События, связанные с хостом</value>
+    <value>الأحداث المتعلقة بالمحطة</value>
   </data>
   <data name="HOST_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Хост</value> 
+    <value>المحطة</value> 
   </data> 
   <data name="HOST_IN_ORDER_STATE_CHANGED_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Изменилось состояние хоста в очереди</value> 
+    <value>تغيرت حالة الطلب للمحطة</value> 
   </data> 
   <data name="HOST_IN_ORDER_STATE_CHANGED_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>По изменению статуса</value> 
+    <value>تغيير حالة الطلب</value> 
   </data> 
   <data name="HOST_LAYOUT_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие создания схемы размещения хостов</value>
+    <value>حدث إنشاء تخطيط المحطة</value>
   </data> 
   <data name="HOST_LAYOUT_CREATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Создана схема размещения хостов</value> 
+    <value>تم إنشاء تخطيط المحطة</value> 
   </data> 
   <data name="HOST_LAYOUT_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>События, связанные со схемой размещения хостов</value>
+    <value>الأحداث المتعلقة بتخطيط المحطة</value>
   </data> 
   <data name="HOST_LAYOUT_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Схема размещения хостов</value>
+    <value>تخطيط المحطة</value>
   </data> 
   <data name="HOST_LAYOUT_GROUP_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие создания группы схемы размещения хостов</value>
+    <value>حدث إنشاء مجموعة تخطيط المحطة</value>
   </data> 
   <data name="HOST_LAYOUT_GROUP_CREATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Создана группа схемы размещения хостов</value>
+    <value>تم إنشاء مجموعة تخطيط المحطة</value>
   </data> 
   <data name="HOST_LAYOUT_GROUP_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>События, связанные с группой схемы размещения хостов</value>
+    <value>الأحداث المتعلقة بمجموعة تخطيط المحطة</value>
   </data> 
   <data name="HOST_LAYOUT_GROUP_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Группа схемы размещения хостов</value>
+    <value>مجموعة تخطيط المحطة</value>
   </data> 
   <data name="HOST_LAYOUT_GROUP_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие удаления группы схемы размещения хостов</value>
+    <value>حدث إزالة مجموعة تخطيط المحطة</value>
   </data> 
   <data name="HOST_LAYOUT_GROUP_REMOVED_EVENT_NAME" xml:space="preserve"> 
-    <value>Группа схемы размещения хостов удалена</value>
+    <value>تمت إزالة مجموعة تخطيط المحطة</value>
   </data> 
   <data name="HOST_LAYOUT_GROUP_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие обновления группы схемы размещения хостов</value>
+    <value>حدث تحديث مجموعة تخطيط المحطة</value>
   </data> 
   <data name="HOST_LAYOUT_GROUP_UPDATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Группа схемы размещения хостов обновлена</value>
+    <value>تم تحديث مجموعة تخطيط المحطة</value>
   </data> 
   <data name="HOST_LAYOUT_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие удаления схемы размещения хостов</value>
+    <value>حدث إزالة تخطيط المحطة</value>
   </data> 
   <data name="HOST_LAYOUT_REMOVED_EVENT_NAME" xml:space="preserve"> 
-    <value>Схема размещения хостов удалена</value>
+    <value>تمت إزالة تخطيط المحطة</value>
   </data> 
   <data name="HOST_LAYOUT_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие обновления схемы размещения хостов</value>
+    <value>حدث تحديث تخطيط المحطة</value>
   </data> 
   <data name="HOST_LAYOUT_UPDATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Схема размещения хостов обновлена</value>
+    <value>تم تحديث تخطيط المحطة</value>
   </data> 
   <data name="HOST_LOCK_STATE_CHANGED_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Изменился статус блокировки хоста</value> 
+    <value>تغيرت حالة قفل المحطة</value> 
   </data> 
   <data name="HOST_LOCK_STATE_CHANGED_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Статус блокировки изменился</value> 
+    <value>تغيير حالة القفل</value> 
   </data> 
   <data name="INSTANCE_AUTHENTICATION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие изменения аутентификации экземпляра</value> 
+    <value>حدث تغيير مصادقة النسخة</value> 
   </data> 
   <data name="INSTANCE_AUTHENTICATION_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value>Изменена аутентификация экземпляра</value> 
+    <value>تغيير مصادقة النسخة</value> 
   </data> 
   <data name="INSTANCE_AUTHORIZATION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие изменения авторизации экземпляра</value> 
+    <value>حدث تغيير تفويض النسخة</value> 
   </data> 
   <data name="INSTANCE_AUTHORIZATION_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value>Изменено разрешение экземпляра</value> 
+    <value>تغيير تفويض النسخة</value> 
   </data> 
   <data name="INSTANCE_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>События, связанные с экземпляром</value> 
+    <value>الأحداث المتعلقة بالنسخة</value> 
   </data> 
   <data name="INSTANCE_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Экземпляр</value> 
+    <value>النسخة</value> 
   </data> 
   <data name="INSTANCE_ID_TYPE_HARDWARE_ID_DESCRIPTION" xml:space="preserve"> 
-    <value>Идентификатор оборудования</value> 
+    <value>معرّف الجهاز</value> 
   </data> 
   <data name="INSTANCE_ID_TYPE_HARDWARE_ID_NAME" xml:space="preserve"> 
-    <value>Идентификатор оборудования</value> 
+    <value>معرّف الجهاز</value> 
   </data> 
   <data name="INSTANCE_ID_TYPE_INSTANCE_ID_DESCRIPTION" xml:space="preserve"> 
-    <value>Идентификатор экземпляра</value> 
+    <value>معرّف النسخة</value> 
   </data> 
   <data name="INSTANCE_ID_TYPE_INSTANCE_ID_NAME" xml:space="preserve"> 
-    <value>Идентификатор экземпляра</value> 
+    <value>معرّف النسخة</value> 
   </data> 
   <data name="INVENTORY_ADJUSTMENT_REASONS_DAMAGED" xml:space="preserve"> 
-    <value>Поврежденная упаковка</value> 
+    <value>تلف في التغليف</value> 
   </data> 
   <data name="INVENTORY_ADJUSTMENT_REASONS_DAMAGED_ITEM" xml:space="preserve"> 
-    <value>Поврежденный товар</value> 
+    <value>عنصر تالف</value> 
   </data> 
   <data name="INVENTORY_ADJUSTMENT_REASONS_EXPIRED" xml:space="preserve"> 
-    <value>Просроченные</value> 
+    <value>منتهي الصلاحية</value> 
   </data> 
   <data name="INVENTORY_ADJUSTMENT_REASONS_FORCE_MAJOR" xml:space="preserve"> 
-    <value>Форс-мажор</value> 
+    <value>قوة قاهرة</value> 
   </data> 
   <data name="INVENTORY_ADJUSTMENT_REASONS_LOST" xml:space="preserve"> 
-    <value>Потерянный</value> 
+    <value>مفقود</value> 
   </data> 
   <data name="INVENTORY_ADJUSTMENT_REASONS_NOT_IN_DEMAND" xml:space="preserve"> 
-    <value>Не пользуется спросом</value> 
+    <value>لا يوجد طلب عليه</value> 
   </data> 
   <data name="INVENTORY_ADJUSTMENT_TYPE_SALE_BY_COST" xml:space="preserve"> 
-    <value>Продажа по себестоимости</value> 
+    <value>بيع بالتكلفة</value> 
   </data> 
   <data name="INVENTORY_ADJUSTMENT_TYPE_SALE_BY_PRICE" xml:space="preserve"> 
-    <value>Продажа по цене</value> 
+    <value>بيع بالسعر</value> 
   </data> 
   <data name="INVENTORY_ADJUSTMENT_TYPE_WRITE_OFF" xml:space="preserve"> 
-    <value>Списать</value> 
+    <value>شطب</value> 
   </data> 
   <data name="INVENTORY_TRANSFER_REASONS_FOR_ADJUSTMENT" xml:space="preserve"> 
-    <value>Для регулировки</value> 
+    <value>للتسوية</value> 
   </data> 
   <data name="INVENTORY_TRANSFER_REASONS_IN_DEMAND" xml:space="preserve"> 
-    <value>Востребованный</value> 
+    <value>مطلوب</value> 
   </data> 
   <data name="INVENTORY_TRANSFER_REASONS_NOT_IN_DEMAND" xml:space="preserve"> 
-    <value>Не пользуется спросом</value> 
+    <value>غير مطلوب</value> 
   </data> 
   <data name="INVENTORY_TYPE_ADJUSTMENT" xml:space="preserve"> 
-    <value>Корректировка</value> 
+    <value>تسوية</value> 
   </data> 
   <data name="INVENTORY_TYPE_INBOUND" xml:space="preserve"> 
-    <value>Входящий</value> 
+    <value>وارد</value> 
   </data> 
   <data name="INVENTORY_TYPE_TRANSFER" xml:space="preserve"> 
-    <value>Перевод</value> 
+    <value>تحويل</value> 
   </data> 
   <data name="INVOICE_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Обозначает создание счёта</value> 
+    <value>يشير إلى إنشاء فاتورة</value> 
   </data> 
   <data name="INVOICE_CREATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Создан</value> 
+    <value>تم الإنشاء</value> 
   </data> 
   <data name="INVOICE_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>События, связанные со счетами</value>
+    <value>الأحداث المتعلقة بالفاتورة</value>
   </data> 
   <data name="INVOICE_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Счёт</value>
+    <value>الفاتورة</value>
   </data> 
   <data name="INVOICE_PAYMENT_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Обозначает создание платежа по счёту</value> 
+    <value>يشير إلى إنشاء دفعة فاتورة</value> 
   </data> 
   <data name="INVOICE_PAYMENT_EVENT_NAME" xml:space="preserve"> 
-    <value>Платежи</value> 
+    <value>دفعة</value> 
   </data> 
   <data name="LICENSE_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>События, связанные с лицензиями</value> 
+    <value>الأحداث المتعلقة بالترخيص</value> 
   </data> 
   <data name="LICENSE_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Лицензия</value> 
+    <value>الترخيص</value> 
   </data> 
   <data name="LICENSE_STATE_DISABLED_DESCRIPTION" xml:space="preserve"> 
-    <value>Лицензия отключена</value> 
+    <value>الترخيص معطّل</value> 
   </data> 
   <data name="LICENSE_STATE_DISABLED_INSTANCE_ID_DESCRIPTION" xml:space="preserve"> 
-    <value>Идентификатор экземпляра отключен/заблокирован</value> 
+    <value>معرّف النسخة معطّل/محظور</value> 
   </data> 
   <data name="LICENSE_STATE_DISABLED_INSTANCE_ID_NAME" xml:space="preserve"> 
-    <value>Идентификатор отключенного экземпляра</value> 
+    <value>معرّف النسخة معطّل</value> 
   </data> 
   <data name="LICENSE_STATE_DISABLED_NAME" xml:space="preserve"> 
-    <value>Отключено</value> 
+    <value>معطّل</value> 
   </data> 
   <data name="LICENSE_STATE_EXPIRED_DESCRIPTION" xml:space="preserve"> 
-    <value>Срок действия лицензии просрочен</value> 
+    <value>الترخيص منتهي الصلاحية</value> 
   </data> 
   <data name="LICENSE_STATE_EXPIRED_NAME" xml:space="preserve"> 
-    <value>Просроченные</value> 
+    <value>منتهي الصلاحية</value> 
   </data> 
   <data name="LICENSE_STATE_INVALID_DESCRIPTION" xml:space="preserve"> 
-    <value>Локальная лицензия недействительна</value> 
+    <value>الترخيص المحلي غير صالح</value> 
   </data> 
   <data name="LICENSE_STATE_INVALID_NAME" xml:space="preserve"> 
-    <value>Недопустимо</value> 
+    <value>غير صالح</value> 
   </data> 
   <data name="LICENSE_STATE_UNAUTHORIZED_DESCRIPTION" xml:space="preserve"> 
-    <value>Несанкционированный</value> 
+    <value>غير مصرح</value> 
   </data> 
   <data name="LICENSE_STATE_UNAUTHORIZED_NAME" xml:space="preserve"> 
-    <value>Несанкционированный</value> 
+    <value>غير مصرح</value> 
   </data> 
   <data name="LICENSE_STATE_VALID_DESCRIPTION" xml:space="preserve"> 
-    <value>Действительно</value> 
+    <value>صالح</value> 
   </data> 
   <data name="LICENSE_STATE_VALID_NAME" xml:space="preserve"> 
-    <value>Действительно</value> 
+    <value>صالح</value> 
   </data> 
   <data name="LICENSE_TYPE_NORMAL_DESCRIPTION" xml:space="preserve"> 
-    <value>Обычная лицензия</value> 
+    <value>ترخيص عادي</value> 
   </data> 
   <data name="LICENSE_TYPE_NORMAL_NAME" xml:space="preserve"> 
-    <value>Обычный</value> 
+    <value>عادي</value> 
   </data> 
   <data name="LICENSE_TYPE_TRIAL_DESCRIPTION" xml:space="preserve"> 
-    <value>Пробная лицензия</value> 
+    <value>ترخيص تجريبي</value> 
   </data> 
   <data name="LICENSE_TYPE_TRIAL_NAME" xml:space="preserve"> 
-    <value>Пробная версия</value> 
+    <value>تجريبي</value> 
   </data> 
   <data name="LICENSE_TYPE_UNDETERMINED_DESCRIPTION" xml:space="preserve"> 
-    <value>Тип лицензии не определен</value> 
+    <value>نوع الترخيص غير محدد</value> 
   </data> 
   <data name="LICENSE_TYPE_UNDETERMINED_NAME" xml:space="preserve"> 
-    <value>Не определено</value> 
+    <value>غير محدد</value> 
   </data> 
   <data name="LOG_CLEARED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Обозначает очистку журнала</value> 
+    <value>يشير إلى مسح السجل</value> 
   </data> 
   <data name="LOG_CLEARED_EVENT_NAME" xml:space="preserve"> 
-    <value>Очищено</value> 
+    <value>تم المسح</value> 
   </data> 
   <data name="LOG_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>События, связанные с журналом</value>
+    <value>الأحداث المتعلقة بالسجل</value>
   </data> 
   <data name="LOG_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>ЖУРНАЛ</value> 
+    <value>السجل</value> 
   </data> 
   <data name="MAPPING_TYPE_NETWORK_DRIVE" xml:space="preserve"> 
-    <value>Сетевой диск</value> 
+    <value>محرك أقراص شبكي</value> 
   </data> 
   <data name="MAPPING_TYPE_VIRTUAL_DRIVE" xml:space="preserve"> 
-    <value>Виртуальный диск</value> 
+    <value>محرك أقراص افتراضي</value> 
   </data> 
   <data name="MAPPING_TYPE_VIRTUAL_FOLDER" xml:space="preserve"> 
-    <value>Виртуальная папка</value> 
+    <value>مجلد افتراضي</value> 
   </data> 
   <data name="NOTIFICATION_TYPE_AUDIBLE" xml:space="preserve">
-    <value>Звуковое</value>
+    <value>صوتي</value>
   </data>
   <data name="NOTIFICATION_TYPE_NONE" xml:space="preserve">
-    <value>Нет</value>
+    <value>لا شيء</value>
   </data>
   <data name="NOTIFICATION_TYPE_VISUAL" xml:space="preserve">
-    <value>Визуальное</value>
+    <value>مرئي</value>
   </data>
   <data name="NOTIFICATION_TYPE_VISUAL_AND_AUDIBLE" xml:space="preserve">
-    <value>Визуальное и звуковое</value>
+    <value>مرئي وصوتي</value>
   </data> 
   <data name="OPTIONS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Указывает на изменение параметров</value> 
+    <value>يشير إلى تغيير الخيارات</value> 
   </data> 
   <data name="OPTIONS_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Изменение</value>
+    <value>تغيير</value>
   </data> 
   <data name="OPTIONS_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>События, связанные с опциями</value> 
+    <value>الأحداث المتعلقة بالخيارات</value> 
   </data> 
   <data name="OPTIONS_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Опции</value> 
+    <value>الخيارات</value> 
   </data> 
   <data name="ORDER_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Обозначает создание заказа</value> 
+    <value>يشير إلى إنشاء طلب</value> 
   </data> 
   <data name="ORDER_CREATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Создан</value> 
+    <value>تم الإنشاء</value> 
   </data> 
   <data name="ORDER_DELIVERY_STATUS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Указывает на изменение статуса доставки заказа</value> 
+    <value>يشير إلى تغيير حالة تسليم الطلب</value> 
   </data> 
   <data name="ORDER_DELIVERY_STATUS_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Изменение</value>
+    <value>تغيير</value>
   </data> 
   <data name="ORDER_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>События, связанные с заказом</value> 
+    <value>الأحداث المتعلقة بالطلب</value> 
   </data> 
   <data name="ORDER_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Заказ</value> 
+    <value>الطلب</value> 
   </data> 
   <data name="ORDER_LINE_DELIVERY_STATUS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Указывает на изменение статуса доставки позиции заказа</value> 
+    <value>يشير إلى تغيير حالة تسليم بند الطلب</value> 
   </data> 
   <data name="ORDER_LINE_DELIVERY_STATUS_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Изменение</value>
+    <value>تغيير</value>
   </data> 
   <data name="ORDER_STATUS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Указывает на изменение статуса заказа</value> 
+    <value>يشير إلى تغيير حالة الطلب</value> 
   </data> 
   <data name="ORDER_STATUS_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Изменение</value>
+    <value>تغيير</value>
   </data> 
   <data name="PAYMENT_INTENT_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Обозначает завершение намерения об оплате</value> 
+    <value>يشير إلى اكتمال نية الدفع</value> 
   </data> 
   <data name="PAYMENT_INTENT_COMPLETED_EVENT_NAME" xml:space="preserve"> 
-    <value>Завершен</value> 
+    <value>مكتمل</value> 
   </data> 
   <data name="PAYMENT_INTENT_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Обозначает создание намерения об оплате</value> 
+    <value>يشير إلى إنشاء نية الدفع</value> 
   </data> 
   <data name="PAYMENT_INTENT_CREATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Создан</value> 
+    <value>تم الإنشاء</value> 
   </data> 
   <data name="PAYMENT_INTENT_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
-    <value>События, связанные с намерением осуществить платёж</value>
+    <value>الأحداث المتعلقة بنية الدفع</value>
   </data>
   <data name="PAYMENT_INTENT_EXPIRED_EVENT_DESCRIPTION" xml:space="preserve">
-    <value>Указывает на истечение срока намерения платежа</value>
+    <value>يشير إلى انتهاء صلاحية نية الدفع</value>
   </data>
   <data name="PAYMENT_INTENT_EXPIRED_EVENT_NAME" xml:space="preserve">
-    <value>Истекло</value>
+    <value>منتهي الصلاحية</value>
   </data>
   <data name="PAYMENT_INTENT_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Намерение произвести оплату</value> 
+    <value>نية الدفع</value> 
   </data> 
   <data name="PRODUCT_STOCK_CHANGE_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Указывает на изменение уровня остатков товара</value> 
+    <value>يشير إلى تغيير مستوى مخزون المنتج</value> 
   </data> 
   <data name="PRODUCT_STOCK_CHANGE_EVENT_GROUP_NAME" xml:space="preserve">
-    <value>Изменение</value>
+    <value>تغيير</value>
   </data> 
   <data name="PRODUCT_STOCK_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>События, связанные с наличием товара на складе</value> 
+    <value>الأحداث المتعلقة بمخزون المنتج</value> 
   </data> 
   <data name="PRODUCT_STOCK_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Наличие товара</value> 
+    <value>مخزون المنتج</value> 
   </data> 
   <data name="REPORT_PRESET_ADDED_EVENT_DESCRIPTION" xml:space="preserve">
-    <value>Событие добавления шаблона отчёта</value>
+    <value>حدث إضافة إعداد التقرير</value>
   </data>
   <data name="REPORT_PRESET_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
-    <value>События, связанные с шаблонами отчётов</value>
+    <value>الأحداث المتعلقة بإعداد التقرير</value>
   </data>
   <data name="REPORT_PRESET_EVENT_GROUP_NAME" xml:space="preserve">
-    <value>Шаблон отчёта</value>
+    <value>إعداد التقرير</value>
   </data>
   <data name="REPORT_PRESET_ADDED_EVENT_NAME" xml:space="preserve"> 
-    <value>Добавлен шаблон отчёта</value>
+    <value>تمت إضافة إعداد التقرير</value>
   </data> 
   <data name="REPORT_PRESET_RANGE_DAY_NAME" xml:space="preserve"> 
-    <value>День</value> 
+    <value>يوم</value> 
   </data> 
   <data name="REPORT_PRESET_RANGE_MONTH_NAME" xml:space="preserve"> 
-    <value>Месяц</value> 
+    <value>شهر</value> 
   </data> 
   <data name="REPORT_PRESET_RANGE_WEEK_NAME" xml:space="preserve"> 
-    <value>Неделя</value> 
+    <value>أسبوع</value> 
   </data> 
   <data name="REPORT_PRESET_RANGE_YEAR_NAME" xml:space="preserve"> 
-    <value>Год</value> 
+    <value>سنة</value> 
   </data> 
   <data name="REPORT_PRESET_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие удаления шаблона отчёта</value>
+    <value>حدث إزالة إعداد التقرير</value>
   </data> 
   <data name="REPORT_PRESET_REMOVED_EVENT_NAME" xml:space="preserve"> 
-    <value>Удалён шаблон отчёта</value>
+    <value>تمت إزالة إعداد التقرير</value>
   </data> 
   <data name="REPORT_PRESET_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие обновления шаблона отчёта</value>
+    <value>حدث تحديث إعداد التقرير</value>
   </data> 
   <data name="REPORT_PRESET_UPDATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Обновлён шаблон отчёта</value>
+    <value>تم تحديث إعداد التقرير</value>
   </data> 
   <data name="RESERVATION_ACTIVATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Бронирование подтверждено</value> 
+    <value>تم تنشيط الحجز</value> 
   </data> 
   <data name="RESERVATION_ACTIVATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Активировано</value> 
+    <value>تم التنشيط</value> 
   </data> 
   <data name="RESERVATION_CANCELLED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Бронирование отменено</value> 
+    <value>تم إلغاء الحجز</value> 
   </data> 
   <data name="RESERVATION_CANCELLED_EVENT_NAME" xml:space="preserve"> 
-    <value>Отменен</value> 
+    <value>تم الإلغاء</value> 
   </data> 
   <data name="RESERVATION_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Бронирование завершено</value> 
+    <value>اكتمل الحجز</value> 
   </data> 
   <data name="RESERVATION_COMPLETED_EVENT_NAME" xml:space="preserve"> 
-    <value>Завершен</value> 
+    <value>مكتمل</value> 
   </data> 
   <data name="RESERVATION_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Бронирование созданo</value> 
+    <value>تم إنشاء الحجز</value> 
   </data> 
   <data name="RESERVATION_CREATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Создан</value> 
+    <value>تم الإنشاء</value> 
   </data> 
   <data name="RESERVATION_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>События, связанные с бронированием</value> 
+    <value>الأحداث المتعلقة بالحجز</value> 
   </data> 
   <data name="RESERVATION_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Бронирование</value> 
+    <value>الحجز</value> 
   </data> 
   <data name="RESERVATION_EXPIRED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Срок бронирования истек</value> 
+    <value>انتهى الحجز</value> 
   </data> 
   <data name="RESERVATION_EXPIRED_EVENT_NAME" xml:space="preserve"> 
-    <value>Просроченные</value> 
+    <value>منتهي الصلاحية</value> 
   </data> 
   <data name="RESERVATION_HOST_ACTIVATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Бронирование хоста активировано</value>
+    <value>تم تنشيط حجز المحطة</value>
   </data> 
   <data name="RESERVATION_HOST_ACTIVATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Активировано</value> 
+    <value>تم التنشيط</value> 
   </data> 
   <data name="RESERVATION_HOST_ADDED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>К бронированию добавлен хост</value>
+    <value>تمت إضافة محطة إلى الحجز</value>
   </data> 
   <data name="RESERVATION_HOST_ADDED_EVENT_NAME" xml:space="preserve"> 
-    <value>Добавлено</value> 
+    <value>تمت الإضافة</value> 
   </data> 
   <data name="RESERVATION_HOST_CANCELLED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Бронирование хоста отменено</value>
+    <value>تم إلغاء حجز المحطة</value>
   </data> 
   <data name="RESERVATION_HOST_CANCELLED_EVENT_NAME" xml:space="preserve"> 
-    <value>Отменен</value> 
+    <value>تم الإلغاء</value> 
   </data> 
   <data name="RESERVATION_HOST_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Бронирование хоста завершено</value> 
+    <value>اكتمل حجز المحطة</value> 
   </data> 
   <data name="RESERVATION_HOST_COMPLETED_EVENT_NAME" xml:space="preserve"> 
-    <value>Завершен</value> 
+    <value>مكتمل</value> 
   </data> 
   <data name="RESERVATION_HOST_EXPIRED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Срок действия бронирования хоста истек</value> 
+    <value>انتهى حجز المحطة</value> 
   </data> 
   <data name="RESERVATION_HOST_EXPIRED_EVENT_NAME" xml:space="preserve"> 
-    <value>Просроченные</value> 
+    <value>منتهي الصلاحية</value> 
   </data> 
   <data name="RESERVATION_HOST_MOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Бронирование хоста перенесено</value>
+    <value>تم نقل حجز المحطة</value>
   </data> 
   <data name="RESERVATION_HOST_MOVED_EVENT_NAME" xml:space="preserve"> 
-    <value>Перемещено</value> 
+    <value>تم النقل</value> 
   </data> 
   <data name="RESERVATION_HOST_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Бронирование хоста обновлено</value>
+    <value>تم تحديث حجز المحطة</value>
   </data> 
   <data name="RESERVATION_HOST_UPDATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Обновить</value> 
+    <value>تم التحديث</value> 
   </data> 
   <data name="RESERVATION_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Бронирование обновлено</value> 
+    <value>تم تحديث الحجز</value> 
   </data> 
   <data name="RESERVATION_UPDATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Обновить</value> 
+    <value>تم التحديث</value> 
   </data> 
   <data name="RESERVATION_USER_ADDED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Добавлено пользователем</value> 
+    <value>تمت إضافة مستخدم</value> 
   </data> 
   <data name="RESERVATION_USER_ADDED_EVENT_NAME" xml:space="preserve"> 
-    <value>Добавлено</value> 
+    <value>تمت الإضافة</value> 
   </data> 
   <data name="RESERVATION_USER_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Пользователь удален</value> 
+    <value>تمت إزالة مستخدم</value> 
   </data> 
   <data name="RESERVATION_USER_REMOVED_EVENT_NAME" xml:space="preserve"> 
-    <value>Удалено</value> 
+    <value>تمت الإزالة</value> 
   </data> 
   <data name="RESTRICTION_TYPE_CLASS_NAME" xml:space="preserve"> 
-    <value>Название класса</value> 
+    <value>اسم الفئة</value> 
   </data> 
   <data name="RESTRICTION_TYPE_FILE_NAME" xml:space="preserve"> 
-    <value>Имя файла</value> 
+    <value>اسم الملف</value> 
   </data> 
   <data name="RESTRICTION_TYPE_TRAY_ICON" xml:space="preserve"> 
-    <value>Значок в трее</value> 
+    <value>أيقونة شريط المهام</value> 
   </data> 
   <data name="RESTRICTION_TYPE_UNSET" xml:space="preserve"> 
-    <value>Не установлен</value> 
+    <value>غير محدد</value> 
   </data> 
   <data name="RESTRICTION_TYPE_WINDOW_NAME" xml:space="preserve"> 
-    <value>Название окна</value> 
+    <value>اسم النافذة</value> 
   </data> 
   <data name="SCHEDULE_TYPE_DAILY" xml:space="preserve"> 
-    <value>Ежедневно</value>
+    <value>يومي</value>
   </data> 
   <data name="SCHEDULE_TYPE_MONTHLY" xml:space="preserve"> 
-    <value>За месяц</value> 
+    <value>شهري</value> 
   </data> 
   <data name="SCHEDULE_TYPE_ONE_TIME" xml:space="preserve"> 
-    <value>Один раз</value> 
+    <value>مرة واحدة</value> 
   </data> 
   <data name="SCHEDULE_TYPE_WEEKLY" xml:space="preserve"> 
-    <value>Еженедельно</value>
+    <value>أسبوعي</value>
   </data> 
   <data name="SCHEDULE_TYPE_YEARLY" xml:space="preserve"> 
-    <value>За год</value> 
+    <value>سنوي</value> 
   </data> 
   <data name="SHIFT_ENDED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Обозначает конец смены</value> 
+    <value>يشير إلى انتهاء الوردية</value> 
   </data> 
   <data name="SHIFT_ENDED_EVENT_NAME" xml:space="preserve"> 
-    <value>Закончилось</value> 
+    <value>انتهت</value> 
   </data> 
   <data name="SHIFT_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>События, связанные с сменой</value> 
+    <value>الأحداث المتعلقة بالوردية</value> 
   </data> 
   <data name="SHIFT_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Смена</value> 
+    <value>الوردية</value> 
   </data> 
   <data name="SHIFT_LOCKED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Указывает на блокировку смены</value> 
+    <value>يشير إلى قفل الوردية</value> 
   </data> 
   <data name="SHIFT_LOCKED_EVENT_NAME" xml:space="preserve"> 
-    <value>Заблокировано</value> 
+    <value>مقفلة</value> 
   </data> 
   <data name="SHIFT_STARTED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Обозначает начало смены</value> 
+    <value>يشير إلى بداية الوردية</value> 
   </data> 
   <data name="SHIFT_STARTED_EVENT_NAME" xml:space="preserve"> 
-    <value>Началось</value> 
+    <value>بدأت</value> 
   </data> 
   <data name="SHIFT_UNLOCKED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Указывает на разблокировку смены</value> 
+    <value>يشير إلى فتح قفل الوردية</value> 
   </data> 
   <data name="SHIFT_UNLOCKED_EVENT_NAME" xml:space="preserve"> 
-    <value>Разблокировано</value> 
+    <value>مفتوحة</value> 
   </data> 
   <data name="STOCK_LEVEL_TYPE_ANY" xml:space="preserve"> 
-    <value>Любой</value> 
+    <value>أي</value> 
   </data> 
   <data name="STOCK_LEVEL_TYPE_LOW" xml:space="preserve"> 
-    <value>Низкий</value> 
+    <value>منخفض</value> 
   </data> 
   <data name="STOCK_LEVEL_TYPE_OUT_OF_STOCK" xml:space="preserve"> 
-    <value>Отсутствует в наличии</value> 
+    <value>نفد المخزون</value> 
   </data> 
   <data name="STOCK_TYPE_SELLING_POINT" xml:space="preserve"> 
-    <value>Торговая точка</value> 
+    <value>نقطة البيع</value> 
   </data> 
   <data name="STOCK_TYPE_WAREHOUSE" xml:space="preserve"> 
-    <value>Склад</value> 
+    <value>المستودع</value> 
   </data> 
   <data name="TARGET_GROUP_REQUIREMENT_ALL" xml:space="preserve"> 
-    <value>Все</value> 
+    <value>الكل</value> 
   </data> 
   <data name="TARGET_GROUP_REQUIREMENT_ANY" xml:space="preserve"> 
-    <value>Любой</value> 
+    <value>أي</value> 
   </data> 
   <data name="TARGET_REQUIREMENT_ALL" xml:space="preserve">
-    <value>Все</value>
+    <value>الكل</value>
   </data> 
   <data name="TARGET_REQUIREMENT_AMOUNT" xml:space="preserve"> 
-    <value>Сумма</value> 
+    <value>المبلغ</value> 
   </data> 
   <data name="TARGET_REQUIREMENT_ANY" xml:space="preserve"> 
-    <value>Любой</value> 
+    <value>أي</value> 
   </data> 
   <data name="TARGET_REQUIREMENT_COUNT" xml:space="preserve"> 
-    <value>Количество</value> 
+    <value>العدد</value> 
   </data> 
   <data name="USER_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
-    <value>Указывает на создание учётной записи пользователя</value>
+    <value>يشير إلى إنشاء حساب مستخدم</value>
   </data>
   <data name="USER_CREATED_EVENT_NAME" xml:space="preserve">
-    <value>Пользователь создан</value>
+    <value>تم إنشاء المستخدم</value>
   </data>
   <data name="USER_ENABLED_EVENT_DESCRIPTION" xml:space="preserve">
-    <value>Обозначает, что пользователь имеет соответствующие права</value>
+    <value>يشير إلى تمكين مستخدم</value>
   </data>
   <data name="USER_ENABLED_EVENT_NAME" xml:space="preserve"> 
-    <value>Включён</value> 
+    <value>تم التمكين</value> 
   </data> 
   <data name="USER_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>События, связанные с пользователями</value> 
+    <value>الأحداث المتعلقة بالمستخدم</value> 
   </data> 
   <data name="USER_EVENT_GROUP_NAME" xml:space="preserve">
-    <value>Пользователь</value>
+    <value>المستخدم</value>
   </data>
   <data name="USER_GUEST_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
-    <value>События, связанные с гостевыми пользователями</value>
+    <value>الأحداث المتعلقة بالمستخدم الضيف</value>
   </data>
   <data name="USER_GUEST_EVENT_GROUP_NAME" xml:space="preserve">
-    <value>Гостевой пользователь</value>
+    <value>المستخدم الضيف</value>
   </data>
   <data name="USER_SESSION_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Создан сеанс пользователя</value> 
+    <value>تم إنشاء جلسة المستخدم</value> 
   </data> 
   <data name="USER_SESSION_CREATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Создан</value> 
+    <value>تم الإنشاء</value> 
   </data> 
   <data name="USER_SESSION_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>События, связанные с сеансом пользователя</value> 
+    <value>الأحداث المتعلقة بجلسة المستخدم</value> 
   </data> 
   <data name="USER_SESSION_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>Сеанс пользователя</value> 
+    <value>جلسة المستخدم</value> 
   </data> 
   <data name="USER_SESSION_MOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Сеанс пользователя перемещен</value> 
+    <value>تم نقل جلسة المستخدم</value> 
   </data> 
   <data name="USER_SESSION_MOVED_EVENT_NAME" xml:space="preserve"> 
-    <value>Перемещено</value> 
+    <value>تم النقل</value> 
   </data> 
   <data name="USER_SESSION_STATE_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value>Статус изменился</value> 
+    <value>تغيير الحالة</value> 
   </data> 
   <data name="USER_SESSION_STATE_CHANGED_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Состояние сеанса пользователя изменилось</value> 
+    <value>تغيرت حالة جلسة المستخدم</value> 
   </data> 
   <data name="WAITING_LINE_ESTIMATION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие, связанное с изменением оценки</value> 
+    <value>حدث تغيير التقدير</value> 
   </data> 
   <data name="WAITING_LINE_ESTIMATION_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value>Оценка изменилась</value> 
+    <value>تغيير التقدير</value> 
   </data> 
   <data name="WAITING_LINE_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
-    <value>Очередь</value>
+    <value>قائمة الانتظار</value>
   </data> 
   <data name="WAITING_LINE_EVENT_GROUP_NAME" xml:space="preserve"> 
-    <value>События, связанные с очередью</value> 
+    <value>الأحداث المتعلقة بقائمة الانتظار</value> 
   </data> 
   <data name="WAITING_LINE_TIMED_OUT_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие истечения времени ожидания в очереди</value>
+    <value>حدث انتهاء مهلة قائمة الانتظار</value>
   </data> 
   <data name="WAITING_LINE_TIMED_OUT_EVENT_NAME" xml:space="preserve"> 
-    <value>Время вышло</value> 
+    <value>انتهت المهلة</value> 
   </data> 
   <data name="WAITING_LINE_USER_ADDED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие добавления пользователя</value>
+    <value>حدث إضافة مستخدم</value>
   </data> 
   <data name="WAITING_LINE_USER_ADDED_EVENT_NAME" xml:space="preserve"> 
-    <value>Добавлено пользователем</value> 
+    <value>تمت إضافة مستخدم</value> 
   </data> 
   <data name="WAITING_LINE_USER_MOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие перемещения пользователя</value>
+    <value>حدث نقل مستخدم</value>
   </data> 
   <data name="WAITING_LINE_USER_MOVED_EVENT_NAME" xml:space="preserve"> 
-    <value>Пользователь перемещён</value>
+    <value>تم نقل مستخدم</value>
   </data> 
   <data name="WAITING_LINE_USER_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие удаления пользователя</value>
+    <value>حدث إزالة مستخدم</value>
   </data> 
   <data name="WAITING_LINE_USER_REMOVED_EVENT_NAME" xml:space="preserve"> 
-    <value>Пользователь удален</value> 
+    <value>تمت إزالة مستخدم</value> 
   </data> 
   <data name="SHIFT_COUNT_TYPE_DEFAULT" xml:space="preserve"> 
-    <value>По умолчанию</value> 
+    <value>افتراضي</value> 
   </data> 
   <data name="SHIFT_COUNT_TYPE_SHIFT_CLOSE" xml:space="preserve"> 
-    <value>Закрытие смены</value> 
+    <value>إغلاق الوردية</value> 
   </data> 
   <data name="SHIFT_COUNT_TYPE_SHIFT_OPEN" xml:space="preserve"> 
-    <value>Смена открыта</value> 
+    <value>فتح الوردية</value> 
   </data> 
   <data name="PROMOTION_CODE_TYPE_PUBLIC_NAME" xml:space="preserve"> 
-    <value>Открытый доступ</value> 
+    <value>عام</value> 
   </data> 
   <data name="PROMOTION_CODE_TYPE_RESTRICTED_NAME" xml:space="preserve"> 
-    <value>Ограниченный доступ</value> 
+    <value>مقيّد</value> 
   </data> 
   <data name="PAYMENT_TRANSACTION_DIRECTION_IN" xml:space="preserve">
-    <value>Входящие</value>
+    <value>وارد</value>
   </data>
   <data name="PAYMENT_TRANSACTION_DIRECTION_OUT" xml:space="preserve">
-    <value>Исходящие</value>
+    <value>صادر</value>
   </data>
   <data name="PAYMENT_TRANSACTION_TYPE_DEPOSIT_PAYMENT" xml:space="preserve">
-    <value>Оплата депозита</value>
+    <value>دفع إيداع</value>
   </data>
   <data name="PAYMENT_TRANSACTION_TYPE_DEPOSIT_PAYMENT_REFUND" xml:space="preserve"> 
-    <value>Возврат депозитного платежа</value>
+    <value>استرداد دفع الإيداع</value>
   </data> 
   <data name="PAYMENT_TRANSACTION_TYPE_INVOICE_PAYMENT" xml:space="preserve"> 
-    <value>Платёж по счёту</value>
+    <value>دفع فاتورة</value>
   </data> 
   <data name="PAYMENT_TRANSACTION_TYPE_INVOICE_PAYMENT_REFUND" xml:space="preserve"> 
-    <value>Возврат платежа по счёту</value>
+    <value>استرداد دفع الفاتورة</value>
   </data> 
   <data name="PAYMENT_TRANSACTION_TYPE_PAY_IN" xml:space="preserve"> 
-    <value>Внесение</value> 
+    <value>إيداع</value> 
   </data> 
   <data name="PAYMENT_TRANSACTION_TYPE_PAY_OUT" xml:space="preserve">
-    <value>Изъятие</value>
+    <value>سحب</value>
   </data>
   <data name="PAYMENT_TRANSACTION_TYPE_WITHDRAW" xml:space="preserve">
-    <value>Снятие средств</value>
+    <value>سحب</value>
   </data>
   <data name="PAYMENT_INTENT_STATE_CANCELLED" xml:space="preserve"> 
-    <value>Отменён</value> 
+    <value>ملغى</value> 
   </data> 
   <data name="PAYMENT_INTENT_STATE_COMPLETED" xml:space="preserve"> 
-    <value>Завершён</value> 
+    <value>مكتمل</value> 
   </data> 
   <data name="PAYMENT_INTENT_STATE_EXPIRED" xml:space="preserve"> 
-    <value>Истёк</value> 
+    <value>منتهي الصلاحية</value> 
   </data> 
   <data name="PAYMENT_INTENT_STATE_FAILED" xml:space="preserve"> 
-    <value>Ошибка</value>
+    <value>فاشل</value>
   </data> 
   <data name="PAYMENT_INTENT_STATE_PENDING" xml:space="preserve"> 
-    <value>Ожидает</value> 
+    <value>معلّق</value> 
   </data> 
   <data name="PAYMENT_INTENT_STATE_CAPTURED" xml:space="preserve"> 
-    <value>Выполнен</value> 
+    <value>تم التحصيل</value> 
   </data> 
   <data name="PAYMENT_INTENT_STATE_DECLINED" xml:space="preserve"> 
-    <value>Отклонён</value> 
+    <value>مرفوض</value> 
   </data> 
   <data name="RESERVATION_PAYMENT_STATUS_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Статус оплаты бронирования изменился</value> 
+    <value>تغيرت حالة دفع الحجز</value> 
   </data> 
   <data name="RESERVATION_PAYMENT_STATUS_CHANGED_EVENT_NAME" xml:space="preserve"> 
-    <value>Статус платежа изменился</value> 
+    <value>تغيير حالة الدفع</value> 
   </data> 
   <data name="PAYMENT_INTENT_CAPTURED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Обозначает захват намерения произвести оплату</value> 
+    <value>يشير إلى تحصيل نية الدفع</value> 
   </data> 
   <data name="PAYMENT_INTENT_CAPTURED_EVENT_NAME" xml:space="preserve"> 
-    <value>Захваченный</value> 
+    <value>تم التحصيل</value> 
   </data> 
   <data name="PAYMENT_INTENT_DECLINED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Указывает на отказ от намерения произвести оплату</value> 
+    <value>يشير إلى رفض نية الدفع</value> 
   </data> 
   <data name="PAYMENT_INTENT_DECLINED_EVENT_NAME" xml:space="preserve"> 
-    <value>Отклонено</value> 
+    <value>مرفوض</value> 
   </data> 
   <data name="PAYMENT_INTENT_FAILED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Указывает на сбой намерения оплаты</value> 
+    <value>يشير إلى فشل نية الدفع</value> 
   </data> 
   <data name="PAYMENT_INTENT_FAILED_EVENT_NAME" xml:space="preserve"> 
-    <value>Не удалось</value> 
+    <value>فاشل</value> 
   </data> 
   <data name="PAYMENT_INTENT_CANCELLED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Указывает на отмену намерения произвести платеж</value> 
+    <value>يشير إلى إلغاء نية الدفع</value> 
   </data> 
   <data name="PAYMENT_INTENT_CANCELLED_EVENT_NAME" xml:space="preserve"> 
-    <value>Отменен</value> 
+    <value>ملغى</value> 
   </data> 
   <data name="DEVICE_FISCAL_PRINTER_ERROR_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие ошибки фискального принтера</value> 
+    <value>حدث خطأ في الطابعة المالية</value> 
   </data> 
   <data name="DEVICE_FISCAL_PRINTER_ERROR_EVENT_NAME" xml:space="preserve"> 
-    <value>Ошибка</value> 
+    <value>خطأ</value> 
   </data> 
   <data name="DEVICE_PAYMENT_TERMINAL_ERROR_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Событие ошибки терминала оплаты</value>
+    <value>حدث خطأ في طرفية الدفع</value>
   </data> 
   <data name="DEVICE_PAYMENT_TERMINAL_ERROR_EVENT_NAME" xml:space="preserve"> 
-    <value>Ошибка</value> 
+    <value>خطأ</value> 
   </data> 
   <data name="ORDER_STATUS_FILTER_ACCEPTED" xml:space="preserve"> 
-    <value>Принято</value> 
+    <value>مقبول</value> 
   </data> 
   <data name="ORDER_STATUS_FILTER_CANCELED" xml:space="preserve"> 
-    <value>Отменен</value> 
+    <value>ملغى</value> 
   </data> 
   <data name="ORDER_STATUS_FILTER_COMPLETED" xml:space="preserve"> 
-    <value>Завершен</value> 
+    <value>مكتمل</value> 
   </data> 
   <data name="ORDER_STATUS_FILTER_ON_HOLD" xml:space="preserve"> 
-    <value>В ожидании</value> 
+    <value>معلّق</value> 
   </data> 
   <data name="ORDER_STATUS_FILTER_PROCESSING" xml:space="preserve"> 
-    <value>Обработка</value> 
+    <value>قيد المعالجة</value> 
   </data> 
   <data name="PROMOTION_LIMIT_TYPE_TOTAL" xml:space="preserve"> 
-    <value>Итог</value> 
+    <value>إجمالي</value> 
   </data> 
   <data name="PROMOTION_LIMIT_TYPE_PER_USER" xml:space="preserve"> 
-    <value>На пользователя</value> 
+    <value>لكل مستخدم</value> 
   </data> 
   <data name="PROMOTION_LIMIT_TYPE_DAILY" xml:space="preserve"> 
-    <value>Ежедневно</value> 
+    <value>يومي</value> 
   </data> 
   <data name="PROMOTION_LIMIT_TYPE_WEEKLY" xml:space="preserve"> 
-    <value>Еженедельно</value> 
+    <value>أسبوعي</value> 
   </data> 
   <data name="USER_BALANCE_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Указывает на изменение баланса</value> 
+    <value>يشير إلى تغيير الرصيد</value> 
   </data> 
   <data name="USER_BALANCE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Баланс изменен</value> 
+    <value>تغيّر الرصيد</value> 
   </data> 
   <data name="USER_BALANCE_CLOSE_EVENT_NAME" xml:space="preserve"> 
-    <value>Указывает на закрытие баланса</value> 
+    <value>يشير إلى إغلاق الرصيد</value> 
   </data> 
   <data name="USER_BALANCE_CLOSE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Закрытие баланса</value> 
+    <value>إغلاق الرصيد</value> 
   </data> 
   <data name="USER_BILLING_OPTIONS_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Параметры оплаты</value> 
+    <value>تغيير خيارات الفوترة</value> 
   </data> 
   <data name="USER_BILLING_OPTIONS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Указывает на изменение параметров оплаты</value> 
+    <value>يشير إلى تغيير خيارات الفوترة</value> 
   </data> 
   <data name="USER_EMAIL_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Изменение адреса Email</value> 
+    <value>تغيير البريد الإلكتروني</value> 
   </data> 
   <data name="USER_EMAIL_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Указывает на смену адреса электронной почты</value>
+    <value>يشير إلى تغيير البريد الإلكتروني</value>
   </data> 
   <data name="USER_USER_GROUP_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Смена группы пользователей</value> 
+    <value>تغيير مجموعة المستخدمين</value> 
   </data> 
   <data name="USER_USER_GROUP_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Указывает на смену группы пользователей</value> 
+    <value>يشير إلى تغيير مجموعة المستخدمين</value> 
   </data> 
   <data name="USER_NEGATIVE_BALANCE_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Изменение отрицательного баланса</value> 
+    <value>تغيير الرصيد السالب</value> 
   </data> 
   <data name="USER_NEGATIVE_BALANCE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Обозначает отрицательное изменение баланса</value> 
+    <value>يشير إلى تغيير الرصيد السالب</value> 
   </data> 
   <data name="USER_PASSWORD_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Смена пароля</value> 
+    <value>تغيير كلمة المرور</value> 
   </data> 
   <data name="USER_PASSWORD_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Указывает на смену пароля</value> 
+    <value>يشير إلى تغيير كلمة المرور</value> 
   </data> 
   <data name="USER_PICTURE_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Смена изображения</value> 
+    <value>تغيير الصورة</value> 
   </data> 
   <data name="USER_PICTURE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Обозначает смену изображения</value> 
+    <value>يشير إلى تغيير الصورة</value> 
   </data> 
   <data name="USER_RENAME_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Переименовать</value> 
+    <value>إعادة التسمية</value> 
   </data> 
   <data name="USER_RENAME_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Указывает на переименование пользователя</value> 
+    <value>يشير إلى إعادة تسمية المستخدم</value> 
   </data> 
   <data name="USER_SMART_CARD_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Смена смарт-карты</value> 
+    <value>تغيير البطاقة الذكية</value> 
   </data> 
   <data name="USER_SMART_CARD_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Указывает на смену смарт-карты</value> 
+    <value>يشير إلى تغيير البطاقة الذكية</value> 
   </data> 
   <data name="USER_USAGE_SESSION_CHANGE_EVENT_NAME" xml:space="preserve"> 
-    <value>Смена сеанса использования</value> 
+    <value>تغيير جلسة الاستخدام</value> 
   </data> 
   <data name="USER_USAGE_SESSION_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Указывает на смену сеанса использования</value> 
+    <value>يشير إلى تغيير جلسة الاستخدام</value> 
   </data> 
   <data name="BILLING_OPTION_NONE_NAME" xml:space="preserve"> 
-    <value>Неа</value> 
+    <value>لا شيء</value> 
   </data> 
   <data name="BILLING_OPTION_DISABLE_TIME_OFFER_NAME" xml:space="preserve"> 
-    <value>Отключить пакеты</value> 
+    <value>تعطيل عروض الوقت</value> 
   </data> 
   <data name="BILLING_OPTION_DISABLE_FIXED_TIME_NAME" xml:space="preserve"> 
-    <value>Отключить фиксированное время</value> 
+    <value>تعطيل الوقت الثابت</value> 
   </data> 
   <data name="BILLING_OPTION_DISABLE_DEPOSITS_NAME" xml:space="preserve"> 
-    <value>Отключить депозиты</value> 
+    <value>تعطيل الإيداعات</value> 
   </data> 
   <data name="COMMUNICATION_CHANNEL_TYPES_EMAIL" xml:space="preserve"> 
-    <value>Email</value> 
+    <value>البريد الإلكتروني</value> 
   </data> 
   <data name="COMMUNICATION_CHANNEL_TYPES_FACEBOOK_MESSENGER_NAME" xml:space="preserve"> 
-    <value>Мессенджер Facebook</value> 
+    <value>Facebook Messenger</value> 
   </data> 
   <data name="COMMUNICATION_CHANNEL_TYPES_INSTAGRAM_NAME" xml:space="preserve"> 
     <value>Instagram</value> 
@@ -1214,352 +1214,352 @@
     <value>WeChat</value> 
   </data> 
   <data name="HOST_DELETE_RESULT_HOST_HAS_RESERVED_GUEST_DESCRIPTION" xml:space="preserve"> 
-    <value>У хоста есть бронирование с гостем</value> 
+    <value>المحطة لديها ضيف محجوز</value> 
   </data> 
   <data name="HOST_DELETE_RESULT_HOST_HAS_RESERVED_GUEST_NAME" xml:space="preserve"> 
-    <value>У хоста есть бронирование с гостем</value> 
+    <value>المحطة لديها ضيف محجوز</value> 
   </data> 
   <data name="HOST_DELETE_RESULT_HOST_IN_USE_DESCRIPTION" xml:space="preserve"> 
-    <value>Хост в использовании</value> 
+    <value>المحطة قيد الاستخدام</value> 
   </data> 
   <data name="HOST_DELETE_RESULT_HOST_IN_USE_NAME" xml:space="preserve"> 
-    <value>Хост в использовании</value> 
+    <value>المحطة قيد الاستخدام</value> 
   </data> 
   <data name="HOST_DELETE_RESULT_HOST_IS_RESERVED_DESCRIPTION" xml:space="preserve"> 
-    <value>У хоста есть бронирование</value>
+    <value>المحطة محجوزة</value>
   </data> 
   <data name="HOST_DELETE_RESULT_HOST_IS_RESERVED_NAME" xml:space="preserve"> 
-    <value>Хост зарезервирован</value>
+    <value>المحطة محجوزة</value>
   </data> 
   <data name="HOST_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
-    <value>Удаление хоста прошло успешно</value> 
+    <value>تم حذف المحطة بنجاح</value> 
   </data> 
   <data name="HOST_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve"> 
-    <value>Удаление хоста завершено успешно</value> 
+    <value>نجاح حذف المحطة</value> 
   </data> 
   <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_DESCRIPTION" xml:space="preserve"> 
-    <value>Не удалось удалить товарную группу</value> 
+    <value>فشل حذف مجموعة المنتجات</value> 
   </data> 
   <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_NAME" xml:space="preserve"> 
-    <value>Не удалось удалить товарную группу</value> 
+    <value>فشل حذف مجموعة المنتجات</value> 
   </data> 
   <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPTY_DESCRIPTION" xml:space="preserve"> 
-    <value>Непустую товарную группу удалить нельзя</value> 
+    <value>تعذّر حذف مجموعة المنتجات غير الفارغة</value> 
   </data> 
   <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPTY_NAME" xml:space="preserve"> 
-    <value>Товарная группа не пуста</value> 
+    <value>مجموعة المنتجات غير فارغة</value> 
   </data> 
   <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
-    <value>Удаление товарной группы прошло успешно</value> 
+    <value>تم حذف مجموعة المنتجات بنجاح</value> 
   </data> 
   <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve"> 
-    <value>Удаление товарных групп завершено успешно</value> 
+    <value>نجاح حذف مجموعة المنتجات</value> 
   </data> 
   <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_DESCRIPTION" xml:space="preserve"> 
-    <value>Не удалось удалить категорию приложения</value> 
+    <value>فشل حذف فئة التطبيق</value> 
   </data> 
   <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_NAME" xml:space="preserve"> 
-    <value>Не удалось удалить категорию приложения</value> 
+    <value>فشل حذف فئة التطبيق</value> 
   </data> 
   <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPTY_DESCRIPTION" xml:space="preserve"> 
-    <value>Непустую категорию приложений удалить нельзя</value> 
+    <value>تعذّر حذف فئة التطبيق غير الفارغة</value> 
   </data> 
   <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPTY_NAME" xml:space="preserve"> 
-    <value>Категория приложения не пустая</value> 
+    <value>فئة التطبيق غير فارغة</value> 
   </data> 
   <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
-    <value>Удаление категории приложения прошло успешно</value> 
+    <value>تم حذف فئة التطبيق بنجاح</value> 
   </data> 
   <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve"> 
-    <value>Успешное удаление категории приложения</value> 
+    <value>نجاح حذف فئة التطبيق</value> 
   </data> 
   <data name="WAITING_LINE_STATE_ACTIVE_NAME" xml:space="preserve"> 
-    <value>Активные</value> 
+    <value>نشط</value> 
   </data> 
   <data name="WAITING_LINE_STATE_PROCESSED_NAME" xml:space="preserve"> 
-    <value>Обработанный</value> 
+    <value>تمت المعالجة</value> 
   </data> 
   <data name="WAITING_LINE_STATE_CANCELED_NAME" xml:space="preserve"> 
-    <value>Отменен</value> 
+    <value>ملغى</value> 
   </data> 
   <data name="STOCK_TRANSACTION_TYPE_ADD_NAME" xml:space="preserve"> 
-    <value>Добавлено</value> 
+    <value>إضافة</value> 
   </data> 
   <data name="STOCK_TRANSACTION_TYPE_REMOVE_NAME" xml:space="preserve"> 
-    <value>Удалено</value> 
+    <value>إزالة</value> 
   </data> 
   <data name="STOCK_TRANSACTION_TYPE_RETURN_NAME" xml:space="preserve"> 
-    <value>Возврат</value> 
+    <value>إرجاع</value> 
   </data> 
   <data name="STOCK_TRANSACTION_TYPE_SALE_NAME" xml:space="preserve"> 
-    <value>Продажа</value> 
+    <value>بيع</value> 
   </data> 
   <data name="STOCK_TRANSACTION_TYPE_SET_NAME" xml:space="preserve"> 
-    <value>Приход</value> 
+    <value>تعيين</value> 
   </data> 
   <data name="DEPOSIT_TRANSACTION_TYPE_CHARGE_NAME" xml:space="preserve"> 
-    <value>Списание</value> 
+    <value>رسوم</value> 
   </data> 
   <data name="DEPOSIT_TRANSACTION_TYPE_CREDIT_NAME" xml:space="preserve"> 
-    <value>Начисление</value> 
+    <value>رصيد</value> 
   </data> 
   <data name="DEPOSIT_TRANSACTION_TYPE_DEPOSIT_NAME" xml:space="preserve"> 
-    <value>Пополнение</value> 
+    <value>إيداع</value> 
   </data> 
   <data name="DEPOSIT_TRANSACTION_TYPE_WITHDRAW_NAME" xml:space="preserve"> 
-    <value>Снятие</value>
+    <value>سحب</value>
   </data> 
   <data name="USER_SESSION_STATE_ACTIVE_NAME" xml:space="preserve"> 
-    <value>Активные</value> 
+    <value>نشط</value> 
   </data> 
   <data name="USER_SESSION_STATE_NONE_NAME" xml:space="preserve"> 
-    <value>Ждать</value> 
+    <value>انتظار</value> 
   </data> 
   <data name="USER_SESSION_STATE_ENDED_NAME" xml:space="preserve"> 
-    <value>Закончилось</value> 
+    <value>منتهية</value> 
   </data> 
   <data name="USER_SESSION_STATE_PENDING_NAME" xml:space="preserve"> 
-    <value>Ждёт печати</value> 
+    <value>معلّقة</value> 
   </data> 
   <data name="USER_SESSION_STATE_PAUSED_NAME" xml:space="preserve"> 
-    <value>Приостановлено</value> 
+    <value>متوقفة مؤقتاً</value> 
   </data> 
   <data name="USER_SESSION_STATE_MOVED_NAME" xml:space="preserve">
-    <value>Перемещено</value>
+    <value>منقولة</value>
   </data>
   <data name="USAGE_TYPE_NONE_NAME" xml:space="preserve">
-    <value>Время</value>
+    <value>وقت</value>
   </data>
   <data name="USAGE_TYPE_RATE_NAME" xml:space="preserve">
-    <value>Тариф</value>
+    <value>معدل</value>
   </data>
   <data name="USAGE_TYPE_TIME_FIXED_NAME" xml:space="preserve">
-    <value>Фиксированное время</value>
+    <value>وقت ثابت</value>
   </data>
   <data name="USAGE_TYPE_TIME_OFFER_NAME" xml:space="preserve">
-    <value>Пакет</value>
+    <value>عرض وقت</value>
   </data>
   <data name="ENTITY_EVENT_TYPE_ADDED_NAME" xml:space="preserve">
-    <value>Добавлено</value>
+    <value>تمت الإضافة</value>
   </data>
   <data name="ENTITY_EVENT_TYPE_REMOVED_NAME" xml:space="preserve"> 
-    <value>Удалено</value> 
+    <value>تمت الإزالة</value> 
   </data> 
   <data name="ENTITY_EVENT_TYPE_MODIFIED_NAME" xml:space="preserve"> 
-    <value>Измененный</value> 
+    <value>تم التعديل</value> 
   </data> 
   <data name="TASK_TYPE_JUNCTION_NAME" xml:space="preserve">
-    <value>Перенаправление папки</value>
+    <value>تقاطع</value>
   </data> 
   <data name="TASK_TYPE_NOTIFICATION_NAME" xml:space="preserve"> 
-    <value>Уведомлениe</value> 
+    <value>إشعار</value> 
   </data> 
   <data name="TASK_TYPE_PROCESS_NAME" xml:space="preserve"> 
-    <value>Процесс</value> 
+    <value>عملية</value> 
   </data> 
   <data name="TASK_TYPE_SCRIPT_NAME" xml:space="preserve"> 
-    <value>Скрипт</value> 
+    <value>نص برمجي</value> 
   </data> 
   <data name="LOGIN_RESULT_ACCOUNT_DISABLED_DESCRIPTION" xml:space="preserve"> 
-    <value>Указанная учетная запись заблокирована</value> 
+    <value>حساب المستخدم المحدد معطّل</value> 
   </data> 
   <data name="LOGIN_RESULT_ACCOUNT_DISABLED_NAME" xml:space="preserve"> 
-    <value>Учетная запись отключена</value> 
+    <value>الحساب معطّل</value> 
   </data> 
   <data name="LOGIN_RESULT_ALREADY_LOGGED_IN_DESCRIPTION" xml:space="preserve"> 
-    <value>Пользователь уже выполнил вход</value> 
+    <value>المستخدم مسجّل الدخول بالفعل</value> 
   </data> 
   <data name="LOGIN_RESULT_ALREADY_LOGGED_IN_NAME" xml:space="preserve"> 
-    <value>Уже в системе</value> 
+    <value>مسجّل الدخول بالفعل</value> 
   </data> 
   <data name="LOGIN_RESULT_DENIED_DESCRIPTION" xml:space="preserve"> 
-    <value>Войти отказано</value> 
+    <value>تم رفض تسجيل الدخول</value> 
   </data> 
   <data name="LOGIN_RESULT_DENIED_NAME" xml:space="preserve"> 
-    <value>Войти отказано</value> 
+    <value>تم رفض تسجيل الدخول</value> 
   </data> 
   <data name="LOGIN_RESULT_FAILED_DESCRIPTION" xml:space="preserve"> 
-    <value>Неизвестная ошибка входа в систему</value> 
+    <value>خطأ غير محدد في تسجيل الدخول</value> 
   </data> 
   <data name="LOGIN_RESULT_FAILED_NAME" xml:space="preserve"> 
-    <value>Не удалось войти</value> 
+    <value>فشل تسجيل الدخول</value> 
   </data> 
   <data name="LOGIN_RESULT_INSUFFICIENT_BALANCE_DESCRIPTION" xml:space="preserve"> 
-    <value>У указанного пользователя недостаточный баланс</value>
+    <value>رصيد المستخدم المحدد غير كافٍ</value>
   </data> 
   <data name="LOGIN_RESULT_INSUFFICIENT_BALANCE_NAME" xml:space="preserve"> 
-    <value>Недостаточный баланс</value>
+    <value>رصيد غير كافٍ</value>
   </data> 
   <data name="LOGIN_RESULT_INVALID_CREDENTIALS_DESCRIPTION" xml:space="preserve"> 
-    <value>Указанное имя пользователя или пароль неверны</value> 
+    <value>اسم المستخدم أو كلمة المرور المحددة غير صالح</value> 
   </data> 
   <data name="LOGIN_RESULT_INVALID_CREDENTIALS_NAME" xml:space="preserve"> 
-    <value>Неправильный логин или пароль</value> 
+    <value>اسم المستخدم أو كلمة المرور غير صالح</value> 
   </data> 
   <data name="LOGIN_RESULT_INVALID_HOST_ID_DESCRIPTION" xml:space="preserve"> 
-    <value>Указанный идентификатор хоста неверный</value> 
+    <value>معرّف المحطة المحدد غير صالح</value> 
   </data> 
   <data name="LOGIN_RESULT_INVALID_HOST_ID_NAME" xml:space="preserve"> 
-    <value>Неверный хост</value>
+    <value>محطة غير صالحة</value>
   </data> 
   <data name="LOGIN_RESULT_INVALID_PARAMETERS_DESCRIPTION" xml:space="preserve"> 
-    <value>Указанные параметры недопустимы</value> 
+    <value>المعاملات المحددة غير صالحة</value> 
   </data> 
   <data name="LOGIN_RESULT_INVALID_PARAMETERS_NAME" xml:space="preserve"> 
-    <value>Недопустимые параметры</value> 
+    <value>معاملات غير صالحة</value> 
   </data> 
   <data name="LOGIN_RESULT_INVALID_PASSWORD_DESCRIPTION" xml:space="preserve"> 
-    <value>Указанный пароль неверный</value> 
+    <value>كلمة المرور المحددة غير صالحة</value> 
   </data> 
   <data name="LOGIN_RESULT_INVALID_PASSWORD_NAME" xml:space="preserve"> 
-    <value>Неверный пароль</value> 
+    <value>كلمة مرور غير صالحة</value> 
   </data> 
   <data name="LOGIN_RESULT_INVALID_SLOT_DESCRIPTION" xml:space="preserve"> 
-    <value>Указанный слот недействителен</value> 
+    <value>الفتحة المحددة غير صالحة</value> 
   </data> 
   <data name="LOGIN_RESULT_INVALID_SLOT_NAME" xml:space="preserve"> 
-    <value>Недопустимый слот</value> 
+    <value>فتحة غير صالحة</value> 
   </data> 
   <data name="LOGIN_RESULT_INVALID_USERNAME_DESCRIPTION" xml:space="preserve"> 
-    <value>Указанное имя пользователя неверно</value> 
+    <value>اسم المستخدم المحدد غير صالح</value> 
   </data> 
   <data name="LOGIN_RESULT_INVALID_USERNAME_NAME" xml:space="preserve"> 
-    <value>Неправильное имя пользователя</value> 
+    <value>اسم مستخدم غير صالح</value> 
   </data> 
   <data name="LOGIN_RESULT_INVALID_USER_GROUP_ID_DESCRIPTION" xml:space="preserve"> 
-    <value>Указанный идентификатор группы пользователей неверный</value> 
+    <value>معرّف مجموعة المستخدمين المحدد غير صالح</value> 
   </data> 
   <data name="LOGIN_RESULT_INVALID_USER_GROUP_ID_NAME" xml:space="preserve"> 
-    <value>Неверная группа пользователей</value> 
+    <value>مجموعة مستخدمين غير صالحة</value> 
   </data> 
   <data name="LOGIN_RESULT_INVALID_USER_ID_DESCRIPTION" xml:space="preserve"> 
-    <value>Указанный ID пользователя неверный</value> 
+    <value>معرّف المستخدم المحدد غير صالح</value> 
   </data> 
   <data name="LOGIN_RESULT_INVALID_USER_ID_NAME" xml:space="preserve"> 
-    <value>Недействительный пользователь</value> 
+    <value>مستخدم غير صالح</value> 
   </data> 
   <data name="LOGIN_RESULT_LOGIN_IN_PROGRESS_DESCRIPTION" xml:space="preserve"> 
-    <value>В ходе выполнения входа в систему</value> 
+    <value>تسجيل الدخول قيد التنفيذ</value> 
   </data> 
   <data name="LOGIN_RESULT_LOGIN_IN_PROGRESS_NAME" xml:space="preserve"> 
-    <value>В ходе выполнения</value> 
+    <value>قيد التنفيذ</value> 
   </data> 
   <data name="LOGIN_RESULT_LOGOUT_IN_PROGRESS_DESCRIPTION" xml:space="preserve"> 
-    <value>Выход пользователя в ходе выполнения</value> 
+    <value>تسجيل الخروج قيد التنفيذ</value> 
   </data> 
   <data name="LOGIN_RESULT_LOGOUT_IN_PROGRESS_NAME" xml:space="preserve"> 
-    <value>В ходе выполнения</value> 
+    <value>قيد التنفيذ</value> 
   </data> 
   <data name="LOGIN_RESULT_MAXIMUM_SESSIONS_REACHED_DESCRIPTION" xml:space="preserve"> 
-    <value>Вход не удался из-за превышения максимального количества сеансов</value> 
+    <value>فشل تسجيل الدخول لبلوغ الحد الأقصى للجلسات</value> 
   </data> 
   <data name="LOGIN_RESULT_MAXIMUM_SESSIONS_REACHED_NAME" xml:space="preserve"> 
-    <value>Максимальное количество сеансов</value> 
+    <value>تم بلوغ الحد الأقصى للجلسات</value> 
   </data> 
   <data name="LOGIN_RESULT_NOT_IN_WAITING_LINE_DESCRIPTION" xml:space="preserve"> 
-    <value>Указанный пользователь не в очереди</value> 
+    <value>المستخدم المحدد ليس في قائمة الانتظار</value> 
   </data> 
   <data name="LOGIN_RESULT_NOT_IN_WAITING_LINE_NAME" xml:space="preserve"> 
-    <value>Не в очереди</value> 
+    <value>ليس في قائمة الانتظار</value> 
   </data> 
   <data name="LOGIN_RESULT_OPERATOR_USER_GROUP_DENIED_DESCRIPTION" xml:space="preserve"> 
-    <value>Группе пользователей запрещён вход из менеджера</value>
+    <value>مجموعة المستخدمين غير مسموح لها بتسجيل الدخول من المدير</value>
   </data> 
   <data name="LOGIN_RESULT_OPERATOR_USER_GROUP_DENIED_NAME" xml:space="preserve"> 
-    <value>Группе пользователей запрещён вход для оператора</value>
+    <value>تسجيل دخول المجموعة مرفوض للمشغّل</value>
   </data> 
   <data name="LOGIN_RESULT_RESTRICTED_BY_AGE_DESCRIPTION" xml:space="preserve"> 
-    <value>Вход в систему в данный момент невозможен из-за возрастных ограничений.</value> 
+    <value>تسجيل الدخول غير مسموح به في هذا الوقت بسبب قيود العمر</value> 
   </data> 
   <data name="LOGIN_RESULT_RESTRICTED_BY_AGE_NAME" xml:space="preserve"> 
-    <value>Возрастные ограничения для входа в систему</value> 
+    <value>قيود عمرية لتسجيل الدخول</value> 
   </data> 
   <data name="LOGIN_RESULT_SLOT_IN_USE_DESCRIPTION" xml:space="preserve"> 
-    <value>Указанный слот уже используется</value> 
+    <value>الفتحة المحددة مستخدمة بالفعل</value> 
   </data> 
   <data name="LOGIN_RESULT_SLOT_IN_USE_NAME" xml:space="preserve"> 
-    <value>Слот уже используется</value> 
+    <value>الفتحة مستخدمة بالفعل</value> 
   </data> 
   <data name="LOGIN_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
-    <value>Вход пользователя прошел успешно</value> 
+    <value>نجح تسجيل دخول المستخدم</value> 
   </data> 
   <data name="LOGIN_RESULT_SUCCESS_NAME" xml:space="preserve"> 
-    <value>Войти удачно</value> 
+    <value>نجاح تسجيل الدخول</value> 
   </data> 
   <data name="INVOICE_STATUS_PAID_NAME" xml:space="preserve"> 
-    <value>Внесено</value> 
+    <value>مدفوعة</value> 
   </data> 
   <data name="INVOICE_STATUS_PARTIALLY_PAID_NAME" xml:space="preserve"> 
-    <value>Частично оплачен</value> 
+    <value>مدفوعة جزئياً</value> 
   </data> 
   <data name="INVOICE_STATUS_UNPAID_NAME" xml:space="preserve"> 
-    <value>Неоплачен</value> 
+    <value>غير مدفوعة</value> 
   </data> 
   <data name="USER_SESSION_STATE_GRACE_NAME" xml:space="preserve"> 
-    <value>Грейс</value> 
+    <value>مهلة</value> 
   </data> 
   <data name="USER_NOTE_ADDED_EVENT_NAME" xml:space="preserve"> 
-    <value>Добавлено примечание</value> 
+    <value>تمت إضافة ملاحظة</value> 
   </data> 
   <data name="USER_NOTE_ADDED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Указывает, что заметка пользователя была добавлена</value> 
+    <value>يشير إلى إضافة ملاحظة للمستخدم</value> 
   </data> 
   <data name="USER_NOTE_DELETED_EVENT_NAME" xml:space="preserve"> 
-    <value>Примечание удалено</value> 
+    <value>تم حذف الملاحظة</value> 
   </data> 
   <data name="USER_NOTE_DELETED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Обозначает, что пользовательская заметка была удалена</value> 
+    <value>يشير إلى حذف ملاحظة المستخدم</value> 
   </data> 
   <data name="USER_NOTE_UPDATED_EVENT_NAME" xml:space="preserve"> 
-    <value>Примечание обновлено</value> 
+    <value>تم تحديث الملاحظة</value> 
   </data> 
   <data name="USER_NOTE_UPDATED_EVENT_DESCRIPTION" xml:space="preserve"> 
-    <value>Указывает, что примечание пользователя было обновлено</value> 
+    <value>يشير إلى تحديث ملاحظة المستخدم</value> 
   </data> 
   <data name="RESERVATION_CURRENT_CONFIRM_RESULT_SUCCESS_NAME" xml:space="preserve"> 
-    <value>Успех</value> 
+    <value>نجاح</value> 
   </data> 
   <data name="RESERVATION_CURRENT_CONFIRM_RESULT_INVALID_PIN_NAME" xml:space="preserve"> 
-    <value>Неверный ПИН-код</value> 
+    <value>رمز PIN غير صالح</value> 
   </data> 
   <data name="RESERVATION_CURRENT_CONFIRM_RESULT_ERROR_NAME" xml:space="preserve"> 
-    <value>Ошибка</value> 
+    <value>خطأ</value> 
   </data> 
   <data name="RESERVATION_CURRENT_CONFIRMED_RESULT_CONFIRMED_NAME" xml:space="preserve"> 
-    <value>Подтверждено</value> 
+    <value>مؤكد</value> 
   </data> 
   <data name="RESERVATION_CURRENT_CONFIRMED_RESULT_NO_RESERVATION_NAME" xml:space="preserve"> 
-    <value>Нет бронирования</value> 
+    <value>لا يوجد حجز</value> 
   </data> 
   <data name="RESERVATION_CURRENT_CONFIRMED_RESULT_UNCONFIRMED_NAME" xml:space="preserve"> 
-    <value>Не подтверждено</value> 
+    <value>غير مؤكد</value> 
   </data> 
   <data name="RESERVATION_CURRENT_CONFIRM_RESULT_NO_RESERVATION_NAME" xml:space="preserve"> 
-    <value>Нет бронирования</value> 
+    <value>لا يوجد حجز</value> 
   </data> 
   <data name="AUTHENTICATION_RESULT_ERROR_DESCRIPTION" xml:space="preserve"> 
-    <value>Неудачный результат из-за ошибки</value> 
+    <value>فشل بسبب خطأ</value> 
   </data> 
   <data name="AUTHENTICATION_RESULT_ERROR_NAME" xml:space="preserve"> 
-    <value>Ошибка</value> 
+    <value>خطأ</value> 
   </data> 
   <data name="AUTHENTICATION_RESULT_NETWORK_ERROR_DESCRIPTION" xml:space="preserve"> 
-    <value>Неудачный результат из-за сбоя в сети</value> 
+    <value>فشل بسبب خطأ في الشبكة</value> 
   </data> 
   <data name="AUTHENTICATION_RESULT_NETWORK_ERROR_NAME" xml:space="preserve"> 
-    <value>Сетевая ошибка</value>
+    <value>خطأ في الشبكة</value>
   </data> 
   <data name="AUTHENTICATION_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
-    <value>Аутентификация прошла успешно</value> 
+    <value>نجحت المصادقة</value> 
   </data> 
   <data name="AUTHENTICATION_RESULT_SUCCESS_NAME" xml:space="preserve"> 
-    <value>Успех</value>
+    <value>نجاح</value>
   </data> 
   <data name="AUTHENTICATION_RESULT_UNAUTHORIZED_DESCRIPTION" xml:space="preserve"> 
-    <value>Несанкционированный</value> 
+    <value>غير مصرح</value> 
   </data> 
   <data name="AUTHENTICATION_RESULT_UNAUTHORIZED_NAME" xml:space="preserve"> 
-    <value>Несанкционированный</value> 
+    <value>غير مصرح</value> 
   </data> 
    
    

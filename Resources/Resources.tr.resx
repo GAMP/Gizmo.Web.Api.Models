@@ -1,58 +1,51 @@
-﻿<?xml version="1.0" encoding="utf-8"?> 
-<root> 
-  <!--
-  Loco xml export: ResX - .NET resources
-  Project: Gizmo.Web.Api.Models
-  Locale: tr, Turkish
-  Exported by: Oleg Savelos
-  Exported at: Wed, 29 Apr 2026 15:52:17 +0300 
-  --> 
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
+<?xml version='1.0' encoding='utf-8'?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema"> 
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" />
+              </xs:sequence>
+              <xs:attribute name="name" use="required" type="xsd:string" />
+              <xs:attribute name="type" type="xsd:string" />
+              <xs:attribute name="mimetype" type="xsd:string" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xsd:string" />
+              <xs:attribute name="name" type="xsd:string" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3" />
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" />
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
   <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
@@ -65,12 +58,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="locoLocaleCode">
-    <value>tr</value>
-  </metadata>
-  <metadata name="locoLocaleName" xml:space="preserve">
-    <value>Turkish</value>
-  </metadata> 
   <data name="ASSISTANCE_REQUEST_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
     <value>Yardım talebi durumu değişikliğini belirtir</value> 
   </data> 
@@ -338,10 +325,10 @@
   <data name="HOST_EVENT_GROUP_NAME" xml:space="preserve"> 
     <value>Bilgisayar</value> 
   </data> 
-  <data name="HOST_IN_ORDER_STATE_CHANED_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
+  <data name="HOST_IN_ORDER_STATE_CHANGED_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
     <value>Bilgisayar sipariş durumu değişti</value> 
   </data> 
-  <data name="HOST_IN_ORDER_STATE_CHANED_EVENT_GROUP_NAME" xml:space="preserve"> 
+  <data name="HOST_IN_ORDER_STATE_CHANGED_EVENT_GROUP_NAME" xml:space="preserve"> 
     <value>Sipariş durumu değişti</value> 
   </data> 
   <data name="HOST_LAYOUT_CREATED_EVENT_DESCRIPTION" xml:space="preserve"> 
@@ -392,10 +379,10 @@
   <data name="HOST_LAYOUT_UPDATED_EVENT_NAME" xml:space="preserve"> 
     <value>Bilgisayar düzeni güncellendi</value> 
   </data> 
-  <data name="HOST_LOCK_STATE_CHANED_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
+  <data name="HOST_LOCK_STATE_CHANGED_EVENT_GROUP_DESCRIPTION" xml:space="preserve"> 
     <value>Bilgisayar kilit durumu değişti</value> 
   </data> 
-  <data name="HOST_LOCK_STATE_CHANED_EVENT_GROUP_NAME" xml:space="preserve"> 
+  <data name="HOST_LOCK_STATE_CHANGED_EVENT_GROUP_NAME" xml:space="preserve"> 
     <value>Kilit durumu değişti</value> 
   </data> 
   <data name="INSTANCE_AUTHENTICATION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"> 
@@ -1231,4 +1218,509 @@
    
    
    
+
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_DESCRIPTION" xml:space="preserve">
+    <value>Uygulama kategorisi silinemedi</value>
+  </data>
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_NAME" xml:space="preserve">
+    <value>Uygulama kategorisi silinemedi</value>
+  </data>
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPTY_DESCRIPTION" xml:space="preserve">
+    <value>Boş olmayan uygulama kategorisi silinemiyor</value>
+  </data>
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPTY_NAME" xml:space="preserve">
+    <value>Uygulama kategorisi boş değil</value>
+  </data>
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
+    <value>Uygulama kategorisi başarıyla silindi</value>
+  </data>
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve">
+    <value>Uygulama kategorisi silme başarılı</value>
+  </data>
+  <data name="ASSET_CHECKED_IN_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Ekipman girişini belirtir</value>
+  </data>
+  <data name="ASSET_CHECKED_IN_EVENT_EVENT_NAME" xml:space="preserve">
+    <value>Giriş yapıldı</value>
+  </data>
+  <data name="ASSET_CHECKED_OUT_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Ekipman çıkışını belirtir</value>
+  </data>
+  <data name="ASSET_CHECKED_OUT_EVENT_EVENT_NAME" xml:space="preserve">
+    <value>Çıkış yapıldı</value>
+  </data>
+  <data name="ASSET_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Ekipmanla ilgili olaylar</value>
+  </data>
+  <data name="ASSET_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Ekipman</value>
+  </data>
+  <data name="AUTHENTICATION_RESULT_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>Bir hata nedeniyle başarısız oldu</value>
+  </data>
+  <data name="AUTHENTICATION_RESULT_ERROR_NAME" xml:space="preserve">
+    <value>Hata</value>
+  </data>
+  <data name="AUTHENTICATION_RESULT_NETWORK_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>Ağ hatası nedeniyle başarısız oldu</value>
+  </data>
+  <data name="AUTHENTICATION_RESULT_NETWORK_ERROR_NAME" xml:space="preserve">
+    <value>Ağ hatası</value>
+  </data>
+  <data name="AUTHENTICATION_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
+    <value>Kimlik doğrulama başarılı</value>
+  </data>
+  <data name="AUTHENTICATION_RESULT_SUCCESS_NAME" xml:space="preserve">
+    <value>Başarılı</value>
+  </data>
+  <data name="AUTHENTICATION_RESULT_UNAUTHORIZED_DESCRIPTION" xml:space="preserve">
+    <value>Yetkisiz</value>
+  </data>
+  <data name="AUTHENTICATION_RESULT_UNAUTHORIZED_NAME" xml:space="preserve">
+    <value>Yetkisiz</value>
+  </data>
+  <data name="BILLING_OPTION_DISABLE_DEPOSITS_NAME" xml:space="preserve">
+    <value>Depozitoları devre dışı bırak</value>
+  </data>
+  <data name="BILLING_OPTION_DISABLE_FIXED_TIME_NAME" xml:space="preserve">
+    <value>Sabit süreyi devre dışı bırak</value>
+  </data>
+  <data name="BILLING_OPTION_DISABLE_TIME_OFFER_NAME" xml:space="preserve">
+    <value>Zaman paketlerini devre dışı bırak</value>
+  </data>
+  <data name="BILLING_OPTION_NONE_NAME" xml:space="preserve">
+    <value>Yok</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_EMAIL" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_FACEBOOK_MESSENGER_NAME" xml:space="preserve">
+    <value>Facebook Messenger</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_INSTAGRAM_NAME" xml:space="preserve">
+    <value>Instagram</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_SMS_NAME" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_TELEGRAM_NAME" xml:space="preserve">
+    <value>Telegram</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_TWITTER_DM_NAME" xml:space="preserve">
+    <value>Twitter</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_VIBER_NAME" xml:space="preserve">
+    <value>Viber</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_WE_CHAT_NAME" xml:space="preserve">
+    <value>WeChat</value>
+  </data>
+  <data name="COMMUNICATION_CHANNEL_TYPES_WHATS_APP_NAME" xml:space="preserve">
+    <value>WhatsApp</value>
+  </data>
+  <data name="DEPOSIT_TRANSACTION_TYPE_CHARGE_NAME" xml:space="preserve">
+    <value>Ücret</value>
+  </data>
+  <data name="DEPOSIT_TRANSACTION_TYPE_CREDIT_NAME" xml:space="preserve">
+    <value>Kredi</value>
+  </data>
+  <data name="DEPOSIT_TRANSACTION_TYPE_DEPOSIT_NAME" xml:space="preserve">
+    <value>Depozito</value>
+  </data>
+  <data name="DEPOSIT_TRANSACTION_TYPE_WITHDRAW_NAME" xml:space="preserve">
+    <value>Para Çekme</value>
+  </data>
+  <data name="ENTITY_EVENT_TYPE_ADDED_NAME" xml:space="preserve">
+    <value>Eklendi</value>
+  </data>
+  <data name="ENTITY_EVENT_TYPE_MODIFIED_NAME" xml:space="preserve">
+    <value>Değiştirildi</value>
+  </data>
+  <data name="ENTITY_EVENT_TYPE_REMOVED_NAME" xml:space="preserve">
+    <value>Kaldırıldı</value>
+  </data>
+  <data name="HOST_DELETE_RESULT_HOST_HAS_RESERVED_GUEST_DESCRIPTION" xml:space="preserve">
+    <value>Bilgisayarda rezervasyonlu misafir var</value>
+  </data>
+  <data name="HOST_DELETE_RESULT_HOST_HAS_RESERVED_GUEST_NAME" xml:space="preserve">
+    <value>Bilgisayarda rezervasyonlu misafir</value>
+  </data>
+  <data name="HOST_DELETE_RESULT_HOST_IN_USE_DESCRIPTION" xml:space="preserve">
+    <value>Bilgisayar kullanımda</value>
+  </data>
+  <data name="HOST_DELETE_RESULT_HOST_IN_USE_NAME" xml:space="preserve">
+    <value>Bilgisayar kullanımda</value>
+  </data>
+  <data name="HOST_DELETE_RESULT_HOST_IS_RESERVED_DESCRIPTION" xml:space="preserve">
+    <value>Bilgisayar rezerve edilmiş</value>
+  </data>
+  <data name="HOST_DELETE_RESULT_HOST_IS_RESERVED_NAME" xml:space="preserve">
+    <value>Bilgisayar rezerve</value>
+  </data>
+  <data name="HOST_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
+    <value>Bilgisayar başarıyla silindi</value>
+  </data>
+  <data name="HOST_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve">
+    <value>Bilgisayar silme başarılı</value>
+  </data>
+  <data name="INVOICE_STATUS_PAID_NAME" xml:space="preserve">
+    <value>Ödendi</value>
+  </data>
+  <data name="INVOICE_STATUS_PARTIALLY_PAID_NAME" xml:space="preserve">
+    <value>Kısmen ödendi</value>
+  </data>
+  <data name="INVOICE_STATUS_UNPAID_NAME" xml:space="preserve">
+    <value>Ödenmedi</value>
+  </data>
+  <data name="LOGIN_RESULT_ACCOUNT_DISABLED_DESCRIPTION" xml:space="preserve">
+    <value>Belirtilen kullanıcı hesabı devre dışı</value>
+  </data>
+  <data name="LOGIN_RESULT_ACCOUNT_DISABLED_NAME" xml:space="preserve">
+    <value>Hesap devre dışı</value>
+  </data>
+  <data name="LOGIN_RESULT_ALREADY_LOGGED_IN_DESCRIPTION" xml:space="preserve">
+    <value>Kullanıcı zaten giriş yapmış</value>
+  </data>
+  <data name="LOGIN_RESULT_ALREADY_LOGGED_IN_NAME" xml:space="preserve">
+    <value>Zaten giriş yapıldı</value>
+  </data>
+  <data name="LOGIN_RESULT_DENIED_DESCRIPTION" xml:space="preserve">
+    <value>Giriş reddedildi</value>
+  </data>
+  <data name="LOGIN_RESULT_DENIED_NAME" xml:space="preserve">
+    <value>Giriş reddedildi</value>
+  </data>
+  <data name="LOGIN_RESULT_FAILED_DESCRIPTION" xml:space="preserve">
+    <value>Belirsiz giriş hatası</value>
+  </data>
+  <data name="LOGIN_RESULT_FAILED_NAME" xml:space="preserve">
+    <value>Giriş başarısız</value>
+  </data>
+  <data name="LOGIN_RESULT_INSUFFICIENT_BALANCE_DESCRIPTION" xml:space="preserve">
+    <value>Belirtilen kullanıcının bakiyesi yetersiz</value>
+  </data>
+  <data name="LOGIN_RESULT_INSUFFICIENT_BALANCE_NAME" xml:space="preserve">
+    <value>Yetersiz bakiye</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_CREDENTIALS_DESCRIPTION" xml:space="preserve">
+    <value>Belirtilen kullanıcı adı veya şifre geçersiz</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_CREDENTIALS_NAME" xml:space="preserve">
+    <value>Geçersiz kullanıcı adı veya şifre</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_HOST_ID_DESCRIPTION" xml:space="preserve">
+    <value>Belirtilen bilgisayar kimliği geçersiz</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_HOST_ID_NAME" xml:space="preserve">
+    <value>Geçersiz bilgisayar</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_PARAMETERS_DESCRIPTION" xml:space="preserve">
+    <value>Belirtilen parametreler geçersiz</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_PARAMETERS_NAME" xml:space="preserve">
+    <value>Geçersiz parametreler</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_PASSWORD_DESCRIPTION" xml:space="preserve">
+    <value>Belirtilen şifre geçersiz</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_PASSWORD_NAME" xml:space="preserve">
+    <value>Geçersiz şifre</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_SLOT_DESCRIPTION" xml:space="preserve">
+    <value>Belirtilen slot geçersiz</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_SLOT_NAME" xml:space="preserve">
+    <value>Geçersiz slot</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_USERNAME_DESCRIPTION" xml:space="preserve">
+    <value>Belirtilen kullanıcı adı geçersiz</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_USERNAME_NAME" xml:space="preserve">
+    <value>Geçersiz kullanıcı adı</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_USER_GROUP_ID_DESCRIPTION" xml:space="preserve">
+    <value>Belirtilen kullanıcı grubu kimliği geçersiz</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_USER_GROUP_ID_NAME" xml:space="preserve">
+    <value>Geçersiz kullanıcı grubu</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_USER_ID_DESCRIPTION" xml:space="preserve">
+    <value>Belirtilen kullanıcı kimliği geçersiz</value>
+  </data>
+  <data name="LOGIN_RESULT_INVALID_USER_ID_NAME" xml:space="preserve">
+    <value>Geçersiz kullanıcı</value>
+  </data>
+  <data name="LOGIN_RESULT_LOGIN_IN_PROGRESS_DESCRIPTION" xml:space="preserve">
+    <value>Giriş devam ediyor</value>
+  </data>
+  <data name="LOGIN_RESULT_LOGIN_IN_PROGRESS_NAME" xml:space="preserve">
+    <value>Devam ediyor</value>
+  </data>
+  <data name="LOGIN_RESULT_LOGOUT_IN_PROGRESS_DESCRIPTION" xml:space="preserve">
+    <value>Çıkış devam ediyor</value>
+  </data>
+  <data name="LOGIN_RESULT_LOGOUT_IN_PROGRESS_NAME" xml:space="preserve">
+    <value>Devam ediyor</value>
+  </data>
+  <data name="LOGIN_RESULT_MAXIMUM_SESSIONS_REACHED_DESCRIPTION" xml:space="preserve">
+    <value>Maksimum oturum sayısına ulaşıldı</value>
+  </data>
+  <data name="LOGIN_RESULT_MAXIMUM_SESSIONS_REACHED_NAME" xml:space="preserve">
+    <value>Maksimum oturum sayısı</value>
+  </data>
+  <data name="LOGIN_RESULT_NOT_IN_WAITING_LINE_DESCRIPTION" xml:space="preserve">
+    <value>Belirtilen kullanıcı bekleme listesinde değil</value>
+  </data>
+  <data name="LOGIN_RESULT_NOT_IN_WAITING_LINE_NAME" xml:space="preserve">
+    <value>Bekleme listesinde değil</value>
+  </data>
+  <data name="LOGIN_RESULT_OPERATOR_USER_GROUP_DENIED_DESCRIPTION" xml:space="preserve">
+    <value>Kullanıcı grubu yöneticiden giriş yapamaz</value>
+  </data>
+  <data name="LOGIN_RESULT_OPERATOR_USER_GROUP_DENIED_NAME" xml:space="preserve">
+    <value>Kullanıcı grubu girişi reddedildi</value>
+  </data>
+  <data name="LOGIN_RESULT_RESTRICTED_BY_AGE_DESCRIPTION" xml:space="preserve">
+    <value>Yaş kısıtlaması nedeniyle giriş şu anda yapılamıyor</value>
+  </data>
+  <data name="LOGIN_RESULT_RESTRICTED_BY_AGE_NAME" xml:space="preserve">
+    <value>Giriş yaş kısıtlaması</value>
+  </data>
+  <data name="LOGIN_RESULT_SLOT_IN_USE_DESCRIPTION" xml:space="preserve">
+    <value>Belirtilen slot zaten kullanımda</value>
+  </data>
+  <data name="LOGIN_RESULT_SLOT_IN_USE_NAME" xml:space="preserve">
+    <value>Slot zaten kullanımda</value>
+  </data>
+  <data name="LOGIN_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
+    <value>Kullanıcı girişi başarılı</value>
+  </data>
+  <data name="LOGIN_RESULT_SUCCESS_NAME" xml:space="preserve">
+    <value>Giriş başarılı</value>
+  </data>
+  <data name="PAYMENT_INTENT_EXPIRED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Ödeme niyetinin süresinin dolduğunu belirtir</value>
+  </data>
+  <data name="PAYMENT_INTENT_EXPIRED_EVENT_NAME" xml:space="preserve">
+    <value>Süresi doldu</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_DIRECTION_IN" xml:space="preserve">
+    <value>Gelen</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_DIRECTION_OUT" xml:space="preserve">
+    <value>Giden</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_TYPE_WITHDRAW" xml:space="preserve">
+    <value>Para Çekme</value>
+  </data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_DESCRIPTION" xml:space="preserve">
+    <value>Ürün grubu silinemedi</value>
+  </data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_NAME" xml:space="preserve">
+    <value>Ürün grubu silinemedi</value>
+  </data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPTY_DESCRIPTION" xml:space="preserve">
+    <value>Boş olmayan ürün grubu silinemiyor</value>
+  </data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPTY_NAME" xml:space="preserve">
+    <value>Ürün grubu boş değil</value>
+  </data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
+    <value>Ürün grubu başarıyla silindi</value>
+  </data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve">
+    <value>Ürün grubu silme başarılı</value>
+  </data>
+  <data name="REPORT_PRESET_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Rapor şablonuyla ilgili olaylar</value>
+  </data>
+  <data name="REPORT_PRESET_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Rapor şablonu</value>
+  </data>
+  <data name="RESERVATION_CURRENT_CONFIRMED_RESULT_CONFIRMED_NAME" xml:space="preserve">
+    <value>Onaylandı</value>
+  </data>
+  <data name="RESERVATION_CURRENT_CONFIRMED_RESULT_NO_RESERVATION_NAME" xml:space="preserve">
+    <value>Rezervasyon yok</value>
+  </data>
+  <data name="RESERVATION_CURRENT_CONFIRMED_RESULT_UNCONFIRMED_NAME" xml:space="preserve">
+    <value>Onaylanmadı</value>
+  </data>
+  <data name="RESERVATION_CURRENT_CONFIRM_RESULT_ERROR_NAME" xml:space="preserve">
+    <value>Hata</value>
+  </data>
+  <data name="RESERVATION_CURRENT_CONFIRM_RESULT_INVALID_PIN_NAME" xml:space="preserve">
+    <value>Geçersiz PIN</value>
+  </data>
+  <data name="RESERVATION_CURRENT_CONFIRM_RESULT_NO_RESERVATION_NAME" xml:space="preserve">
+    <value>Rezervasyon yok</value>
+  </data>
+  <data name="RESERVATION_CURRENT_CONFIRM_RESULT_SUCCESS_NAME" xml:space="preserve">
+    <value>Başarılı</value>
+  </data>
+  <data name="STOCK_TRANSACTION_TYPE_ADD_NAME" xml:space="preserve">
+    <value>Ekle</value>
+  </data>
+  <data name="STOCK_TRANSACTION_TYPE_REMOVE_NAME" xml:space="preserve">
+    <value>Kaldır</value>
+  </data>
+  <data name="STOCK_TRANSACTION_TYPE_RETURN_NAME" xml:space="preserve">
+    <value>İade</value>
+  </data>
+  <data name="STOCK_TRANSACTION_TYPE_SALE_NAME" xml:space="preserve">
+    <value>Satış</value>
+  </data>
+  <data name="STOCK_TRANSACTION_TYPE_SET_NAME" xml:space="preserve">
+    <value>Ayarla</value>
+  </data>
+  <data name="TASK_TYPE_JUNCTION_NAME" xml:space="preserve">
+    <value>Yönlendirme</value>
+  </data>
+  <data name="TASK_TYPE_NOTIFICATION_NAME" xml:space="preserve">
+    <value>Bildirim</value>
+  </data>
+  <data name="TASK_TYPE_PROCESS_NAME" xml:space="preserve">
+    <value>Süreç</value>
+  </data>
+  <data name="TASK_TYPE_SCRIPT_NAME" xml:space="preserve">
+    <value>Komut dosyası</value>
+  </data>
+  <data name="USER_BALANCE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Bakiye değişikliğini belirtir</value>
+  </data>
+  <data name="USER_BALANCE_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Bakiye değişimi</value>
+  </data>
+  <data name="USER_BALANCE_CLOSE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Bakiye kapanışını belirtir</value>
+  </data>
+  <data name="USER_BALANCE_CLOSE_EVENT_NAME" xml:space="preserve">
+    <value>Bakiye kapanışı</value>
+  </data>
+  <data name="USER_BILLING_OPTIONS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Faturalama seçenekleri değişikliğini belirtir</value>
+  </data>
+  <data name="USER_BILLING_OPTIONS_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Faturalama seçenekleri değişimi</value>
+  </data>
+  <data name="USER_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Kullanıcı hesabı oluşturulduğunu belirtir</value>
+  </data>
+  <data name="USER_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>Kullanıcı oluşturuldu</value>
+  </data>
+  <data name="USER_EMAIL_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>E-posta değişikliğini belirtir</value>
+  </data>
+  <data name="USER_EMAIL_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>E-posta değişimi</value>
+  </data>
+  <data name="USER_GUEST_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Misafir kullanıcıyla ilgili olaylar</value>
+  </data>
+  <data name="USER_GUEST_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Misafir kullanıcı</value>
+  </data>
+  <data name="USER_NEGATIVE_BALANCE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Negatif bakiye değişikliğini belirtir</value>
+  </data>
+  <data name="USER_NEGATIVE_BALANCE_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Negatif bakiye değişimi</value>
+  </data>
+  <data name="USER_NOTE_ADDED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Kullanıcı notu eklendiğini belirtir</value>
+  </data>
+  <data name="USER_NOTE_ADDED_EVENT_NAME" xml:space="preserve">
+    <value>Not eklendi</value>
+  </data>
+  <data name="USER_NOTE_DELETED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Kullanıcı notu silindiğini belirtir</value>
+  </data>
+  <data name="USER_NOTE_DELETED_EVENT_NAME" xml:space="preserve">
+    <value>Not silindi</value>
+  </data>
+  <data name="USER_NOTE_UPDATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Kullanıcı notu güncellendiğini belirtir</value>
+  </data>
+  <data name="USER_NOTE_UPDATED_EVENT_NAME" xml:space="preserve">
+    <value>Not güncellendi</value>
+  </data>
+  <data name="USER_PASSWORD_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Şifre değişikliğini belirtir</value>
+  </data>
+  <data name="USER_PASSWORD_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Şifre değişimi</value>
+  </data>
+  <data name="USER_PICTURE_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Resim değişikliğini belirtir</value>
+  </data>
+  <data name="USER_PICTURE_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Resim değişimi</value>
+  </data>
+  <data name="USER_RENAME_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Kullanıcı yeniden adlandırmasını belirtir</value>
+  </data>
+  <data name="USER_RENAME_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Yeniden adlandır</value>
+  </data>
+  <data name="USER_SESSION_STATE_ACTIVE_NAME" xml:space="preserve">
+    <value>Aktif</value>
+  </data>
+  <data name="USER_SESSION_STATE_ENDED_NAME" xml:space="preserve">
+    <value>Bitti</value>
+  </data>
+  <data name="USER_SESSION_STATE_GRACE_NAME" xml:space="preserve">
+    <value>Tolerans</value>
+  </data>
+  <data name="USER_SESSION_STATE_MOVED_NAME" xml:space="preserve">
+    <value>Taşındı</value>
+  </data>
+  <data name="USAGE_TYPE_NONE_NAME" xml:space="preserve">
+    <value>Süre</value>
+  </data>
+  <data name="USAGE_TYPE_RATE_NAME" xml:space="preserve">
+    <value>Fiyat</value>
+  </data>
+  <data name="USAGE_TYPE_TIME_FIXED_NAME" xml:space="preserve">
+    <value>Sabit süre</value>
+  </data>
+  <data name="USAGE_TYPE_TIME_OFFER_NAME" xml:space="preserve">
+    <value>Zaman paketi</value>
+  </data>
+  <data name="USER_SESSION_STATE_NONE_NAME" xml:space="preserve">
+    <value>Bekliyor</value>
+  </data>
+  <data name="USER_SESSION_STATE_PAUSED_NAME" xml:space="preserve">
+    <value>Duraklatıldı</value>
+  </data>
+  <data name="USER_SESSION_STATE_PENDING_NAME" xml:space="preserve">
+    <value>Beklemede</value>
+  </data>
+  <data name="USER_SMART_CARD_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Akıllı kart değişikliğini belirtir</value>
+  </data>
+  <data name="USER_SMART_CARD_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Akıllı kart değişimi</value>
+  </data>
+  <data name="USER_USAGE_SESSION_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Kullanım oturumu değişikliğini belirtir</value>
+  </data>
+  <data name="USER_USAGE_SESSION_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Kullanım oturumu değişimi</value>
+  </data>
+  <data name="USER_USER_GROUP_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Kullanıcı grubu değişikliğini belirtir</value>
+  </data>
+  <data name="USER_USER_GROUP_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Kullanıcı grubu değişimi</value>
+  </data>
+  <data name="WAITING_LINE_STATE_ACTIVE_NAME" xml:space="preserve">
+    <value>Aktif</value>
+  </data>
+  <data name="WAITING_LINE_STATE_CANCELED_NAME" xml:space="preserve">
+    <value>İptal edildi</value>
+  </data>
+  <data name="WAITING_LINE_STATE_PROCESSED_NAME" xml:space="preserve">
+    <value>İşlendi</value>
+  </data>
 </root>
