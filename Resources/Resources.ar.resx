@@ -977,7 +977,7 @@
     <value>تمت إزالة مستخدم</value> 
   </data> 
   <data name="SHIFT_COUNT_TYPE_DEFAULT" xml:space="preserve"> 
-    <value>افتراضي</value> 
+    <value>يدوي</value>
   </data> 
   <data name="SHIFT_COUNT_TYPE_SHIFT_CLOSE" xml:space="preserve"> 
     <value>إغلاق الوردية</value> 

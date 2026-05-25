@@ -977,7 +977,7 @@
     <value>Пользователь удален</value> 
   </data> 
   <data name="SHIFT_COUNT_TYPE_DEFAULT" xml:space="preserve"> 
-    <value>По умолчанию</value> 
+    <value>Вручную</value>
   </data> 
   <data name="SHIFT_COUNT_TYPE_SHIFT_CLOSE" xml:space="preserve"> 
     <value>Закрытие смены</value> 
