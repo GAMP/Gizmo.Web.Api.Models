@@ -25,5 +25,11 @@ namespace Gizmo.Web.Api.Messaging
         /// </summary>
         [Key(2)]
         public string Message { get; init; } = string.Empty;
+
+        /// <summary> Returns a string representation of the error, including row number, field (if applicable), and message. </summary>
+        public override string ToString()
+        {
+            return $"Row {RowNumber}, Field: {Field ?? "N/A"}, Message: {Message}";
+        }
     }
 }

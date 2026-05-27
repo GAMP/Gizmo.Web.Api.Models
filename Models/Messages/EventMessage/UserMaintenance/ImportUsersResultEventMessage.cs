@@ -23,21 +23,9 @@ namespace Gizmo.Web.Api.Messaging
         public int ProcessedUsersCount { get; init; }
 
         /// <summary>
-        /// Count of users whose phone fields need normalization updates.
-        /// </summary>
-        [Key(7)]
-        public int NormalizedPhonesCount { get; init; }
-
-        /// <summary>
-        /// Count of duplicate normalized mobile phone groups.
-        /// </summary>
-        [Key(8)]
-        public int MergedPhonesCount { get; init; }
-
-        /// <summary>
         /// Row-level import errors found during parsing, field validation, or matching prechecks.
         /// </summary>
-        [Key(9)]
+        [Key(7)]
         public ImportUsersErrorModel[] Errors { get; init; } = [];
     }
 }
