@@ -935,7 +935,7 @@
     <value>Utilizador removido</value> 
   </data> 
   <data name="SHIFT_COUNT_TYPE_DEFAULT" xml:space="preserve"> 
-    <value>Predefinido</value> 
+    <value>Manual</value>
   </data> 
   <data name="SHIFT_COUNT_TYPE_SHIFT_CLOSE" xml:space="preserve"> 
     <value>Fecho de turno</value> 

@@ -329,7 +329,7 @@
   <data name="WAITING_LINE_USER_MOVED_EVENT_NAME" xml:space="preserve"><value>Käyttäjä siirretty</value></data>
   <data name="WAITING_LINE_USER_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"><value>Käyttäjä poistettu -tapahtuma</value></data>
   <data name="WAITING_LINE_USER_REMOVED_EVENT_NAME" xml:space="preserve"><value>Käyttäjä poistettu</value></data>
-  <data name="SHIFT_COUNT_TYPE_DEFAULT" xml:space="preserve"><value>Oletus</value></data>
+  <data name="SHIFT_COUNT_TYPE_DEFAULT" xml:space="preserve"><value>Manuaalinen</value></data>
   <data name="SHIFT_COUNT_TYPE_SHIFT_CLOSE" xml:space="preserve"><value>Vuoron sulkeminen</value></data>
   <data name="SHIFT_COUNT_TYPE_SHIFT_OPEN" xml:space="preserve"><value>Vuoron avaaminen</value></data>
   <data name="PROMOTION_CODE_TYPE_PUBLIC_NAME" xml:space="preserve"><value>Julkinen</value></data>

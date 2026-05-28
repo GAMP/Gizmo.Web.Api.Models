@@ -268,12 +268,12 @@
   <data name="DISCOUNT_REWARD_TYPE_DISCOUNT" xml:space="preserve"> 
     <value>Скидка</value> 
   </data> 
-  <data name="DOCUMENT_TYPES_CONSIGNMENT_NOTE" xml:space="preserve"> 
-    <value>Накладная</value> 
-  </data> 
-  <data name="DOCUMENT_TYPES_DELIVERY_NOTE" xml:space="preserve"> 
-    <value>Накладная</value> 
-  </data> 
+  <data name="DOCUMENT_TYPES_CONSIGNMENT_NOTE" xml:space="preserve">
+    <value>Транспортная накладная</value>
+  </data>
+  <data name="DOCUMENT_TYPES_DELIVERY_NOTE" xml:space="preserve">
+    <value>Товарная накладная</value>
+  </data>
   <data name="DOCUMENT_TYPES_DISPATCH_NOTE" xml:space="preserve"> 
     <value>Примечание к накладной</value> 
   </data> 
@@ -977,7 +977,7 @@
     <value>Пользователь удален</value> 
   </data> 
   <data name="SHIFT_COUNT_TYPE_DEFAULT" xml:space="preserve"> 
-    <value>По умолчанию</value> 
+    <value>Вручную</value>
   </data> 
   <data name="SHIFT_COUNT_TYPE_SHIFT_CLOSE" xml:space="preserve"> 
     <value>Закрытие смены</value> 

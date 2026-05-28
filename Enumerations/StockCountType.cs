@@ -8,7 +8,7 @@ namespace Gizmo.Web.Api.Models
     /// </summary>
     public enum StockCountType
     {
-        [Name("Default", nameof(Resources.SHIFT_COUNT_TYPE_DEFAULT))]
+        [Name("Manual", nameof(Resources.SHIFT_COUNT_TYPE_DEFAULT))]
         Default = 0,
 
         [Name("Shift Open", nameof(Resources.SHIFT_COUNT_TYPE_SHIFT_OPEN))]

@@ -1495,7 +1495,7 @@
     <value>Anual</value>
   </data>
   <data name="SHIFT_COUNT_TYPE_DEFAULT" xml:space="preserve">
-    <value>Predeterminado</value>
+    <value>Manual</value>
   </data>
   <data name="SHIFT_COUNT_TYPE_SHIFT_CLOSE" xml:space="preserve">
     <value>Cierre de turno</value>

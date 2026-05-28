@@ -329,7 +329,7 @@
   <data name="WAITING_LINE_USER_MOVED_EVENT_NAME" xml:space="preserve"><value>Bruger flyttet</value></data>
   <data name="WAITING_LINE_USER_REMOVED_EVENT_DESCRIPTION" xml:space="preserve"><value>Bruger fjernet hændelse</value></data>
   <data name="WAITING_LINE_USER_REMOVED_EVENT_NAME" xml:space="preserve"><value>Bruger fjernet</value></data>
-  <data name="SHIFT_COUNT_TYPE_DEFAULT" xml:space="preserve"><value>Standard</value></data>
+  <data name="SHIFT_COUNT_TYPE_DEFAULT" xml:space="preserve"><value>Manuelt</value></data>
   <data name="SHIFT_COUNT_TYPE_SHIFT_CLOSE" xml:space="preserve"><value>Vagtlukning</value></data>
   <data name="SHIFT_COUNT_TYPE_SHIFT_OPEN" xml:space="preserve"><value>Vagtåbning</value></data>
   <data name="PROMOTION_CODE_TYPE_PUBLIC_NAME" xml:space="preserve"><value>Offentlig</value></data>
