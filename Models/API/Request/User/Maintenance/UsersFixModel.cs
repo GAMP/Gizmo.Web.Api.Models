@@ -1,10 +1,10 @@
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Request model for creating a user-import process from an uploaded workbook.
+    /// Request model for starting the user fix process.
     /// </summary>
     [MessagePack.MessagePackObject]
-    public sealed class UserImportUsersModel : IWebApiModel
+    public sealed class UsersFixModel : IWebApiModel
     {
         /// <summary>
         /// Default country used when normalizing phone values that do not

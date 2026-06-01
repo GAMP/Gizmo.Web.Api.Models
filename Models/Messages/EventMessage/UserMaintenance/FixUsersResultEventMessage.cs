@@ -3,12 +3,12 @@ using MessagePack;
 namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
-    /// User fix duplicates process result event message.
+    /// User fix process result event message.
     /// </summary>
     [MessagePackObject]
-    [System.ComponentModel.DataAnnotations.Name("User fix duplicates result")]
-    [System.ComponentModel.DataAnnotations.ExtendedDescription("Indicates user fix duplicates process result")]
-    public sealed class UserFixDuplicatesResultEventMessage : UserMaintenanceResultEventMessageBase
+    [System.ComponentModel.DataAnnotations.Name("User fix result")]
+    [System.ComponentModel.DataAnnotations.ExtendedDescription("Indicates user fix process result")]
+    public sealed class FixUsersResultEventMessage : UserMaintenanceResultEventMessageBase
     {
         /// <summary>
         /// Processed user count.

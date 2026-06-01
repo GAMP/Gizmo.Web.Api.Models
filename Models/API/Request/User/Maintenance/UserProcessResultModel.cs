@@ -6,7 +6,7 @@ namespace Gizmo.Web.Api.Models
     /// Result returned when a user-maintenance background process is enqueued.
     /// </summary>
     [MessagePack.MessagePackObject]
-    public sealed class UserMaintenanceProcessResultModel : IWebApiModel
+    public sealed class UserProcessResultModel : IWebApiModel
     {
         /// <summary>
         /// Background process identifier.
