@@ -226,6 +226,16 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(32)]
         public bool IsExcise { get; set; }
 
+        /// <summary>
+        /// Per-branch availability rows for the product.
+        /// </summary>
+        /// <remarks>
+        /// Populated only when "Branches" is requested via Expand. Contains one entry per existing
+        /// ProductBranch row; a branch with no entry here is treated as available by default.
+        /// </remarks>
+        [MessagePack.Key(33)]
+        public IEnumerable<BranchReferenceModel> Branches { get; set; } = Enumerable.Empty<BranchReferenceModel>();
+
         #endregion
     }
 }
