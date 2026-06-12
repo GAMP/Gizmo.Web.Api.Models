@@ -54,21 +54,15 @@ namespace Gizmo.Web.Api.Models
     public sealed class UsersAuditPostResultModel : IWebApiModel
     {
         /// <summary>
-        /// Background process identifier when the model is returned by an enqueue endpoint.
-        /// </summary>
-        [Key(0)]
-        public Guid? ProcessId { get; init; }
-
-        /// <summary>
         /// Duplicate audit items merged by the audit process.
         /// </summary>
-        [Key(1)]
+        [Key(0)]
         public UsersAuditMergedItemModel[] MergedItems { get; init; } = [];
 
         /// <summary>
         /// Non-fatal audit errors encountered while merging duplicates.
         /// </summary>
-        [Key(2)]
+        [Key(1)]
         public UsersAuditErrorModel[] Errors { get; init; } = [];
     }
 
@@ -145,7 +139,7 @@ namespace Gizmo.Web.Api.Models
     public sealed class UsersAuditUserModel : IWebApiModel
     {
         /// <summary>
-        /// User identifier.
+        /// User identifier. Import validation duplicate results can reuse this model with a negative synthetic id for workbook rows.
         /// </summary>
         [Key(0)]
         public int Id { get; init; }
@@ -173,6 +167,6 @@ namespace Gizmo.Web.Api.Models
         /// Human-readable audit error message.
         /// </summary>
         [Key(0)]
-        public required string ErrorMessage { get; init; }
+        public required string Message { get; init; }
     }
 }

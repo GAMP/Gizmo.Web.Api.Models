@@ -8,7 +8,7 @@ namespace Gizmo.Web.Api.Messaging
     [MessagePackObject]
     [System.ComponentModel.DataAnnotations.Name("User maintenance error")]
     [System.ComponentModel.DataAnnotations.ExtendedDescription("Indicates user maintenance process error result")]
-    public sealed class UserMaintenceErrorEventMessage : UserMaintenanceResultEventMessageBase
+    public sealed class UserMaintenanceErrorEventMessage : UserMaintenanceResultEventMessageBase
     {
         /// <summary>
         /// Localized process error message.

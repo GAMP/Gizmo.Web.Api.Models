@@ -1,31 +1,20 @@
+using Gizmo.Web.Api.Models;
 using MessagePack;
 
 namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
-    /// User import-users process result event message.
+    /// User import process result event message.
     /// </summary>
     [MessagePackObject]
-    [System.ComponentModel.DataAnnotations.Name("ImportUsersResult")]
-    [System.ComponentModel.DataAnnotations.ExtendedDescription("Indicates import-users process initialization result")]
+    [System.ComponentModel.DataAnnotations.Name("User import result")]
+    [System.ComponentModel.DataAnnotations.ExtendedDescription("Indicates import-users process result")]
     public sealed class ImportUsersResultEventMessage : UserMaintenanceResultEventMessageBase
     {
         /// <summary>
-        /// Imported file name.
+        /// Import result payload.
         /// </summary>
         [Key(5)]
-        public string FileName { get; init; } = string.Empty;
-
-        /// <summary>
-        /// Processed user count.
-        /// </summary>
-        [Key(6)]
-        public int ProcessedUsersCount { get; init; }
-
-        /// <summary>
-        /// Row-level import errors found during parsing, field validation, or matching prechecks.
-        /// </summary>
-        [Key(7)]
-        public ImportUsersErrorModel[] Errors { get; init; } = [];
+        public required UsersImportResultModel Result { get; init; }
     }
 }
