@@ -154,6 +154,12 @@ namespace Gizmo.Web.Api.Models
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static string BuildUriPath(object[] pathParameters) => '/' + string.Join("/", pathParameters);
+        private static string BuildUriPath(object[] pathParameters) =>
+            //Format every segment with InvariantCulture: ASP.NET route binding parses path values
+            //(decimal/double/DateTime) invariantly, so a culture-formatted segment (e.g. "3,33" under
+            //a comma-decimal client culture / WASM ICU drift) is mis-bound on the server ("3,33" -> 333).
+            //Convert.ToString uses IConvertible for numeric/date types and falls back to ToString() for
+            //Guid/string/enum which are already culture-insensitive.
+            '/' + string.Join("/", pathParameters.Select(p => Convert.ToString(p, System.Globalization.CultureInfo.InvariantCulture)));
     }
 }
