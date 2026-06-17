@@ -59,5 +59,10 @@
         /// Indicates default register for the branch. Only one register can be default for a branch.
         /// </summary>
         bool IsDefault {  get; }
+
+        /// <summary>
+        /// Indicates global default register for the system. Only one register can be default for the system.
+        /// </summary>
+        bool IsGlobalDefault { get; }
     }
 }

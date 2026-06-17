@@ -58,5 +58,9 @@ namespace Gizmo.Web.Api.Models
         /// <inheritdoc/>
         [MessagePack.Key(10)]
         public bool IsDefault { get; set; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(11)]
+        public bool IsGlobalDefault { get; set; }
     }
 }
