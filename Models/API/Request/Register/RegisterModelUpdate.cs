@@ -1,9 +1,7 @@
-﻿using Gizmo.Web.Api.Models.Abstractions;
-
-using MessagePack;
-
-using System;
+﻿using System;
 using System.ComponentModel.DataAnnotations;
+using Gizmo.Web.Api.Models.Abstractions;
+using MessagePack;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -13,8 +11,6 @@ namespace Gizmo.Web.Api.Models
     [Serializable, MessagePackObject]
     public sealed class RegisterModelUpdate : IRegisterModel, IModelIntIdentifier, IUriParametersQuery
     {
-        #region PROPERTIES
-
         ///<inheritdoc/>
         [MessagePack.Key(0)]
         public int Id { get; init; }
@@ -61,6 +57,8 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(10)]
         public int? QrDisplayNumber { get; set; }
 
-        #endregion
+        /// <inheritdoc/>
+        [MessagePack.Key(11)]
+        public bool IsDefault { get; set; }
     }
 }

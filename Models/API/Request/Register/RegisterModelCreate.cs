@@ -13,8 +13,6 @@ namespace Gizmo.Web.Api.Models
     [Serializable, MessagePackObject]
     public sealed class RegisterModelCreate : IRegisterModel, IUriParametersQuery
     {
-        #region PROPERTIES
-
         ///<inheritdoc/>
         [MessagePack.Key(0)]
         public int Number { get; init; }
@@ -57,6 +55,8 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(9)]
         public int? QrDisplayNumber { get; set; }
 
-        #endregion
+        /// <inheritdoc/>
+        [MessagePack.Key(10)]
+        public bool IsDefault { get; set; }
     }
 }

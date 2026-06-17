@@ -11,8 +11,6 @@ namespace Gizmo.Web.Api.Models
     [Serializable, MessagePackObject]
     public sealed class RegisterModel : IRegisterModel, IModelIntIdentifier
     {
-        #region PROPERTIES
-
         /// <summary>
         /// The Id of the object.
         /// </summary>
@@ -78,6 +76,8 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(11)]
         public int? QrDisplayNumber { get; set; }
 
-        #endregion
+        /// <inheritdoc/>
+        [MessagePack.Key(12)]
+        public bool IsDefault { get; set; }
     }
 }

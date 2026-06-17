@@ -54,5 +54,10 @@
         /// Qr display number.
         /// </summary>
         int? QrDisplayNumber { get; }
+
+        /// <summary>
+        /// Indicates default register for the branch. Only one register can be default for a branch.
+        /// </summary>
+        bool IsDefault {  get; }
     }
 }
