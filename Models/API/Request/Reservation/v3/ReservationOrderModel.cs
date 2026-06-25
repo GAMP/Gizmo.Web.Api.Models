@@ -75,5 +75,23 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(12)]
         public decimal MinimumPayment { get; init; }
+
+        /// <summary>
+        /// Void status of the order's invoices.
+        /// </summary>
+        [MessagePack.Key(13)]
+        public OrderVoidStatus VoidStatus { get; init; }
+
+        /// <summary>
+        /// Refund status across the order's invoice payments.
+        /// </summary>
+        [MessagePack.Key(14)]
+        public RefundStatus RefundStatus { get; init; }
+
+        /// <summary>
+        /// Total amount refunded across the order's invoice payments.
+        /// </summary>
+        [MessagePack.Key(15)]
+        public decimal RefundedAmount { get; init; }
     }
 }
