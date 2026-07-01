@@ -18,14 +18,10 @@ namespace Gizmo.Web.Api.Models
 
         /// <inheritdoc/>
         [MessagePack.Key(1)]
-        public ClientOptionSkinModel? ClientOptionSkin { get; set; }
+        public bool IsDefault { get; set; }
 
         /// <inheritdoc/>
         [MessagePack.Key(2)]
-        public string? CustomCSS { get; set; }
-
-        /// <inheritdoc/>
-        [MessagePack.Key(3)]
-        public bool IsDefault { get; set; }
+        public ClientOptionSkinModel? ClientOptionSkin { get; set; }
     }
 }

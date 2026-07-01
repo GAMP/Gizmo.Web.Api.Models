@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Gizmo.Web.Api.Models
@@ -76,6 +76,14 @@ namespace Gizmo.Web.Api.Models
         /// </remarks>
         [MessagePack.Key(3)]
         public PaymentIntentOrderInvoicePaymentModel? InvoicePayment { get; init; }
+
+        /// <summary>
+        /// Whether the invoice already existed before this checkout (a pre-existing billing obligation) rather
+        /// than being created fresh in it. A pre-existing invoice must never be voided on a payment or
+        /// receipt-print failure; only transient (newly created) invoices are voidable.
+        /// </summary>
+        [MessagePack.Key(4)]
+        public bool IsExisting { get; init; }
     }
 
     /// <summary>

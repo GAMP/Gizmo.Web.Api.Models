@@ -1,4 +1,4 @@
-﻿using Gizmo.Client;
+using Gizmo.Client;
 using Gizmo.Client.UI.View.Constants;
 
 namespace Gizmo.Web.Api.Models
@@ -49,200 +49,136 @@ namespace Gizmo.Web.Api.Models
 
         #endregion
 
-        #region Currency
-
-        [MessagePack.Key(12)]
-        public string? CurrencySymbol { get; set; }
-
-        [MessagePack.Key(13)]
-        public int? CurrencyDecimalDigits { get; set; }
-
-        [MessagePack.Key(14)]
-        public string? CurrencyDecimalSeparator { get; set; }
-
-        [MessagePack.Key(15)]
-        public string? CurrencyGroupSeparator { get; set; }
-
-        [MessagePack.Key(16)]
-        public int[]? CurrencyGroupSizes { get; set; }
-
-        [MessagePack.Key(17)]
-        public int? CurrencyNegativePattern { get; set; }
-
-        [MessagePack.Key(18)]
-        public int? CurrencyPositivePattern { get; set; }
-
-        #endregion
-
-        #region Reservations
-
-        [MessagePack.Key(19)]
-        public bool ReservationsEnableLoginBlock { get; set; }
-
-        [MessagePack.Key(20)]
-        public int ReservationsLoginBlockTime { get; set; }
-
-        [MessagePack.Key(21)]
-        public bool ReservationsEnableLoginUnblock { get; set; }
-
-        [MessagePack.Key(22)]
-        public int ReservationsLoginUnblockTime { get; set; }
-
-        #endregion
-
         #region Feeds
 
-        [MessagePack.Key(23)]
+        [MessagePack.Key(12)]
         public bool FeedsDisabled { get; set; }
 
-        [MessagePack.Key(24)]
+        [MessagePack.Key(13)]
         public int FeedsRotateEvery { get; set; }
 
         #endregion
 
         #region HostQRCode
 
-        [MessagePack.Key(25)]
+        [MessagePack.Key(14)]
         public bool HostQRCodeEnabled { get; set; }
 
-        [MessagePack.Key(26)]
+        [MessagePack.Key(15)]
         public bool HostQRCodeIsBase64 { get; set; }
 
         #endregion
 
         #region LoginRotator
 
-        [MessagePack.Key(27)]
+        [MessagePack.Key(16)]
         public bool LoginRotatorEnabled { get; set; }
 
-        [MessagePack.Key(28)]
+        [MessagePack.Key(17)]
         public string? LoginRotatorPath { get; set; }
 
-        [MessagePack.Key(29)]
+        [MessagePack.Key(18)]
         public int LoginRotatorRotateEvery { get; set; }
 
         #endregion
 
         #region PopularItems
 
-        [MessagePack.Key(30)]
+        [MessagePack.Key(19)]
         public int MaxPopularProducts { get; set; }
 
-        [MessagePack.Key(31)]
+        [MessagePack.Key(20)]
         public int MaxPopularApplications { get; set; }
 
         #endregion
 
         #region UserLogin
 
-        [MessagePack.Key(32)]
+        [MessagePack.Key(21)]
         public bool UserLoginDisabled { get; set; }
 
         #endregion
 
         #region UserOnlineDeposit
 
-        [MessagePack.Key(33)]
+        [MessagePack.Key(22)]
         public bool UserOnlineDepositDisabled { get; set; }
 
-        [MessagePack.Key(34)]
+        [MessagePack.Key(23)]
         public decimal UserOnlineDepositMaximumAmount { get; set; }
 
         #endregion
 
         #region Home
 
-        [MessagePack.Key(35)]
+        [MessagePack.Key(24)]
         public bool HomeDisabled { get; set; }
 
         #endregion
 
         #region Shop
 
-        [MessagePack.Key(36)]
+        [MessagePack.Key(25)]
         public bool ShopDisabled { get; set; }
-
-        #endregion
-
-        #region Validation
-
-        #region Password
-
-        [MessagePack.Key(37)]
-        public int? ValidationPasswordMinimumLength { get; set; }
-
-        [MessagePack.Key(38)]
-        public int? ValidationPasswordMaximumLength { get; set; }
-
-        [MessagePack.Key(39)]
-        public bool ValidationPasswordLowerCaseCharactersRequired { get; set; }
-
-        [MessagePack.Key(40)]
-        public bool ValidationPasswordUpperCaseCharactersRequired { get; set; }
-
-        [MessagePack.Key(41)]
-        public bool ValidationPasswordNumbersRequired { get; set; }
-
-        [MessagePack.Key(42)]
-        public string? IntegrationId { get; set; }
 
         #endregion
 
         #region Apps
 
-        [MessagePack.Key(43)]
-        public ApplicationSortingOption DefaultSortingOption { get; set; }
+        [MessagePack.Key(26)]
+        public string? IntegrationId { get; set; }
 
-        #endregion
+        [MessagePack.Key(27)]
+        public ApplicationSortingOption DefaultSortingOption { get; set; }
 
         #endregion
 
         #region AssistanceRequest
 
-        [MessagePack.Key(44)]
+        [MessagePack.Key(28)]
         public bool AssistanceRequestDisabled { get; set; }
 
         #endregion
 
-        [MessagePack.Key(45)]
+        [MessagePack.Key(29)]
         public bool HostQRCodeGenerateURL { get; set; }
 
-        [MessagePack.Key(46)]
+        [MessagePack.Key(30)]
         public string? HostQRCodeURL { get; set; }
 
-        [MessagePack.Key(47)]
+        [MessagePack.Key(31)]
         public string? HostQRCodeTitle { get; set; }
 
-        [MessagePack.Key(48)]
+        [MessagePack.Key(32)]
         public string? HostQRCodeDescription { get; set; }
 
         #region HostNumberOptions
 
-        [MessagePack.Key(49)]
+        [MessagePack.Key(33)]
         public bool HostNumberPrefixDisabled { get; set; }
 
-        [MessagePack.Key(50)]
+        [MessagePack.Key(34)]
         public string? HostNumberPrefix { get; set; }
 
-        [MessagePack.Key(51)]
+        [MessagePack.Key(35)]
         public bool HostNumberShowOnWallpaper { get; set; }
 
-        [MessagePack.Key(52)]
+        [MessagePack.Key(36)]
         public bool HostNumberShowOnRotator { get; set; }
 
-        [MessagePack.Key(53)]
+        [MessagePack.Key(37)]
         public HostNumberPositioning HostNumberPositioningOnWallpaper { get; set; }
 
-        [MessagePack.Key(54)]
+        [MessagePack.Key(38)]
         public HostNumberPositioning HostNumberPositioningOnRotator { get; set; }
 
-        [MessagePack.Key(55)]
+        [MessagePack.Key(39)]
         public HostNumberFixedPosition HostNumberFixedPosition { get; set; }
 
-        [MessagePack.Key(56)]
+        [MessagePack.Key(40)]
         public int HostNumberTimeoutBetweenPosition { get; set; }
 
-        [MessagePack.Key(57)]
+        [MessagePack.Key(41)]
         public double HostNumberAnimationDuration { get; set; }
 
         #endregion

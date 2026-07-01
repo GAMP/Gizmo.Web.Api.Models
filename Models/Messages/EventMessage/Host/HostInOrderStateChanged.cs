@@ -5,8 +5,8 @@ namespace Gizmo.Web.Api.Messaging
     /// <summary>
     /// Host in order state changed message.
     /// </summary>
-    [System.ComponentModel.DataAnnotations.Name("In order state changed", nameof(Resources.HOST_IN_ORDER_STATE_CHANED_EVENT_GROUP_NAME))]
-    [System.ComponentModel.DataAnnotations.ExtendedDescription("Host in order state changed", nameof(Resources.HOST_IN_ORDER_STATE_CHANED_EVENT_GROUP_DESCRIPTION))]
+    [System.ComponentModel.DataAnnotations.Name("In order state changed", nameof(Resources.HOST_IN_ORDER_STATE_CHANGED_EVENT_GROUP_NAME))]
+    [System.ComponentModel.DataAnnotations.ExtendedDescription("Host in order state changed", nameof(Resources.HOST_IN_ORDER_STATE_CHANGED_EVENT_GROUP_DESCRIPTION))]
     [MessagePack.MessagePackObject()]
     public sealed class HostInOrderStateChanged : HostEventMessageBase
     {
