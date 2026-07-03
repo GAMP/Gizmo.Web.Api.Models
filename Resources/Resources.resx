@@ -122,6 +122,7 @@
   </data>
   <data name="ASSISTANCE_REQUEST_CHANGE_EVENT_EVENT_NAME" xml:space="preserve">
     <value>Change</value>
+    <comment>Event name: a change occurred on an assistance request. Noun (the change), not a verb. Translate as "change/modification", not as "to change".</comment>
   </data>
   <data name="ASSISTANCE_REQUEST_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Indicates assistance request creation</value>
@@ -172,7 +173,7 @@
     <value>Invalid</value>
   </data>
   <data name="AUTHENTICATION_STATE_NETWORK_ERROR_DESCRIPTION" xml:space="preserve">
-    <value>Authentication failed due to an network error</value>
+    <value>Authentication failed due to a network error</value>
   </data>
   <data name="AUTHENTICATION_STATE_NETWORK_ERROR_NAME" xml:space="preserve">
     <value>Network error</value>
@@ -208,7 +209,7 @@
     <value>Invalid id</value>
   </data>
   <data name="AUTHORIZATION_RESULT_NETWORK_ERROR_DESCRIPTION" xml:space="preserve">
-    <value>Failed due to an network error</value>
+    <value>Failed due to a network error</value>
   </data>
   <data name="AUTHORIZATION_RESULT_NETWORK_ERROR_NAME" xml:space="preserve">
     <value>Network error</value>
@@ -220,7 +221,7 @@
     <value>Success</value>
   </data>
   <data name="AUTHORIZATION_RESULT_TOKEN_EXPIRED_DESCRIPTION" xml:space="preserve">
-    <value>Failed due to a expired token</value>
+    <value>Failed due to an expired token</value>
   </data>
   <data name="AUTHORIZATION_RESULT_TOKEN_EXPIRED_NAME" xml:space="preserve">
     <value>Token expired</value>
@@ -242,6 +243,7 @@
   </data>
   <data name="AUTHORIZATION_WARNINGS_NONE_NAME" xml:space="preserve">
     <value>None</value>
+    <comment>Enum value meaning "no warnings". Refers to the noun "warning". In gendered languages, choose the form agreeing with "warning".</comment>
   </data>
   <data name="AUTHORIZATION_WARNINGS_PAYMENT_FAILURE_DESCRIPTION" xml:space="preserve">
     <value>Payment attempt did not succeed</value>
@@ -262,7 +264,7 @@
     <value>Deleted</value>
   </data>
   <data name="BRANCH_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
-    <value>Branch releated events</value>
+    <value>Branch related events</value>
   </data>
   <data name="BRANCH_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Branch</value>
@@ -352,7 +354,7 @@
     <value>Write-off report</value>
   </data>
   <data name="ENTITY_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
-    <value>Indicates an database entity chgange</value>
+    <value>Indicates a database entity change</value>
   </data>
   <data name="ENTITY_CHANGE_EVENT_NAME" xml:space="preserve">
     <value>Database entity change</value>
@@ -405,10 +407,10 @@
   <data name="HOST_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Host</value>
   </data>
-  <data name="HOST_IN_ORDER_STATE_CHANED_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+  <data name="HOST_IN_ORDER_STATE_CHANGED_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
     <value>Host in order state changed</value>
   </data>
-  <data name="HOST_IN_ORDER_STATE_CHANED_EVENT_GROUP_NAME" xml:space="preserve">
+  <data name="HOST_IN_ORDER_STATE_CHANGED_EVENT_GROUP_NAME" xml:space="preserve">
     <value>In order state changed</value>
   </data>
   <data name="HOST_LAYOUT_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
@@ -459,10 +461,10 @@
   <data name="HOST_LAYOUT_UPDATED_EVENT_NAME" xml:space="preserve">
     <value>Host layout updated</value>
   </data>
-  <data name="HOST_LOCK_STATE_CHANED_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+  <data name="HOST_LOCK_STATE_CHANGED_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
     <value>Host lock state changed</value>
   </data>
-  <data name="HOST_LOCK_STATE_CHANED_EVENT_GROUP_NAME" xml:space="preserve">
+  <data name="HOST_LOCK_STATE_CHANGED_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Lock state changed</value>
   </data>
   <data name="INSTANCE_AUTHENTICATION_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
@@ -488,6 +490,7 @@
   </data>
   <data name="INSTANCE_ID_TYPE_HARDWARE_ID_NAME" xml:space="preserve">
     <value>Hardware id</value>
+    <comment>License instance identifier sourced from machine hardware (CPU/disk/etc fingerprint). Treat "Hardware id" as a domain term; keep "id" lowercase as a stylistic choice. In target languages, may be transliterated or kept as-is.</comment>
   </data>
   <data name="INSTANCE_ID_TYPE_INSTANCE_ID_DESCRIPTION" xml:space="preserve">
     <value>Instance id</value>
@@ -505,7 +508,7 @@
     <value>Expired</value>
   </data>
   <data name="INVENTORY_ADJUSTMENT_REASONS_FORCE_MAJOR" xml:space="preserve">
-    <value>Force major</value>
+    <value>Force majeure</value>
   </data>
   <data name="INVENTORY_ADJUSTMENT_REASONS_LOST" xml:space="preserve">
     <value>Lost</value>
@@ -644,6 +647,7 @@
   </data>
   <data name="NOTIFICATION_TYPE_NONE" xml:space="preserve">
     <value>None</value>
+    <comment>Enum value: notification type = none (silent / no notification). Refers to "notification type" noun. Translate to agree with "type" in target language.</comment>
   </data>
   <data name="NOTIFICATION_TYPE_VISUAL" xml:space="preserve">
     <value>Visual</value>
@@ -656,6 +660,7 @@
   </data>
   <data name="OPTIONS_CHANGE_EVENT_NAME" xml:space="preserve">
     <value>Change</value>
+    <comment>Event name: options changed. Noun (the change). Translate as "change/modification".</comment>
   </data>
   <data name="OPTIONS_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
     <value>Options related events</value>
@@ -674,6 +679,7 @@
   </data>
   <data name="ORDER_DELIVERY_STATUS_CHANGE_EVENT_NAME" xml:space="preserve">
     <value>Change</value>
+    <comment>Event name: order-delivery status changed. Noun (the change). Translate as "change/modification".</comment>
   </data>
   <data name="ORDER_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
     <value>Order related events</value>
@@ -686,12 +692,14 @@
   </data>
   <data name="ORDER_LINE_DELIVERY_STATUS_CHANGE_EVENT_NAME" xml:space="preserve">
     <value>Change</value>
+    <comment>Event name: order-line delivery status changed. Noun (the change). Translate as "change/modification".</comment>
   </data>
   <data name="ORDER_STATUS_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Indicates order status change</value>
   </data>
   <data name="ORDER_STATUS_CHANGE_EVENT_NAME" xml:space="preserve">
     <value>Change</value>
+    <comment>Event name: order status changed (e.g. OnHold → Accepted, Accepted → Completed). Noun (the change). Translate as "change/modification".</comment>
   </data>
   <data name="PAYMENT_INTENT_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Indicates payment intent completion</value>
@@ -716,6 +724,7 @@
   </data>
   <data name="PRODUCT_STOCK_CHANGE_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Change</value>
+    <comment>Event group name: product-stock changes. Noun (the change). Translate as "change/modification".</comment>
   </data>
   <data name="PRODUCT_STOCK_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
     <value>Product stock related events</value>
@@ -851,6 +860,7 @@
   </data>
   <data name="RESTRICTION_TYPE_CLASS_NAME" xml:space="preserve">
     <value>Class Name</value>
+    <comment>Application-restriction type: target an application by its window-class name (Win32 WNDCLASS). Programming concept, not a school/group "class". Generally keep as "Class Name" or transliterate.</comment>
   </data>
   <data name="RESTRICTION_TYPE_FILE_NAME" xml:space="preserve">
     <value>File Name</value>
@@ -886,7 +896,7 @@
     <value>Ended</value>
   </data>
   <data name="SHIFT_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
-    <value>Shift releated events</value>
+    <value>Shift related events</value>
   </data>
   <data name="SHIFT_EVENT_GROUP_NAME" xml:space="preserve">
     <value>Shift</value>
@@ -1015,7 +1025,7 @@
     <value>User removed</value>
   </data>
   <data name="SHIFT_COUNT_TYPE_DEFAULT" xml:space="preserve">
-    <value>Default</value>
+    <value>Manual</value>
   </data>
   <data name="SHIFT_COUNT_TYPE_SHIFT_CLOSE" xml:space="preserve">
     <value>Shift Close</value>
@@ -1028,6 +1038,14 @@
   </data>
   <data name="PROMOTION_CODE_TYPE_RESTRICTED_NAME" xml:space="preserve">
     <value>Restricted</value>
+  </data>
+  <data name="PAYMENT_TRANSACTION_DIRECTION_IN" xml:space="preserve">
+    <value>Incoming</value>
+    <comment>Payment transaction direction: payment received (money in). Distinct from inventory direction or other "in/out" senses.</comment>
+  </data>
+  <data name="PAYMENT_TRANSACTION_DIRECTION_OUT" xml:space="preserve">
+    <value>Outgoing</value>
+    <comment>Payment transaction direction: payment paid out (money out, e.g. refund or register transaction).</comment>
   </data>
   <data name="PAYMENT_TRANSACTION_TYPE_DEPOSIT_PAYMENT" xml:space="preserve">
     <value>Deposit Payment</value>
@@ -1047,6 +1065,9 @@
   <data name="PAYMENT_TRANSACTION_TYPE_PAY_OUT" xml:space="preserve">
     <value>Pay Out</value>
   </data>
+  <data name="PAYMENT_TRANSACTION_TYPE_WITHDRAW" xml:space="preserve">
+    <value>Withdraw</value>
+  </data>
   <data name="PAYMENT_INTENT_STATE_CANCELLED" xml:space="preserve">
     <value>Cancelled</value>
   </data>
@@ -1064,6 +1085,7 @@
   </data>
   <data name="PAYMENT_INTENT_STATE_CAPTURED" xml:space="preserve">
     <value>Captured</value>
+    <comment>Payment-domain term: funds have been captured (charged to the customer's payment method, finalising an authorised intent). NOT "captured" as in "screenshot/recording". Keep payment-industry vocabulary.</comment>
   </data>
   <data name="PAYMENT_INTENT_STATE_DECLINED" xml:space="preserve">
     <value>Declined</value>
@@ -1079,6 +1101,7 @@
   </data>
   <data name="PAYMENT_INTENT_CAPTURED_EVENT_NAME" xml:space="preserve">
     <value>Captured</value>
+    <comment>Payment-domain event: funds were captured (charged to customer). NOT "captured" as in "screenshot". Keep payment-industry vocabulary.</comment>
   </data>
   <data name="PAYMENT_INTENT_DECLINED_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Indicates payment intent decline</value>
@@ -1205,6 +1228,7 @@
   </data>
   <data name="BILLING_OPTION_NONE_NAME" xml:space="preserve">
     <value>None</value>
+    <comment>Enum value meaning "no billing option selected" (i.e. all billing features enabled — this is the default with no opt-outs). Refers to "billing option" noun. Translate to agree with "option" in target language.</comment>
   </data>
   <data name="BILLING_OPTION_DISABLE_TIME_OFFER_NAME" xml:space="preserve">
     <value>Disable time offers</value>
@@ -1275,10 +1299,10 @@
   <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_NAME" xml:space="preserve">
     <value>Failed to delete product group</value>
   </data>
-  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_DESCRIPTION" xml:space="preserve">
+  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPTY_DESCRIPTION" xml:space="preserve">
     <value>Non empty product group cannot be deleted</value>
   </data>
-  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_NAME" xml:space="preserve">
+  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPTY_NAME" xml:space="preserve">
     <value>Product group is not empty</value>
   </data>
   <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
@@ -1293,10 +1317,10 @@
   <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_NAME" xml:space="preserve">
     <value>Failed to delete application category</value>
   </data>
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPY_DESCRIPTION" xml:space="preserve">
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPTY_DESCRIPTION" xml:space="preserve">
     <value>Non empty application category cannot be deleted</value>
   </data>
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPY_NAME" xml:space="preserve">
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPTY_NAME" xml:space="preserve">
     <value>Application category is not empty</value>
   </data>
   <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
@@ -1305,13 +1329,13 @@
   <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve">
     <value>Application category delete success</value>
   </data>
-  <data name="WAITING_LINE_SATE_ACTIVE_NAME" xml:space="preserve">
+  <data name="WAITING_LINE_STATE_ACTIVE_NAME" xml:space="preserve">
     <value>Active</value>
   </data>
-  <data name="WAITING_LINE_SATE_PROCESSED_NAME" xml:space="preserve">
+  <data name="WAITING_LINE_STATE_PROCESSED_NAME" xml:space="preserve">
     <value>Processed</value>
   </data>
-  <data name="WAITING_LINE_SATE_CANCELED_NAME" xml:space="preserve">
+  <data name="WAITING_LINE_STATE_CANCELED_NAME" xml:space="preserve">
     <value>Cancelled</value>
   </data>
   <data name="STOCK_TRANSACTION_TYPE_ADD_NAME" xml:space="preserve">
@@ -1322,6 +1346,7 @@
   </data>
   <data name="STOCK_TRANSACTION_TYPE_RETURN_NAME" xml:space="preserve">
     <value>Return</value>
+    <comment>Stock-movement type: returning stock (e.g. to vendor or back to inventory). NOT "return" as in "go back" or the keyboard Return key. Translate as the inventory verb.</comment>
   </data>
   <data name="STOCK_TRANSACTION_TYPE_SALE_NAME" xml:space="preserve">
     <value>Sale</value>
@@ -1359,6 +1384,19 @@
   <data name="USER_SESSION_STATE_MOVED_NAME" xml:space="preserve">
     <value>Moved</value>
   </data>
+  <data name="USAGE_TYPE_NONE_NAME" xml:space="preserve">
+    <value>Time</value>
+    <comment>None represents an unknown usage type, usually only possible with external plugin modules.</comment>
+  </data>
+  <data name="USAGE_TYPE_RATE_NAME" xml:space="preserve">
+    <value>Rate</value>
+  </data>
+  <data name="USAGE_TYPE_TIME_FIXED_NAME" xml:space="preserve">
+    <value>Fixed time</value>
+  </data>
+  <data name="USAGE_TYPE_TIME_OFFER_NAME" xml:space="preserve">
+    <value>Time offer</value>
+  </data>
   <data name="ENTITY_EVENT_TYPE_ADDED_NAME" xml:space="preserve">
     <value>Added</value>
   </data>
@@ -1381,7 +1419,7 @@
     <value>Script</value>
   </data>
   <data name="LOGIN_RESULT_ACCOUNT_DISABLED_DESCRIPTION" xml:space="preserve">
-    <value>The specified user account is banned</value>
+    <value>The specified user account is disabled</value>
   </data>
   <data name="LOGIN_RESULT_ACCOUNT_DISABLED_NAME" xml:space="preserve">
     <value>Account disabled</value>

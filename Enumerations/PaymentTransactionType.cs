@@ -47,6 +47,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Manual withdraw.
         /// </summary>
+        [Name("Withdraw", nameof(Resources.PAYMENT_TRANSACTION_TYPE_WITHDRAW))]
         Withdraw = 6,
     }
 }

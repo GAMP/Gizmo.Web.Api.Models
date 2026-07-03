@@ -1,4 +1,4 @@
-﻿using Gizmo.Web.Api.Messaging;
+using Gizmo.Web.Api.Messaging;
 using System;
 
 namespace Gizmo.Web.Api
@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api
     public static class HubExtensions
     {
         #region FUNCTIONS
-        
+
         /// <summary>
         /// Adds supported Json serializers to the hub options.
         /// </summary>
@@ -43,7 +43,7 @@ namespace Gizmo.Web.Api
             }
 
             return options;
-        } 
+        }
 
         #endregion
     }

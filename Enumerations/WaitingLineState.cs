@@ -11,19 +11,19 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Active.
         /// </summary>
-        [Name("Active", nameof(Resources.WAITING_LINE_SATE_ACTIVE_NAME))]
+        [Name("Active", nameof(Resources.WAITING_LINE_STATE_ACTIVE_NAME))]
         Active = 0,
         /// <summary>
         /// Processed.
         /// </summary>
        
-        [Name("Processed", nameof(Resources.WAITING_LINE_SATE_PROCESSED_NAME))]
+        [Name("Processed", nameof(Resources.WAITING_LINE_STATE_PROCESSED_NAME))]
         Processed = 2,
        
         /// <summary>
         /// Cancel.
         /// </summary>
-        [Name("Cancelled", nameof(Resources.WAITING_LINE_SATE_CANCELED_NAME))]
+        [Name("Cancelled", nameof(Resources.WAITING_LINE_STATE_CANCELED_NAME))]
         Canceled = 1,
     }
 }

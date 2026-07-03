@@ -40,5 +40,15 @@ namespace Gizmo.Web.Api.Models
         /// </remarks>
         [MessagePack.Key(2)]
         public bool RequireOriginalTender { get; init; }
+
+        /// <summary>
+        /// Indicates whether a partial refund amount is allowed.
+        /// </summary>
+        /// <remarks>
+        /// When <see langword="true"/> any amount greater than zero and up to <see cref="MaxRefundAmount"/> may be refunded.<br></br>
+        /// When <see langword="false"/> the refund must be made for the full <see cref="MaxRefundAmount"/> (for example an electronic original tender that can only be fully reversed, or a multi payment reversal).
+        /// </remarks>
+        [MessagePack.Key(3)]
+        public bool AllowPartial { get; init; }
     }
 }

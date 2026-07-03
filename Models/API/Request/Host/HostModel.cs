@@ -74,6 +74,12 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(11)]
         public bool IsInMaintenance { get; init; }
+
+        /// <summary>
+        /// Client module version.
+        /// </summary>
+        [MessagePack.Key(12)]
+        public string? ModuleVersion { get; init; }
     }
 
     /// <summary>

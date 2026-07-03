@@ -24,22 +24,16 @@ namespace Gizmo.Web.Api.Models
         public string Name { get; set; } = null!;
 
         /// <summary>
-        /// Skin options model.
-        /// </summary>
-        [MessagePack.Key(2)]
-        public ClientOptionSkinModel? ClientOptionSkin { get; set; }
-
-        /// <summary>
-        /// Custom CSS.
-        /// </summary>
-        [MessagePack.Key(3)]
-        public string? CustomCSS { get; set; }
-
-        /// <summary>
         /// Is default flag.
         /// </summary>
-        [MessagePack.Key(4)]
+        [MessagePack.Key(2)]
         public bool IsDefault { get; set; }
+
+        /// <summary>
+        /// Skin options model.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public ClientOptionSkinModel? ClientOptionSkin { get; set; }
 
         #endregion
     }

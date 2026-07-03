@@ -16,11 +16,6 @@
         ClientOptionSkinModel? ClientOptionSkin { get; set; }
 
         /// <summary>
-        /// Custom css.
-        /// </summary>
-        string? CustomCSS { get; set; }
-
-        /// <summary>
         /// Is default flag.
         /// </summary>
         bool IsDefault { get; set; }
