@@ -1,4 +1,5 @@
-﻿using MessagePack;
+﻿using System.Collections.Generic;
+using MessagePack;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -26,5 +27,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [Key(2)]
         public string? Password { get; set; }
+
+        /// <summary>
+        /// Agreement choices accepted or rejected by the user during registration.
+        /// </summary>
+        [Key(3)]
+        public List<UserAgreementModelState>? AgreementStates { get; set; }
     }
 }
