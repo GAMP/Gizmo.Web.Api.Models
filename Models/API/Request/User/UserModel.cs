@@ -37,6 +37,13 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.IgnoreMember]
         [Sortable()]
         public abstract DateTime? BirthDate { get; set; }
+
+        /// <summary>
+        /// The registration date of the user.
+        /// </summary>
+        [MessagePack.IgnoreMember]
+        [Sortable("CreatedTime")]
+        public abstract DateTime? RegistrationDate { get; set; }
     }
 
     /// <summary>
@@ -181,11 +188,10 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(22)]
         public string? Identification { get; set; }
 
-        /// <summary>
-        /// The registration date of the user.
-        /// </summary>
+        /// <inheritdoc/>
         [MessagePack.Key(23)]
-        public DateTime RegistrationDate { get; set; }
+        [Sortable("CreatedTime")]
+        public override DateTime? RegistrationDate { get; set; }
 
         /// <summary>
         /// Whether the user is verified.
@@ -311,5 +317,10 @@ namespace Gizmo.Web.Api.Models
         [System.Text.Json.Serialization.JsonIgnore()]
         [MessagePack.IgnoreMember]
         public override DateTime? BirthDate { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        /// <inheritdoc/>
+        [System.Text.Json.Serialization.JsonIgnore()]
+        [MessagePack.IgnoreMember]
+        public override DateTime? RegistrationDate { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
     }
 }
