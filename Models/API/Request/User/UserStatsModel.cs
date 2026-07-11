@@ -25,10 +25,10 @@
         public int Logins { get; set; }
 
         /// <summary>
-        /// Total session time as text.
+        /// Total session (login) time.
         /// </summary>
         [MessagePack.Key(3)]
-        public string? LoginTime { get; set; }
+        public System.TimeSpan LoginTime { get; set; }
 
         /// <summary>
         /// Total amount of deposits.
