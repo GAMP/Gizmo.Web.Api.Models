@@ -40,6 +40,37 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [Key(2)]
         public UsersImportErrorModel[] Errors { get; init; } = [];
+
+        /// <summary>
+        /// Temporary error-workbook report available when validation found errors.
+        /// </summary>
+        [Key(3)]
+        public UsersImportValidationErrorReportModel? ErrorReport { get; init; }
+    }
+
+    /// <summary>
+    /// Temporary error-workbook report created by synchronous user-import validation.
+    /// </summary>
+    [MessagePackObject]
+    public sealed class UsersImportValidationErrorReportModel : IWebApiModel
+    {
+        /// <summary>
+        /// Opaque report identifier used to download the error workbook.
+        /// </summary>
+        [Key(0)]
+        public Guid ReportId { get; init; }
+
+        /// <summary>
+        /// Download file name.
+        /// </summary>
+        [Key(1)]
+        public required string FileName { get; init; }
+
+        /// <summary>
+        /// UTC expiration time for the temporary report.
+        /// </summary>
+        [Key(2)]
+        public DateTimeOffset ExpiresAtUtc { get; init; }
     }
 
     /// <summary>
