@@ -15,6 +15,6 @@ namespace Gizmo.Web.Api.Messaging
         /// Audit merge result.
         /// </summary>
         [Key(5)]
-        public required UsersAuditPostResultModel Result { get; init; }
+        public required UsersAuditExecutionResultModel Result { get; init; }
     }
 }

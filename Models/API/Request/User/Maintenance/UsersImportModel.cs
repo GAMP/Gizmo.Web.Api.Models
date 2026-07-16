@@ -7,7 +7,7 @@ namespace Gizmo.Web.Api.Models
     /// Request model for validating or starting a user import from an uploaded workbook.
     /// </summary>
     [MessagePackObject]
-    public sealed class UsersImportModel : IWebApiModel
+    public sealed class UsersImportOptionsModel : IWebApiModel
     {
         /// <summary>
         /// Default country used when normalizing phone values that do not already contain a complete international calling code.
@@ -27,32 +27,31 @@ namespace Gizmo.Web.Api.Models
         /// Workbook rows are represented as negative user ids where -Id equals the workbook row number.
         /// </summary>
         [Key(0)]
-        public UsersAuditDuplicatedItemModel[] DuplicatedItems { get; init; } = [];
+        public UsersAuditDuplicateItemModel[] DuplicatedItems { get; init; } = [];
 
         /// <summary>
         /// Workbook users that do not exist in the database and would be created by import execution.
         /// </summary>
         [Key(1)]
-        public UsersImportUserModel[] UniqueUsers { get; init; } = [];
+        public UsersImportRowModel[] UniqueUsers { get; init; } = [];
 
         /// <summary>
         /// Row-level validation errors.
         /// </summary>
         [Key(2)]
         public UsersImportErrorModel[] Errors { get; init; } = [];
-
         /// <summary>
         /// Temporary error-workbook report available when validation found errors.
         /// </summary>
         [Key(3)]
-        public UsersImportValidationErrorReportModel? ErrorReport { get; init; }
+        public UsersImportErrorReportModel? ErrorReport { get; init; }
     }
 
     /// <summary>
-    /// Temporary error-workbook report created by synchronous user-import validation.
+    /// Temporary error-workbook report created by user-import validation or execution.
     /// </summary>
     [MessagePackObject]
-    public sealed class UsersImportValidationErrorReportModel : IWebApiModel
+    public sealed class UsersImportErrorReportModel : IWebApiModel
     {
         /// <summary>
         /// Opaque report identifier used to download the error workbook.
@@ -77,32 +76,38 @@ namespace Gizmo.Web.Api.Models
     /// Result returned by the asynchronous user-import process notification.
     /// </summary>
     [MessagePackObject]
-    public sealed class UsersImportResultModel : IWebApiModel
+    public sealed class UsersImportExecutionResultModel : IWebApiModel
     {
         /// <summary>
         /// Users created by the import process.
         /// </summary>
         [Key(0)]
-        public UsersImportUserModel[] CreatedUsers { get; init; } = [];
+        public UsersImportRowModel[] CreatedUsers { get; init; } = [];
 
         /// <summary>
         /// Existing users merged by the import process.
         /// </summary>
         [Key(1)]
-        public UsersImportUserModel[] MergedUsers { get; init; } = [];
+        public UsersImportRowModel[] MergedUsers { get; init; } = [];
 
         /// <summary>
         /// Row-level import errors.
         /// </summary>
         [Key(2)]
         public UsersImportErrorModel[] Errors { get; init; } = [];
+
+        /// <summary>
+        /// Temporary error-workbook report available when the import completed with errors and report storage succeeded.
+        /// </summary>
+        [Key(3)]
+        public UsersImportErrorReportModel? ErrorReport { get; init; }
     }
 
     /// <summary>
     /// User returned by import validation or execution results.
     /// </summary>
     [MessagePackObject]
-    public sealed class UsersImportUserModel : IWebApiModel
+    public sealed class UsersImportRowModel : IWebApiModel
     {
         /// <summary>
         /// User identifier, when the user already exists or was created. Validation-only unique users have no id yet.
