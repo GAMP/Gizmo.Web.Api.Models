@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using Gizmo.Web.Api.Models.Abstractions;
@@ -70,5 +70,9 @@ namespace Gizmo.Web.Api.Models
         /// <inheritdoc/>
         [MessagePack.Key(13)]
         public IReadOnlyList<AchievementChallengeTimeRewardModel>? TimeRewards { get; init; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(14)]
+        public int? GlobalMaxCompletions { get; init; }
     }
 }

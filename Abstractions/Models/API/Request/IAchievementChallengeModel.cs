@@ -35,6 +35,12 @@ namespace Gizmo.Web.Api.Models
         int MaxCompletions { get; init; }
 
         /// <summary>
+        /// Total completion pool across all users — "first N finishers".
+        /// Null means uncapped.
+        /// </summary>
+        int? GlobalMaxCompletions { get; init; }
+
+        /// <summary>
         /// Option flags.
         /// </summary>
         AchievementChallengeOptionType Options { get; init; }
