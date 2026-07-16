@@ -15,6 +15,6 @@ namespace Gizmo.Web.Api.Messaging
         /// Import result payload.
         /// </summary>
         [Key(5)]
-        public required UsersImportResultModel Result { get; init; }
+        public required UsersImportExecutionResultModel Result { get; init; }
     }
 }

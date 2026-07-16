@@ -7,7 +7,7 @@ namespace Gizmo.Web.Api.Models
     /// Request model for auditing and merging duplicate users.
     /// </summary>
     [MessagePackObject]
-    public sealed class UsersAuditModel : IWebApiModel
+    public sealed class UsersAuditOptionsModel : IWebApiModel
     {
         /// <summary>
         /// Audit duplicate phone groups.
@@ -32,13 +32,13 @@ namespace Gizmo.Web.Api.Models
     /// Result returned by the synchronous user-audit duplicate search endpoint.
     /// </summary>
     [MessagePackObject]
-    public sealed class UsersAuditGetResultModel : IWebApiModel
+    public sealed class UsersAuditSearchResultModel : IWebApiModel
     {
         /// <summary>
         /// Duplicate audit items found for the requested audit criteria.
         /// </summary>
         [Key(0)]
-        public UsersAuditDuplicatedItemModel[] DuplicatedItems { get; init; } = [];
+        public UsersAuditDuplicateItemModel[] DuplicatedItems { get; init; } = [];
 
         /// <summary>
         /// Non-fatal audit errors encountered while finding duplicates.
@@ -51,7 +51,7 @@ namespace Gizmo.Web.Api.Models
     /// Result returned by the asynchronous user-audit endpoint and by audit merge notifications.
     /// </summary>
     [MessagePackObject]
-    public sealed class UsersAuditPostResultModel : IWebApiModel
+    public sealed class UsersAuditExecutionResultModel : IWebApiModel
     {
         /// <summary>
         /// Duplicate audit items merged by the audit process.
@@ -70,7 +70,7 @@ namespace Gizmo.Web.Api.Models
     /// Duplicate value and users that share it.
     /// </summary>
     [MessagePackObject]
-    public sealed class UsersAuditDuplicatedItemModel : IWebApiModel
+    public sealed class UsersAuditDuplicateItemModel : IWebApiModel
     {
         /// <summary>
         /// Duplicate value shared by the listed users.
@@ -82,13 +82,13 @@ namespace Gizmo.Web.Api.Models
         /// Type of duplicated value.
         /// </summary>
         [Key(1)]
-        public UsersAuditItemType Type { get; init; }
+        public UsersAuditDuplicateType Type { get; init; }
 
         /// <summary>
         /// Users that share the duplicate value.
         /// </summary>
         [Key(2)]
-        public UsersAuditUserModel[] Users { get; init; } = [];
+        public UsersAuditUserSummaryModel[] Users { get; init; } = [];
     }
 
     /// <summary>
@@ -107,19 +107,19 @@ namespace Gizmo.Web.Api.Models
         /// Type of duplicated value that was merged.
         /// </summary>
         [Key(1)]
-        public UsersAuditItemType Type { get; init; }
+        public UsersAuditDuplicateType Type { get; init; }
 
         /// <summary>
         /// Surviving user after the duplicate merge.
         /// </summary>
         [Key(2)]
-        public required UsersAuditUserModel User { get; init; }
+        public required UsersAuditUserSummaryModel User { get; init; }
     }
 
     /// <summary>
     /// User audit duplicate item type.
     /// </summary>
-    public enum UsersAuditItemType
+    public enum UsersAuditDuplicateType
     {
         /// <summary>
         /// Duplicate email address.
@@ -136,7 +136,7 @@ namespace Gizmo.Web.Api.Models
     /// User summary for audit results.
     /// </summary>
     [MessagePackObject]
-    public sealed class UsersAuditUserModel : IWebApiModel
+    public sealed class UsersAuditUserSummaryModel : IWebApiModel
     {
         /// <summary>
         /// User identifier. Import validation duplicate results can reuse this model with a negative synthetic id for workbook rows.
