@@ -30,9 +30,10 @@ namespace Gizmo.Web.Api.Models
         DateTime? EndTime { get; init; }
 
         /// <summary>
-        /// Maximum completions per user within the window.
+        /// Maximum completions per user within the window. Null means unlimited —
+        /// a recurring reward earned every time the requirements are met again.
         /// </summary>
-        int MaxCompletions { get; init; }
+        int? MaxCompletions { get; init; }
 
         /// <summary>
         /// Total completion pool across all users — "first N finishers".

@@ -13,7 +13,8 @@ namespace Gizmo.Web.Api.Models
         public int AchievementId { get; init; }
 
         /// <summary>
-        /// Number of completions required within the challenge window.
+        /// Number of completions required within the challenge's effective counting window
+        /// (configured start or creation time, through the configured end or unbounded).
         /// </summary>
         [MessagePack.Key(1)]
         public int RequiredCount { get; init; } = 1;

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
@@ -31,7 +31,7 @@ namespace Gizmo.Web.Api.Models
 
         /// <inheritdoc/>
         [MessagePack.Key(4)]
-        public int MaxCompletions { get; init; } = 1;
+        public int? MaxCompletions { get; init; } = 1;
 
         /// <inheritdoc/>
         [MessagePack.Key(5)]
