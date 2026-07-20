@@ -56,6 +56,11 @@
         int? QrDisplayNumber { get; }
 
         /// <summary>
+        /// Receipt printer number, null indicates that receipt printing is disabled on the register.
+        /// </summary>
+        int? ReceiptPrinterNumber { get; }
+
+        /// <summary>
         /// Indicates default register for the branch. Only one register can be default for a branch.
         /// </summary>
         bool IsDefault {  get; }

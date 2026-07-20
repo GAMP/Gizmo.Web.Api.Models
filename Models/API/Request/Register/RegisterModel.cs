@@ -83,5 +83,9 @@ namespace Gizmo.Web.Api.Models
         /// <inheritdoc/>
         [MessagePack.Key(13)]
         public bool IsGlobalDefault { get; set; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(14)]
+        public int? ReceiptPrinterNumber { get; init; }
     }
 }
