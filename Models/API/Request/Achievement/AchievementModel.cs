@@ -66,5 +66,20 @@ namespace Gizmo.Web.Api.Models
         /// <inheritdoc/>
         [MessagePack.Key(11)]
         public IReadOnlyList<AchievementParameterModel>? Parameters { get; init; }
+
+        /// <summary>
+        /// The achievement's ladder associations with their point awards.
+        /// Computed, read-only — configured through the ladder; empty when the achievement
+        /// is not assigned to any ladder.
+        /// </summary>
+        [MessagePack.Key(12)]
+        public IReadOnlyList<AchievementLadderPointsModel>? Ladders { get; init; }
+
+        /// <summary>
+        /// Number of active challenges (running or upcoming — not ended, paused or
+        /// archived) requiring this achievement. Computed, read-only.
+        /// </summary>
+        [MessagePack.Key(13)]
+        public int ChallengesCount { get; init; }
     }
 }
