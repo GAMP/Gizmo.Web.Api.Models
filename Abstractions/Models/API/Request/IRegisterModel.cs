@@ -61,6 +61,12 @@
         int? ReceiptPrinterNumber { get; }
 
         /// <summary>
+        /// Default operator id, attributed as the fiscal cashier for transactions fiscalized on the register
+        /// that carry no operator of their own (online or automatic payments).
+        /// </summary>
+        int? DefaultOperatorId { get; }
+
+        /// <summary>
         /// Indicates default register for the branch. Only one register can be default for a branch.
         /// </summary>
         bool IsDefault {  get; }

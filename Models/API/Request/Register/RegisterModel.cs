@@ -87,5 +87,9 @@ namespace Gizmo.Web.Api.Models
         /// <inheritdoc/>
         [MessagePack.Key(14)]
         public int? ReceiptPrinterNumber { get; init; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(15)]
+        public int? DefaultOperatorId { get; set; }
     }
 }
