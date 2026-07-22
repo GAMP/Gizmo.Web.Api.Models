@@ -57,5 +57,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [Key(7)]
         public bool HasChannel { get; set; }
+
+        /// <summary>
+        /// The provider is offered on the initial selection; non primary providers serve as fallback.
+        /// </summary>
+        [Key(8)]
+        public bool IsPrimary { get; set; }
     }
 }
