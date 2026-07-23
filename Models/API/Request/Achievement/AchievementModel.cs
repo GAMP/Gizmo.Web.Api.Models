@@ -60,6 +60,10 @@ namespace Gizmo.Web.Api.Models
         public bool IsDeleted { get; init; }
 
         /// <inheritdoc/>
+        [MessagePack.Key(14)]
+        public int? ImageId { get; init; }
+
+        /// <inheritdoc/>
         [MessagePack.Key(10)]
         public AchievementFiltersModel? Filters { get; init; }
 

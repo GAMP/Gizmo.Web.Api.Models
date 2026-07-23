@@ -48,6 +48,10 @@ namespace Gizmo.Web.Api.Models
         public bool IsDisabled { get; init; }
 
         /// <inheritdoc/>
+        [MessagePack.Key(9)]
+        public int? ImageId { get; init; }
+
+        /// <inheritdoc/>
         [MessagePack.Key(7)]
         public AchievementFiltersModel? Filters { get; init; }
 
