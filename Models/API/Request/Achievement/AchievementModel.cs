@@ -60,15 +60,15 @@ namespace Gizmo.Web.Api.Models
         public bool IsDeleted { get; init; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(14)]
+        [MessagePack.Key(10)]
         public int? ImageId { get; init; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(10)]
+        [MessagePack.Key(11)]
         public AchievementFiltersModel? Filters { get; init; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(11)]
+        [MessagePack.Key(12)]
         public IReadOnlyList<AchievementParameterModel>? Parameters { get; init; }
 
         /// <summary>
@@ -76,14 +76,14 @@ namespace Gizmo.Web.Api.Models
         /// Computed, read-only — configured through the ladder; empty when the achievement
         /// is not assigned to any ladder.
         /// </summary>
-        [MessagePack.Key(12)]
+        [MessagePack.Key(13)]
         public IReadOnlyList<AchievementLadderPointsModel>? Ladders { get; init; }
 
         /// <summary>
         /// Number of active challenges (running or upcoming — not ended, paused or
         /// archived) requiring this achievement. Computed, read-only.
         /// </summary>
-        [MessagePack.Key(13)]
+        [MessagePack.Key(14)]
         public int ChallengesCount { get; init; }
     }
 }

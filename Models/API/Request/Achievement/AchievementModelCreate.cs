@@ -50,15 +50,15 @@ namespace Gizmo.Web.Api.Models
         public bool IsDisabled { get; init; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(10)]
+        [MessagePack.Key(8)]
         public int? ImageId { get; init; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(8)]
+        [MessagePack.Key(9)]
         public AchievementFiltersModel? Filters { get; init; }
 
         /// <inheritdoc/>
-        [MessagePack.Key(9)]
+        [MessagePack.Key(10)]
         public IReadOnlyList<AchievementParameterModel>? Parameters { get; init; }
     }
 }
