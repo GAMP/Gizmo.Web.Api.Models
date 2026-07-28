@@ -531,4 +531,157 @@
   <data name="REPORT_PRESET_EVENT_GROUP_DESCRIPTION" xml:space="preserve"><value>Hændelser relateret til rapportforudsætninger</value></data>
   <data name="USER_GUEST_EVENT_GROUP_NAME" xml:space="preserve"><value>Gæstebruger</value></data>
   <data name="USER_GUEST_EVENT_GROUP_DESCRIPTION" xml:space="preserve"><value>Hændelser relateret til gæstebrugere</value></data>
+  <data name="ACHIEVEMENT_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Præstation</value>
+  </data>
+  <data name="ACHIEVEMENT_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Præstationsrelaterede hændelser</value>
+  </data>
+  <data name="ACHIEVEMENT_COMPLETED_EVENT_NAME" xml:space="preserve">
+    <value>Præstation gennemført</value>
+  </data>
+  <data name="ACHIEVEMENT_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Angiver at brugeren har gennemført en præstation</value>
+  </data>
+  <data name="ACHIEVEMENT_LEVEL_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Ændring af præstationsniveau</value>
+  </data>
+  <data name="ACHIEVEMENT_LEVEL_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Angiver ændring af brugerens niveau på rangstigen</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_COMPLETED_EVENT_NAME" xml:space="preserve">
+    <value>Udfordring gennemført</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Angiver at brugeren har gennemført en udfordring</value>
+  </data>
+  <data name="ACHIEVEMENT_REWARD_STATUS_EVENT_NAME" xml:space="preserve">
+    <value>Ændring af belønningsstatus</value>
+  </data>
+  <data name="ACHIEVEMENT_REWARD_STATUS_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Angiver ændring af brugerens belønningsstatus</value>
+  </data>
+  <data name="CALENDAR_PERIOD_DAY_NAME" xml:space="preserve">
+    <value>Dag</value>
+  </data>
+  <data name="CALENDAR_PERIOD_WEEK_NAME" xml:space="preserve">
+    <value>Uge</value>
+  </data>
+  <data name="CALENDAR_PERIOD_MONTH_NAME" xml:space="preserve">
+    <value>Måned</value>
+  </data>
+  <data name="CALENDAR_PERIOD_QUARTER_NAME" xml:space="preserve">
+    <value>Kvartal</value>
+  </data>
+  <data name="CALENDAR_PERIOD_YEAR_NAME" xml:space="preserve">
+    <value>År</value>
+  </data>
+  <data name="ACHIEVEMENT_OPTION_NONE_NAME" xml:space="preserve">
+    <value>Ingen</value>
+  </data>
+  <data name="ACHIEVEMENT_OPTION_HIDDEN_NAME" xml:space="preserve">
+    <value>Skjult</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_MODE_POINTS_NAME" xml:space="preserve">
+    <value>Point</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_MODE_REQUIREMENTS_NAME" xml:space="preserve">
+    <value>Krav</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_OPTION_NONE_NAME" xml:space="preserve">
+    <value>Ingen</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_OPTION_PROMOTE_ON_SETTLE_ONLY_NAME" xml:space="preserve">
+    <value>Forfrem kun ved opgørelse</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_OPTION_NONE_NAME" xml:space="preserve">
+    <value>Ingen</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_OPTION_HIDDEN_NAME" xml:space="preserve">
+    <value>Skjult</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_OPTION_NONE_NAME" xml:space="preserve">
+    <value>Ingen</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_OPTION_FORCE_CLAIM_NAME" xml:space="preserve">
+    <value>Kræv afhentning</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_PENDING_NAME" xml:space="preserve">
+    <value>Afventer</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_AWAITING_CLAIM_NAME" xml:space="preserve">
+    <value>Afventer afhentning</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_GRANTED_NAME" xml:space="preserve">
+    <value>Tildelt</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_DECLINED_NAME" xml:space="preserve">
+    <value>Afvist</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_EVENT_TRIGGER_LIVE_NAME" xml:space="preserve">
+    <value>Løbende</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_EVENT_TRIGGER_SETTLE_NAME" xml:space="preserve">
+    <value>Opgørelse</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_EVENT_TRIGGER_OPERATOR_NAME" xml:space="preserve">
+    <value>Operatør</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_NONE_NAME" xml:space="preserve">
+    <value>Ingen</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_HOST_NAME" xml:space="preserve">
+    <value>Vært</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_HOST_GROUP_NAME" xml:space="preserve">
+    <value>Værtsgruppe</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_PAYMENT_METHOD_NAME" xml:space="preserve">
+    <value>Betalingsmetode</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_PARAMETERS_NAME" xml:space="preserve">
+    <value>Parametre</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_BRANCH_NAME" xml:space="preserve">
+    <value>Afdeling</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_APP_NAME" xml:space="preserve">
+    <value>App</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_APP_GROUP_NAME" xml:space="preserve">
+    <value>Appgruppe</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_PRODUCT_NAME" xml:space="preserve">
+    <value>Produkt</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_PRODUCT_GROUP_NAME" xml:space="preserve">
+    <value>Produktgruppe</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_BILL_PROFILE_NAME" xml:space="preserve">
+    <value>Faktureringsprofil</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_DAY_OF_WEEK_NAME" xml:space="preserve">
+    <value>Ugedag</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_APP_EXE_NAME" xml:space="preserve">
+    <value>App-eksekverbar</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_APP_CATEGORY_NAME" xml:space="preserve">
+    <value>Appkategori</value>
+  </data>
+  <data name="SIGNAL_UNIT_COUNT_NAME" xml:space="preserve">
+    <value>Antal</value>
+  </data>
+  <data name="SIGNAL_UNIT_CURRENCY_NAME" xml:space="preserve">
+    <value>Valuta</value>
+  </data>
+  <data name="SIGNAL_UNIT_DURATION_NAME" xml:space="preserve">
+    <value>Varighed</value>
+  </data>
+  <data name="SIGNAL_UNIT_POINTS_NAME" xml:space="preserve">
+    <value>Point</value>
+  </data>
+  <data name="SIGNAL_UNIT_DAYS_NAME" xml:space="preserve">
+    <value>Dage</value>
+  </data>
 </root>

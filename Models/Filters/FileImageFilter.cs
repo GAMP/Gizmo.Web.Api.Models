@@ -26,7 +26,7 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Filter by file name.
         /// </summary>
-        [MessagePack.Key(2)]
+        [MessagePack.Key(3)]
         public string? FileName { get; init; }
     }
 }

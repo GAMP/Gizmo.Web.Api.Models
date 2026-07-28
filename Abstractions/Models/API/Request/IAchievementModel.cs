@@ -45,6 +45,11 @@ namespace Gizmo.Web.Api.Models
         bool IsDisabled { get; init; }
 
         /// <summary>
+        /// Optional badge image id.
+        /// </summary>
+        int? ImageId { get; init; }
+
+        /// <summary>
         /// Activity filters. Null means no filters.
         /// </summary>
         AchievementFiltersModel? Filters { get; init; }

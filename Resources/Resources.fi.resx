@@ -531,4 +531,157 @@
   <data name="REPORT_PRESET_EVENT_GROUP_DESCRIPTION" xml:space="preserve"><value>Raporttimalleihin liittyvät tapahtumat</value></data>
   <data name="USER_GUEST_EVENT_GROUP_NAME" xml:space="preserve"><value>Vieraskäyttäjä</value></data>
   <data name="USER_GUEST_EVENT_GROUP_DESCRIPTION" xml:space="preserve"><value>Vieraskäyttäjiin liittyvät tapahtumat</value></data>
+  <data name="ACHIEVEMENT_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Saavutus</value>
+  </data>
+  <data name="ACHIEVEMENT_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Saavutuksiin liittyvät tapahtumat</value>
+  </data>
+  <data name="ACHIEVEMENT_COMPLETED_EVENT_NAME" xml:space="preserve">
+    <value>Saavutus suoritettu</value>
+  </data>
+  <data name="ACHIEVEMENT_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Ilmaisee, että käyttäjä suoritti saavutuksen</value>
+  </data>
+  <data name="ACHIEVEMENT_LEVEL_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Saavutustason muutos</value>
+  </data>
+  <data name="ACHIEVEMENT_LEVEL_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Ilmaisee käyttäjän saavutustason muutoksen</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_COMPLETED_EVENT_NAME" xml:space="preserve">
+    <value>Haaste suoritettu</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Ilmaisee, että käyttäjä suoritti haasteen</value>
+  </data>
+  <data name="ACHIEVEMENT_REWARD_STATUS_EVENT_NAME" xml:space="preserve">
+    <value>Palkinnon tilan muutos</value>
+  </data>
+  <data name="ACHIEVEMENT_REWARD_STATUS_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Ilmaisee käyttäjän palkinnon tilan muutoksen</value>
+  </data>
+  <data name="CALENDAR_PERIOD_DAY_NAME" xml:space="preserve">
+    <value>Päivä</value>
+  </data>
+  <data name="CALENDAR_PERIOD_WEEK_NAME" xml:space="preserve">
+    <value>Viikko</value>
+  </data>
+  <data name="CALENDAR_PERIOD_MONTH_NAME" xml:space="preserve">
+    <value>Kuukausi</value>
+  </data>
+  <data name="CALENDAR_PERIOD_QUARTER_NAME" xml:space="preserve">
+    <value>Vuosineljännes</value>
+  </data>
+  <data name="CALENDAR_PERIOD_YEAR_NAME" xml:space="preserve">
+    <value>Vuosi</value>
+  </data>
+  <data name="ACHIEVEMENT_OPTION_NONE_NAME" xml:space="preserve">
+    <value>Ei mitään</value>
+  </data>
+  <data name="ACHIEVEMENT_OPTION_HIDDEN_NAME" xml:space="preserve">
+    <value>Piilotettu</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_MODE_POINTS_NAME" xml:space="preserve">
+    <value>Pisteet</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_MODE_REQUIREMENTS_NAME" xml:space="preserve">
+    <value>Vaatimukset</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_OPTION_NONE_NAME" xml:space="preserve">
+    <value>Ei mitään</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_OPTION_PROMOTE_ON_SETTLE_ONLY_NAME" xml:space="preserve">
+    <value>Ylennys vain jakson päättyessä</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_OPTION_NONE_NAME" xml:space="preserve">
+    <value>Ei mitään</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_OPTION_HIDDEN_NAME" xml:space="preserve">
+    <value>Piilotettu</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_OPTION_NONE_NAME" xml:space="preserve">
+    <value>Ei mitään</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_OPTION_FORCE_CLAIM_NAME" xml:space="preserve">
+    <value>Vaadi lunastus</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_PENDING_NAME" xml:space="preserve">
+    <value>Odottaa</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_AWAITING_CLAIM_NAME" xml:space="preserve">
+    <value>Odottaa lunastusta</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_GRANTED_NAME" xml:space="preserve">
+    <value>Myönnetty</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_DECLINED_NAME" xml:space="preserve">
+    <value>Hylätty</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_EVENT_TRIGGER_LIVE_NAME" xml:space="preserve">
+    <value>Reaaliaikainen</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_EVENT_TRIGGER_SETTLE_NAME" xml:space="preserve">
+    <value>Jakson päätös</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_EVENT_TRIGGER_OPERATOR_NAME" xml:space="preserve">
+    <value>Operaattori</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_NONE_NAME" xml:space="preserve">
+    <value>Ei mitään</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_HOST_NAME" xml:space="preserve">
+    <value>Isäntä</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_HOST_GROUP_NAME" xml:space="preserve">
+    <value>Isäntäryhmä</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_PAYMENT_METHOD_NAME" xml:space="preserve">
+    <value>Maksutapa</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_PARAMETERS_NAME" xml:space="preserve">
+    <value>Parametrit</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_BRANCH_NAME" xml:space="preserve">
+    <value>Toimipiste</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_APP_NAME" xml:space="preserve">
+    <value>Sovellus</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_APP_GROUP_NAME" xml:space="preserve">
+    <value>Sovellusryhmä</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_PRODUCT_NAME" xml:space="preserve">
+    <value>Tuote</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_PRODUCT_GROUP_NAME" xml:space="preserve">
+    <value>Tuoteryhmä</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_BILL_PROFILE_NAME" xml:space="preserve">
+    <value>Laskutusprofiili</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_DAY_OF_WEEK_NAME" xml:space="preserve">
+    <value>Viikonpäivä</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_APP_EXE_NAME" xml:space="preserve">
+    <value>Sovelluksen suoritustiedosto</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_APP_CATEGORY_NAME" xml:space="preserve">
+    <value>Sovellusluokka</value>
+  </data>
+  <data name="SIGNAL_UNIT_COUNT_NAME" xml:space="preserve">
+    <value>Lukumäärä</value>
+  </data>
+  <data name="SIGNAL_UNIT_CURRENCY_NAME" xml:space="preserve">
+    <value>Valuutta</value>
+  </data>
+  <data name="SIGNAL_UNIT_DURATION_NAME" xml:space="preserve">
+    <value>Kesto</value>
+  </data>
+  <data name="SIGNAL_UNIT_POINTS_NAME" xml:space="preserve">
+    <value>Pisteet</value>
+  </data>
+  <data name="SIGNAL_UNIT_DAYS_NAME" xml:space="preserve">
+    <value>Päivät</value>
+  </data>
 </root>

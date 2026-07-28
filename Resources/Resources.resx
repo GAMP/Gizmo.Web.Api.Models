@@ -213,6 +213,48 @@
   <data name="ACHIEVEMENT_LADDER_EVENT_TRIGGER_OPERATOR_NAME" xml:space="preserve">
     <value>Operator</value>
   </data>
+  <data name="SIGNAL_FILTER_KIND_NONE_NAME" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_HOST_NAME" xml:space="preserve">
+    <value>Host</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_HOST_GROUP_NAME" xml:space="preserve">
+    <value>Host group</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_PAYMENT_METHOD_NAME" xml:space="preserve">
+    <value>Payment method</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_PARAMETERS_NAME" xml:space="preserve">
+    <value>Parameters</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_BRANCH_NAME" xml:space="preserve">
+    <value>Branch</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_APP_NAME" xml:space="preserve">
+    <value>App</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_APP_GROUP_NAME" xml:space="preserve">
+    <value>App group</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_PRODUCT_NAME" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_PRODUCT_GROUP_NAME" xml:space="preserve">
+    <value>Product group</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_BILL_PROFILE_NAME" xml:space="preserve">
+    <value>Bill profile</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_DAY_OF_WEEK_NAME" xml:space="preserve">
+    <value>Day of week</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_APP_EXE_NAME" xml:space="preserve">
+    <value>App executable</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_APP_CATEGORY_NAME" xml:space="preserve">
+    <value>App category</value>
+  </data>
   <data name="SIGNAL_UNIT_COUNT_NAME" xml:space="preserve">
     <value>Count</value>
   </data>

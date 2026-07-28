@@ -1575,4 +1575,157 @@
    
    
    
+  <data name="ACHIEVEMENT_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>الإنجاز</value>
+  </data>
+  <data name="ACHIEVEMENT_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>أحداث متعلقة بالإنجازات</value>
+  </data>
+  <data name="ACHIEVEMENT_COMPLETED_EVENT_NAME" xml:space="preserve">
+    <value>اكتمل الإنجاز</value>
+  </data>
+  <data name="ACHIEVEMENT_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>يشير إلى أن المستخدم أكمل إنجازًا</value>
+  </data>
+  <data name="ACHIEVEMENT_LEVEL_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>تغيير مستوى الإنجاز</value>
+  </data>
+  <data name="ACHIEVEMENT_LEVEL_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>يشير إلى تغيير مستوى المستخدم في سُلَّم الإنجازات</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_COMPLETED_EVENT_NAME" xml:space="preserve">
+    <value>اكتمل التحدي</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>يشير إلى أن المستخدم أكمل تحديًا</value>
+  </data>
+  <data name="ACHIEVEMENT_REWARD_STATUS_EVENT_NAME" xml:space="preserve">
+    <value>تغيير حالة المكافأة</value>
+  </data>
+  <data name="ACHIEVEMENT_REWARD_STATUS_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>يشير إلى تغيير حالة مكافأة المستخدم</value>
+  </data>
+  <data name="CALENDAR_PERIOD_DAY_NAME" xml:space="preserve">
+    <value>يوم</value>
+  </data>
+  <data name="CALENDAR_PERIOD_WEEK_NAME" xml:space="preserve">
+    <value>أسبوع</value>
+  </data>
+  <data name="CALENDAR_PERIOD_MONTH_NAME" xml:space="preserve">
+    <value>شهر</value>
+  </data>
+  <data name="CALENDAR_PERIOD_QUARTER_NAME" xml:space="preserve">
+    <value>ربع سنة</value>
+  </data>
+  <data name="CALENDAR_PERIOD_YEAR_NAME" xml:space="preserve">
+    <value>سنة</value>
+  </data>
+  <data name="ACHIEVEMENT_OPTION_NONE_NAME" xml:space="preserve">
+    <value>بدون</value>
+  </data>
+  <data name="ACHIEVEMENT_OPTION_HIDDEN_NAME" xml:space="preserve">
+    <value>مخفي</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_MODE_POINTS_NAME" xml:space="preserve">
+    <value>النقاط</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_MODE_REQUIREMENTS_NAME" xml:space="preserve">
+    <value>المتطلبات</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_OPTION_NONE_NAME" xml:space="preserve">
+    <value>بدون</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_OPTION_PROMOTE_ON_SETTLE_ONLY_NAME" xml:space="preserve">
+    <value>الترقية عند التسوية فقط</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_OPTION_NONE_NAME" xml:space="preserve">
+    <value>بدون</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_OPTION_HIDDEN_NAME" xml:space="preserve">
+    <value>مخفي</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_OPTION_NONE_NAME" xml:space="preserve">
+    <value>بدون</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_OPTION_FORCE_CLAIM_NAME" xml:space="preserve">
+    <value>المطالبة إلزامية</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_PENDING_NAME" xml:space="preserve">
+    <value>قيد الانتظار</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_AWAITING_CLAIM_NAME" xml:space="preserve">
+    <value>بانتظار المطالبة</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_GRANTED_NAME" xml:space="preserve">
+    <value>مُنحت</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_DECLINED_NAME" xml:space="preserve">
+    <value>مرفوض</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_EVENT_TRIGGER_LIVE_NAME" xml:space="preserve">
+    <value>فوري</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_EVENT_TRIGGER_SETTLE_NAME" xml:space="preserve">
+    <value>التسوية</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_EVENT_TRIGGER_OPERATOR_NAME" xml:space="preserve">
+    <value>المشغّل</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_NONE_NAME" xml:space="preserve">
+    <value>بدون</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_HOST_NAME" xml:space="preserve">
+    <value>الجهاز</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_HOST_GROUP_NAME" xml:space="preserve">
+    <value>مجموعة الأجهزة</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_PAYMENT_METHOD_NAME" xml:space="preserve">
+    <value>طريقة الدفع</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_PARAMETERS_NAME" xml:space="preserve">
+    <value>المعلمات</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_BRANCH_NAME" xml:space="preserve">
+    <value>الفرع</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_APP_NAME" xml:space="preserve">
+    <value>التطبيق</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_APP_GROUP_NAME" xml:space="preserve">
+    <value>مجموعة التطبيقات</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_PRODUCT_NAME" xml:space="preserve">
+    <value>المنتج</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_PRODUCT_GROUP_NAME" xml:space="preserve">
+    <value>مجموعة المنتجات</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_BILL_PROFILE_NAME" xml:space="preserve">
+    <value>ملف الفوترة</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_DAY_OF_WEEK_NAME" xml:space="preserve">
+    <value>يوم الأسبوع</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_APP_EXE_NAME" xml:space="preserve">
+    <value>الملف التنفيذي للتطبيق</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_APP_CATEGORY_NAME" xml:space="preserve">
+    <value>فئة التطبيقات</value>
+  </data>
+  <data name="SIGNAL_UNIT_COUNT_NAME" xml:space="preserve">
+    <value>العدد</value>
+  </data>
+  <data name="SIGNAL_UNIT_CURRENCY_NAME" xml:space="preserve">
+    <value>العملة</value>
+  </data>
+  <data name="SIGNAL_UNIT_DURATION_NAME" xml:space="preserve">
+    <value>المدة</value>
+  </data>
+  <data name="SIGNAL_UNIT_POINTS_NAME" xml:space="preserve">
+    <value>النقاط</value>
+  </data>
+  <data name="SIGNAL_UNIT_DAYS_NAME" xml:space="preserve">
+    <value>الأيام</value>
+  </data>
 </root>

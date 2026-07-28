@@ -1723,4 +1723,157 @@
   <data name="WAITING_LINE_STATE_PROCESSED_NAME" xml:space="preserve">
     <value>İşlendi</value>
   </data>
+  <data name="ACHIEVEMENT_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Başarım</value>
+  </data>
+  <data name="ACHIEVEMENT_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Başarımlarla ilgili olaylar</value>
+  </data>
+  <data name="ACHIEVEMENT_COMPLETED_EVENT_NAME" xml:space="preserve">
+    <value>Başarım tamamlandı</value>
+  </data>
+  <data name="ACHIEVEMENT_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Kullanıcının bir başarımı tamamladığını gösterir</value>
+  </data>
+  <data name="ACHIEVEMENT_LEVEL_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Başarım seviyesi değişikliği</value>
+  </data>
+  <data name="ACHIEVEMENT_LEVEL_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Kullanıcının başarım merdiveni seviyesinin değiştiğini gösterir</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_COMPLETED_EVENT_NAME" xml:space="preserve">
+    <value>Meydan okuma tamamlandı</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Kullanıcının bir meydan okumayı tamamladığını gösterir</value>
+  </data>
+  <data name="ACHIEVEMENT_REWARD_STATUS_EVENT_NAME" xml:space="preserve">
+    <value>Ödül durumu değişikliği</value>
+  </data>
+  <data name="ACHIEVEMENT_REWARD_STATUS_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Kullanıcının ödül durumunun değiştiğini gösterir</value>
+  </data>
+  <data name="CALENDAR_PERIOD_DAY_NAME" xml:space="preserve">
+    <value>Gün</value>
+  </data>
+  <data name="CALENDAR_PERIOD_WEEK_NAME" xml:space="preserve">
+    <value>Hafta</value>
+  </data>
+  <data name="CALENDAR_PERIOD_MONTH_NAME" xml:space="preserve">
+    <value>Ay</value>
+  </data>
+  <data name="CALENDAR_PERIOD_QUARTER_NAME" xml:space="preserve">
+    <value>Çeyrek</value>
+  </data>
+  <data name="CALENDAR_PERIOD_YEAR_NAME" xml:space="preserve">
+    <value>Yıl</value>
+  </data>
+  <data name="ACHIEVEMENT_OPTION_NONE_NAME" xml:space="preserve">
+    <value>Yok</value>
+  </data>
+  <data name="ACHIEVEMENT_OPTION_HIDDEN_NAME" xml:space="preserve">
+    <value>Gizli</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_MODE_POINTS_NAME" xml:space="preserve">
+    <value>Puan</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_MODE_REQUIREMENTS_NAME" xml:space="preserve">
+    <value>Gereksinimler</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_OPTION_NONE_NAME" xml:space="preserve">
+    <value>Yok</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_OPTION_PROMOTE_ON_SETTLE_ONLY_NAME" xml:space="preserve">
+    <value>Yalnızca dönem sonunda yükselt</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_OPTION_NONE_NAME" xml:space="preserve">
+    <value>Yok</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_OPTION_HIDDEN_NAME" xml:space="preserve">
+    <value>Gizli</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_OPTION_NONE_NAME" xml:space="preserve">
+    <value>Yok</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_OPTION_FORCE_CLAIM_NAME" xml:space="preserve">
+    <value>Talep zorunlu</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_PENDING_NAME" xml:space="preserve">
+    <value>Beklemede</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_AWAITING_CLAIM_NAME" xml:space="preserve">
+    <value>Talep bekleniyor</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_GRANTED_NAME" xml:space="preserve">
+    <value>Verildi</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_DECLINED_NAME" xml:space="preserve">
+    <value>Reddedildi</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_EVENT_TRIGGER_LIVE_NAME" xml:space="preserve">
+    <value>Anlık</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_EVENT_TRIGGER_SETTLE_NAME" xml:space="preserve">
+    <value>Dönem sonu</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_EVENT_TRIGGER_OPERATOR_NAME" xml:space="preserve">
+    <value>Operatör</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_NONE_NAME" xml:space="preserve">
+    <value>Yok</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_HOST_NAME" xml:space="preserve">
+    <value>Ana bilgisayar</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_HOST_GROUP_NAME" xml:space="preserve">
+    <value>Ana bilgisayar grubu</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_PAYMENT_METHOD_NAME" xml:space="preserve">
+    <value>Ödeme yöntemi</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_PARAMETERS_NAME" xml:space="preserve">
+    <value>Parametreler</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_BRANCH_NAME" xml:space="preserve">
+    <value>Şube</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_APP_NAME" xml:space="preserve">
+    <value>Uygulama</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_APP_GROUP_NAME" xml:space="preserve">
+    <value>Uygulama grubu</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_PRODUCT_NAME" xml:space="preserve">
+    <value>Ürün</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_PRODUCT_GROUP_NAME" xml:space="preserve">
+    <value>Ürün grubu</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_BILL_PROFILE_NAME" xml:space="preserve">
+    <value>Faturalama profili</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_DAY_OF_WEEK_NAME" xml:space="preserve">
+    <value>Haftanın günü</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_APP_EXE_NAME" xml:space="preserve">
+    <value>Uygulama yürütülebilir dosyası</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_APP_CATEGORY_NAME" xml:space="preserve">
+    <value>Uygulama kategorisi</value>
+  </data>
+  <data name="SIGNAL_UNIT_COUNT_NAME" xml:space="preserve">
+    <value>Sayı</value>
+  </data>
+  <data name="SIGNAL_UNIT_CURRENCY_NAME" xml:space="preserve">
+    <value>Para birimi</value>
+  </data>
+  <data name="SIGNAL_UNIT_DURATION_NAME" xml:space="preserve">
+    <value>Süre</value>
+  </data>
+  <data name="SIGNAL_UNIT_POINTS_NAME" xml:space="preserve">
+    <value>Puan</value>
+  </data>
+  <data name="SIGNAL_UNIT_DAYS_NAME" xml:space="preserve">
+    <value>Gün</value>
+  </data>
 </root>

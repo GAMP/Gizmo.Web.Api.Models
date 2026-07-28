@@ -1575,4 +1575,157 @@
    
    
    
+  <data name="ACHIEVEMENT_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Достижение</value>
+  </data>
+  <data name="ACHIEVEMENT_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>События, связанные с достижениями</value>
+  </data>
+  <data name="ACHIEVEMENT_COMPLETED_EVENT_NAME" xml:space="preserve">
+    <value>Достижение выполнено</value>
+  </data>
+  <data name="ACHIEVEMENT_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Указывает, что пользователь выполнил достижение</value>
+  </data>
+  <data name="ACHIEVEMENT_LEVEL_CHANGE_EVENT_NAME" xml:space="preserve">
+    <value>Изменение уровня достижений</value>
+  </data>
+  <data name="ACHIEVEMENT_LEVEL_CHANGE_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Указывает на изменение уровня пользователя в лестнице достижений</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_COMPLETED_EVENT_NAME" xml:space="preserve">
+    <value>Испытание выполнено</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_COMPLETED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Указывает, что пользователь выполнил испытание</value>
+  </data>
+  <data name="ACHIEVEMENT_REWARD_STATUS_EVENT_NAME" xml:space="preserve">
+    <value>Изменение статуса награды</value>
+  </data>
+  <data name="ACHIEVEMENT_REWARD_STATUS_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Указывает на изменение статуса награды пользователя</value>
+  </data>
+  <data name="CALENDAR_PERIOD_DAY_NAME" xml:space="preserve">
+    <value>День</value>
+  </data>
+  <data name="CALENDAR_PERIOD_WEEK_NAME" xml:space="preserve">
+    <value>Неделя</value>
+  </data>
+  <data name="CALENDAR_PERIOD_MONTH_NAME" xml:space="preserve">
+    <value>Месяц</value>
+  </data>
+  <data name="CALENDAR_PERIOD_QUARTER_NAME" xml:space="preserve">
+    <value>Квартал</value>
+  </data>
+  <data name="CALENDAR_PERIOD_YEAR_NAME" xml:space="preserve">
+    <value>Год</value>
+  </data>
+  <data name="ACHIEVEMENT_OPTION_NONE_NAME" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="ACHIEVEMENT_OPTION_HIDDEN_NAME" xml:space="preserve">
+    <value>Скрыто</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_MODE_POINTS_NAME" xml:space="preserve">
+    <value>Очки</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_MODE_REQUIREMENTS_NAME" xml:space="preserve">
+    <value>Требования</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_OPTION_NONE_NAME" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_OPTION_PROMOTE_ON_SETTLE_ONLY_NAME" xml:space="preserve">
+    <value>Повышение только при подведении итогов</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_OPTION_NONE_NAME" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_OPTION_HIDDEN_NAME" xml:space="preserve">
+    <value>Скрыто</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_OPTION_NONE_NAME" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_OPTION_FORCE_CLAIM_NAME" xml:space="preserve">
+    <value>Требовать получения</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_PENDING_NAME" xml:space="preserve">
+    <value>Ожидает</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_AWAITING_CLAIM_NAME" xml:space="preserve">
+    <value>Ожидает получения</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_GRANTED_NAME" xml:space="preserve">
+    <value>Выдано</value>
+  </data>
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_DECLINED_NAME" xml:space="preserve">
+    <value>Отклонено</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_EVENT_TRIGGER_LIVE_NAME" xml:space="preserve">
+    <value>В реальном времени</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_EVENT_TRIGGER_SETTLE_NAME" xml:space="preserve">
+    <value>Подведение итогов</value>
+  </data>
+  <data name="ACHIEVEMENT_LADDER_EVENT_TRIGGER_OPERATOR_NAME" xml:space="preserve">
+    <value>Оператор</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_NONE_NAME" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_HOST_NAME" xml:space="preserve">
+    <value>Хост</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_HOST_GROUP_NAME" xml:space="preserve">
+    <value>Группа хостов</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_PAYMENT_METHOD_NAME" xml:space="preserve">
+    <value>Способ оплаты</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_PARAMETERS_NAME" xml:space="preserve">
+    <value>Параметры</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_BRANCH_NAME" xml:space="preserve">
+    <value>Филиал</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_APP_NAME" xml:space="preserve">
+    <value>Приложение</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_APP_GROUP_NAME" xml:space="preserve">
+    <value>Группа приложений</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_PRODUCT_NAME" xml:space="preserve">
+    <value>Товар</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_PRODUCT_GROUP_NAME" xml:space="preserve">
+    <value>Группа товаров</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_BILL_PROFILE_NAME" xml:space="preserve">
+    <value>Профиль тарификации</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_DAY_OF_WEEK_NAME" xml:space="preserve">
+    <value>День недели</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_APP_EXE_NAME" xml:space="preserve">
+    <value>Исполняемый файл приложения</value>
+  </data>
+  <data name="SIGNAL_FILTER_KIND_APP_CATEGORY_NAME" xml:space="preserve">
+    <value>Категория приложений</value>
+  </data>
+  <data name="SIGNAL_UNIT_COUNT_NAME" xml:space="preserve">
+    <value>Количество</value>
+  </data>
+  <data name="SIGNAL_UNIT_CURRENCY_NAME" xml:space="preserve">
+    <value>Валюта</value>
+  </data>
+  <data name="SIGNAL_UNIT_DURATION_NAME" xml:space="preserve">
+    <value>Длительность</value>
+  </data>
+  <data name="SIGNAL_UNIT_POINTS_NAME" xml:space="preserve">
+    <value>Очки</value>
+  </data>
+  <data name="SIGNAL_UNIT_DAYS_NAME" xml:space="preserve">
+    <value>Дни</value>
+  </data>
 </root>

@@ -51,10 +51,14 @@ namespace Gizmo.Web.Api.Models
 
         /// <inheritdoc/>
         [MessagePack.Key(8)]
-        public AchievementFiltersModel? Filters { get; init; }
+        public int? ImageId { get; init; }
 
         /// <inheritdoc/>
         [MessagePack.Key(9)]
+        public AchievementFiltersModel? Filters { get; init; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(10)]
         public IReadOnlyList<AchievementParameterModel>? Parameters { get; init; }
     }
 }

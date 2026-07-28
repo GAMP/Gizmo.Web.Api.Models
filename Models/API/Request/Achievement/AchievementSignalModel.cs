@@ -1,5 +1,4 @@
 using System;
-using Gizmo.Extensibility.Abstractions;
 
 namespace Gizmo.Web.Api.Models
 {

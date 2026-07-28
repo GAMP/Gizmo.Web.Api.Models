@@ -24,5 +24,12 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(3)]
         public long Size { get; init; }
+
+        /// <summary>
+        /// Content type recorded at upload; null on legacy rows uploaded before
+        /// content detection.
+        /// </summary>
+        [MessagePack.Key(4)]
+        public string? MimeType { get; init; }
     }
 }
