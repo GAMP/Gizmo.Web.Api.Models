@@ -20,10 +20,9 @@ namespace Gizmo.Web.Api.Models
         public int MethodId { get; set; }
 
         /// <summary>
-        /// Channel specific destination value, where the flow requires one.
-        /// Interpreted and validated by the entry's channel (e.g. phone number for the sms channel,
-        /// email address for the email channel). Must be omitted in flows that source the destination
-        /// from the user record (e.g. password recovery) and for redirect mechanisms.
+        /// Flow specific value, where the flow requires one.
+        /// The concrete request type defines its meaning: destination for registration/verification,
+        /// account identifier for user-facing password recovery, or omitted for flows that do not need it.
         /// </summary>
         [Key(1)]
         public string? Value { get; set; }
@@ -33,7 +32,34 @@ namespace Gizmo.Web.Api.Models
     /// Registration start request.
     /// </summary>
     [MessagePackObject]
-    public sealed class RegistrationMethodStartModel : VerificationMethodStartModelBase
+    [Union(0, typeof(RegistrationByMobilePhoneMethodStartModel))]
+    [Union(1, typeof(RegistrationByEmailMethodStartModel))]
+    [Union(2, typeof(RegistrationByRedirectMethodStartModel))]
+    public abstract class RegistrationMethodStartModel : VerificationMethodStartModelBase
+    {
+    }
+
+    /// <summary>
+    /// Registration start request by mobile phone.
+    /// </summary>
+    [MessagePackObject]
+    public sealed class RegistrationByMobilePhoneMethodStartModel : RegistrationMethodStartModel
+    {
+    }
+
+    /// <summary>
+    /// Registration start request by email.
+    /// </summary>
+    [MessagePackObject]
+    public sealed class RegistrationByEmailMethodStartModel : RegistrationMethodStartModel
+    {
+    }
+
+    /// <summary>
+    /// Registration start request by redirect.
+    /// </summary>
+    [MessagePackObject]
+    public sealed class RegistrationByRedirectMethodStartModel : RegistrationMethodStartModel
     {
     }
 
@@ -41,14 +67,48 @@ namespace Gizmo.Web.Api.Models
     /// Password recovery start request.
     /// </summary>
     [MessagePackObject]
-    public sealed class PasswordRecoveryMethodStartModel : VerificationMethodStartModelBase
+    [Union(0, typeof(PasswordRecoveryByUsernameMethodStartModel))]
+    [Union(1, typeof(PasswordRecoveryByEmailMethodStartModel))]
+    [Union(2, typeof(PasswordRecoveryByMobilePhoneMethodStartModel))]
+    public abstract class PasswordRecoveryMethodStartModel : VerificationMethodStartModelBase
+    {
+    }
+
+    /// <summary>
+    /// Password recovery start request by username.
+    /// </summary>
+    [MessagePackObject]
+    public sealed class PasswordRecoveryByUsernameMethodStartModel : PasswordRecoveryMethodStartModel
+    {
+    }
+
+    /// <summary>
+    /// Password recovery start request by email.
+    /// </summary>
+    [MessagePackObject]
+    public sealed class PasswordRecoveryByEmailMethodStartModel : PasswordRecoveryMethodStartModel
+    {
+    }
+
+    /// <summary>
+    /// Password recovery start request by mobile phone.
+    /// </summary>
+    [MessagePackObject]
+    public sealed class PasswordRecoveryByMobilePhoneMethodStartModel : PasswordRecoveryMethodStartModel
+    {
+    }
+
+    /// <summary>
+    /// Operator-facing password recovery start request.
+    /// </summary>
+    [MessagePackObject]
+    public sealed class OperatorPasswordRecoveryMethodStartModel : VerificationMethodStartModelBase
     {
         /// <summary>
-        /// Value identifying the account to recover — username, email or mobile phone.
-        /// Used to locate the user; the code destination is always sourced from the user record.
+        /// User id of the account to recover.
         /// </summary>
         [Key(2)]
-        public string MatchValue { get; set; } = null!;
+        public int UserId { get; set; }
     }
 
     /// <summary>

@@ -1,3 +1,4 @@
+using System;
 using MessagePack;
 
 namespace Gizmo.Web.Api.Models
@@ -57,6 +58,18 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [Key(2)]
         public int ExpiresInSeconds { get; set; }
+
+        /// <summary>
+        /// Capability guid identifying the delivery mechanism that was started.
+        /// </summary>
+        [Key(3)]
+        public Guid CapabilityGuid { get; set; }
+
+        /// <summary>
+        /// Masked recipient address the code was sent to, when known.
+        /// </summary>
+        [Key(4)]
+        public string? MaskedRecipientAddress { get; set; }
     }
 
     /// <summary>
@@ -82,6 +95,12 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [Key(2)]
         public int ExpiresInSeconds { get; set; }
+
+        /// <summary>
+        /// Capability guid identifying the delivery mechanism that was started.
+        /// </summary>
+        [Key(3)]
+        public Guid CapabilityGuid { get; set; }
     }
 
     /// <summary>
@@ -107,5 +126,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [Key(2)]
         public int ExpiresInSeconds { get; set; }
+
+        /// <summary>
+        /// Capability guid identifying the delivery mechanism that was started.
+        /// </summary>
+        [Key(3)]
+        public Guid CapabilityGuid { get; set; }
     }
 }
