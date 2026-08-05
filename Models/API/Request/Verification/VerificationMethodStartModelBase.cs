@@ -3,7 +3,7 @@ using MessagePack;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Base request for starting a verification method.
+    /// Request for starting a verification method.
     /// </summary>
     /// <remarks>
     /// Everything about the mechanism is derived server side from the referenced verification method
@@ -11,7 +11,7 @@ namespace Gizmo.Web.Api.Models
     /// so the id can never silently change meaning.
     /// </remarks>
     [MessagePackObject]
-    public abstract class VerificationMethodStartModelBase
+    public class VerificationMethodStartModelBase
     {
         /// <summary>
         /// Verification method entry id.
@@ -20,95 +20,27 @@ namespace Gizmo.Web.Api.Models
         public int MethodId { get; set; }
 
         /// <summary>
-        /// Flow specific value, where the flow requires one.
-        /// The concrete request type defines its meaning: destination for registration/verification,
-        /// account identifier for user-facing password recovery, or omitted for flows that do not need it.
+        /// Flow specific value, where the flow requires one — a destination address or an account
+        /// identifier. <see cref="ValueKind"/> states which of the two the caller is sending.
         /// </summary>
         [Key(1)]
         public string? Value { get; set; }
-    }
 
-    /// <summary>
-    /// Registration start request.
-    /// </summary>
-    [MessagePackObject]
-    [Union(0, typeof(RegistrationByMobilePhoneMethodStartModel))]
-    [Union(1, typeof(RegistrationByEmailMethodStartModel))]
-    [Union(2, typeof(RegistrationByRedirectMethodStartModel))]
-    public abstract class RegistrationMethodStartModel : VerificationMethodStartModelBase
-    {
-    }
-
-    /// <summary>
-    /// Registration start request by mobile phone.
-    /// </summary>
-    [MessagePackObject]
-    public sealed class RegistrationByMobilePhoneMethodStartModel : RegistrationMethodStartModel
-    {
-    }
-
-    /// <summary>
-    /// Registration start request by email.
-    /// </summary>
-    [MessagePackObject]
-    public sealed class RegistrationByEmailMethodStartModel : RegistrationMethodStartModel
-    {
-    }
-
-    /// <summary>
-    /// Registration start request by redirect.
-    /// </summary>
-    [MessagePackObject]
-    public sealed class RegistrationByRedirectMethodStartModel : RegistrationMethodStartModel
-    {
-    }
-
-    /// <summary>
-    /// Password recovery start request.
-    /// </summary>
-    [MessagePackObject]
-    [Union(0, typeof(PasswordRecoveryByUsernameMethodStartModel))]
-    [Union(1, typeof(PasswordRecoveryByEmailMethodStartModel))]
-    [Union(2, typeof(PasswordRecoveryByMobilePhoneMethodStartModel))]
-    public abstract class PasswordRecoveryMethodStartModel : VerificationMethodStartModelBase
-    {
-    }
-
-    /// <summary>
-    /// Password recovery start request by username.
-    /// </summary>
-    [MessagePackObject]
-    public sealed class PasswordRecoveryByUsernameMethodStartModel : PasswordRecoveryMethodStartModel
-    {
-    }
-
-    /// <summary>
-    /// Password recovery start request by email.
-    /// </summary>
-    [MessagePackObject]
-    public sealed class PasswordRecoveryByEmailMethodStartModel : PasswordRecoveryMethodStartModel
-    {
-    }
-
-    /// <summary>
-    /// Password recovery start request by mobile phone.
-    /// </summary>
-    [MessagePackObject]
-    public sealed class PasswordRecoveryByMobilePhoneMethodStartModel : PasswordRecoveryMethodStartModel
-    {
-    }
-
-    /// <summary>
-    /// Operator-facing password recovery start request.
-    /// </summary>
-    [MessagePackObject]
-    public sealed class OperatorPasswordRecoveryMethodStartModel : VerificationMethodStartModelBase
-    {
         /// <summary>
-        /// User id of the account to recover.
+        /// What <see cref="Value"/> holds.
         /// </summary>
+        /// <remarks>
+        /// Password recovery is driven by this: it selects how the account is looked up and which
+        /// channel the offered methods are narrowed to. Nothing else in the request carries that.
+        /// <para>
+        /// Registration does not read it to interpret <see cref="Value"/> — the channel of the
+        /// selected method does that. Here it only cross checks that the two agree, which catches a
+        /// destination sent to a redirect mechanism, where the value would otherwise be dropped in
+        /// silence and the user would wait for a code that was never sent.
+        /// </para>
+        /// </remarks>
         [Key(2)]
-        public int UserId { get; set; }
+        public VerificationMethodValueKind ValueKind { get; set; }
     }
 
     /// <summary>
@@ -125,7 +57,8 @@ namespace Gizmo.Web.Api.Models
     /// <see cref="VerificationMethodStartModelBase.Value"/>.
     /// </summary>
     [MessagePackObject]
-    public sealed class EmailVerificationMethodStartModel : VerificationMethodStartModelBase
+    public sealed class EmailVerificationMethodStartModel
+        : VerificationMethodStartModelBase
     {
     }
 }
