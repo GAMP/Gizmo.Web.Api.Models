@@ -1,4 +1,4 @@
-namespace Gizmo.Web.Api.Models
+﻿namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// POS invoice receipt query mode.

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Gizmo.Web.Api.Models.Abstractions;
 using MessagePack;
@@ -14,12 +14,14 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Invoice identifier.
         /// </summary>
+        [Sortable("Id")]
         [Key(0)]
         public int InvoiceId { get; init; }
 
         /// <summary>
         /// Receipt date.
         /// </summary>
+        [Sortable("SortDate")]
         [Key(1)]
         public DateTime? Date { get; init; }
 

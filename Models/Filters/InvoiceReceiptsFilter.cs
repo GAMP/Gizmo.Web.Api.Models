@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Gizmo.Web.Api.Models.Abstractions;
 using MessagePack;
@@ -9,13 +9,17 @@ namespace Gizmo.Web.Api.Models
     /// Filters for POS invoice receipt rows.
     /// </summary>
     [Serializable, MessagePackObject]
-    public sealed class InvoiceReceiptsFilter : IModelFilterClassic<InvoiceReceiptModel>
+    public sealed class InvoiceReceiptsFilter : IModelFilter<InvoiceReceiptModel>
     {
         /// <summary>
-        /// Page-number pagination options.
+        /// Cursor pagination options.
         /// </summary>
         [Key(0)]
-        public ModelFilterPaginationClassic Pagination { get; set; } = new();
+        public ModelFilterPagination Pagination { get; set; } = new()
+        {
+            SortBy = nameof(InvoiceReceiptModel.Date),
+            IsAsc = false
+        };
 
         /// <summary>
         /// Receipt query mode.

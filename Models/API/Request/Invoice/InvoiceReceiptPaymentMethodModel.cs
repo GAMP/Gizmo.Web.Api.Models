@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using Gizmo.Web.Api.Models.Abstractions;
 using MessagePack;
 
