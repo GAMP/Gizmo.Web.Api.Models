@@ -57,5 +57,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [Key(6)]
         public List<string> Expand { get; set; } = [];
+
+        /// <summary>
+        /// Exact product order identifier.
+        /// </summary>
+        [Key(7)]
+        public int? ProductOrderId { get; set; }
     }
 }
