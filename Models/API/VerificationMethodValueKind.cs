@@ -4,19 +4,15 @@
     /// Kind of the value supplied when starting a verification method.
     /// </summary>
     /// <remarks>
-    /// States what the caller put in <see cref="VerificationMethodStartModelBase.Value"/>. It never
-    /// carries the delivery mechanism or the communication channel — both are resolved server side
-    /// from <see cref="VerificationMethodStartModelBase.MethodId"/>.
-    /// <para>
-    /// Password recovery reads it as the lookup rule. Registration validates the value by the
-    /// resolved channel instead and uses this only to reject a request whose value kind contradicts
-    /// the selected method.
-    /// </para>
+    /// States what the caller put in <see cref="GetRecoveryMethodsModel.Value"/> or
+    /// <see cref="UserPasswordRecoveryMethodStartModel.Value"/>. It never carries the delivery
+    /// mechanism or the communication channel; those are resolved server side from the selected
+    /// verification method.
     /// </remarks>
     public enum VerificationMethodValueKind
     {
         /// <summary>
-        /// No value is supplied. Used by flows that need no user input, e.g. redirect registration.
+        /// No value kind is supplied. Not valid for user-facing password recovery lookup or start.
         /// </summary>
         None = 0,
 
