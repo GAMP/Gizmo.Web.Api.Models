@@ -85,5 +85,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(14)]
         public int ChallengesCount { get; init; }
+
+        /// <summary>
+        /// Time the achievement was created, in UTC.
+        /// </summary>
+        [MessagePack.Key(15)]
+        public DateTime CreatedTime { get; init; }
     }
 }
