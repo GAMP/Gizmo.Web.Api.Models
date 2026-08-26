@@ -14,5 +14,15 @@ namespace Gizmo.Web.Api.Models
         /// Deposit receipt.
         /// </summary>
         Deposit = 1,
+
+        /// <summary>
+        /// Refund invoice payment receipt (one per invoice void operation).
+        /// </summary>
+        RefundInvoice = 2,
+
+        /// <summary>
+        /// Refund deposit payment receipt.
+        /// </summary>
+        RefundDeposit = 3,
     }
 }

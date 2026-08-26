@@ -28,14 +28,6 @@ namespace Gizmo.Web.Api.Models
         public int EntityId { get; set; }
 
         /// <summary>
-        /// The culture used to format the receipt.
-        /// </summary>
-        [MessagePack.Key(2)]
-        [Required]
-        [StringLength(32, MinimumLength = 2)]
-        public string Culture { get; set; } = string.Empty;
-
-        /// <summary>
         /// The number of copies to print.
         /// </summary>
         [MessagePack.Key(3)]
