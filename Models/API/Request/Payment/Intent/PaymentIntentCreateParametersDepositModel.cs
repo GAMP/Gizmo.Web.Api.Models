@@ -35,6 +35,16 @@ namespace Gizmo.Web.Api.Models
         [Key(2)]
         public int PaymentMethodId { get; set; }
 
+        /// <summary>
+        /// Gets or sets whether the fiscal receipt for the deposit should be electronic only.
+        /// </summary>
+        /// <remarks>
+        /// When set the receipt is registered without printing a paper copy. Defaults to false, so a caller that
+        /// does not specify it keeps receiving a printed receipt.
+        /// </remarks>
+        [Key(3)]
+        public bool DisableReceiptPrinting { get; set; }
+
         #endregion
     }
 }
