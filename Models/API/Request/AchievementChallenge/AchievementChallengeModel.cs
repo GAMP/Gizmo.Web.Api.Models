@@ -74,5 +74,11 @@ namespace Gizmo.Web.Api.Models
         /// <inheritdoc/>
         [MessagePack.Key(14)]
         public int? GlobalMaxCompletions { get; init; }
+
+        /// <summary>
+        /// Total number of completions recorded for this challenge, across all users. Computed, read-only.
+        /// </summary>
+        [MessagePack.Key(15)]
+        public int CompletionsCount { get; init; }
     }
 }
