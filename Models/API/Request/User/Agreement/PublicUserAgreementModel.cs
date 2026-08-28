@@ -42,6 +42,12 @@ namespace Gizmo.Web.Api.Models
         [Key(4)]
         public bool IsRejectable { get; set; }
 
+        /// <summary>
+        /// Whether the user agreement is shown for information only: no accept or reject state is recorded.
+        /// </summary>
+        [Key(5)]
+        public bool IgnoreState { get; set; }
+
         #endregion
     }
 }
