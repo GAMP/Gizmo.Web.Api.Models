@@ -96,6 +96,12 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(12)]
         public decimal UnitListPrice { get; init; }
+
+        /// <summary>
+        /// Pay type.
+        /// </summary>
+        [MessagePack.Key(13)]
+        public OrderLinePayType PayType { get; init; }
     }
 
     /// <summary>

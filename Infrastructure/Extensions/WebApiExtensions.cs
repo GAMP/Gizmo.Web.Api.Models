@@ -48,8 +48,6 @@ namespace Gizmo.Web.Api
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<HostModel>("Type", "Model"));
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<UserModel>("Type", "Model"));
 
-            options.Converters.Add(new MessagePackUnionMessageJsonConverter<RegistrationMethodStartModel>("Type", "Model"));
-            options.Converters.Add(new MessagePackUnionMessageJsonConverter<PasswordRecoveryMethodStartModel>("Type", "Model"));
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<VerificationStartResultModelBase>("Type", "Result"));
 
             return options;
