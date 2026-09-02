@@ -92,5 +92,11 @@ namespace Gizmo.Web.Api.Models
         [System.ComponentModel.DataAnnotations.EnumValueValidation]
         [Key(12)]
         public FiscalReceiptPrintStatus FiscalReceiptPrintStatus { get; init; }
+
+        /// <summary>
+        /// Product order identifier.
+        /// </summary>
+        [Key(13)]
+        public int OrderId { get; init; }
     }
 }
