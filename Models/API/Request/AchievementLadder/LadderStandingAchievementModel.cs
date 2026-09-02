@@ -53,5 +53,22 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(6)]
         public bool IsHidden { get; init; }
+
+        /// <summary>
+        /// The achievement's score weight — points awarded per completion — when the ladder
+        /// scores in points mode; null in requirements mode. Structural: ships regardless of
+        /// progress collection.
+        /// </summary>
+        [MessagePack.Key(7)]
+        public int? Points { get; init; }
+
+        /// <summary>
+        /// Points earned within the current period — whole completions plus fractional live
+        /// credit, times <see cref="Points"/>. The standing's Score is exactly the sum of
+        /// these, so a breakdown always reconciles to the displayed total. Null when not
+        /// collected, frozen, or in requirements mode.
+        /// </summary>
+        [MessagePack.Key(8)]
+        public decimal? EarnedPoints { get; init; }
     }
 }
