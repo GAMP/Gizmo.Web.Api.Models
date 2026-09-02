@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+﻿<?xml version='1.0' encoding='utf-8'?>
 <root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema"> 
   <xs:schema id="root">
     <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
@@ -1875,5 +1875,14 @@
   </data>
   <data name="SIGNAL_UNIT_DAYS_NAME" xml:space="preserve">
     <value>Gün</value>
+  </data>
+  <data name="LADDER_STANDING_STATE_EARNING_NAME" xml:space="preserve">
+    <value>Kazanılıyor</value>
+  </data>
+  <data name="LADDER_STANDING_STATE_SECURED_NAME" xml:space="preserve">
+    <value>Korundu</value>
+  </data>
+  <data name="LADDER_STANDING_STATE_AWAITING_NAME" xml:space="preserve">
+    <value>Beklemede</value>
   </data>
 </root>
