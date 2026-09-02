@@ -1790,4 +1790,13 @@
   <data name="USER_GUEST_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
     <value>User guest related events</value>
   </data>
+  <data name="LADDER_STANDING_STATE_EARNING_NAME" xml:space="preserve">
+    <value>Earning</value>
+  </data>
+  <data name="LADDER_STANDING_STATE_SECURED_NAME" xml:space="preserve">
+    <value>Secured</value>
+  </data>
+  <data name="LADDER_STANDING_STATE_AWAITING_NAME" xml:space="preserve">
+    <value>Awaiting</value>
+  </data>
 </root>
