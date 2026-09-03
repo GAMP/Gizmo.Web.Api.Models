@@ -1786,4 +1786,16 @@
   <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_DONE_NAME" xml:space="preserve">
     <value>Concluído</value>
   </data>
+  <data name="USER_ACHIEVEMENT_REWARD_STATE_PENDING_NAME" xml:space="preserve">
+    <value>Pendente</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_REWARD_STATE_DELIVERED_NAME" xml:space="preserve">
+    <value>Entregue</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_REWARD_STATE_CLAIMED_NAME" xml:space="preserve">
+    <value>Resgatado</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_REWARD_STATE_DECLINED_NAME" xml:space="preserve">
+    <value>Recusado</value>
+  </data>
 </root>

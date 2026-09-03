@@ -741,4 +741,16 @@
   <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_DONE_NAME" xml:space="preserve">
     <value>Suoritettu</value>
   </data>
+  <data name="USER_ACHIEVEMENT_REWARD_STATE_PENDING_NAME" xml:space="preserve">
+    <value>Odottaa</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_REWARD_STATE_DELIVERED_NAME" xml:space="preserve">
+    <value>Toimitettu</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_REWARD_STATE_CLAIMED_NAME" xml:space="preserve">
+    <value>Lunastettu</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_REWARD_STATE_DECLINED_NAME" xml:space="preserve">
+    <value>Hylätty</value>
+  </data>
 </root>

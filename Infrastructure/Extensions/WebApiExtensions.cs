@@ -50,6 +50,8 @@ namespace Gizmo.Web.Api
 
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<VerificationStartResultModelBase>("Type", "Result"));
 
+            options.Converters.Add(new MessagePackUnionMessageJsonConverter<UserAchievementRewardDetailsModel>("Type", "Model"));
+
             return options;
         }
 
