@@ -119,5 +119,13 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(16)]
         public decimal? Progress { get; init; }
+
+        /// <summary>
+        /// The badge image's MIME type — the badge dispatches by format (an svg upload is the
+        /// template itself, a raster upload is the emblem inside the built-in template). Null
+        /// when there is no image or the stored type is unknown (untyped legacy upload).
+        /// </summary>
+        [MessagePack.Key(17)]
+        public string? ImageMimeType { get; init; }
     }
 }
