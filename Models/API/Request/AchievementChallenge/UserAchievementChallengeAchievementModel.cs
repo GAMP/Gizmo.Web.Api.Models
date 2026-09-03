@@ -39,5 +39,14 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(4)]
         public SignalUnit? Unit { get; init; }
+
+        /// <summary>
+        /// The achievement's own state, which decides whether a requirement resting on it can
+        /// still advance. <see cref="UserAchievementState.Earned"/> here means its current
+        /// range instance is at its completion cap, so the next completion waits for the next
+        /// instance.
+        /// </summary>
+        [MessagePack.Key(5)]
+        public UserAchievementState State { get; init; }
     }
 }

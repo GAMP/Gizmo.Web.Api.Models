@@ -1752,4 +1752,37 @@
   <data name="USER_ACHIEVEMENT_STATE_UNMEASURABLE_NAME" xml:space="preserve">
     <value>غير قابل للقياس</value>
   </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_ACTIVE_NAME" xml:space="preserve">
+    <value>نشط</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_NOT_STARTED_NAME" xml:space="preserve">
+    <value>لم يبدأ</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_UNMEASURABLE_NAME" xml:space="preserve">
+    <value>غير قابل للقياس</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_BLOCKED_NAME" xml:space="preserve">
+    <value>محظور</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_PAUSED_NAME" xml:space="preserve">
+    <value>متوقف مؤقتًا</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_UNREACHABLE_NAME" xml:space="preserve">
+    <value>غير قابل للتحقيق</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_INELIGIBLE_NAME" xml:space="preserve">
+    <value>غير مؤهل</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_POOL_EXHAUSTED_NAME" xml:space="preserve">
+    <value>نفدت الجوائز</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_ENDED_NAME" xml:space="preserve">
+    <value>منتهٍ</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_ARCHIVED_NAME" xml:space="preserve">
+    <value>مؤرشف</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_DONE_NAME" xml:space="preserve">
+    <value>مكتمل</value>
+  </data>
 </root>

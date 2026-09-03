@@ -708,4 +708,37 @@
   <data name="USER_ACHIEVEMENT_STATE_UNMEASURABLE_NAME" xml:space="preserve">
     <value>Ei mitattavissa</value>
   </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_ACTIVE_NAME" xml:space="preserve">
+    <value>Aktiivinen</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_NOT_STARTED_NAME" xml:space="preserve">
+    <value>Ei alkanut</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_UNMEASURABLE_NAME" xml:space="preserve">
+    <value>Ei mitattavissa</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_BLOCKED_NAME" xml:space="preserve">
+    <value>Estetty</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_PAUSED_NAME" xml:space="preserve">
+    <value>Keskeytetty</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_UNREACHABLE_NAME" xml:space="preserve">
+    <value>Saavuttamaton</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_INELIGIBLE_NAME" xml:space="preserve">
+    <value>Ei kelpoinen</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_POOL_EXHAUSTED_NAME" xml:space="preserve">
+    <value>Palkinnot loppuivat</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_ENDED_NAME" xml:space="preserve">
+    <value>Päättynyt</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_ARCHIVED_NAME" xml:space="preserve">
+    <value>Arkistoitu</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_DONE_NAME" xml:space="preserve">
+    <value>Suoritettu</value>
+  </data>
 </root>

@@ -1738,4 +1738,37 @@
   <data name="USER_ACHIEVEMENT_STATE_UNMEASURABLE_NAME" xml:space="preserve">
     <value>Μη μετρήσιμο</value>
   </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_ACTIVE_NAME" xml:space="preserve">
+    <value>Ενεργή</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_NOT_STARTED_NAME" xml:space="preserve">
+    <value>Δεν ξεκίνησε</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_UNMEASURABLE_NAME" xml:space="preserve">
+    <value>Μη μετρήσιμη</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_BLOCKED_NAME" xml:space="preserve">
+    <value>Μπλοκαρισμένη</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_PAUSED_NAME" xml:space="preserve">
+    <value>Σε παύση</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_UNREACHABLE_NAME" xml:space="preserve">
+    <value>Μη εφικτή</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_INELIGIBLE_NAME" xml:space="preserve">
+    <value>Μη επιλέξιμος</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_POOL_EXHAUSTED_NAME" xml:space="preserve">
+    <value>Εξαντλήθηκαν τα έπαθλα</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_ENDED_NAME" xml:space="preserve">
+    <value>Έληξε</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_ARCHIVED_NAME" xml:space="preserve">
+    <value>Αρχειοθετημένη</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_DONE_NAME" xml:space="preserve">
+    <value>Ολοκληρώθηκε</value>
+  </data>
 </root>

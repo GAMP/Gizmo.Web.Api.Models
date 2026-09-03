@@ -1752,4 +1752,37 @@
   <data name="USER_ACHIEVEMENT_STATE_UNMEASURABLE_NAME" xml:space="preserve">
     <value>Не измеряется</value>
   </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_ACTIVE_NAME" xml:space="preserve">
+    <value>Активно</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_NOT_STARTED_NAME" xml:space="preserve">
+    <value>Не началось</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_UNMEASURABLE_NAME" xml:space="preserve">
+    <value>Не измеряется</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_BLOCKED_NAME" xml:space="preserve">
+    <value>Заблокировано</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_PAUSED_NAME" xml:space="preserve">
+    <value>Приостановлено</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_UNREACHABLE_NAME" xml:space="preserve">
+    <value>Недостижимо</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_INELIGIBLE_NAME" xml:space="preserve">
+    <value>Не участвует</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_POOL_EXHAUSTED_NAME" xml:space="preserve">
+    <value>Призы закончились</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_ENDED_NAME" xml:space="preserve">
+    <value>Завершено</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_ARCHIVED_NAME" xml:space="preserve">
+    <value>В архиве</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_DONE_NAME" xml:space="preserve">
+    <value>Выполнено</value>
+  </data>
 </root>

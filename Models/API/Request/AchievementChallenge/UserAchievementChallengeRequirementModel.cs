@@ -35,5 +35,20 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(3)]
         public decimal? Progress { get; init; }
+
+        /// <summary>
+        /// Completions of the required achievement the calendar can still yield before the
+        /// challenge window closes — the ceiling behind
+        /// <see cref="UserAchievementChallengeState.Unreachable"/>. Null when the window is
+        /// evergreen (capacity is unbounded) or progress collection was not requested.
+        /// </summary>
+        /// <remarks>
+        /// Calendar capacity only: it deliberately ignores whether the achievement is
+        /// currently paused or archived, because a pause is recoverable and reporting it here
+        /// would present a temporary stop as a permanent one. That case surfaces as
+        /// <see cref="UserAchievementChallengeState.Blocked"/> instead.
+        /// </remarks>
+        [MessagePack.Key(4)]
+        public int? RemainingAchievable { get; init; }
     }
 }

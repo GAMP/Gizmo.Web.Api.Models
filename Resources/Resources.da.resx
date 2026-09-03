@@ -708,4 +708,37 @@
   <data name="USER_ACHIEVEMENT_STATE_UNMEASURABLE_NAME" xml:space="preserve">
     <value>Kan ikke måles</value>
   </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_ACTIVE_NAME" xml:space="preserve">
+    <value>Aktiv</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_NOT_STARTED_NAME" xml:space="preserve">
+    <value>Ikke startet</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_UNMEASURABLE_NAME" xml:space="preserve">
+    <value>Kan ikke måles</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_BLOCKED_NAME" xml:space="preserve">
+    <value>Blokeret</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_PAUSED_NAME" xml:space="preserve">
+    <value>Sat på pause</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_UNREACHABLE_NAME" xml:space="preserve">
+    <value>Uopnåelig</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_INELIGIBLE_NAME" xml:space="preserve">
+    <value>Ikke berettiget</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_POOL_EXHAUSTED_NAME" xml:space="preserve">
+    <value>Puljen er opbrugt</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_ENDED_NAME" xml:space="preserve">
+    <value>Afsluttet</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_ARCHIVED_NAME" xml:space="preserve">
+    <value>Arkiveret</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_DONE_NAME" xml:space="preserve">
+    <value>Gennemført</value>
+  </data>
 </root>

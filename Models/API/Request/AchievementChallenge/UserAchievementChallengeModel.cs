@@ -125,5 +125,34 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(17)]
         public bool IsDeleted { get; init; }
+
+        /// <summary>
+        /// The challenge's state for this user, computed on the server.
+        /// </summary>
+        [MessagePack.Key(18)]
+        public UserAchievementChallengeState State { get; init; }
+
+        /// <summary>
+        /// Requirements the user has already satisfied toward the next completion — whole
+        /// completions only, partial work moves the bar but never a gate. Null when progress
+        /// collection was not requested.
+        /// </summary>
+        [MessagePack.Key(19)]
+        public int? MetCount { get; init; }
+
+        /// <summary>
+        /// Badge image guid, servable directly from the files endpoint; null when the
+        /// challenge has no image.
+        /// </summary>
+        [MessagePack.Key(20)]
+        public Guid? ImageGuid { get; init; }
+
+        /// <summary>
+        /// The badge image's MIME type — the badge dispatches by format (an svg upload is the
+        /// template itself, a raster upload is the emblem inside the built-in template). Null
+        /// when there is no image or the stored type is unknown (untyped legacy upload).
+        /// </summary>
+        [MessagePack.Key(21)]
+        public string? ImageMimeType { get; init; }
     }
 }
