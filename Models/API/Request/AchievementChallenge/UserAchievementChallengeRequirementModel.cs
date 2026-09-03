@@ -22,8 +22,11 @@ namespace Gizmo.Web.Api.Models
         public int RequiredCount { get; init; }
 
         /// <summary>
-        /// The user's completions counted within the challenge window.
-        /// Null when progress collection was not requested.
+        /// The user's completions toward the next challenge completion, out of
+        /// <see cref="RequiredCount"/>. Scoped to the occurrence in progress: what already
+        /// earned occurrences consumed is subtracted, so this counts down to the next prize
+        /// and starts over on each win rather than climbing across the whole run. Null when
+        /// progress collection was not requested.
         /// </summary>
         [MessagePack.Key(2)]
         public int? CompletedCount { get; init; }
