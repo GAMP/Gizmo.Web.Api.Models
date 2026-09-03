@@ -1642,9 +1642,6 @@
   <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_AWAITING_CLAIM_NAME" xml:space="preserve">
     <value>Αναμονή παραλαβής</value>
   </data>
-  <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_GRANTED_NAME" xml:space="preserve">
-    <value>Χορηγήθηκε</value>
-  </data>
   <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_DECLINED_NAME" xml:space="preserve">
     <value>Απορρίφθηκε</value>
   </data>
@@ -1771,16 +1768,10 @@
   <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_DONE_NAME" xml:space="preserve">
     <value>Ολοκληρώθηκε</value>
   </data>
-  <data name="USER_ACHIEVEMENT_REWARD_STATE_PENDING_NAME" xml:space="preserve">
-    <value>Σε εκκρεμότητα</value>
-  </data>
-  <data name="USER_ACHIEVEMENT_REWARD_STATE_DELIVERED_NAME" xml:space="preserve">
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_DELIVERED_NAME" xml:space="preserve">
     <value>Παραδόθηκε</value>
   </data>
-  <data name="USER_ACHIEVEMENT_REWARD_STATE_CLAIMED_NAME" xml:space="preserve">
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_CLAIMED_NAME" xml:space="preserve">
     <value>Παραλήφθηκε</value>
-  </data>
-  <data name="USER_ACHIEVEMENT_REWARD_STATE_DECLINED_NAME" xml:space="preserve">
-    <value>Απορρίφθηκε</value>
   </data>
 </root>

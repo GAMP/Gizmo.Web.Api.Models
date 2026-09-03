@@ -1804,9 +1804,6 @@
   <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_AWAITING_CLAIM_NAME" xml:space="preserve">
     <value>Talep bekleniyor</value>
   </data>
-  <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_GRANTED_NAME" xml:space="preserve">
-    <value>Verildi</value>
-  </data>
   <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_DECLINED_NAME" xml:space="preserve">
     <value>Reddedildi</value>
   </data>
@@ -1933,16 +1930,10 @@
   <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_DONE_NAME" xml:space="preserve">
     <value>Tamamlandı</value>
   </data>
-  <data name="USER_ACHIEVEMENT_REWARD_STATE_PENDING_NAME" xml:space="preserve">
-    <value>Beklemede</value>
-  </data>
-  <data name="USER_ACHIEVEMENT_REWARD_STATE_DELIVERED_NAME" xml:space="preserve">
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_DELIVERED_NAME" xml:space="preserve">
     <value>Teslim edildi</value>
   </data>
-  <data name="USER_ACHIEVEMENT_REWARD_STATE_CLAIMED_NAME" xml:space="preserve">
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_CLAIMED_NAME" xml:space="preserve">
     <value>Teslim alındı</value>
-  </data>
-  <data name="USER_ACHIEVEMENT_REWARD_STATE_DECLINED_NAME" xml:space="preserve">
-    <value>Reddedildi</value>
   </data>
 </root>

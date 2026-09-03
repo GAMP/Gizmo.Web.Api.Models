@@ -198,9 +198,6 @@
   <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_AWAITING_CLAIM_NAME" xml:space="preserve">
     <value>Awaiting claim</value>
   </data>
-  <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_GRANTED_NAME" xml:space="preserve">
-    <value>Granted</value>
-  </data>
   <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_DECLINED_NAME" xml:space="preserve">
     <value>Declined</value>
   </data>
@@ -1847,16 +1844,10 @@
   <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_DONE_NAME" xml:space="preserve">
     <value>Done</value>
   </data>
-  <data name="USER_ACHIEVEMENT_REWARD_STATE_PENDING_NAME" xml:space="preserve">
-    <value>Pending</value>
-  </data>
-  <data name="USER_ACHIEVEMENT_REWARD_STATE_DELIVERED_NAME" xml:space="preserve">
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_DELIVERED_NAME" xml:space="preserve">
     <value>Delivered</value>
   </data>
-  <data name="USER_ACHIEVEMENT_REWARD_STATE_CLAIMED_NAME" xml:space="preserve">
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_CLAIMED_NAME" xml:space="preserve">
     <value>Claimed</value>
-  </data>
-  <data name="USER_ACHIEVEMENT_REWARD_STATE_DECLINED_NAME" xml:space="preserve">
-    <value>Declined</value>
   </data>
 </root>

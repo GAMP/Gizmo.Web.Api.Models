@@ -1656,9 +1656,6 @@
   <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_AWAITING_CLAIM_NAME" xml:space="preserve">
     <value>Ожидает получения</value>
   </data>
-  <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_GRANTED_NAME" xml:space="preserve">
-    <value>Выдано</value>
-  </data>
   <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_DECLINED_NAME" xml:space="preserve">
     <value>Отклонено</value>
   </data>
@@ -1785,16 +1782,10 @@
   <data name="USER_ACHIEVEMENT_CHALLENGE_STATE_DONE_NAME" xml:space="preserve">
     <value>Выполнено</value>
   </data>
-  <data name="USER_ACHIEVEMENT_REWARD_STATE_PENDING_NAME" xml:space="preserve">
-    <value>Ожидает</value>
-  </data>
-  <data name="USER_ACHIEVEMENT_REWARD_STATE_DELIVERED_NAME" xml:space="preserve">
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_DELIVERED_NAME" xml:space="preserve">
     <value>Выдано</value>
   </data>
-  <data name="USER_ACHIEVEMENT_REWARD_STATE_CLAIMED_NAME" xml:space="preserve">
+  <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_CLAIMED_NAME" xml:space="preserve">
     <value>Получено</value>
-  </data>
-  <data name="USER_ACHIEVEMENT_REWARD_STATE_DECLINED_NAME" xml:space="preserve">
-    <value>Отклонено</value>
   </data>
 </root>

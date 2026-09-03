@@ -45,36 +45,30 @@ namespace Gizmo.Web.Api.Models
         public DateTime IssuedTime { get; init; }
 
         /// <summary>
-        /// Display state, computed from <see cref="Status"/> and <see cref="ProcessedById"/>.
+        /// Lifecycle status — what the reward is waiting on, or how it was delivered.
         /// </summary>
         [MessagePack.Key(5)]
-        public UserAchievementRewardState State { get; init; }
-
-        /// <summary>
-        /// Stored fulfillment status — tells an operator whether an undelivered reward is
-        /// waiting on the automatic grant path or on a counter handover.
-        /// </summary>
-        [MessagePack.Key(6)]
         public AchievementChallengeRewardStatus Status { get; init; }
 
         /// <summary>
-        /// UTC time the reward reached its terminal status (granted or declined); null while
-        /// it is still pending or awaiting claim.
+        /// UTC time the reward reached its terminal status (delivered, claimed or declined);
+        /// null while it is still pending or awaiting claim.
         /// </summary>
-        [MessagePack.Key(7)]
+        [MessagePack.Key(6)]
         public DateTime? ProcessedTime { get; init; }
 
         /// <summary>
-        /// The operator that granted or declined the reward; null for system acts and while
-        /// the reward is unprocessed.
+        /// The operator that processed the reward, when one acted for the user; null for
+        /// system acts, for anything the user did themselves, and while unprocessed. Audit
+        /// only — the status says what happened.
         /// </summary>
-        [MessagePack.Key(8)]
+        [MessagePack.Key(7)]
         public int? ProcessedById { get; init; }
 
         /// <summary>
         /// What was won — the concrete type is the reward kind.
         /// </summary>
-        [MessagePack.Key(9)]
+        [MessagePack.Key(8)]
         public UserAchievementRewardDetailsModel Reward { get; init; } = default!;
     }
 

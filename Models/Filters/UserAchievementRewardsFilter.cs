@@ -38,9 +38,14 @@ namespace Gizmo.Web.Api.Models
         public int? ChallengeId { get; init; }
 
         /// <summary>
-        /// Return rewards in the specified state only; null returns every state.
+        /// Return rewards in any of the specified statuses; empty returns every status.
         /// </summary>
+        /// <remarks>
+        /// A list because one presented state covers two stored ones — an undelivered reward
+        /// waiting on the automatic path and one waiting at the counter read the same to a
+        /// person, while staying distinct where it matters.
+        /// </remarks>
         [MessagePack.Key(4)]
-        public UserAchievementRewardState? State { get; init; }
+        public List<AchievementChallengeRewardStatus> Statuses { get; set; } = new();
     }
 }
