@@ -1885,4 +1885,19 @@
   <data name="LADDER_STANDING_STATE_AWAITING_NAME" xml:space="preserve">
     <value>Beklemede</value>
   </data>
+  <data name="USER_ACHIEVEMENT_STATE_ACTIVE_NAME" xml:space="preserve">
+    <value>Etkin</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_STATE_EARNED_NAME" xml:space="preserve">
+    <value>Kazanıldı</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_STATE_PAUSED_NAME" xml:space="preserve">
+    <value>Duraklatıldı</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_STATE_ARCHIVED_NAME" xml:space="preserve">
+    <value>Arşivlendi</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_STATE_UNMEASURABLE_NAME" xml:space="preserve">
+    <value>Ölçülemiyor</value>
+  </data>
 </root>

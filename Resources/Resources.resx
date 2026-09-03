@@ -1799,4 +1799,19 @@
   <data name="LADDER_STANDING_STATE_AWAITING_NAME" xml:space="preserve">
     <value>Awaiting</value>
   </data>
+  <data name="USER_ACHIEVEMENT_STATE_ACTIVE_NAME" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_STATE_EARNED_NAME" xml:space="preserve">
+    <value>Earned</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_STATE_PAUSED_NAME" xml:space="preserve">
+    <value>Paused</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_STATE_ARCHIVED_NAME" xml:space="preserve">
+    <value>Archived</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_STATE_UNMEASURABLE_NAME" xml:space="preserve">
+    <value>Unmeasurable</value>
+  </data>
 </root>

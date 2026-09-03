@@ -1723,4 +1723,19 @@
   <data name="LADDER_STANDING_STATE_AWAITING_NAME" xml:space="preserve">
     <value>Σε αναμονή</value>
   </data>
+  <data name="USER_ACHIEVEMENT_STATE_ACTIVE_NAME" xml:space="preserve">
+    <value>Ενεργό</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_STATE_EARNED_NAME" xml:space="preserve">
+    <value>Κερδισμένο</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_STATE_PAUSED_NAME" xml:space="preserve">
+    <value>Σε παύση</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_STATE_ARCHIVED_NAME" xml:space="preserve">
+    <value>Αρχειοθετημένο</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_STATE_UNMEASURABLE_NAME" xml:space="preserve">
+    <value>Μη μετρήσιμο</value>
+  </data>
 </root>

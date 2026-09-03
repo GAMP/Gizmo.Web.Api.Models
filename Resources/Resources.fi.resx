@@ -693,4 +693,19 @@
   <data name="LADDER_STANDING_STATE_AWAITING_NAME" xml:space="preserve">
     <value>Odottaa</value>
   </data>
+  <data name="USER_ACHIEVEMENT_STATE_ACTIVE_NAME" xml:space="preserve">
+    <value>Aktiivinen</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_STATE_EARNED_NAME" xml:space="preserve">
+    <value>Ansaittu</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_STATE_PAUSED_NAME" xml:space="preserve">
+    <value>Keskeytetty</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_STATE_ARCHIVED_NAME" xml:space="preserve">
+    <value>Arkistoitu</value>
+  </data>
+  <data name="USER_ACHIEVEMENT_STATE_UNMEASURABLE_NAME" xml:space="preserve">
+    <value>Ei mitattavissa</value>
+  </data>
 </root>
