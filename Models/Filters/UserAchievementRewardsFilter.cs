@@ -38,6 +38,17 @@ namespace Gizmo.Web.Api.Models
         public int? ChallengeId { get; init; }
 
         /// <summary>
+        /// Free text matched against the challenge's name and the rewarded product's name.
+        /// </summary>
+        /// <remarks>
+        /// Points and time rewards carry no text of their own, so a search never returns them —
+        /// what a reward is worth is a number, not something to type. Users are selected by id
+        /// rather than searched here.
+        /// </remarks>
+        [MessagePack.Key(5)]
+        public string? SearchValue { get; set; }
+
+        /// <summary>
         /// Return rewards in any of the specified statuses; empty returns every status.
         /// </summary>
         /// <remarks>

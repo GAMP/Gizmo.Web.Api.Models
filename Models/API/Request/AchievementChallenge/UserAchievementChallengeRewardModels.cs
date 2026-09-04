@@ -41,7 +41,8 @@ namespace Gizmo.Web.Api.Models
         public int ProductId { get; init; }
 
         /// <summary>
-        /// Rewarded quantity.
+        /// Rewarded quantity — one, since an earned product reward is a single unit; a reward
+        /// configured for several appears as one entry each.
         /// </summary>
         [MessagePack.Key(1)]
         public int Quantity { get; init; }

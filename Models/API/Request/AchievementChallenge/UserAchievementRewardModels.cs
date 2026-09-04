@@ -113,7 +113,7 @@ namespace Gizmo.Web.Api.Models
         public int ProductId { get; init; }
 
         /// <summary>
-        /// Rewarded quantity.
+        /// Rewarded quantity — one, since a reward row is a single unit.
         /// </summary>
         [MessagePack.Key(1)]
         public int Quantity { get; init; }
