@@ -26,10 +26,16 @@ namespace Gizmo.Web.Api.Models
         public bool AllowCustomValue { get; set; }
 
         /// <summary>
-        /// The minimum allowed amount.
+        /// The minimum allowed amount, null when no minimum is configured.
         /// </summary>
         [Key(2)]
-        public decimal MinimumAmount { get; set; }
+        public decimal? MinimumAmount { get; set; }
+
+        /// <summary>
+        /// The maximum allowed amount, null when no maximum is configured.
+        /// </summary>
+        [Key(3)]
+        public decimal? MaximumAmount { get; set; }
 
         #endregion
     }
