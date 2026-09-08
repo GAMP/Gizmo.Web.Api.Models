@@ -136,6 +136,12 @@ namespace Gizmo.Web.Api.Models
         [Key(20)]
         public bool IsDeleted { get; set; }
 
+        /// <summary>
+        /// Whether the product is not enabled for the branch of the current user session.
+        /// </summary>
+        [Key(21)]
+        public bool IsRestrictedForBranch { get; set; }
+
         #endregion
     }
 }

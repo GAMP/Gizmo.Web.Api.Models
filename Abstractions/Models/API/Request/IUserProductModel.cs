@@ -102,5 +102,10 @@ namespace Gizmo.Web.Api.Models.Abstractions
         /// Whether the product is deleted.
         /// </summary>
         bool IsDeleted { get; set; }
+
+        /// <summary>
+        /// Whether the product is not enabled for the branch of the current user session.
+        /// </summary>
+        bool IsRestrictedForBranch { get; set; }
     }
 }
