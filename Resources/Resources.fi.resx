@@ -744,4 +744,46 @@
   <data name="ACHIEVEMENT_CHALLENGE_REWARD_STATUS_CLAIMED_NAME" xml:space="preserve">
     <value>Lunastettu</value>
   </data>
+  <data name="RESERVE_GUEST_RESULT_SUCCESS_NAME" xml:space="preserve">
+    <value>Guest reserved</value>
+  </data>
+  <data name="RESERVE_GUEST_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
+    <value>The guest was reserved successfully</value>
+  </data>
+  <data name="RESERVE_GUEST_RESULT_INVALID_SLOT_NAME" xml:space="preserve">
+    <value>Invalid slot</value>
+  </data>
+  <data name="RESERVE_GUEST_RESULT_INVALID_SLOT_DESCRIPTION" xml:space="preserve">
+    <value>The specified slot is invalid for the host, or the user group is not allowed on the host</value>
+  </data>
+  <data name="RESERVE_GUEST_RESULT_NO_GUEST_GROUP_NAME" xml:space="preserve">
+    <value>No guest user group</value>
+  </data>
+  <data name="RESERVE_GUEST_RESULT_NO_GUEST_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>No user group that allows guest use could be found</value>
+  </data>
+  <data name="RESERVE_GUEST_RESULT_GUEST_USE_NOT_ALLOWED_NAME" xml:space="preserve">
+    <value>Guest use not allowed</value>
+  </data>
+  <data name="RESERVE_GUEST_RESULT_GUEST_USE_NOT_ALLOWED_DESCRIPTION" xml:space="preserve">
+    <value>The specified user group does not allow guest use</value>
+  </data>
+  <data name="RESERVE_GUEST_RESULT_HOST_OUT_OF_ORDER_NAME" xml:space="preserve">
+    <value>Host out of order</value>
+  </data>
+  <data name="RESERVE_GUEST_RESULT_HOST_OUT_OF_ORDER_DESCRIPTION" xml:space="preserve">
+    <value>A guest cannot be reserved on a host that is out of order</value>
+  </data>
+  <data name="RESERVE_GUEST_RESULT_MAX_RESERVATIONS_REACHED_NAME" xml:space="preserve">
+    <value>Maximum reservations reached</value>
+  </data>
+  <data name="RESERVE_GUEST_RESULT_MAX_RESERVATIONS_REACHED_DESCRIPTION" xml:space="preserve">
+    <value>The host has no free slot left for a guest reservation</value>
+  </data>
+  <data name="RESERVE_GUEST_RESULT_SLOT_IN_USE_NAME" xml:space="preserve">
+    <value>Slot is already in use</value>
+  </data>
+  <data name="RESERVE_GUEST_RESULT_SLOT_IN_USE_DESCRIPTION" xml:space="preserve">
+    <value>The specified slot is already reserved by another guest</value>
+  </data>
 </root>
