@@ -127,5 +127,18 @@ namespace Gizmo.Web.Api.Models
         /// </remarks>
         [MessagePack.Key(6)]
         public required ActionCenterEntryDetailsModel Details { get; init; }
+
+        /// <summary>
+        /// Whether somebody has to deal with this, as opposed to merely being told it.
+        /// </summary>
+        /// <remarks>
+        /// Carried beside <see cref="ExpiresTime"/> rather than read out of it, because they answer
+        /// different questions: this one is whether there is work, that one is when the entry goes.
+        /// They line up today, since what needs doing is what is kept until it is done, but the first
+        /// configurable lifetime or the first task with a deadline separates them, and a manager that
+        /// had been inferring one from the other would quietly start sorting every entry wrongly.
+        /// </remarks>
+        [MessagePack.Key(7)]
+        public bool RequiresAction { get; init; }
     }
 }
