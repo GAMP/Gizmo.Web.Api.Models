@@ -58,6 +58,42 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ACTION_CENTER_ENTRY_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Указывает, что запись центра действий была создана</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>Запись создана</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_RESOLVED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Указывает, что запись центра действий была решена</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_RESOLVED_EVENT_NAME" xml:space="preserve">
+    <value>Запись решена</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_EXPIRED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Указывает, что истёк срок информационной записи центра действий</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_CANCELLED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Указывает, что запись центра действий была отменена, так как её причина больше не действует</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_CANCELLED_EVENT_NAME" xml:space="preserve">
+    <value>Запись отменена</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_EXPIRED_EVENT_NAME" xml:space="preserve">
+    <value>Срок записи истёк</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_VIEW_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Указывает, что оператор прочитал или скрыл запись центра действий</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_VIEW_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Отображение записи изменено</value>
+  </data>
+  <data name="ACTION_CENTER_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>События, связанные с центром действий</value>
+  </data>
+  <data name="ACTION_CENTER_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Центр действий</value>
+  </data>
   <data name="ASSET_CHECKED_IN_EVENT_DESCRIPTION" xml:space="preserve">
     <value>Указывает на регистрацию оборудования</value>
   </data>

@@ -59,6 +59,42 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 
+  <data name="ACTION_CENTER_ENTRY_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica que se creó una entrada en el centro de acciones</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>Entrada creada</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_RESOLVED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica que se resolvió una entrada del centro de acciones</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_RESOLVED_EVENT_NAME" xml:space="preserve">
+    <value>Entrada resuelta</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_EXPIRED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica que expiró una entrada informativa del centro de acciones</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_CANCELLED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica que se canceló una entrada del centro de acciones porque su motivo ya no se aplica</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_CANCELLED_EVENT_NAME" xml:space="preserve">
+    <value>Entrada cancelada</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_EXPIRED_EVENT_NAME" xml:space="preserve">
+    <value>Entrada expirada</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_VIEW_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica que un operador leyó u ocultó una entrada del centro de acciones</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_VIEW_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Vista de la entrada cambiada</value>
+  </data>
+  <data name="ACTION_CENTER_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Eventos relacionados con el centro de acciones</value>
+  </data>
+  <data name="ACTION_CENTER_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Centro de acciones</value>
+  </data>
   <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_DESCRIPTION" xml:space="preserve">
     <value>No se pudo eliminar la categoría de aplicación</value>
   </data>

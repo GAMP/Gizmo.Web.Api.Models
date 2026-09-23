@@ -52,6 +52,8 @@ namespace Gizmo.Web.Api
 
             options.Converters.Add(new MessagePackUnionMessageJsonConverter<UserAchievementRewardDetailsModel>("Type", "Model"));
 
+            options.Converters.Add(new MessagePackUnionMessageJsonConverter<ActionCenterEntryDetailsModel>("Type", "Model"));
+
             return options;
         }
 

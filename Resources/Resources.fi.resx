@@ -30,6 +30,18 @@
   <resheader name="version"><value>2.0</value></resheader>
   <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
   <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="ACTION_CENTER_ENTRY_CREATED_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee, että toimintokeskuksen merkintä luotiin</value></data>
+  <data name="ACTION_CENTER_ENTRY_CREATED_EVENT_NAME" xml:space="preserve"><value>Merkintä luotu</value></data>
+  <data name="ACTION_CENTER_ENTRY_RESOLVED_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee, että toimintokeskuksen merkintä ratkaistiin</value></data>
+  <data name="ACTION_CENTER_ENTRY_RESOLVED_EVENT_NAME" xml:space="preserve"><value>Merkintä ratkaistu</value></data>
+  <data name="ACTION_CENTER_ENTRY_EXPIRED_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee, että toimintokeskuksen tiedottava merkintä vanheni</value></data>
+  <data name="ACTION_CENTER_ENTRY_CANCELLED_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee, että toimintokeskuksen merkintä peruutettiin, koska sen syy ei enää päde</value></data>
+  <data name="ACTION_CENTER_ENTRY_CANCELLED_EVENT_NAME" xml:space="preserve"><value>Merkintä peruutettu</value></data>
+  <data name="ACTION_CENTER_ENTRY_EXPIRED_EVENT_NAME" xml:space="preserve"><value>Merkintä vanheni</value></data>
+  <data name="ACTION_CENTER_ENTRY_VIEW_CHANGED_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee, että operaattori luki tai piilotti toimintokeskuksen merkinnän</value></data>
+  <data name="ACTION_CENTER_ENTRY_VIEW_CHANGED_EVENT_NAME" xml:space="preserve"><value>Merkinnän näkymä muuttui</value></data>
+  <data name="ACTION_CENTER_EVENT_GROUP_DESCRIPTION" xml:space="preserve"><value>Toimintokeskukseen liittyvät tapahtumat</value></data>
+  <data name="ACTION_CENTER_EVENT_GROUP_NAME" xml:space="preserve"><value>Toimintokeskus</value></data>
   <data name="ASSISTANCE_REQUEST_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee avustuspyyntöjen tilamuutoksen</value></data>
   <data name="ASSISTANCE_REQUEST_CHANGE_EVENT_EVENT_NAME" xml:space="preserve"><value>Muutos</value></data>
   <data name="ASSISTANCE_REQUEST_CREATED_EVENT_DESCRIPTION" xml:space="preserve"><value>Ilmaisee avustuspyynnön luomisen</value></data>
