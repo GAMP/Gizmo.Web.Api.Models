@@ -21,7 +21,6 @@ namespace Gizmo.Web.Api.Models
         /// UTC event time.
         /// </summary>
         [MessagePack.Key(1)]
-        [Sortable]
         public DateTime CreatedTime { get; init; }
 
         /// <summary>
