@@ -58,6 +58,42 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ACTION_CENTER_ENTRY_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει ότι δημιουργήθηκε μια καταχώριση στο κέντρο ενεργειών</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>Η καταχώριση δημιουργήθηκε</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_RESOLVED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει ότι μια καταχώριση του κέντρου ενεργειών επιλύθηκε</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_RESOLVED_EVENT_NAME" xml:space="preserve">
+    <value>Η καταχώριση επιλύθηκε</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_EXPIRED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει ότι έληξε μια ενημερωτική καταχώριση του κέντρου ενεργειών</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_CANCELLED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει ότι μια καταχώριση του κέντρου ενεργειών ακυρώθηκε επειδή ο λόγος της δεν ισχύει πλέον</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_CANCELLED_EVENT_NAME" xml:space="preserve">
+    <value>Η καταχώριση ακυρώθηκε</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_EXPIRED_EVENT_NAME" xml:space="preserve">
+    <value>Η καταχώριση έληξε</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_VIEW_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Υποδεικνύει ότι ένας χειριστής διάβασε ή απέκρυψε μια καταχώριση του κέντρου ενεργειών</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_VIEW_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Η προβολή της καταχώρισης άλλαξε</value>
+  </data>
+  <data name="ACTION_CENTER_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Συμβάντα σχετικά με το κέντρο ενεργειών</value>
+  </data>
+  <data name="ACTION_CENTER_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Κέντρο ενεργειών</value>
+  </data>
   <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_DESCRIPTION" xml:space="preserve">
     <value>Αποτυχία διαγραφής κατηγορίας εφαρμογής</value>
   </data>

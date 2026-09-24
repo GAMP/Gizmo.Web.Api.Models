@@ -58,6 +58,42 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ACTION_CENTER_ENTRY_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>يشير إلى أنه تم إنشاء إدخال في مركز الإجراءات</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>تم إنشاء الإدخال</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_RESOLVED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>يشير إلى أنه تم حل إدخال في مركز الإجراءات</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_RESOLVED_EVENT_NAME" xml:space="preserve">
+    <value>تم حل الإدخال</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_EXPIRED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>يشير إلى انتهاء صلاحية إدخال إعلامي في مركز الإجراءات</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_CANCELLED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>يشير إلى أنه تم إلغاء إدخال في مركز الإجراءات لأن سببه لم يعد ساريًا</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_CANCELLED_EVENT_NAME" xml:space="preserve">
+    <value>تم إلغاء الإدخال</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_EXPIRED_EVENT_NAME" xml:space="preserve">
+    <value>انتهت صلاحية الإدخال</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_VIEW_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>يشير إلى أن المشغّل قرأ إدخال مركز الإجراءات أو أخفاه</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_VIEW_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>تم تغيير عرض الإدخال</value>
+  </data>
+  <data name="ACTION_CENTER_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>أحداث متعلقة بمركز الإجراءات</value>
+  </data>
+  <data name="ACTION_CENTER_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>مركز الإجراءات</value>
+  </data>
   <data name="ASSET_CHECKED_IN_EVENT_DESCRIPTION" xml:space="preserve">
     <value>يشير إلى إعادة المعدات</value>
   </data>

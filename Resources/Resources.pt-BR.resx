@@ -58,6 +58,42 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ACTION_CENTER_ENTRY_CREATED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica que uma entrada da central de ações foi criada</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_CREATED_EVENT_NAME" xml:space="preserve">
+    <value>Entrada criada</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_RESOLVED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica que uma entrada da central de ações foi resolvida</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_RESOLVED_EVENT_NAME" xml:space="preserve">
+    <value>Entrada resolvida</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_EXPIRED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica que uma entrada informativa da central de ações expirou</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_CANCELLED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica que uma entrada da central de ações foi cancelada porque seu motivo não se aplica mais</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_CANCELLED_EVENT_NAME" xml:space="preserve">
+    <value>Entrada cancelada</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_EXPIRED_EVENT_NAME" xml:space="preserve">
+    <value>Entrada expirada</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_VIEW_CHANGED_EVENT_DESCRIPTION" xml:space="preserve">
+    <value>Indica que um operador leu ou ocultou uma entrada da central de ações</value>
+  </data>
+  <data name="ACTION_CENTER_ENTRY_VIEW_CHANGED_EVENT_NAME" xml:space="preserve">
+    <value>Exibição da entrada alterada</value>
+  </data>
+  <data name="ACTION_CENTER_EVENT_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Eventos relacionados à central de ações</value>
+  </data>
+  <data name="ACTION_CENTER_EVENT_GROUP_NAME" xml:space="preserve">
+    <value>Central de ações</value>
+  </data>
   <data name="ASSISTANCE_REQUEST_CHANGE_EVENT_DESCRIPTION" xml:space="preserve"> 
     <value>Indica mudança no status da solicitação de assistência</value> 
   </data> 
