@@ -19,5 +19,10 @@
         /// Specified user still has outstanding invoices.
         /// </summary>
         Outstanding = 2,
+
+        /// <summary>
+        /// Specified guest user is still waiting in a waiting line. Remove the guest from the line first.
+        /// </summary>
+        InWaitingLine = 3,
     }
 }
