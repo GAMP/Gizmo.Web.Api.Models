@@ -1,13 +1,13 @@
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// A station is not enforcing its security while somebody is using it.
+    /// A station stopped enforcing its security while somebody was using it.
     /// </summary>
     /// <remarks>
-    /// Unlike every other kind, this describes a condition rather than a moment, so it does not expire:
-    /// it lasts exactly as long as the condition, and closes when the station reports security back on.
-    /// An unsecured station with nobody on it raises nothing, since there is no one to take advantage
-    /// of it.
+    /// A moment rather than a condition: it says security was turned off under a running session, and
+    /// nothing about whether it is still off by the time anybody reads it, so it expires like any other
+    /// notice. An unsecured station with nobody on it raises nothing, since there is no one to take
+    /// advantage of it.
     /// <para>
     /// The station is the subject, so the station is all it carries. Who is using it is left to the
     /// manager's host active user lookup, for two reasons: a user here would only be whoever happens
@@ -25,5 +25,17 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(0)]
         public int HostId { get; init; }
+
+        /// <summary>
+        /// The operator who turned security off; null when the station reported it on its own.
+        /// </summary>
+        /// <remarks>
+        /// Carried rather than filtered on, for the reason a login carries its operator: one message
+        /// reaches the whole branch and the server cannot tailor it per recipient, so the operator who
+        /// did it suppresses their own copy. Read from the request that made the change, since the
+        /// property itself records nobody.
+        /// </remarks>
+        [MessagePack.Key(1)]
+        public int? OperatorId { get; init; }
     }
 }
