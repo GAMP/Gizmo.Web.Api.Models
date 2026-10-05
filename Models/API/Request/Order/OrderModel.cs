@@ -153,5 +153,17 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(22)]
         public int PointsTotal { get; init; }
+
+        /// <summary>
+        /// The date that the order was canceled.
+        /// </summary>
+        [MessagePack.Key(23)]
+        public DateTime? CanceledTime { get; init; }
+
+        /// <summary>
+        /// The Id of the user who canceled the order.
+        /// </summary>
+        [MessagePack.Key(24)]
+        public int? CanceledById { get; init; }
     }
 }

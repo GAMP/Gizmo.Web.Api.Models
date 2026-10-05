@@ -132,5 +132,17 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(19)]
         public int? HostId { get; set; }
+
+        /// <summary>
+        /// The date that the invoice was voided.
+        /// </summary>
+        [MessagePack.Key(20)]
+        public DateTime? VoidDate { get; set; }
+
+        /// <summary>
+        /// The Id of the operator who voided the invoice.
+        /// </summary>
+        [MessagePack.Key(21)]
+        public int? VoidOperatorId { get; set; }
     }
 }

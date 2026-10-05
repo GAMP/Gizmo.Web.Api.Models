@@ -52,5 +52,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(6)]
         public int Id { get; set; }
+
+        /// <summary>
+        /// The Id of the user who created the payment.
+        /// </summary>
+        [MessagePack.Key(7)]
+        public int? CreatedById { get; init; }
     }
 }
