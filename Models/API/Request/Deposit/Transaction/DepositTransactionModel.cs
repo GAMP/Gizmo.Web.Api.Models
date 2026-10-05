@@ -100,5 +100,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(14)]
         public int? BranchId { get; set; }
+
+        /// <summary>
+        /// The Id of the operator who voided the deposit transaction.
+        /// </summary>
+        [MessagePack.Key(15)]
+        public int? VoidOperatorId { get; set; }
     }
 }
