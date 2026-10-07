@@ -87,5 +87,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(12)]
         public int? OperatorId { get; set; }
+
+        /// <summary>
+        /// Return voided orders (at least one invoice of the order is voided).
+        /// </summary>
+        [MessagePack.Key(13)]
+        public bool? IsVoided { get; set; }
     }
 }
