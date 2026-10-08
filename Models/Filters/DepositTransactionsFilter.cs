@@ -67,6 +67,12 @@ namespace Gizmo.Web.Api.Models
         [Key(8)]
         public int? PaymentMethodId { get; set; }
 
+        /// <summary>
+        /// Return voided deposit transactions.
+        /// </summary>
+        [Key(9)]
+        public bool? IsVoided { get; set; }
+
         #endregion
     }
 }
