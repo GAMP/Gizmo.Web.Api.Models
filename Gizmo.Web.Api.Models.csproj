@@ -25,8 +25,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MessagePack" Version="2.5.301" />
-    <PackageReference Include="Microsoft.AspNetCore.SignalR.Protocols.Json" Version="10.0.6" />
+    <PackageReference Include="MessagePack" Version="2.5.303" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Protocols.Json" Version="10.0.13" />
     <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="10.0.6" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
   </ItemGroup>
