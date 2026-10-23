@@ -75,6 +75,18 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(9)]
         public string? SearchValue { get; set; }
 
+        /// <summary>
+        /// Return users with birth date greater than or equal to the specified date.
+        /// </summary>
+        [MessagePack.Key(10)]
+        public DateTime? BirthDateFrom { get; set; }
+
+        /// <summary>
+        /// Return users with birth date less than or equal to the specified date.
+        /// </summary>
+        [MessagePack.Key(11)]
+        public DateTime? BirthDateTo { get; set; }
+
         #endregion
     }
 }
