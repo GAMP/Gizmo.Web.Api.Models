@@ -17,13 +17,13 @@ namespace Gizmo.Web.Api.Models
         /// <summary>
         /// Partially paid.
         /// </summary>
-        [Name("Unpaid", nameof(Resources.INVOICE_STATUS_PARTIALLY_PAID_NAME))]
+        [Name("Partially Paid", nameof(Resources.INVOICE_STATUS_PARTIALLY_PAID_NAME))]
         PartiallyPaid = 1,
 
         /// <summary>
         /// Paid.
         /// </summary>
-        [Name("Unpaid", nameof(Resources.INVOICE_STATUS_PAID_NAME))]
+        [Name("Paid", nameof(Resources.INVOICE_STATUS_PAID_NAME))]
         Paid = 2,
     }
 }
