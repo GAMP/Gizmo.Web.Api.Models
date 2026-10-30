@@ -31,5 +31,15 @@ namespace Gizmo.Web.Api.Models
         {
             get; init;
         } = string.Empty;
+
+        /// <summary>
+        /// User information required to be filled after login.
+        /// </summary>
+        [Key(2)]
+        [JsonPropertyOrder(2)]
+        public UserInfoTypes RequiredInfo
+        {
+            get; init;
+        }
     }
 }
