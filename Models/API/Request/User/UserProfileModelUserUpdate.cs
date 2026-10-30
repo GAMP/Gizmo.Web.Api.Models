@@ -11,7 +11,7 @@ namespace Gizmo.Web.Api.Models
     /// <remarks>
     /// A null property is not changed.
     /// </remarks>
-    [Serializable, MessagePackObject]
+    [MessagePackObject]
     public sealed class UserProfileModelUserUpdate
     {
         /// <summary>

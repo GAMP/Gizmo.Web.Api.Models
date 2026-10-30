@@ -13,11 +13,9 @@ namespace Gizmo.Web.Api.Models
     /// <remarks>
     /// This model is used by the mobile app before user login.
     /// </remarks>
-    [Serializable, MessagePackObject]
+    [MessagePackObject]
     public sealed class MobileOptionsModel
     {
-        #region PROPERTIES
-
         /// <summary>
         /// Whether mobile app user registration is enabled.
         /// </summary>
@@ -59,7 +57,5 @@ namespace Gizmo.Web.Api.Models
         [Key(5)]
         [JsonPropertyOrder(5)]
         public PasswordValidationOptions PasswordValidation { get; init; } = null!;
-
-        #endregion
     }
 }
