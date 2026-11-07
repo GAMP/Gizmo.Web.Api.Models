@@ -9,7 +9,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Reservation of the current user as seen by the user app.
     /// </summary>
-    [Serializable, MessagePackObject]
+    [MessagePackObject]
     public sealed class UserReservationModel : IWebApiModel, IModelIntIdentifier
     {
         /// <summary>

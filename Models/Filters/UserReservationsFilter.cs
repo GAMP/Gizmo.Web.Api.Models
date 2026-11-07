@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Gizmo.Web.Api.Models.Abstractions;
 using MessagePack;
 
@@ -8,7 +7,7 @@ namespace Gizmo.Web.Api.Models
     /// <summary>
     /// Filters that can be applied when searching for the reservations of the current user.
     /// </summary>
-    [Serializable, MessagePackObject]
+    [MessagePackObject]
     public sealed class UserReservationsFilter : IModelFilter<UserReservationModel>
     {
         /// <summary>
