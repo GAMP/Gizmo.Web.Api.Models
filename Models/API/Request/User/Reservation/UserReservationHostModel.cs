@@ -4,7 +4,7 @@ using MessagePack;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// Host of the reservation as seen by the user app.
+    /// Host of the reservation of the current user.
     /// </summary>
     [MessagePackObject]
     public sealed class UserReservationHostModel : IWebApiModel
