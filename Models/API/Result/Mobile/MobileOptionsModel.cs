@@ -1,4 +1,5 @@
 using Gizmo.Client.Options;
+using Gizmo.UI;
 
 using MessagePack;
 
@@ -57,5 +58,15 @@ namespace Gizmo.Web.Api.Models
         [Key(5)]
         [JsonPropertyOrder(5)]
         public PasswordValidationOptions PasswordValidation { get; init; } = null!;
+
+        /// <summary>
+        /// Currency options.
+        /// </summary>
+        /// <remarks>
+        /// Filled from the server CURRENCY options, same as the client options currency.
+        /// </remarks>
+        [Key(6)]
+        [JsonPropertyOrder(6)]
+        public CurrencyOptions Currency { get; init; } = null!;
     }
 }
