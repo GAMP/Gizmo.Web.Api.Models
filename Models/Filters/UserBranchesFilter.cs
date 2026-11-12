@@ -21,11 +21,5 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [Key(1)]
         public List<string> Expand { get; set; } = new();
-
-        /// <summary>
-        /// Return branches of the specified city, compared trimmed and case-insensitive; null or empty returns all cities.
-        /// </summary>
-        [Key(2)]
-        public string? City { get; set; }
     }
 }
