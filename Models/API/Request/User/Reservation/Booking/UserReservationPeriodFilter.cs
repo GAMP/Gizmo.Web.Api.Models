@@ -8,7 +8,7 @@ namespace Gizmo.Web.Api.Models
     /// Club and period of the host availability and host group prices of the current user.
     /// </summary>
     [MessagePackObject]
-    public sealed class UserReservationPeriodFilter : IWebApiModel
+    public sealed class UserReservationPeriodFilter : IWebApiModel, IUriParametersQuery
     {
         /// <summary>
         /// Branch (club) id.
