@@ -679,10 +679,10 @@
     <comment>License instance identifier sourced from machine hardware (CPU/disk/etc fingerprint). Treat "Hardware id" as a domain term; keep "id" lowercase as a stylistic choice. In target languages, may be transliterated or kept as-is.</comment>
   </data>
   <data name="INSTANCE_ID_TYPE_INSTANCE_ID_DESCRIPTION" xml:space="preserve">
-    <value>Instance id</value>
+    <value>Installation id</value>
   </data>
   <data name="INSTANCE_ID_TYPE_INSTANCE_ID_NAME" xml:space="preserve">
-    <value>Instance id</value>
+    <value>Installation id</value>
   </data>
   <data name="INVENTORY_ADJUSTMENT_REASONS_DAMAGED" xml:space="preserve">
     <value>Damaged packaging</value>

@@ -1270,10 +1270,10 @@
     <value>Estado de bloqueo cambiado</value>
   </data>
   <data name="INSTANCE_ID_TYPE_INSTANCE_ID_DESCRIPTION" xml:space="preserve">
-    <value>Id de instancia</value>
+    <value>Id de instalación</value>
   </data>
   <data name="INSTANCE_ID_TYPE_INSTANCE_ID_NAME" xml:space="preserve">
-    <value>Id de instancia</value>
+    <value>Id de instalación</value>
   </data>
   <data name="INVENTORY_ADJUSTMENT_REASONS_DAMAGED" xml:space="preserve">
     <value>Empaque dañado</value>

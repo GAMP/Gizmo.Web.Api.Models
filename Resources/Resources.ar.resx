@@ -464,10 +464,10 @@
     <value>معرّف الجهاز</value> 
   </data> 
   <data name="INSTANCE_ID_TYPE_INSTANCE_ID_DESCRIPTION" xml:space="preserve"> 
-    <value>معرّف النسخة</value> 
+    <value>معرّف التثبيت</value> 
   </data> 
   <data name="INSTANCE_ID_TYPE_INSTANCE_ID_NAME" xml:space="preserve"> 
-    <value>معرّف النسخة</value> 
+    <value>معرّف التثبيت</value> 
   </data> 
   <data name="INVENTORY_ADJUSTMENT_REASONS_DAMAGED" xml:space="preserve"> 
     <value>تلف في التغليف</value> 

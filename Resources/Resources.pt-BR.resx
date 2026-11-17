@@ -446,10 +446,10 @@
     <value>Identificação do hardware</value> 
   </data> 
   <data name="INSTANCE_ID_TYPE_INSTANCE_ID_DESCRIPTION" xml:space="preserve"> 
-    <value>ID da instância</value> 
+    <value>Id da instalação</value> 
   </data> 
   <data name="INSTANCE_ID_TYPE_INSTANCE_ID_NAME" xml:space="preserve"> 
-    <value>ID da instância</value> 
+    <value>Id da instalação</value> 
   </data> 
   <data name="INVENTORY_ADJUSTMENT_REASONS_DAMAGED" xml:space="preserve"> 
     <value>Embalagem danificada</value> 

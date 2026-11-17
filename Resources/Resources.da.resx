@@ -166,8 +166,8 @@
   <data name="INSTANCE_EVENT_GROUP_NAME" xml:space="preserve"><value>Instans</value></data>
   <data name="INSTANCE_ID_TYPE_HARDWARE_ID_DESCRIPTION" xml:space="preserve"><value>Hardware-id</value></data>
   <data name="INSTANCE_ID_TYPE_HARDWARE_ID_NAME" xml:space="preserve"><value>Hardware-id</value></data>
-  <data name="INSTANCE_ID_TYPE_INSTANCE_ID_DESCRIPTION" xml:space="preserve"><value>Instans-id</value></data>
-  <data name="INSTANCE_ID_TYPE_INSTANCE_ID_NAME" xml:space="preserve"><value>Instans-id</value></data>
+  <data name="INSTANCE_ID_TYPE_INSTANCE_ID_DESCRIPTION" xml:space="preserve"><value>Installations-id</value></data>
+  <data name="INSTANCE_ID_TYPE_INSTANCE_ID_NAME" xml:space="preserve"><value>Installations-id</value></data>
   <data name="INVENTORY_ADJUSTMENT_REASONS_DAMAGED" xml:space="preserve"><value>Beskadiget emballage</value></data>
   <data name="INVENTORY_ADJUSTMENT_REASONS_DAMAGED_ITEM" xml:space="preserve"><value>Beskadiget vare</value></data>
   <data name="INVENTORY_ADJUSTMENT_REASONS_EXPIRED" xml:space="preserve"><value>Udløbet</value></data>
