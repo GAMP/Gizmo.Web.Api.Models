@@ -8,7 +8,7 @@ namespace Gizmo.Web.Api.Models
     /// Filter to get the state of a payment of the current user.
     /// </summary>
     [MessagePackObject]
-    public sealed class UserPaymentIntentFilter : IWebApiModel
+    public sealed class UserPaymentIntentFilter : IWebApiModel, IUriParametersQuery
     {
         /// <summary>
         /// Payment intent id.
