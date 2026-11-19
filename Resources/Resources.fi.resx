@@ -166,8 +166,8 @@
   <data name="INSTANCE_EVENT_GROUP_NAME" xml:space="preserve"><value>Instanssi</value></data>
   <data name="INSTANCE_ID_TYPE_HARDWARE_ID_DESCRIPTION" xml:space="preserve"><value>Laitteistotunnus</value></data>
   <data name="INSTANCE_ID_TYPE_HARDWARE_ID_NAME" xml:space="preserve"><value>Laitteistotunnus</value></data>
-  <data name="INSTANCE_ID_TYPE_INSTANCE_ID_DESCRIPTION" xml:space="preserve"><value>Instanssitunnus</value></data>
-  <data name="INSTANCE_ID_TYPE_INSTANCE_ID_NAME" xml:space="preserve"><value>Instanssitunnus</value></data>
+  <data name="INSTANCE_ID_TYPE_INSTANCE_ID_DESCRIPTION" xml:space="preserve"><value>Asennustunnus</value></data>
+  <data name="INSTANCE_ID_TYPE_INSTANCE_ID_NAME" xml:space="preserve"><value>Asennustunnus</value></data>
   <data name="INVENTORY_ADJUSTMENT_REASONS_DAMAGED" xml:space="preserve"><value>Vaurioitunut pakkaus</value></data>
   <data name="INVENTORY_ADJUSTMENT_REASONS_DAMAGED_ITEM" xml:space="preserve"><value>Vaurioitunut tuote</value></data>
   <data name="INVENTORY_ADJUSTMENT_REASONS_EXPIRED" xml:space="preserve"><value>Vanhentunut</value></data>
@@ -797,5 +797,47 @@
   </data>
   <data name="RESERVE_GUEST_RESULT_SLOT_IN_USE_DESCRIPTION" xml:space="preserve">
     <value>The specified slot is already reserved by another guest</value>
+  </data>
+  <data name="INSTANCE_BINDING_RESULT_SUCCESS_NAME" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="INSTANCE_BINDING_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
+    <value>Instance bound successfully</value>
+  </data>
+  <data name="INSTANCE_BINDING_RESULT_NOT_SUPPORTED_NAME" xml:space="preserve">
+    <value>Not supported</value>
+  </data>
+  <data name="INSTANCE_BINDING_RESULT_NOT_SUPPORTED_DESCRIPTION" xml:space="preserve">
+    <value>Instance binding is not supported by the current license authorization version</value>
+  </data>
+  <data name="INSTANCE_BINDING_RESULT_UNAUTHORIZED_NAME" xml:space="preserve">
+    <value>Unauthorized</value>
+  </data>
+  <data name="INSTANCE_BINDING_RESULT_UNAUTHORIZED_DESCRIPTION" xml:space="preserve">
+    <value>Sign in is required</value>
+  </data>
+  <data name="INSTANCE_BINDING_RESULT_NETWORK_ERROR_NAME" xml:space="preserve">
+    <value>Network error</value>
+  </data>
+  <data name="INSTANCE_BINDING_RESULT_NETWORK_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>Failed due to a network error</value>
+  </data>
+  <data name="INSTANCE_BINDING_RESULT_INSTANCE_NOT_FOUND_NAME" xml:space="preserve">
+    <value>Instance not found</value>
+  </data>
+  <data name="INSTANCE_BINDING_RESULT_INSTANCE_NOT_FOUND_DESCRIPTION" xml:space="preserve">
+    <value>The instance does not exist or belongs to another account</value>
+  </data>
+  <data name="INSTANCE_BINDING_RESULT_INSTANCE_UNAVAILABLE_NAME" xml:space="preserve">
+    <value>Instance unavailable</value>
+  </data>
+  <data name="INSTANCE_BINDING_RESULT_INSTANCE_UNAVAILABLE_DESCRIPTION" xml:space="preserve">
+    <value>The instance is already bound to a hardware id and cannot be used</value>
+  </data>
+  <data name="INSTANCE_BINDING_RESULT_ERROR_NAME" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="INSTANCE_BINDING_RESULT_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>Failed due to an error</value>
   </data>
 </root>

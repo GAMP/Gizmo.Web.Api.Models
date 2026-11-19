@@ -70,5 +70,14 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [MessagePack.Key(9)]
         public bool? IsLocal { get; init; }
+
+        /// <summary>
+        /// Gets the instance authorization version.
+        /// </summary>
+        /// <remarks>
+        /// Not set by servers that do not report the version, such servers use <see cref="InstanceAuthorizationVersion.V1"/>.
+        /// </remarks>
+        [MessagePack.Key(10)]
+        public InstanceAuthorizationVersion? Version { get; init; }
     }
 }
