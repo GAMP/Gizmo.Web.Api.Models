@@ -18,7 +18,7 @@ namespace Gizmo.Web.Api.Models
         public UserReservationBookResult Result { get; init; }
 
         /// <summary>
-        /// Id of the created reservation; set only when the result is <see cref="UserReservationBookResult.Success"/>.
+        /// Id of the created reservation; set when the result is <see cref="UserReservationBookResult.Success"/> or <see cref="UserReservationBookResult.PaymentNotStarted"/>.
         /// </summary>
         [Key(1)]
         public int? ReservationId { get; init; }
@@ -28,5 +28,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [Key(2)]
         public IEnumerable<int> UnavailableHostIds { get; init; } = Enumerable.Empty<int>();
+
+        /// <summary>
+        /// Online payment of the booking; set when the online payment is started.
+        /// </summary>
+        [Key(3)]
+        public UserPaymentIntentModel? Payment { get; init; }
     }
 }
