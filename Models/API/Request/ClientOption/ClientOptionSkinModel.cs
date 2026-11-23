@@ -80,6 +80,9 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(18)]
         public int LoginRotatorRotateEvery { get; set; }
 
+        [MessagePack.Key(42)]
+        public LoginRotatorTransition LoginRotatorTransition { get; set; }
+
         #endregion
 
         #region PopularItems
