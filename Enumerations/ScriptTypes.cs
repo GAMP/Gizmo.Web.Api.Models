@@ -1,4 +1,6 @@
-﻿namespace Gizmo.Web.Api.Models
+﻿using System;
+
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Task Script enumeration type.
@@ -18,6 +20,7 @@
         /// <summary>
         /// Auto it script.
         /// </summary>
+        [Obsolete("AutoIt scripts are no longer supported.")]
         AutoItScript,
 
         /// <summary>
