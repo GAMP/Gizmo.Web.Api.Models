@@ -1,4 +1,5 @@
 ﻿using MessagePack;
+using System.Text.Json.Serialization;
 
 namespace Gizmo.Web.Api.Models
 {
@@ -11,6 +12,7 @@ namespace Gizmo.Web.Api.Models
     [Union(0,typeof(WebApiError))]
     [Union(1, typeof(WebApiValidationError))]
     [Union(2, typeof(WebApiValidationErrors))]
+    [JsonConverter(typeof(WebApiErrorBaseJsonConverter))]
     public abstract class WebApiErrorBase
     {
     }
