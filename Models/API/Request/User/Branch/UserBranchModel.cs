@@ -106,5 +106,17 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [Key(15)]
         public string? BusinessDayEnd { get; init; }
+
+        /// <summary>
+        /// Latitude; 0 together with <see cref="Longitude"/> means the branch has no point.
+        /// </summary>
+        [Key(16)]
+        public decimal Latitude { get; init; }
+
+        /// <summary>
+        /// Longitude; 0 together with <see cref="Latitude"/> means the branch has no point.
+        /// </summary>
+        [Key(17)]
+        public decimal Longitude { get; init; }
     }
 }

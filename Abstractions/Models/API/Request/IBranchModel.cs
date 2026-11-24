@@ -170,5 +170,15 @@ namespace Gizmo.Web.Api.Models.Abstractions
         ///  Gets if branch is deleted.
         /// </summary>
         public bool IsDeleted { get; }
+
+        /// <summary>
+        /// Gets branch latitude, 0 together with <see cref="Longitude"/> means no point.
+        /// </summary>
+        public decimal Latitude { get; }
+
+        /// <summary>
+        /// Gets branch longitude, 0 together with <see cref="Latitude"/> means no point.
+        /// </summary>
+        public decimal Longitude { get; }
     }
 }
