@@ -5,11 +5,11 @@ using Gizmo.Web.Api.Models.Abstractions;
 namespace Gizmo.Web.Api.Models
 {
     /// <summary>
-    /// One entry of a conversation's history: a message or an event.
+    /// One entry of a conversation's history: a message, a tool call, a tool result or an event.
     /// </summary>
     /// <remarks>
     /// Entries are ordered by <see cref="Id"/>, which the server assigns and which increases within a conversation.
-    /// One <c>type</c> discriminator covers messages and every event kind. In JSON it comes first.
+    /// One <c>type</c> discriminator covers messages, tool lines and every event kind. In JSON it comes first.
     /// </remarks>
     [JsonPolymorphic(TypeDiscriminatorPropertyName = "type")]
     [JsonDerivedType(typeof(ConversationMessageModel), "message")]
@@ -22,6 +22,8 @@ namespace Gizmo.Web.Api.Models
     [JsonDerivedType(typeof(ConversationHandedOffEventModel), "handedOff")]
     [JsonDerivedType(typeof(ConversationMessageEditedEventModel), "messageEdited")]
     [JsonDerivedType(typeof(ConversationMessageDeletedEventModel), "messageDeleted")]
+    [JsonDerivedType(typeof(ConversationToolCallModel), "toolCall")]
+    [JsonDerivedType(typeof(ConversationToolResultModel), "toolResult")]
     [MessagePack.Union(0, typeof(ConversationMessageModel))]
     [MessagePack.Union(1, typeof(ConversationJoinedEventModel))]
     [MessagePack.Union(2, typeof(ConversationAddedEventModel))]
@@ -32,6 +34,8 @@ namespace Gizmo.Web.Api.Models
     [MessagePack.Union(7, typeof(ConversationHandedOffEventModel))]
     [MessagePack.Union(8, typeof(ConversationMessageEditedEventModel))]
     [MessagePack.Union(9, typeof(ConversationMessageDeletedEventModel))]
+    [MessagePack.Union(10, typeof(ConversationToolCallModel))]
+    [MessagePack.Union(11, typeof(ConversationToolResultModel))]
     public abstract class ConversationEntryModel : IWebApiModel
     {
         /// <summary>
