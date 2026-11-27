@@ -13,8 +13,10 @@ namespace Gizmo.Web.Api.Models
     [JsonPolymorphic(TypeDiscriminatorPropertyName = "kind")]
     [JsonDerivedType(typeof(ConversationPersonReferenceModel), "person")]
     [JsonDerivedType(typeof(ConversationAIReferenceModel), "ai")]
+    [JsonDerivedType(typeof(ConversationExternalReferenceModel), "external")]
     [MessagePack.Union(0, typeof(ConversationPersonReferenceModel))]
     [MessagePack.Union(1, typeof(ConversationAIReferenceModel))]
+    [MessagePack.Union(2, typeof(ConversationExternalReferenceModel))]
     public abstract class ConversationReferenceModel : IWebApiModel
     {
         /// <summary>

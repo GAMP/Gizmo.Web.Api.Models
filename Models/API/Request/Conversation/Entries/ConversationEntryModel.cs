@@ -19,6 +19,9 @@ namespace Gizmo.Web.Api.Models
     [JsonDerivedType(typeof(ConversationClosedEventModel), "closed")]
     [JsonDerivedType(typeof(ConversationReopenedEventModel), "reopened")]
     [JsonDerivedType(typeof(ConversationAITurnFailedEventModel), "aiTurnFailed")]
+    [JsonDerivedType(typeof(ConversationHandedOffEventModel), "handedOff")]
+    [JsonDerivedType(typeof(ConversationMessageEditedEventModel), "messageEdited")]
+    [JsonDerivedType(typeof(ConversationMessageDeletedEventModel), "messageDeleted")]
     [MessagePack.Union(0, typeof(ConversationMessageModel))]
     [MessagePack.Union(1, typeof(ConversationJoinedEventModel))]
     [MessagePack.Union(2, typeof(ConversationAddedEventModel))]
@@ -26,6 +29,9 @@ namespace Gizmo.Web.Api.Models
     [MessagePack.Union(4, typeof(ConversationClosedEventModel))]
     [MessagePack.Union(5, typeof(ConversationReopenedEventModel))]
     [MessagePack.Union(6, typeof(ConversationAITurnFailedEventModel))]
+    [MessagePack.Union(7, typeof(ConversationHandedOffEventModel))]
+    [MessagePack.Union(8, typeof(ConversationMessageEditedEventModel))]
+    [MessagePack.Union(9, typeof(ConversationMessageDeletedEventModel))]
     public abstract class ConversationEntryModel : IWebApiModel
     {
         /// <summary>
