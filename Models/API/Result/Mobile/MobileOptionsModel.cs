@@ -68,5 +68,22 @@ namespace Gizmo.Web.Api.Models
         [Key(6)]
         [JsonPropertyOrder(6)]
         public CurrencyOptions Currency { get; init; } = null!;
+
+        /// <summary>
+        /// Active map provider.
+        /// </summary>
+        /// <remarks>
+        /// <see cref="MapProvider.None"/> when no provider is active or its key is empty.
+        /// </remarks>
+        [Key(7)]
+        [JsonPropertyOrder(7)]
+        public MapProvider MapProvider { get; init; }
+
+        /// <summary>
+        /// Api key of the active map provider; null when <see cref="MapProvider"/> is <see cref="MapProvider.None"/>.
+        /// </summary>
+        [Key(8)]
+        [JsonPropertyOrder(8)]
+        public string? MapApiKey { get; init; }
     }
 }

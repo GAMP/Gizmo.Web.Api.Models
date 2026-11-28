@@ -160,6 +160,14 @@ namespace Gizmo.Web.Api.Models
 
         /// <inheritdoc/>
         [MessagePack.Key(34)]
-        public bool IsDeleted { get; set; }        
+        public bool IsDeleted { get; set; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(35)]
+        public decimal Latitude { get; init; }
+
+        /// <inheritdoc/>
+        [MessagePack.Key(36)]
+        public decimal Longitude { get; init; }
     }
 }
