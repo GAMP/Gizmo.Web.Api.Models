@@ -85,5 +85,33 @@ namespace Gizmo.Web.Api.Models
         [Key(8)]
         [JsonPropertyOrder(8)]
         public string? MapApiKey { get; init; }
+
+        /// <summary>
+        /// Label above the welcome title.
+        /// </summary>
+        [Key(9)]
+        [JsonPropertyOrder(9)]
+        public string? WelcomeLabel { get; init; }
+
+        /// <summary>
+        /// First line of the welcome slogan.
+        /// </summary>
+        [Key(10)]
+        [JsonPropertyOrder(10)]
+        public string? WelcomeSloganLine1 { get; init; }
+
+        /// <summary>
+        /// Second line of the welcome slogan.
+        /// </summary>
+        [Key(11)]
+        [JsonPropertyOrder(11)]
+        public string? WelcomeSloganLine2 { get; init; }
+
+        /// <summary>
+        /// Description below the welcome slogan.
+        /// </summary>
+        [Key(12)]
+        [JsonPropertyOrder(12)]
+        public string? WelcomeDescription { get; init; }
     }
 }

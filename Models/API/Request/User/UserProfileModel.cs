@@ -105,6 +105,12 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(12)]
         public int Id { get; set; }
 
+        /// <summary>
+        /// The user's picture, when requested and available.
+        /// </summary>
+        [MessagePack.Key(13)]
+        public byte[]? Picture { get; set; }
+
         #endregion
     }
 }

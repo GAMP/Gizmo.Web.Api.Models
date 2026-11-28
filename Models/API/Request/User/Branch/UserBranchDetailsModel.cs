@@ -34,5 +34,11 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [Key(3)]
         public IEnumerable<string> HostGroups { get; init; } = Enumerable.Empty<string>();
+
+        [Key(4)]
+        public int? TotalDevices { get; init; }
+
+        [Key(5)]
+        public int? FreeDevices { get; init; }
     }
 }

@@ -55,12 +55,18 @@ namespace Gizmo.Web.Api.Models
         public bool IsAllBranches { get; init; }
 
         /// <summary>
-        /// Names of the active branches the news is enabled in, ordered by name; empty when <see cref="IsAllBranches"/> is true.
+        /// Names of the active branches the news is enabled in, ordered by name.
         /// </summary>
         /// <remarks>
         /// Filled only by the user API (api/user/v3/news); null otherwise.
         /// </remarks>
         [Key(10)]
         public IEnumerable<string>? BranchNames { get; init; }
+
+        /// <summary>
+        /// Whether the news is enabled for the mobile app. Null when the server does not supply this setting.
+        /// </summary>
+        [Key(11)]
+        public bool? ShowInMobileApp { get; init; }
     }
 }

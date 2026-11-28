@@ -53,5 +53,11 @@ namespace Gizmo.Web.Api.Models
         [MessagePack.Key(8)] 
         public bool IsCustomTemplate { get; init; }
 
+        /// <summary>
+        /// Whether to show the news in the mobile app. Null preserves the current setting.
+        /// </summary>
+        [MessagePack.Key(9)]
+        public bool? ShowInMobileApp { get; init; }
+
     }
 }

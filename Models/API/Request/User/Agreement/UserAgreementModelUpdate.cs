@@ -57,5 +57,8 @@ namespace Gizmo.Web.Api.Models
         public bool IgnoreState { get; set; }
 
         #endregion
+
+        [Key(7)]
+        public UserAgreementAudience? Audience { get; set; }
     }
 }

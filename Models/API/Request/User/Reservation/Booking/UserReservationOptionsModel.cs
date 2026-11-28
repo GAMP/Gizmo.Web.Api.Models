@@ -51,5 +51,8 @@ namespace Gizmo.Web.Api.Models
         /// </summary>
         [Key(6)]
         public int? CancellationGracePeriod { get; init; }
+
+        [Key(7)]
+        public decimal? CancellationRefundPercentage { get; set; }
     }
 }
